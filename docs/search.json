@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Stat 251: Data Wrangling",
     "section": "",
-    "text": "Homework Assignments\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nHomework 1: Git and Github\n\n\n\n\n\n\n\n\nNo matching items\n\n\n\n\nExams\nComing soon!"
+    "text": "Homework Assignments\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nHomework 1: Git and Github\n\n\n\n\n\n\nHomework 2: Review\n\n\n\n\n\n\n\n\nNo matching items\n\n\n\n\nExams\nComing soon!"
   },
   {
     "objectID": "homework/01-git-github.html",
@@ -61,5 +61,33 @@
     "title": "Homework 1: Git and Github",
     "section": "Optional extra steps",
     "text": "Optional extra steps\n\nOpen a pull request and let your teacher know that you’ve finished this course.\n\nCreate your profile README. Let the world know a little bit more about you! What are you interested in learning? What are you working on? What’s your favorite hobby? Learn more about creating your profile README in the document, “Managing Your Profile README”.\nGo to your user dashboard and create a new repository. Experiment with the features within that repository to familiarize yourself with them.\nLet us know what you liked or didn’t like about the content of this course. What would you like to see more of? What would be interesting or helpful to your learning journey?"
+  },
+  {
+    "objectID": "homework/02-review.html",
+    "href": "homework/02-review.html",
+    "title": "Homework 2: Reviewing R and Python",
+    "section": "",
+    "text": "Note: This assignment must be submitted in github classroom.\nA palindrome is a string that is equal to the reverse of that string, such as “Mom”, “Hannah” or “We panic in a pew.”\nTraditionally, a phrase is considered a palindrome once all spaces and punctuation has been removed, and all letters are written in the same case."
+  },
+  {
+    "objectID": "homework/02-review.html#pseudocode",
+    "href": "homework/02-review.html#pseudocode",
+    "title": "Homework 2: Reviewing R and Python",
+    "section": "Pseudocode",
+    "text": "Pseudocode\nWrite a detailed list of steps to process a string named test to test that it is a palindrome.\nHint: The final items in this list of steps should be defining a variable revtest that is test with the letters reversed, and then comparing test and revtest for equality."
+  },
+  {
+    "objectID": "homework/02-review.html#r",
+    "href": "homework/02-review.html#r",
+    "title": "Homework 2: Reviewing R and Python",
+    "section": "R",
+    "text": "R\nTurn your pseudocode into a sequence of statements in R that work with a variable named test. At this point, there is no need to write these steps in a function - we’ll get there.\n\ntest <- \"Hannah\"\n\n# Your steps go here"
+  },
+  {
+    "objectID": "homework/02-review.html#python",
+    "href": "homework/02-review.html#python",
+    "title": "Homework 2: Reviewing R and Python",
+    "section": "Python",
+    "text": "Python\nTurn your pseudocode into a sequence of statements in python that work with a variable named test. At this point, there is no need to write these steps in a function - we’ll get there.\n\ntest = \"Hannah\"\n\n# Your steps go here"
   }
 ]
