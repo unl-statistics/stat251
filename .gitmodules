@@ -1,0 +1,3 @@
+[submodule "homework-repos/github-starter-course"]
+	path = homework-repos/github-starter-course
+	url = git@github.com:stat850-unl/github-starter-course.git
