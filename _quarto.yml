@@ -1,0 +1,22 @@
+project:
+  type: website
+  output-dir: docs
+  render:
+    - index.qmd
+    - syllabus.qmd
+    - homework/*.qmd
+website:
+  title: "Stat 251 - Data Wrangling"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: https://srvanderplas.github.io/stat-computing-r-python/
+        text: Textbook
+      - href: syllabus.pdf
+        text: Syllabus
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
