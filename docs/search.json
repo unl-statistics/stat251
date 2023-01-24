@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Stat 251: Data Wrangling",
     "section": "",
-    "text": "Homework Assignments\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nHomework 1: Git and Github\n\n\n\n\n\n\nHomework 2: Review\n\n\n\n\n\n\n\n\nNo matching items\n\n\n\n\nExams\nComing soon!"
+    "text": "Course Materials\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nHomework 1: Git and Github\n\n\n\n\n\n\nHomework 2: Review\n\n\n\n\n\n\nStat 251 - Introduction\n\n\n\n\n\n\n\n\nNo matching items\n\n\n\n\nExams\nComing soon!"
   },
   {
     "objectID": "homework/01-git-github.html",
@@ -147,18 +147,18 @@
     "text": "Grades\n\n\n\nAssignments\nWeight\n\n\n\n\nReading Quizzes\n10%\n\n\nWeekly Homework & Participation\n50%\n\n\nMidterm Exam\n20%\n\n\nFinal Exam\n20%\n\n\n\nApproximately Weekly Homework – started in class"
   },
   {
-    "objectID": "slides/01-Syllabus-and-Introductions.html#programming",
-    "href": "slides/01-Syllabus-and-Introductions.html#programming",
-    "title": "Stat 251 - Introduction",
-    "section": "Programming",
-    "text": "Programming"
-  },
-  {
     "objectID": "slides/01-Syllabus-and-Introductions.html#academic-integrity-submitted-work-policy",
     "href": "slides/01-Syllabus-and-Introductions.html#academic-integrity-submitted-work-policy",
     "title": "Stat 251 - Introduction",
     "section": "Academic Integrity / Submitted Work Policy",
     "text": "Academic Integrity / Submitted Work Policy\n\nYou may (and should!) work with each other on homework assignments\nWork alone on exams\nYou must be able to explain the logic of anything you submit for a grade\nAt my discretion, I will evaluate the coherence of your explanation instead of your submitted work\nChatGPT, StackOverflow, Google are all valuable tools, but they do not help you think"
+  },
+  {
+    "objectID": "slides/01-Syllabus-and-Introductions.html#programming",
+    "href": "slides/01-Syllabus-and-Introductions.html#programming",
+    "title": "Stat 251 - Introduction",
+    "section": "Programming",
+    "text": "Programming"
   },
   {
     "objectID": "slides/01-Syllabus-and-Introductions.html#install-course-software",
