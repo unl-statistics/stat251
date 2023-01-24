@@ -70,9 +70,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
       
-      searchColumns: ["listing-title","listing-author"],
+      searchColumns: ["listing-date","listing-title","listing-author"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -142,7 +142,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#exams" id="toc-exams" class="nav-link" data-scroll-target="#exams">Exams</a></li>
   </ul>
 </nav>
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="slides">slides <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -172,6 +172,12 @@ ul.task-list li input[type="checkbox"] {
      <select id="listing-hwlst-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-hwlst'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
        <option value="" disabled="" selected="" hidden="">Order By</option>
        <option value="index" data-direction="asc">Default</option>
+         <option value="listing-date-sort" data-direction="asc">
+          Date - Oldest
+        </option>
+         <option value="listing-date-sort" data-direction="desc">
+          Date - Newest
+        </option>
          <option value="listing-title-sort" data-direction="asc">
           Title
         </option>
@@ -190,6 +196,9 @@ ul.task-list li input[type="checkbox"] {
 <thead>
 <tr>
 <th>
+<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Date</a>
+</th>
+<th>
 <a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
 </th>
 <th>
@@ -199,6 +208,8 @@ ul.task-list li input[type="checkbox"] {
 </thead>
 <tbody class="list">
 <tr data-index="0" data-listing-file-modified-sort="1673969329113" data-listing-reading-time-sort="0.06" data-listing-title-sort="Homework 1: Git and Github" data-listing-filename-sort="01-git-github.qmd">
+<td class="listing-date">
+</td>
 <td class="listing-title">
 <a href="./homework/01-git-github.html" class="title">Homework 1: Git and Github</a>
 </td>
@@ -206,13 +217,18 @@ ul.task-list li input[type="checkbox"] {
 </td>
 </tr>
 <tr data-index="1" data-listing-file-modified-sort="1673969329113" data-listing-reading-time-sort="0.06" data-listing-title-sort="Homework 2: Review" data-listing-filename-sort="02-review.qmd">
+<td class="listing-date">
+</td>
 <td class="listing-title">
 <a href="./homework/02-review.html" class="title">Homework 2: Review</a>
 </td>
 <td class="listing-author">
 </td>
 </tr>
-<tr data-index="2" data-listing-file-modified-sort="1674574052145" data-listing-reading-time-sort="2.27" data-listing-title-sort="Stat 251 - Introduction" data-listing-filename-sort="01-Syllabus-and-Introductions.qmd">
+<tr data-index="2" data-categories="slides" data-listing-date-sort="1674626400000" data-listing-file-modified-sort="1674574765215" data-listing-reading-time-sort="2.27" data-listing-title-sort="Stat 251 - Introduction" data-listing-filename-sort="01-Syllabus-and-Introductions.qmd">
+<td class="listing-date">
+Jan 25, 2023
+</td>
 <td class="listing-title">
 <a href="./slides/01-Syllabus-and-Introductions.html" class="title">Stat 251 - Introduction</a>
 </td>

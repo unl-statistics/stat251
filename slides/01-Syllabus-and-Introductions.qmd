@@ -1,5 +1,7 @@
 ---
 title: "Stat 251 - Introduction"
+date: January 25, 2023
+categories: slides
 format: 
   revealjs:
     navigation-mode: vertical
