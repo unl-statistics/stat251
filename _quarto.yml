@@ -5,6 +5,7 @@ project:
     - index.qmd
     - syllabus.qmd
     - homework/*.qmd
+    - slides/*.qmd
 website:
   title: "Stat 251 - Data Wrangling"
   navbar:
