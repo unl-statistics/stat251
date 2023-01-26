@@ -2,8 +2,8 @@
   {
     "listing": "/index.html",
     "items": [
-      "/homework/01-git-github.html",
       "/homework/02-review.html",
+      "/homework/01-git-github.html",
       "/slides/02-version-control.html",
       "/slides/01-Syllabus-and-Introductions.html"
     ]
