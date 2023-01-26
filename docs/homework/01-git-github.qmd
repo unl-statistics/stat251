@@ -1,0 +1,7 @@
+---
+title: "Homework 1: Git and Github"
+---
+
+Note: This assignment must be submitted in github classroom.
+
+{{< include ../homework-repos/github-starter-course/README.md >}}

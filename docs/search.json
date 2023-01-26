@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Stat 251: Data Wrangling",
     "section": "",
-    "text": "Course Materials\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\n\n\nHomework 1: Git and Github\n\n\n\n\n\n\n\n\nHomework 2: Review\n\n\n\n\n\n\nJan 25, 2023\n\n\nStat 251 - Introduction\n\n\n\n\n\n\n\n\nNo matching items\n\n\n\n\nExams\nComing soon!"
+    "text": "Course Materials\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 1: Git and Github\n\n\n\n\n\n\n\n\nHomework 2: Review\n\n\n\n\n\n\n\n\nVersion Control\n\n\n\n\n\n\nJan 25, 2023\n\n\nStat 251 - Introduction\n\n\n\n\n\n\n\n\nNo matching items\n\n\n\n\nExams\nComing soon!"
   },
   {
     "objectID": "homework/01-git-github.html",
@@ -173,5 +173,47 @@
     "title": "Stat 251 - Introduction",
     "section": "Next Time",
     "text": "Next Time\nWe’ll work on Version Control with Git\nPlease Read before class: - Computer Basics - Scripts and Notebooks - RStudio’s Interface - Version Control with Git"
+  },
+  {
+    "objectID": "slides/02-version-control.html#version-control",
+    "href": "slides/02-version-control.html#version-control",
+    "title": "Version Control",
+    "section": "Version Control",
+    "text": "Version Control\n\nVersion control is the answer to this file naming problem.Image Source “Piled Higher and Deeper” by Jorge Cham www.phdcomics.com"
+  },
+  {
+    "objectID": "slides/02-version-control.html#introduce-yourself-to-git",
+    "href": "slides/02-version-control.html#introduce-yourself-to-git",
+    "title": "Version Control",
+    "section": "Introduce yourself to git",
+    "text": "Introduce yourself to git\nIn a system terminal, run…\n\ngit config --global user.name 'YOUR NAME HERE'\ngit config --global user.email 'YOUR EMAIL HERE'\ngit config --global --list # check to see it worked"
+  },
+  {
+    "objectID": "slides/02-version-control.html#set-up-ssh-authentication",
+    "href": "slides/02-version-control.html#set-up-ssh-authentication",
+    "title": "Version Control",
+    "section": "Set up SSH authentication",
+    "text": "Set up SSH authentication\nInstructions"
+  },
+  {
+    "objectID": "slides/02-version-control.html#navigating-around-github",
+    "href": "slides/02-version-control.html#navigating-around-github",
+    "title": "Version Control",
+    "section": "Navigating around Github",
+    "text": "Navigating around Github\n(Demo)"
+  },
+  {
+    "objectID": "slides/02-version-control.html#using-rstudio-and-git",
+    "href": "slides/02-version-control.html#using-rstudio-and-git",
+    "title": "Version Control",
+    "section": "Using RStudio and git",
+    "text": "Using RStudio and git\n(Demo)"
+  },
+  {
+    "objectID": "slides/02-version-control.html#homework-introduction-to-github",
+    "href": "slides/02-version-control.html#homework-introduction-to-github",
+    "title": "Version Control",
+    "section": "Homework: Introduction to Github",
+    "text": "Homework: Introduction to Github\nLink"
   }
 ]
