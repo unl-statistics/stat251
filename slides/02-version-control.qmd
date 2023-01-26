@@ -1,0 +1,37 @@
+---
+title: "Version Control"
+format: revealjs
+engine: knitr
+---
+
+## Version Control
+
+![Version control is the answer to this file naming  problem.<br>[Image Source](https://phdcomics.com/comics/archive.php?comicid=1531) "Piled Higher and Deeper" by Jorge Cham
+www.phdcomics.com](https://phdcomics.com/comics/archive/phd101212s.gif){width="50%"}
+
+
+## Introduce yourself to git
+
+In a system terminal, run...
+
+```{bash, eval = F, echo = T}
+git config --global user.name 'YOUR NAME HERE'
+git config --global user.email 'YOUR EMAIL HERE'
+git config --global --list # check to see it worked
+```
+
+## Set up SSH authentication
+
+[Instructions](https://happygitwithr.com/ssh-keys.html)
+
+## Navigating around Github
+
+(Demo)
+
+## Using RStudio and git
+
+(Demo)
+
+## Homework: Introduction to Github
+
+[Link](../homework/01-git-github.qmd)
