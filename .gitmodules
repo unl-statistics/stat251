@@ -7,3 +7,6 @@
 [submodule "homework-repos/decodeR-exercises"]
 	path = homework-repos/decodeR-exercises
 	url = git@github.com:srvanderplas/decodeR-exercises.git
+[submodule "homework-repos/03-cipher"]
+	path = homework-repos/03-cipher
+	url = git@github.com:unl-stat251/03-cipher
