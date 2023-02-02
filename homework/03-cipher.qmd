@@ -1,0 +1,17 @@
+---
+title: "Homework 3: Cipher"
+date: February 13, 2023
+execute-dir: ../homework-repos/03-cipher
+---
+
+Note: This assignment must be submitted in github classroom.
+
+```{bash}
+cp ../homework-repos/03-cipher/Secret_Code .
+```
+
+{{< include ../homework-repos/03-cipher/puzzle.qmd >}}
+
+```{bash}
+rm ./Secret_Code
+```
