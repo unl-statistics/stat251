@@ -4,3 +4,6 @@
 [submodule "homework-repos/review-r-python"]
 	path = homework-repos/review-r-python
 	url = git@github.com:unl-stat251/review-r-python.git
+[submodule "homework-repos/decodeR-exercises"]
+	path = homework-repos/decodeR-exercises
+	url = git@github.com:srvanderplas/decodeR-exercises.git
