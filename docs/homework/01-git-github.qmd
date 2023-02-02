@@ -1,8 +1,0 @@
----
-title: "Homework 1: Git and Github"
-date: January 30, 2023
----
-
-Note: This assignment must be submitted in github classroom.
-
-{{< include ../homework-repos/github-starter-course/README.md >}}
