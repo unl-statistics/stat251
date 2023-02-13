@@ -1,0 +1,11 @@
+---
+title: "Homework 4: Cookies"
+date: February 20, 2023
+execute-dir: ../homework-repos/04-reading-data-cookies
+engine: knitr
+---
+
+Note: This assignment must be submitted in github classroom.
+
+{{< include ../homework-repos/04-reading-data-cookies/cookies.qmd >}}
+
