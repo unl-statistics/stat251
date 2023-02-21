@@ -13,3 +13,6 @@
 [submodule "homework-repos/04-reading-data-cookies"]
 	path = homework-repos/04-reading-data-cookies
 	url = git@github.com:unl-stat251/hw-reading-data-template.git
+[submodule "homework-repos/05-graphics"]
+	path = homework-repos/05-graphics
+	url = git@github.com:unl-stat251/graphics-homework.git
