@@ -13,3 +13,6 @@
 [submodule "homework-repos/04-reading-data-cookies"]
 	path = homework-repos/04-reading-data-cookies
 	url = git@github.com:unl-stat251/hw-reading-data-template.git
+[submodule "exam-midterm"]
+	path = exam-midterm
+	url = git@github.com:unl-stat251/2023-Midterm.git
