@@ -7,8 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Your Name">
+<meta name="dcterms.date" content="2023-03-09">
 
-<title>Stat 251 - Data Wrangling - Homework 2: Review</title>
+<title>Stat 251 - Data Wrangling - Exam 1</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -170,14 +171,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#problem-1-simple-palindromes" id="toc-problem-1-simple-palindromes" class="nav-link active" data-scroll-target="#problem-1-simple-palindromes">Problem 1: Simple Palindromes</a>
+  <li><a href="#ground-rules" id="toc-ground-rules" class="nav-link active" data-scroll-target="#ground-rules">Ground Rules</a></li>
+  <li><a href="#pockets" id="toc-pockets" class="nav-link" data-scroll-target="#pockets">Pockets</a>
   <ul class="collapse">
-  <li><a href="#pseudocode" id="toc-pseudocode" class="nav-link" data-scroll-target="#pseudocode">Pseudocode</a></li>
-  <li><a href="#r" id="toc-r" class="nav-link" data-scroll-target="#r">R</a></li>
-  <li><a href="#python" id="toc-python" class="nav-link" data-scroll-target="#python">Python</a></li>
+  <li><a href="#read-in-the-data" id="toc-read-in-the-data" class="nav-link" data-scroll-target="#read-in-the-data">Read in the Data</a></li>
+  <li><a href="#conduct-an-exploratory-data-analysis" id="toc-conduct-an-exploratory-data-analysis" class="nav-link" data-scroll-target="#conduct-an-exploratory-data-analysis">Conduct an Exploratory Data Analysis</a>
+  <ul class="collapse">
+  <li><a href="#questions" id="toc-questions" class="nav-link" data-scroll-target="#questions">Questions</a></li>
+  <li><a href="#question-answers" id="toc-question-answers" class="nav-link" data-scroll-target="#question-answers">Question Answers</a></li>
   </ul></li>
-  <li><a href="#problem-2-functional-palindromes" id="toc-problem-2-functional-palindromes" class="nav-link" data-scroll-target="#problem-2-functional-palindromes">Problem 2: Functional Palindromes</a></li>
-  <li><a href="#problem-3-vectors-of-palindromes" id="toc-problem-3-vectors-of-palindromes" class="nav-link" data-scroll-target="#problem-3-vectors-of-palindromes">Problem 3: Vectors of Palindromes</a></li>
+  <li><a href="#comparing-sexes-and-styles" id="toc-comparing-sexes-and-styles" class="nav-link" data-scroll-target="#comparing-sexes-and-styles">Comparing Sexes and Styles</a></li>
+  </ul></li>
+  <li><a href="#cell-phone-dimensions" id="toc-cell-phone-dimensions" class="nav-link" data-scroll-target="#cell-phone-dimensions">Cell Phone Dimensions</a></li>
   </ul>
 </nav>
     </div>
@@ -186,9 +191,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Homework 2: Reviewing R and Python</h1>
+<h1 class="title">Exam 1</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">HW</div>
+    <div class="quarto-category">exam</div>
   </div>
   </div>
 
@@ -199,14 +204,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Homework </p>
+             <p>Your Name </p>
           </div>
   </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">Due: Feb 3, 2023</p>
+      <p class="date">March 9, 2023</p>
     </div>
   </div>
   
@@ -216,53 +221,102 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 </header>
 
-<p>Note: This assignment must be submitted in github classroom.</p>
-<p>A palindrome is a string that is equal to the reverse of that string, such as “Mom”, “Hannah” or “We panic in a pew.”</p>
-<p>Traditionally, a phrase is considered a palindrome once all spaces and punctuation has been removed, and all letters are written in the same case.</p>
-<section id="problem-1-simple-palindromes" class="level1">
-<h1>Problem 1: Simple Palindromes</h1>
-<section id="pseudocode" class="level2">
-<h2 class="anchored" data-anchor-id="pseudocode">Pseudocode</h2>
-<p>Write a detailed list of steps to process a string named <code>test</code> to test that it is a palindrome.</p>
-<p>Hint: The final items in this list of steps should be defining a variable <code>revtest</code> that is <code>test</code> with the letters reversed, and then comparing <code>test</code> and <code>revtest</code> for equality.</p>
+<p>Your goal on this exam is to demonstrate competency in as many of the <a href="../exam-midterm/objectives.html">objectives</a> of chapters we’ve covered in this class so far as you can.</p>
+<section id="ground-rules" class="level2">
+<h2 class="anchored" data-anchor-id="ground-rules">Ground Rules</h2>
+<ul>
+<li><p>You may use the textbook and the internet (but the same rules apply - you must be able to explain your answer!)</p></li>
+<li><p>You may NOT confer with other people or AI entities - including posting on StackOverflow, Reddit, etc.</p></li>
+<li><p>You may ask clarifying questions of Dr.&nbsp;Vanderplas by email/zoom or in person</p></li>
+<li><p>You may use R or Python for any of these tasks, but your code must be reproducible - I must be able to run your quarto file on my machine. I have provided R chunks in the correct locations in this file - change them to Python if you wish.</p></li>
+<li><p>For any plot or table you create, be sure to appropriately caption and label it, providing 1-2 sentences to highlight the main purpose/conclusions you can draw from that plot.</p></li>
+<li><p>You should have at least one code chunk for each ## heading below.</p></li>
+</ul>
 </section>
-<section id="r" class="level2">
-<h2 class="anchored" data-anchor-id="r">R</h2>
-<p>Turn your pseudocode into a sequence of statements in R that work with a variable named <code>test</code>. At this point, there is no need to write these steps in a function - we’ll get there.</p>
+<section id="pockets" class="level1">
+<h1>Pockets</h1>
+<p>Jean pockets are useful for carrying a multitude of different items around, but this utility is not evenly shared: women’s pants often have pockets which are large enough to hold chapstick but not a pen, let alone a cell phone.</p>
+<p>The Pudding assembled a dataset of jean pocket size measurements, which you can find <a href="https://github.com/the-pudding/data/tree/master/pockets">here</a>. There are two different data sets: the raw pocket measurements, and a second data file of measurements of the largest rectangle with could theoretically fit into the pocket of each pair of jeans evaluated.</p>
+<section id="read-in-the-data" class="level2">
+<h2 class="anchored" data-anchor-id="read-in-the-data">Read in the Data</h2>
+<p>Write code which will:</p>
+<ol type="1">
+<li>Download the raw pocket <code>measurements.csv</code> data to a file in this repository</li>
+<li>Read the data in, ensuring that columns containing numbers are appropriately formatted. You may consider the fabric column as a character string.</li>
+</ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>test <span class="ot">&lt;-</span> <span class="st">"Hannah"</span></span>
+
+</div>
+</section>
+<section id="conduct-an-exploratory-data-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="conduct-an-exploratory-data-analysis">Conduct an Exploratory Data Analysis</h2>
+<p>Generate at least 3 questions about the data set and find answers to those questions using charts, tables, or numerical summaries.</p>
+<section id="questions" class="level3">
+<h3 class="anchored" data-anchor-id="questions">Questions</h3>
+<ol type="1">
+<li></li>
+<li></li>
+<li></li>
+</ol>
+</section>
+<section id="question-answers" class="level3">
+<h3 class="anchored" data-anchor-id="question-answers">Question Answers</h3>
+<div class="cell" data-caption="My caption">
+
+</div>
+<p>Your discussion of this output goes here.</p>
+<div class="cell" data-caption="My caption">
+
+</div>
+<p>Your discussion of this output goes here.</p>
+<div class="cell" data-caption="My caption">
+
+</div>
+<p>Your discussion of this output goes here</p>
+</section>
+</section>
+<section id="comparing-sexes-and-styles" class="level2">
+<h2 class="anchored" data-anchor-id="comparing-sexes-and-styles">Comparing Sexes and Styles</h2>
+<p>Generate one or two plots which best showcase the difference in pocket sizes for different sexes and styles of pants. Use The Pudding’s classification for pants styles, treating straight and boot-cut styles as the same and skinny and slim styles as the same.<br>
+You may annotate the plot with the output from statistical tests if you wish, but it is sufficient to highlight the visual differences. Your chart(s) must have appropriate titles and axis labels, and must be constructed to take into account the principles of good graphics discussed in the textbook.</p>
+<div class="cell" data-caption="your caption here">
+
+</div>
+<p>Your discussion of this output goes here.</p>
+<p>Replace this paragraph with 1-2 sentences discussing what choices you made to make the plot you generated above perceptually optimal. Which principles of good graphics did you use?</p>
+</section>
+</section>
+<section id="cell-phone-dimensions" class="level1">
+<h1>Cell Phone Dimensions</h1>
+<p>Dr.&nbsp;Vanderplas is interested in finding a pair of pants (from either the men’s section or the women’s section) which can accommodate her cell phone.</p>
+<p>Here is some code to read in the data in R and Python and extract the rectanglePhone dataset.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>jsonfile <span class="ot">&lt;-</span> <span class="st">"https://raw.githubusercontent.com/the-pudding/data/master/pockets/measurementRectangles.json"</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Your steps go here</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(jsonlite)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyr)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>rects <span class="ot">&lt;-</span> <span class="fu">fromJSON</span>(jsonfile)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>rectanglePhone <span class="ot">&lt;-</span> rects <span class="sc">%&gt;%</span> <span class="fu">unnest</span>(<span class="st">"rectanglePhone"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</section>
-<section id="python" class="level2">
-<h2 class="anchored" data-anchor-id="python">Python</h2>
-<p>Turn your pseudocode into a sequence of statements in python that work with a variable named <code>test</code>. At this point, there is no need to write these steps in a function - we’ll get there.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>test <span class="op">=</span> <span class="st">"Hannah"</span></span>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>jsonfile <span class="op">=</span> <span class="st">"https://raw.githubusercontent.com/the-pudding/data/master/pockets/measurementRectangles.json"</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Your steps go here</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>rects <span class="op">=</span> pd.read_json(jsonfile)</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>rectanglePhoneDims <span class="op">=</span> pd.DataFrame.from_records(rects[<span class="st">'rectanglePhone'</span>], nrows <span class="op">=</span> <span class="dv">80</span>)</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>rectanglePhone <span class="op">=</span> pd.concat([rects.iloc[:,<span class="dv">0</span>:<span class="dv">21</span>].reset_index(drop<span class="op">=</span><span class="va">True</span>), rectanglePhoneDims], axis <span class="op">=</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</section>
-</section>
-<section id="problem-2-functional-palindromes" class="level1">
-<h1>Problem 2: Functional Palindromes</h1>
-<p>In R and Python, use your code above to create a function, <code>palindrome</code>, which takes an argument, <code>x</code>, and returns a logical value indicating whether <code>x</code> is a palindrome.</p>
+<p>Write a function <code>checkpants(phonelength, phonewidth)</code> which takes length and width in centimeters and uses the largest rectangle data set from The Pudding to identify pants compatible with a specific cell phone’s length and width. Return the following information in a list:</p>
+<ul>
+<li><p><code>front</code> - A data frame all jeans which can fit a rectangle of the specified dimension in the front pocket</p></li>
+<li><p><code>back</code> - a data frame of all jeans which can fit a rectangle of the specified dimension in the back pocket. Assume a phone fits in the back pocket if the width is less than the <code>minWidthBack</code> measurement and the <code>minHeightBack</code> measurement is at least 70% of the phone’s height.</p></li>
+<li><p><code>price</code> - The average price of a pair of jeans which can fit the specified dimension in either the front or back pocket</p></li>
+<li><p><code>propMenFront</code> - the proportion of men’s pants that can fit a rectangle of the specified dimension in the front pocket</p></li>
+<li><p><code>propWomenAny</code> - the proportion of women’s pants that can fit a rectangle of the specified dimension in any pocket</p></li>
+</ul>
+<p>You should ensure that you carefully read <a href="https://github.com/the-pudding/data/tree/master/pockets">the documentation</a> to understand the data you are using before you attempt this question.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Your R function goes here</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Your python function goes here</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section>
-<section id="problem-3-vectors-of-palindromes" class="level1">
-<h1>Problem 3: Vectors of Palindromes</h1>
-<p>Use a loop, map, or apply statement to find all of the palindromes in a vector. I should be able to provide a different vector and use your function to find all of the palindromes.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>test_vec <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"taco cat"</span>, <span class="st">"UFO tofu"</span>, <span class="st">"In palindromes, spacing, punctuation, and capitalization are usually ignored."</span>, <span class="st">"Borrow or rob?"</span>, <span class="st">"dithyrambic"</span>, <span class="st">"Never odd or even."</span>, <span class="st">"R rules, Python drools!"</span>, <span class="st">"Won't lovers revolt now?"</span>, <span class="st">"Ma is a nun, as I am."</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>test_vec <span class="op">=</span> [<span class="st">"taco cat"</span>, <span class="st">"UFO tofu"</span>, <span class="st">"In palindromes, spacing, punctuation, and capitalization are usually ignored."</span>, <span class="st">"Borrow or rob?"</span>, <span class="st">"dithyrambic"</span>, <span class="st">"Never odd or even."</span>, <span class="st">"R rules, Python drools!"</span>, <span class="st">"Won't lovers revolt now?"</span>, <span class="st">"Ma is a nun, as I am."</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
 </div>
 
 

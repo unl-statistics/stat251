@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Your Name">
-<meta name="dcterms.date" content="2023-02-20">
 
-<title>Stat 251 - Data Wrangling - Homework 4: Cookies</title>
+<title>Stat 251 - Data Wrangling – objectives</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -104,111 +102,34 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#reading-in-the-data" id="toc-reading-in-the-data" class="nav-link active" data-scroll-target="#reading-in-the-data">Reading In the Data</a></li>
-  <li><a href="#exploratory-data-analysis" id="toc-exploratory-data-analysis" class="nav-link" data-scroll-target="#exploratory-data-analysis">Exploratory Data Analysis</a>
-  <ul class="collapse">
-  <li><a href="#generating-questions" id="toc-generating-questions" class="nav-link" data-scroll-target="#generating-questions">Generating Questions</a></li>
-  <li><a href="#skimming-the-data" id="toc-skimming-the-data" class="nav-link" data-scroll-target="#skimming-the-data">Skimming the Data</a></li>
-  <li><a href="#generating-tables" id="toc-generating-tables" class="nav-link" data-scroll-target="#generating-tables">Generating Tables</a></li>
-  <li><a href="#visualization" id="toc-visualization" class="nav-link" data-scroll-target="#visualization">Visualization</a></li>
-  </ul></li>
-  </ul>
-</nav>
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Chocolate Chip Cookies</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">HW</div>
-  </div>
-  </div>
 
 
-
-<div class="quarto-title-meta">
-
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Homework </p>
-          </div>
-  </div>
-    
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">February 20, 2023</p>
-    </div>
-  </div>
-  
-    
-  </div>
-  
-
-</header>
-
-<p>Note: This assignment must be submitted in github classroom.</p>
-<section id="reading-in-the-data" class="level2">
-<h2 class="anchored" data-anchor-id="reading-in-the-data">Reading In the Data</h2>
-<p>First, read in the CSV data of cookie ingredients. Make sure that your end-result data has appropriate types for each column - these should match the types provided in the documentation in the README.md file.</p>
-<div class="cell">
-
-</div>
-<div class="cell">
-
-</div>
-</section>
-<section id="exploratory-data-analysis" class="level2">
-<h2 class="anchored" data-anchor-id="exploratory-data-analysis">Exploratory Data Analysis</h2>
-<p>Exploratory data analysis is the process of getting familiar with your dataset. To get started, <a href="https://www.mrdbourke.com/a-gentle-introduction-to-exploratory-data-analysis/">this blog post</a> provides a nice checklist to get you thinking:</p>
-<blockquote class="blockquote">
-<ol type="1">
-<li>What question(s) are you trying to solve (or prove wrong)?</li>
-<li>What kind of data do you have and how do you treat different types?</li>
-<li>What’s missing from the data and how do you deal with it?</li>
-<li>Where are the outliers and why should you care about them?</li>
-<li>How can you add, change or remove features to get more out of your data?</li>
-</ol>
-</blockquote>
-<section id="generating-questions" class="level3">
-<h3 class="anchored" data-anchor-id="generating-questions">Generating Questions</h3>
-<p>Spend a few minutes generating at least 5 questions you might explore using this database of cookie ingredients.</p>
-</section>
-<section id="skimming-the-data" class="level3">
-<h3 class="anchored" data-anchor-id="skimming-the-data">Skimming the Data</h3>
-<p>One thing we often want to do during EDA is to examine the quality of the data - are there missing values? What quirks might exist in the dataset?</p>
-<p>The <code>skimr</code> package in R, and the similar <code>skimpy</code> package in python (which has a much better name, in my opinion), can help provide visual summaries of the data.</p>
-<p>Install both packages, and read the package documentation (<a href="https://cran.r-project.org/web/packages/skimr/vignettes/skimr.html">R</a>, <a href="https://pypi.org/project/skimpy/">Python</a>).</p>
-<p>Use each package and generate summaries of your data that require the use of at least some non-default options in each package’s <code>skim</code> function.</p>
-<p>Write 1-2 sentences about what you can tell from each summary display you generate. Did you discover anything new about the data?</p>
-<div class="cell">
-
-</div>
-<div class="cell">
-
-</div>
-</section>
-<section id="generating-tables" class="level3">
-<h3 class="anchored" data-anchor-id="generating-tables">Generating Tables</h3>
-<p>Another useful technique for exploratory data analysis is to generate summary tables. Using R and Python, generate a table that shows what <strong>proportion</strong> of recipes contain each type of ingredient. Since you probably don’t want to list <em>all</em> ingredients in a table, it is acceptable to print a table with the most common 20 ingredients, and then separately print out a character string (using markdown inline code) that lists all of the ingredients that do not appear in at least 20 recipes.</p>
-<p>You may want to use the <code>dplyr</code> package in R (<code>group\_by</code> or <code>count</code> functions), as well as the <code>groupby</code> and <code>count</code> methods in Pandas. <a href="https://sparkbyexamples.com/pandas/pandas-groupby-count-examples/">Python example</a>, <a href="https://dplyr.tidyverse.org/reference/count.html">R example</a></p>
-<p>(Delete this note, but you can include data values inline in markdown text by using backticks, at least in R. For instance, here is R’s built in value for pi: 3.1415927. Unfortunately, this doesn’t work in python using the knitr markdown engine, but you can print the list out in python anyways using a code chunk.)</p>
-</section>
-<section id="visualization" class="level3">
-<h3 class="anchored" data-anchor-id="visualization">Visualization</h3>
-<p>Using whatever plotting system you are comfortable with in R or python, see if you can create a couple of useful exploratory data visualizations which address one of the questions you wrote above - or another question which you’ve come up with as you’ve worked on this assignment.</p>
-<p>Create at least one plot (it doesn’t have to be pretty) that showcases an interesting facet of the data and write 2-3 sentences about what you can learn from that plot and what directions you might want to investigate from here.</p>
+<p>Class objectives covered on this exam (I am omitting objectives from the “review” section, but they are still relevant):</p>
+<ul>
+<li><p>Read in data from common formats into R or Python</p></li>
+<li><p>Identify delimiters, headers, and other essential components of files</p></li>
+<li><p>Create charts designed to communicate specific aspects of the data</p></li>
+<li><p>Describe charts using the grammar of graphics</p></li>
+<li><p>Create layered graphics that highlight multiple aspects of the data</p></li>
+<li><p>Evaluate existing charts and develop new versions that improve accessibility and readability</p></li>
+<li><p>Identify required sequence of steps for data cleaning</p></li>
+<li><p>Describe step-by-step data cleaning process in lay terms appropriately</p></li>
+<li><p>Apply data manipulation verbs to prepare data for analysis</p></li>
+<li><p>Understand the consequences of data cleaning steps for statistical analysis</p></li>
+<li><p>Create summaries of data appropriate for analysis or display using data manipulation techniques</p></li>
+</ul>
+<p>While we didn’t explicitly read the EDA chapter, you have also been introduced to the objectives of EDA:</p>
+<ul>
+<li>Understand the main goals of exploratory data analysis</li>
+<li>Generate and answer questions about a new dataset using charts, tables, and numerical summaries</li>
+</ul>
 
 
-</section>
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

@@ -2,13 +2,14 @@
 title: "Stat 251: Data Wrangling"
 format: html
 listing:
-  id: hwlst
-  categories: true
-  contents: 
-    - "homework/*.qmd"
-    - "slides/*.qmd"
-  sort: "date desc"
-  type: table
+  - id: hwlst
+    categories: true
+    contents: 
+      - "homework/*.qmd"
+      - "slides/*.qmd"
+      - "exam-midterm/index.qmd"
+    sort: "date desc"
+    type: table
 ---
 
 # Course Materials
@@ -16,7 +17,3 @@ listing:
 
 ::: {#hwlst}
 :::
-
-# Exams
-
-Coming soon!
