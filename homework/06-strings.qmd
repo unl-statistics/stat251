@@ -1,0 +1,13 @@
+---
+title: "Homework 6: Strings"
+date: March 24, 2023
+execute-dir: ../homework-repos/06-strings/
+engine: knitr
+author: Homework
+categories: HW
+---
+
+Note: This assignment must be submitted in github classroom.
+
+{{< include ../homework-repos/06-strings/index.qmd >}}
+

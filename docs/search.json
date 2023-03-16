@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Stat 251: Data Wrangling",
     "section": "",
-    "text": "Course Materials\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nMar 9, 2023\n\n\nExam 1\n\n\nYour Name\n\n\n\n\nMar 3, 2023\n\n\nHomework 5: Graphics and Groundhogs\n\n\nHomework\n\n\n\n\nFeb 20, 2023\n\n\nHomework 4: Cookies\n\n\nHomework\n\n\n\n\nFeb 13, 2023\n\n\nHomework 3: Cipher\n\n\nHomework\n\n\n\n\nFeb 6, 2023\n\n\nHomework 2: Review\n\n\nHomework\n\n\n\n\nJan 30, 2023\n\n\nHomework 1: Git and Github\n\n\nHomework\n\n\n\n\nJan 26, 2023\n\n\nVersion Control\n\n\n\n\n\n\nJan 24, 2023\n\n\nStat 251 - Introduction\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Course Materials\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nMar 24, 2023\n\n\nHomework 6: Strings\n\n\nHomework\n\n\n\n\nMar 9, 2023\n\n\nExam 1\n\n\nYour Name\n\n\n\n\nMar 3, 2023\n\n\nHomework 5: Graphics and Groundhogs\n\n\nHomework\n\n\n\n\nFeb 20, 2023\n\n\nHomework 4: Cookies\n\n\nHomework\n\n\n\n\nFeb 13, 2023\n\n\nHomework 3: Cipher\n\n\nHomework\n\n\n\n\nFeb 6, 2023\n\n\nHomework 2: Review\n\n\nHomework\n\n\n\n\nJan 30, 2023\n\n\nHomework 1: Git and Github\n\n\nHomework\n\n\n\n\nJan 26, 2023\n\n\nVersion Control\n\n\n\n\n\n\nJan 24, 2023\n\n\nStat 251 - Introduction\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "homework/01-git-github.html",
@@ -166,6 +166,62 @@
     "title": "Homework 5: Graphics",
     "section": "Ugly Chart Challenge",
     "text": "Ugly Chart Challenge\nThe textbook spent lots of time showing you how to create different types of graphics, but I spent a lot less time showing you all of the different ways you could customize graphics in any plotting library. In this problem, I want you to create the ugliest graph you can, and then explain why, exactly, you made the decisions you did, and which principles of good graphics you’ve intentionally violated.\nUgliness is subjective, so the goal here is for you to explore the different ways you can customize the finer details of a plot. Make sure your finished masterpiece has appropriate axis labels and a title (after all, even ugly plots need to be correctly labeled!). You are free to add additional variables and layers, modify the aesthetics used, and leverage other packages. If you need inspiration, look here.\nUse the groundhog data to create the ugliest chart you possibly can, by violating as many guidelines for the creation of good graphics as possible.\nDo this for one plotting system in R, and one plotting system in Python. You might try different ways to make things ugly in each plotting system. Note that this dataset does include images of each groundhog, so feel free to leverage that in your plot, if you are so inspired.\nFor each plot, explain why the plot is ugly and what principles of good graphics it violates in 2-3 sentences.\n\nR\n\n\n\nThis chart is ugly because it violates …\n\n\nPython\n\n\n\nThis chart is ugly because it violates …"
+  },
+  {
+    "objectID": "homework/06-strings.html",
+    "href": "homework/06-strings.html",
+    "title": "String Processing in R and Python",
+    "section": "",
+    "text": "Note: This assignment must be submitted in github classroom."
+  },
+  {
+    "objectID": "homework/06-strings.html#content-warning",
+    "href": "homework/06-strings.html#content-warning",
+    "title": "String Processing in R and Python",
+    "section": "Content Warning",
+    "text": "Content Warning\nThese poems may address adult topics and/or use strong or vulgar language, as they are taken from Reddit. I have not censored them in any way because I want you to work with data that is realistic. You should find a few test cases which you are comfortable with to use to test out your code, but you do not need to read all of the poems (and in both cases, I’ve provided you with approximately 1000 samples, so it’s probably too much to read in any case).\nHere are 5 indices (counting from 1) which are approximately G or PG in content for each poet:\n\nSprog poems: 1, 2, 3, 4, 7\nSchnoodleDoodleDo poems: 1, 2, 3, 5, 6\n\nThese should be sufficient for you to test your code even if you are worried about being exposed to adult themes or language during this activity."
+  },
+  {
+    "objectID": "homework/06-strings.html#splitting-poems-into-lines",
+    "href": "homework/06-strings.html#splitting-poems-into-lines",
+    "title": "String Processing in R and Python",
+    "section": "Splitting Poems into Lines",
+    "text": "Splitting Poems into Lines\nSplit the poem into lines and create a data frame that has\n\na new column called poem_id, numbered from one to the total number of poems by the poet in question\na new variable called line that contains the text of each line of the poem (one row per poem line). To get this, you may need to split the comment string by the endline character (\\n) and then unnest or expand your data frame.\na new variable called line_no that contains the line number of the poem. This should be computed per poem.\n\nEnsure that you are splitting lines by a string which makes sense. Some poems have multiple paragraphs (stanzas) and may have a blank line in between; you want to preserve this blank line as it will help you make sense of the poem. Some poems instead have blank lines between every line of the poem; in these cases, you may want to split by e.g. \\n\\n instead of \\n.\nSee Part 1 Checkpoint for an example of what the output should look like from each poet."
+  },
+  {
+    "objectID": "homework/06-strings.html#summarizing-poems",
+    "href": "homework/06-strings.html#summarizing-poems",
+    "title": "String Processing in R and Python",
+    "section": "Summarizing Poems",
+    "text": "Summarizing Poems\nFor each poem, create a summary data frame that contains:\n\nAverage number of words per line in the poem\nNumber of lines in the poem\nNumber of characters which are not letters or spaces (punctuation, numbers, and any non-ASCII characters)\nNumber of uppercase letters in the poem\nNumber of lowercase letters in the poem\n\nCreate a plot showing the distribution of the number of words per line across all poems you have in your dataset. Create another plot showing the number of lines in the poem for all poems in your dataset. What does this tell you about the “average” style of the poet in question?\nSee Part 2 Checkpoint for an example of what the output should look like from each poet."
+  },
+  {
+    "objectID": "homework/06-strings.html#poetry-analysis",
+    "href": "homework/06-strings.html#poetry-analysis",
+    "title": "String Processing in R and Python",
+    "section": "Poetry Analysis",
+    "text": "Poetry Analysis\nChoose some characteristic(s) of the poet’s style to explore graphically. If necessary, create a subset of the data with poems relevant to your question before you generate numerical summaries. You may want to clean up the data and remove lines which contain quotes (e.g. start with a > character) or horizontal lines in reddit markdown (e.g. only have ----).\nSome ideas to get you started thinking:\n\nNumber of syllables per line may be used to infer rhyming scheme and/or poetry style. You can use the qdap package in R, which contains the syllable_sum function to count the number of syllables in a sentence. You may need to use a for-loop or program a custom function to use the syllables function on every entry in your data frame column.\nUse of non-alphabetic characters. Schnoodle often uses emoji and other text annotations to convey emotions and excitement - how often do these types of annotations appear in their poems?\nCommon characters and phrases. Sprog writes poems frequently about a character named Timmy (who often meets a horrible end). Do these poems have a common format/style/rhyme scheme?\nSprog often writes longer poems with multiple stanzas. Identify which poems have multiple stanzas (Hint, look for blank lines in a systematic pattern) and show the distribution of stanza length, stanza variation within poems, and number of stanzas in each poem.\nSchnoodle often misspells words intentionally (using e.g. fren instead of friend) to convey that they are writing using an animal’s voice. What proportion of words are misspelled in each poem? How much does this proportion vary? Based on the distribution, how likely is it, in your opinion, that Schnoodle misspells words more often when speaking as one type of animal than another? You can use the hunspell package in R to detect whether words are likely misspelled."
+  },
+  {
+    "objectID": "homework/06-strings.html#splitting-poems-into-lines-1",
+    "href": "homework/06-strings.html#splitting-poems-into-lines-1",
+    "title": "String Processing in R and Python",
+    "section": "Splitting Poems into Lines",
+    "text": "Splitting Poems into Lines\nSplit the poem into lines and create a data frame that has\n\na new column called poem_id, numbered from one to the total number of poems by the poet in question\na new variable called line that contains the text of each line of the poem (one row per poem line). To get this, you may need to split the comment string by the endline character (\\n) and then unnest or expand your data frame.\na new variable called line_no that contains the line number of the poem. This should be computed per poem.\n\nEnsure that you are splitting lines by a string which makes sense. Some poems have multiple paragraphs (stanzas) and may have a blank line in between; you want to preserve this blank line as it will help you make sense of the poem. Some poems instead have blank lines between every line of the poem; in these cases, you may want to split by e.g. \\n\\n instead of \\n. See Part 1 Checkpoint for an example of what the output should look like from each poet."
+  },
+  {
+    "objectID": "homework/06-strings.html#summarizing-poems-1",
+    "href": "homework/06-strings.html#summarizing-poems-1",
+    "title": "String Processing in R and Python",
+    "section": "Summarizing Poems",
+    "text": "Summarizing Poems\nFor each poem, create a summary data frame that contains:\n\nAverage number of words per line in the poem\nNumber of lines in the poem\nNumber of characters which are not letters or spaces (punctuation, numbers, and any non-ASCII characters)\nNumber of uppercase letters in the poem\nNumber of lowercase letters in the poem\n\nCreate a plot showing the distribution of the number of words per line across all poems you have in your dataset. Create another plot showing the number of lines in the poem for all poems in your dataset. What does this tell you about the “average” style of the poet in question?"
+  },
+  {
+    "objectID": "homework/06-strings.html#poetry-analysis-1",
+    "href": "homework/06-strings.html#poetry-analysis-1",
+    "title": "String Processing in R and Python",
+    "section": "Poetry Analysis",
+    "text": "Poetry Analysis\nChoose some characteristic(s) of the poet’s style to explore graphically. If necessary, create a subset of the data with poems relevant to your question before you generate numerical summaries. You may want to clean up the data and remove lines which contain quotes (e.g. start with a > character) or horizontal lines in reddit markdown (e.g. only have ----).\nSome ideas to get you started thinking:\n\nNumber of syllables per line may be used to infer rhyming scheme and/or poetry style. You can use the syllables python package. You may need to use a for-loop or program a custom function to use the syllables function on every entry in your data frame column.\nUse of non-alphabetic characters. Schnoodle often uses emoji and other text annotations to convey emotions and excitement - how often do these types of annotations appear in their poems?\nCommon characters and phrases. Sprog writes poems frequently about a character named Timmy (who often meets a horrible end). Do these poems have a common format/style/rhyme scheme?\nSprog often writes longer poems with multiple stanzas. Identify which poems have multiple stanzas (Hint, look for blank lines in a systematic pattern) and show the distribution of stanza length, stanza variation within poems, and number of stanzas in each poem.\nSchnoodle often misspells words intentionally (using e.g. fren instead of friend) to convey that they are writing using an animal’s voice. What proportion of words are misspelled in each poem? How much does this proportion vary? Based on the distribution, how likely is it, in your opinion, that Schnoodle misspells words more often when speaking as one type of animal than another? You can use one of the python packages discussed in this post to detect whether words are likely misspelled."
   },
   {
     "objectID": "slides/01-Syllabus-and-Introductions.html#introduce-yourself",
