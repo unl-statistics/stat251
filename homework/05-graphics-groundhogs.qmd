@@ -3,6 +3,8 @@ title: "Homework 5: Graphics and Groundhogs"
 date: March 3, 2023
 execute-dir: ../homework-repos/05-graphics
 engine: knitr
+author: Homework
+categories: HW
 ---
 
 Note: This assignment must be submitted in github classroom.

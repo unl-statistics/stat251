@@ -19,3 +19,6 @@
 [submodule "homework-repos/06-strings"]
 	path = homework-repos/06-strings
 	url = ./homework-repos/06-strings
+[submodule "exam-midterm"]
+	path = exam-midterm
+	url = git@github.com:unl-stat251/2023-Midterm.git

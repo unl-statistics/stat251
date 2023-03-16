@@ -2,13 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.335">
+<meta name="generator" content="quarto-1.2.313">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Your Name">
+<meta name="dcterms.date" content="2023-03-03">
 
-<title>Stat 251 - Data Wrangling - Homework 5: Graphics and Groundhogs</title>
+<title>Homework 5: Graphics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,113 +25,30 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
-  "copy-button": false,
-  "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
-  "limit": 20,
-  "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
-  }
-}</script>
+<script src="assignment_files/libs/clipboard/clipboard.min.js"></script>
+<script src="assignment_files/libs/quarto-html/quarto.js"></script>
+<script src="assignment_files/libs/quarto-html/popper.min.js"></script>
+<script src="assignment_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="assignment_files/libs/quarto-html/anchor.min.js"></script>
+<link href="assignment_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="assignment_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="assignment_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="assignment_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="assignment_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 
 
-<link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="fullcontent">
 
-<div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
-      <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
-    <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">Stat 251 - Data Wrangling</span>
-    </a>
-  </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../index.html">
- <span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="https://srvanderplas.github.io/stat-computing-r-python/">
- <span class="menu-text">Textbook</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../syllabus.pdf">
- <span class="menu-text">Syllabus</span></a>
-  </li>  
-</ul>
-              <div id="quarto-search" class="" title="Search"></div>
-          </div> <!-- /navcollapse -->
-      </div> <!-- /container-fluid -->
-    </nav>
-</header>
-<!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
-<!-- sidebar -->
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#data-exploration" id="toc-data-exploration" class="nav-link active" data-scroll-target="#data-exploration">Data Exploration</a></li>
-  <li><a href="#grammar-of-graphics" id="toc-grammar-of-graphics" class="nav-link" data-scroll-target="#grammar-of-graphics">Grammar of Graphics</a>
-  <ul class="collapse">
-  <li><a href="#do-different-groundhogs-have-different-probabilities-of-predicting-6-more-weeks-of-winter" id="toc-do-different-groundhogs-have-different-probabilities-of-predicting-6-more-weeks-of-winter" class="nav-link" data-scroll-target="#do-different-groundhogs-have-different-probabilities-of-predicting-6-more-weeks-of-winter">Do different groundhogs have different probabilities of predicting 6 more weeks of winter?</a></li>
-  <li><a href="#how-much-do-north-american-groundhogs-tend-to-agree-on-their-predictions" id="toc-how-much-do-north-american-groundhogs-tend-to-agree-on-their-predictions" class="nav-link" data-scroll-target="#how-much-do-north-american-groundhogs-tend-to-agree-on-their-predictions">How much do North American groundhogs tend to agree on their predictions?</a></li>
-  </ul></li>
-  <li><a href="#ugly-chart-challenge" id="toc-ugly-chart-challenge" class="nav-link" data-scroll-target="#ugly-chart-challenge">Ugly Chart Challenge</a>
-  <ul class="collapse">
-  <li><a href="#r" id="toc-r" class="nav-link" data-scroll-target="#r">R</a></li>
-  <li><a href="#python" id="toc-python" class="nav-link" data-scroll-target="#python">Python</a></li>
-  </ul></li>
-  </ul>
-</nav>
-    </div>
-<!-- main -->
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Homework 5: Graphics</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">HW</div>
-  </div>
-  </div>
+</div>
 
 
 
@@ -139,14 +57,14 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Homework </p>
+             <p>Your Name </p>
           </div>
   </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">Due: March 3, 2023</p>
+      <p class="date">March 3, 2023</p>
     </div>
   </div>
   
@@ -156,7 +74,6 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Note: This assignment must be submitted in github classroom.</p>
 <section id="data-exploration" class="level2">
 <h2 class="anchored" data-anchor-id="data-exploration">Data Exploration</h2>
 <p>One extremely important use of charts is to explore new datasets. In order to get the most out of a dataset, however, it is important to use a chart that is suited to the type of data: a density plot will not work well for showing categorical data, for instance.</p>
@@ -216,12 +133,11 @@ ul.task-list li input[type="checkbox"] {
 
 </div>
 <p>This chart is ugly because it violates …</p>
-
-
 </section>
 </section>
 
-</main> <!-- /main -->
+</main>
+<!-- /main column -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

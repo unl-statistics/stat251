@@ -6,6 +6,9 @@ project:
     - syllabus.qmd
     - homework/*.qmd
     - slides/*.qmd
+    - exam-midterm/*.qmd
+    - "!exam-midterm/index-key.qmd"
+    - exams/*.qmd
 website:
   title: "Stat 251 - Data Wrangling"
   navbar:

@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Stat 251: Data Wrangling",
     "section": "",
-    "text": "Course Materials\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nMar 3, 2023\n\n\nHomework 5: Graphics and Groundhogs\n\n\n\n\n\n\nFeb 20, 2023\n\n\nHomework 4: Cookies\n\n\n\n\n\n\nFeb 13, 2023\n\n\nHomework 3: Cipher\n\n\n\n\n\n\nFeb 6, 2023\n\n\nHomework 2: Review\n\n\n\n\n\n\nJan 30, 2023\n\n\nHomework 1: Git and Github\n\n\n\n\n\n\nJan 26, 2023\n\n\nVersion Control\n\n\n\n\n\n\nJan 24, 2023\n\n\nStat 251 - Introduction\n\n\n\n\n\n\n\n\nNo matching items\n\n\n\n\nExams\nComing soon!"
+    "text": "Course Materials\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nMar 9, 2023\n\n\nExam 1\n\n\nYour Name\n\n\n\n\nMar 3, 2023\n\n\nHomework 5: Graphics and Groundhogs\n\n\nHomework\n\n\n\n\nFeb 20, 2023\n\n\nHomework 4: Cookies\n\n\nHomework\n\n\n\n\nFeb 13, 2023\n\n\nHomework 3: Cipher\n\n\nHomework\n\n\n\n\nFeb 6, 2023\n\n\nHomework 2: Review\n\n\nHomework\n\n\n\n\nJan 30, 2023\n\n\nHomework 1: Git and Github\n\n\nHomework\n\n\n\n\nJan 26, 2023\n\n\nVersion Control\n\n\n\n\n\n\nJan 24, 2023\n\n\nStat 251 - Introduction\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "homework/01-git-github.html",
@@ -292,5 +292,47 @@
     "title": "Version Control",
     "section": "Homework: Introduction to Github",
     "text": "Homework: Introduction to Github\nLink"
+  },
+  {
+    "objectID": "exam-midterm/index.html",
+    "href": "exam-midterm/index.html",
+    "title": "Exam 1",
+    "section": "",
+    "text": "Your goal on this exam is to demonstrate competency in as many of the objectives of chapters we’ve covered in this class so far as you can."
+  },
+  {
+    "objectID": "exam-midterm/index.html#ground-rules",
+    "href": "exam-midterm/index.html#ground-rules",
+    "title": "Exam 1",
+    "section": "Ground Rules",
+    "text": "Ground Rules\n\nYou may use the textbook and the internet (but the same rules apply - you must be able to explain your answer!)\nYou may NOT confer with other people or AI entities - including posting on StackOverflow, Reddit, etc.\nYou may ask clarifying questions of Dr. Vanderplas by email/zoom or in person\nYou may use R or Python for any of these tasks, but your code must be reproducible - I must be able to run your quarto file on my machine. I have provided R chunks in the correct locations in this file - change them to Python if you wish.\nFor any plot or table you create, be sure to appropriately caption and label it, providing 1-2 sentences to highlight the main purpose/conclusions you can draw from that plot.\nYou should have at least one code chunk for each ## heading below."
+  },
+  {
+    "objectID": "exam-midterm/index.html#read-in-the-data",
+    "href": "exam-midterm/index.html#read-in-the-data",
+    "title": "Exam 1",
+    "section": "Read in the Data",
+    "text": "Read in the Data\nWrite code which will:\n\nDownload the raw pocket measurements.csv data to a file in this repository\nRead the data in, ensuring that columns containing numbers are appropriately formatted. You may consider the fabric column as a character string."
+  },
+  {
+    "objectID": "exam-midterm/index.html#conduct-an-exploratory-data-analysis",
+    "href": "exam-midterm/index.html#conduct-an-exploratory-data-analysis",
+    "title": "Exam 1",
+    "section": "Conduct an Exploratory Data Analysis",
+    "text": "Conduct an Exploratory Data Analysis\nGenerate at least 3 questions about the data set and find answers to those questions using charts, tables, or numerical summaries.\n\nQuestions\n\n\n\n\n\n\n\nQuestion Answers\n\n\n\nYour discussion of this output goes here.\n\n\n\nYour discussion of this output goes here.\n\n\n\nYour discussion of this output goes here"
+  },
+  {
+    "objectID": "exam-midterm/index.html#comparing-sexes-and-styles",
+    "href": "exam-midterm/index.html#comparing-sexes-and-styles",
+    "title": "Exam 1",
+    "section": "Comparing Sexes and Styles",
+    "text": "Comparing Sexes and Styles\nGenerate one or two plots which best showcase the difference in pocket sizes for different sexes and styles of pants. Use The Pudding’s classification for pants styles, treating straight and boot-cut styles as the same and skinny and slim styles as the same.\nYou may annotate the plot with the output from statistical tests if you wish, but it is sufficient to highlight the visual differences. Your chart(s) must have appropriate titles and axis labels, and must be constructed to take into account the principles of good graphics discussed in the textbook.\n\n\n\nYour discussion of this output goes here.\nReplace this paragraph with 1-2 sentences discussing what choices you made to make the plot you generated above perceptually optimal. Which principles of good graphics did you use?"
+  },
+  {
+    "objectID": "exam-midterm/objectives.html",
+    "href": "exam-midterm/objectives.html",
+    "title": "Stat 251 - Data Wrangling",
+    "section": "",
+    "text": "Class objectives covered on this exam (I am omitting objectives from the “review” section, but they are still relevant):\n\nRead in data from common formats into R or Python\nIdentify delimiters, headers, and other essential components of files\nCreate charts designed to communicate specific aspects of the data\nDescribe charts using the grammar of graphics\nCreate layered graphics that highlight multiple aspects of the data\nEvaluate existing charts and develop new versions that improve accessibility and readability\nIdentify required sequence of steps for data cleaning\nDescribe step-by-step data cleaning process in lay terms appropriately\nApply data manipulation verbs to prepare data for analysis\nUnderstand the consequences of data cleaning steps for statistical analysis\nCreate summaries of data appropriate for analysis or display using data manipulation techniques\n\nWhile we didn’t explicitly read the EDA chapter, you have also been introduced to the objectives of EDA:\n\nUnderstand the main goals of exploratory data analysis\nGenerate and answer questions about a new dataset using charts, tables, and numerical summaries"
   }
 ]
