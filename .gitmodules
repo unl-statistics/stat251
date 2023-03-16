@@ -16,3 +16,6 @@
 [submodule "homework-repos/05-graphics"]
 	path = homework-repos/05-graphics
 	url = git@github.com:unl-stat251/graphics-homework.git
+[submodule "homework-repos/06-strings"]
+	path = homework-repos/06-strings
+	url = ./homework-repos/06-strings
