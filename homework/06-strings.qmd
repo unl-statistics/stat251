@@ -1,6 +1,6 @@
 ---
 title: "Homework 6: Strings"
-date: March 24, 2023
+date: March 27, 2023
 execute-dir: ../homework-repos/06-strings/
 engine: knitr
 author: Homework
