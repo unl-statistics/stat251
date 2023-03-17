@@ -22,3 +22,6 @@
 [submodule "exam-midterm"]
 	path = exam-midterm
 	url = git@github.com:unl-stat251/2023-Midterm.git
+[submodule "homework-repos/07-reshape"]
+	path = homework-repos/07-reshape
+	url = git@github.com:unl-stat251/07-reshape.git
