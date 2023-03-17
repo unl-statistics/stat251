@@ -1,0 +1,13 @@
+---
+title: "Homework 7: Reshaping Data"
+date: April 3, 2023
+execute-dir: ../homework-repos/07-reshape/
+engine: knitr
+author: Homework
+categories: HW
+---
+
+Note: This assignment must be submitted in github classroom.
+
+{{< include ../homework-repos/07-reshape/index.qmd >}}
+
