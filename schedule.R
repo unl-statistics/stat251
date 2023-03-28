@@ -20,7 +20,7 @@ not_here_dates <- c(
 
 # You can adjust this as you see fit. Basically: add assignment types (e.g. papers, quizzes).
 # My intro class was fairly simple: just exams.
-exam_dates <- c(ymd(20230309), ymd(20230518))
+exam_dates <- c(ymd(20230310), ymd(20230505), ymd(20230518))
 
 # What are the full dates of the semester? Here, I'll exclude exam week as I like to do.
 # In this case: 6 January to 23 April
@@ -53,7 +53,7 @@ Cal <- tibble(date = seq(ymd(20230101), ymd(20230530), by=1))  %>%
 
 Cal <- Cal %>%
   mutate(category = case_when(
-    exams ~ "Exam",
+    exams ~ "Due Date",
     not_here ~ "UNL holiday",
     semester & wkdy %in% class_wdays & !not_here & !exam_wk ~ "Class Day",
     semester ~ "Semester",
@@ -84,29 +84,32 @@ class_cal <- Cal %>%
                              "Semester"="white",
                              "UNL holiday" = "grey10",
                              "NA" = "white", # I like these whited out...
-                             "Exam"="orange"),
+                             "Due Date"="orange"),
                     #... but also suppress a label for a non-class semester day
-                    breaks=c("Semester", "UNL holiday", "Class Day","Exam"))
+                    breaks=c("Semester", "UNL holiday", "Class Day","Due Date"))
 # class_cal
 
-exam_days <- filter(Cal, category == "Exam") %>%
-  mutate(topic = c("Midterm", "Final"),
-         time = c("In Class", "1-3 pm"))
+exam_days <- filter(Cal, category == "Due Date") %>%
+  mutate(topic = c("Midterm Due", "Project Due", "Scheduled Final"),
+         time = c("6pm", "6pm", "1-3pm"))
 
 class_days <- filter(Cal, category == "Class Day") %>%
   mutate(topic = c(
     "Getting Started",
     "Version Control",
-    "Review: General Programming",
-    "Review: General Programming",
+    "Review: Functions",
+    "Review: Functions",
+    "Review: Data Structures",
+    "Review: Data Structures",
     "Data Input",
     "Data Input",
     "Data Visualization",
     "Data Visualization",
-    "Data Verbs",
-    "Data Verbs",
+    "Good Graphics",
     "Data Cleaning",
     "Data Cleaning",
+    "Exam 1 Questions",
+    "Strings",
     "Strings",
     "Reshaping Data",
     "Reshaping Data",
@@ -114,15 +117,14 @@ class_days <- filter(Cal, category == "Class Day") %>%
     "Joining Data",
     "Dates and Times",
     "Dates and Times",
+    "Project Work",
+    "Project Work",
     "Lists",
     "Lists",
+    "Project Work",
+    "Project Work",
     "Spatial Data",
-    "Spatial Data",
-    "Special Topics",
-    "Special Topics",
-    "Special Topics",
-    "Special Topics",
-    "Special Topics",
-    "Special Topics")) %>%
+    "Spatial Data")) %>%
   bind_rows(exam_days) %>%
   arrange(date)
+
