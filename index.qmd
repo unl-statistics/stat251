@@ -8,6 +8,7 @@ listing:
       - "homework/*.qmd"
       - "slides/*.qmd"
       - "exam-midterm/index.qmd"
+      - "project/*.qmd"
     sort: "date desc"
     type: table
 ---

@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Stat 251: Data Wrangling",
     "section": "",
-    "text": "Course Materials\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nApr 10, 2023\n\n\nHomework 8: Joining Data\n\n\nHomework\n\n\n\n\nApr 3, 2023\n\n\nHomework 7: Reshaping Data\n\n\nHomework\n\n\n\n\nMar 27, 2023\n\n\nHomework 6: Strings\n\n\nHomework\n\n\n\n\nMar 9, 2023\n\n\nExam 1\n\n\nYour Name\n\n\n\n\nMar 3, 2023\n\n\nHomework 5: Graphics and Groundhogs\n\n\nHomework\n\n\n\n\nFeb 20, 2023\n\n\nHomework 4: Cookies\n\n\nHomework\n\n\n\n\nFeb 13, 2023\n\n\nHomework 3: Cipher\n\n\nHomework\n\n\n\n\nFeb 6, 2023\n\n\nHomework 2: Review\n\n\nHomework\n\n\n\n\nJan 30, 2023\n\n\nHomework 1: Git and Github\n\n\nHomework\n\n\n\n\nJan 26, 2023\n\n\nVersion Control\n\n\n\n\n\n\nJan 24, 2023\n\n\nStat 251 - Introduction\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Course Materials\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nMay 4, 2023\n\n\nProject: Screencast\n\n\nYour Name\n\n\n\n\nApr 20, 2023\n\n\nScreencast Pseudocode\n\n\nYour Name\n\n\n\n\nApr 18, 2023\n\n\nProject Dataset and Topics\n\n\nYour Name\n\n\n\n\nApr 10, 2023\n\n\nHomework 8: Joining Data\n\n\nHomework\n\n\n\n\nApr 3, 2023\n\n\nHomework 7: Reshaping Data\n\n\nHomework\n\n\n\n\nMar 27, 2023\n\n\nHomework 6: Strings\n\n\nHomework\n\n\n\n\nMar 9, 2023\n\n\nExam 1\n\n\nYour Name\n\n\n\n\nMar 3, 2023\n\n\nHomework 5: Graphics and Groundhogs\n\n\nHomework\n\n\n\n\nFeb 20, 2023\n\n\nHomework 4: Cookies\n\n\nHomework\n\n\n\n\nFeb 13, 2023\n\n\nHomework 3: Cipher\n\n\nHomework\n\n\n\n\nFeb 6, 2023\n\n\nHomework 2: Review\n\n\nHomework\n\n\n\n\nJan 30, 2023\n\n\nHomework 1: Git and Github\n\n\nHomework\n\n\n\n\nJan 26, 2023\n\n\nVersion Control\n\n\n\n\n\n\nJan 24, 2023\n\n\nStat 251 - Introduction\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "homework/01-git-github.html",
@@ -305,7 +305,7 @@
     "href": "slides/01-Syllabus-and-Introductions.html#outline",
     "title": "Stat 251 - Introduction",
     "section": "Outline",
-    "text": "Outline\nSubject to change based on how much of Stat 151 you are already familiar with…\n\n\n\nTentative schedule of class topics\n\n\nDate\nTime\nTopic\n\n\n\n\nJan 24\n\nGetting Started\n\n\nJan 26\n\nVersion Control\n\n\nJan 31\n\nReview: General Programming\n\n\nFeb 2\n\nReview: General Programming\n\n\nFeb 7\n\nData Input\n\n\nFeb 9\n\nData Input\n\n\nFeb 14\n\nData Visualization\n\n\nFeb 16\n\nData Visualization\n\n\nFeb 21\n\nData Verbs\n\n\nFeb 23\n\nData Verbs"
+    "text": "Outline\nSubject to change based on how much of Stat 151 you are already familiar with…\n\n\n\nTentative schedule of class topics\n\n\nDate\nTime\nTopic\n\n\n\n\nJan 24\n\nGetting Started\n\n\nJan 26\n\nVersion Control\n\n\nJan 31\n\nReview: Functions\n\n\nFeb 2\n\nReview: Functions\n\n\nFeb 7\n\nReview: Data Structures\n\n\nFeb 9\n\nReview: Data Structures\n\n\nFeb 14\n\nData Input\n\n\nFeb 16\n\nData Input\n\n\nFeb 21\n\nData Visualization\n\n\nFeb 23\n\nData Visualization"
   },
   {
     "objectID": "slides/01-Syllabus-and-Introductions.html#grades",
@@ -425,5 +425,19 @@
     "title": "Stat 251 - Data Wrangling",
     "section": "",
     "text": "Class objectives covered on this exam (I am omitting objectives from the “review” section, but they are still relevant):\n\nRead in data from common formats into R or Python\nIdentify delimiters, headers, and other essential components of files\nCreate charts designed to communicate specific aspects of the data\nDescribe charts using the grammar of graphics\nCreate layered graphics that highlight multiple aspects of the data\nEvaluate existing charts and develop new versions that improve accessibility and readability\nIdentify required sequence of steps for data cleaning\nDescribe step-by-step data cleaning process in lay terms appropriately\nApply data manipulation verbs to prepare data for analysis\nUnderstand the consequences of data cleaning steps for statistical analysis\nCreate summaries of data appropriate for analysis or display using data manipulation techniques\n\nWhile we didn’t explicitly read the EDA chapter, you have also been introduced to the objectives of EDA:\n\nUnderstand the main goals of exploratory data analysis\nGenerate and answer questions about a new dataset using charts, tables, and numerical summaries"
+  },
+  {
+    "objectID": "project/Dataset-Topics.html",
+    "href": "project/Dataset-Topics.html",
+    "title": "Project Dataset and Topics",
+    "section": "",
+    "text": "Link to dataset\nThings you plan to investigate using this dataset:\n\nThing 1\nThing 2\nThing 3\n\nStat 251 topics you plan to cover during the analysis:\n\nTopic 1\nTopic 2\nTopic 3\nTopic 4"
+  },
+  {
+    "objectID": "project/index.html",
+    "href": "project/index.html",
+    "title": "Project: Screencast",
+    "section": "",
+    "text": "Project Description\nFor your final project (which will take the place of the final exam), you will be recording a screencast in the style of David Robinson’s TidyTuesday screencasts.\nYou can find time-stamped, catalogued versions of some of David Robinson’s screencasts here.\nRequirements:\n\nYour screencast should be approximately 45 minutes long.\nYour screencast should show your analysis of a TidyTuesday dataset from 2023\nYou should showcase at least 4 different techniques you’ve learned in Stat 251. Some examples include:\n\ndata cleaning (dplyr) verbs\nreshaping data (tidyr)\nworking with dates and times (lubridate)\nworking with strings (stringr)\nwriting functions to modularize your code\nvisualizing your data effectively\n\n\nUnlike David Robinson’s screencasts, you will write a rough pseudocode “script” before you start recording. This will give you a rough outline of how to do the analysis and what things you intend to cover.\nYour goal is to help a future Stat 251 student understand some of the topics covered in this class. So while David Robinson and others who record their screencasts live might not fully explain what he’s doing, you should take the time to explain each technique you decide to use in a way that will help someone else understand.\nThere will be three deliverables for this project:\n\nPlan your dataset and topics\nPseudocode script uploaded to github repository\nScreencast + github repository\n\nScreencast uploaded to YouTube/YuJa\nApproximate time index provided for each of the 4 techniques you’re demonstrating (examples)\nCode uploaded to github repository\n\n\nIn lieu of the final exam, you will peer review two classmates’ screencasts."
   }
 ]

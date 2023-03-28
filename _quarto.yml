@@ -8,6 +8,7 @@ project:
     - homework-repos/06-slides/checkpoints.qmd
     - slides/*.qmd
     - exam-midterm/*.qmd
+    - project/*.qmd
     - "!exam-midterm/index-key.qmd"
     - exams/*.qmd
 website:
