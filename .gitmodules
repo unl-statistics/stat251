@@ -25,3 +25,6 @@
 [submodule "homework-repos/07-reshape"]
 	path = homework-repos/07-reshape
 	url = git@github.com:unl-stat251/07-reshape.git
+[submodule "homework-repos/08-join"]
+	path = homework-repos/08-join
+	url = git@github.com:unl-stat251/08-join.git
