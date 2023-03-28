@@ -28,3 +28,6 @@
 [submodule "homework-repos/08-join"]
 	path = homework-repos/08-join
 	url = git@github.com:unl-stat251/08-join.git
+[submodule "project"]
+	path = project
+	url = git@github.com:unl-stat251/screencast.git
