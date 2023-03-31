@@ -193,7 +193,7 @@
     "href": "homework/06-strings.html#summarizing-poems",
     "title": "String Processing in R and Python",
     "section": "Summarizing Poems",
-    "text": "Summarizing Poems\nFor each poem, create a summary data frame that contains:\n\nAverage number of words per line in the poem\nNumber of lines in the poem\nNumber of characters which are not letters or spaces (punctuation, numbers, and any non-ASCII characters)\nNumber of uppercase letters in the poem\nNumber of lowercase letters in the poem\n\nCreate a plot showing the distribution of the number of words per line across all poems you have in your dataset. Create another plot showing the number of lines in the poem for all poems in your dataset. What does this tell you about the “average” style of the poet in question?\nSee Part 2 Checkpoint for an example of what the output should look like from each poet."
+    "text": "Summarizing Poems\nFor each poem, create a summary data frame that contains:\n\nAverage number of words per line in the poem\nNumber of lines in the poem\nNumber of characters which are not letters or spaces (punctuation, numbers, and any non-ASCII characters)\nNumber of uppercase letters in the poem\nNumber of lowercase letters in the poem\n\nCreate a plot showing the distribution of the number of words per line across all poems you have in your dataset. Create another plot showing the distribution of number of lines per poem for all poems in your dataset. What does this tell you about the “average” style of the poet in question?\nSee Part 2 Checkpoint for an example of what the output should look like from each poet."
   },
   {
     "objectID": "homework/06-strings.html#poetry-analysis",
@@ -214,7 +214,7 @@
     "href": "homework/06-strings.html#summarizing-poems-1",
     "title": "String Processing in R and Python",
     "section": "Summarizing Poems",
-    "text": "Summarizing Poems\nFor each poem, create a summary data frame that contains:\n\nAverage number of words per line in the poem\nNumber of lines in the poem\nNumber of characters which are not letters or spaces (punctuation, numbers, and any non-ASCII characters)\nNumber of uppercase letters in the poem\nNumber of lowercase letters in the poem\n\nCreate a plot showing the distribution of the number of words per line across all poems you have in your dataset. Create another plot showing the number of lines in the poem for all poems in your dataset. What does this tell you about the “average” style of the poet in question?"
+    "text": "Summarizing Poems\nFor each poem, create a summary data frame that contains:\n\nAverage number of words per line in the poem\nNumber of lines in the poem\nNumber of characters which are not letters or spaces (punctuation, numbers, and any non-ASCII characters)\nNumber of uppercase letters in the poem\nNumber of lowercase letters in the poem\n\nCreate a plot showing the distribution of the number of words per line across all poems you have in your dataset. Create another plot showing the distribution of number of lines per poem for all poems in your dataset. What does this tell you about the “average” style of the poet in question?"
   },
   {
     "objectID": "homework/06-strings.html#poetry-analysis-1",
