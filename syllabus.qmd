@@ -11,10 +11,10 @@ instructor: Susan Vanderplas
 semester: Spring 2023
 
 email: "susan.vanderplas@unl.edu"
-web: "srvanderplas.netlify.app"
+web: "srvanderplas.github.io"
 officehours: "\\href{https://calendly.com/drvanderplas/officehours}{Schedule here}"
 office: "Hardin 343D"
-classroom: "Henz 203"
+classroom: "TEAC 250"
 classhours: "TR 11:00-12:15"
 
 fontfamily: mathpazo
@@ -126,24 +126,25 @@ Assignments | Weight
 Reading Quizzes | 10%
 Weekly Homework & Participation | 50% 
 Midterm Exam | 20%
-Final Exam | 20%
+Project | 20%
 
 
 Lower bounds for grade cutoffs are shown in the following table. I will not "round up" grades at the end of the semester beyond strict mathematical rules of rounding.
 
 Letter grade |	X + |  	X |	X - 
--------- | ----- | ----- | -----
+:--------: | -----: | -----: | -----:
 A |	97 |	94 | 	90
 B |	87 |	84 |	80
 C |	77 |	74 |	70
 D |	67 |	64 |	61
-F |	$<$61 | |
+F |	| <61 | 
 
 Interpretation of this table: A grade of 85 will receive a B. A grade of 77 will receive a C+. A grade of 70 will receive a C-. Anything below a 61 will receive an F. 
 
 ### Exams
 
-Two exams will be given during the course of the semester, on dates noted on the Tentative Course Outline on the last page. 
+One midterm exam will be given during the course of the semester, on dates noted on the Tentative Course Outline on the last page. 
+
 Exams will require that you write code to solve problems utilizing the course material. 
 You are expected to take exams at the scheduled times. 
 If this is impossible due to extreme circumstances (illness, death in the family, previously scheduled activities vital to academic program), please notify me and provide appropriate documentation. 
@@ -159,6 +160,13 @@ Homework must be submitted in the file format specified, and should run or compi
 
 All students are expected to attend and fully participate in class activities. 
 Participation will be determined based on a combination of class attendance and activities.
+
+### Project
+
+In lieu of a final exam, there will be a final project in this course.
+
+Details and rubrics describing the final project will be provided after the midterm exam. 
+The project will be completed independently and will allow you to demonstrate that you have met the learning objectives for this course.
 
 ### Late Policy
 
