@@ -31,3 +31,6 @@
 [submodule "project"]
 	path = project
 	url = git@github.com:unl-stat251/screencast.git
+[submodule "homework-repos/09-datetime"]
+	path = homework-repos/09-datetime
+	url = git@github.com:unl-stat251/09-datetime.git
