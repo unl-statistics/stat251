@@ -1,5 +1,6 @@
 ---
 title: "Version Control"
+author: Stat 251
 date: January 26, 2023
 categories: slides
 format: revealjs

@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Stat 251: Data Wrangling",
     "section": "",
-    "text": "Course Materials\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nMay 4, 2023\n\n\nProject: Screencast\n\n\nYour Name\n\n\n\n\nApr 20, 2023\n\n\nScreencast Pseudocode\n\n\nYour Name\n\n\n\n\nApr 18, 2023\n\n\nProject Dataset and Topics\n\n\nYour Name\n\n\n\n\nApr 17, 2023\n\n\nHomework 9: Dates and Times\n\n\nHomework\n\n\n\n\nApr 10, 2023\n\n\nHomework 8: Joining Data\n\n\nHomework\n\n\n\n\nApr 3, 2023\n\n\nHomework 7: Reshaping Data\n\n\nHomework\n\n\n\n\nMar 27, 2023\n\n\nHomework 6: Strings\n\n\nHomework\n\n\n\n\nMar 9, 2023\n\n\nExam 1\n\n\nYour Name\n\n\n\n\nMar 3, 2023\n\n\nHomework 5: Graphics and Groundhogs\n\n\nHomework\n\n\n\n\nFeb 20, 2023\n\n\nHomework 4: Cookies\n\n\nHomework\n\n\n\n\nFeb 13, 2023\n\n\nHomework 3: Cipher\n\n\nHomework\n\n\n\n\nFeb 6, 2023\n\n\nHomework 2: Review\n\n\nHomework\n\n\n\n\nJan 30, 2023\n\n\nHomework 1: Git and Github\n\n\nHomework\n\n\n\n\nJan 26, 2023\n\n\nVersion Control\n\n\n\n\n\n\nJan 24, 2023\n\n\nStat 251 - Introduction\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Course Materials\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nMay 4, 2023\n\n\nProject: Screencast\n\n\nYour Name\n\n\n\n\nApr 20, 2023\n\n\nScreencast Pseudocode\n\n\nYour Name\n\n\n\n\nApr 18, 2023\n\n\nProject Dataset and Topics\n\n\nYour Name\n\n\n\n\nApr 17, 2023\n\n\nHomework 9: Dates and Times\n\n\nHomework\n\n\n\n\nApr 10, 2023\n\n\nHomework 8: Joining Data\n\n\nHomework\n\n\n\n\nApr 6, 2023\n\n\nProjects\n\n\nStat 251\n\n\n\n\nApr 3, 2023\n\n\nHomework 7: Reshaping Data\n\n\nHomework\n\n\n\n\nMar 27, 2023\n\n\nHomework 6: Strings\n\n\nHomework\n\n\n\n\nMar 9, 2023\n\n\nExam 1\n\n\nYour Name\n\n\n\n\nMar 3, 2023\n\n\nHomework 5: Graphics and Groundhogs\n\n\nHomework\n\n\n\n\nFeb 20, 2023\n\n\nHomework 4: Cookies\n\n\nHomework\n\n\n\n\nFeb 13, 2023\n\n\nHomework 3: Cipher\n\n\nHomework\n\n\n\n\nFeb 6, 2023\n\n\nHomework 2: Review\n\n\nHomework\n\n\n\n\nJan 30, 2023\n\n\nHomework 1: Git and Github\n\n\nHomework\n\n\n\n\nJan 26, 2023\n\n\nVersion Control\n\n\nStat 251\n\n\n\n\nJan 24, 2023\n\n\nIntroduction\n\n\nStat 251\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "homework/01-git-github.html",
@@ -282,84 +282,84 @@
   {
     "objectID": "slides/01-Syllabus-and-Introductions.html#introduce-yourself",
     "href": "slides/01-Syllabus-and-Introductions.html#introduce-yourself",
-    "title": "Stat 251 - Introduction",
+    "title": "Introduction",
     "section": "Introduce yourself!",
     "text": "Introduce yourself!\n\nName / Year / Major\nWhat do you hope to learn in this class?\nPrevious computing experience?\nIs a poptart a ravioli? Why or why not?"
   },
   {
     "objectID": "slides/01-Syllabus-and-Introductions.html#my-introduction",
     "href": "slides/01-Syllabus-and-Introductions.html#my-introduction",
-    "title": "Stat 251 - Introduction",
+    "title": "Introduction",
     "section": "My Introduction",
     "text": "My Introduction\n\nSusan Vanderplas\nAssistant Professor in Statistics\nPh.D. from Iowa State in 2015\nUndergrad from Texas A&M in 2009\nR user for 13 years, Python user for 1.5 years\nDabbled in JavaScript, HTML, C/C++\nI have Prosopagnosia - face blindness\nOn Poptarts and Ravioli…"
   },
   {
     "objectID": "slides/01-Syllabus-and-Introductions.html#contact-info",
     "href": "slides/01-Syllabus-and-Introductions.html#contact-info",
-    "title": "Stat 251 - Introduction",
+    "title": "Introduction",
     "section": "Contact Info",
     "text": "Contact Info\n\nEmail: susan.vanderplas@unl.edu\nOffice: 343D Hardin Hall North Wing\nPhone: I don’t ever answer it… use email\nOffice Hours: https://calendly.com/drvanderplas/officehours\nSelf-serve, by Zoom unless you specify otherwise.\nTextbook: https://srvanderplas.github.io/stat-computing-r-python\nCourse site: https://srvanderplas.github.io/unl-stat251/"
   },
   {
     "objectID": "slides/01-Syllabus-and-Introductions.html#course-objectives",
     "href": "slides/01-Syllabus-and-Introductions.html#course-objectives",
-    "title": "Stat 251 - Introduction",
+    "title": "Introduction",
     "section": "Course Objectives",
     "text": "Course Objectives\n\nUse appropriate visualizations to explore and assess data and its applicability to a problem\nWrite code to reshape and reformat moderately complex and/or messy data in a reproducible manner\nCreate graphical displays to explore data, assess statistical models, and present model results\nAdapt pre-existing code for sophisticated visualizations to new data.\nImplement an algorithm or procedure for data modification given in pseudocode\nWrite pseudocode to describe and document modifications made to the dataset\nAccess documentation and source code to determine how software works (or why it doesn’t)\nIdentify problems in a dataset that limit the analyses which are appropriate for the data"
   },
   {
     "objectID": "slides/01-Syllabus-and-Introductions.html#textbook",
     "href": "slides/01-Syllabus-and-Introductions.html#textbook",
-    "title": "Stat 251 - Introduction",
+    "title": "Introduction",
     "section": "Textbook",
     "text": "Textbook\nhttps://srvanderplas.github.io/stat-computing-r-python/"
   },
   {
     "objectID": "slides/01-Syllabus-and-Introductions.html#class-schedule",
     "href": "slides/01-Syllabus-and-Introductions.html#class-schedule",
-    "title": "Stat 251 - Introduction",
+    "title": "Introduction",
     "section": "Class Schedule",
     "text": "Class Schedule"
   },
   {
     "objectID": "slides/01-Syllabus-and-Introductions.html#outline",
     "href": "slides/01-Syllabus-and-Introductions.html#outline",
-    "title": "Stat 251 - Introduction",
+    "title": "Introduction",
     "section": "Outline",
     "text": "Outline\nSubject to change based on how much of Stat 151 you are already familiar with…\n\n\n\nTentative schedule of class topics\n\n\nDate\nTime\nTopic\n\n\n\n\nJan 24\n\nGetting Started\n\n\nJan 26\n\nVersion Control\n\n\nJan 31\n\nReview: Functions\n\n\nFeb 2\n\nReview: Functions\n\n\nFeb 7\n\nReview: Data Structures\n\n\nFeb 9\n\nReview: Data Structures\n\n\nFeb 14\n\nData Input\n\n\nFeb 16\n\nData Input\n\n\nFeb 21\n\nData Visualization\n\n\nFeb 23\n\nData Visualization"
   },
   {
     "objectID": "slides/01-Syllabus-and-Introductions.html#grades",
     "href": "slides/01-Syllabus-and-Introductions.html#grades",
-    "title": "Stat 251 - Introduction",
+    "title": "Introduction",
     "section": "Grades",
     "text": "Grades\n\n\n\nAssignments\nWeight\n\n\n\n\nReading Quizzes\n10%\n\n\nWeekly Homework & Participation\n50%\n\n\nMidterm Exam\n20%\n\n\nFinal Exam\n20%\n\n\n\nApproximately Weekly Homework – started in class"
   },
   {
     "objectID": "slides/01-Syllabus-and-Introductions.html#academic-integrity-submitted-work-policy",
     "href": "slides/01-Syllabus-and-Introductions.html#academic-integrity-submitted-work-policy",
-    "title": "Stat 251 - Introduction",
+    "title": "Introduction",
     "section": "Academic Integrity / Submitted Work Policy",
     "text": "Academic Integrity / Submitted Work Policy\n\nYou may (and should!) work with each other on homework assignments\nWork alone on exams\nYou must be able to explain the logic of anything you submit for a grade\nAt my discretion, I will evaluate the coherence of your explanation instead of your submitted work\nChatGPT, StackOverflow, Google are all valuable tools, but they do not help you think"
   },
   {
     "objectID": "slides/01-Syllabus-and-Introductions.html#programming",
     "href": "slides/01-Syllabus-and-Introductions.html#programming",
-    "title": "Stat 251 - Introduction",
+    "title": "Introduction",
     "section": "Programming",
     "text": "Programming"
   },
   {
     "objectID": "slides/01-Syllabus-and-Introductions.html#install-course-software",
     "href": "slides/01-Syllabus-and-Introductions.html#install-course-software",
-    "title": "Stat 251 - Introduction",
+    "title": "Introduction",
     "section": "Install Course Software",
     "text": "Install Course Software\nTextbook Chapter: https://bit.ly/3JtGCZR"
   },
   {
     "objectID": "slides/01-Syllabus-and-Introductions.html#next-time",
     "href": "slides/01-Syllabus-and-Introductions.html#next-time",
-    "title": "Stat 251 - Introduction",
+    "title": "Introduction",
     "section": "Next Time",
     "text": "Next Time\nWe’ll work on Version Control with Git\nPlease Read before class: - Computer Basics - Scripts and Notebooks - RStudio’s Interface - Version Control with Git"
   },
@@ -404,6 +404,41 @@
     "title": "Version Control",
     "section": "Homework: Introduction to Github",
     "text": "Homework: Introduction to Github\nLink"
+  },
+  {
+    "objectID": "slides/10-projects.html#project-overview",
+    "href": "slides/10-projects.html#project-overview",
+    "title": "Projects",
+    "section": "Project Overview",
+    "text": "Project Overview\n\n\n\nCreate a TidyTuesday style screencast\nExamples: https://www.rscreencasts.com/\nAnalyze a TidyTuesday dataset from 2023 using R or Python\nApproximately 45 minutes long\nShow at least 4 different techniques you learned in Stat 251 this semester\n\n\n\n\nGH link"
+  },
+  {
+    "objectID": "slides/10-projects.html#part-1---planning",
+    "href": "slides/10-projects.html#part-1---planning",
+    "title": "Projects",
+    "section": "Part 1 - Planning",
+    "text": "Part 1 - Planning\nWork: In class, April 18\nDue: April 18, 6pm\nTell me:\n\nWhat dataset you’re using\nWhat you’re going to investigate\nWhat Stat 251 topics you’re going to cover"
+  },
+  {
+    "objectID": "slides/10-projects.html#part-2---script-outline",
+    "href": "slides/10-projects.html#part-2---script-outline",
+    "title": "Projects",
+    "section": "Part 2 - Script Outline",
+    "text": "Part 2 - Script Outline\nWork: In class, April 20\nDue: April 24, 6pm\n\nProvide a (rough) script for your screen cast\n\nExplain how the techniques work\nDiscuss any challenges you had analyzing this data\nInclude the mistakes you made along the way!\n\nInclude pseudocode/actual code for each topic\n\nDoes not have to actually work at this point"
+  },
+  {
+    "objectID": "slides/10-projects.html#part-3---recording",
+    "href": "slides/10-projects.html#part-3---recording",
+    "title": "Projects",
+    "section": "Part 3 - Recording",
+    "text": "Part 3 - Recording\nWork: On your own\nDue: May 4, 6pm\n\nScreencast uploaded to YouTube or YuJa\nApproximate time index provided for each technique you demonstrate (on GitHub)\nFinal code file uploaded to github repository"
+  },
+  {
+    "objectID": "slides/10-projects.html#part-4---peer-review",
+    "href": "slides/10-projects.html#part-4---peer-review",
+    "title": "Projects",
+    "section": "Part 4 - Peer Review",
+    "text": "Part 4 - Peer Review\n\nIn place of the final exam:\n\nWatch 2 screencasts\nPeer evaluations - leave a comment on Canvas\nI will provide a rubric\n\nTake place between May 4 and Finals week"
   },
   {
     "objectID": "exam-midterm/index.html",

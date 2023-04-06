@@ -1,5 +1,6 @@
 ---
-title: "Stat 251 - Introduction"
+title: "Introduction"
+author: Stat 251
 date: January 24, 2023
 categories: slides
 format: 
