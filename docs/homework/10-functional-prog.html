@@ -7,9 +7,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Your Name">
-<meta name="dcterms.date" content="2023-02-20">
 
-<title>Stat 251 - Data Wrangling - Homework 4: Cookies</title>
+<title>Stat 251 - Data Wrangling - Homework 10: Dates and Times</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -108,13 +107,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#reading-in-the-data" id="toc-reading-in-the-data" class="nav-link active" data-scroll-target="#reading-in-the-data">Reading In the Data</a></li>
-  <li><a href="#exploratory-data-analysis" id="toc-exploratory-data-analysis" class="nav-link" data-scroll-target="#exploratory-data-analysis">Exploratory Data Analysis</a>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#solutions" id="toc-solutions" class="nav-link" data-scroll-target="#solutions">Solutions</a>
   <ul class="collapse">
-  <li><a href="#generating-questions" id="toc-generating-questions" class="nav-link" data-scroll-target="#generating-questions">Generating Questions</a></li>
-  <li><a href="#skimming-the-data" id="toc-skimming-the-data" class="nav-link" data-scroll-target="#skimming-the-data">Skimming the Data</a></li>
-  <li><a href="#generating-tables" id="toc-generating-tables" class="nav-link" data-scroll-target="#generating-tables">Generating Tables</a></li>
-  <li><a href="#visualization" id="toc-visualization" class="nav-link" data-scroll-target="#visualization">Visualization</a></li>
+  <li><a href="#r---animal-change-this-to-match" id="toc-r---animal-change-this-to-match" class="nav-link" data-scroll-target="#r---animal-change-this-to-match">R - Animal (change this to match)</a></li>
+  <li><a href="#python---animal-change-this-to-match" id="toc-python---animal-change-this-to-match" class="nav-link" data-scroll-target="#python---animal-change-this-to-match">Python - Animal (change this to match)</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -124,7 +121,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Chocolate Chip Cookies</h1>
+<h1 class="title">Functional Programming: Cats and Dogs</h1>
   <div class="quarto-categories">
     <div class="quarto-category">HW</div>
   </div>
@@ -144,7 +141,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">February 20, 2023</p>
+      <p class="date">Due: May 1, 2023</p>
     </div>
   </div>
   
@@ -155,56 +152,33 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <p>Note: This assignment must be submitted in github classroom.</p>
-<section id="reading-in-the-data" class="level2">
-<h2 class="anchored" data-anchor-id="reading-in-the-data">Reading In the Data</h2>
-<p>First, read in the CSV data of cookie ingredients. Make sure that your end-result data has appropriate types for each column - these should match the types provided in the documentation in the README.md file.</p>
-<div class="cell">
-
-</div>
-<div class="cell">
-
-</div>
-</section>
-<section id="exploratory-data-analysis" class="level2">
-<h2 class="anchored" data-anchor-id="exploratory-data-analysis">Exploratory Data Analysis</h2>
-<p>Exploratory data analysis is the process of getting familiar with your dataset. To get started, <a href="https://www.mrdbourke.com/a-gentle-introduction-to-exploratory-data-analysis/">this blog post</a> provides a nice checklist to get you thinking:</p>
-<blockquote class="blockquote">
-<ol type="1">
-<li>What question(s) are you trying to solve (or prove wrong)?</li>
-<li>What kind of data do you have and how do you treat different types?</li>
-<li>What’s missing from the data and how do you deal with it?</li>
-<li>Where are the outliers and why should you care about them?</li>
-<li>How can you add, change or remove features to get more out of your data?</li>
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p>One of the most common places where we use functional programming is with hierarchically structured data; commonly, we get data like this from the internet in JavaScript Object Notation (JSON) format.</p>
+<p>I’ve used the Petfinder API to get data about 20 dogs and 20 cats that up for adoption, good with kids, and near Lincoln, NE. If you want to see how I did that, you can look at <a href="get_data.R">get_data.R</a> - to run the code, you’ll need to register for your own Petfinder API key.</p>
+<p>Use functional programming techniques (map, apply, <code>purrr</code>, lambda functions, etc.) to accomplish the following tasks.</p>
+<ol start="0" type="1">
+<li><p>Decide whether to use R or Python for dogs or cats. You must use one language for one animal and the other language for the other animal. Fill in the markdown headers below accordingly.</p></li>
+<li><p>Read in the JSON file.</p></li>
+<li><p>Assemble a data frame with the animal’s name, age, sex, breed(s), and organization ID.</p></li>
+<li><p>Add a column to your data frame with a list of picture links<br>
+(Hint: use list columns)</p></li>
+<li><p>(Bonus) Find some way to generate a collage or gif of pictures of the animals up for adoption right now.</p></li>
 </ol>
-</blockquote>
-<section id="generating-questions" class="level3">
-<h3 class="anchored" data-anchor-id="generating-questions">Generating Questions</h3>
-<p>Spend a few minutes generating at least 5 questions you might explore using this database of cookie ingredients.</p>
 </section>
-<section id="skimming-the-data" class="level3">
-<h3 class="anchored" data-anchor-id="skimming-the-data">Skimming the Data</h3>
-<p>One thing we often want to do during EDA is to examine the quality of the data - are there missing values? What quirks might exist in the dataset?</p>
-<p>The <code>skimr</code> package in R, and the similar <code>skimpy</code> package in python (which has a much better name, in my opinion), can help provide visual summaries of the data.</p>
-<p>Install both packages, and read the package documentation (<a href="https://cran.r-project.org/web/packages/skimr/vignettes/skimr.html">R</a>, <a href="https://pypi.org/project/skimpy/">Python</a>).</p>
-<p>Use each package and generate summaries of your data that require the use of at least some non-default options in each package’s <code>skim</code> function.</p>
-<p>Write 1-2 sentences about what you can tell from each summary display you generate. Did you discover anything new about the data?</p>
-<div class="cell">
-
-</div>
+<section id="solutions" class="level1">
+<h1>Solutions</h1>
+<section id="r---animal-change-this-to-match" class="level2">
+<h2 class="anchored" data-anchor-id="r---animal-change-this-to-match">R - Animal (change this to match)</h2>
 <div class="cell">
 
 </div>
 </section>
-<section id="generating-tables" class="level3">
-<h3 class="anchored" data-anchor-id="generating-tables">Generating Tables</h3>
-<p>Another useful technique for exploratory data analysis is to generate summary tables. Using R and Python, generate a table that shows what <strong>proportion</strong> of recipes contain each type of ingredient. Since you probably don’t want to list <em>all</em> ingredients in a table, it is acceptable to print a table with the most common 20 ingredients, and then separately print out a character string (using markdown inline code) that lists all of the ingredients that do not appear in at least 20 recipes.</p>
-<p>You may want to use the <code>dplyr</code> package in R (<code>group\_by</code> or <code>count</code> functions), as well as the <code>groupby</code> and <code>count</code> methods in Pandas. <a href="https://sparkbyexamples.com/pandas/pandas-groupby-count-examples/">Python example</a>, <a href="https://dplyr.tidyverse.org/reference/count.html">R example</a></p>
-<p>(Delete this note, but you can include data values inline in markdown text by using backticks, at least in R. For instance, here is R’s built in value for pi: 3.1415927. Unfortunately, this doesn’t work in python using the knitr markdown engine, but you can print the list out in python anyways using a code chunk.)</p>
-</section>
-<section id="visualization" class="level3">
-<h3 class="anchored" data-anchor-id="visualization">Visualization</h3>
-<p>Using whatever plotting system you are comfortable with in R or python, see if you can create a couple of useful exploratory data visualizations which address one of the questions you wrote above - or another question which you’ve come up with as you’ve worked on this assignment.</p>
-<p>Create at least one plot (it doesn’t have to be pretty) that showcases an interesting facet of the data and write 2-3 sentences about what you can learn from that plot and what directions you might want to investigate from here.</p>
+<section id="python---animal-change-this-to-match" class="level2">
+<h2 class="anchored" data-anchor-id="python---animal-change-this-to-match">Python - Animal (change this to match)</h2>
+<div class="cell">
+
+</div>
 
 
 </section>
