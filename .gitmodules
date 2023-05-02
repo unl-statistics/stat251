@@ -43,3 +43,6 @@
 [submodule "homework-repos/10-functional-prog"]
 	path = homework-repos/10-functional-prog
 	url = git@github.com:unl-stat251/10-functional-prog.git
+[submodule "homework-repos/11-spatial"]
+	path = homework-repos/11-spatial
+	url = git@github.com:unl-stat251/11-spatial.git
