@@ -1,9 +1,9 @@
-[submodule "homework-repos/github-starter-course"]
-	path = homework-repos/github-starter-course
+[submodule "homework-repos/01-github-starter-course"]
+	path = homework-repos/01-github-starter-course
 	url = git@github.com:stat850-unl/github-starter-course.git
-[submodule "homework-repos/review-r-python"]
-	path = homework-repos/review-r-python
-	url = git@github.com:unl-stat251/review-r-python.git
+[submodule "homework-repos/02-review-r-python"]
+	path = homework-repos/02-review-r-python
+	url = git@github.com:unl-stat251/02-review-r-python.git
 [submodule "homework-repos/decodeR-exercises"]
 	path = homework-repos/decodeR-exercises
 	url = git@github.com:srvanderplas/decodeR-exercises.git
