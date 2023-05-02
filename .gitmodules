@@ -34,3 +34,6 @@
 [submodule "homework-repos/09-datetime"]
 	path = homework-repos/09-datetime
 	url = git@github.com:unl-stat251/09-datetime.git
+[submodule "homework-repos/10-functional-prog"]
+	path = homework-repos/10-functional-prog
+	url = git@github.com:unl-stat251/10-functional-prog.git
