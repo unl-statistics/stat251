@@ -1,12 +1,18 @@
 ---
+pdf-engine: lualatex
+from: markdown+emoji
+
+fontsize: 11pt
+geometry: margin=1in
+
 format: 
   pdf:
-    template: "syllabus-template.tex"
+    keep-tex: true
+    template-partials:
+      - partials/title.tex
+      - partials/before-body.tex
+      - partials/graphics.tex
     dev: cairo_pdf
-geometry: margin=1in
-from: markdown+emoji
-pdf-engine: lualatex
-keep-tex: true
 
 title: "Stat 251: Data Wrangling"
 instructor: Susan Vanderplas
@@ -18,9 +24,6 @@ officehours: "\\href{https://calendly.com/drvanderplas/officehours}{Schedule her
 office: "Hardin 343D"
 classroom: "TEAC 250"
 classhours: "TR 11:00-12:15"
-
-fontfamily: mathpazo
-fontsize: 11pt
 ---
 
 
@@ -53,15 +56,11 @@ At the end of this course, students will
 
 1. Use appropriate visualizations to explore and assess data and its applicability to a problem 
 2. Write code to reshape and reformat moderately complex and/or messy data in a reproducible manner
-3. Create graphical displays to explore data, assess statistical models, and present model results 
+3. Create graphical displays to explore data, assess statistical models, and present model results
 4. Adapt pre-existing code for sophisticated visualizations to new data.
-
 5. Implement an algorithm or procedure for data modification given in pseudocode 
-
 6. Write pseudocode to describe and document modifications made to the dataset
-
 7. Access documentation and source code to determine how software works (or why it doesn't)
-
 8. Identify problems in a dataset that limit the analyses which are appropriate for the data
 
 
