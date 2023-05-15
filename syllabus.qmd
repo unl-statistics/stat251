@@ -160,6 +160,8 @@ You will typically have one week to work on each of the assignments.
 The only way to learn statistics is to practice working problems, and homework is therefore an essential part of the course. 
 Homework must be submitted in the file format specified, and should run or compile as submitted.
 
+### Participation
+
 All students are expected to attend and fully participate in class activities. 
 Participation will be determined based on a combination of class attendance and activities.
 
