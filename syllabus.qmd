@@ -2,9 +2,11 @@
 format: 
   pdf:
     template: "syllabus-template.tex"
-    latex_engine: xelatex
     dev: cairo_pdf
 geometry: margin=1in
+from: markdown+emoji
+pdf-engine: lualatex
+keep-tex: true
 
 title: "Stat 251: Data Wrangling"
 instructor: Susan Vanderplas
@@ -163,15 +165,45 @@ Participation will be determined based on a combination of class attendance and 
 
 ### Project
 
-In lieu of a final exam, there will be a final project in this course.
+In lieu of a final exam, there will be a final project in this course. 
+You will create an approximately 45 minute screencast showing yourself analyzing a dataset from [TidyTuesday](https://github.com/rfordatascience/tidytuesday). 
+It may be useful to familiarize yourself with TidyTuesday videos as you work through this course; you can find the full set of videos by searching for [#tidytuesday on YouTube](https://www.youtube.com/hashtag/tidytuesday) or using this [custom playlist](https://youtube.com/playlist?list=PL2joUpumI-Z-VDAgquuNFlGm_hPE2RLGh) containing videos which seem to focus on topics that would be accessible and/or interesting to a Stat 251 student.
 
 Details and rubrics describing the final project will be provided after the midterm exam. 
 The project will be completed independently and will allow you to demonstrate that you have met the learning objectives for this course.
+Your video will be due the week before finals week. 
+During finals week, you will peer review two of your classmates' screen casts; this must be completed before the officially scheduled final exam period is finished.
+
 
 ### Late Policy
 
+In general, assignments should be submitted by the assigned due date. 
 Late assignments will be accepted only under extenuating circumstances, and only if you have contacted me **prior** to the assignment due date and received permission to hand the assignment in late. 
 I reserve the right not to grade any assignments received after the assignment due date.
+
+### Resubmission Policy
+
+Learning how to program is a process that is ongoing. 
+I want you to not be afraid to make mistakes. 
+As a result, I allow you to re-submit homework over the course of the semester in order to make corrections and respond to my initial feedback.
+
+This policy is subject to a few constraints:
+
+- Each assignment should be resubmitted only once (to minimize repeat grading) unless you've obtained prior permission.
+
+- You should resubmit assignments as soon as possible.    
+I reserve the right to cut off assignment resubmissions on a rolling basis (e.g. you have 3 weeks after the original due date) or based on the point in the semester (e.g. all homeworks due before Spring Break must be resubmitted by the week after we return from Spring Break).
+<!-- There are multiple reasons for this policy: -->
+
+<!--   - The material in this class is cumulative, so it is important that you understand a topic before we move on to more advanced material -->
+
+<!--   - Students in the past who have resubmitted all homework just before the end of the semester don't do a good job and don't seem to retain the material.  -->
+
+<!--   - I want to keep my grading load to a reasonable level -->
+
+I spend the extra time grading resubmissions because it reinforces your learning; this policy is not designed to ensure that you can get a better grade in this class. 
+This resubmission policy is subject to adjustments throughout the semester to ensure that this objective is met. 
+I reserve the right to limit or penalize resubmissions if it becomes clear that the current policy does not promote learning of the material and/or support the course objectives.
 
 ## Attendance
 
@@ -197,8 +229,9 @@ You can expect me to:
 
 I expect you to:
 
-- Read the module material and watch the videos before coming to class
+- Read the module material, take the reading quiz, and watch any applicable videos before coming to class
 - Engage with the material and your classmates during class
+- Be on-topic during class. While I encourage you to work on assignments during class, you should be working on homework for this class and not working on assignments from other classes. 
 - Seek help when you do not understand the material
 - Communicate promptly if you anticipate that you will have trouble meeting deadlines or participating in a portion of the course.
 - Do your own troubleshooting before contacting me for help (and mention things you've already tried when you do ask for help!)
@@ -211,11 +244,11 @@ Programming is the process of making a series of silly or stupid mistakes, and t
 The only way to know how to fix these mistakes (and avoid them in the future) is to make them.
 (Sometimes, you have to make the same mistake a few dozen times before you can avoid it in the future). 
 At some point during the class, you will find that you've spent 30 minutes staring at an error caused by a typo, a space, a parenthesis in the wrong place. 
-You may ask for help debugging this weird error, only to have someone immediately point out the problem... it is always easier to see these things in someone else's code. 
-This is part of programming, it is normal, and you shouldn't feel embarrassed or sorry (unless you put no effort into troubleshooting the problem before you asked for help)
+You may ask for help debugging this weird error, only to have someone immediately point out the problem... **it is always easier to see these things in someone else's code**. 
+This is part of programming, it is normal, and you shouldn't feel embarrassed or apologize (unless you put no effort into troubleshooting the problem before you asked for help)
 
-If you manage to produce an error I haven't seen before, then congratulations. 
-You have achieved something special, and that achievement should be celebrated. 
+If you manage to produce an error I haven't seen before, then congratulations! :clap: 
+You have achieved something special, and that achievement should be celebrated. :tada: 
 Each new and bizarre error is an opportunity to learn a bit more about the programming language, the operating system, or the interaction between the two.
 
 ## Assignment Evaluation Criteria
