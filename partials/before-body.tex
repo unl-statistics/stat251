@@ -1,0 +1,18 @@
+\hfil\textbf{\Huge $title$}\hfil\\
+$if(subtitle)$
+\hfil$subtitle$\hfil\\
+$endif$
+
+
+%%% --- table with course info %%%
+\noindent 
+\begin{tabular*}{\textwidth}{ @{\extracolsep{\fill}} lr @{\extracolsep{\fill}}}%
+$if(instructor)$
+Instructor: $for(instructor)$$instructor$$sep$ \and $endfor$
+$endif$ & Time: $if(classhours)$$classhours$$else$TBD$endif$\\
+E-mail: $if(email)$\texttt{$email$}$else$TBD$endif$ & Location: $if(classroom)$$classroom$$else$TBD$endif$\\
+Office: $if(office)$$office$$else$TBD$endif$  & \\
+Student Hours: $if(officehours)$$officehours$$else$TBD$endif$  &  \\
+\hline
+\end{tabular*}
+\vspace{2mm}
