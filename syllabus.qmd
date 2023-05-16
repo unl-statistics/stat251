@@ -1,13 +1,12 @@
 ---
 pdf-engine: lualatex
 from: markdown+emoji
-
 fontsize: 11pt
 geometry: margin=1in
 
 format: 
   pdf:
-    keep-tex: true
+    keep-tex: false
     template-partials:
       - partials/title.tex
       - partials/before-body.tex

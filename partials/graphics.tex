@@ -25,7 +25,27 @@ $endif$
 \renewcommand{\includegraphics}[1]{\Oldincludegraphics[width=\maxwidth]{#1}}
 
 \usepackage[section]{placeins}
-% \newcommand{\emoji}[1]{{\setmainfont{Noto Color Emoji}[Renderer=Harfbuzz]{#1}}}
+
+
 \usepackage{emoji}
-\newfontfamily{\emojifont}{Noto Color Emoji}[Renderer=Harfbuzz]
-\setemojifont{Noto Color Emoji}
+\usepackage{fontspec}
+% \newfontfamily{\emojifont}{Noto Color Emoji}[Renderer=Harfbuzz]
+\setemojifont{Noto Color Emoji}[Renderer=Harfbuzz]
+
+
+\directlua{luaotfload.add_fallback
+   ("emojifallback",
+    {
+      "NotoColorEmoji:mode=harf;"
+    }
+   )}
+
+\setmainfont{notosans-regular}[
+  Extension      = .ttf ,
+  BoldFont       = notosans-bold,
+  ItalicFont     = notosans-italic,
+  BoldItalicFont = notosans-bolditalic,
+  RawFeature={fallback=emojifallback}
+]
+
+

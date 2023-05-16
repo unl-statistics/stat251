@@ -29,6 +29,7 @@ $endif$
 
 \usepackage{lastpage}
 \usepackage{scrlayer-scrpage}
-\ohead{\footnotesize $title$ -- $semester$}
-\cfoot{\small \pagemark/\pageref*{LastPage}}
+
+\ohead{\normalfont\normalcolor\footnotesize $title$ -- $semester$}
+\cfoot{\usekomafont{pagenumber}\small \thepage/\pageref{LastPage}}
 
