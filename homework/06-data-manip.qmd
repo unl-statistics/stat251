@@ -1,0 +1,13 @@
+---
+title: "Homework 6: Data Manipulation"
+date: March 3, 2023
+execute-dir: ../homework-repos/06-data-manip
+engine: knitr
+author: Homework
+categories: [HW, Week06]
+---
+
+Note: This assignment must be submitted in github classroom.
+
+{{< include ../homework-repos/06-data-manip/index.qmd >}}
+
