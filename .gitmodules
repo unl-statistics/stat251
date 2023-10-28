@@ -23,29 +23,32 @@
 	path = homework-repos/05-graphics
 	url = git@github.com:unl-stat251/graphics-homework.git
 [submodule "homework-repos/06-strings"]
-	path = homework-repos/06-strings
+	path = homework-repos/07-strings
 	url = git@github.com:unl-stat251/06-strings.git
 [submodule "exam-midterm"]
 	path = exam-midterm
 	url = git@github.com:unl-stat251/2023-Midterm.git
 [submodule "homework-repos/07-reshape"]
-	path = homework-repos/07-reshape
+	path = homework-repos/08-reshape
 	url = git@github.com:unl-stat251/07-reshape.git
 [submodule "homework-repos/08-join"]
-	path = homework-repos/08-join
+	path = homework-repos/09-join
 	url = git@github.com:unl-stat251/08-join.git
 [submodule "project"]
 	path = project
 	url = git@github.com:unl-stat251/screencast.git
 [submodule "homework-repos/09-datetime"]
-	path = homework-repos/09-datetime
+	path = homework-repos/10-datetime
 	url = git@github.com:unl-stat251/09-datetime.git
 [submodule "homework-repos/10-functional-prog"]
-	path = homework-repos/10-functional-prog
+	path = homework-repos/11-functional-prog
 	url = git@github.com:unl-stat251/10-functional-prog.git
 [submodule "homework-repos/11-spatial"]
-	path = homework-repos/11-spatial
+	path = homework-repos/12-spatial
 	url = git@github.com:unl-stat251/11-spatial.git
 [submodule "mgmt/2024"]
 	path = mgmt/2024
 	url = git@github.com:unl-2024-stat251/class-mgmt.git
+[submodule "homework-repos/06-data-manip"]
+	path = homework-repos/06-data-manip
+	url = git@github.com:stat-assignments/data-manipulation.git

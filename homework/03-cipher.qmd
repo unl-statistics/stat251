@@ -4,7 +4,7 @@ date: February 13, 2023
 execute-dir: ../homework-repos/03-cipher
 engine: knitr
 author: Homework
-categories: HW
+categories: [HW, Week03]
 ---
 
 Note: This assignment must be submitted in github classroom.

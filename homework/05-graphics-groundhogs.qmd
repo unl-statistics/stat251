@@ -4,10 +4,10 @@ date: March 3, 2023
 execute-dir: ../homework-repos/05-graphics
 engine: knitr
 author: Homework
-categories: HW
+categories: [HW, Week05]
 ---
 
 Note: This assignment must be submitted in github classroom.
 
-{{< include ../homework-repos/05-graphics/assignment.qmd >}}
+{{< include ../homework-repos/05-graphics/index.qmd >}}
 

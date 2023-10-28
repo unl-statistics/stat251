@@ -2,7 +2,7 @@
 title: "Homework 2: Review"
 date: February 6, 2023
 author: Homework
-categories: HW
+categories: [HW, Week02]
 ---
 
 Note: This assignment must be submitted in github classroom.
