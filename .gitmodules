@@ -46,9 +46,6 @@
 [submodule "homework-repos/11-spatial"]
 	path = homework-repos/12-spatial
 	url = git@github.com:unl-stat251/11-spatial.git
-[submodule "mgmt/2024"]
-	path = mgmt/2024
-	url = git@github.com:unl-2024-stat251/class-mgmt.git
 [submodule "homework-repos/06-data-manip"]
 	path = homework-repos/06-data-manip
 	url = git@github.com:stat-assignments/data-manipulation.git
