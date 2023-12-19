@@ -57,6 +57,9 @@ schedule:
       - href: homework/10-datetime.qmd
         date: 2024-04-15
         categories: [Week11, HW]
+      - href: slides/10-projects.qmd
+        date: 2024-04-11
+        categories: [slides, Project]
       - href: project/index.qmd
         date: 2024-04-15
         categories: [Week12, Project]

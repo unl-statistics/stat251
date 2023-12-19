@@ -1,87 +1,17 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Stat 251: Data Wrangling",
+    "objectID": "exam-midterm/objectives.html",
+    "href": "exam-midterm/objectives.html",
+    "title": "Objectives tested on Midterm",
     "section": "",
-    "text": "Course Materials\nDates shown are due dates (for homework and exams) and dates on which material was presented (for slides).\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nMar 7, 2024\n\n\nExam 1\n\n\nYour Name\n\n\n\n\nFeb 12, 2024\n\n\nHomework 3: Cipher\n\n\nHomework \n\n\n\n\nFeb 5, 2024\n\n\nHomework 2: Review\n\n\nHomework \n\n\n\n\nJan 29, 2024\n\n\nHomework 1: Git and Github\n\n\nHomework \n\n\n\n\nJan 26, 2024\n\n\nVersion Control\n\n\nStat 251\n\n\n\n\nJan 24, 2024\n\n\nIntroduction\n\n\nStat 251\n\n\n\n\nApr 6, 2023\n\n\nProjects\n\n\nStat 251\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "homework/03-cipher.html",
-    "href": "homework/03-cipher.html",
-    "title": "decodeR: Base R",
-    "section": "",
-    "text": "Note: This assignment must be submitted in github classroom.\nThis assignment is modified from the decodeR exercises by Kelly Bodwin and Allison Theobold.\nIn this assignment, you will be creating and manipulating vectors, lists, and data frames to uncover a top secret message.\nSome advice:"
-  },
-  {
-    "objectID": "homework/03-cipher.html#part-one-setup",
-    "href": "homework/03-cipher.html#part-one-setup",
-    "title": "decodeR: Base R",
-    "section": "Part One: Setup",
-    "text": "Part One: Setup\nEach of the following R chunks will cause an error and/or do the desired task incorrectly. Find the mistake, and correct it to complete the intended action. For each error, write 1-2 sentences to reflect on what the mistake was and how you found it and fixed it.\n\nCreate vectors containing the upper case letters, lower case letters, and some punctuation marks.\n\n\nlower_case &lt;- c(\"a\", \"b\", \"c\", \"d\", \"e\", \"f\", \"g\", \"h\", \"i\", \"j\", \"k\", \"l\", \"m\", \"n\", \"o\", \"p\", \"q\", \"r\", \"s\", \"t\", \"u\", \"v\", \"w\", \"x\", \"y\", \"z\")\n\nupper_case &lt;- c(\"A\", \"B\", \"C\", \"D\", \"E\", \"F\", \"G\", \"H\" \"I\", \"J\", \"K\", \"L\", \"M\", \"N\", \"O\", \"P\", \"Q\", \"R\", \"S\", \"T\", \"U\", \"V\", \"W\", \"X\", \"Y\", \"Z\")\n\npunctuation &lt;- c(\".\", \",\", \"!\", \"?\", \"'\", \"\"\", \"(\", \")\", \" \", \"-\", \";\", \":\")\n\n\nMake one long vector containing all the symbols.\n\n\nmy_symbols &lt;- cbind(lower_case, upper_case, punctuation)\n\n\nTurn the my_symbols vector into a data frame, with the variable name “Symbol”\n\n\nmy_symbols &lt;- dataframe(my_symbols)\nnames(my_symbols) = Symbol\n\n\nFind the total number of symbols we have in our data frame.\n\n\nlen &lt;- length(my_symbols)\n\n\nCreate a new variable in your dataframe that assigns a number to each symbol.\n\n\nmy_symbols%Num &lt;- 1:len"
-  },
-  {
-    "objectID": "homework/03-cipher.html#part-two-decoding-the-secret-message.",
-    "href": "homework/03-cipher.html#part-two-decoding-the-secret-message.",
-    "title": "decodeR: Base R",
-    "section": "Part Two: Decoding the secret message.",
-    "text": "Part Two: Decoding the secret message.\nThis chunk will load up the encoded secret message as a vector:\n\ntop_secret &lt;- read.csv(\"Secret_Code\", header = FALSE)$V1\n\nBy altering this top secret set of numbers, you will be able to create a message. Write your own code to complete the steps below.\n\nAdd 14 to every number.\nMultiply every number by 18, then subtract 257.\nExponentiate every number. (That is, do e^[number].)\nSquare every number.\n\nCheckpoint: Headquarters has informed you that at this stage of decoding, there should be 352 numbers in the secret message that are below 17.\n\nTurn your vector of numbers into a matrix with 5 columns.\nSeparately from your top secret numbers, create a vector of all the even numbers between 1 and 382. Name it “evens”. That is, “evens” should contain 2, 4, 6, 8 …, 382.\nSubtract the “evens” vector from the first column of your secret message matrix.\nSubtract 100 from all numbers in the 18-24th rows of the 3rd column.\nMultiply all numbers in the 4th and 5th column by 2.\nTurn your matrix back into a vector.\n\nCheckpoint: Headquarters has informed you that at this stage of decoding, all numbers in indices 500 and beyond are below 100.\n\nTake the square root of all numbers in indices 38 to 465.\nRound all numbers to the nearest whole number.\nReplace all instances of the number 39 with 20.\n\nCheckpoint: Headquarters has informed you that your final message should have 344 even numbers."
-  },
-  {
-    "objectID": "homework/03-cipher.html#part-3-the-secret-message",
-    "href": "homework/03-cipher.html#part-3-the-secret-message",
-    "title": "decodeR: Base R",
-    "section": "Part 3: The secret message!",
-    "text": "Part 3: The secret message!\nUse your final vector of numbers as indices for my_symbols to discover the final message!\nGoogle the first line of this message, if you do not recognize it, to see what it is.\nWrite 3-4 sentences about what you learned from this investigation. What problems did you encounter, and how did you solve them? Could you do the same tasks in Python? Why or why not?"
-  },
-  {
-    "objectID": "exam-midterm/index.html",
-    "href": "exam-midterm/index.html",
-    "title": "Exam 1",
-    "section": "",
-    "text": "Your goal on this exam is to demonstrate competency in as many of the objectives of chapters we’ve covered in this class so far as you can."
-  },
-  {
-    "objectID": "exam-midterm/index.html#ground-rules",
-    "href": "exam-midterm/index.html#ground-rules",
-    "title": "Exam 1",
-    "section": "Ground Rules",
-    "text": "Ground Rules\n\nYou may use the textbook and the internet (but the same rules apply - you must be able to explain your answer!)\nYou may NOT confer with other people or AI entities - including posting on StackOverflow, Reddit, etc.\nYou may ask clarifying questions of Dr. Vanderplas by email/zoom or in person\nYou may use R or Python for any of these tasks, but your code must be reproducible - I must be able to run your quarto file on my machine. I have provided R chunks in the correct locations in this file - change them to Python if you wish.\nFor any plot or table you create, be sure to appropriately caption and label it, providing 1-2 sentences to highlight the main purpose/conclusions you can draw from that plot.\nYou should have at least one code chunk for each ## heading below."
-  },
-  {
-    "objectID": "exam-midterm/index.html#read-in-the-data",
-    "href": "exam-midterm/index.html#read-in-the-data",
-    "title": "Exam 1",
-    "section": "Read in the Data",
-    "text": "Read in the Data\nWrite code which will:\n\nDownload the raw pocket measurements.csv data to a file in this repository\nRead the data in, ensuring that columns containing numbers are appropriately formatted. You may consider the fabric column as a character string."
-  },
-  {
-    "objectID": "exam-midterm/index.html#conduct-an-exploratory-data-analysis",
-    "href": "exam-midterm/index.html#conduct-an-exploratory-data-analysis",
-    "title": "Exam 1",
-    "section": "Conduct an Exploratory Data Analysis",
-    "text": "Conduct an Exploratory Data Analysis\nGenerate at least 3 questions about the data set and find answers to those questions using charts, tables, or numerical summaries.\n\nQuestions\n\n\n\n\n\n\n\nQuestion Answers\nYour discussion of this output goes here.\nYour discussion of this output goes here.\nYour discussion of this output goes here"
-  },
-  {
-    "objectID": "exam-midterm/index.html#comparing-sexes-and-styles",
-    "href": "exam-midterm/index.html#comparing-sexes-and-styles",
-    "title": "Exam 1",
-    "section": "Comparing Sexes and Styles",
-    "text": "Comparing Sexes and Styles\nGenerate one or two plots which best showcase the difference in pocket sizes for different sexes and styles of pants. Use The Pudding’s classification for pants styles, treating straight and boot-cut styles as the same and skinny and slim styles as the same.\nYou may annotate the plot with the output from statistical tests if you wish, but it is sufficient to highlight the visual differences. Your chart(s) must have appropriate titles and axis labels, and must be constructed to take into account the principles of good graphics discussed in the textbook.\nYour discussion of this output goes here.\nReplace this paragraph with 1-2 sentences discussing what choices you made to make the plot you generated above perceptually optimal. Which principles of good graphics did you use?"
-  },
-  {
-    "objectID": "slides/02-version-control.html",
-    "href": "slides/02-version-control.html",
-    "title": "Version Control",
-    "section": "",
-    "text": "Version control is the answer to this file naming problem.Image Source “Piled Higher and Deeper” by Jorge Cham www.phdcomics.com"
+    "text": "Note: This list omits objectives from the “review” section, but they are still relevant.\n\nRead in data from common formats into R or Python\nIdentify delimiters, headers, and other essential components of files\nCreate charts designed to communicate specific aspects of the data\nDescribe charts using the grammar of graphics\nCreate layered graphics that highlight multiple aspects of the data\nEvaluate existing charts and develop new versions that improve accessibility and readability\nIdentify required sequence of steps for data cleaning\nDescribe step-by-step data cleaning process in lay terms appropriately\nApply data manipulation verbs to prepare data for analysis\nUnderstand the consequences of data cleaning steps for statistical analysis\nCreate summaries of data appropriate for analysis or display using data manipulation techniques\n\nYou have also been introduced to the objectives of Exploratory Data Analysis:\n\nUnderstand the main goals of exploratory data analysis\nGenerate and answer questions about a new data set using charts, tables, and numerical summaries"
   },
   {
     "objectID": "slides/02-version-control.html#version-control",
     "href": "slides/02-version-control.html#version-control",
     "title": "Version Control",
-    "section": "",
-    "text": "Version control is the answer to this file naming problem.Image Source “Piled Higher and Deeper” by Jorge Cham www.phdcomics.com"
+    "section": "Version Control",
+    "text": "Version Control\n\nVersion control is the answer to this file naming problem.Image Source “Piled Higher and Deeper” by Jorge Cham www.phdcomics.com"
   },
   {
     "objectID": "slides/02-version-control.html#introduce-yourself-to-git",
@@ -119,32 +49,32 @@
     "text": "Homework: Introduction to Github\nLink"
   },
   {
-    "objectID": "homework/02-review.html",
-    "href": "homework/02-review.html",
-    "title": "Homework 2: Reviewing R and Python",
+    "objectID": "homework/03-cipher.html",
+    "href": "homework/03-cipher.html",
+    "title": "decodeR: Base R",
     "section": "",
-    "text": "Note: This assignment must be submitted in github classroom.\nA palindrome is a string that is equal to the reverse of that string, such as “Mom”, “Hannah” or “We panic in a pew.”\nTraditionally, a phrase is considered a palindrome once all spaces and punctuation has been removed, and all letters are written in the same case."
+    "text": "Note: This assignment must be submitted in github classroom.\nThis assignment is modified from the decodeR exercises by Kelly Bodwin and Allison Theobold.\nIn this assignment, you will be creating and manipulating vectors, lists, and data frames to uncover a top secret message.\nSome advice:"
   },
   {
-    "objectID": "homework/02-review.html#pseudocode",
-    "href": "homework/02-review.html#pseudocode",
-    "title": "Homework 2: Reviewing R and Python",
-    "section": "Pseudocode",
-    "text": "Pseudocode\nWrite a detailed list of steps to process a string named test to test that it is a palindrome.\nHint: The final items in this list of steps should be defining a variable revtest that is test with the letters reversed, and then comparing test and revtest for equality."
+    "objectID": "homework/03-cipher.html#part-one-setup",
+    "href": "homework/03-cipher.html#part-one-setup",
+    "title": "decodeR: Base R",
+    "section": "Part One: Setup",
+    "text": "Part One: Setup\nEach of the following R chunks will cause an error and/or do the desired task incorrectly. Find the mistake, and correct it to complete the intended action. For each error, write 1-2 sentences to reflect on what the mistake was and how you found it and fixed it.\n\nCreate vectors containing the upper case letters, lower case letters, and some punctuation marks.\n\n\nlower_case &lt;- c(\"a\", \"b\", \"c\", \"d\", \"e\", \"f\", \"g\", \"h\", \"i\", \"j\", \"k\", \"l\", \"m\", \"n\", \"o\", \"p\", \"q\", \"r\", \"s\", \"t\", \"u\", \"v\", \"w\", \"x\", \"y\", \"z\")\n\nupper_case &lt;- c(\"A\", \"B\", \"C\", \"D\", \"E\", \"F\", \"G\", \"H\" \"I\", \"J\", \"K\", \"L\", \"M\", \"N\", \"O\", \"P\", \"Q\", \"R\", \"S\", \"T\", \"U\", \"V\", \"W\", \"X\", \"Y\", \"Z\")\n\npunctuation &lt;- c(\".\", \",\", \"!\", \"?\", \"'\", \"\"\", \"(\", \")\", \" \", \"-\", \";\", \":\")\n\n\nMake one long vector containing all the symbols.\n\n\nmy_symbols &lt;- cbind(lower_case, upper_case, punctuation)\n\n\nTurn the my_symbols vector into a data frame, with the variable name “Symbol”\n\n\nmy_symbols &lt;- dataframe(my_symbols)\nnames(my_symbols) = Symbol\n\n\nFind the total number of symbols we have in our data frame.\n\n\nlen &lt;- length(my_symbols)\n\n\nCreate a new variable in your dataframe that assigns a number to each symbol.\n\n\nmy_symbols%Num &lt;- 1:len"
   },
   {
-    "objectID": "homework/02-review.html#r",
-    "href": "homework/02-review.html#r",
-    "title": "Homework 2: Reviewing R and Python",
-    "section": "R",
-    "text": "R\nTurn your pseudocode into a sequence of statements in R that work with a variable named test. At this point, there is no need to write these steps in a function - we’ll get there.\n\ntest &lt;- \"Hannah\"\n\n# Your steps go here"
+    "objectID": "homework/03-cipher.html#part-two-decoding-the-secret-message.",
+    "href": "homework/03-cipher.html#part-two-decoding-the-secret-message.",
+    "title": "decodeR: Base R",
+    "section": "Part Two: Decoding the secret message.",
+    "text": "Part Two: Decoding the secret message.\nThis chunk will load up the encoded secret message as a vector:\n\ntop_secret &lt;- read.csv(\"Secret_Code\", header = FALSE)$V1\n\nBy altering this top secret set of numbers, you will be able to create a message. Write your own code to complete the steps below.\n\nAdd 14 to every number.\nMultiply every number by 18, then subtract 257.\nExponentiate every number. (That is, do e^[number].)\nSquare every number.\n\nCheckpoint: Headquarters has informed you that at this stage of decoding, there should be 352 numbers in the secret message that are below 17.\n\nTurn your vector of numbers into a matrix with 5 columns.\nSeparately from your top secret numbers, create a vector of all the even numbers between 1 and 382. Name it “evens”. That is, “evens” should contain 2, 4, 6, 8 …, 382.\nSubtract the “evens” vector from the first column of your secret message matrix.\nSubtract 100 from all numbers in the 18-24th rows of the 3rd column.\nMultiply all numbers in the 4th and 5th column by 2.\nTurn your matrix back into a vector.\n\nCheckpoint: Headquarters has informed you that at this stage of decoding, all numbers in indices 500 and beyond are below 100.\n\nTake the square root of all numbers in indices 38 to 465.\nRound all numbers to the nearest whole number.\nReplace all instances of the number 39 with 20.\n\nCheckpoint: Headquarters has informed you that your final message should have 344 even numbers."
   },
   {
-    "objectID": "homework/02-review.html#python",
-    "href": "homework/02-review.html#python",
-    "title": "Homework 2: Reviewing R and Python",
-    "section": "Python",
-    "text": "Python\nTurn your pseudocode into a sequence of statements in python that work with a variable named test. At this point, there is no need to write these steps in a function - we’ll get there.\n\ntest = \"Hannah\"\n\n# Your steps go here"
+    "objectID": "homework/03-cipher.html#part-3-the-secret-message",
+    "href": "homework/03-cipher.html#part-3-the-secret-message",
+    "title": "decodeR: Base R",
+    "section": "Part 3: The secret message!",
+    "text": "Part 3: The secret message!\nUse your final vector of numbers as indices for my_symbols to discover the final message!\nGoogle the first line of this message, if you do not recognize it, to see what it is.\nWrite 3-4 sentences about what you learned from this investigation. What problems did you encounter, and how did you solve them? Could you do the same tasks in Python? Why or why not?"
   },
   {
     "objectID": "homework/01-git-github.html",
@@ -203,25 +133,53 @@
     "text": "Optional extra steps\n\nOpen a pull request and let your teacher know that you’ve finished this course.\n\nCreate your profile README. Let the world know a little bit more about you! What are you interested in learning? What are you working on? What’s your favorite hobby? Learn more about creating your profile README in the document, “Managing Your Profile README”.\nGo to your user dashboard and create a new repository. Experiment with the features within that repository to familiarize yourself with them.\nLet us know what you liked or didn’t like about the content of this course. What would you like to see more of? What would be interesting or helpful to your learning journey?"
   },
   {
-    "objectID": "slides/01-Syllabus-and-Introductions.html",
-    "href": "slides/01-Syllabus-and-Introductions.html",
-    "title": "Introduction",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Stat 251: Data Wrangling",
     "section": "",
-    "text": "Name / Year / Major\nWhat do you hope to learn in this class?\nPrevious computing experience?\nIs a poptart a ravioli? Why or why not?\n\n\n\n\n\nSusan Vanderplas\nAssistant Professor in Statistics\nPh.D. from Iowa State in 2015\nUndergrad from Texas A&M in 2009\nR user for 13 years, Python user for 1.5 years\nDabbled in JavaScript, HTML, C/C++\nI have Prosopagnosia - face blindness\nOn Poptarts and Ravioli…"
+    "text": "Course Materials\nDates shown are due dates (for homework and exams) and dates on which material was presented (for slides).\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nMar 7, 2024\n\n\nExam 1\n\n\nYour Name\n\n\n\n\nMar 5, 2024\n\n\nObjectives tested on Midterm\n\n\nMidterm \n\n\n\n\nFeb 12, 2024\n\n\nHomework 3: Cipher\n\n\nHomework \n\n\n\n\nFeb 5, 2024\n\n\nHomework 2: Review\n\n\nHomework \n\n\n\n\nJan 29, 2024\n\n\nHomework 1: Git and Github\n\n\nHomework \n\n\n\n\nJan 26, 2024\n\n\nVersion Control\n\n\nStat 251\n\n\n\n\nJan 24, 2024\n\n\nIntroduction\n\n\nStat 251\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "homework/02-review.html",
+    "href": "homework/02-review.html",
+    "title": "Homework 2: Reviewing R and Python",
+    "section": "",
+    "text": "Note: This assignment must be submitted in github classroom.\nA palindrome is a string that is equal to the reverse of that string, such as “Mom”, “Hannah” or “We panic in a pew.”\nTraditionally, a phrase is considered a palindrome once all spaces and punctuation has been removed, and all letters are written in the same case."
+  },
+  {
+    "objectID": "homework/02-review.html#pseudocode",
+    "href": "homework/02-review.html#pseudocode",
+    "title": "Homework 2: Reviewing R and Python",
+    "section": "Pseudocode",
+    "text": "Pseudocode\nWrite a detailed list of steps to process a string named test to test that it is a palindrome.\nHint: The final items in this list of steps should be defining a variable revtest that is test with the letters reversed, and then comparing test and revtest for equality."
+  },
+  {
+    "objectID": "homework/02-review.html#r",
+    "href": "homework/02-review.html#r",
+    "title": "Homework 2: Reviewing R and Python",
+    "section": "R",
+    "text": "R\nTurn your pseudocode into a sequence of statements in R that work with a variable named test. At this point, there is no need to write these steps in a function - we’ll get there.\n\ntest &lt;- \"Hannah\"\n\n# Your steps go here"
+  },
+  {
+    "objectID": "homework/02-review.html#python",
+    "href": "homework/02-review.html#python",
+    "title": "Homework 2: Reviewing R and Python",
+    "section": "Python",
+    "text": "Python\nTurn your pseudocode into a sequence of statements in python that work with a variable named test. At this point, there is no need to write these steps in a function - we’ll get there.\n\ntest = \"Hannah\"\n\n# Your steps go here"
   },
   {
     "objectID": "slides/01-Syllabus-and-Introductions.html#introduce-yourself",
     "href": "slides/01-Syllabus-and-Introductions.html#introduce-yourself",
     "title": "Introduction",
-    "section": "",
-    "text": "Name / Year / Major\nWhat do you hope to learn in this class?\nPrevious computing experience?\nIs a poptart a ravioli? Why or why not?"
+    "section": "Introduce yourself!",
+    "text": "Introduce yourself!\n\nName / Year / Major\nWhat do you hope to learn in this class?\nPrevious computing experience?\nIs a poptart a ravioli? Why or why not?"
   },
   {
     "objectID": "slides/01-Syllabus-and-Introductions.html#my-introduction",
     "href": "slides/01-Syllabus-and-Introductions.html#my-introduction",
     "title": "Introduction",
-    "section": "",
-    "text": "Susan Vanderplas\nAssistant Professor in Statistics\nPh.D. from Iowa State in 2015\nUndergrad from Texas A&M in 2009\nR user for 13 years, Python user for 1.5 years\nDabbled in JavaScript, HTML, C/C++\nI have Prosopagnosia - face blindness\nOn Poptarts and Ravioli…"
+    "section": "My Introduction",
+    "text": "My Introduction\n\nSusan Vanderplas\nAssistant Professor in Statistics\nPh.D. from Iowa State in 2015\nUndergrad from Texas A&M in 2009\nR user for 13 years, Python user for 1.5 years\nDabbled in JavaScript, HTML, C/C++\nI have Prosopagnosia - face blindness\nOn Poptarts and Ravioli…"
   },
   {
     "objectID": "slides/01-Syllabus-and-Introductions.html#contact-info",
@@ -294,52 +252,38 @@
     "text": "Next Time\nWe’ll work on Version Control with Git\nPlease Read before class: - Computer Basics - Scripts and Notebooks - RStudio’s Interface - Version Control with Git"
   },
   {
-    "objectID": "slides/10-projects.html",
-    "href": "slides/10-projects.html",
-    "title": "Projects",
+    "objectID": "exam-midterm/index.html",
+    "href": "exam-midterm/index.html",
+    "title": "Exam 1",
     "section": "",
-    "text": "Create a TidyTuesday style screencast\nExamples: https://www.rscreencasts.com/\nAnalyze a TidyTuesday dataset from 2023 using R or Python\nApproximately 45 minutes long\nShow at least 4 different techniques you learned in Stat 251 this semester\n\n\n\n\nGH link"
+    "text": "Your goal on this exam is to demonstrate competency in as many of the objectives of chapters we’ve covered in this class so far as you can."
   },
   {
-    "objectID": "slides/10-projects.html#project-overview",
-    "href": "slides/10-projects.html#project-overview",
-    "title": "Projects",
-    "section": "",
-    "text": "Create a TidyTuesday style screencast\nExamples: https://www.rscreencasts.com/\nAnalyze a TidyTuesday dataset from 2023 using R or Python\nApproximately 45 minutes long\nShow at least 4 different techniques you learned in Stat 251 this semester\n\n\n\n\nGH link"
+    "objectID": "exam-midterm/index.html#ground-rules",
+    "href": "exam-midterm/index.html#ground-rules",
+    "title": "Exam 1",
+    "section": "Ground Rules",
+    "text": "Ground Rules\n\nYou may use the textbook and the internet (but the same rules apply - you must be able to explain your answer!)\nYou may NOT confer with other people or AI entities - including posting on StackOverflow, Reddit, etc.\nYou may ask clarifying questions of Dr. Vanderplas by email/zoom or in person\nYou may use R or Python for any of these tasks, but your code must be reproducible - I must be able to run your quarto file on my machine. I have provided R chunks in the correct locations in this file - change them to Python if you wish.\nFor any plot or table you create, be sure to appropriately caption and label it, providing 1-2 sentences to highlight the main purpose/conclusions you can draw from that plot.\nYou should have at least one code chunk for each ## heading below."
   },
   {
-    "objectID": "slides/10-projects.html#part-1---planning",
-    "href": "slides/10-projects.html#part-1---planning",
-    "title": "Projects",
-    "section": "Part 1 - Planning",
-    "text": "Part 1 - Planning\nWork: In class, April 18\nDue: April 18, 6pm\nTell me:\n\nWhat dataset you’re using\nWhat you’re going to investigate\nWhat Stat 251 topics you’re going to cover"
+    "objectID": "exam-midterm/index.html#read-in-the-data",
+    "href": "exam-midterm/index.html#read-in-the-data",
+    "title": "Exam 1",
+    "section": "Read in the Data",
+    "text": "Read in the Data\nWrite code which will:\n\nDownload the raw pocket measurements.csv data to a file in this repository\nRead the data in, ensuring that columns containing numbers are appropriately formatted. You may consider the fabric column as a character string."
   },
   {
-    "objectID": "slides/10-projects.html#part-2---script-outline",
-    "href": "slides/10-projects.html#part-2---script-outline",
-    "title": "Projects",
-    "section": "Part 2 - Script Outline",
-    "text": "Part 2 - Script Outline\nWork: In class, April 20\nDue: April 24, 6pm\n\nProvide a (rough) script for your screen cast\n\nExplain how the techniques work\nDiscuss any challenges you had analyzing this data\nInclude the mistakes you made along the way!\n\nInclude pseudocode/actual code for each topic\n\nDoes not have to actually work at this point"
+    "objectID": "exam-midterm/index.html#conduct-an-exploratory-data-analysis",
+    "href": "exam-midterm/index.html#conduct-an-exploratory-data-analysis",
+    "title": "Exam 1",
+    "section": "Conduct an Exploratory Data Analysis",
+    "text": "Conduct an Exploratory Data Analysis\nGenerate at least 3 questions about the data set and find answers to those questions using charts, tables, or numerical summaries.\n\nQuestions\n\n\n\n\n\n\n\nQuestion Answers\nYour discussion of this output goes here.\nYour discussion of this output goes here.\nYour discussion of this output goes here"
   },
   {
-    "objectID": "slides/10-projects.html#part-3---recording",
-    "href": "slides/10-projects.html#part-3---recording",
-    "title": "Projects",
-    "section": "Part 3 - Recording",
-    "text": "Part 3 - Recording\nWork: On your own\nDue: May 4, 6pm\n\nScreencast uploaded to YouTube or YuJa\nApproximate time index provided for each technique you demonstrate (on GitHub)\nFinal code file uploaded to github repository"
-  },
-  {
-    "objectID": "slides/10-projects.html#part-4---peer-review",
-    "href": "slides/10-projects.html#part-4---peer-review",
-    "title": "Projects",
-    "section": "Part 4 - Peer Review",
-    "text": "Part 4 - Peer Review\n\nIn place of the final exam:\n\nWatch 2 screencasts\nPeer evaluations - leave a comment on Canvas\nI will provide a rubric\n\nTake place between May 4 and Finals week"
-  },
-  {
-    "objectID": "exam-midterm/objectives.html",
-    "href": "exam-midterm/objectives.html",
-    "title": "Objectives tested on Midterm",
-    "section": "",
-    "text": "Note: This list omits objectives from the “review” section, but they are still relevant.\n\nRead in data from common formats into R or Python\nIdentify delimiters, headers, and other essential components of files\nCreate charts designed to communicate specific aspects of the data\nDescribe charts using the grammar of graphics\nCreate layered graphics that highlight multiple aspects of the data\nEvaluate existing charts and develop new versions that improve accessibility and readability\nIdentify required sequence of steps for data cleaning\nDescribe step-by-step data cleaning process in lay terms appropriately\nApply data manipulation verbs to prepare data for analysis\nUnderstand the consequences of data cleaning steps for statistical analysis\nCreate summaries of data appropriate for analysis or display using data manipulation techniques\n\nYou have also been introduced to the objectives of Exploratory Data Analysis:\n\nUnderstand the main goals of exploratory data analysis\nGenerate and answer questions about a new data set using charts, tables, and numerical summaries"
+    "objectID": "exam-midterm/index.html#comparing-sexes-and-styles",
+    "href": "exam-midterm/index.html#comparing-sexes-and-styles",
+    "title": "Exam 1",
+    "section": "Comparing Sexes and Styles",
+    "text": "Comparing Sexes and Styles\nGenerate one or two plots which best showcase the difference in pocket sizes for different sexes and styles of pants. Use The Pudding’s classification for pants styles, treating straight and boot-cut styles as the same and skinny and slim styles as the same.\nYou may annotate the plot with the output from statistical tests if you wish, but it is sufficient to highlight the visual differences. Your chart(s) must have appropriate titles and axis labels, and must be constructed to take into account the principles of good graphics discussed in the textbook.\nYour discussion of this output goes here.\nReplace this paragraph with 1-2 sentences discussing what choices you made to make the plot you generated above perceptually optimal. Which principles of good graphics did you use?"
   }
 ]

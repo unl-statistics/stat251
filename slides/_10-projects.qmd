@@ -1,8 +1,10 @@
 ---
-title: "Projects"
+title: Projects
 author: Stat 251
-date: April 6, 2023
-categories: slides
+date: '2024-04-11'
+categories:
+- slides
+- Project
 format: revealjs
 engine: knitr
 ---
