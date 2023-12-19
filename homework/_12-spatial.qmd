@@ -1,0 +1,14 @@
+---
+title: 'Homework 12: Spatial'
+date: '2024-05-06'
+execute-dir: ../homework-repos/12-spatial/
+engine: knitr
+author: Homework
+categories:
+- Week14
+- HW
+---
+
+Note: This assignment must be submitted in github classroom.
+
+{{< include ../homework-repos/12-spatial/index.qmd >}}

@@ -1,10 +1,19 @@
 ---
-title: "Version Control"
+title: Version Control
 author: Stat 251
-date: January 26, 2023
-categories: slides
+date: '2024-01-26'
+categories:
+- Week01
+- slides
 format: revealjs
 engine: knitr
+'...':
+  categories:
+  - Week01
+  - slides
+  date: '2024-01-26'
+  pub-date: '2023-01-01'
+pub-date: '2023-01-01'
 ---
 
 ## Version Control

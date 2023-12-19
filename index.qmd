@@ -3,7 +3,7 @@ title: "Stat 251: Data Wrangling"
 format: html
 listing:
   - id: hwlst
-    categories: true
+    categories: cloud
     contents: 
       - "homework/*.qmd"
       - "slides/*.qmd"

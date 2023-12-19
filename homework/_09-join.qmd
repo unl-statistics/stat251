@@ -1,0 +1,15 @@
+---
+title: 'Homework 9: Joining Data'
+date: '2024-04-08'
+execute-dir: ../homework-repos/09-join/
+engine: knitr
+author: Homework
+categories:
+- Week10
+- HW
+---
+
+Note: This assignment must be submitted in github classroom.
+
+{{< include ../homework-repos/09-join/index.qmd >}}
+

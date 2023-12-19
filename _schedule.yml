@@ -1,0 +1,93 @@
+# From https://github.com/stat20/stat20/blob/main/_course-settings.yml
+
+schedule:
+  - unit: "Introduction"
+    materials:
+      - href: slides/01-Syllabus-and-Introductions.qmd
+        categories: [Week01, slides]
+        date: 2024-01-24
+        pub-date: 2023-01-01
+      - href: slides/02-version-control.qmd
+        categories: [Week01, slides]
+        date: 2024-01-26
+        pub-date: 2023-01-01
+      - href: homework/01-git-github.qmd
+        categories: [Week01, HW]
+        date: 2024-01-29
+        pub-date: 2023-01-01
+      - href: homework/02-review.qmd
+        categories: [Week02, HW]
+        date: 2024-02-05
+        pub-date: 2023-01-01
+      - href: homework/03-cipher.qmd
+        categories: [Week03, HW]
+        date: 2024-02-12
+        pub-date: 2023-01-01
+  - unit: "Accessing and Exploring Data"
+    materials:
+      - href: homework/04-cookies.qmd
+        categories: [Week04, HW]
+        date: 2024-02-19
+      - href: homework/05-graphics-groundhogs.qmd
+        categories: [Week05, HW]
+        date: 2024-02-26
+  - unit: "Cleaning Data"
+    materials:
+      - href: homework/06-data-manip.qmd
+        categories: [Week06, HW]
+        date: 2024-03-04
+      - href: exam-midterm/objectives.qmd
+        date: 2024-03-05
+        pub-date: 2023-02-27
+      - href: exam-midterm/index.qmd
+        date: 2024-03-07
+        pub-date: 2023-03-05
+        categories: [Week07, Exam]
+      - href: homework/07-strings.qmd
+        categories: [Week08, HW]
+        date: 2024-03-25
+      - href: homework/08-reshape.qmd
+        categories: [Week09, HW]
+        date: 2024-04-01
+      - href: homework/09-join.qmd
+        categories: [Week10, HW]
+        date: 2024-04-08
+  - unit: "Project and Special Data Types"
+    materials:
+      - href: homework/10-datetime.qmd
+        date: 2024-04-15
+        categories: [Week11, HW]
+      - href: project/index.qmd
+        date: 2024-04-15
+        categories: [Week12, Project]
+      - href: project/Dataset-Topics.qmd
+        date: 2024-04-16
+        categories: [Week12, Project]
+      - href: project/pseudocode.qmd
+        date: 2024-04-22
+        categories: [Week12, Project]
+      - href: project/screencast-checklist.qmd
+        date: 2024-05-02
+        categories: [Week14, Project]
+      - href: homework/11-functional-prog.qmd
+        date: 2024-04-29
+        categories: [Week13, HW]
+      - href: homework/12-spatial.qmd
+        date: 2024-05-06
+        categories: [Week14, HW]
+      - href: homework/15-project-peer-review.qmd
+        date: 2024-05-08
+        categories: [Week15, Project]
+
+
+auto-publish:
+  timezone: "America/Chicago"
+  publish-week-before: 2
+  live-as-of: "Sys.time()" # Either Sys.time() or a date parseable by lubridate::mdy()
+
+instructors:
+  - name: Susan Vanderplas
+    email: "susan.vanderplas@unl.edu"
+    quartopub-name: drvanderplas
+
+semester: "Spring, 2024"

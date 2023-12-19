@@ -1,8 +1,10 @@
 ---
-title: "Homework 2: Review"
-date: February 6, 2023
+title: 'Homework 2: Review'
+date: '2024-02-05'
 author: Homework
-categories: [HW, Week02]
+categories:
+- Week02
+- HW
 ---
 
 Note: This assignment must be submitted in github classroom.

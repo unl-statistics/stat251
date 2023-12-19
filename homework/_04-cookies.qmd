@@ -1,0 +1,15 @@
+---
+title: 'Homework 4: Cookies'
+date: '2024-02-19'
+execute-dir: ../homework-repos/04-reading-data-cookies
+engine: knitr
+author: Homework
+categories:
+- Week04
+- HW
+---
+
+Note: This assignment must be submitted in github classroom.
+
+{{< include ../homework-repos/04-reading-data-cookies/index.qmd >}}
+

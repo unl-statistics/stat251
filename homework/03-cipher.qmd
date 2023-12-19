@@ -1,20 +1,27 @@
 ---
-title: "Homework 3: Cipher"
-date: February 13, 2023
+title: 'Homework 3: Cipher'
+date: '2024-02-12'
 execute-dir: ../homework-repos/03-cipher
 engine: knitr
 author: Homework
-categories: [HW, Week03]
+execute:
+  error: true
+  eval: false
+categories:
+- Week03
+- HW
 ---
 
 Note: This assignment must be submitted in github classroom.
 
 ```{bash}
+#| include: false
 cp ../homework-repos/03-cipher/Secret_Code .
 ```
 
-{{< include ../homework-repos/03-cipher/puzzle.qmd >}}
+{{< include ../homework-repos/03-cipher/index.qmd >}}
 
 ```{bash}
+#| include: false
 rm ./Secret_Code
 ```

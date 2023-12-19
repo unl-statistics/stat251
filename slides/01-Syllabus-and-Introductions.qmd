@@ -1,11 +1,20 @@
 ---
-title: "Introduction"
+title: Introduction
 author: Stat 251
-date: January 24, 2023
-categories: slides
-format: 
+categories:
+- Week01
+- slides
+format:
   revealjs:
     navigation-mode: vertical
+'...':
+  categories:
+  - Week01
+  - slides
+  date: '2024-01-24'
+  pub-date: '2023-01-01'
+date: '2024-01-24'
+pub-date: '2023-01-01'
 ---
 
 # Introductions

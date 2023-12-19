@@ -1,8 +1,10 @@
 ---
-title: "Homework 1: Git and Github"
-date: January 30, 2023
+title: 'Homework 1: Git and Github'
 author: Homework
-categories: [HW, Week01]
+date: '2024-01-29'
+categories:
+- Week01
+- HW
 ---
 
 Note: This assignment must be submitted in github classroom.

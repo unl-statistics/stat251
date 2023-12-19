@@ -1,0 +1,15 @@
+---
+title: 'Homework 7: Strings'
+date: '2024-03-25'
+execute-dir: ../homework-repos/07-strings/
+engine: knitr
+author: Homework
+categories:
+- Week08
+- HW
+---
+
+Note: This assignment must be submitted in github classroom.
+
+{{< include ../homework-repos/07-strings/index.qmd >}}
+

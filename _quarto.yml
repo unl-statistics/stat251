@@ -1,16 +1,22 @@
 project:
   type: website
   output-dir: docs
+  pre-render:
+    - scripts/update-dates.R
+    - scripts/ignore-future-docs.R
   render:
     - index.qmd
     - syllabus.qmd
     - homework/*.qmd
-    - homework-repos/06-slides/checkpoints.qmd
+    - project/*.qmd
     - slides/*.qmd
     - exam-midterm/*.qmd
-    - project/*.qmd
     - "!exam-midterm/index-key.qmd"
-    - exams/*.qmd
+
+execute:
+  cache: true
+  freeze: true  # never re-render during project render
+
 website:
   title: "Stat 251 - Data Wrangling"
   navbar:

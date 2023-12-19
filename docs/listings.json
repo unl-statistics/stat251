@@ -2,23 +2,13 @@
   {
     "listing": "/index.html",
     "items": [
-      "/homework/10-functional-prog.html",
-      "/project/index.html",
-      "/project/pseudocode.html",
-      "/project/Dataset-Topics.html",
-      "/homework/09-datetime.html",
-      "/homework/08-join.html",
-      "/slides/10-projects.html",
-      "/homework/07-reshape.html",
-      "/homework/06-strings.html",
       "/exam-midterm/index.html",
-      "/homework/05-graphics-groundhogs.html",
-      "/homework/04-cookies.html",
       "/homework/03-cipher.html",
       "/homework/02-review.html",
       "/homework/01-git-github.html",
       "/slides/02-version-control.html",
-      "/slides/01-Syllabus-and-Introductions.html"
+      "/slides/01-Syllabus-and-Introductions.html",
+      "/slides/10-projects.html"
     ]
   }
 ]

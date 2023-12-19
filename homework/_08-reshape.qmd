@@ -1,0 +1,15 @@
+---
+title: 'Homework 8: Reshaping Data'
+date: '2024-04-01'
+execute-dir: ../homework-repos/08-reshape/
+engine: knitr
+author: Homework
+categories:
+- Week09
+- HW
+---
+
+Note: This assignment must be submitted in github classroom.
+
+{{< include ../homework-repos/08-reshape/index.qmd >}}
+
