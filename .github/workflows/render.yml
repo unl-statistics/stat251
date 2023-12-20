@@ -52,15 +52,26 @@ jobs:
       #     target: connect
       #     CONNECT_SERVER: enter-the-server-url-here
       #     CONNECT_API_KEY: ${{ secrets.CONNECT_API_KEY }}
-      - name: Install dependencies
-        run: |
-          install.packages(c("remotes", "tidyverse", "yaml", "jsonlite", "devtools"))
-        shell: Rscript {0}
+      # - name: Install R dependencies
+      #   run: |
+      #     install.packages(c("ggplot2", "yaml", "jsonlite", "devtools",
+      #                        "rnaturalearth", "rnaturalearthdata", "sf",
+      #                        "stringr", "lubridate", "dplyr", "tidyr", "purrr",
+      #                        "ggthemes", "readr", "skimr")
+      #   shell: Rscript {0}
+      # - name: Install Python dependencies
+      #   run: |
+      #     pip install pandas datetime skimpy numpy nbformat
 
-      # NOTE: If Publishing to GitHub Pages, set the permissions correctly (see top of this yaml)
-      - name: Publish to GitHub Pages (and render)
-        uses: quarto-dev/quarto-actions/publish@v2
-        with:
-          target: gh-pages
+      # NOTE: If Publishing to GitHub Pages, set the permissions correctly
+      #       (see top of this yaml)
+      - name: Render Quarto Project
+        uses: quarto-dev/quarto-actions/render@v2
+
+      - name: Publish to GitHub Pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # this secret is always available for github actions
+        run: |
+          git config --global user.email "svanderplas2@unl.edu"
+          git config --global user.name "Auto Build 251 Site"
+          quarto publish $TARGET docs --no-render --no-browser
