@@ -1,0 +1,15 @@
+{
+  "hash": "8f0debe7ae206dcf1ed611a7fea4ea08",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: 'Homework 12: Spatial'\ndate: '2024-05-06'\nexecute-dir: ../homework-repos/12-spatial/\nengine: knitr\nauthor: Homework\ncategories:\n- Week14\n- HW\n---\n\n\nNote: This assignment must be submitted in github classroom.\n\n---\ntitle: \"Programming with GIS Data\"\nauthor: \"Your Name\"\ndate: \"Due: May 12, 2023\"\noutput: html_document\nnumber-sections: true\nnumber-depth: 2\n---\n\n\n# Data Description\n\nIn this assignment, you will pick one dataset from the following options:\n\n## Drug Distribution\n\nSkim the PDFs included in the data folder before you start.\n\nBuhaug, Halvard & Päivi Lujala 2005. Accounting for Scale: Measuring Geography in Quantitative Studies of Civil War. Political Geography 24: 399-418.\n\nData downloaded from http://www.paivilujala.com/drugdata.html\n\n\n## Lord of the Rings - Middle Earth\n\nhttps://scholarworks.wm.edu/asoer/3/\n\nVector Shapefiles contained in the data/Middle Earth folder.\n\n\n## Natural Earth Data\n\nDownload data from https://www.naturalearthdata.com/downloads/10m-physical-vectors/\n\nUse at least 3 different data sets to create a map showing features that you are interested in.\n\n\n\n# Assignment\n\nCreate a map that incorporates interesting features of the dataset you've chosen. You may add data from other sources if you would like.\n\nWrite 3-5 sentences explaining what you find interesting about your data.\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
