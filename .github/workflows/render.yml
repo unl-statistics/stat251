@@ -54,7 +54,7 @@ jobs:
       #     CONNECT_API_KEY: ${{ secrets.CONNECT_API_KEY }}
       - name: Install R dependencies
         run: |
-          install.packages(c("ggplot2", "yaml", "jsonlite", "devtools", "rnaturalearth", "rnaturalearthdata", "sf", "stringr", "lubridate", "dplyr", "tidyr", "purrr", "ggthemes", "readr", "skimr")
+          install.packages(c("ggplot2", "yaml", "jsonlite", "devtools", "rnaturalearth", "rnaturalearthdata", "sf", "stringr", "lubridate", "dplyr", "tidyr", "purrr", "ggthemes", "readr", "skimr"))
         shell: Rscript {0}
       - name: Install Python dependencies
         run: |
