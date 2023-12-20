@@ -59,11 +59,11 @@ jobs:
           sudo add-apt-repository ppa:c2d4u.team/c2d4u4.0+
           sudo apt update
           sudo apt install libudunits2-dev libcurl4-openssl-dev libgdal-dev gdal-bin libproj-dev
-          sudo apt install r-cran-sf r-cran-ggplot2 r-cran-devtools r-cran-terra r-cran-stringr r-cran-lubridate r-cran-dplyr r-cran-tidyr r-cran-purrr r-cran-readr
+          sudo apt install r-cran-skimr r-cran-sf r-cran-rnaturalearthdata r-cran-ggplot2 r-cran-ggthemes r-cran-devtools r-cran-jsonlite r-cran-yaml r-cran-terra r-cran-stringr r-cran-lubridate r-cran-dplyr r-cran-tidyr r-cran-purrr r-cran-readr
 
       - name: Install R dependencies
         run: |
-          install.packages(c("yaml", "jsonlite", "rnaturalearth", "rnaturalearthdata", "ggthemes", "skimr"))
+          install.packages(c("rnaturalearth"))
         shell: Rscript {0}
 
       - name: Install Python dependencies
