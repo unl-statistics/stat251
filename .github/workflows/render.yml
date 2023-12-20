@@ -52,10 +52,20 @@ jobs:
       #     target: connect
       #     CONNECT_SERVER: enter-the-server-url-here
       #     CONNECT_API_KEY: ${{ secrets.CONNECT_API_KEY }}
+
+      - name: Install ubuntu dependencies
+        run: |
+          sudo add-apt-repository ppa:ubuntugis/ppa
+          sudo add-apt-repository ppa:c2d4u.team/c2d4u4.0+
+          sudo apt update
+          sudo apt install libudunits2-dev libcurl4-openssl-dev libgdal-dev gdal-bin libproj15 libproj19 libproj-dev
+          sudo apt install r-cran-sf r-cran-ggplot2 r-cran-devtools r-cran-stringr r-cran-lubridate r-cran-dplyr r-cran-tidyr r-cran-purrr r-cran-readr
+
       - name: Install R dependencies
         run: |
-          install.packages(c("ggplot2", "yaml", "jsonlite", "devtools", "rnaturalearth", "rnaturalearthdata", "sf", "stringr", "lubridate", "dplyr", "tidyr", "purrr", "ggthemes", "readr", "skimr"))
+          install.packages(c("yaml", "jsonlite", "rnaturalearth", "rnaturalearthdata", "ggthemes", "skimr"))
         shell: Rscript {0}
+
       - name: Install Python dependencies
         run: |
           pip install pandas datetime skimpy numpy nbformat
