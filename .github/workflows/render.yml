@@ -52,16 +52,16 @@ jobs:
       #     target: connect
       #     CONNECT_SERVER: enter-the-server-url-here
       #     CONNECT_API_KEY: ${{ secrets.CONNECT_API_KEY }}
-      # - name: Install R dependencies
-      #   run: |
-      #     install.packages(c("ggplot2", "yaml", "jsonlite", "devtools",
-      #                        "rnaturalearth", "rnaturalearthdata", "sf",
-      #                        "stringr", "lubridate", "dplyr", "tidyr", "purrr",
-      #                        "ggthemes", "readr", "skimr")
-      #   shell: Rscript {0}
-      # - name: Install Python dependencies
-      #   run: |
-      #     pip install pandas datetime skimpy numpy nbformat
+      - name: Install R dependencies
+        run: |
+          install.packages(c("ggplot2", "yaml", "jsonlite", "devtools",
+                             "rnaturalearth", "rnaturalearthdata", "sf",
+                             "stringr", "lubridate", "dplyr", "tidyr", "purrr",
+                             "ggthemes", "readr", "skimr")
+        shell: Rscript {0}
+      - name: Install Python dependencies
+        run: |
+          pip install pandas datetime skimpy numpy nbformat
 
       # NOTE: If Publishing to GitHub Pages, set the permissions correctly
       #       (see top of this yaml)

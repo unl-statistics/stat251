@@ -1,9 +1,6 @@
 [submodule "homework-repos/01-github-starter-course"]
 	path = homework-repos/01-github-starter-course
 	url = git@github.com:stat850-unl/github-starter-course.git
-[submodule "homework-repos/github-starter-course"]
-	path = homework-repos/github-starter-course
-	url = git@github.com:stat850-unl/github-starter-course.git
 [submodule "homework-repos/02-review-r-python"]
 	path = homework-repos/02-review-r-python
 	url = git@github.com:unl-stat251/02-review-r-python.git
@@ -25,9 +22,6 @@
 [submodule "homework-repos/06-strings"]
 	path = homework-repos/07-strings
 	url = git@github.com:unl-stat251/06-strings.git
-[submodule "exam-midterm"]
-	path = exam-midterm
-	url = git@github.com:unl-stat251/2023-Midterm.git
 [submodule "homework-repos/07-reshape"]
 	path = homework-repos/08-reshape
 	url = git@github.com:unl-stat251/07-reshape.git
