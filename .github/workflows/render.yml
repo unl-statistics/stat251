@@ -54,8 +54,7 @@ jobs:
       #     CONNECT_API_KEY: ${{ secrets.CONNECT_API_KEY }}
       - name: Install dependencies
         run: |
-          remotes::install_deps(dependencies = TRUE)
-          remotes::install_cran(c("tidyverse", "yaml", "jsonlite", "devtools"))
+          install.packages(c("remotes", "tidyverse", "yaml", "jsonlite", "devtools"))
         shell: Rscript {0}
 
       # NOTE: If Publishing to GitHub Pages, set the permissions correctly (see top of this yaml)
