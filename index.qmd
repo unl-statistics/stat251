@@ -1,16 +1,34 @@
 ---
-title: "Stat 251: Data Wrangling"
+title: 'Stat 251: Data Wrangling'
 format: html
 listing:
-  - id: hwlst
-    categories: cloud
-    contents: 
-      - "homework/*.qmd"
-      - "slides/*.qmd"
-      - "exam-midterm/*.qmd"
-      - "project/*.qmd"
-    sort: "date desc"
-    type: table
+- id: hwlst
+  categories: cloud
+  contents:
+  - homework/*.qmd
+  - slides/*.qmd
+  - project/*.qmd
+  sort: date desc
+  type: table
+  fields:
+  - date
+  - title
+  - type
+  - image
+  exclude:
+    categories:
+    - Week04
+    - Week05
+    - Week06
+    - Week08
+    - Week09
+    - Week10
+    - Week11
+    - Week13
+    - Week14
+    - Week15
+    - Project
+    - Week12
 ---
 
 # Course Materials

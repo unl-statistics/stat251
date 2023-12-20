@@ -11,5 +11,13 @@ categories:
 
 Note: This assignment must be submitted in github classroom.
 
+```{bash, include = F}
+cp ../homework-repos/09-join/sql-murder-mystery.db .
+```
+
 {{< include ../homework-repos/09-join/index.qmd >}}
 
+
+```{bash, include = F}
+rm ./sql-murder-mystery.db
+```

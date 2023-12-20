@@ -10,8 +10,7 @@ project:
     - homework/*.qmd
     - project/*.qmd
     - slides/*.qmd
-    - exam-midterm/*.qmd
-    - "!exam-midterm/index-key.qmd"
+
 
 execute:
   cache: true

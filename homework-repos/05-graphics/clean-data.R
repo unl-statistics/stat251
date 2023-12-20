@@ -1,7 +1,9 @@
 # This code reads in the data from the groundhog-day.com api and saves it to two CSV files.
 
 library(jsonlite)
-library(tidyverse)
+library(tidyr)
+library(dplyr)
+library(readr)
 
 tmp <- fromJSON("https://groundhog-day.com/api/v1/groundhogs/")
 
