@@ -21,6 +21,7 @@ jobs:
           submodules: recursive
           token: ${{ secrets.PAT_TOKEN }}
 
+      # https://jasonraimondi.com/posts/install-google-fonts-in-github-workflow/
       - name: Install Google Fonts
         run: |
           wget -O Noto_Sans.zip https://fonts.google.com/download?family=Noto%20Sans
