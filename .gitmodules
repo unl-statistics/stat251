@@ -1,45 +1,39 @@
 [submodule "homework-repos/01-github-starter-course"]
 	path = homework-repos/01-github-starter-course
-	url = git@github.com:stat850-unl/github-starter-course.git
+	url = git@github.com:stat-assignments/github-intro.git
 [submodule "homework-repos/02-review-r-python"]
 	path = homework-repos/02-review-r-python
-	url = git@github.com:unl-stat251/02-review-r-python.git
-[submodule "homework-repos/review-r-python"]
-	path = homework-repos/review-r-python
-	url = git@github.com:unl-stat251/02-review-r-python.git
-[submodule "homework-repos/decodeR-exercises"]
-	path = homework-repos/decodeR-exercises
-	url = git@github.com:srvanderplas/decodeR-exercises.git
+	url = git@github.com:stat-assignments/review-r-python.git
 [submodule "homework-repos/03-cipher"]
 	path = homework-repos/03-cipher
-	url = git@github.com:unl-stat251/03-cipher
+	url = git@github.com:stat-assignments/errors-cipher.git
 [submodule "homework-repos/04-reading-data-cookies"]
 	path = homework-repos/04-reading-data-cookies
-	url = git@github.com:unl-stat251/hw-reading-data-template.git
+	url = git@github.com:stat-assignments/reading-data-cookies.git
 [submodule "homework-repos/05-graphics"]
 	path = homework-repos/05-graphics
-	url = git@github.com:unl-stat251/graphics-homework.git
-[submodule "homework-repos/06-strings"]
-	path = homework-repos/07-strings
-	url = git@github.com:unl-stat251/06-strings.git
-[submodule "homework-repos/07-reshape"]
-	path = homework-repos/08-reshape
-	url = git@github.com:unl-stat251/07-reshape.git
-[submodule "homework-repos/08-join"]
-	path = homework-repos/09-join
-	url = git@github.com:unl-stat251/08-join.git
-[submodule "project"]
-	path = project
-	url = git@github.com:unl-stat251/screencast.git
-[submodule "homework-repos/09-datetime"]
-	path = homework-repos/10-datetime
-	url = git@github.com:unl-stat251/09-datetime.git
-[submodule "homework-repos/10-functional-prog"]
-	path = homework-repos/11-functional-prog
-	url = git@github.com:unl-stat251/10-functional-prog.git
-[submodule "homework-repos/11-spatial"]
-	path = homework-repos/12-spatial
-	url = git@github.com:unl-stat251/11-spatial.git
+	url = git@github.com:stat-assignments/eda-groundhogs.git
 [submodule "homework-repos/06-data-manip"]
 	path = homework-repos/06-data-manip
 	url = git@github.com:stat-assignments/data-manipulation.git
+[submodule "homework-repos/07-strings"]
+	path = homework-repos/07-strings
+	url = git@github.com:stat-assignments/poetry-reddit-dplyr.git
+[submodule "homework-repos/08-reshape"]
+	path = homework-repos/08-reshape
+	url = git@github.com:stat-assignments/reshape-akc.git
+[submodule "homework-repos/09-join"]
+	path = homework-repos/09-join
+	url = git@github.com:stat-assignments/sql-murder.git
+[submodule "homework-repos/10-datetime"]
+	path = homework-repos/10-datetime
+	url = git@github.com:stat-assignments/datetime-zodiac.git
+[submodule "homework-repos/11-functional-prog"]
+	path = homework-repos/11-functional-prog
+	url = git@github.com:stat-assignments/functional-prog-cats-dogs.git
+[submodule "homework-repos/12-spatial"]
+	path = homework-repos/12-spatial
+	url = git@github.com:stat-assignments/spatial-explore.git
+[submodule "project"]
+	path = project
+	url = git@github.com:stat-assignments/screencast.git
