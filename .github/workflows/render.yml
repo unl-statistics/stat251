@@ -68,7 +68,7 @@ jobs:
 
       - name: Install Python dependencies
         run: |
-          pip install pandas datetime skimpy numpy nbformat
+          pip install pandas datetime
 
       # NOTE: If Publishing to GitHub Pages, set the permissions correctly
       #       (see top of this yaml)
