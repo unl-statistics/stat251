@@ -9,4 +9,4 @@ categories:
 
 Note: This assignment must be submitted in github classroom.
 
-{{< include ../homework-repos/review-r-python/review-r-python.qmd >}}
+{{< include ../homework-repos/02-review-r-python/index.qmd >}}
