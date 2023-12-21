@@ -63,16 +63,31 @@ jobs:
                            libgdal-dev \
                            gdal-bin \
                            libproj-dev
-          sudo apt install r-cran-skimr r-cran-sf r-cran-rnaturalearthdata \
-                           r-cran-ggplot2 r-cran-ggthemes r-cran-devtools \
-                           r-cran-jsonlite r-cran-yaml r-cran-terra \
-                           r-cran-stringr r-cran-lubridate r-cran-dplyr \
-                           r-cran-tidyr r-cran-purrr r-cran-readr
+          sudo apt install r-cran-sf r-cran-rnaturalearthdata r-cran-terra
 
-      - name: Install R dependencies
-        run: |
-          install.packages(c("rnaturalearth", "yaml"))
-        shell: Rscript {0}
+      - uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          packages:
+            any::rmarkdown
+            any::downlit
+            any::knitr
+            any::skimr
+            any::sf
+            any::rnaturalearthdata
+            any::rnaturalearth
+            any::ggplot2
+            any::ggthemes
+            any::devtools
+            any::jsonlite
+            any::yaml
+            any::terra
+            any::lubridate
+            any::stringr
+            any::dplyr
+            any::tidyr
+            any::purrr
+            any::readr
+            any::xml2
 
       - name: Install Python dependencies
         run: |
