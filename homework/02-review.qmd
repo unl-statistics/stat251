@@ -3,8 +3,8 @@ title: 'Homework 2: Review'
 date: '2024-02-05'
 author: Homework
 categories:
-- Week02
 - HW
+- Week03
 ---
 
 Note: This assignment must be submitted in github classroom.

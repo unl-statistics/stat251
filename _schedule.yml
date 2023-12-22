@@ -4,89 +4,93 @@ schedule:
   - unit: "Introduction"
     materials:
       - href: slides/01-Syllabus-and-Introductions.qmd
-        categories: [Week01, slides]
+        categories: [slides]
         date: 2024-01-24
         pub-date: 2023-01-01
       - href: slides/02-version-control.qmd
-        categories: [Week01, slides]
+        categories: [slides]
         date: 2024-01-26
         pub-date: 2023-01-01
       - href: homework/01-git-github.qmd
-        categories: [Week01, HW]
+        categories: [HW]
         date: 2024-01-29
         pub-date: 2023-01-01
       - href: homework/02-review.qmd
-        categories: [Week02, HW]
+        categories: [HW]
         date: 2024-02-05
         pub-date: 2023-01-01
       - href: homework/03-cipher.qmd
-        categories: [Week03, HW]
+        categories: [HW]
         date: 2024-02-12
         pub-date: 2023-01-01
   - unit: "Accessing and Exploring Data"
     materials:
       - href: homework/04-cookies.qmd
-        categories: [Week04, HW]
+        categories: [HW]
         date: 2024-02-19
       - href: homework/05-graphics-groundhogs.qmd
-        categories: [Week05, HW]
+        categories: [HW]
         date: 2024-02-26
   - unit: "Cleaning Data"
     materials:
       - href: homework/06-data-manip.qmd
-        categories: [Week06, HW]
+        categories: [HW]
         date: 2024-03-04
       - href: exam-midterm/objectives.qmd
         date: 2024-03-05
         pub-date: 2023-02-27
+        categories: [Exam]
       - href: exam-midterm/index.qmd
         date: 2024-03-07
         pub-date: 2023-03-05
-        categories: [Week07, Exam]
+        categories: [Exam]
       - href: homework/07-strings.qmd
-        categories: [Week08, HW]
+        categories: [HW]
         date: 2024-03-25
       - href: homework/08-reshape.qmd
-        categories: [Week09, HW]
+        categories: [HW]
         date: 2024-04-01
       - href: homework/09-join.qmd
-        categories: [Week10, HW]
+        categories: [HW]
         date: 2024-04-08
   - unit: "Project and Special Data Types"
     materials:
       - href: homework/10-datetime.qmd
         date: 2024-04-15
-        categories: [Week11, HW]
+        categories: [HW]
       - href: slides/10-projects.qmd
         date: 2024-04-11
         categories: [slides, Project]
       - href: project/index.qmd
         date: 2024-04-15
-        categories: [Week12, Project]
+        categories: [Project]
       - href: project/Dataset-Topics.qmd
         date: 2024-04-16
-        categories: [Week12, Project]
+        categories: [Project]
       - href: project/pseudocode.qmd
         date: 2024-04-22
-        categories: [Week12, Project]
+        categories: [Project]
       - href: project/screencast-checklist.qmd
         date: 2024-05-02
-        categories: [Week14, Project]
+        categories: [Project]
       - href: homework/11-functional-prog.qmd
         date: 2024-04-29
-        categories: [Week13, HW]
+        categories: [HW]
       - href: homework/12-spatial.qmd
         date: 2024-05-06
-        categories: [Week14, HW]
+        categories: [HW]
       - href: homework/15-project-peer-review.qmd
         date: 2024-05-08
-        categories: [Week15, Project]
+        categories: [Project]
+
+
 
 
 auto-publish:
   timezone: "America/Chicago"
   publish-week-before: 2
-  live-as-of: "Sys.time()" # Either Sys.time() or a date parseable by lubridate::ymd()
+  live-as-of: "2024-01-22"
+  # live-as-of: "Sys.time()" # Either Sys.time() or a date parseable by lubridate::ymd()
 
 instructors:
   - name: Susan Vanderplas
@@ -94,3 +98,36 @@ instructors:
     quartopub-name: drvanderplas
 
 semester: "Spring, 2024"
+calendar:
+  - name: Week01
+    date: 2024-01-21
+  - name: Week02
+    date: 2024-01-28
+  - name: Week03
+    date: 2024-02-04
+  - name: Week04
+    date: 2024-02-11
+  - name: Week05
+    date: 2024-02-18
+  - name: Week06
+    date: 2024-02-25
+  - name: Week07
+    date: 2024-03-03
+  - name: Week08
+    date: 2024-03-17
+  - name: Week09
+    date: 2024-03-24
+  - name: Week10
+    date: 2024-03-31
+  - name: Week11
+    date: 2024-04-07
+  - name: Week12
+    date: 2024-04-14
+  - name: Week13
+    date: 2024-04-21
+  - name: Week14
+    date: 2024-04-28
+  - name: Week15
+    date: 2024-05-05
+  - name: Finals
+    date: 2024-05-12

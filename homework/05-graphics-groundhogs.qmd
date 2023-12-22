@@ -5,8 +5,8 @@ execute-dir: ../homework-repos/05-graphics
 engine: knitr
 author: Homework
 categories:
-- Week05
 - HW
+- Week06
 ---
 
 Note: This assignment must be submitted in github classroom.

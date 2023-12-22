@@ -5,8 +5,8 @@ execute-dir: ../homework-repos/06-data-manip
 engine: knitr
 author: Homework
 categories:
-- Week06
 - HW
+- Week07
 ---
 
 Note: This assignment must be submitted in github classroom.

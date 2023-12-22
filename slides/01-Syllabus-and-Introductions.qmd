@@ -2,8 +2,8 @@
 title: Introduction
 author: Stat 251
 categories:
-- Week01
 - slides
+- Week01
 format:
   revealjs:
     navigation-mode: vertical

@@ -3,8 +3,8 @@ title: Version Control
 author: Stat 251
 date: '2024-01-26'
 categories:
-- Week01
 - slides
+- Week01
 format: revealjs
 engine: knitr
 '...':
