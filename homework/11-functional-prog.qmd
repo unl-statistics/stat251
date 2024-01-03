@@ -1,12 +1,10 @@
 ---
 title: 'Homework 11: Functional Programming'
-date: '2024-04-29'
+date: '2024-04-28'
 execute-dir: ../homework-repos/11-functional-prog/
 engine: knitr
 author: Homework
-categories:
-- HW
-- Week14
+categories: HW
 ---
 
 Note: This assignment must be submitted in github classroom.

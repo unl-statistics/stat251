@@ -1,12 +1,10 @@
 ---
 title: 'Homework 7: Strings'
-date: '2024-03-25'
+date: '2024-03-24'
 execute-dir: ../homework-repos/07-strings/
 engine: knitr
 author: Homework
-categories:
-- HW
-- Week09
+categories: HW
 ---
 
 Note: This assignment must be submitted in github classroom.

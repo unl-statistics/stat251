@@ -5,9 +5,15 @@ listing:
 - id: hwlst
   categories: cloud
   contents:
-  - homework/*.qmd
-  - slides/*.qmd
-  - project/*.qmd
+  - exam-midterm/index.qmd
+  - exam-midterm/objectives.qmd
+  - homework/01-git-github.qmd
+  - homework/02-review.qmd
+  - homework/03-cipher.qmd
+  - slides/01-Syllabus-and-Introductions.qmd
+  - slides/02-version-control.qmd
+  - syllabus.qmd
+  - reading.yml
   sort: date desc
   type: table
   fields:

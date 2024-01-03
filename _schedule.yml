@@ -3,6 +3,22 @@
 schedule:
   - unit: "Introduction"
     materials:
+      - href: syllabus.qmd
+        title: Syllabus
+        categories: [reading]
+        image: figs/reading.svg
+        type: reading
+        date: 2024-01-21
+        pub-date: 2023-01-01
+      - path: https://srvanderplas.github.io/stat-computing-r-python/part-tools/00-tools-intro.html
+        title: Review- Tools
+        categories: [reading]
+        date: 2024-01-21
+        pub-date: 2023-01-01
+      - path: https://srvanderplas.github.io/stat-computing-r-python/part-tools/05-git-and-github.html
+        title: Version Control with Git and Github
+        date: 2024-01-24
+        categories: [reading]
       - href: slides/01-Syllabus-and-Introductions.qmd
         categories: [slides]
         date: 2024-01-24
@@ -13,29 +29,50 @@ schedule:
         pub-date: 2023-01-01
       - href: homework/01-git-github.qmd
         categories: [HW]
+        date: 2024-01-28
+        pub-date: 2023-01-01
+      - path: https://srvanderplas.github.io/stat-computing-r-python/part-gen-prog/00-gen-prog.html
+        title: Review - Programming
         date: 2024-01-29
         pub-date: 2023-01-01
+        categories: [reading]
       - href: homework/02-review.qmd
         categories: [HW]
-        date: 2024-02-05
+        date: 2024-02-04
         pub-date: 2023-01-01
       - href: homework/03-cipher.qmd
         categories: [HW]
-        date: 2024-02-12
+        date: 2024-02-11
         pub-date: 2023-01-01
   - unit: "Accessing and Exploring Data"
     materials:
+      - path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/01-data-input.html
+        title: Data Input
+        date: 2024-02-12
+        categories: [reading]
       - href: homework/04-cookies.qmd
         categories: [HW]
+        date: 2024-02-18
+      - path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/02b-graphics.html
+        title: Graphics
         date: 2024-02-19
+        categories: [reading]
+      - path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/02c-good-graphics.html
+        title: Good Graphics
+        date: 2024-02-19
+        categories: [reading]
       - href: homework/05-graphics-groundhogs.qmd
         categories: [HW]
-        date: 2024-02-26
+        date: 2024-02-25
   - unit: "Cleaning Data"
     materials:
+      - path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/03-data-cleaning.html
+        title: Data Cleaning
+        date: 2024-02-26
+        categories: [reading]
       - href: homework/06-data-manip.qmd
         categories: [HW]
-        date: 2024-03-04
+        date: 2024-03-03
       - href: exam-midterm/objectives.qmd
         date: 2024-03-05
         pub-date: 2023-02-27
@@ -44,19 +81,35 @@ schedule:
         date: 2024-03-07
         pub-date: 2023-03-05
         categories: [Exam]
+      - path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/04-strings.html
+        title: Strings
+        date: 2024-03-18
+        categories: [reading]
       - href: homework/07-strings.qmd
         categories: [HW]
+        date: 2024-03-24
+      - path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/05-data-reshape.html
+        title: Reshaping Data
         date: 2024-03-25
+        categories: [reading]
       - href: homework/08-reshape.qmd
         categories: [HW]
+        date: 2024-03-31
+      - path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/06-data-join.html
+        title: Joining Data
         date: 2024-04-01
+        categories: [reading]
       - href: homework/09-join.qmd
         categories: [HW]
-        date: 2024-04-08
+        date: 2024-04-07
   - unit: "Project and Special Data Types"
     materials:
+      - path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/07-datetime.html
+        title: Dates and Times
+        date: 2024-04-08
+        categories: [reading]
       - href: homework/10-datetime.qmd
-        date: 2024-04-15
+        date: 2024-04-14
         categories: [HW]
       - href: slides/10-projects.qmd
         date: 2024-04-11
@@ -65,19 +118,43 @@ schedule:
         date: 2024-04-15
         categories: [Project]
       - href: project/Dataset-Topics.qmd
-        date: 2024-04-16
+        date: 2024-04-17
         categories: [Project]
       - href: project/pseudocode.qmd
-        date: 2024-04-22
+        date: 2024-04-21
         categories: [Project]
       - href: project/screencast-checklist.qmd
         date: 2024-05-02
         categories: [Project]
+      - path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/08-functional-prog.html
+        title: Functional Programming and Lists
+        date: 2024-04-22
+        categories: [reading]
       - href: homework/11-functional-prog.qmd
-        date: 2024-04-29
+        date: 2024-04-28
         categories: [HW]
+      - path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/09-spatial-formats.html
+        title: Spatial Data Formats
+        date: 2024-04-29
+        categories: [reading]
+      - path: https://r-spatial.org/r/2018/10/25/ggplot2-sf.html
+        title: Drawing beautiful maps with R - Part 1 - Basics
+        date: 2024-04-29
+        categories: [reading]
+      - path: https://r-spatial.org/r/2018/10/25/ggplot2-sf-2.html
+        title: Drawing beautiful maps with R - Part 2 - Layers
+        date: 2024-04-29
+        categories: [reading]
+      - path: https://r-spatial.org/r/2018/10/25/ggplot2-sf-3.html
+        title: Drawing beautiful maps with R - Part 3 - Layouts
+        date: 2024-04-29
+        categories: [reading]
+      - path: https://rosenfelder.ai/create-maps-with-python/
+        title: Create beautiful maps with Python
+        date: 2024-04-29
+        categories: [reading]
       - href: homework/12-spatial.qmd
-        date: 2024-05-06
+        date: 2024-05-05
         categories: [HW]
       - href: homework/15-project-peer-review.qmd
         date: 2024-05-08
