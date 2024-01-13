@@ -6,7 +6,7 @@
 	url = git@github.com:stat-assignments/review-r-python.git
 [submodule "homework-repos/03-cipher"]
 	path = homework-repos/03-cipher
-	url = git@github.com:stat-assignments/errors-cipher.git
+	url = git@github.com:stat-assignments/errors-cipher-rickroll.git
 [submodule "homework-repos/04-reading-data-cookies"]
 	path = homework-repos/04-reading-data-cookies
 	url = git@github.com:stat-assignments/reading-data-cookies.git
