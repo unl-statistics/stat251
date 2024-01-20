@@ -38,7 +38,7 @@ knitr::opts_chunk$set(cache=F,
                       message=F)
 
 knitr::opts_chunk$set(
-                  fig.process = function(x) {
+                  fig.process = function(x) { 
                       x2 = sub('-\\d+([.][a-z]+)$', '\\1', x)
                       if (file.rename(x, x2)) x2 else x
                       }
@@ -96,6 +96,7 @@ For the most part, for each week's topic, there will be one or two corresponding
 ```{r calendar}
 #| echo: false
 #| eval: true
+#| cache: false
 #| warning: false
 #| fig-width: 8
 #| fig-height: 4
@@ -108,7 +109,11 @@ class_cal
 
 \small
 
-```{r schedule, eval = T, echo = F, fig.pos = 'h'}
+```{r schedule, fig.pos = 'h'}
+#| echo: false
+#| eval: true
+#| cache: false
+#| warning: false
 class_days %>% select(date, topic, time) %>%
   mutate(time = ifelse(is.na(time), "", time)) %>%
   mutate(date2 = format(date, "%b %e")) %>%
