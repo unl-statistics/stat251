@@ -13,7 +13,7 @@ format:
     dev: cairo_pdf
 title: Syllabus
 instructor: Susan Vanderplas
-semester: Spring 2023
+semester: Spring 2024
 email: susan.vanderplas@unl.edu
 web: srvanderplas.github.io
 officehours: \href{https://calendly.com/drvanderplas/officehours}{Schedule here}
