@@ -1,3 +1,23 @@
+verbatim_logical = function(x) {
+  result <- ifelse(x, "true", "false")
+  class(result) <- "verbatim"
+  return(result)
+}
+
+ymd_date = function(x){
+  return(format.Date(x, "%Y-%m-%d"))
+}
+
+verbatim_character = function(x){
+  if (length(x) > 1) {
+    return(paste0('[', paste("\"", x, "\"", sep = '', collapse = ', '), ']'))
+  } else {
+    return(x)
+  }
+}
+
+yml_handlers <- list(logical=verbatim_logical, POSIXct = ymd_date)
+
 change_yaml_matter <- function(input_file, ..., output_file) {
   input_lines <- readLines(input_file)
   delimiters <- grep("^---\\s*$", input_lines)
@@ -26,15 +46,10 @@ change_yaml_matter <- function(input_file, ..., output_file) {
     }
   }
 
-  verbatim_logical = function(x) {
-    result <- ifelse(x, "true", "false")
-    class(result) <- "verbatim"
-    return(result)
-  }
 
   output_lines <- c(
     if (delimiters[1] > 0) input_lines[1:(delimiters[1])],
-    strsplit(yaml::as.yaml(yaml_list, handlers = list(logical=verbatim_logical)), "\n")[[1]],
+    strsplit(yaml::as.yaml(yaml_list, handlers = yml_handlers), "\n")[[1]],
     input_lines[ -(1:(delimiters[2]-1)) ]
   )
 

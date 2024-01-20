@@ -2,8 +2,8 @@ project:
   type: website
   output-dir: docs
   pre-render:
-    - scripts/update-dates.R
-    - scripts/ignore-future-docs.R
+    - scripts/update-assignment-dates.R
+    - scripts/hide-future-assignments.R
   render:
     - index.qmd
     - syllabus.qmd

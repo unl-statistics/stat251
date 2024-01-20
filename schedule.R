@@ -16,17 +16,20 @@ class_wdays <- c("Tue", "Thu")
 not_here_dates <- c(
   # ymd("20220117"),
   # Spring Break
-  seq(ymd(20230312),ymd(20230318), by=1))
+  seq(ymd(20240310),ymd(20240316), by=1))
 
-# You can adjust this as you see fit. Basically: add assignment types (e.g. papers, quizzes).
-# My intro class was fairly simple: just exams.
-exam_dates <- c(ymd(20230310), ymd(20230505), ymd(20230518))
+exam_dates <- c(
+  ymd(20240307), # midterm
+  ymd(20240502), # screencast due
+  ymd(20240509), # peer review due
+  ymd(20240514)  # scheduled final
+)
 
 # What are the full dates of the semester? Here, I'll exclude exam week as I like to do.
 # In this case: 6 January to 23 April
-semester_dates <- seq(ymd(20230123), ymd(20230519), by=1)
+semester_dates <- seq(ymd(20240122), ymd(20240518), by=1)
 
-exam_week <- seq(ymd(20230515), ymd(20230519), by = 1)
+exam_week <- seq(ymd(20240513), ymd(20240517), by = 1)
 
 # Custom function for treating the first day of the month as the first week
 # of the month up until the first Sunday (unless Sunday was the start of the month)
@@ -36,7 +39,7 @@ wom <- function(date) {
 }
 
 # Create a data frame of dates, assign to Cal
-Cal <- tibble(date = seq(ymd(20230101), ymd(20230530), by=1))  %>%
+Cal <- tibble(date = seq(ymd(20240101), ymd(20240530), by=1))  %>%
   mutate(mon = lubridate::month(date, label=T, abbr=F), # get month label
          wkdy = weekdays(date, abbreviate=T), # get weekday label
          wkdy = fct_relevel(wkdy, "Sun", "Mon", "Tue", "Wed", "Thu","Fri","Sat"), # make sure Sunday comes first
@@ -56,6 +59,7 @@ Cal <- Cal %>%
     exams ~ "Due Date",
     not_here ~ "UNL holiday",
     semester & wkdy %in% class_wdays & !not_here & !exam_wk ~ "Class Day",
+    exam_wk ~ "Finals Week",
     semester ~ "Semester",
     TRUE ~ "NA"
   ))
@@ -84,14 +88,15 @@ class_cal <- Cal %>%
                              "Semester"="white",
                              "UNL holiday" = "grey10",
                              "NA" = "white", # I like these whited out...
+                             "Finals Week" = "grey90",
                              "Due Date"="orange"),
                     #... but also suppress a label for a non-class semester day
-                    breaks=c("Semester", "UNL holiday", "Class Day","Due Date"))
+                    breaks=c("Semester", "UNL holiday", "Class Day","Due Date", "Finals Week"))
 # class_cal
 
 exam_days <- filter(Cal, category == "Due Date") %>%
-  mutate(topic = c("Midterm Due", "Project Due", "Scheduled Final"),
-         time = c("6pm", "6pm", "1-3pm"))
+  mutate(topic = c("Midterm Due", "Screencast Video Due", "Peer Review of Screencast Due", "Scheduled Final"),
+         time = c("6pm", "6pm", "6pm", "10-12am"))
 
 class_days <- filter(Cal, category == "Class Day") %>%
   mutate(topic = c(
@@ -105,7 +110,6 @@ class_days <- filter(Cal, category == "Class Day") %>%
     "Data Input",
     "Data Visualization",
     "Data Visualization",
-    "Good Graphics",
     "Data Cleaning",
     "Data Cleaning",
     "Exam 1 Questions",
@@ -122,8 +126,6 @@ class_days <- filter(Cal, category == "Class Day") %>%
     "Lists",
     "Lists",
     "Project Work",
-    "Project Work",
-    "Spatial Data",
     "Spatial Data")) %>%
   bind_rows(exam_days) %>%
   arrange(date)

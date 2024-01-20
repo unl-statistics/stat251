@@ -3,26 +3,29 @@ pdf-engine: lualatex
 from: markdown+emoji
 fontsize: 11pt
 geometry: margin=1in
-
-format: 
+format:
   pdf:
     keep-tex: false
     template-partials:
-      - partials/title.tex
-      - partials/before-body.tex
-      - partials/graphics.tex
+    - partials/title.tex
+    - partials/before-body.tex
+    - partials/graphics.tex
     dev: cairo_pdf
-
-title: "Stat 251: Data Wrangling"
+title: Syllabus
 instructor: Susan Vanderplas
 semester: Spring 2023
-
-email: "susan.vanderplas@unl.edu"
-web: "srvanderplas.github.io"
-officehours: "\\href{https://calendly.com/drvanderplas/officehours}{Schedule here}"
-office: "Hardin 343D"
-classroom: "Hardin 142-East"
-classhours: "TR 11:00-12:15"
+email: susan.vanderplas@unl.edu
+web: srvanderplas.github.io
+officehours: \href{https://calendly.com/drvanderplas/officehours}{Schedule here}
+office: Hardin 343D
+classroom: Hardin 142-East
+classhours: TR 11:00-12:15
+categories:
+- reading
+- Week01
+image: figs/reading.svg
+type: reading
+date: '2024-01-21'
 ---
 
 

@@ -1,4 +1,4 @@
-# This script populates dates and weeks from _schedule.yml to the yml files themselves
+# This script populates dates from _schedule.yml to the yml files themselves
 
 source("scripts/change-yml.R")
 
@@ -27,7 +27,7 @@ update_yaml_params <- function(lst) {
       return(NULL)
     }
   }
-
+  
   params <- lst[-which(names(lst)%in% c("href", "pub-date"))]
   params$input_file <- lst$href
   params$output_file <- lst$href
@@ -37,13 +37,13 @@ update_yaml_params <- function(lst) {
       week_mapping,
       week_start <= lubridate::ymd(lst$date, tz = timezone),
       week_end >= lubridate::ymd(lst$date, tz = timezone))
-
+    
     # Update the category accordingly
     if (nrow(assign_week) == 1){
       params$categories <- c(params$categories, assign_week$name)
     }
   }
-
+  
   do.call("change_yaml_matter", params)
 }
 

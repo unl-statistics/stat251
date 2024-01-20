@@ -1,15 +1,13 @@
 ---
 title: 'Homework 3: Cipher'
-date: '2024-02-12'
+date: '2024-02-11'
 execute-dir: ../homework-repos/03-cipher
 engine: knitr
 author: Homework
 execute:
   error: true
   eval: false
-categories:
-- HW
-- Week04
+categories: HW
 ---
 
 Note: This assignment must be submitted in github classroom.
