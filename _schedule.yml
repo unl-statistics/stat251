@@ -36,10 +36,22 @@ schedule:
         date: 2024-01-29
         pub-date: 2023-01-01
         categories: [reading]
+      - href: slides/03-review-topics.qmd
+        categories: [slides]
+        date: 2024-01-30
+        pub-date: 2023-01-28
+      - href: slides/04-review-topics.qmd
+        categories: [slides]
+        date: 2024-02-01
+        pub-date: 2023-01-28
       - href: homework/02-review.qmd
         categories: [HW]
         date: 2024-02-04
         pub-date: 2023-01-01
+      - href: slides/05-review-cipher.qmd
+        categories: [slides]
+        date: 2024-02-06
+        pub-date: 2023-02-03
       - href: homework/03-cipher.qmd
         categories: [HW]
         date: 2024-02-11
@@ -166,8 +178,7 @@ schedule:
 auto-publish:
   timezone: "America/Chicago"
   publish-week-before: 2
-  live-as-of: "2024-01-22"
-  # live-as-of: "Sys.time()" # Either Sys.time() or a date parseable by lubridate::ymd()
+  live-as-of: "Sys.time()" # Either Sys.time() or a date parseable by lubridate::ymd()
 
 instructors:
   - name: Susan Vanderplas

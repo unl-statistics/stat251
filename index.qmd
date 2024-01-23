@@ -12,6 +12,9 @@ listing:
   - homework/03-cipher.qmd
   - slides/01-Syllabus-and-Introductions.qmd
   - slides/02-version-control.qmd
+  - slides/03-review-topics.qmd
+  - slides/04-review-topics.qmd
+  - slides/05-review-cipher.qmd
   - syllabus.qmd
   - reading.yml
   sort: date desc
