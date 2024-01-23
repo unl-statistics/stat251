@@ -3,7 +3,10 @@
     "listing": "/index.html",
     "items": [
       "/homework/03-cipher.html",
+      "/slides/05-review-cipher.html",
       "/homework/02-review.html",
+      "/slides/04-review-topics.html",
+      "/slides/03-review-topics.html",
       "/homework/01-git-github.html",
       "/slides/02-version-control.html",
       "/slides/01-Syllabus-and-Introductions.html",
