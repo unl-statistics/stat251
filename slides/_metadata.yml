@@ -1,2 +1,11 @@
 type: slides
 image: ../figs/slides.svg
+format:
+  revealjs:
+    navigation-mode: vertical
+    logo: N.svg
+    theme: inverse.scss
+    includes:
+      in_header: header.html
+
+engine: knitr

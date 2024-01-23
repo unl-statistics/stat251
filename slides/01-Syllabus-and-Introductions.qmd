@@ -7,12 +7,10 @@ categories:
 format:
   revealjs:
     navigation-mode: vertical
-'...':
-  categories:
-  - Week01
-  - slides
-  date: '2024-01-24'
-  pub-date: '2023-01-01'
+    logo: N.svg
+    theme: inverse.scss
+    includes:
+      in_header: header.html
 date: '2024-01-24'
 pub-date: '2023-01-01'
 ---
@@ -35,16 +33,19 @@ pub-date: '2023-01-01'
 
 - Assistant Professor in Statistics
 
-- Ph.D. from Iowa State in 2015
-
-- Undergrad from Texas A&M in 2009
-
-- R user for 13 years, Python user for 1.5 years    
-Dabbled in JavaScript, HTML, C/C++
+- R user for 14 years, Python user for 2.5 years    
+[Dabbled in JavaScript, HTML, C/C++]{.smaller}
 
 - I have Prosopagnosia - face blindness
 
-- [On Poptarts and Ravioli...](https://twitter.com/Phosphatide/status/974067376894328833)
+![[[Male and Female faces](http://www.shutterstock.com/pic-283980695/stock-vector-vector-set-of-different-male-and-female-icons-in-trendy-flat-style-flat-people-faces-icon.html), from Shutterstock]{.small}](fig/prosopagnosia.png){#prosopagnosia fig-alt="Faces with only hair, glasses, and mouths; no other components (eyes, nose) are present."}
+
+
+## On PopTarts and Ravioli:
+
+![[[The Cube Rule of Food](https://www.reddit.com/r/coolguides/comments/ri0kvs/the_cube_rule_of_food_identification/), from Reddit]{.small}](fig/cube_rule_food.jpg)
+
+Thus, a PopTart is a calzone. 
 
 # Syllabus
 
@@ -54,32 +55,51 @@ Dabbled in JavaScript, HTML, C/C++
 
 - Office: 343D Hardin Hall North Wing
 
-- Phone: I don't ever answer it... use email
+- Office Hours:     
+[https://calendly.com/drvanderplas/officehours](https://calendly.com/drvanderplas/officehours)    
+[Self-serve, by Zoom unless you specify otherwise.]{.small}
 
-- Office Hours: [https://calendly.com/drvanderplas/officehours](https://calendly.com/drvanderplas/officehours  )    
-Self-serve, by Zoom unless you specify otherwise.
+- Textbook:     
+[https://srvanderplas.github.io/stat-computing-r-python](https://srvanderplas.github.io/stat-computing-r-python)
 
-- Textbook: [https://srvanderplas.github.io/stat-computing-r-python](https://srvanderplas.github.io/stat-computing-r-python)
-
-- Course site: [https://srvanderplas.github.io/unl-stat251/](https://srvanderplas.github.io/unl-stat251/)
+- Course site:    
+[https://srvanderplas.github.io/unl-stat251/](https://srvanderplas.github.io/unl-stat251/)
 
 ## Course Objectives
 
-1. Use appropriate visualizations to explore and assess data and its applicability to a problem 
+:::  {.fragment}
+1. Use appropriate visualizations to explore and assess data and its applicability to a problem
+:::
 
+:::  {.fragment}
 2. Write code to reshape and reformat moderately complex and/or messy data in a reproducible manner
+:::
 
+:::  {.fragment}
 3. Create graphical displays to explore data, assess statistical models, and present model results 
+:::
 
-4. Adapt pre-existing code for sophisticated visualizations to new data.
+:::  {.fragment}
+4. Adapt pre-existing code for sophisticated visualizations to new data. 
+:::
 
+## Course Objectives
+
+:::  {.fragment}
 5. Implement an algorithm or procedure for data modification given in pseudocode 
+:::
 
-6. Write pseudocode to describe and document modifications made to the dataset
+:::  {.fragment}
+6. Write pseudocode to describe and document modifications made to a data set 
+:::
 
-7. Access documentation and source code to determine how software works (or why it doesn't)
+:::  {.fragment}
+7. Access documentation and source code to determine how software works (or why it doesn't) 
+:::
 
-8. Identify problems in a dataset that limit the analyses which are appropriate for the data
+:::  {.fragment}
+8. Identify problems in a data set that limit the analyses which are appropriate for the data
+:::
 
 ## Textbook
 
@@ -93,18 +113,17 @@ Self-serve, by Zoom unless you specify otherwise.
 source("../schedule.R")
 class_cal
 ```
-## Outline
 
-Subject to change based on how much of Stat 151 you are already familiar with...
+## Outline  {.scrollable .smaller}
+Subject to change based on the events of the semester...
 
 ```{r, echo = F}
 class_days %>% select(date, topic, time) %>%
   mutate(time = ifelse(is.na(time), "", time)) %>%
   mutate(date2 = format(date, "%b %e")) %>%
   set_names(c("date", "Topic", "Time", "Date")) %>%
-  select(Date, Time, Topic) %>%
-  filter(row_number() <= 10) %>%
-kableExtra::kable(caption = "Tentative schedule of class topics", format = "simple")
+  select(Date, Topic) %>%
+kableExtra::kable(format = "simple")
 ```
 
 ## Grades
@@ -115,20 +134,20 @@ Assignments | Weight
 Reading Quizzes | 10%
 Weekly Homework & Participation | 50% 
 Midterm Exam | 20%
-Final Exam | 20%
+Project | 20%
 
 Approximately Weekly Homework -- started in class
 
-## Academic Integrity / Submitted Work Policy
+## Academic Integrity Policy {.r-fit-text}
 
-- You may (and should!) work with each other on homework assignments
+- You may (should!) work with each other on homework assignments
 
 - Work alone on exams
 
-- You must be able to explain the logic of anything you submit for a grade    
-At my discretion, I will evaluate the coherence of your explanation instead of your submitted work
+- You must be able to explain anything you submit    
+[At my discretion, I can use a one-on-one discussion of your work to replace the grade for that work.]{.smaller}
 
-- ChatGPT, StackOverflow, Google are all valuable tools, but they do not help you think
+- ChatGPT, StackOverflow, Google are tools, but they do not help you think
 
 
 ## Programming
@@ -142,13 +161,25 @@ At my discretion, I will evaluate the coherence of your explanation instead of y
 
 [Textbook Chapter](https://srvanderplas.github.io/stat-computing-r-python/part-tools/02-setting-up-computer.html): https://bit.ly/3JtGCZR
 
+```{=html}
+<iframe width="100%" height="600px" src="https://srvanderplas.github.io/stat-computing-r-python/part-tools/02-setting-up-computer.html" title="Setting Up"></iframe>
+
+```
+
 ## Next Time
 
 We'll work on [Version Control with Git](https://srvanderplas.github.io/stat-computing-r-python/part-tools/05-git-and-github.html)
 
+::: columns
+::: column
+Please read before class: 
 
-Please Read before class: 
 - [Computer Basics](https://srvanderplas.github.io/stat-computing-r-python/part-tools/01-computer-basics.html)
 - [Scripts and Notebooks](https://srvanderplas.github.io/stat-computing-r-python/part-tools/03-scripts-notebooks.html)
 - [RStudio's Interface](https://srvanderplas.github.io/stat-computing-r-python/part-tools/04-Rstudio-interface.html)
 - [Version Control with Git](https://srvanderplas.github.io/stat-computing-r-python/part-tools/05-git-and-github.html)
+:::
+::: column
+![[Octocat [Image Source](https://github.com/octocat)]{.small}](fig/octocat.png)
+:::
+:::
