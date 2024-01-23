@@ -403,14 +403,15 @@ Stat 251
 
   <p class="date">2024-01-26</p>
 </section>
-<section id="version-control" class="slide level2">
-<h2>Version Control</h2>
+<section>
+<section id="version-control" class="title-slide slide level1 center">
+<h1>Version Control</h1>
 
 <img data-src="https://phdcomics.com/comics/archive/phd101212s.gif" style="width:50.0%" class="r-stretch quarto-figure-center"><p class="caption">Version control is the answer to this file naming problem.<br><a href="https://phdcomics.com/comics/archive.php?comicid=1531">Image Source</a> “Piled Higher and Deeper” by Jorge Cham www.phdcomics.com</p></section>
 <section id="introduce-yourself-to-git" class="slide level2">
 <h2>Introduce yourself to git</h2>
 <p>In a system terminal, run…</p>
-<div class="cell" data-hash="02-version-control_cache/html/unnamed-chunk-1_99b4233c074417708a0fd3b0004f2dee">
+<div class="cell" data-hash="02-version-control_cache/html/unnamed-chunk-1_49256d95c33713c03a9c66a9e11c0369">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">git</span> config <span class="at">--global</span> user.name <span class="st">'YOUR NAME HERE'</span></span>
 <span id="cb1-2"><a href="#cb1-2"></a><span class="fu">git</span> config <span class="at">--global</span> user.email <span class="st">'YOUR EMAIL HERE'</span></span>
 <span id="cb1-3"><a href="#cb1-3"></a><span class="fu">git</span> config <span class="at">--global</span> <span class="at">--list</span> <span class="co"># check to see it worked</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -419,6 +420,8 @@ Stat 251
 <section id="set-up-ssh-authentication" class="slide level2">
 <h2>Set up SSH authentication</h2>
 <p><a href="https://happygitwithr.com/ssh-keys.html">Instructions</a></p>
+<iframe width="100%" height="600px" src="https://happygitwithr.com/ssh-keys.html" title="SSH Keys"></iframe>
+
 </section>
 <section id="navigating-around-github" class="slide level2">
 <h2>Navigating around Github</h2>
@@ -429,9 +432,26 @@ Stat 251
 <p>(Demo)</p>
 </section>
 <section id="homework-introduction-to-github" class="slide level2">
-<h2>Homework: Introduction to Github</h2>
-<p><a href="../homework/01-git-github.qmd">Link</a></p>
+<h2>Homework: <a href="../homework/01-git-github.qmd">Introduction to Github</a></h2>
+<iframe width="100%" height="600px" src="../homework/01-git-github.html"></iframe>
 
+</section></section>
+<section id="next-time" class="title-slide slide level1 center">
+<h1>Next Time</h1>
+<p>Review: <a href="https://srvanderplas.github.io/stat-computing-r-python/part-gen-prog/00-gen-prog.html">General Programming</a></p>
+<p>Know how to:</p>
+<ul>
+<li>Define a variable</li>
+<li>Write a function</li>
+<li>Write an if/else statement</li>
+<li>load a package or import a library</li>
+<li>Create a data table structure</li>
+<li>Get a column, row, or value from a data table</li>
+<li>Get an item from a list</li>
+</ul>
+<p><img data-src="fig/programming-why.gif" class="absolute" style="bottom: 50%; right: 10px; width: 30%; "></p>
+
+<p><img src="N.svg" class="slide-logo"></p>
 <div class="footer footer-default">
 
 </div>
@@ -529,7 +549,7 @@ Stat 251
         rtl: false,
 
         // see https://revealjs.com/vertical-slides/#navigation-mode
-        navigationMode: 'linear',
+        navigationMode: 'default',
 
         // Randomizes the order of slides each time the presentation loads
         shuffle: false,

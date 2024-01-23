@@ -357,13 +357,16 @@ Stat 251
 <ul>
 <li><p>Susan Vanderplas</p></li>
 <li><p>Assistant Professor in Statistics</p></li>
-<li><p>Ph.D.&nbsp;from Iowa State in 2015</p></li>
-<li><p>Undergrad from Texas A&amp;M in 2009</p></li>
-<li><p>R user for 13 years, Python user for 1.5 years<br>
-Dabbled in JavaScript, HTML, C/C++</p></li>
+<li><p>R user for 14 years, Python user for 2.5 years<br>
+<span class="smaller">Dabbled in JavaScript, HTML, C/C++</span></p></li>
 <li><p>I have Prosopagnosia - face blindness</p></li>
-<li><p><a href="https://twitter.com/Phosphatide/status/974067376894328833">On Poptarts and Ravioli…</a></p></li>
 </ul>
+
+<img data-src="fig/prosopagnosia.png" alt="Faces with only hair, glasses, and mouths; no other components (eyes, nose) are present." class="r-stretch quarto-figure-center"><p class="caption"><span class="small"><a href="http://www.shutterstock.com/pic-283980695/stock-vector-vector-set-of-different-male-and-female-icons-in-trendy-flat-style-flat-people-faces-icon.html">Male and Female faces</a>, from Shutterstock</span></p></section>
+<section id="on-poptarts-and-ravioli" class="slide level2">
+<h2>On PopTarts and Ravioli:</h2>
+
+<img data-src="fig/cube_rule_food.jpg" class="r-stretch quarto-figure-center"><p class="caption"><span class="small"><a href="https://www.reddit.com/r/coolguides/comments/ri0kvs/the_cube_rule_of_food_identification/">The Cube Rule of Food</a>, from Reddit</span></p><p>Thus, a PopTart is a calzone.</p>
 </section></section>
 <section>
 <section id="syllabus" class="title-slide slide level1 center">
@@ -375,25 +378,60 @@ Dabbled in JavaScript, HTML, C/C++</p></li>
 <ul>
 <li><p>Email: <a href="mailto:susan.vanderplas@unl.edu?subject=Stat251">susan.vanderplas@unl.edu</a></p></li>
 <li><p>Office: 343D Hardin Hall North Wing</p></li>
-<li><p>Phone: I don’t ever answer it… use email</p></li>
-<li><p>Office Hours: <a href="https://calendly.com/drvanderplas/officehours">https://calendly.com/drvanderplas/officehours</a><br>
-Self-serve, by Zoom unless you specify otherwise.</p></li>
-<li><p>Textbook: <a href="https://srvanderplas.github.io/stat-computing-r-python">https://srvanderplas.github.io/stat-computing-r-python</a></p></li>
-<li><p>Course site: <a href="https://srvanderplas.github.io/unl-stat251/">https://srvanderplas.github.io/unl-stat251/</a></p></li>
+<li><p>Office Hours:<br>
+<a href="https://calendly.com/drvanderplas/officehours">https://calendly.com/drvanderplas/officehours</a><br>
+<span class="small">Self-serve, by Zoom unless you specify otherwise.</span></p></li>
+<li><p>Textbook:<br>
+<a href="https://srvanderplas.github.io/stat-computing-r-python">https://srvanderplas.github.io/stat-computing-r-python</a></p></li>
+<li><p>Course site:<br>
+<a href="https://srvanderplas.github.io/unl-stat251/">https://srvanderplas.github.io/unl-stat251/</a></p></li>
 </ul>
 </section>
 <section id="course-objectives" class="slide level2">
 <h2>Course Objectives</h2>
+<div class="fragment">
 <ol type="1">
-<li><p>Use appropriate visualizations to explore and assess data and its applicability to a problem</p></li>
-<li><p>Write code to reshape and reformat moderately complex and/or messy data in a reproducible manner</p></li>
-<li><p>Create graphical displays to explore data, assess statistical models, and present model results</p></li>
-<li><p>Adapt pre-existing code for sophisticated visualizations to new data.</p></li>
-<li><p>Implement an algorithm or procedure for data modification given in pseudocode</p></li>
-<li><p>Write pseudocode to describe and document modifications made to the dataset</p></li>
-<li><p>Access documentation and source code to determine how software works (or why it doesn’t)</p></li>
-<li><p>Identify problems in a dataset that limit the analyses which are appropriate for the data</p></li>
+<li>Use appropriate visualizations to explore and assess data and its applicability to a problem</li>
 </ol>
+</div>
+<div class="fragment">
+<ol start="2" type="1">
+<li>Write code to reshape and reformat moderately complex and/or messy data in a reproducible manner</li>
+</ol>
+</div>
+<div class="fragment">
+<ol start="3" type="1">
+<li>Create graphical displays to explore data, assess statistical models, and present model results</li>
+</ol>
+</div>
+<div class="fragment">
+<ol start="4" type="1">
+<li>Adapt pre-existing code for sophisticated visualizations to new data.</li>
+</ol>
+</div>
+</section>
+<section id="course-objectives-1" class="slide level2">
+<h2>Course Objectives</h2>
+<div class="fragment">
+<ol start="5" type="1">
+<li>Implement an algorithm or procedure for data modification given in pseudocode</li>
+</ol>
+</div>
+<div class="fragment">
+<ol start="6" type="1">
+<li>Write pseudocode to describe and document modifications made to a data set</li>
+</ol>
+</div>
+<div class="fragment">
+<ol start="7" type="1">
+<li>Access documentation and source code to determine how software works (or why it doesn’t)</li>
+</ol>
+</div>
+<div class="fragment">
+<ol start="8" type="1">
+<li>Identify problems in a data set that limit the analyses which are appropriate for the data</li>
+</ol>
+</div>
 </section>
 <section id="textbook" class="slide level2">
 <h2>Textbook</h2>
@@ -403,71 +441,143 @@ Self-serve, by Zoom unless you specify otherwise.</p></li>
 <section id="class-schedule" class="slide level2">
 <h2>Class Schedule</h2>
 
-<img data-src="01-Syllabus-and-Introductions_files/figure-html/unnamed-chunk-1-1.png" width="672" class="r-stretch"></section>
-<section id="outline" class="slide level2">
+<img data-src="01-Syllabus-and-Introductions_files/figure-revealjs/unnamed-chunk-1-1.png" width="960" class="r-stretch"></section>
+<section id="outline" class="slide level2 scrollable smaller">
 <h2>Outline</h2>
-<p>Subject to change based on how much of Stat 151 you are already familiar with…</p>
-<div class="cell" data-hash="01-Syllabus-and-Introductions_cache/html/unnamed-chunk-2_5846fa77afbed920e9d8825f11adc58d">
+<p>Subject to change based on the events of the semester…</p>
+<div class="cell" data-hash="01-Syllabus-and-Introductions_cache/revealjs/unnamed-chunk-2_7714a3df62e923d8b681d3c938f43a8f">
 <div class="cell-output-display">
 <table>
-<caption>Tentative schedule of class topics</caption>
 <thead>
 <tr class="header">
 <th style="text-align: left;">Date</th>
-<th style="text-align: left;">Time</th>
 <th style="text-align: left;">Topic</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">Jan 24</td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;">Jan 23</td>
 <td style="text-align: left;">Getting Started</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Jan 26</td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;">Jan 25</td>
 <td style="text-align: left;">Version Control</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Jan 31</td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;">Jan 30</td>
 <td style="text-align: left;">Review: Functions</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Feb 2</td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;">Feb 1</td>
 <td style="text-align: left;">Review: Functions</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Feb 7</td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;">Feb 6</td>
 <td style="text-align: left;">Review: Data Structures</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Feb 9</td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;">Feb 8</td>
 <td style="text-align: left;">Review: Data Structures</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Feb 14</td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;">Feb 13</td>
 <td style="text-align: left;">Data Input</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Feb 16</td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;">Feb 15</td>
 <td style="text-align: left;">Data Input</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Feb 21</td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;">Feb 20</td>
 <td style="text-align: left;">Data Visualization</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Feb 23</td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;">Feb 22</td>
 <td style="text-align: left;">Data Visualization</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Feb 27</td>
+<td style="text-align: left;">Data Cleaning</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Feb 29</td>
+<td style="text-align: left;">Data Cleaning</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Mar 5</td>
+<td style="text-align: left;">Exam 1 Questions</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Mar 7</td>
+<td style="text-align: left;">Midterm Due</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Mar 19</td>
+<td style="text-align: left;">Strings</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Mar 21</td>
+<td style="text-align: left;">Strings</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Mar 26</td>
+<td style="text-align: left;">Reshaping Data</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Mar 28</td>
+<td style="text-align: left;">Reshaping Data</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Apr 2</td>
+<td style="text-align: left;">Joining Data</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Apr 4</td>
+<td style="text-align: left;">Joining Data</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Apr 9</td>
+<td style="text-align: left;">Dates and Times</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Apr 11</td>
+<td style="text-align: left;">Dates and Times</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Apr 16</td>
+<td style="text-align: left;">Project Work</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Apr 18</td>
+<td style="text-align: left;">Project Work</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Apr 23</td>
+<td style="text-align: left;">Lists</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Apr 25</td>
+<td style="text-align: left;">Lists</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Apr 30</td>
+<td style="text-align: left;">Project Work</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">May 2</td>
+<td style="text-align: left;">Screencast Video Due</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">May 7</td>
+<td style="text-align: left;">Spatial Data</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">May 9</td>
+<td style="text-align: left;">Peer Review of Screencast Due</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">May 14</td>
+<td style="text-align: left;">Scheduled Final</td>
 </tr>
 </tbody>
 </table>
@@ -497,21 +607,21 @@ Self-serve, by Zoom unless you specify otherwise.</p></li>
 <td>20%</td>
 </tr>
 <tr class="even">
-<td>Final Exam</td>
+<td>Project</td>
 <td>20%</td>
 </tr>
 </tbody>
 </table>
 <p>Approximately Weekly Homework – started in class</p>
 </section>
-<section id="academic-integrity-submitted-work-policy" class="slide level2">
-<h2>Academic Integrity / Submitted Work Policy</h2>
+<section id="academic-integrity-policy" class="slide level2">
+<h2>Academic Integrity Policy</h2>
 <ul>
-<li><p>You may (and should!) work with each other on homework assignments</p></li>
+<li><p>You may (should!) work with each other on homework assignments</p></li>
 <li><p>Work alone on exams</p></li>
-<li><p>You must be able to explain the logic of anything you submit for a grade<br>
-At my discretion, I will evaluate the coherence of your explanation instead of your submitted work</p></li>
-<li><p>ChatGPT, StackOverflow, Google are all valuable tools, but they do not help you think</p></li>
+<li><p>You must be able to explain anything you submit<br>
+<span class="smaller">At my discretion, I can use a one-on-one discussion of your work to replace the grade for that work.</span></p></li>
+<li><p>ChatGPT, StackOverflow, Google are tools, but they do not help you think</p></li>
 </ul>
 </section>
 <section id="programming" class="slide level2">
@@ -527,12 +637,32 @@ At my discretion, I will evaluate the coherence of your explanation instead of y
 <section id="install-course-software" class="slide level2">
 <h2>Install Course Software</h2>
 <p><a href="https://srvanderplas.github.io/stat-computing-r-python/part-tools/02-setting-up-computer.html">Textbook Chapter</a>: https://bit.ly/3JtGCZR</p>
+<iframe width="100%" height="600px" src="https://srvanderplas.github.io/stat-computing-r-python/part-tools/02-setting-up-computer.html" title="Setting Up"></iframe>
+
 </section>
 <section id="next-time" class="slide level2">
 <h2>Next Time</h2>
 <p>We’ll work on <a href="https://srvanderplas.github.io/stat-computing-r-python/part-tools/05-git-and-github.html">Version Control with Git</a></p>
-<p>Please Read before class: - <a href="https://srvanderplas.github.io/stat-computing-r-python/part-tools/01-computer-basics.html">Computer Basics</a> - <a href="https://srvanderplas.github.io/stat-computing-r-python/part-tools/03-scripts-notebooks.html">Scripts and Notebooks</a> - <a href="https://srvanderplas.github.io/stat-computing-r-python/part-tools/04-Rstudio-interface.html">RStudio’s Interface</a> - <a href="https://srvanderplas.github.io/stat-computing-r-python/part-tools/05-git-and-github.html">Version Control with Git</a></p>
+<div class="columns">
+<div class="column">
+<p>Please read before class:</p>
+<ul>
+<li><a href="https://srvanderplas.github.io/stat-computing-r-python/part-tools/01-computer-basics.html">Computer Basics</a></li>
+<li><a href="https://srvanderplas.github.io/stat-computing-r-python/part-tools/03-scripts-notebooks.html">Scripts and Notebooks</a></li>
+<li><a href="https://srvanderplas.github.io/stat-computing-r-python/part-tools/04-Rstudio-interface.html">RStudio’s Interface</a></li>
+<li><a href="https://srvanderplas.github.io/stat-computing-r-python/part-tools/05-git-and-github.html">Version Control with Git</a></li>
+</ul>
+</div><div class="column">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="fig/octocat.png"></p>
+<figcaption><span class="small">Octocat <a href="https://github.com/octocat">Image Source</a></span></figcaption>
+</figure>
+</div>
+</div>
+</div>
 
+<p><img src="N.svg" class="slide-logo"></p>
 <div class="footer footer-default">
 
 </div>
@@ -748,6 +878,44 @@ At my discretion, I will evaluate the coherence of your explanation instead of y
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {

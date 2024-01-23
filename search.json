@@ -46,21 +46,35 @@
     "href": "slides/01-Syllabus-and-Introductions.html#my-introduction",
     "title": "Introduction",
     "section": "My Introduction",
-    "text": "My Introduction\n\nSusan Vanderplas\nAssistant Professor in Statistics\nPh.D. from Iowa State in 2015\nUndergrad from Texas A&M in 2009\nR user for 13 years, Python user for 1.5 years\nDabbled in JavaScript, HTML, C/C++\nI have Prosopagnosia - face blindness\nOn Poptarts and Ravioli…"
+    "text": "My Introduction\n\nSusan Vanderplas\nAssistant Professor in Statistics\nR user for 14 years, Python user for 2.5 years\nDabbled in JavaScript, HTML, C/C++\nI have Prosopagnosia - face blindness\n\n\nMale and Female faces, from Shutterstock"
+  },
+  {
+    "objectID": "slides/01-Syllabus-and-Introductions.html#on-poptarts-and-ravioli",
+    "href": "slides/01-Syllabus-and-Introductions.html#on-poptarts-and-ravioli",
+    "title": "Introduction",
+    "section": "On PopTarts and Ravioli:",
+    "text": "On PopTarts and Ravioli:\n\nThe Cube Rule of Food, from RedditThus, a PopTart is a calzone."
   },
   {
     "objectID": "slides/01-Syllabus-and-Introductions.html#contact-info",
     "href": "slides/01-Syllabus-and-Introductions.html#contact-info",
     "title": "Introduction",
     "section": "Contact Info",
-    "text": "Contact Info\n\nEmail: susan.vanderplas@unl.edu\nOffice: 343D Hardin Hall North Wing\nPhone: I don’t ever answer it… use email\nOffice Hours: https://calendly.com/drvanderplas/officehours\nSelf-serve, by Zoom unless you specify otherwise.\nTextbook: https://srvanderplas.github.io/stat-computing-r-python\nCourse site: https://srvanderplas.github.io/unl-stat251/"
+    "text": "Contact Info\n\nEmail: susan.vanderplas@unl.edu\nOffice: 343D Hardin Hall North Wing\nOffice Hours:\nhttps://calendly.com/drvanderplas/officehours\nSelf-serve, by Zoom unless you specify otherwise.\nTextbook:\nhttps://srvanderplas.github.io/stat-computing-r-python\nCourse site:\nhttps://srvanderplas.github.io/unl-stat251/"
   },
   {
     "objectID": "slides/01-Syllabus-and-Introductions.html#course-objectives",
     "href": "slides/01-Syllabus-and-Introductions.html#course-objectives",
     "title": "Introduction",
     "section": "Course Objectives",
-    "text": "Course Objectives\n\nUse appropriate visualizations to explore and assess data and its applicability to a problem\nWrite code to reshape and reformat moderately complex and/or messy data in a reproducible manner\nCreate graphical displays to explore data, assess statistical models, and present model results\nAdapt pre-existing code for sophisticated visualizations to new data.\nImplement an algorithm or procedure for data modification given in pseudocode\nWrite pseudocode to describe and document modifications made to the dataset\nAccess documentation and source code to determine how software works (or why it doesn’t)\nIdentify problems in a dataset that limit the analyses which are appropriate for the data"
+    "text": "Course Objectives\n\n\nUse appropriate visualizations to explore and assess data and its applicability to a problem\n\n\n\n\nWrite code to reshape and reformat moderately complex and/or messy data in a reproducible manner\n\n\n\n\nCreate graphical displays to explore data, assess statistical models, and present model results\n\n\n\n\nAdapt pre-existing code for sophisticated visualizations to new data."
+  },
+  {
+    "objectID": "slides/01-Syllabus-and-Introductions.html#course-objectives-1",
+    "href": "slides/01-Syllabus-and-Introductions.html#course-objectives-1",
+    "title": "Introduction",
+    "section": "Course Objectives",
+    "text": "Course Objectives\n\n\nImplement an algorithm or procedure for data modification given in pseudocode\n\n\n\n\nWrite pseudocode to describe and document modifications made to a data set\n\n\n\n\nAccess documentation and source code to determine how software works (or why it doesn’t)\n\n\n\n\nIdentify problems in a data set that limit the analyses which are appropriate for the data"
   },
   {
     "objectID": "slides/01-Syllabus-and-Introductions.html#textbook",
@@ -81,21 +95,21 @@
     "href": "slides/01-Syllabus-and-Introductions.html#outline",
     "title": "Introduction",
     "section": "Outline",
-    "text": "Outline\nSubject to change based on how much of Stat 151 you are already familiar with…\n\n\n\nTentative schedule of class topics\n\n\nDate\nTime\nTopic\n\n\n\n\nJan 24\n\nGetting Started\n\n\nJan 26\n\nVersion Control\n\n\nJan 31\n\nReview: Functions\n\n\nFeb 2\n\nReview: Functions\n\n\nFeb 7\n\nReview: Data Structures\n\n\nFeb 9\n\nReview: Data Structures\n\n\nFeb 14\n\nData Input\n\n\nFeb 16\n\nData Input\n\n\nFeb 21\n\nData Visualization\n\n\nFeb 23\n\nData Visualization"
+    "text": "Outline\nSubject to change based on the events of the semester…\n\n\n\n\n\nDate\nTopic\n\n\n\n\nJan 23\nGetting Started\n\n\nJan 25\nVersion Control\n\n\nJan 30\nReview: Functions\n\n\nFeb 1\nReview: Functions\n\n\nFeb 6\nReview: Data Structures\n\n\nFeb 8\nReview: Data Structures\n\n\nFeb 13\nData Input\n\n\nFeb 15\nData Input\n\n\nFeb 20\nData Visualization\n\n\nFeb 22\nData Visualization\n\n\nFeb 27\nData Cleaning\n\n\nFeb 29\nData Cleaning\n\n\nMar 5\nExam 1 Questions\n\n\nMar 7\nMidterm Due\n\n\nMar 19\nStrings\n\n\nMar 21\nStrings\n\n\nMar 26\nReshaping Data\n\n\nMar 28\nReshaping Data\n\n\nApr 2\nJoining Data\n\n\nApr 4\nJoining Data\n\n\nApr 9\nDates and Times\n\n\nApr 11\nDates and Times\n\n\nApr 16\nProject Work\n\n\nApr 18\nProject Work\n\n\nApr 23\nLists\n\n\nApr 25\nLists\n\n\nApr 30\nProject Work\n\n\nMay 2\nScreencast Video Due\n\n\nMay 7\nSpatial Data\n\n\nMay 9\nPeer Review of Screencast Due\n\n\nMay 14\nScheduled Final"
   },
   {
     "objectID": "slides/01-Syllabus-and-Introductions.html#grades",
     "href": "slides/01-Syllabus-and-Introductions.html#grades",
     "title": "Introduction",
     "section": "Grades",
-    "text": "Grades\n\n\n\nAssignments\nWeight\n\n\n\n\nReading Quizzes\n10%\n\n\nWeekly Homework & Participation\n50%\n\n\nMidterm Exam\n20%\n\n\nFinal Exam\n20%\n\n\n\nApproximately Weekly Homework – started in class"
+    "text": "Grades\n\n\n\nAssignments\nWeight\n\n\n\n\nReading Quizzes\n10%\n\n\nWeekly Homework & Participation\n50%\n\n\nMidterm Exam\n20%\n\n\nProject\n20%\n\n\n\nApproximately Weekly Homework – started in class"
   },
   {
-    "objectID": "slides/01-Syllabus-and-Introductions.html#academic-integrity-submitted-work-policy",
-    "href": "slides/01-Syllabus-and-Introductions.html#academic-integrity-submitted-work-policy",
+    "objectID": "slides/01-Syllabus-and-Introductions.html#academic-integrity-policy",
+    "href": "slides/01-Syllabus-and-Introductions.html#academic-integrity-policy",
     "title": "Introduction",
-    "section": "Academic Integrity / Submitted Work Policy",
-    "text": "Academic Integrity / Submitted Work Policy\n\nYou may (and should!) work with each other on homework assignments\nWork alone on exams\nYou must be able to explain the logic of anything you submit for a grade\nAt my discretion, I will evaluate the coherence of your explanation instead of your submitted work\nChatGPT, StackOverflow, Google are all valuable tools, but they do not help you think"
+    "section": "Academic Integrity Policy",
+    "text": "Academic Integrity Policy\n\nYou may (should!) work with each other on homework assignments\nWork alone on exams\nYou must be able to explain anything you submit\nAt my discretion, I can use a one-on-one discussion of your work to replace the grade for that work.\nChatGPT, StackOverflow, Google are tools, but they do not help you think"
   },
   {
     "objectID": "slides/01-Syllabus-and-Introductions.html#programming",
@@ -116,7 +130,7 @@
     "href": "slides/01-Syllabus-and-Introductions.html#next-time",
     "title": "Introduction",
     "section": "Next Time",
-    "text": "Next Time\nWe’ll work on Version Control with Git\nPlease Read before class: - Computer Basics - Scripts and Notebooks - RStudio’s Interface - Version Control with Git"
+    "text": "Next Time\nWe’ll work on Version Control with Git\n\n\nPlease read before class:\n\nComputer Basics\nScripts and Notebooks\nRStudio’s Interface\nVersion Control with Git\n\n\n\n\n\nOctocat Image Source"
   },
   {
     "objectID": "project/Dataset-Topics.html",
@@ -497,13 +511,6 @@
     "text": "Screencast uploaded to YouTube/YuJa\n\nIf on YouTube, your screencast should be set so that anyone with the link can view the video.\n\nApproximate time index provided for each of the 4 techniques you’re demonstrating (examples) provided\n\nin the README of your github repository\nin the description of your video (if on YouTube)\n\nCommented code for your screencast uploaded to the github repository"
   },
   {
-    "objectID": "slides/02-version-control.html#version-control",
-    "href": "slides/02-version-control.html#version-control",
-    "title": "Version Control",
-    "section": "Version Control",
-    "text": "Version Control\n\nVersion control is the answer to this file naming problem.Image Source “Piled Higher and Deeper” by Jorge Cham www.phdcomics.com"
-  },
-  {
     "objectID": "slides/02-version-control.html#introduce-yourself-to-git",
     "href": "slides/02-version-control.html#introduce-yourself-to-git",
     "title": "Version Control",
@@ -536,6 +543,6 @@
     "href": "slides/02-version-control.html#homework-introduction-to-github",
     "title": "Version Control",
     "section": "Homework: Introduction to Github",
-    "text": "Homework: Introduction to Github\nLink"
+    "text": "Homework: Introduction to Github"
   }
 ]
