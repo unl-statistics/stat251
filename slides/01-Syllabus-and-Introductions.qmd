@@ -165,11 +165,6 @@ Approximately Weekly Homework -- started in class
 - ChatGPT, StackOverflow, Google are tools, but they do not help you think
 
 
-## Programming
-
-<iframe width="1280" height="720" src="https://www.youtube.com/embed/WGWm_lOFXCk" title="Take Chances Make Mistakes - Ms. Frizzle | The Magic School Bus (Gone as Planned)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-
 # Setting Up
 
 ## Install Course Software
