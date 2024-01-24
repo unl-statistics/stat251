@@ -312,7 +312,7 @@
     "href": "index.html",
     "title": "Stat 251: Data Wrangling",
     "section": "",
-    "text": "Course Materials\nDates shown are due dates (for homework and exams) and dates on which material was presented (for slides).\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\nTitle\n\n\nType\n\n\n\n\n\n\n\n\nFeb 11, 2024\n\n\nHomework 3: Cipher\n\n\nhomework\n\n\n\n\n\n\n\nFeb 6, 2024\n\n\nReview - Cipher\n\n\nslides\n\n\n\n\n\n\n\nFeb 4, 2024\n\n\nHomework 2: Review\n\n\nhomework\n\n\n\n\n\n\n\nFeb 1, 2024\n\n\nProgramming Review\n\n\nslides\n\n\n\n\n\n\n\nJan 30, 2024\n\n\nProgramming Review\n\n\nslides\n\n\n\n\n\n\n\nJan 29, 2024\n\n\nReview - Programming\n\n\nreading\n\n\n\n\n\n\n\nJan 28, 2024\n\n\nHomework 1: Git and Github\n\n\nhomework\n\n\n\n\n\n\n\nJan 26, 2024\n\n\nVersion Control\n\n\nslides\n\n\n\n\n\n\n\nJan 24, 2024\n\n\nIntroduction\n\n\nslides\n\n\n\n\n\n\n\nJan 24, 2024\n\n\nVersion Control with Git and Github\n\n\nreading\n\n\n\n\n\n\n\nJan 21, 2024\n\n\nSyllabus\n\n\nreading\n\n\n\n\n\n\n\nJan 21, 2024\n\n\nReview- Tools\n\n\nreading\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Course Materials\nDates shown are due dates (for homework and exams) and dates on which material was presented (for slides).\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\nTitle\n\n\nType\n\n\n\n\n\n\n\n\nFeb 11, 2024\n\n\nHomework 3: Cipher\n\n\nhomework\n\n\n\n\n\n\n\nFeb 6, 2024\n\n\nReview - Cipher\n\n\nundefined\n\n\n\n\n\n\n\nFeb 4, 2024\n\n\nHomework 2: Review\n\n\nhomework\n\n\n\n\n\n\n\nFeb 1, 2024\n\n\nProgramming Review\n\n\nundefined\n\n\n\n\n\n\n\nJan 30, 2024\n\n\nProgramming Review\n\n\nundefined\n\n\n\n\n\n\n\nJan 29, 2024\n\n\nReview - Programming\n\n\nreading\n\n\n\n\n\n\n\nJan 28, 2024\n\n\nHomework 1: Git and Github\n\n\nhomework\n\n\n\n\n\n\n\nJan 26, 2024\n\n\nVersion Control\n\n\nundefined\n\n\n\n\n\n\n\nJan 24, 2024\n\n\nIntroduction\n\n\nundefined\n\n\n\n\n\n\n\nJan 24, 2024\n\n\nVersion Control with Git and Github\n\n\nreading\n\n\n\n\n\n\n\nJan 21, 2024\n\n\nSyllabus\n\n\nreading\n\n\n\n\n\n\n\nJan 21, 2024\n\n\nReview- Tools\n\n\nreading\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "homework/02-review.html",
@@ -473,7 +473,7 @@
     "href": "slides/01-Syllabus-and-Introductions.html#contact-info",
     "title": "Introduction",
     "section": "Contact Info",
-    "text": "Contact Info\n\nEmail: susan.vanderplas@unl.edu\nOffice: 343D Hardin Hall North Wing\nOffice Hours:\nhttps://calendly.com/drvanderplas/officehours\nSelf-serve, by Zoom unless you specify otherwise.\nTextbook:\nhttps://srvanderplas.github.io/stat-computing-r-python\nCourse site:\nhttps://srvanderplas.github.io/unl-stat251/"
+    "text": "Contact Info\n\nEmail: susan.vanderplas@unl.edu\nOffice: 343D Hardin Hall North Wing\nOffice Hours:\nhttps://calendly.com/drvanderplas/officehours\nSelf-serve, by Zoom unless you specify otherwise."
   },
   {
     "objectID": "slides/01-Syllabus-and-Introductions.html#course-objectives",
@@ -495,6 +495,13 @@
     "title": "Introduction",
     "section": "Textbook",
     "text": "Textbook\nhttps://srvanderplas.github.io/stat-computing-r-python/"
+  },
+  {
+    "objectID": "slides/01-Syllabus-and-Introductions.html#course-materials",
+    "href": "slides/01-Syllabus-and-Introductions.html#course-materials",
+    "title": "Introduction",
+    "section": "Course Materials",
+    "text": "Course Materials\n\n\n\nCanvas\n\nquizzes\nweekly readings\nhomework/exam/project submission\n\n\n\n\nCourse site\n\nslides\nweekly readings\nhomework/project/exam descriptions\n\n\nEverything should be cross-linked properly but email me if there’s an issue."
   },
   {
     "objectID": "slides/01-Syllabus-and-Introductions.html#class-schedule",
