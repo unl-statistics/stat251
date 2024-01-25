@@ -45,7 +45,7 @@ listing:
 
 # Course Materials
 
-Dates shown are due dates (for homework and exams) and dates on which material was presented (for slides).
+Dates shown are due dates (for homework and exams) and dates on which material was presented (for slides). 
 
 ::: {#hwlst}
 :::
