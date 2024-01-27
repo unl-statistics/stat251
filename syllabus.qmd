@@ -18,7 +18,7 @@ email: susan.vanderplas@unl.edu
 web: srvanderplas.github.io
 officehours: \href{https://calendly.com/drvanderplas/officehours}{Schedule here}
 office: Hardin 343D
-classroom: Hardin 142-East
+classroom: TEAC 247
 classhours: TR 11:00-12:15
 categories:
 - reading
