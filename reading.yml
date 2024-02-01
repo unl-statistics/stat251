@@ -28,3 +28,13 @@
   type: reading
   image: figs/reading.svg
   is_live: true
+- path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/01-data-input.html
+  title: Data Input
+  date: '2024-02-12'
+  pub.date: '2024-01-29'
+  categories:
+  - reading
+  - Week04
+  type: reading
+  image: figs/reading.svg
+  is_live: true
