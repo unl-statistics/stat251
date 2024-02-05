@@ -37,3 +37,6 @@
 [submodule "project"]
 	path = project
 	url = git@github.com:stat-assignments/screencast.git
+[submodule "exam/2024-midterm"]
+	path = exam/2024-midterm
+	url = git@github.com:stat-assignments/2024-251-midterm.git
