@@ -5,11 +5,10 @@ listing:
 - id: hwlst
   categories: cloud
   contents:
-  - exam-midterm/index.qmd
-  - exam-midterm/objectives.qmd
   - homework/01-git-github.qmd
   - homework/02-review.qmd
   - homework/03-cipher.qmd
+  - homework/04-cookies.qmd
   - slides/01-Syllabus-and-Introductions.qmd
   - slides/02-version-control.qmd
   - slides/03-review-topics.qmd

@@ -90,14 +90,14 @@ schedule:
         date: 2024-02-27
         pub-date: 2024-02-26
         categories: [Exam]
-      - title: Objectives on Exam
+      - title: Exam Objectives
         href: exam/2024-midterm/objectives.qmd
         date: 2024-03-05
-        pub-date: 2023-02-26
+        pub-date: 2024-02-26
         categories: [Exam]
       - href: exam/2024-midterm/index.qmd
         date: 2024-03-07
-        pub-date: 2023-03-05
+        pub-date: 2024-03-05
         categories: [Exam]
       - path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/04-strings.html
         title: Strings

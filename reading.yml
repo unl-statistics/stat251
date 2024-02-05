@@ -38,3 +38,23 @@
   type: reading
   image: figs/reading.svg
   is_live: true
+- path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/02b-graphics.html
+  title: Graphics
+  date: '2024-02-19'
+  pub.date: '2024-02-05'
+  categories:
+  - reading
+  - Week05
+  type: reading
+  image: figs/reading.svg
+  is_live: true
+- path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/02c-good-graphics.html
+  title: Good Graphics
+  date: '2024-02-19'
+  pub.date: '2024-02-05'
+  categories:
+  - reading
+  - Week05
+  type: reading
+  image: figs/reading.svg
+  is_live: true
