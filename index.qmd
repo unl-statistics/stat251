@@ -14,6 +14,7 @@ listing:
   - slides/03-review-topics.qmd
   - slides/04-review-topics.qmd
   - slides/05-review-cipher.qmd
+  - slides/06-review-cipher.qmd
   - syllabus.qmd
   - reading.yml
   sort: date desc

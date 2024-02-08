@@ -1,0 +1,49 @@
+---
+title: Review - Cipher
+author: Stat 251
+title-slide-attributes:
+  data-background-image: fig/cipher.png
+  data-background-size: contain
+  data-background-opacity: '0.10'
+categories:
+- slides
+- Week03
+engine: knitr
+format:
+  revealjs:
+    navigation-mode: vertical
+    logo: N.svg
+    theme: inverse.scss
+    includes:
+      in_header: header.html
+date: '2024-02-08'
+---
+
+# Topics to Know
+
+Review: [General Programming](https://srvanderplas.github.io/stat-computing-r-python/part-gen-prog/00-gen-prog.html)
+
+Know how to:
+
+- **Create a data table structure**
+- **Get a column, row, or value from a data table**
+- **Get an item from a list**
+
+![](fig/programming-why.gif){.absolute bottom="50%" right="10px" width="30%"}
+
+
+# Homework - Review
+
+- Not all statements that execute are correct
+
+```{=html}
+<iframe width="100%" height = "600px" src="https://srvanderplas.github.io/unl-stat251/homework/03-cipher.html"></iframe>
+```
+
+
+# Next Time
+
+- Start on new material - reading data!
+  
+- Before class:     
+Read [Data Input](https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/01-data-input.html) and [Exploratory Data Analysis](https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/02a-eda.html)
