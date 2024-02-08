@@ -65,6 +65,12 @@ schedule:
       - path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/01-data-input.html
         title: Data Input
         date: 2024-02-12
+        pub-date: 2024-02-08
+        categories: [reading]
+      - path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/02a-eda.html
+        title: Exploratory Data Analysis
+        date: 2024-02-12
+        pub-date: 2024-02-08
         categories: [reading]
       - href: homework/04-cookies.qmd
         categories: [HW]
