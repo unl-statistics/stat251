@@ -67,6 +67,10 @@ schedule:
         date: 2024-02-12
         pub-date: 2024-02-08
         categories: [reading]
+      - href: slides/07-input.qmd
+        categories: [slides]
+        date: 2024-02-13
+        pub-date: 2024-02-09
       - path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/02a-eda.html
         title: Exploratory Data Analysis
         date: 2024-02-12
