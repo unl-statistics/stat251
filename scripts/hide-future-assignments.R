@@ -5,7 +5,7 @@ course_settings <- yaml::read_yaml("_schedule.yml")
 
 # extract auto-publish parameters
 timezone <- course_settings$`auto-publish`$timezone
-publish_week_before <- course_settings$`auto-publish`$`publish-week-before`
+publish_days_before <- course_settings$`auto-publish`$`publish-days-before`
 live_as_of <- course_settings$`auto-publish`$`live-as-of`
 
 # Set up weeks to map to dates.
@@ -26,7 +26,7 @@ publish_cutoff <- if (live_as_of == "Sys.time()") {
 
 weeks_to_publish <- dplyr::filter(
   week_mapping,
-  week_start <= publish_cutoff + lubridate::weeks(publish_week_before)
+  week_start <= publish_cutoff + lubridate::days(publish_days_before)
 )
 weeks_to_exclude <- dplyr::anti_join(week_mapping, weeks_to_publish)
 
@@ -58,7 +58,7 @@ materials <- materials_list |>
     dir = dirname(href),
     file = basename(href),
     pub.date = ifelse(is.na(pub.date),
-                      date - lubridate::weeks(publish_week_before),
+                      date - lubridate::days(publish_days_before),
                       pub.date) |> lubridate::as_datetime(tz = timezone),
     is_live = (pub.date <= publish_cutoff) & !is.na(href),
     file_date = lubridate::ymd(date, tz = timezone),
@@ -82,7 +82,7 @@ local_files_df <- local_files_list |>
   dplyr::left_join(week_mapping) |>
   dplyr::mutate(
     pub.date = ifelse(is.na(pub.date),
-                      date - lubridate::weeks(publish_week_before),
+                      date - lubridate::days(publish_days_before),
                       pub.date) |> lubridate::as_datetime(tz = timezone),
     is_live = (pub.date <= publish_cutoff) & !is.na(path),
     file_date = lubridate::ymd(date, tz = timezone),

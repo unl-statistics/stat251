@@ -11,7 +11,7 @@
 - path: https://srvanderplas.github.io/stat-computing-r-python/part-tools/05-git-and-github.html
   title: Version Control with Git and Github
   date: '2024-01-24'
-  pub.date: '2024-01-10'
+  pub.date: '2024-01-15'
   categories:
   - reading
   - Week01
@@ -51,7 +51,7 @@
 - path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/02b-graphics.html
   title: Graphics
   date: '2024-02-19'
-  pub.date: '2024-02-05'
+  pub.date: '2024-02-10'
   categories:
   - reading
   - Week05
@@ -61,7 +61,7 @@
 - path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/02c-good-graphics.html
   title: Good Graphics
   date: '2024-02-19'
-  pub.date: '2024-02-05'
+  pub.date: '2024-02-10'
   categories:
   - reading
   - Week05
@@ -71,7 +71,7 @@
 - path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/03-data-cleaning.html
   title: Data Cleaning
   date: '2024-02-26'
-  pub.date: '2024-02-12'
+  pub.date: '2024-02-17'
   categories:
   - reading
   - Week06

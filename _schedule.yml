@@ -197,7 +197,7 @@ schedule:
 
 auto-publish:
   timezone: "America/Chicago"
-  publish-week-before: 2
+  publish-days-before: 9
   live-as-of: "Sys.time()" # Either Sys.time() or a date parseable by lubridate::ymd()
 
 instructors:
