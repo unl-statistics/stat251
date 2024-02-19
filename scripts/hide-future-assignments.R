@@ -38,7 +38,7 @@ materials_list <- purrr::map(course_settings$schedule, "materials") |>
 local_files_list <- purrr::keep(materials_list, ~"path" %in% names(.))
 
 
-# Deal with assignments and things that have an href field 
+# Deal with assignments and things that have an href field
 # instead of a path field
 materials <- materials_list |>
   purrr::keep(~"href" %in% names(.)) |>
@@ -47,7 +47,7 @@ materials <- materials_list |>
   dplyr::filter(!is.na(href)) |>
   dplyr::arrange(href) |>
   dplyr::mutate_at(
-    .vars = c("date", "pub.date"), 
+    .vars = c("date", "pub.date"),
     lubridate::ymd, tz=timezone
   ) |>
   dplyr::mutate(
@@ -67,11 +67,13 @@ materials <- materials_list |>
 
 include_files <- dplyr::filter(materials, is_live)
 
+message("Materials assembled")
+
 ## This writes out yaml for things that don't have href fields
 local_files_df <- local_files_list |>
   purrr::map_df(as.data.frame) |>
   dplyr::mutate_at(
-    .vars = c("date", "pub.date"), 
+    .vars = c("date", "pub.date"),
     lubridate::ymd, tz=timezone
   ) |>
   dplyr::mutate(
@@ -88,21 +90,35 @@ local_files_df <- local_files_list |>
     categories = purrr::map2(categories, name, ~c(as.character(unlist(.x)), .y))
   ) |>
   dplyr::mutate(image = sprintf("figs/%s.svg", tolower(type))) |>
-  dplyr::select(path, title, date, pub.date, categories, type, image, is_live) 
+  dplyr::select(path, title, date, pub.date, categories, type, image, is_live)
 
-
+message("Reading assembled")
 source("scripts/change-yml.R")
 
-include_links <- local_files_df |>
-  dplyr::filter(is_live) |>
-  split(1:sum(local_files_df$is_live)) |>
-  purrr::map(as.list) 
+message("Sourced change-yml.R")
+# include_materials <- materials |>
+#   dplyr::filter(is_live)
 
+# include_materials <- include_materials |>
+#   split(1:nrow(include_materials)) |>
+#   purrr::map(as.list) |>
+
+include_links <- local_files_df |>
+  dplyr::filter(is_live)
+include_links <- include_links|>
+  split(1:nrow(include_links)) |>
+  purrr::map(as.list)
+
+# include_materials <- purrr::modify(include_materials, ~purrr::modify_in(., "categories", unlist))
 include_links <- purrr::modify(include_links, ~purrr::modify_in(., "categories", unlist))
+
+# names(include_materials) <- NULL
+# yaml::write_yaml(include_materials, "materials.yml", handlers = yml_handlers)
 
 names(include_links) <- NULL
 yaml::write_yaml(include_links, "reading.yml", handlers = yml_handlers)
 
+message("listing yml files created")
 
 # Write out exclude files for homeworks and assignments that aren't yet relevant
 idx_lines <- readLines("index.qmd")
@@ -116,10 +132,11 @@ index_yml$output_file <- "index.qmd"
 # Exclude unpublished stuff from the listing by updating the yaml
 do.call("change_yaml_matter", index_yml)
 
+message("Updating yaml in index.qmd")
 
 # This bit renames files with _ in front to actually prevent them from rendering
-# This sometimes screws with quarto's render process, especially anytime 
-# something changes. 
+# This sometimes screws with quarto's render process, especially anytime
+# something changes.
 
 # renamed_files <- materials |>
 #   dplyr::mutate(
@@ -131,7 +148,7 @@ do.call("change_yaml_matter", index_yml)
 #   )
 #   dplyr::filter(is_live != is_visible) |>
 #   dplyr::mutate(renamed = purrr::map2_lgl(current_path, rename_path, file.rename))
-# 
+#
 # if (nrow(renamed_files) > 0) {
 #   cli::cli_alert_success("The following files have publish dates after {publish_cutoff} and therefore are ignored: {renamed_files$rename_path}")
 # } else {

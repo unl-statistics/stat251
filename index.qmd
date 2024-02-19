@@ -10,6 +10,7 @@ listing:
   - homework/03-cipher.qmd
   - homework/04-cookies.qmd
   - homework/05-graphics-groundhogs.qmd
+  - homework/06-data-manip.qmd
   - slides/01-Syllabus-and-Introductions.qmd
   - slides/02-version-control.qmd
   - slides/03-review-topics.qmd
@@ -29,20 +30,7 @@ listing:
   field-display-names:
     type: Type
   exclude:
-    categories:
-    - Week04
-    - Week05
-    - Week06
-    - Week07
-    - Week08
-    - Week09
-    - Week10
-    - Week11
-    - Week12
-    - Week13
-    - Week14
-    - Week15
-    - Finals
+    categories: Finals
 ---
 
 # Course Materials
