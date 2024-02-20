@@ -35,6 +35,419 @@
     "text": "Part 4 - Peer Review\n\nIn place of the final exam:\n\nWatch 2 screencasts\nPeer evaluations - leave a comment on Canvas\nI will provide a rubric\n\nTake place between May 4 and Finals week"
   },
   {
+    "objectID": "slides/02-version-control.html#introduce-yourself-to-git",
+    "href": "slides/02-version-control.html#introduce-yourself-to-git",
+    "title": "Version Control",
+    "section": "Introduce yourself to git",
+    "text": "Introduce yourself to git\nIn a system terminal, run…\n\ngit config --global user.name 'YOUR NAME HERE'\ngit config --global user.email 'YOUR EMAIL HERE'\ngit config --global --list # check to see it worked"
+  },
+  {
+    "objectID": "slides/02-version-control.html#set-up-ssh-authentication",
+    "href": "slides/02-version-control.html#set-up-ssh-authentication",
+    "title": "Version Control",
+    "section": "Set up SSH authentication",
+    "text": "Set up SSH authentication\nInstructions"
+  },
+  {
+    "objectID": "slides/02-version-control.html#navigating-around-github",
+    "href": "slides/02-version-control.html#navigating-around-github",
+    "title": "Version Control",
+    "section": "Navigating around Github",
+    "text": "Navigating around Github\n(Demo)"
+  },
+  {
+    "objectID": "slides/02-version-control.html#using-rstudio-and-git",
+    "href": "slides/02-version-control.html#using-rstudio-and-git",
+    "title": "Version Control",
+    "section": "Using RStudio and git",
+    "text": "Using RStudio and git\n(Demo)"
+  },
+  {
+    "objectID": "slides/02-version-control.html#homework-introduction-to-github",
+    "href": "slides/02-version-control.html#homework-introduction-to-github",
+    "title": "Version Control",
+    "section": "Homework: Introduction to Github",
+    "text": "Homework: Introduction to Github"
+  },
+  {
+    "objectID": "project/screencast-checklist.html",
+    "href": "project/screencast-checklist.html",
+    "title": "Screencast Checklist",
+    "section": "",
+    "text": "Screencast uploaded to YouTube/YuJa\n\nIf on YouTube, your screencast should be set so that anyone with the link can view the video.\n\nApproximate time index provided for each of the 4 techniques you’re demonstrating (examples) provided\n\nin the README of your github repository\nin the description of your video (if on YouTube)\n\nCommented code for your screencast uploaded to the github repository"
+  },
+  {
+    "objectID": "project/index.html",
+    "href": "project/index.html",
+    "title": "Project: Screencast",
+    "section": "",
+    "text": "Project Description\nFor your final project (which will take the place of the final exam), you will be recording a screencast in the style of David Robinson’s TidyTuesday screencasts.\nYou can find time-stamped, catalogued versions of some of David Robinson’s screencasts here.\nRequirements:\n\nYour screencast should be approximately 45 minutes long.\nYour screencast should show your analysis of a TidyTuesday dataset from 2023\nYou should showcase at least 4 different techniques you’ve learned in Stat 251. Some examples include:\n\ndata cleaning (dplyr) verbs\nreshaping data (tidyr)\nworking with dates and times (lubridate)\nworking with strings (stringr)\nwriting functions to modularize your code\nvisualizing your data effectively\n\n\nUnlike David Robinson’s screencasts, you will write a rough pseudocode “script” before you start recording. This will give you a rough outline of how to do the analysis and what things you intend to cover.\nYour goal is to help a future Stat 251 student understand some of the topics covered in this class. So while David Robinson and others who record their screencasts live might not fully explain what he’s doing, you should take the time to explain each technique you decide to use in a way that will help someone else understand.\nThere will be three deliverables for this project:\n\nPlan your dataset and topics\nPseudocode script uploaded to github repository\nScreencast + github repository\n\nScreencast uploaded to YouTube/YuJa\nApproximate time index provided for each of the 4 techniques you’re demonstrating (examples)\nCode uploaded to github repository\n\n\nIn lieu of the final exam, you will peer review two classmates’ screencasts."
+  },
+  {
+    "objectID": "homework/15-project-peer-review.html",
+    "href": "homework/15-project-peer-review.html",
+    "title": "Project Peer Reviews",
+    "section": "",
+    "text": "To complete this assignment, you will need to follow the instructions for completing a peer review with a rubric on Canvas\nYou must peer review all of the assigned videos to get credit for this assignment."
+  },
+  {
+    "objectID": "homework/11-functional-prog.html",
+    "href": "homework/11-functional-prog.html",
+    "title": "Functional Programming: Cats and Dogs",
+    "section": "",
+    "text": "Note: This assignment must be submitted in github classroom."
+  },
+  {
+    "objectID": "homework/11-functional-prog.html#r---animal-change-this-to-match",
+    "href": "homework/11-functional-prog.html#r---animal-change-this-to-match",
+    "title": "Functional Programming: Cats and Dogs",
+    "section": "R - Animal (change this to match)",
+    "text": "R - Animal (change this to match)"
+  },
+  {
+    "objectID": "homework/11-functional-prog.html#python---animal-change-this-to-match",
+    "href": "homework/11-functional-prog.html#python---animal-change-this-to-match",
+    "title": "Functional Programming: Cats and Dogs",
+    "section": "Python - Animal (change this to match)",
+    "text": "Python - Animal (change this to match)"
+  },
+  {
+    "objectID": "homework/09-join.html",
+    "href": "homework/09-join.html",
+    "title": "Homework 8: Joins and Summaries",
+    "section": "",
+    "text": "Note: This assignment must be submitted in github classroom.\nThis week, you’ll be using table joins to solve a murder mystery."
+  },
+  {
+    "objectID": "homework/09-join.html#r",
+    "href": "homework/09-join.html#r",
+    "title": "Homework 8: Joins and Summaries",
+    "section": "R",
+    "text": "R\n\n# you can do the assignment using the database, if you want, \n# or you can use the code below to read in each table separately.\nlibrary(RSQLite)\nlibrary(DBI)\n# Your database connection code goes here. Store the connection as con \ncon &lt;- dbConnect(RSQLite::SQLite(), \"sql-murder-mystery.db\")\n# close the connection when you're done\ndbDisconnect(con)\n\n\n# This loads all of the tables into R data frame objects. \n# You can also just use the database connection above.\n# You don't need to understand what this code does to run it :)\nif (!\"purrr\" %in% installed.packages()) {\n  install.packages(\"purrr\")\n}\n# Load all tables from CSV\ntable_names &lt;- c(\"crime_scene_report\", \n                 \"drivers_license\", \n                 \"facebook_event_checkin\",\n                 \"get_fit_now_check_in\", \n                 \"get_fit_now_member\", \n                 \"income\", \n                 \"interview\",\n                 \"person\")\nurl_base &lt;- \"https://raw.githubusercontent.com/srvanderplas/datasets/main/raw/sql-murder/\"\n# For each table name, read the tables in and store them as the name of the table\npurrr::walk(table_names, function(x) {\n  assign(x, readr::read_csv(paste0(url_base, x, \".csv\")), envir = .GlobalEnv)\n})"
+  },
+  {
+    "objectID": "homework/09-join.html#python",
+    "href": "homework/09-join.html#python",
+    "title": "Homework 8: Joins and Summaries",
+    "section": "Python",
+    "text": "Python\n\nimport pandas as pd\nimport sqlite3\n# Read sqlite query results into a pandas DataFrame\ncon = sqlite3.connect(\"sql-murder-mystery.db\")\ncrime_scene_report = pd.read_sql_query(\"SELECT * from crime_scene_report\", con)\ndrivers_license = pd.read_sql_query(\"SELECT * from drivers_license\", con)\nfacebook_event_checkin = pd.read_sql_query(\"SELECT * from facebook_event_checkin\", con)\nget_fit_now_check_in = pd.read_sql_query(\"SELECT * from get_fit_now_check_in\", con)\nget_fit_now_member = pd.read_sql_query(\"SELECT * from get_fit_now_member\", con)\nincome = pd.read_sql_query(\"SELECT * from income\", con)\ninterview = pd.read_sql_query(\"SELECT * from interview\", con)\nperson = pd.read_sql_query(\"SELECT * from person\", con)\n# Verify that result of SQL query is stored in the dataframe\nprint(crime_scene_report.head())\ncon.close()"
+  },
+  {
+    "objectID": "homework/09-join.html#getting-started",
+    "href": "homework/09-join.html#getting-started",
+    "title": "Homework 8: Joins and Summaries",
+    "section": "Getting Started",
+    "text": "Getting Started\nTo get you started, I’ll set you up in the right place.\n\nA crime has taken place and the detective needs your help. The detective gave you the crime scene report, but you somehow lost it. You vaguely remember that the crime was a murder that occurred sometime on Jan.15, 2018 and that it took place in SQL City. Start by retrieving the corresponding crime scene report from the police department’s database.\n\n\nlibrary(dplyr)\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union\n\nlibrary(tidyr)\n\ncrime_of_interest &lt;- crime_scene_report %&gt;%\n  filter(date == \"20180115\", city == \"SQL City\", type == \"murder\")\ncrime_of_interest$description\n\n[1] \"Security footage shows that there were 2 witnesses. The first witness lives at the last house on \\\"Northwestern Dr\\\". The second witness, named Annabel, lives somewhere on \\\"Franklin Ave\\\".\""
+  },
+  {
+    "objectID": "homework/07-strings.html",
+    "href": "homework/07-strings.html",
+    "title": "String Processing and Data Wrangling in R and Python",
+    "section": "",
+    "text": "Note: This assignment must be submitted in github classroom."
+  },
+  {
+    "objectID": "homework/07-strings.html#content-warning",
+    "href": "homework/07-strings.html#content-warning",
+    "title": "String Processing and Data Wrangling in R and Python",
+    "section": "Content Warning",
+    "text": "Content Warning\nThese poems may address adult topics and/or use strong or vulgar language, as they are taken from Reddit. I have not censored them in any way because I want you to work with data that is realistic. You should find a few test cases which you are comfortable with to use to test out your code, but you do not need to read all of the poems (and in both cases, I’ve provided you with approximately 1000 samples, so it’s probably too much to read in any case).\nHere are 5 indices (counting from 1) which are approximately G or PG in content for each poet, using the most recent snapshot CSV (20230806):\n\nSprog poems: 2, 6, 7, 8, 9\nSchnoodleDoodleDo poems: 1, 2, 3, 4, 5\n\nThese should be sufficient for you to test your code even if you are worried about being exposed to adult themes or language during this activity."
+  },
+  {
+    "objectID": "homework/07-strings.html#splitting-poems-into-lines",
+    "href": "homework/07-strings.html#splitting-poems-into-lines",
+    "title": "String Processing and Data Wrangling in R and Python",
+    "section": "Splitting Poems into Lines",
+    "text": "Splitting Poems into Lines\nSplit the poem into lines and create a data frame that has\n\na new column called poem_id, numbered from one to the total number of poems by the poet in question\na new variable called line that contains the text of each line of the poem (one row per poem line). To get this, you may need to split the comment string by the endline character (\\n) and then unnest or expand your data frame.\na new variable called line_no that contains the line number of the poem. This should be computed per poem.\n\nEnsure that you are splitting lines by a string which makes sense. Some poems have multiple paragraphs (stanzas) and may have a blank line in between; you want to preserve this blank line as it will help you make sense of the poem. Some poems instead have blank lines between every line of the poem; in these cases, you may want to split by e.g. \\n\\n instead of \\n.\nSee Part 1 Checkpoint for an example of what the output should look like from each poet."
+  },
+  {
+    "objectID": "homework/07-strings.html#summarizing-poems",
+    "href": "homework/07-strings.html#summarizing-poems",
+    "title": "String Processing and Data Wrangling in R and Python",
+    "section": "Summarizing Poems",
+    "text": "Summarizing Poems\nFor each poem, create a summary data frame that contains:\n\nAverage number of words per line in the poem\nNumber of lines in the poem\nNumber of characters which are not letters or spaces (punctuation, numbers, and any non-ASCII characters)\nNumber of uppercase letters in the poem\nNumber of lowercase letters in the poem\n\nCreate a plot showing the distribution of the number of words per line across all poems you have in your dataset. Create another plot showing the number of lines in the poem for all poems in your dataset. What does this tell you about the “average” style of the poet in question?\nSee Part 2 Checkpoint for an example of what the output should look like from each poet."
+  },
+  {
+    "objectID": "homework/07-strings.html#poetry-analysis",
+    "href": "homework/07-strings.html#poetry-analysis",
+    "title": "String Processing and Data Wrangling in R and Python",
+    "section": "Poetry Analysis",
+    "text": "Poetry Analysis\nChoose some characteristic(s) of the poet’s style to explore graphically. If necessary, create a subset of the data with poems relevant to your question before you generate numerical summaries. You may want to clean up the data and remove lines which contain quotes (e.g. start with a &gt; character) or horizontal lines in reddit markdown (e.g. only have ----).\nSome ideas to get you started thinking:\n\nNumber of syllables per line may be used to infer rhyming scheme and/or poetry style. You can use the qdap package in R, which contains the syllable_sum function to count the number of syllables in a sentence. You may need to use a for-loop or program a custom function to use the syllables function on every entry in your data frame column.\nUse of non-alphabetic characters. Schnoodle often uses emoji and other text annotations to convey emotions and excitement - how often do these types of annotations appear in their poems?\nCommon characters and phrases. Sprog writes poems frequently about a character named Timmy (who often meets a horrible end). Do these poems have a common format/style/rhyme scheme?\nSprog often writes longer poems with multiple stanzas. Identify which poems have multiple stanzas (Hint, look for blank lines in a systematic pattern) and show the distribution of stanza length, stanza variation within poems, and number of stanzas in each poem.\nSchnoodle often misspells words intentionally (using e.g. fren instead of friend) to convey that they are writing using an animal’s voice. What proportion of words are misspelled in each poem? How much does this proportion vary? Based on the distribution, how likely is it, in your opinion, that Schnoodle misspells words more often when speaking as one type of animal than another? You can use the hunspell package in R to detect whether words are likely misspelled."
+  },
+  {
+    "objectID": "homework/07-strings.html#splitting-poems-into-lines-1",
+    "href": "homework/07-strings.html#splitting-poems-into-lines-1",
+    "title": "String Processing and Data Wrangling in R and Python",
+    "section": "Splitting Poems into Lines",
+    "text": "Splitting Poems into Lines\nSplit the poem into lines and create a data frame that has\n\na new column called poem_id, numbered from one to the total number of poems by the poet in question\na new variable called line that contains the text of each line of the poem (one row per poem line). To get this, you may need to split the comment string by the endline character (\\n) and then unnest or expand your data frame.\na new variable called line_no that contains the line number of the poem. This should be computed per poem.\n\nEnsure that you are splitting lines by a string which makes sense. Some poems have multiple paragraphs (stanzas) and may have a blank line in between; you want to preserve this blank line as it will help you make sense of the poem. Some poems instead have blank lines between every line of the poem; in these cases, you may want to split by e.g. \\n\\n instead of \\n. See Part 1 Checkpoint for an example of what the output should look like from each poet."
+  },
+  {
+    "objectID": "homework/07-strings.html#summarizing-poems-1",
+    "href": "homework/07-strings.html#summarizing-poems-1",
+    "title": "String Processing and Data Wrangling in R and Python",
+    "section": "Summarizing Poems",
+    "text": "Summarizing Poems\nFor each poem, create a summary data frame that contains:\n\nAverage number of words per line in the poem\nNumber of lines in the poem\nNumber of characters which are not letters or spaces (punctuation, numbers, and any non-ASCII characters)\nNumber of uppercase letters in the poem\nNumber of lowercase letters in the poem\n\nCreate a plot showing the distribution of the number of words per line across all poems you have in your dataset. Create another plot showing the number of lines in the poem for all poems in your dataset. What does this tell you about the “average” style of the poet in question?"
+  },
+  {
+    "objectID": "homework/07-strings.html#poetry-analysis-1",
+    "href": "homework/07-strings.html#poetry-analysis-1",
+    "title": "String Processing and Data Wrangling in R and Python",
+    "section": "Poetry Analysis",
+    "text": "Poetry Analysis\nChoose some characteristic(s) of the poet’s style to explore graphically. If necessary, create a subset of the data with poems relevant to your question before you generate numerical summaries. You may want to clean up the data and remove lines which contain quotes (e.g. start with a &gt; character) or horizontal lines in reddit markdown (e.g. only have ----).\nSome ideas to get you started thinking:\n\nNumber of syllables per line may be used to infer rhyming scheme and/or poetry style. You can use the syllables python package. You may need to use a for-loop or program a custom function to use the syllables function on every entry in your data frame column.\nUse of non-alphabetic characters. Schnoodle often uses emoji and other text annotations to convey emotions and excitement - how often do these types of annotations appear in their poems?\nCommon characters and phrases. Sprog writes poems frequently about a character named Timmy (who often meets a horrible end). Do these poems have a common format/style/rhyme scheme?\nSprog often writes longer poems with multiple stanzas. Identify which poems have multiple stanzas (Hint, look for blank lines in a systematic pattern) and show the distribution of stanza length, stanza variation within poems, and number of stanzas in each poem.\nSchnoodle often misspells words intentionally (using e.g. fren instead of friend) to convey that they are writing using an animal’s voice. What proportion of words are misspelled in each poem? How much does this proportion vary? Based on the distribution, how likely is it, in your opinion, that Schnoodle misspells words more often when speaking as one type of animal than another? You can use one of the python packages discussed in this post to detect whether words are likely misspelled."
+  },
+  {
+    "objectID": "homework/05-graphics-groundhogs.html",
+    "href": "homework/05-graphics-groundhogs.html",
+    "title": "Homework 5: Graphics",
+    "section": "",
+    "text": "Note: This assignment must be submitted in github classroom."
+  },
+  {
+    "objectID": "homework/05-graphics-groundhogs.html#data-exploration",
+    "href": "homework/05-graphics-groundhogs.html#data-exploration",
+    "title": "Homework 5: Graphics",
+    "section": "Data Exploration",
+    "text": "Data Exploration\nOne extremely important use of charts is to explore new datasets. In order to get the most out of a dataset, however, it is important to use a chart that is suited to the type of data: a density plot will not work well for showing categorical data, for instance.\nFor each variable in the groundhogs data that contains useful information, find an appropriate plot for the data. You may show more than one variable in a single plot (latitude and longitude should probably be shown together). You may use either R or python for this task.\ngroundhogs.csv\n\nlat, long\ncountry\nisGroundhog\nactive\npredictionsCount\n\npredictions.csv\n\nisGroundhog\nyear\nshadow\n\nFor each plot you draw, write 1-2 sentences explaining what you can learn from the plot.\n\nThis plot shows…"
+  },
+  {
+    "objectID": "homework/05-graphics-groundhogs.html#grammar-of-graphics",
+    "href": "homework/05-graphics-groundhogs.html#grammar-of-graphics",
+    "title": "Homework 5: Graphics",
+    "section": "Grammar of Graphics",
+    "text": "Grammar of Graphics\nThink of a good way to answer the following questions with a plot. For each plot, write 1-2 sentences explaining why you mapped each variable in the way that you did. Use ggplot2 for this portion of the assignment.\nYou may make editorial decisions here - it may be useful to only show groundhogs with 20 years of predictions, for instance. If you make such decisions, please explain why.\nYour charts must have appropriate axis labels and titles.\n\nDo different groundhogs have different probabilities of predicting 6 more weeks of winter?\n\nI mapped … to x and … to y because…\n\n\nHow much do North American groundhogs tend to agree on their predictions?\nDoes there appear to be any spatial covariance (that is, are groundhogs who are close together more likely to predict the same thing?)\n\nI mapped … to x and … to y because…"
+  },
+  {
+    "objectID": "homework/05-graphics-groundhogs.html#ugly-chart-challenge",
+    "href": "homework/05-graphics-groundhogs.html#ugly-chart-challenge",
+    "title": "Homework 5: Graphics",
+    "section": "Ugly Chart Challenge",
+    "text": "Ugly Chart Challenge\nThe textbook spent lots of time showing you how to create different types of graphics, but I spent a lot less time showing you all of the different ways you could customize graphics in any plotting library. In this problem, I want you to create the ugliest graph you can, and then explain why, exactly, you made the decisions you did, and which principles of good graphics you’ve intentionally violated.\nUgliness is subjective, so the goal here is for you to explore the different ways you can customize the finer details of a plot. Make sure your finished masterpiece has appropriate axis labels and a title (after all, even ugly plots need to be correctly labeled!). You are free to add additional variables and layers, modify the aesthetics used, and leverage other packages. If you need inspiration, look here.\nUse the groundhog data to create the ugliest chart you possibly can, by violating as many guidelines for the creation of good graphics as possible.\nDo this for one plotting system in R, and one plotting system in Python. You might try different ways to make things ugly in each plotting system. Note that this dataset does include images of each groundhog, so feel free to leverage that in your plot, if you are so inspired.\nFor each plot, explain why the plot is ugly and what principles of good graphics it violates in 2-3 sentences.\n\nR\nThis chart is ugly because it violates …\n\n\nPython\nThis chart is ugly because it violates …"
+  },
+  {
+    "objectID": "homework/03-cipher.html",
+    "href": "homework/03-cipher.html",
+    "title": "decodeR: Base R",
+    "section": "",
+    "text": "Note: This assignment must be submitted in github classroom.\nThis assignment is modified from the decodeR exercises by Kelly Bodwin and Allison Theobold.\nIn this assignment, you will be creating and manipulating vectors, lists, and data frames to uncover a top secret message.\nSome advice:"
+  },
+  {
+    "objectID": "homework/03-cipher.html#part-one-setup",
+    "href": "homework/03-cipher.html#part-one-setup",
+    "title": "decodeR: Base R",
+    "section": "Part One: Setup",
+    "text": "Part One: Setup\nEach of the following R chunks will cause an error and/or do the desired task incorrectly. Find the mistake, and correct it to complete the intended action. For each error, write 1-2 sentences to reflect on what the mistake was and how you found it and fixed it.\n\nCreate vectors containing the upper case letters, lower case letters, and some punctuation marks.\n\n\nlower_case &lt;- c(\"a\", \"b\", \"c\", \"d\", \"e\", \"f\", \"g\", \"h\", \"i\", \"j\", \"k\", \"l\", \"m\", \"n\", \"o\", \"p\", \"q\", \"r\", \"s\", \"t\", \"u\", \"v\", \"w\", \"x\", \"y\", \"z\")\n\nupper_case &lt;- c(\"A\", \"B\", \"C\", \"D\", \"E\", \"F\", \"G\", \"H\" \"I\", \"J\", \"K\", \"L\", \"M\", \"N\", \"O\", \"P\", \"Q\", \"R\", \"S\", \"T\", \"U\", \"V\", \"W\", \"X\", \"Y\", \"Z\")\n\npunctuation &lt;- c(\".\", \",\", \"!\", \"?\", \"'\", \"\"\", \"(\", \")\", \" \", \"-\", \";\", \":\")\n\n\nMake one long vector containing all the symbols.\n\n\nmy_symbols &lt;- cbind(lower_case, upper_case, punctuation)\n\n\nTurn the my_symbols vector into a data frame, with the variable name “Symbol”\n\n\nmy_symbols &lt;- dataframe(my_symbols)\nnames(my_symbols) = Symbol\n\n\nFind the total number of symbols we have in our data frame.\n\n\nlen &lt;- length(my_symbols)\n\n\nCreate a new variable in your dataframe that assigns a number to each symbol.\n\n\nmy_symbols%Num &lt;- 1:len"
+  },
+  {
+    "objectID": "homework/03-cipher.html#part-two-decoding-the-secret-message.",
+    "href": "homework/03-cipher.html#part-two-decoding-the-secret-message.",
+    "title": "decodeR: Base R",
+    "section": "Part Two: Decoding the secret message.",
+    "text": "Part Two: Decoding the secret message.\nThis chunk will load up the encoded secret message as a vector:\n\ntop_secret &lt;- read.csv(\"Secret_Code\", header = FALSE)$V1\n\nBy altering this top secret set of numbers, you will be able to create a message. Write your own code to complete the steps below.\n\nAdd 14 to every number.\nMultiply every number by 18, then subtract 257.\nExponentiate every number. (That is, do e^[number].)\nSquare every number.\n\nCheckpoint: Headquarters has informed you that at this stage of decoding, there should be 352 numbers in the secret message that are below 17.\n\nTurn your vector of numbers into a matrix with 5 columns.\nSeparately from your top secret numbers, create a vector of all the even numbers between 1 and 382. Name it “evens”. That is, “evens” should contain 2, 4, 6, 8 …, 382.\nSubtract the “evens” vector from the first column of your secret message matrix.\nSubtract 100 from all numbers in the 18-24th rows of the 3rd column.\nMultiply all numbers in the 4th and 5th column by 2.\nTurn your matrix back into a vector.\n\nCheckpoint: Headquarters has informed you that at this stage of decoding, all numbers in indices 500 and beyond are below 100.\n\nTake the square root of all numbers in indices 38 to 465.\nRound all numbers to the nearest whole number.\nReplace all instances of the number 39 with 20.\n\nCheckpoint: Headquarters has informed you that your final message should have 344 even numbers."
+  },
+  {
+    "objectID": "homework/03-cipher.html#part-3-the-secret-message",
+    "href": "homework/03-cipher.html#part-3-the-secret-message",
+    "title": "decodeR: Base R",
+    "section": "Part 3: The secret message!",
+    "text": "Part 3: The secret message!\nUse your final vector of numbers as indices for my_symbols to discover the final message!\nGoogle the first line of this message, if you do not recognize it, to see what it is.\nWrite 3-4 sentences about what you learned from this investigation. What problems did you encounter, and how did you solve them? Could you do the same tasks in Python? Why or why not?"
+  },
+  {
+    "objectID": "homework/01-git-github.html",
+    "href": "homework/01-git-github.html",
+    "title": "👋 The Basics of GitHub",
+    "section": "",
+    "text": "Note: This assignment must be submitted in github classroom."
+  },
+  {
+    "objectID": "homework/01-git-github.html#course-overview-and-learning-outcomes",
+    "href": "homework/01-git-github.html#course-overview-and-learning-outcomes",
+    "title": "👋 The Basics of GitHub",
+    "section": "🤓 Course overview and learning outcomes",
+    "text": "🤓 Course overview and learning outcomes\nThe goal of this course is to give you a brief introduction to GitHub. We’ll also provide you with materials for further learning and a few ideas to get you started on our platform. 🚀"
+  },
+  {
+    "objectID": "homework/01-git-github.html#git-and-github",
+    "href": "homework/01-git-github.html#git-and-github",
+    "title": "👋 The Basics of GitHub",
+    "section": "Git and GitHub",
+    "text": "Git and GitHub\nGit is a distributed Version Control System (VCS), which means it is a useful tool for easily tracking changes to your code, collaborating, and sharing. With Git you can track the changes you make to your project so you always have a record of what you’ve worked on and can easily revert back to an older version if need be. It also makes working with others easier—groups of people can work together on the same project and merge their changes into one final source!\nGitHub is a way to use the same power of Git all online with an easy-to-use interface. It’s used across the software world and beyond to collaborate and maintain the history of projects.\nGitHub is home to some of the most advanced technologies in the world. Whether you’re visualizing data or building a new game, there’s a whole community and set of tools on GitHub that can get you to the next step. This course starts with the basics of GitHub, but we’ll dig into the rest later."
+  },
+  {
+    "objectID": "homework/01-git-github.html#understanding-the-github-flow",
+    "href": "homework/01-git-github.html#understanding-the-github-flow",
+    "title": "👋 The Basics of GitHub",
+    "section": "Understanding the GitHub flow",
+    "text": "Understanding the GitHub flow\nThe GitHub flow is a lightweight workflow that allows you to experiment and collaborate on your projects easily, without the risk of losing your previous work.\n\nRepositories\nA repository is where your project work happens–think of it as your project folder. It contains all of your project’s files and revision history. You can work within a repository alone or invite others to collaborate with you on those files.\n\n\nCloning\nWhen a repository is created with GitHub, it’s stored remotely in the ☁️. You can clone a repository to create a local copy on your computer and then use Git to sync the two. This makes it easier to fix issues, add or remove files, and push larger commits. You can also use the editing tool of your choice as opposed to the GitHub UI. Cloning a repository also pulls down all the repository data that GitHub has at that point in time, including all versions of every file and folder for the project! This can be helpful if you experiment with your project and then realize you liked a previous version more. To learn more about cloning, read “Cloning a Repository”.\n\n\nCommitting and pushing\nCommitting and pushing are how you can add the changes you made on your local machine to the remote repository in GitHub. That way your instructor and/or teammates can see your latest work when you’re ready to share it. You can make a commit when you have made changes to your project that you want to “checkpoint.” You can also add a helpful commit message to remind yourself or your teammates what work you did (e.g. “Added a README with information about our project”).\nOnce you have a commit or multiple commits that you’re ready to add to your repository, you can use the push command to add those changes to your remote repository. Committing and pushing may feel new at first, but we promise you’ll get used to it 🙂"
+  },
+  {
+    "objectID": "homework/01-git-github.html#github-terms-to-know",
+    "href": "homework/01-git-github.html#github-terms-to-know",
+    "title": "👋 The Basics of GitHub",
+    "section": "💻 GitHub terms to know",
+    "text": "💻 GitHub terms to know\n\nRepositories\nWe mentioned repositories already, they are where your project work happens, but let’s talk a bit more about the details of them! As you work more on GitHub you will have many repositories which may feel confusing at first. Fortunately, your “GitHub dashboard” helps to easily navigate to your repositories and see useful information about them. Make sure you’re logged in to see it!\nRepositories also contain READMEs. You can add a README file to your repository to tell other people why your project is useful, what they can do with your project, and how they can use it. We are using this README to communicate how to learn Git and GitHub with you. 😄 To learn more about repositories read “Creating, Cloning, and Archiving Repositories and “About README’s”.\n\n\nBranches\nYou can use branches on GitHub to isolate work that you do not want merged into your final project just yet. Branches allow you to develop features, fix bugs, or safely experiment with new ideas in a contained area of your repository. Typically, you might create a new branch from the default branch of your repository—main. This makes a new working copy of your repository for you to experiment with. Once your new changes have been reviewed by a teammate, or you are satisfied with them, you can merge your changes into the default branch of your repository. To learn more about branching, read “About Branches”.\nNote: In this class, you will not be required to use branches.\n\n\nForks\nA fork is another way to copy a repository, but is usually used when you want to contribute to someone else’s project. Forking a repository allows you to freely experiment with changes without affecting the original project and is very popular when contributing to open source software projects! To learn more about forking, read “Fork a repo”\nNote: In this class, you will not be required to use forks.\n\n\nPull requests\nWhen working with branches, you can use a pull request to tell others about the changes you want to make and ask for their feedback. Once a pull request is opened, you can discuss and review the potential changes with collaborators and add more changes if need be. You can add specific people as reviewers of your pull request which shows you want their feedback on your changes! Once a pull request is ready-to-go, it can be merged into your main branch. To learn more about pull requests, read “About Pull Requests”.\nNote: In this course, you will not be required to use pull requests.\n\n\nIssues\nIssues are a way to track enhancements, tasks, or bugs for your work on GitHub. Issues are a great way to keep track of all the tasks you want to work on for your project and let others know what you plan to work on. You can also use issues to tell a favorite open source project about a bug you found or a feature you think would be great to add!\nFor larger projects, you can keep track of many issues on a project board. GitHub Projects help you organize and prioritize your work and you can read more about them in this “About Project boards document. You likely won’t need a project board for your assignments, but once you move on to even bigger projects, they’re a great way to organize your team’s work! You can also link together pull requests and issues to show that a fix is in progress and to automatically close the issue when someone merges the pull request. To learn more about issues and linking them to your pull requests, read “About Issues”.\n\n\nYour user profile\nYour profile page tells people the story of your work through the repositories you’re interested in, the contributions you’ve made, and the conversations you’ve had. You can also give the world a unique view into who you are with your profile README. You can use your profile to let future employers know all about you! To learn more about your user profile and adding and updating your profile README, read “Managing Your Profile README”.\n\n\nUsing markdown on GitHub\nYou might have noticed already, but you can add some fun styling to your issues, pull requests, and files. “Markdown” is an easy way to style your issues, pull requests, and files with some simple syntax. This can be helpful to organize your information and make it easier for others to read. You can also drop in gifs and images to help convey your point! To learn more about using GitHub’s flavor of markdown, read “Basic Writing and Formatting Syntax”.\n\n\nEngaging with the GitHub community\nThe GitHub community is vast. There are many types of people who use GitHub in their day to day—students like you, professional developers, hobbyists working on open source projects, and explorers who are just jumping into the world of software development on their own. There are many ways you can interact with the larger GitHub community, but here are three places where you can start.\n\nStarring repositories\nIf you find a repository interesting or you want to keep track of it, star it! When you star a repository it’s also used as a signal to surface better recommendations on github.com/explore. If you’d like to get back to your starred repositories you can do so via your user profile. To learn more about starring repositories, read “Saving Repositories with Stars”.\n\n\nFollowing users\nYou can follow people on GitHub to receive notifications about their activity and discover projects in their communities. When you follow a user, their public GitHub activity will show up on your dashboard so you can see all the cool things they are working on. To learn more about following users, read “Following People”.\n\n\nBrowsing GitHub Explore\nGitHub Explore is a great place to do just that … explore :smile: You can find new projects, events, and developers to interact with.\nYou can check out the GitHub Explore website at github.com/explore. The more you intereact with GitHub the more tailored your Explore view will be."
+  },
+  {
+    "objectID": "homework/01-git-github.html#next-steps",
+    "href": "homework/01-git-github.html#next-steps",
+    "title": "👋 The Basics of GitHub",
+    "section": "📝 Next steps",
+    "text": "📝 Next steps\n\nClone this repository to your local machine\nOn your local machine, create a new markdown file in this repository named ‘About_Me.md’. Provide a short biography/introduction for yourself and use markdown formatting\n\nMarkdown Basics provides an overview of different formatting options in markdown.\nYou must use at least the following formatting elements: header, subheader, bold or italic, bulleted list, and an image.\n\nCommit your changes to your new file locally and push them back to your github repository. Check on Github to make sure the new file appears.\nTo get full credit for your assignment, you will need to have worked with your git repository locally. I will be able to see if you have used the github editor to make your changes instead :)."
+  },
+  {
+    "objectID": "homework/01-git-github.html#resources",
+    "href": "homework/01-git-github.html#resources",
+    "title": "👋 The Basics of GitHub",
+    "section": "📚 Resources",
+    "text": "📚 Resources\n\nA short video explaining what GitHub is\nGit and GitHub learning resources\nUnderstanding the GitHub flow\nHow to use GitHub branches\nInteractive Git training materials\nGitHub’s Learning Lab\nEducation community forum\nGitHub community forum"
+  },
+  {
+    "objectID": "homework/01-git-github.html#optional-extra-steps",
+    "href": "homework/01-git-github.html#optional-extra-steps",
+    "title": "👋 The Basics of GitHub",
+    "section": "Optional extra steps",
+    "text": "Optional extra steps\n\nOpen a pull request and let your teacher know that you’ve finished this course.\n\nCreate your profile README. Let the world know a little bit more about you! What are you interested in learning? What are you working on? What’s your favorite hobby? Learn more about creating your profile README in the document, “Managing Your Profile README”.\nGo to your user dashboard and create a new repository. Experiment with the features within that repository to familiarize yourself with them.\nLet us know what you liked or didn’t like about the content of this course. What would you like to see more of? What would be interesting or helpful to your learning journey?"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Stat 251: Data Wrangling",
+    "section": "",
+    "text": "Course Materials\nDates shown are due dates (for homework and exams) and dates on which material was presented (for slides).\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nDate\n\n\nTitle\n\n\nType\n\n\n\n\n\n\n\n\nFeb 26, 2024\n\n\nData Cleaning\n\n\nreading\n\n\n\n\n\n\n\nFeb 25, 2024\n\n\nHomework 5: Graphics and Groundhogs\n\n\nhomework\n\n\n\n\n\n\n\nFeb 20, 2024\n\n\nCreating Good Graphics\n\n\nslides\n\n\n\n\n\n\n\nFeb 19, 2024\n\n\nData Visualization\n\n\nreading\n\n\n\n\n\n\n\nFeb 19, 2024\n\n\nGood Graphics\n\n\nreading\n\n\n\n\n\n\n\nFeb 18, 2024\n\n\nHomework 4: Cookies\n\n\nhomework\n\n\n\n\n\n\n\nFeb 13, 2024\n\n\nReading In Data\n\n\nslides\n\n\n\n\n\n\n\nFeb 12, 2024\n\n\nData Input\n\n\nreading\n\n\n\n\n\n\n\nFeb 12, 2024\n\n\nExploratory Data Analysis\n\n\nreading\n\n\n\n\n\n\n\nFeb 11, 2024\n\n\nHomework 3: Cipher\n\n\nhomework\n\n\n\n\n\n\n\nFeb 8, 2024\n\n\nReview - Cipher\n\n\nslides\n\n\n\n\n\n\n\nFeb 6, 2024\n\n\nReview - Cipher\n\n\nslides\n\n\n\n\n\n\n\nFeb 4, 2024\n\n\nHomework 2: Review\n\n\nhomework\n\n\n\n\n\n\n\nFeb 1, 2024\n\n\nProgramming Review\n\n\nslides\n\n\n\n\n\n\n\nJan 30, 2024\n\n\nProgramming Review\n\n\nslides\n\n\n\n\n\n\n\nJan 29, 2024\n\n\nReview - Programming\n\n\nreading\n\n\n\n\n\n\n\nJan 28, 2024\n\n\nHomework 1: Git and Github\n\n\nhomework\n\n\n\n\n\n\n\nJan 26, 2024\n\n\nVersion Control\n\n\nslides\n\n\n\n\n\n\n\nJan 24, 2024\n\n\nIntroduction\n\n\nslides\n\n\n\n\n\n\n\nJan 24, 2024\n\n\nVersion Control with Git and Github\n\n\nreading\n\n\n\n\n\n\n\nJan 21, 2024\n\n\nSyllabus\n\n\nreading\n\n\n\n\n\n\n\nJan 21, 2024\n\n\nReview- Tools\n\n\nreading\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "homework/02-review.html",
+    "href": "homework/02-review.html",
+    "title": "Homework 2: Reviewing R and Python",
+    "section": "",
+    "text": "Note: This assignment must be submitted in github classroom.\nA palindrome is a string that is equal to the reverse of that string, such as “Mom”, “Hannah” or “We panic in a pew.”\nTraditionally, a phrase is considered a palindrome once all spaces and punctuation has been removed, and all letters are written in the same case."
+  },
+  {
+    "objectID": "homework/02-review.html#pseudocode",
+    "href": "homework/02-review.html#pseudocode",
+    "title": "Homework 2: Reviewing R and Python",
+    "section": "Pseudocode",
+    "text": "Pseudocode\nWrite a detailed list of steps to process a string named test to test that it is a palindrome.\nHint: The final items in this list of steps should be defining a variable revtest that is test with the letters reversed, and then comparing test and revtest for equality."
+  },
+  {
+    "objectID": "homework/02-review.html#r",
+    "href": "homework/02-review.html#r",
+    "title": "Homework 2: Reviewing R and Python",
+    "section": "R",
+    "text": "R\nTurn your pseudocode into a sequence of statements in R that work with a variable named test. At this point, there is no need to write these steps in a function - we’ll get there.\n\ntest &lt;- \"Hannah\"\n\n# Your steps go here"
+  },
+  {
+    "objectID": "homework/02-review.html#python",
+    "href": "homework/02-review.html#python",
+    "title": "Homework 2: Reviewing R and Python",
+    "section": "Python",
+    "text": "Python\nTurn your pseudocode into a sequence of statements in python that work with a variable named test. At this point, there is no need to write these steps in a function - we’ll get there.\n\ntest = \"Hannah\"\n\n# Your steps go here"
+  },
+  {
+    "objectID": "homework/04-cookies.html",
+    "href": "homework/04-cookies.html",
+    "title": "Chocolate Chip Cookies",
+    "section": "",
+    "text": "Note: This assignment must be submitted in github classroom."
+  },
+  {
+    "objectID": "homework/04-cookies.html#reading-in-the-data",
+    "href": "homework/04-cookies.html#reading-in-the-data",
+    "title": "Chocolate Chip Cookies",
+    "section": "Reading In the Data",
+    "text": "Reading In the Data\nFirst, read in the CSV data of cookie ingredients. Make sure that your end-result data has appropriate types for each column - these should match the types provided in the documentation in the README.md file."
+  },
+  {
+    "objectID": "homework/04-cookies.html#exploratory-data-analysis",
+    "href": "homework/04-cookies.html#exploratory-data-analysis",
+    "title": "Chocolate Chip Cookies",
+    "section": "Exploratory Data Analysis",
+    "text": "Exploratory Data Analysis\nExploratory data analysis is the process of getting familiar with your dataset. To get started, this blog post provides a nice checklist to get you thinking:\n\n\nWhat question(s) are you trying to solve (or prove wrong)?\nWhat kind of data do you have and how do you treat different types?\nWhat’s missing from the data and how do you deal with it?\nWhere are the outliers and why should you care about them?\nHow can you add, change or remove features to get more out of your data?\n\n\n\nGenerating Questions\nGenerate at least 5 questions you might explore using this database of cookie ingredients.\n\n\n\n\n\n\n\n\n\nSkimming the Data\nOne thing we often want to do during EDA is to examine the quality of the data - are there missing values? What quirks might exist in the dataset?\nThe skimr package in R, and the similar skimpy package in python (which has a much better name, in my opinion), can help provide visual summaries of the data.\nInstall both packages, and read the package documentation (R, Python).\n[Part 1] Use each package and generate summaries of your data that require the use of at least some non-default options in each package’s skim function.\n[Part 2] Write 1-2 sentences about what you can tell from each summary display you generate. Did you discover anything new about the data?\n\n\nGenerating Tables\nAnother useful technique for exploratory data analysis is to generate summary tables. You may want to use the dplyr package in R (group_by or count functions), as well as the groupby and count methods in Pandas. Python example, R example\n[Part 1] Using R and Python, generate a table that shows what proportion of recipes contain each type of ingredient, for the most common 20 ingredients.\n[Part 2] Print out a character string that lists all of the ingredients that do not appear in at least 20 recipes.\n(Delete this note, but you can include data values inline in markdown text by using backticks, at least in R. For instance, here is R’s built in value for pi: 3.1415927. Unfortunately, this doesn’t work in python using the knitr markdown engine, but you can print the list out in python anyways using a code chunk.)\n\n\nVisualization\nUsing whatever plotting system you are comfortable with in R or python, see if you can create a couple of useful exploratory data visualizations which address one of the questions you wrote above - or another question which you’ve come up with as you’ve worked on this assignment.\n[Part 1] Create at least one plot (it doesn’t have to be pretty) that showcases an interesting facet of the data.\n[Part 2] Write 2-3 sentences about what you can learn from that plot and what directions you might want to investigate from here."
+  },
+  {
+    "objectID": "homework/06-data-manip.html",
+    "href": "homework/06-data-manip.html",
+    "title": "Homework 6: Data Manipulation",
+    "section": "",
+    "text": "Note: This assignment must be submitted in github classroom.\ncp ../homework-repos/06-data-manip/gapminder_data.csv .\nco2_sum &lt;- data.frame() # This is here to be a blank data frame so that the \n                        # lines below work before you've filled your code in.\nThe Gapminder project’s mission is to fight devastating ignorance with a fact-based worldview everyone can understand. To do this, they assemble reliable data about a variety of global variables to help educate the general public.\nI have collected data from Gapminder about several variables:\nUse the data manipulation tools you’ve learned about to answer each of the following questions, which I’ve grouped into several general topics. Some questions may specify a specific language to use; if no language is specified, you may choose whether to use R or python to answer the question."
+  },
+  {
+    "objectID": "homework/06-data-manip.html#read-in-the-data",
+    "href": "homework/06-data-manip.html#read-in-the-data",
+    "title": "Homework 6: Data Manipulation",
+    "section": "Read In the Data",
+    "text": "Read In the Data\nRead in the data in R and Python. In both languages, store the table in the variable gapminder."
+  },
+  {
+    "objectID": "homework/06-data-manip.html#data-exploration",
+    "href": "homework/06-data-manip.html#data-exploration",
+    "title": "Homework 6: Data Manipulation",
+    "section": "Data Exploration",
+    "text": "Data Exploration\n\nMissingness\nGapminder puts a lot of effort into curating certain variables; other variables are less frequently used (or are harder to assemble from reliable sources).\n\nCO2\nCreate a table of all countries with at least 30 observations CO2. Your table should be called co2_sum and should have columns country and n_obs. Do not print out the table; instead, if you have done everything correctly, when your document is compiled the correct number of countries will be filled in in the sentence below the code chunk.\n\nThere are 0 countries with at least 30 years of CO2 data.\n\n\nEnergy\nAnswer in Python\n\n\nIncome\n\n\nGDP\n\nrm ./gapminder_data.csv"
+  },
+  {
+    "objectID": "homework/08-reshape.html",
+    "href": "homework/08-reshape.html",
+    "title": "Data Reshaping with Puppies",
+    "section": "",
+    "text": "Note: This assignment must be submitted in github classroom.\n\nSetting up\nIn this assignment, we’ll work with American Kennel Club data on dog breeds.\nData information\nRead in the CSV files provided:\n\nbreed_traits\ntrait_description\nbreed_rank\n\n\n# Read in the data\n\nThis assignment will ask you to sketch the layout of various datasets. If you want, you can use paper/pencil sketches, but the images should be provided in PNG or JPEG format and included in your document as images. If you prefer a digital tool, Excalidraw.com is an excellent (free) option.\n\n\nBreed Traits\nIs the breed_traits.csv file in tidy form? Why or why not?\nIf you wanted to plot the distribution of rankings for each trait, with each trait’s distribution in a separate facet, what form would you need to use for the data?\nSketch the form the data would look like to create the necessary plot, and include the image of that sketch here.\nWhat transformations are necessary for the data to be converted into this form? Include a sketch of the transformation process.\nTransform the data and generate a plot showing the distribution of breed rankings for the variables Affectionate With Family, Good with Young Children, Good With Other Dogs, Playfulness Level, and Trainability Level. Each variable should have its own facet.\n\n# Transformation code here\n\n\n# Plot code here\n\n\n\nBreed Ranks\nIs the breed_rank_all.csv file in tidy form? Why or why not?\nIf you wanted to plot the popularity of Beagles and Jack Russell Terriers between 2013 and 2020, what form would you need the data to be in?\nSketch the form the data would look like to create the necessary plot, and include the image of that sketch here.\nWhat transformations are necessary for the data to be converted into this form? Include a sketch of the transformation process.\nChoose two dog breeds that you are interested in and generate a line chart showing the breeds’ relative popularity between 2013 and 2020. Breed should be indicated by color as well as linetype (so that your plot is double encoded).\n\n# Transformation code here\n\n\n# Plot code here"
+  },
+  {
+    "objectID": "homework/10-datetime.html",
+    "href": "homework/10-datetime.html",
+    "title": "Dates and Times",
+    "section": "",
+    "text": "Note: This assignment must be submitted in github classroom.\nimport pandas as pd\nimport datetime\nNote: This assignment is modified from the decodeR exercises by Kelly Bodwin."
+  },
+  {
+    "objectID": "homework/10-datetime.html#warm-up-exercises",
+    "href": "homework/10-datetime.html#warm-up-exercises",
+    "title": "Dates and Times",
+    "section": "Warm-up exercises",
+    "text": "Warm-up exercises\n(Do this in R AND python)\nAnswer the following using code (even if you know the answer already).\n\nSave your birthday as a Datetime object.\n\nWhat day of the week does/did your birthday fall on in 2019?\nOn what day of the week should you plan your 100th birthday party?\nFind the date that is exactly 9 months before your birthday. If it falls on a holiday, think about the implications.\nThe following code loads a dataset giving the date ranges for the 12 Zodiac signs. By making appropriate adjustments and calculations, find your Zodiac sign.\n\n\nzodiac &lt;- read.csv(\"https://raw.githubusercontent.com/unl-stat251/09-datetime/main/zodiac.csv\")\n\n# Birthday saved as a datetime object\n\n# Day of the week your birthday fell on in 2019\n\n# Day of the week of your 100th birthday party\n\n# Date that is 9 months before your birthday\n\n# Zodiac sign\n\n\nzodiac = pd.read_csv(\"https://raw.githubusercontent.com/unl-stat251/09-datetime/main/zodiac.csv\")\n\n# Birthday saved as a datetime object\n\n# Day of the week your birthday fell on in 2019\n\n# Day of the week of your 100th birthday party\n\n# Date that is 9 months before your birthday\n\n# Zodiac sign"
+  },
+  {
+    "objectID": "homework/10-datetime.html#solve-the-mystery",
+    "href": "homework/10-datetime.html#solve-the-mystery",
+    "title": "Dates and Times",
+    "section": "Solve the mystery",
+    "text": "Solve the mystery\n(Do this in R or Python, but you don’t have to do it in both)\nSpeaking of the Zodiac, one of the most famous mysteries in California history is the identity of the so-called “Zodiac Killer”, who murdered 7 people in Northern California between 1968 and 1969.\nA new murder was committed last year in California, suspected to be the work of a new Zodiac Killer on the loose. Fortunately, a camera was planted at the location where the body was found. The FBI has provided you with a list of people who entered the building last year, and what date and time they entered, in Pacific Standard Time (PST).\n\nsuspects &lt;- read.csv(\"https://raw.githubusercontent.com/unl-stat251/09-datetime/main/suspects.csv\")\n\nUnfortunately, the date and time of the murder is not known. You have been hired to crack the case. Use the clues below to discover the murderer’s identity.\n\nBased on the sunburn patterns on the body, the murder was not committed in the morning.\nThe room where the murder was committed is closed Tuesdays and Thursdays, so the murder did not happen on those days.\nIt is believed that the murder was committed within 5 weeks (35 days) of Thanksgiving, 2018.\nIt was discovered that just before being murdered, the victim tried to send a text to her sister in Iceland, saying “Goodnight over there!”\nThe Killer left behind a birthday card at the scene of the crime. The date is smudged, but the number of the day is shown to be 22. It is thought that perhaps this murder took place less than two days after the Killer’s birthday.\nThe Killer him/herself is amused by our efforts, and he has sent us a cryptic clue: “The number of minutes between Jan 1, 1970 at midnight and the time I arrived on the scene is divisible by 10.”\n\nWho is the killer?"
+  },
+  {
+    "objectID": "homework/12-spatial.html",
+    "href": "homework/12-spatial.html",
+    "title": "Programming with GIS Data",
+    "section": "",
+    "text": "Note: This assignment must be submitted in github classroom."
+  },
+  {
+    "objectID": "homework/12-spatial.html#drug-distribution",
+    "href": "homework/12-spatial.html#drug-distribution",
+    "title": "Programming with GIS Data",
+    "section": "Drug Distribution",
+    "text": "Drug Distribution\nSkim the PDFs included in the data folder before you start.\nBuhaug, Halvard & Päivi Lujala 2005. Accounting for Scale: Measuring Geography in Quantitative Studies of Civil War. Political Geography 24: 399-418.\nData downloaded from http://www.paivilujala.com/drugdata.html"
+  },
+  {
+    "objectID": "homework/12-spatial.html#lord-of-the-rings---middle-earth",
+    "href": "homework/12-spatial.html#lord-of-the-rings---middle-earth",
+    "title": "Programming with GIS Data",
+    "section": "Lord of the Rings - Middle Earth",
+    "text": "Lord of the Rings - Middle Earth\nhttps://scholarworks.wm.edu/asoer/3/\nVector Shapefiles contained in the data/Middle Earth folder."
+  },
+  {
+    "objectID": "homework/12-spatial.html#natural-earth-data",
+    "href": "homework/12-spatial.html#natural-earth-data",
+    "title": "Programming with GIS Data",
+    "section": "Natural Earth Data",
+    "text": "Natural Earth Data\nDownload data from https://www.naturalearthdata.com/downloads/10m-physical-vectors/\nUse at least 3 different data sets to create a map showing features that you are interested in."
+  },
+  {
+    "objectID": "project/Dataset-Topics.html",
+    "href": "project/Dataset-Topics.html",
+    "title": "Project Dataset and Topics",
+    "section": "",
+    "text": "Link to dataset\nThings you plan to investigate using this dataset:\n\nThing 1\nThing 2\nThing 3\n\nStat 251 topics you plan to cover during the analysis:\n\nTopic 1\nTopic 2\nTopic 3\nTopic 4"
+  },
+  {
     "objectID": "slides/01-Syllabus-and-Introductions.html#introduce-yourself",
     "href": "slides/01-Syllabus-and-Introductions.html#introduce-yourself",
     "title": "Introduction",
@@ -138,418 +551,5 @@
     "title": "Introduction",
     "section": "Next Time",
     "text": "Next Time\nWe’ll work on Version Control with Git\n\n\nPlease read before class:\n\nComputer Basics\nScripts and Notebooks\nRStudio’s Interface\nVersion Control with Git\n\n\n\n\n\nOctocat Image Source"
-  },
-  {
-    "objectID": "project/Dataset-Topics.html",
-    "href": "project/Dataset-Topics.html",
-    "title": "Project Dataset and Topics",
-    "section": "",
-    "text": "Link to dataset\nThings you plan to investigate using this dataset:\n\nThing 1\nThing 2\nThing 3\n\nStat 251 topics you plan to cover during the analysis:\n\nTopic 1\nTopic 2\nTopic 3\nTopic 4"
-  },
-  {
-    "objectID": "homework/12-spatial.html",
-    "href": "homework/12-spatial.html",
-    "title": "Programming with GIS Data",
-    "section": "",
-    "text": "Note: This assignment must be submitted in github classroom."
-  },
-  {
-    "objectID": "homework/12-spatial.html#drug-distribution",
-    "href": "homework/12-spatial.html#drug-distribution",
-    "title": "Programming with GIS Data",
-    "section": "Drug Distribution",
-    "text": "Drug Distribution\nSkim the PDFs included in the data folder before you start.\nBuhaug, Halvard & Päivi Lujala 2005. Accounting for Scale: Measuring Geography in Quantitative Studies of Civil War. Political Geography 24: 399-418.\nData downloaded from http://www.paivilujala.com/drugdata.html"
-  },
-  {
-    "objectID": "homework/12-spatial.html#lord-of-the-rings---middle-earth",
-    "href": "homework/12-spatial.html#lord-of-the-rings---middle-earth",
-    "title": "Programming with GIS Data",
-    "section": "Lord of the Rings - Middle Earth",
-    "text": "Lord of the Rings - Middle Earth\nhttps://scholarworks.wm.edu/asoer/3/\nVector Shapefiles contained in the data/Middle Earth folder."
-  },
-  {
-    "objectID": "homework/12-spatial.html#natural-earth-data",
-    "href": "homework/12-spatial.html#natural-earth-data",
-    "title": "Programming with GIS Data",
-    "section": "Natural Earth Data",
-    "text": "Natural Earth Data\nDownload data from https://www.naturalearthdata.com/downloads/10m-physical-vectors/\nUse at least 3 different data sets to create a map showing features that you are interested in."
-  },
-  {
-    "objectID": "homework/10-datetime.html",
-    "href": "homework/10-datetime.html",
-    "title": "Dates and Times",
-    "section": "",
-    "text": "Note: This assignment must be submitted in github classroom.\nimport pandas as pd\nimport datetime\nNote: This assignment is modified from the decodeR exercises by Kelly Bodwin."
-  },
-  {
-    "objectID": "homework/10-datetime.html#warm-up-exercises",
-    "href": "homework/10-datetime.html#warm-up-exercises",
-    "title": "Dates and Times",
-    "section": "Warm-up exercises",
-    "text": "Warm-up exercises\n(Do this in R AND python)\nAnswer the following using code (even if you know the answer already).\n\nSave your birthday as a Datetime object.\n\nWhat day of the week does/did your birthday fall on in 2019?\nOn what day of the week should you plan your 100th birthday party?\nFind the date that is exactly 9 months before your birthday. If it falls on a holiday, think about the implications.\nThe following code loads a dataset giving the date ranges for the 12 Zodiac signs. By making appropriate adjustments and calculations, find your Zodiac sign.\n\n\nzodiac &lt;- read.csv(\"https://raw.githubusercontent.com/unl-stat251/09-datetime/main/zodiac.csv\")\n\n# Birthday saved as a datetime object\n\n# Day of the week your birthday fell on in 2019\n\n# Day of the week of your 100th birthday party\n\n# Date that is 9 months before your birthday\n\n# Zodiac sign\n\n\nzodiac = pd.read_csv(\"https://raw.githubusercontent.com/unl-stat251/09-datetime/main/zodiac.csv\")\n\n# Birthday saved as a datetime object\n\n# Day of the week your birthday fell on in 2019\n\n# Day of the week of your 100th birthday party\n\n# Date that is 9 months before your birthday\n\n# Zodiac sign"
-  },
-  {
-    "objectID": "homework/10-datetime.html#solve-the-mystery",
-    "href": "homework/10-datetime.html#solve-the-mystery",
-    "title": "Dates and Times",
-    "section": "Solve the mystery",
-    "text": "Solve the mystery\n(Do this in R or Python, but you don’t have to do it in both)\nSpeaking of the Zodiac, one of the most famous mysteries in California history is the identity of the so-called “Zodiac Killer”, who murdered 7 people in Northern California between 1968 and 1969.\nA new murder was committed last year in California, suspected to be the work of a new Zodiac Killer on the loose. Fortunately, a camera was planted at the location where the body was found. The FBI has provided you with a list of people who entered the building last year, and what date and time they entered, in Pacific Standard Time (PST).\n\nsuspects &lt;- read.csv(\"https://raw.githubusercontent.com/unl-stat251/09-datetime/main/suspects.csv\")\n\nUnfortunately, the date and time of the murder is not known. You have been hired to crack the case. Use the clues below to discover the murderer’s identity.\n\nBased on the sunburn patterns on the body, the murder was not committed in the morning.\nThe room where the murder was committed is closed Tuesdays and Thursdays, so the murder did not happen on those days.\nIt is believed that the murder was committed within 5 weeks (35 days) of Thanksgiving, 2018.\nIt was discovered that just before being murdered, the victim tried to send a text to her sister in Iceland, saying “Goodnight over there!”\nThe Killer left behind a birthday card at the scene of the crime. The date is smudged, but the number of the day is shown to be 22. It is thought that perhaps this murder took place less than two days after the Killer’s birthday.\nThe Killer him/herself is amused by our efforts, and he has sent us a cryptic clue: “The number of minutes between Jan 1, 1970 at midnight and the time I arrived on the scene is divisible by 10.”\n\nWho is the killer?"
-  },
-  {
-    "objectID": "homework/08-reshape.html",
-    "href": "homework/08-reshape.html",
-    "title": "Data Reshaping with Puppies",
-    "section": "",
-    "text": "Note: This assignment must be submitted in github classroom.\n\nSetting up\nIn this assignment, we’ll work with American Kennel Club data on dog breeds.\nData information\nRead in the CSV files provided:\n\nbreed_traits\ntrait_description\nbreed_rank\n\n\n# Read in the data\n\nThis assignment will ask you to sketch the layout of various datasets. If you want, you can use paper/pencil sketches, but the images should be provided in PNG or JPEG format and included in your document as images. If you prefer a digital tool, Excalidraw.com is an excellent (free) option.\n\n\nBreed Traits\nIs the breed_traits.csv file in tidy form? Why or why not?\nIf you wanted to plot the distribution of rankings for each trait, with each trait’s distribution in a separate facet, what form would you need to use for the data?\nSketch the form the data would look like to create the necessary plot, and include the image of that sketch here.\nWhat transformations are necessary for the data to be converted into this form? Include a sketch of the transformation process.\nTransform the data and generate a plot showing the distribution of breed rankings for the variables Affectionate With Family, Good with Young Children, Good With Other Dogs, Playfulness Level, and Trainability Level. Each variable should have its own facet.\n\n# Transformation code here\n\n\n# Plot code here\n\n\n\nBreed Ranks\nIs the breed_rank_all.csv file in tidy form? Why or why not?\nIf you wanted to plot the popularity of Beagles and Jack Russell Terriers between 2013 and 2020, what form would you need the data to be in?\nSketch the form the data would look like to create the necessary plot, and include the image of that sketch here.\nWhat transformations are necessary for the data to be converted into this form? Include a sketch of the transformation process.\nChoose two dog breeds that you are interested in and generate a line chart showing the breeds’ relative popularity between 2013 and 2020. Breed should be indicated by color as well as linetype (so that your plot is double encoded).\n\n# Transformation code here\n\n\n# Plot code here"
-  },
-  {
-    "objectID": "homework/06-data-manip.html",
-    "href": "homework/06-data-manip.html",
-    "title": "Homework 6: Data Manipulation",
-    "section": "",
-    "text": "Note: This assignment must be submitted in github classroom.\ncp ../homework-repos/06-data-manip/gapminder_data.csv .\nco2_sum &lt;- data.frame() # This is here to be a blank data frame so that the \n                        # lines below work before you've filled your code in.\nThe Gapminder project’s mission is to fight devastating ignorance with a fact-based worldview everyone can understand. To do this, they assemble reliable data about a variety of global variables to help educate the general public.\nI have collected data from Gapminder about several variables:\nUse the data manipulation tools you’ve learned about to answer each of the following questions, which I’ve grouped into several general topics. Some questions may specify a specific language to use; if no language is specified, you may choose whether to use R or python to answer the question."
-  },
-  {
-    "objectID": "homework/06-data-manip.html#read-in-the-data",
-    "href": "homework/06-data-manip.html#read-in-the-data",
-    "title": "Homework 6: Data Manipulation",
-    "section": "Read In the Data",
-    "text": "Read In the Data\nRead in the data in R and Python. In both languages, store the table in the variable gapminder."
-  },
-  {
-    "objectID": "homework/06-data-manip.html#data-exploration",
-    "href": "homework/06-data-manip.html#data-exploration",
-    "title": "Homework 6: Data Manipulation",
-    "section": "Data Exploration",
-    "text": "Data Exploration\n\nMissingness\nGapminder puts a lot of effort into curating certain variables; other variables are less frequently used (or are harder to assemble from reliable sources).\n\nCO2\nCreate a table of all countries with at least 30 observations CO2. Your table should be called co2_sum and should have columns country and n_obs. Do not print out the table; instead, if you have done everything correctly, when your document is compiled the correct number of countries will be filled in in the sentence below the code chunk.\n\nThere are 0 countries with at least 30 years of CO2 data.\n\n\nEnergy\nAnswer in Python\n\n\nIncome\n\n\nGDP\n\nrm ./gapminder_data.csv"
-  },
-  {
-    "objectID": "homework/04-cookies.html",
-    "href": "homework/04-cookies.html",
-    "title": "Chocolate Chip Cookies",
-    "section": "",
-    "text": "Note: This assignment must be submitted in github classroom."
-  },
-  {
-    "objectID": "homework/04-cookies.html#reading-in-the-data",
-    "href": "homework/04-cookies.html#reading-in-the-data",
-    "title": "Chocolate Chip Cookies",
-    "section": "Reading In the Data",
-    "text": "Reading In the Data\nFirst, read in the CSV data of cookie ingredients. Make sure that your end-result data has appropriate types for each column - these should match the types provided in the documentation in the README.md file."
-  },
-  {
-    "objectID": "homework/04-cookies.html#exploratory-data-analysis",
-    "href": "homework/04-cookies.html#exploratory-data-analysis",
-    "title": "Chocolate Chip Cookies",
-    "section": "Exploratory Data Analysis",
-    "text": "Exploratory Data Analysis\nExploratory data analysis is the process of getting familiar with your dataset. To get started, this blog post provides a nice checklist to get you thinking:\n\n\nWhat question(s) are you trying to solve (or prove wrong)?\nWhat kind of data do you have and how do you treat different types?\nWhat’s missing from the data and how do you deal with it?\nWhere are the outliers and why should you care about them?\nHow can you add, change or remove features to get more out of your data?\n\n\n\nGenerating Questions\nGenerate at least 5 questions you might explore using this database of cookie ingredients.\n\n\n\n\n\n\n\n\n\nSkimming the Data\nOne thing we often want to do during EDA is to examine the quality of the data - are there missing values? What quirks might exist in the dataset?\nThe skimr package in R, and the similar skimpy package in python (which has a much better name, in my opinion), can help provide visual summaries of the data.\nInstall both packages, and read the package documentation (R, Python).\n[Part 1] Use each package and generate summaries of your data that require the use of at least some non-default options in each package’s skim function.\n[Part 2] Write 1-2 sentences about what you can tell from each summary display you generate. Did you discover anything new about the data?\n\n\nGenerating Tables\nAnother useful technique for exploratory data analysis is to generate summary tables. You may want to use the dplyr package in R (group_by or count functions), as well as the groupby and count methods in Pandas. Python example, R example\n[Part 1] Using R and Python, generate a table that shows what proportion of recipes contain each type of ingredient, for the most common 20 ingredients.\n[Part 2] Print out a character string that lists all of the ingredients that do not appear in at least 20 recipes.\n(Delete this note, but you can include data values inline in markdown text by using backticks, at least in R. For instance, here is R’s built in value for pi: 3.1415927. Unfortunately, this doesn’t work in python using the knitr markdown engine, but you can print the list out in python anyways using a code chunk.)\n\n\nVisualization\nUsing whatever plotting system you are comfortable with in R or python, see if you can create a couple of useful exploratory data visualizations which address one of the questions you wrote above - or another question which you’ve come up with as you’ve worked on this assignment.\n[Part 1] Create at least one plot (it doesn’t have to be pretty) that showcases an interesting facet of the data.\n[Part 2] Write 2-3 sentences about what you can learn from that plot and what directions you might want to investigate from here."
-  },
-  {
-    "objectID": "homework/02-review.html",
-    "href": "homework/02-review.html",
-    "title": "Homework 2: Reviewing R and Python",
-    "section": "",
-    "text": "Note: This assignment must be submitted in github classroom.\nA palindrome is a string that is equal to the reverse of that string, such as “Mom”, “Hannah” or “We panic in a pew.”\nTraditionally, a phrase is considered a palindrome once all spaces and punctuation has been removed, and all letters are written in the same case."
-  },
-  {
-    "objectID": "homework/02-review.html#pseudocode",
-    "href": "homework/02-review.html#pseudocode",
-    "title": "Homework 2: Reviewing R and Python",
-    "section": "Pseudocode",
-    "text": "Pseudocode\nWrite a detailed list of steps to process a string named test to test that it is a palindrome.\nHint: The final items in this list of steps should be defining a variable revtest that is test with the letters reversed, and then comparing test and revtest for equality."
-  },
-  {
-    "objectID": "homework/02-review.html#r",
-    "href": "homework/02-review.html#r",
-    "title": "Homework 2: Reviewing R and Python",
-    "section": "R",
-    "text": "R\nTurn your pseudocode into a sequence of statements in R that work with a variable named test. At this point, there is no need to write these steps in a function - we’ll get there.\n\ntest &lt;- \"Hannah\"\n\n# Your steps go here"
-  },
-  {
-    "objectID": "homework/02-review.html#python",
-    "href": "homework/02-review.html#python",
-    "title": "Homework 2: Reviewing R and Python",
-    "section": "Python",
-    "text": "Python\nTurn your pseudocode into a sequence of statements in python that work with a variable named test. At this point, there is no need to write these steps in a function - we’ll get there.\n\ntest = \"Hannah\"\n\n# Your steps go here"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Stat 251: Data Wrangling",
-    "section": "",
-    "text": "Course Materials\nDates shown are due dates (for homework and exams) and dates on which material was presented (for slides).\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nDate\n\n\nTitle\n\n\nType\n\n\n\n\n\n\n\n\nFeb 26, 2024\n\n\nData Cleaning\n\n\nreading\n\n\n\n\n\n\n\nFeb 25, 2024\n\n\nHomework 5: Graphics and Groundhogs\n\n\nhomework\n\n\n\n\n\n\n\nFeb 20, 2024\n\n\nCreating Good Graphics\n\n\nslides\n\n\n\n\n\n\n\nFeb 19, 2024\n\n\nData Visualization\n\n\nreading\n\n\n\n\n\n\n\nFeb 19, 2024\n\n\nGood Graphics\n\n\nreading\n\n\n\n\n\n\n\nFeb 18, 2024\n\n\nHomework 4: Cookies\n\n\nhomework\n\n\n\n\n\n\n\nFeb 13, 2024\n\n\nReading In Data\n\n\nslides\n\n\n\n\n\n\n\nFeb 12, 2024\n\n\nData Input\n\n\nreading\n\n\n\n\n\n\n\nFeb 12, 2024\n\n\nExploratory Data Analysis\n\n\nreading\n\n\n\n\n\n\n\nFeb 11, 2024\n\n\nHomework 3: Cipher\n\n\nhomework\n\n\n\n\n\n\n\nFeb 8, 2024\n\n\nReview - Cipher\n\n\nslides\n\n\n\n\n\n\n\nFeb 6, 2024\n\n\nReview - Cipher\n\n\nslides\n\n\n\n\n\n\n\nFeb 4, 2024\n\n\nHomework 2: Review\n\n\nhomework\n\n\n\n\n\n\n\nFeb 1, 2024\n\n\nProgramming Review\n\n\nslides\n\n\n\n\n\n\n\nJan 30, 2024\n\n\nProgramming Review\n\n\nslides\n\n\n\n\n\n\n\nJan 29, 2024\n\n\nReview - Programming\n\n\nreading\n\n\n\n\n\n\n\nJan 28, 2024\n\n\nHomework 1: Git and Github\n\n\nhomework\n\n\n\n\n\n\n\nJan 26, 2024\n\n\nVersion Control\n\n\nslides\n\n\n\n\n\n\n\nJan 24, 2024\n\n\nIntroduction\n\n\nslides\n\n\n\n\n\n\n\nJan 24, 2024\n\n\nVersion Control with Git and Github\n\n\nreading\n\n\n\n\n\n\n\nJan 21, 2024\n\n\nSyllabus\n\n\nreading\n\n\n\n\n\n\n\nJan 21, 2024\n\n\nReview- Tools\n\n\nreading\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "homework/01-git-github.html",
-    "href": "homework/01-git-github.html",
-    "title": "👋 The Basics of GitHub",
-    "section": "",
-    "text": "Note: This assignment must be submitted in github classroom."
-  },
-  {
-    "objectID": "homework/01-git-github.html#course-overview-and-learning-outcomes",
-    "href": "homework/01-git-github.html#course-overview-and-learning-outcomes",
-    "title": "👋 The Basics of GitHub",
-    "section": "🤓 Course overview and learning outcomes",
-    "text": "🤓 Course overview and learning outcomes\nThe goal of this course is to give you a brief introduction to GitHub. We’ll also provide you with materials for further learning and a few ideas to get you started on our platform. 🚀"
-  },
-  {
-    "objectID": "homework/01-git-github.html#git-and-github",
-    "href": "homework/01-git-github.html#git-and-github",
-    "title": "👋 The Basics of GitHub",
-    "section": "Git and GitHub",
-    "text": "Git and GitHub\nGit is a distributed Version Control System (VCS), which means it is a useful tool for easily tracking changes to your code, collaborating, and sharing. With Git you can track the changes you make to your project so you always have a record of what you’ve worked on and can easily revert back to an older version if need be. It also makes working with others easier—groups of people can work together on the same project and merge their changes into one final source!\nGitHub is a way to use the same power of Git all online with an easy-to-use interface. It’s used across the software world and beyond to collaborate and maintain the history of projects.\nGitHub is home to some of the most advanced technologies in the world. Whether you’re visualizing data or building a new game, there’s a whole community and set of tools on GitHub that can get you to the next step. This course starts with the basics of GitHub, but we’ll dig into the rest later."
-  },
-  {
-    "objectID": "homework/01-git-github.html#understanding-the-github-flow",
-    "href": "homework/01-git-github.html#understanding-the-github-flow",
-    "title": "👋 The Basics of GitHub",
-    "section": "Understanding the GitHub flow",
-    "text": "Understanding the GitHub flow\nThe GitHub flow is a lightweight workflow that allows you to experiment and collaborate on your projects easily, without the risk of losing your previous work.\n\nRepositories\nA repository is where your project work happens–think of it as your project folder. It contains all of your project’s files and revision history. You can work within a repository alone or invite others to collaborate with you on those files.\n\n\nCloning\nWhen a repository is created with GitHub, it’s stored remotely in the ☁️. You can clone a repository to create a local copy on your computer and then use Git to sync the two. This makes it easier to fix issues, add or remove files, and push larger commits. You can also use the editing tool of your choice as opposed to the GitHub UI. Cloning a repository also pulls down all the repository data that GitHub has at that point in time, including all versions of every file and folder for the project! This can be helpful if you experiment with your project and then realize you liked a previous version more. To learn more about cloning, read “Cloning a Repository”.\n\n\nCommitting and pushing\nCommitting and pushing are how you can add the changes you made on your local machine to the remote repository in GitHub. That way your instructor and/or teammates can see your latest work when you’re ready to share it. You can make a commit when you have made changes to your project that you want to “checkpoint.” You can also add a helpful commit message to remind yourself or your teammates what work you did (e.g. “Added a README with information about our project”).\nOnce you have a commit or multiple commits that you’re ready to add to your repository, you can use the push command to add those changes to your remote repository. Committing and pushing may feel new at first, but we promise you’ll get used to it 🙂"
-  },
-  {
-    "objectID": "homework/01-git-github.html#github-terms-to-know",
-    "href": "homework/01-git-github.html#github-terms-to-know",
-    "title": "👋 The Basics of GitHub",
-    "section": "💻 GitHub terms to know",
-    "text": "💻 GitHub terms to know\n\nRepositories\nWe mentioned repositories already, they are where your project work happens, but let’s talk a bit more about the details of them! As you work more on GitHub you will have many repositories which may feel confusing at first. Fortunately, your “GitHub dashboard” helps to easily navigate to your repositories and see useful information about them. Make sure you’re logged in to see it!\nRepositories also contain READMEs. You can add a README file to your repository to tell other people why your project is useful, what they can do with your project, and how they can use it. We are using this README to communicate how to learn Git and GitHub with you. 😄 To learn more about repositories read “Creating, Cloning, and Archiving Repositories and “About README’s”.\n\n\nBranches\nYou can use branches on GitHub to isolate work that you do not want merged into your final project just yet. Branches allow you to develop features, fix bugs, or safely experiment with new ideas in a contained area of your repository. Typically, you might create a new branch from the default branch of your repository—main. This makes a new working copy of your repository for you to experiment with. Once your new changes have been reviewed by a teammate, or you are satisfied with them, you can merge your changes into the default branch of your repository. To learn more about branching, read “About Branches”.\nNote: In this class, you will not be required to use branches.\n\n\nForks\nA fork is another way to copy a repository, but is usually used when you want to contribute to someone else’s project. Forking a repository allows you to freely experiment with changes without affecting the original project and is very popular when contributing to open source software projects! To learn more about forking, read “Fork a repo”\nNote: In this class, you will not be required to use forks.\n\n\nPull requests\nWhen working with branches, you can use a pull request to tell others about the changes you want to make and ask for their feedback. Once a pull request is opened, you can discuss and review the potential changes with collaborators and add more changes if need be. You can add specific people as reviewers of your pull request which shows you want their feedback on your changes! Once a pull request is ready-to-go, it can be merged into your main branch. To learn more about pull requests, read “About Pull Requests”.\nNote: In this course, you will not be required to use pull requests.\n\n\nIssues\nIssues are a way to track enhancements, tasks, or bugs for your work on GitHub. Issues are a great way to keep track of all the tasks you want to work on for your project and let others know what you plan to work on. You can also use issues to tell a favorite open source project about a bug you found or a feature you think would be great to add!\nFor larger projects, you can keep track of many issues on a project board. GitHub Projects help you organize and prioritize your work and you can read more about them in this “About Project boards document. You likely won’t need a project board for your assignments, but once you move on to even bigger projects, they’re a great way to organize your team’s work! You can also link together pull requests and issues to show that a fix is in progress and to automatically close the issue when someone merges the pull request. To learn more about issues and linking them to your pull requests, read “About Issues”.\n\n\nYour user profile\nYour profile page tells people the story of your work through the repositories you’re interested in, the contributions you’ve made, and the conversations you’ve had. You can also give the world a unique view into who you are with your profile README. You can use your profile to let future employers know all about you! To learn more about your user profile and adding and updating your profile README, read “Managing Your Profile README”.\n\n\nUsing markdown on GitHub\nYou might have noticed already, but you can add some fun styling to your issues, pull requests, and files. “Markdown” is an easy way to style your issues, pull requests, and files with some simple syntax. This can be helpful to organize your information and make it easier for others to read. You can also drop in gifs and images to help convey your point! To learn more about using GitHub’s flavor of markdown, read “Basic Writing and Formatting Syntax”.\n\n\nEngaging with the GitHub community\nThe GitHub community is vast. There are many types of people who use GitHub in their day to day—students like you, professional developers, hobbyists working on open source projects, and explorers who are just jumping into the world of software development on their own. There are many ways you can interact with the larger GitHub community, but here are three places where you can start.\n\nStarring repositories\nIf you find a repository interesting or you want to keep track of it, star it! When you star a repository it’s also used as a signal to surface better recommendations on github.com/explore. If you’d like to get back to your starred repositories you can do so via your user profile. To learn more about starring repositories, read “Saving Repositories with Stars”.\n\n\nFollowing users\nYou can follow people on GitHub to receive notifications about their activity and discover projects in their communities. When you follow a user, their public GitHub activity will show up on your dashboard so you can see all the cool things they are working on. To learn more about following users, read “Following People”.\n\n\nBrowsing GitHub Explore\nGitHub Explore is a great place to do just that … explore :smile: You can find new projects, events, and developers to interact with.\nYou can check out the GitHub Explore website at github.com/explore. The more you intereact with GitHub the more tailored your Explore view will be."
-  },
-  {
-    "objectID": "homework/01-git-github.html#next-steps",
-    "href": "homework/01-git-github.html#next-steps",
-    "title": "👋 The Basics of GitHub",
-    "section": "📝 Next steps",
-    "text": "📝 Next steps\n\nClone this repository to your local machine\nOn your local machine, create a new markdown file in this repository named ‘About_Me.md’. Provide a short biography/introduction for yourself and use markdown formatting\n\nMarkdown Basics provides an overview of different formatting options in markdown.\nYou must use at least the following formatting elements: header, subheader, bold or italic, bulleted list, and an image.\n\nCommit your changes to your new file locally and push them back to your github repository. Check on Github to make sure the new file appears.\nTo get full credit for your assignment, you will need to have worked with your git repository locally. I will be able to see if you have used the github editor to make your changes instead :)."
-  },
-  {
-    "objectID": "homework/01-git-github.html#resources",
-    "href": "homework/01-git-github.html#resources",
-    "title": "👋 The Basics of GitHub",
-    "section": "📚 Resources",
-    "text": "📚 Resources\n\nA short video explaining what GitHub is\nGit and GitHub learning resources\nUnderstanding the GitHub flow\nHow to use GitHub branches\nInteractive Git training materials\nGitHub’s Learning Lab\nEducation community forum\nGitHub community forum"
-  },
-  {
-    "objectID": "homework/01-git-github.html#optional-extra-steps",
-    "href": "homework/01-git-github.html#optional-extra-steps",
-    "title": "👋 The Basics of GitHub",
-    "section": "Optional extra steps",
-    "text": "Optional extra steps\n\nOpen a pull request and let your teacher know that you’ve finished this course.\n\nCreate your profile README. Let the world know a little bit more about you! What are you interested in learning? What are you working on? What’s your favorite hobby? Learn more about creating your profile README in the document, “Managing Your Profile README”.\nGo to your user dashboard and create a new repository. Experiment with the features within that repository to familiarize yourself with them.\nLet us know what you liked or didn’t like about the content of this course. What would you like to see more of? What would be interesting or helpful to your learning journey?"
-  },
-  {
-    "objectID": "homework/03-cipher.html",
-    "href": "homework/03-cipher.html",
-    "title": "decodeR: Base R",
-    "section": "",
-    "text": "Note: This assignment must be submitted in github classroom.\nThis assignment is modified from the decodeR exercises by Kelly Bodwin and Allison Theobold.\nIn this assignment, you will be creating and manipulating vectors, lists, and data frames to uncover a top secret message.\nSome advice:"
-  },
-  {
-    "objectID": "homework/03-cipher.html#part-one-setup",
-    "href": "homework/03-cipher.html#part-one-setup",
-    "title": "decodeR: Base R",
-    "section": "Part One: Setup",
-    "text": "Part One: Setup\nEach of the following R chunks will cause an error and/or do the desired task incorrectly. Find the mistake, and correct it to complete the intended action. For each error, write 1-2 sentences to reflect on what the mistake was and how you found it and fixed it.\n\nCreate vectors containing the upper case letters, lower case letters, and some punctuation marks.\n\n\nlower_case &lt;- c(\"a\", \"b\", \"c\", \"d\", \"e\", \"f\", \"g\", \"h\", \"i\", \"j\", \"k\", \"l\", \"m\", \"n\", \"o\", \"p\", \"q\", \"r\", \"s\", \"t\", \"u\", \"v\", \"w\", \"x\", \"y\", \"z\")\n\nupper_case &lt;- c(\"A\", \"B\", \"C\", \"D\", \"E\", \"F\", \"G\", \"H\" \"I\", \"J\", \"K\", \"L\", \"M\", \"N\", \"O\", \"P\", \"Q\", \"R\", \"S\", \"T\", \"U\", \"V\", \"W\", \"X\", \"Y\", \"Z\")\n\npunctuation &lt;- c(\".\", \",\", \"!\", \"?\", \"'\", \"\"\", \"(\", \")\", \" \", \"-\", \";\", \":\")\n\n\nMake one long vector containing all the symbols.\n\n\nmy_symbols &lt;- cbind(lower_case, upper_case, punctuation)\n\n\nTurn the my_symbols vector into a data frame, with the variable name “Symbol”\n\n\nmy_symbols &lt;- dataframe(my_symbols)\nnames(my_symbols) = Symbol\n\n\nFind the total number of symbols we have in our data frame.\n\n\nlen &lt;- length(my_symbols)\n\n\nCreate a new variable in your dataframe that assigns a number to each symbol.\n\n\nmy_symbols%Num &lt;- 1:len"
-  },
-  {
-    "objectID": "homework/03-cipher.html#part-two-decoding-the-secret-message.",
-    "href": "homework/03-cipher.html#part-two-decoding-the-secret-message.",
-    "title": "decodeR: Base R",
-    "section": "Part Two: Decoding the secret message.",
-    "text": "Part Two: Decoding the secret message.\nThis chunk will load up the encoded secret message as a vector:\n\ntop_secret &lt;- read.csv(\"Secret_Code\", header = FALSE)$V1\n\nBy altering this top secret set of numbers, you will be able to create a message. Write your own code to complete the steps below.\n\nAdd 14 to every number.\nMultiply every number by 18, then subtract 257.\nExponentiate every number. (That is, do e^[number].)\nSquare every number.\n\nCheckpoint: Headquarters has informed you that at this stage of decoding, there should be 352 numbers in the secret message that are below 17.\n\nTurn your vector of numbers into a matrix with 5 columns.\nSeparately from your top secret numbers, create a vector of all the even numbers between 1 and 382. Name it “evens”. That is, “evens” should contain 2, 4, 6, 8 …, 382.\nSubtract the “evens” vector from the first column of your secret message matrix.\nSubtract 100 from all numbers in the 18-24th rows of the 3rd column.\nMultiply all numbers in the 4th and 5th column by 2.\nTurn your matrix back into a vector.\n\nCheckpoint: Headquarters has informed you that at this stage of decoding, all numbers in indices 500 and beyond are below 100.\n\nTake the square root of all numbers in indices 38 to 465.\nRound all numbers to the nearest whole number.\nReplace all instances of the number 39 with 20.\n\nCheckpoint: Headquarters has informed you that your final message should have 344 even numbers."
-  },
-  {
-    "objectID": "homework/03-cipher.html#part-3-the-secret-message",
-    "href": "homework/03-cipher.html#part-3-the-secret-message",
-    "title": "decodeR: Base R",
-    "section": "Part 3: The secret message!",
-    "text": "Part 3: The secret message!\nUse your final vector of numbers as indices for my_symbols to discover the final message!\nGoogle the first line of this message, if you do not recognize it, to see what it is.\nWrite 3-4 sentences about what you learned from this investigation. What problems did you encounter, and how did you solve them? Could you do the same tasks in Python? Why or why not?"
-  },
-  {
-    "objectID": "homework/05-graphics-groundhogs.html",
-    "href": "homework/05-graphics-groundhogs.html",
-    "title": "Homework 5: Graphics",
-    "section": "",
-    "text": "Note: This assignment must be submitted in github classroom."
-  },
-  {
-    "objectID": "homework/05-graphics-groundhogs.html#data-exploration",
-    "href": "homework/05-graphics-groundhogs.html#data-exploration",
-    "title": "Homework 5: Graphics",
-    "section": "Data Exploration",
-    "text": "Data Exploration\nOne extremely important use of charts is to explore new datasets. In order to get the most out of a dataset, however, it is important to use a chart that is suited to the type of data: a density plot will not work well for showing categorical data, for instance.\nFor each variable in the groundhogs data that contains useful information, find an appropriate plot for the data. You may show more than one variable in a single plot (latitude and longitude should probably be shown together). You may use either R or python for this task.\ngroundhogs.csv\n\nlat, long\ncountry\nisGroundhog\nactive\npredictionsCount\n\npredictions.csv\n\nisGroundhog\nyear\nshadow\n\nFor each plot you draw, write 1-2 sentences explaining what you can learn from the plot.\n\nThis plot shows…"
-  },
-  {
-    "objectID": "homework/05-graphics-groundhogs.html#grammar-of-graphics",
-    "href": "homework/05-graphics-groundhogs.html#grammar-of-graphics",
-    "title": "Homework 5: Graphics",
-    "section": "Grammar of Graphics",
-    "text": "Grammar of Graphics\nThink of a good way to answer the following questions with a plot. For each plot, write 1-2 sentences explaining why you mapped each variable in the way that you did. Use ggplot2 for this portion of the assignment.\nYou may make editorial decisions here - it may be useful to only show groundhogs with 20 years of predictions, for instance. If you make such decisions, please explain why.\nYour charts must have appropriate axis labels and titles.\n\nDo different groundhogs have different probabilities of predicting 6 more weeks of winter?\n\nI mapped … to x and … to y because…\n\n\nHow much do North American groundhogs tend to agree on their predictions?\nDoes there appear to be any spatial covariance (that is, are groundhogs who are close together more likely to predict the same thing?)\n\nI mapped … to x and … to y because…"
-  },
-  {
-    "objectID": "homework/05-graphics-groundhogs.html#ugly-chart-challenge",
-    "href": "homework/05-graphics-groundhogs.html#ugly-chart-challenge",
-    "title": "Homework 5: Graphics",
-    "section": "Ugly Chart Challenge",
-    "text": "Ugly Chart Challenge\nThe textbook spent lots of time showing you how to create different types of graphics, but I spent a lot less time showing you all of the different ways you could customize graphics in any plotting library. In this problem, I want you to create the ugliest graph you can, and then explain why, exactly, you made the decisions you did, and which principles of good graphics you’ve intentionally violated.\nUgliness is subjective, so the goal here is for you to explore the different ways you can customize the finer details of a plot. Make sure your finished masterpiece has appropriate axis labels and a title (after all, even ugly plots need to be correctly labeled!). You are free to add additional variables and layers, modify the aesthetics used, and leverage other packages. If you need inspiration, look here.\nUse the groundhog data to create the ugliest chart you possibly can, by violating as many guidelines for the creation of good graphics as possible.\nDo this for one plotting system in R, and one plotting system in Python. You might try different ways to make things ugly in each plotting system. Note that this dataset does include images of each groundhog, so feel free to leverage that in your plot, if you are so inspired.\nFor each plot, explain why the plot is ugly and what principles of good graphics it violates in 2-3 sentences.\n\nR\nThis chart is ugly because it violates …\n\n\nPython\nThis chart is ugly because it violates …"
-  },
-  {
-    "objectID": "homework/07-strings.html",
-    "href": "homework/07-strings.html",
-    "title": "String Processing and Data Wrangling in R and Python",
-    "section": "",
-    "text": "Note: This assignment must be submitted in github classroom."
-  },
-  {
-    "objectID": "homework/07-strings.html#content-warning",
-    "href": "homework/07-strings.html#content-warning",
-    "title": "String Processing and Data Wrangling in R and Python",
-    "section": "Content Warning",
-    "text": "Content Warning\nThese poems may address adult topics and/or use strong or vulgar language, as they are taken from Reddit. I have not censored them in any way because I want you to work with data that is realistic. You should find a few test cases which you are comfortable with to use to test out your code, but you do not need to read all of the poems (and in both cases, I’ve provided you with approximately 1000 samples, so it’s probably too much to read in any case).\nHere are 5 indices (counting from 1) which are approximately G or PG in content for each poet, using the most recent snapshot CSV (20230806):\n\nSprog poems: 2, 6, 7, 8, 9\nSchnoodleDoodleDo poems: 1, 2, 3, 4, 5\n\nThese should be sufficient for you to test your code even if you are worried about being exposed to adult themes or language during this activity."
-  },
-  {
-    "objectID": "homework/07-strings.html#splitting-poems-into-lines",
-    "href": "homework/07-strings.html#splitting-poems-into-lines",
-    "title": "String Processing and Data Wrangling in R and Python",
-    "section": "Splitting Poems into Lines",
-    "text": "Splitting Poems into Lines\nSplit the poem into lines and create a data frame that has\n\na new column called poem_id, numbered from one to the total number of poems by the poet in question\na new variable called line that contains the text of each line of the poem (one row per poem line). To get this, you may need to split the comment string by the endline character (\\n) and then unnest or expand your data frame.\na new variable called line_no that contains the line number of the poem. This should be computed per poem.\n\nEnsure that you are splitting lines by a string which makes sense. Some poems have multiple paragraphs (stanzas) and may have a blank line in between; you want to preserve this blank line as it will help you make sense of the poem. Some poems instead have blank lines between every line of the poem; in these cases, you may want to split by e.g. \\n\\n instead of \\n.\nSee Part 1 Checkpoint for an example of what the output should look like from each poet."
-  },
-  {
-    "objectID": "homework/07-strings.html#summarizing-poems",
-    "href": "homework/07-strings.html#summarizing-poems",
-    "title": "String Processing and Data Wrangling in R and Python",
-    "section": "Summarizing Poems",
-    "text": "Summarizing Poems\nFor each poem, create a summary data frame that contains:\n\nAverage number of words per line in the poem\nNumber of lines in the poem\nNumber of characters which are not letters or spaces (punctuation, numbers, and any non-ASCII characters)\nNumber of uppercase letters in the poem\nNumber of lowercase letters in the poem\n\nCreate a plot showing the distribution of the number of words per line across all poems you have in your dataset. Create another plot showing the number of lines in the poem for all poems in your dataset. What does this tell you about the “average” style of the poet in question?\nSee Part 2 Checkpoint for an example of what the output should look like from each poet."
-  },
-  {
-    "objectID": "homework/07-strings.html#poetry-analysis",
-    "href": "homework/07-strings.html#poetry-analysis",
-    "title": "String Processing and Data Wrangling in R and Python",
-    "section": "Poetry Analysis",
-    "text": "Poetry Analysis\nChoose some characteristic(s) of the poet’s style to explore graphically. If necessary, create a subset of the data with poems relevant to your question before you generate numerical summaries. You may want to clean up the data and remove lines which contain quotes (e.g. start with a &gt; character) or horizontal lines in reddit markdown (e.g. only have ----).\nSome ideas to get you started thinking:\n\nNumber of syllables per line may be used to infer rhyming scheme and/or poetry style. You can use the qdap package in R, which contains the syllable_sum function to count the number of syllables in a sentence. You may need to use a for-loop or program a custom function to use the syllables function on every entry in your data frame column.\nUse of non-alphabetic characters. Schnoodle often uses emoji and other text annotations to convey emotions and excitement - how often do these types of annotations appear in their poems?\nCommon characters and phrases. Sprog writes poems frequently about a character named Timmy (who often meets a horrible end). Do these poems have a common format/style/rhyme scheme?\nSprog often writes longer poems with multiple stanzas. Identify which poems have multiple stanzas (Hint, look for blank lines in a systematic pattern) and show the distribution of stanza length, stanza variation within poems, and number of stanzas in each poem.\nSchnoodle often misspells words intentionally (using e.g. fren instead of friend) to convey that they are writing using an animal’s voice. What proportion of words are misspelled in each poem? How much does this proportion vary? Based on the distribution, how likely is it, in your opinion, that Schnoodle misspells words more often when speaking as one type of animal than another? You can use the hunspell package in R to detect whether words are likely misspelled."
-  },
-  {
-    "objectID": "homework/07-strings.html#splitting-poems-into-lines-1",
-    "href": "homework/07-strings.html#splitting-poems-into-lines-1",
-    "title": "String Processing and Data Wrangling in R and Python",
-    "section": "Splitting Poems into Lines",
-    "text": "Splitting Poems into Lines\nSplit the poem into lines and create a data frame that has\n\na new column called poem_id, numbered from one to the total number of poems by the poet in question\na new variable called line that contains the text of each line of the poem (one row per poem line). To get this, you may need to split the comment string by the endline character (\\n) and then unnest or expand your data frame.\na new variable called line_no that contains the line number of the poem. This should be computed per poem.\n\nEnsure that you are splitting lines by a string which makes sense. Some poems have multiple paragraphs (stanzas) and may have a blank line in between; you want to preserve this blank line as it will help you make sense of the poem. Some poems instead have blank lines between every line of the poem; in these cases, you may want to split by e.g. \\n\\n instead of \\n. See Part 1 Checkpoint for an example of what the output should look like from each poet."
-  },
-  {
-    "objectID": "homework/07-strings.html#summarizing-poems-1",
-    "href": "homework/07-strings.html#summarizing-poems-1",
-    "title": "String Processing and Data Wrangling in R and Python",
-    "section": "Summarizing Poems",
-    "text": "Summarizing Poems\nFor each poem, create a summary data frame that contains:\n\nAverage number of words per line in the poem\nNumber of lines in the poem\nNumber of characters which are not letters or spaces (punctuation, numbers, and any non-ASCII characters)\nNumber of uppercase letters in the poem\nNumber of lowercase letters in the poem\n\nCreate a plot showing the distribution of the number of words per line across all poems you have in your dataset. Create another plot showing the number of lines in the poem for all poems in your dataset. What does this tell you about the “average” style of the poet in question?"
-  },
-  {
-    "objectID": "homework/07-strings.html#poetry-analysis-1",
-    "href": "homework/07-strings.html#poetry-analysis-1",
-    "title": "String Processing and Data Wrangling in R and Python",
-    "section": "Poetry Analysis",
-    "text": "Poetry Analysis\nChoose some characteristic(s) of the poet’s style to explore graphically. If necessary, create a subset of the data with poems relevant to your question before you generate numerical summaries. You may want to clean up the data and remove lines which contain quotes (e.g. start with a &gt; character) or horizontal lines in reddit markdown (e.g. only have ----).\nSome ideas to get you started thinking:\n\nNumber of syllables per line may be used to infer rhyming scheme and/or poetry style. You can use the syllables python package. You may need to use a for-loop or program a custom function to use the syllables function on every entry in your data frame column.\nUse of non-alphabetic characters. Schnoodle often uses emoji and other text annotations to convey emotions and excitement - how often do these types of annotations appear in their poems?\nCommon characters and phrases. Sprog writes poems frequently about a character named Timmy (who often meets a horrible end). Do these poems have a common format/style/rhyme scheme?\nSprog often writes longer poems with multiple stanzas. Identify which poems have multiple stanzas (Hint, look for blank lines in a systematic pattern) and show the distribution of stanza length, stanza variation within poems, and number of stanzas in each poem.\nSchnoodle often misspells words intentionally (using e.g. fren instead of friend) to convey that they are writing using an animal’s voice. What proportion of words are misspelled in each poem? How much does this proportion vary? Based on the distribution, how likely is it, in your opinion, that Schnoodle misspells words more often when speaking as one type of animal than another? You can use one of the python packages discussed in this post to detect whether words are likely misspelled."
-  },
-  {
-    "objectID": "homework/09-join.html",
-    "href": "homework/09-join.html",
-    "title": "Homework 8: Joins and Summaries",
-    "section": "",
-    "text": "Note: This assignment must be submitted in github classroom.\nThis week, you’ll be using table joins to solve a murder mystery."
-  },
-  {
-    "objectID": "homework/09-join.html#r",
-    "href": "homework/09-join.html#r",
-    "title": "Homework 8: Joins and Summaries",
-    "section": "R",
-    "text": "R\n\n# you can do the assignment using the database, if you want, \n# or you can use the code below to read in each table separately.\nlibrary(RSQLite)\nlibrary(DBI)\n# Your database connection code goes here. Store the connection as con \ncon &lt;- dbConnect(RSQLite::SQLite(), \"sql-murder-mystery.db\")\n# close the connection when you're done\ndbDisconnect(con)\n\n\n# This loads all of the tables into R data frame objects. \n# You can also just use the database connection above.\n# You don't need to understand what this code does to run it :)\nif (!\"purrr\" %in% installed.packages()) {\n  install.packages(\"purrr\")\n}\n# Load all tables from CSV\ntable_names &lt;- c(\"crime_scene_report\", \n                 \"drivers_license\", \n                 \"facebook_event_checkin\",\n                 \"get_fit_now_check_in\", \n                 \"get_fit_now_member\", \n                 \"income\", \n                 \"interview\",\n                 \"person\")\nurl_base &lt;- \"https://raw.githubusercontent.com/srvanderplas/datasets/main/raw/sql-murder/\"\n# For each table name, read the tables in and store them as the name of the table\npurrr::walk(table_names, function(x) {\n  assign(x, readr::read_csv(paste0(url_base, x, \".csv\")), envir = .GlobalEnv)\n})"
-  },
-  {
-    "objectID": "homework/09-join.html#python",
-    "href": "homework/09-join.html#python",
-    "title": "Homework 8: Joins and Summaries",
-    "section": "Python",
-    "text": "Python\n\nimport pandas as pd\nimport sqlite3\n# Read sqlite query results into a pandas DataFrame\ncon = sqlite3.connect(\"sql-murder-mystery.db\")\ncrime_scene_report = pd.read_sql_query(\"SELECT * from crime_scene_report\", con)\ndrivers_license = pd.read_sql_query(\"SELECT * from drivers_license\", con)\nfacebook_event_checkin = pd.read_sql_query(\"SELECT * from facebook_event_checkin\", con)\nget_fit_now_check_in = pd.read_sql_query(\"SELECT * from get_fit_now_check_in\", con)\nget_fit_now_member = pd.read_sql_query(\"SELECT * from get_fit_now_member\", con)\nincome = pd.read_sql_query(\"SELECT * from income\", con)\ninterview = pd.read_sql_query(\"SELECT * from interview\", con)\nperson = pd.read_sql_query(\"SELECT * from person\", con)\n# Verify that result of SQL query is stored in the dataframe\nprint(crime_scene_report.head())\ncon.close()"
-  },
-  {
-    "objectID": "homework/09-join.html#getting-started",
-    "href": "homework/09-join.html#getting-started",
-    "title": "Homework 8: Joins and Summaries",
-    "section": "Getting Started",
-    "text": "Getting Started\nTo get you started, I’ll set you up in the right place.\n\nA crime has taken place and the detective needs your help. The detective gave you the crime scene report, but you somehow lost it. You vaguely remember that the crime was a murder that occurred sometime on Jan.15, 2018 and that it took place in SQL City. Start by retrieving the corresponding crime scene report from the police department’s database.\n\n\nlibrary(dplyr)\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union\n\nlibrary(tidyr)\n\ncrime_of_interest &lt;- crime_scene_report %&gt;%\n  filter(date == \"20180115\", city == \"SQL City\", type == \"murder\")\ncrime_of_interest$description\n\n[1] \"Security footage shows that there were 2 witnesses. The first witness lives at the last house on \\\"Northwestern Dr\\\". The second witness, named Annabel, lives somewhere on \\\"Franklin Ave\\\".\""
-  },
-  {
-    "objectID": "homework/11-functional-prog.html",
-    "href": "homework/11-functional-prog.html",
-    "title": "Functional Programming: Cats and Dogs",
-    "section": "",
-    "text": "Note: This assignment must be submitted in github classroom."
-  },
-  {
-    "objectID": "homework/11-functional-prog.html#r---animal-change-this-to-match",
-    "href": "homework/11-functional-prog.html#r---animal-change-this-to-match",
-    "title": "Functional Programming: Cats and Dogs",
-    "section": "R - Animal (change this to match)",
-    "text": "R - Animal (change this to match)"
-  },
-  {
-    "objectID": "homework/11-functional-prog.html#python---animal-change-this-to-match",
-    "href": "homework/11-functional-prog.html#python---animal-change-this-to-match",
-    "title": "Functional Programming: Cats and Dogs",
-    "section": "Python - Animal (change this to match)",
-    "text": "Python - Animal (change this to match)"
-  },
-  {
-    "objectID": "homework/15-project-peer-review.html",
-    "href": "homework/15-project-peer-review.html",
-    "title": "Project Peer Reviews",
-    "section": "",
-    "text": "To complete this assignment, you will need to follow the instructions for completing a peer review with a rubric on Canvas\nYou must peer review all of the assigned videos to get credit for this assignment."
-  },
-  {
-    "objectID": "project/index.html",
-    "href": "project/index.html",
-    "title": "Project: Screencast",
-    "section": "",
-    "text": "Project Description\nFor your final project (which will take the place of the final exam), you will be recording a screencast in the style of David Robinson’s TidyTuesday screencasts.\nYou can find time-stamped, catalogued versions of some of David Robinson’s screencasts here.\nRequirements:\n\nYour screencast should be approximately 45 minutes long.\nYour screencast should show your analysis of a TidyTuesday dataset from 2023\nYou should showcase at least 4 different techniques you’ve learned in Stat 251. Some examples include:\n\ndata cleaning (dplyr) verbs\nreshaping data (tidyr)\nworking with dates and times (lubridate)\nworking with strings (stringr)\nwriting functions to modularize your code\nvisualizing your data effectively\n\n\nUnlike David Robinson’s screencasts, you will write a rough pseudocode “script” before you start recording. This will give you a rough outline of how to do the analysis and what things you intend to cover.\nYour goal is to help a future Stat 251 student understand some of the topics covered in this class. So while David Robinson and others who record their screencasts live might not fully explain what he’s doing, you should take the time to explain each technique you decide to use in a way that will help someone else understand.\nThere will be three deliverables for this project:\n\nPlan your dataset and topics\nPseudocode script uploaded to github repository\nScreencast + github repository\n\nScreencast uploaded to YouTube/YuJa\nApproximate time index provided for each of the 4 techniques you’re demonstrating (examples)\nCode uploaded to github repository\n\n\nIn lieu of the final exam, you will peer review two classmates’ screencasts."
-  },
-  {
-    "objectID": "project/screencast-checklist.html",
-    "href": "project/screencast-checklist.html",
-    "title": "Screencast Checklist",
-    "section": "",
-    "text": "Screencast uploaded to YouTube/YuJa\n\nIf on YouTube, your screencast should be set so that anyone with the link can view the video.\n\nApproximate time index provided for each of the 4 techniques you’re demonstrating (examples) provided\n\nin the README of your github repository\nin the description of your video (if on YouTube)\n\nCommented code for your screencast uploaded to the github repository"
-  },
-  {
-    "objectID": "slides/02-version-control.html#introduce-yourself-to-git",
-    "href": "slides/02-version-control.html#introduce-yourself-to-git",
-    "title": "Version Control",
-    "section": "Introduce yourself to git",
-    "text": "Introduce yourself to git\nIn a system terminal, run…\n\ngit config --global user.name 'YOUR NAME HERE'\ngit config --global user.email 'YOUR EMAIL HERE'\ngit config --global --list # check to see it worked"
-  },
-  {
-    "objectID": "slides/02-version-control.html#set-up-ssh-authentication",
-    "href": "slides/02-version-control.html#set-up-ssh-authentication",
-    "title": "Version Control",
-    "section": "Set up SSH authentication",
-    "text": "Set up SSH authentication\nInstructions"
-  },
-  {
-    "objectID": "slides/02-version-control.html#navigating-around-github",
-    "href": "slides/02-version-control.html#navigating-around-github",
-    "title": "Version Control",
-    "section": "Navigating around Github",
-    "text": "Navigating around Github\n(Demo)"
-  },
-  {
-    "objectID": "slides/02-version-control.html#using-rstudio-and-git",
-    "href": "slides/02-version-control.html#using-rstudio-and-git",
-    "title": "Version Control",
-    "section": "Using RStudio and git",
-    "text": "Using RStudio and git\n(Demo)"
-  },
-  {
-    "objectID": "slides/02-version-control.html#homework-introduction-to-github",
-    "href": "slides/02-version-control.html#homework-introduction-to-github",
-    "title": "Version Control",
-    "section": "Homework: Introduction to Github",
-    "text": "Homework: Introduction to Github"
   }
 ]
