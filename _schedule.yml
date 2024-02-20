@@ -80,7 +80,7 @@ schedule:
         categories: [HW]
         date: 2024-02-18
       - path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/02b-graphics.html
-        title: Graphics
+        title: Data Visualization
         date: 2024-02-19
         categories: [reading]
       - path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/02c-good-graphics.html
@@ -90,6 +90,10 @@ schedule:
       - href: homework/05-graphics-groundhogs.qmd
         categories: [HW]
         date: 2024-02-25
+      - href: slides/09-graphics.qmd
+        categories: [slides]
+        date: 2024-02-20
+        pub-date: 2024-02-19
   - unit: "Cleaning Data"
     materials:
       - path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/03-data-cleaning.html

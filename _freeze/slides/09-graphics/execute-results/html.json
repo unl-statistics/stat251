@@ -1,0 +1,18 @@
+{
+  "hash": "81a2f6f0e9a7e37a717b330ab37619cc",
+  "result": {
+    "markdown": "---\ntitle: Creating Good Graphics\nauthor: Stat 251\ncategories:\n- slides\n- Week05\nengine: knitr\nformat:\n  revealjs:\n    navigation-mode: vertical\n    logo: N.svg\n    theme: inverse.scss\n    includes:\n      in_header: header.html\ndate: '2024-02-20'\n---\n\n\n# Graphics week! {.r-fit-text}\n\nYou should have read:\n\n- [Graphics](https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/02b-graphics.html)\n    - Focus on relationships between variables\n    - Grammar of Graphics vs. Manual plot specification/mapping\n    - Exploratory data analysis\n\n- [Good Graphics](https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/02c-good-graphics.html)\n    - Perception & Cognition\n    - Use the least complicated chart that still works\n\n# Resources for this week\n\n- [R](https://r-graph-gallery.com/) and [Python](https://python-graph-gallery.com/) Graph Galleries\n\n- [Ugly Chart Challenge](https://srvanderplas.github.io/unl-stat850/homework/08-results.html) examples from last semester's graduate class\n\n- [Customizing ggplot2 plots](https://rdpeng.github.io/RProgDA/customizing-ggplot2-plots.html)\n    - Also an RStudio addin package - `ggThemeAssist`\n\n- [Customizing seaborn plots](https://www.codecademy.com/article/seaborn-design-i)\n\n\n# Homework\n::: small\n\n- Explanations! What can you see from the plot? What is its purpose?\n\n:::\n\n\n```{=html}\n<iframe width=\"100%\" height = \"500px\" src=\"https://srvanderplas.github.io/unl-stat251/homework/05-graphics-groundhogs.html\"></iframe>\n```\n\n\n\n# Homework rubric\n\n![](fig/graphics-groundhogs-rubric.png){fig-alt=\"Rubric for homework assignment. Data exploration is worth 2 points, and includes each variable explored and each plot described with 1-2 sentences. Grammar of graphics - probabilities and grammar of graphics - agreement are worth 1.5 points each. Ugly chart in R is worth 2.5 points, including the explanation of why the chart is ugly. Ugly chart in python is worth 2.5 points, including the explanation of why the chart is ugly.\"}\n\n# Next time\n\n- Continue working on homework assignment\n\n- Brainstorming: &#x1F9E0;&#x26C8;&#xFE0F;\n    - how to make the textbook &#x1F4D6; more effective \n    - what will motivate you to read it before class? &#x1F61C;\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {
+      "include-after-body": [
+        "\n<script>\n  // htmlwidgets need to know to resize themselves when slides are shown/hidden.\n  // Fire the \"slideenter\" event (handled by htmlwidgets.js) when the current\n  // slide changes (different for each slide format).\n  (function () {\n    // dispatch for htmlwidgets\n    function fireSlideEnter() {\n      const event = window.document.createEvent(\"Event\");\n      event.initEvent(\"slideenter\", true, true);\n      window.document.dispatchEvent(event);\n    }\n\n    function fireSlideChanged(previousSlide, currentSlide) {\n      fireSlideEnter();\n\n      // dispatch for shiny\n      if (window.jQuery) {\n        if (previousSlide) {\n          window.jQuery(previousSlide).trigger(\"hidden\");\n        }\n        if (currentSlide) {\n          window.jQuery(currentSlide).trigger(\"shown\");\n        }\n      }\n    }\n\n    // hookup for slidy\n    if (window.w3c_slidy) {\n      window.w3c_slidy.add_observer(function (slide_num) {\n        // slide_num starts at position 1\n        fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);\n      });\n    }\n\n  })();\n</script>\n\n"
+      ]
+    },
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

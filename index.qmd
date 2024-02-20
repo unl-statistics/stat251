@@ -17,6 +17,7 @@ listing:
   - slides/05-review-cipher.qmd
   - slides/06-review-cipher.qmd
   - slides/07-input.qmd
+  - slides/09-graphics.qmd
   - syllabus.qmd
   - reading.yml
   sort: date desc
