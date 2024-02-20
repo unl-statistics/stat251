@@ -5,6 +5,7 @@ date: '2024-04-11'
 categories:
 - slides
 - Project
+- Week12
 - Week11
 format: revealjs
 engine: knitr

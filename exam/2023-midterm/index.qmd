@@ -4,6 +4,7 @@ author: Your Name
 date: '2024-02-27'
 categories:
 - Exam
+- Week07
 - Week06
 editor: visual
 pub-date: '2023-03-05'
