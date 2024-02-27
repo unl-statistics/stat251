@@ -7,7 +7,9 @@ author: Homework
 execute:
   error: true
   eval: false
-categories: HW
+categories:
+- HW
+- Week03
 ---
 
 Note: This assignment must be submitted in github classroom.

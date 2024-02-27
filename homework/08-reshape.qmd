@@ -4,7 +4,9 @@ date: '2024-03-31'
 execute-dir: ../homework-repos/08-reshape/
 engine: knitr
 author: Homework
-categories: HW
+categories:
+- HW
+- Week09
 ---
 
 Note: This assignment must be submitted in github classroom.

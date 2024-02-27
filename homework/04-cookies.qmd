@@ -4,7 +4,9 @@ date: '2024-02-18'
 execute-dir: ../homework-repos/04-reading-data-cookies
 engine: knitr
 author: Homework
-categories: HW
+categories:
+- HW
+- Week04
 ---
 
 Note: This assignment must be submitted in github classroom.

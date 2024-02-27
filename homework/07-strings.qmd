@@ -4,7 +4,9 @@ date: '2024-03-24'
 execute-dir: ../homework-repos/07-strings/
 engine: knitr
 author: Homework
-categories: HW
+categories:
+- HW
+- Week08
 ---
 
 Note: This assignment must be submitted in github classroom.

@@ -49,7 +49,7 @@
   image: figs/reading.svg
   is_live: true
 - path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/02b-graphics.html
-  title: Graphics
+  title: Data Visualization
   date: '2024-02-19'
   pub.date: '2024-02-10'
   categories:
