@@ -10,6 +10,8 @@ project:
     - homework/*.qmd
     - project/*.qmd
     - slides/*.qmd
+    - exam/2023-midterm/*.qmd
+    - exam/2024-midterm/*.qmd
 
 
 execute:
