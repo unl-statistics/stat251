@@ -1,0 +1,40 @@
+---
+title: Exam Objectives
+author: Midterm
+date: '2024-03-05'
+pub-date: '2023-02-27'
+categories:
+- Exam
+- Week07
+- Week07
+---
+
+Note: This list omits objectives from the "review" section, but they are still relevant.
+
+-   Read in data from common formats into R or Python
+
+-   Identify delimiters, headers, and other essential components of files
+
+-   Create charts designed to communicate specific aspects of the data
+
+-   Describe charts using the grammar of graphics
+
+-   Create layered graphics that highlight multiple aspects of the data
+
+-   Evaluate existing charts and develop new versions that improve accessibility and readability
+
+-   Identify required sequence of steps for data cleaning
+
+-   Describe step-by-step data cleaning process in lay terms appropriately
+
+-   Apply data manipulation verbs to prepare data for analysis
+
+-   Understand the consequences of data cleaning steps for statistical analysis
+
+-   Create summaries of data appropriate for analysis or display using data manipulation techniques
+
+You have also been introduced to the objectives of Exploratory Data Analysis:
+
+-   Understand the main goals of exploratory data analysis
+
+-   Generate and answer questions about a new data set using charts, tables, and numerical summaries
