@@ -90,6 +90,10 @@ schedule:
       - href: homework/05-graphics-groundhogs.qmd
         categories: [HW, Week05]
         date: 2024-02-25
+      - title: Ugly Chart Gallery
+        href: homework/05-graphics-results.qmd
+        categories: [HW, Week05]
+        date: 2024-02-27
       - href: slides/09-graphics.qmd
         categories: [slides]
         date: 2024-02-20

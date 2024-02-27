@@ -1,0 +1,44 @@
+---
+title: Ugly Chart Gallery
+format: html
+date: '2024-02-27'
+filters: lightbox
+lightbox: auto
+categories:
+- HW
+- Week05
+- Week06
+---
+
+Click on the chart to maximize it!
+
+```{css echo=F}
+.gallery > div {
+  columns:16em;
+  gap:0.5rem;
+}
+
+.gallery img {
+  display:block;
+  width:100%;
+}
+```
+
+::: gallery
+
+::: column-page
+
+````{r, results='asis', echo=FALSE, warning=FALSE, message=FALSE}
+library(glue)
+library(fs)
+library(here)
+photos = fs::dir_ls(path = "gallery/", glob = '*.png')
+baseurl = 'gallery/'
+
+for (i in seq_along(photos)){
+  cat(glue('![]({{ baseurl }}/{{ fs::path_file(photos[i]) }}){style=\"column-span: none;\" group=\"hw05-gallery\"}', .open = '{{', .close = '}}'), '\n')
+}
+````
+:::
+
+:::

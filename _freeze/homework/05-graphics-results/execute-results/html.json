@@ -1,0 +1,14 @@
+{
+  "hash": "a95c6d66e4c3a506f5aaada3d1f1aefc",
+  "result": {
+    "markdown": "---\ntitle: Ugly Charts- 2024 Results\nformat: html\ndate: 2024-02-27\nfilters:\n   - lightbox\nlightbox: auto\n---\n\n\nClick on the chart to maximize it!\n\n\n::: {.cell hash='05-graphics-results_cache/html/unnamed-chunk-1_de11cc1f1b3a14a7a302b999ef7ae944'}\n<style type=\"text/css\">\n.gallery > div {\n  columns:16em;\n  gap:0.5rem;\n}\n\n.gallery img {\n  display:block;\n  width:100%;\n}\n</style>\n:::\n\n\n::: gallery\n\n::: column-page\n\n\n::: {.cell hash='05-graphics-results_cache/html/unnamed-chunk-2_f1a8352b9c17be9a84d39d611594ab65'}\n![](gallery//ak-ugly-py.png){style=\"column-span: none;\" group=\"hw05-gallery\"} \n![](gallery//ak-ugly-r.png){style=\"column-span: none;\" group=\"hw05-gallery\"} \n![](gallery//ao-ugly-py.png){style=\"column-span: none;\" group=\"hw05-gallery\"} \n![](gallery//ao-ugly-r.png){style=\"column-span: none;\" group=\"hw05-gallery\"} \n![](gallery//ds-ugly-py.png){style=\"column-span: none;\" group=\"hw05-gallery\"} \n![](gallery//ds-ugly-r.png){style=\"column-span: none;\" group=\"hw05-gallery\"} \n![](gallery//eh-ugly-py.png){style=\"column-span: none;\" group=\"hw05-gallery\"} \n![](gallery//eh-ugly-r.png){style=\"column-span: none;\" group=\"hw05-gallery\"} \n![](gallery//gg-ugly-py.png){style=\"column-span: none;\" group=\"hw05-gallery\"} \n![](gallery//gg-ugly-r.png){style=\"column-span: none;\" group=\"hw05-gallery\"} \n![](gallery//jb-ugly-py.png){style=\"column-span: none;\" group=\"hw05-gallery\"} \n![](gallery//jb-ugly-r.png){style=\"column-span: none;\" group=\"hw05-gallery\"} \n![](gallery//jc-ugly-py.png){style=\"column-span: none;\" group=\"hw05-gallery\"} \n![](gallery//jc-ugly-r.png){style=\"column-span: none;\" group=\"hw05-gallery\"} \n![](gallery//jm-ugly-py.png){style=\"column-span: none;\" group=\"hw05-gallery\"} \n![](gallery//jm-ugly-r.png){style=\"column-span: none;\" group=\"hw05-gallery\"} \n![](gallery//jr-ugly-py.png){style=\"column-span: none;\" group=\"hw05-gallery\"} \n![](gallery//jr-ugly-r.png){style=\"column-span: none;\" group=\"hw05-gallery\"} \n![](gallery//td-ugly-py.png){style=\"column-span: none;\" group=\"hw05-gallery\"} \n:::\n\n:::\n\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
