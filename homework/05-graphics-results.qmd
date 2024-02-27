@@ -2,7 +2,9 @@
 title: Ugly Chart Gallery
 format: html
 date: '2024-02-27'
-filters: lightbox
+filters:
+- lightbox
+- fontawesome
 lightbox: auto
 categories:
 - HW
