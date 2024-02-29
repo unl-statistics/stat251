@@ -7,7 +7,7 @@ author: Homework
 categories:
 - HW
 - Week06
----
+--- 
 
 Note: This assignment must be submitted in github classroom.
 
