@@ -6,6 +6,7 @@ listing:
   categories: cloud
   contents:
   - exam/2023-midterm/index.qmd
+  - exam/2024-midterm/index.qmd
   - exam/2024-midterm/objectives.qmd
   - homework/01-git-github.qmd
   - homework/02-review.qmd
