@@ -132,6 +132,10 @@ schedule:
       - href: homework/07-strings.qmd
         categories: [HW, Week08]
         date: 2024-03-24
+      - href: slides/15-strings.qmd
+        categories: [slides]
+        date: 2024-03-19
+        pub-date: 2024-03-18
       - path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/05-data-reshape.html
         title: Reshaping Data
         date: 2024-03-25
