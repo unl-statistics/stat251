@@ -25,6 +25,7 @@ listing:
   - slides/07-input.qmd
   - slides/09-graphics.qmd
   - slides/10-graphics.qmd
+  - slides/15-strings.qmd
   - syllabus.qmd
   - reading.yml
   sort: date desc
