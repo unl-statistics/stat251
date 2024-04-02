@@ -2,6 +2,9 @@
   {
     "listing": "/index.html",
     "items": [
+      "/slides/10-projects.html",
+      "/homework/09-join.html",
+      "/homework/08-reshape.html",
       "/homework/07-strings.html",
       "/slides/15-strings.html",
       "/exam/2024-midterm/index.html",
