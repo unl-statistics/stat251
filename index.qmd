@@ -6,6 +6,7 @@ listing:
   categories: cloud
   contents:
   - exam/2023-midterm/index.qmd
+  - exam/2024-midterm/index.qmd
   - exam/2024-midterm/objectives.qmd
   - homework/01-git-github.qmd
   - homework/02-review.qmd
@@ -14,6 +15,7 @@ listing:
   - homework/05-graphics-groundhogs.qmd
   - homework/05-graphics-results.qmd
   - homework/06-data-manip.qmd
+  - homework/07-strings.qmd
   - slides/01-Syllabus-and-Introductions.qmd
   - slides/02-version-control.qmd
   - slides/03-review-topics.qmd
@@ -23,6 +25,7 @@ listing:
   - slides/07-input.qmd
   - slides/09-graphics.qmd
   - slides/10-graphics.qmd
+  - slides/15-strings.qmd
   - syllabus.qmd
   - reading.yml
   sort: date desc
