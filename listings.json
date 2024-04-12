@@ -2,6 +2,9 @@
   {
     "listing": "/index.html",
     "items": [
+      "/project/Dataset-Topics.html",
+      "/project/index.html",
+      "/homework/10-datetime.html",
       "/slides/10-projects.html",
       "/homework/09-join.html",
       "/homework/08-reshape.html",
