@@ -35,7 +35,14 @@ engine: knitr
 
 [GH link](https://classroom.github.com/a/ZxPi9guO)
 
-![](../project/qrcode.png)
+```{r, echo = F}
+if (!file.exists("fig/proj_qr_code.svg")) {
+  library(qrcode)
+generate_svg(qr_code("https://classroom.github.com/a/ZxPi9guO"), filename = "fig/proj_qr_code.svg")
+}
+```
+
+![](fig/proj_qr_code.svg)
 
 :::
 
