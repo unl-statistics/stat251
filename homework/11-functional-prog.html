@@ -2,13 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.557">
+<meta name="generator" content="quarto-1.5.53">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Your Name">
 
-<title>Stat 251 - Data Wrangling - Homework 11: Functional Programming</title>
+<title>Functional Programming: Cats and Dogs – Stat 251 - Data Wrangling</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -84,7 +84,7 @@ ul.task-list li input[type="checkbox"] {
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -103,7 +103,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools">
+            <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -117,11 +117,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
-  <li><a href="#solutions" id="toc-solutions" class="nav-link" data-scroll-target="#solutions">Solutions</a>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">1</span> Introduction</a></li>
+  <li><a href="#solutions" id="toc-solutions" class="nav-link" data-scroll-target="#solutions"><span class="header-section-number">2</span> Solutions</a>
   <ul class="collapse">
-  <li><a href="#r---animal-change-this-to-match" id="toc-r---animal-change-this-to-match" class="nav-link" data-scroll-target="#r---animal-change-this-to-match">R - Animal (change this to match)</a></li>
-  <li><a href="#python---animal-change-this-to-match" id="toc-python---animal-change-this-to-match" class="nav-link" data-scroll-target="#python---animal-change-this-to-match">Python - Animal (change this to match)</a></li>
+  <li><a href="#r---animal-change-this-to-match" id="toc-r---animal-change-this-to-match" class="nav-link" data-scroll-target="#r---animal-change-this-to-match"><span class="header-section-number">2.1</span> R - Animal (change this to match)</a></li>
+  <li><a href="#python---animal-change-this-to-match" id="toc-python---animal-change-this-to-match" class="nav-link" data-scroll-target="#python---animal-change-this-to-match"><span class="header-section-number">2.2</span> Python - Animal (change this to match)</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -165,8 +165,8 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p>Note: This assignment must be submitted in github classroom.</p>
-<section id="introduction" class="level1">
-<h1>Introduction</h1>
+<section id="introduction" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Introduction</h1>
 <p>One of the most common places where we use functional programming is with hierarchically structured data; commonly, we get data like this from the internet in JavaScript Object Notation (JSON) format.</p>
 <p>I’ve used the Petfinder API to get data about 20 dogs and 20 cats that up for adoption, good with kids, and near Lincoln, NE. If you want to see how I did that, you can look at <a href="get_data.R">get_data.R</a> - to run the code, you’ll need to register for your own Petfinder API key.</p>
 <p>Use functional programming techniques (map, apply, <code>purrr</code>, lambda functions, etc.) to accomplish the following tasks.</p>
@@ -179,13 +179,13 @@ ul.task-list li input[type="checkbox"] {
 <li><p>(Bonus) Find some way to generate a collage or gif of pictures of the animals up for adoption right now.</p></li>
 </ol>
 </section>
-<section id="solutions" class="level1">
-<h1>Solutions</h1>
-<section id="r---animal-change-this-to-match" class="level2">
-<h2 class="anchored" data-anchor-id="r---animal-change-this-to-match">R - Animal (change this to match)</h2>
+<section id="solutions" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Solutions</h1>
+<section id="r---animal-change-this-to-match" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="r---animal-change-this-to-match"><span class="header-section-number">2.1</span> R - Animal (change this to match)</h2>
 </section>
-<section id="python---animal-change-this-to-match" class="level2">
-<h2 class="anchored" data-anchor-id="python---animal-change-this-to-match">Python - Animal (change this to match)</h2>
+<section id="python---animal-change-this-to-match" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="python---animal-change-this-to-match"><span class="header-section-number">2.2</span> Python - Animal (change this to match)</h2>
 
 
 </section>
@@ -227,18 +227,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -270,7 +259,29 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp('/' + window.location.host + '/');
@@ -278,7 +289,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
