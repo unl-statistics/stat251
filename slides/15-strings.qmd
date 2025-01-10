@@ -1,0 +1,25 @@
+---
+title: Working with Strings
+author: Stat 251
+categories:
+- slides
+- Week08
+engine: knitr
+format:
+  revealjs:
+    navigation-mode: vertical
+    logo: N.svg
+    theme: inverse.scss
+    includes:
+      in_header: header.html
+date: '2024-03-19'
+---
+
+## Major String Operations
+
+Operation | Sketch
+--- | ---
+Find and replace (or remove) | ![](fig/find-and-replace.svg){fig-alt="A row of three boxes. In the next row, the middle box is replaced with a different, slightly larger box."}
+Split data into multiple columns | ![](fig/split-cols.svg){fig-alt="A column consisting of multiple rows of three boxes. An arrow indicates a transition from the single column to multiple columns, each containing only one type of box."}
+Join data into a single column | ![](fig/join-cols.svg){fig-alt="A set of three columns, each containing one type of box. An arrow indicates a transition whereby in each row, the three columns of data are combined into a single column."}
+

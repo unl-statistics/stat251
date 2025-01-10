@@ -1,0 +1,19 @@
+{
+  "hash": "8005c7975805b65a0da51d6b681fa53a",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: Working with Strings\nauthor: Stat 251\ncategories:\n- slides\n- Week08\nengine: knitr\nformat:\n  revealjs:\n    navigation-mode: vertical\n    logo: N.svg\n    theme: inverse.scss\n    includes:\n      in_header: header.html\ndate: '2024-03-19'\n---\n\n\n## Major String Operations\n\nOperation | Sketch\n--- | ---\nFind and replace (or remove) | ![](fig/find-and-replace.svg){fig-alt=\"A row of three boxes. In the next row, the middle box is replaced with a different, slightly larger box.\"}\nSplit data into multiple columns | ![](fig/split-cols.svg){fig-alt=\"A column consisting of multiple rows of three boxes. An arrow indicates a transition from the single column to multiple columns, each containing only one type of box.\"}\nJoin data into a single column | ![](fig/join-cols.svg){fig-alt=\"A set of three columns, each containing one type of box. An arrow indicates a transition whereby in each row, the three columns of data are combined into a single column.\"}\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {
+      "include-after-body": [
+        "\n<script>\n  // htmlwidgets need to know to resize themselves when slides are shown/hidden.\n  // Fire the \"slideenter\" event (handled by htmlwidgets.js) when the current\n  // slide changes (different for each slide format).\n  (function () {\n    // dispatch for htmlwidgets\n    function fireSlideEnter() {\n      const event = window.document.createEvent(\"Event\");\n      event.initEvent(\"slideenter\", true, true);\n      window.document.dispatchEvent(event);\n    }\n\n    function fireSlideChanged(previousSlide, currentSlide) {\n      fireSlideEnter();\n\n      // dispatch for shiny\n      if (window.jQuery) {\n        if (previousSlide) {\n          window.jQuery(previousSlide).trigger(\"hidden\");\n        }\n        if (currentSlide) {\n          window.jQuery(currentSlide).trigger(\"shown\");\n        }\n      }\n    }\n\n    // hookup for slidy\n    if (window.w3c_slidy) {\n      window.w3c_slidy.add_observer(function (slide_num) {\n        // slide_num starts at position 1\n        fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);\n      });\n    }\n\n  })();\n</script>\n\n"
+      ]
+    },
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

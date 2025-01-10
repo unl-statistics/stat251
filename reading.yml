@@ -118,3 +118,13 @@
   type: reading
   image: figs/reading.svg
   is_live: true
+- path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/08-functional-prog.html
+  title: Functional Programming and Lists
+  date: '2024-04-22'
+  pub.date: '2024-04-13'
+  categories:
+  - reading
+  - Week13
+  type: reading
+  image: figs/reading.svg
+  is_live: true
