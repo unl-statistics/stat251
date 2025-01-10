@@ -15,6 +15,9 @@ listing:
   - homework/05-graphics-groundhogs.qmd
   - homework/05-graphics-results.qmd
   - homework/06-data-manip.qmd
+  - homework/07-strings.qmd
+  - homework/08-reshape.qmd
+  - homework/09-join.qmd
   - slides/01-Syllabus-and-Introductions.qmd
   - slides/02-version-control.qmd
   - slides/03-review-topics.qmd
@@ -24,6 +27,7 @@ listing:
   - slides/07-input.qmd
   - slides/09-graphics.qmd
   - slides/10-graphics.qmd
+  - slides/10-projects.qmd
   - syllabus.qmd
   - reading.yml
   sort: date desc
