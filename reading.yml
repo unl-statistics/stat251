@@ -1,130 +1,30 @@
 - path: https://srvanderplas.github.io/stat-computing-r-python/part-tools/00-tools-intro.html
   title: Review- Tools
-  date: '2024-01-21'
-  pub.date: '2023-01-01'
+  date: '2025-01-21'
+  pub.date: '2024-01-01'
   categories:
   - reading
-  - Week01
+  - .na.character
   type: reading
   image: figs/reading.svg
   is_live: true
 - path: https://srvanderplas.github.io/stat-computing-r-python/part-tools/05-git-and-github.html
   title: Version Control with Git and Github
-  date: '2024-01-24'
-  pub.date: '2024-01-15'
+  date: '2025-01-23'
+  pub.date: '2025-01-14'
   categories:
   - reading
-  - Week01
+  - .na.character
   type: reading
   image: figs/reading.svg
   is_live: true
 - path: https://srvanderplas.github.io/stat-computing-r-python/part-gen-prog/00-gen-prog.html
   title: Review - Programming
-  date: '2024-01-29'
+  date: '2025-01-29'
   pub.date: '2023-01-01'
   categories:
   - reading
-  - Week02
-  type: reading
-  image: figs/reading.svg
-  is_live: true
-- path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/01-data-input.html
-  title: Data Input
-  date: '2024-02-12'
-  pub.date: '2024-02-08'
-  categories:
-  - reading
-  - Week04
-  type: reading
-  image: figs/reading.svg
-  is_live: true
-- path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/02a-eda.html
-  title: Exploratory Data Analysis
-  date: '2024-02-12'
-  pub.date: '2024-02-08'
-  categories:
-  - reading
-  - Week04
-  type: reading
-  image: figs/reading.svg
-  is_live: true
-- path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/02b-graphics.html
-  title: Data Visualization
-  date: '2024-02-19'
-  pub.date: '2024-02-10'
-  categories:
-  - reading
-  - Week05
-  type: reading
-  image: figs/reading.svg
-  is_live: true
-- path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/02c-good-graphics.html
-  title: Good Graphics
-  date: '2024-02-19'
-  pub.date: '2024-02-10'
-  categories:
-  - reading
-  - Week05
-  type: reading
-  image: figs/reading.svg
-  is_live: true
-- path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/03-data-cleaning.html
-  title: Data Cleaning
-  date: '2024-02-26'
-  pub.date: '2024-02-17'
-  categories:
-  - reading
-  - Week06
-  type: reading
-  image: figs/reading.svg
-  is_live: true
-- path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/04-strings.html
-  title: Strings
-  date: '2024-03-18'
-  pub.date: '2024-03-09'
-  categories:
-  - reading
-  - Week08
-  type: reading
-  image: figs/reading.svg
-  is_live: true
-- path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/05-data-reshape.html
-  title: Reshaping Data
-  date: '2024-03-25'
-  pub.date: '2024-03-16'
-  categories:
-  - reading
-  - Week09
-  type: reading
-  image: figs/reading.svg
-  is_live: true
-- path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/06-data-join.html
-  title: Joining Data
-  date: '2024-04-01'
-  pub.date: '2024-03-23'
-  categories:
-  - reading
-  - Week10
-  type: reading
-  image: figs/reading.svg
-  is_live: true
-- path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/07-datetime.html
-  title: Dates and Times
-  date: '2024-04-08'
-  pub.date: '2024-03-30'
-  categories:
-  - reading
-  - Week11
-  type: reading
-  image: figs/reading.svg
-  is_live: true
-- path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/08-functional-prog.html
-  title: Functional Programming and Lists
-  date: '2024-04-22'
-  pub.date: '2024-04-13'
-  categories:
-  - reading
-  - Week13
+  - .na.character
   type: reading
   image: figs/reading.svg
   is_live: true

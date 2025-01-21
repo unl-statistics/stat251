@@ -8,10 +8,9 @@ format:
   revealjs:
     navigation-mode: vertical
     logo: N.svg
-    theme: inverse.scss
     includes:
       in_header: header.html
-date: '2024-01-24'
+date: '2025-01-23'
 pub-date: '2023-01-01'
 ---
 
@@ -29,16 +28,15 @@ pub-date: '2023-01-01'
 
 ## My Introduction
 
-- Susan Vanderplas
+- Heike Hofmann
 
-- Assistant Professor in Statistics
+- Professor in Statistics 
 
-- R user for 14 years, Python user for 2.5 years    
-[Dabbled in JavaScript, HTML, C/C++]{.smaller}
+- At UNL since August, I was at ISU for 20 years
 
-- I have Prosopagnosia - face blindness
+- first computer language was Pascal :) 
 
-![[[Male and Female faces](http://www.shutterstock.com/pic-283980695/stock-vector-vector-set-of-different-male-and-female-icons-in-trendy-flat-style-flat-people-faces-icon.html), from Shutterstock]{.small}](fig/prosopagnosia.png){#prosopagnosia fig-alt="Faces with only hair, glasses, and mouths; no other components (eyes, nose) are present."}
+- R user since 1996, Python user (? I have learned it four times by now)
 
 
 ## On PopTarts and Ravioli:
@@ -51,13 +49,11 @@ Thus, a PopTart is a calzone.
 
 ## Contact Info
 
-- Email: [susan.vanderplas@unl.edu](mailto:susan.vanderplas@unl.edu?subject=Stat251)
+- Email: [hhofmann4@unl.edu](mailto:hhofmann4@unl.edu?subject=Stat251)
 
-- Office: 343D Hardin Hall North Wing
+- Office: 346D Hardin Hall North Wing
 
-- Office Hours:     
-[https://calendly.com/drvanderplas/officehours](https://calendly.com/drvanderplas/officehours)    
-[Self-serve, by Zoom unless you specify otherwise.]{.small}
+- Office Hours: TBD    
 
 ## Course Objectives
 
@@ -112,7 +108,7 @@ Thus, a PopTart is a calzone.
 :::
 
 ::: column
-- [Course site](https://srvanderplas.github.io/unl-stat251/)
+- [Course site](https://unl-statistics.github.io/unl-stat251/)
   - slides
   - weekly readings
   - homework/exam/project descriptions
@@ -164,12 +160,15 @@ Approximately Weekly Homework -- started in class
 
 - ChatGPT, StackOverflow, Google are tools, but they do not help you think
 
+# University Policies
+
+https://executivevc.unl.edu/academic-excellence/teaching-resources/course-policies/
 
 # Setting Up
 
 ## Install Course Software
 
-[Textbook Chapter](https://srvanderplas.github.io/stat-computing-r-python/part-tools/02-setting-up-computer.html): https://bit.ly/3JtGCZR
+[Textbook Chapter 2](https://srvanderplas.github.io/stat-computing-r-python/part-tools/02-setting-up-computer.html)
 
 ```{=html}
 <iframe width="100%" height="600px" src="https://srvanderplas.github.io/stat-computing-r-python/part-tools/02-setting-up-computer.html" title="Setting Up"></iframe>

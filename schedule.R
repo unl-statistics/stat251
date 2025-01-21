@@ -16,20 +16,20 @@ class_wdays <- c("Tue", "Thu")
 not_here_dates <- c(
   # ymd("20220117"),
   # Spring Break
-  seq(ymd(20240310),ymd(20240316), by=1))
+  seq(ymd(20250316),ymd(20250322), by=1))
 
 exam_dates <- c(
-  ymd(20240307), # midterm
-  ymd(20240502), # screencast due
-  ymd(20240509), # peer review due
-  ymd(20240514)  # scheduled final
+  ymd(20250313), # midterm
+  ymd(20250501), # screencast due
+  ymd(20250508), # peer review due
+  ymd(20250514)  # scheduled final
 )
 
 # What are the full dates of the semester? Here, I'll exclude exam week as I like to do.
 # In this case: 6 January to 23 April
-semester_dates <- seq(ymd(20240122), ymd(20240518), by=1)
+semester_dates <- seq(ymd(20250121), ymd(20250517), by=1)
 
-exam_week <- seq(ymd(20240513), ymd(20240517), by = 1)
+exam_week <- seq(ymd(20250513), ymd(20250517), by = 1)
 
 # Custom function for treating the first day of the month as the first week
 # of the month up until the first Sunday (unless Sunday was the start of the month)
@@ -39,7 +39,7 @@ wom <- function(date) {
 }
 
 # Create a data frame of dates, assign to Cal
-Cal <- tibble(date = seq(ymd(20240101), ymd(20240530), by=1))  %>%
+Cal <- tibble(date = seq(ymd(20250101), ymd(20250531), by=1))  %>%
   mutate(mon = lubridate::month(date, label=T, abbr=F), # get month label
          wkdy = weekdays(date, abbreviate=T), # get weekday label
          wkdy = fct_relevel(wkdy, "Sun", "Mon", "Tue", "Wed", "Thu","Fri","Sat"), # make sure Sunday comes first

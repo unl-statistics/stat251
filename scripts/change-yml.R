@@ -61,3 +61,4 @@ change_yaml_matter <- function(input_file, ..., output_file) {
     return(invisible(output_lines))
   }
 }
+

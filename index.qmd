@@ -3,36 +3,16 @@ title: 'Stat 251: Data Wrangling'
 format: html
 listing:
 - id: hwlst
-  categories: cloud
   contents:
-  - exam/2023-midterm/index.qmd
-  - exam/2024-midterm/index.qmd
-  - exam/2024-midterm/objectives.qmd
   - homework/01-git-github.qmd
   - homework/02-review.qmd
   - homework/03-cipher.qmd
-  - homework/04-cookies.qmd
-  - homework/05-graphics-groundhogs.qmd
-  - homework/05-graphics-results.qmd
-  - homework/06-data-manip.qmd
-  - homework/07-strings.qmd
-  - homework/08-reshape.qmd
-  - homework/09-join.qmd
-  - homework/10-datetime.qmd
-  - project/Dataset-Topics.qmd
-  - project/index.qmd
-  - project/pseudocode.qmd
   - slides/01-Syllabus-and-Introductions.qmd
   - slides/02-version-control.qmd
   - slides/03-review-topics.qmd
   - slides/04-review-topics.qmd
   - slides/05-review-cipher.qmd
   - slides/06-review-cipher.qmd
-  - slides/07-input.qmd
-  - slides/09-graphics.qmd
-  - slides/10-graphics.qmd
-  - slides/10-projects.qmd
-  - slides/15-strings.qmd
   - syllabus.qmd
   - reading.yml
   sort: date desc
@@ -50,7 +30,7 @@ listing:
 
 # Course Materials
 
-Dates shown are due dates (for homework and exams) and dates on which material was presented (for slides). 
+**Dates shown are due dates** (for homework and exams) and dates on which material was presented (for slides). 
 
 ::: {#hwlst}
 :::
