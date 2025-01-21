@@ -1,0 +1,289 @@
+[
+  {
+    "objectID": "exam/2023-midterm/index.html",
+    "href": "exam/2023-midterm/index.html",
+    "title": "Practice Exam (2023)",
+    "section": "",
+    "text": "Your goal on this exam is to demonstrate competency in as many of the objectives of chapters we’ve covered in this class so far as you can."
+  },
+  {
+    "objectID": "exam/2023-midterm/index.html#ground-rules",
+    "href": "exam/2023-midterm/index.html#ground-rules",
+    "title": "Practice Exam (2023)",
+    "section": "Ground Rules",
+    "text": "Ground Rules\n\nYou may use the textbook and the internet (but the same rules apply - you must be able to explain your answer!)\nYou may NOT confer with other people or AI entities - including posting on StackOverflow, Reddit, etc.\nYou may ask clarifying questions of Dr. Vanderplas by email/zoom or in person\nYou may use R or Python for any of these tasks, but your code must be reproducible - I must be able to run your quarto file on my machine. I have provided R chunks in the correct locations in this file - change them to Python if you wish.\nFor any plot or table you create, be sure to appropriately caption and label it, providing 1-2 sentences to highlight the main purpose/conclusions you can draw from that plot.\nYou should have at least one code chunk for each ## heading below."
+  },
+  {
+    "objectID": "exam/2023-midterm/index.html#read-in-the-data",
+    "href": "exam/2023-midterm/index.html#read-in-the-data",
+    "title": "Practice Exam (2023)",
+    "section": "Read in the Data",
+    "text": "Read in the Data\nWrite code which will:\n\nDownload the raw pocket measurements.csv data to a file in this repository\nRead the data in, ensuring that columns containing numbers are appropriately formatted. You may consider the fabric column as a character string."
+  },
+  {
+    "objectID": "exam/2023-midterm/index.html#conduct-an-exploratory-data-analysis",
+    "href": "exam/2023-midterm/index.html#conduct-an-exploratory-data-analysis",
+    "title": "Practice Exam (2023)",
+    "section": "Conduct an Exploratory Data Analysis",
+    "text": "Conduct an Exploratory Data Analysis\nGenerate at least 3 questions about the data set and find answers to those questions using charts, tables, or numerical summaries.\n\nQuestions\n\n\n\n\n\n\n\nQuestion Answers\nYour discussion of this output goes here.\nYour discussion of this output goes here.\nYour discussion of this output goes here"
+  },
+  {
+    "objectID": "exam/2023-midterm/index.html#comparing-sexes-and-styles",
+    "href": "exam/2023-midterm/index.html#comparing-sexes-and-styles",
+    "title": "Practice Exam (2023)",
+    "section": "Comparing Sexes and Styles",
+    "text": "Comparing Sexes and Styles\nGenerate one or two plots which best showcase the difference in pocket sizes for different sexes and styles of pants. Use The Pudding’s classification for pants styles, treating straight and boot-cut styles as the same and skinny and slim styles as the same.\nYou may annotate the plot with the output from statistical tests if you wish, but it is sufficient to highlight the visual differences. Your chart(s) must have appropriate titles and axis labels, and must be constructed to take into account the principles of good graphics discussed in the textbook.\nYour discussion of this output goes here.\nReplace this paragraph with 1-2 sentences discussing what choices you made to make the plot you generated above perceptually optimal. Which principles of good graphics did you use?"
+  },
+  {
+    "objectID": "homework/01-git-github.html",
+    "href": "homework/01-git-github.html",
+    "title": "👋 The Basics of GitHub",
+    "section": "",
+    "text": "Note: This assignment must be submitted in github classroom."
+  },
+  {
+    "objectID": "homework/01-git-github.html#course-overview-and-learning-outcomes",
+    "href": "homework/01-git-github.html#course-overview-and-learning-outcomes",
+    "title": "👋 The Basics of GitHub",
+    "section": "🤓 Course overview and learning outcomes",
+    "text": "🤓 Course overview and learning outcomes\nThe goal of this course is to give you a brief introduction to GitHub. We’ll also provide you with materials for further learning and a few ideas to get you started on our platform. 🚀"
+  },
+  {
+    "objectID": "homework/01-git-github.html#git-and-github",
+    "href": "homework/01-git-github.html#git-and-github",
+    "title": "👋 The Basics of GitHub",
+    "section": "Git and GitHub",
+    "text": "Git and GitHub\nGit is a distributed Version Control System (VCS), which means it is a useful tool for easily tracking changes to your code, collaborating, and sharing. With Git you can track the changes you make to your project so you always have a record of what you’ve worked on and can easily revert back to an older version if need be. It also makes working with others easier—groups of people can work together on the same project and merge their changes into one final source!\nGitHub is a way to use the same power of Git all online with an easy-to-use interface. It’s used across the software world and beyond to collaborate and maintain the history of projects.\nGitHub is home to some of the most advanced technologies in the world. Whether you’re visualizing data or building a new game, there’s a whole community and set of tools on GitHub that can get you to the next step. This course starts with the basics of GitHub, but we’ll dig into the rest later."
+  },
+  {
+    "objectID": "homework/01-git-github.html#understanding-the-github-flow",
+    "href": "homework/01-git-github.html#understanding-the-github-flow",
+    "title": "👋 The Basics of GitHub",
+    "section": "Understanding the GitHub flow",
+    "text": "Understanding the GitHub flow\nThe GitHub flow is a lightweight workflow that allows you to experiment and collaborate on your projects easily, without the risk of losing your previous work.\n\nRepositories\nA repository is where your project work happens–think of it as your project folder. It contains all of your project’s files and revision history. You can work within a repository alone or invite others to collaborate with you on those files.\n\n\nCloning\nWhen a repository is created with GitHub, it’s stored remotely in the ☁️. You can clone a repository to create a local copy on your computer and then use Git to sync the two. This makes it easier to fix issues, add or remove files, and push larger commits. You can also use the editing tool of your choice as opposed to the GitHub UI. Cloning a repository also pulls down all the repository data that GitHub has at that point in time, including all versions of every file and folder for the project! This can be helpful if you experiment with your project and then realize you liked a previous version more. To learn more about cloning, read “Cloning a Repository”.\n\n\nCommitting and pushing\nCommitting and pushing are how you can add the changes you made on your local machine to the remote repository in GitHub. That way your instructor and/or teammates can see your latest work when you’re ready to share it. You can make a commit when you have made changes to your project that you want to “checkpoint.” You can also add a helpful commit message to remind yourself or your teammates what work you did (e.g. “Added a README with information about our project”).\nOnce you have a commit or multiple commits that you’re ready to add to your repository, you can use the push command to add those changes to your remote repository. Committing and pushing may feel new at first, but we promise you’ll get used to it 🙂"
+  },
+  {
+    "objectID": "homework/01-git-github.html#github-terms-to-know",
+    "href": "homework/01-git-github.html#github-terms-to-know",
+    "title": "👋 The Basics of GitHub",
+    "section": "💻 GitHub terms to know",
+    "text": "💻 GitHub terms to know\n\nRepositories\nWe mentioned repositories already, they are where your project work happens, but let’s talk a bit more about the details of them! As you work more on GitHub you will have many repositories which may feel confusing at first. Fortunately, your “GitHub dashboard” helps to easily navigate to your repositories and see useful information about them. Make sure you’re logged in to see it!\nRepositories also contain READMEs. You can add a README file to your repository to tell other people why your project is useful, what they can do with your project, and how they can use it. We are using this README to communicate how to learn Git and GitHub with you. 😄 To learn more about repositories read “Creating, Cloning, and Archiving Repositories and “About README’s”.\n\n\nBranches\nYou can use branches on GitHub to isolate work that you do not want merged into your final project just yet. Branches allow you to develop features, fix bugs, or safely experiment with new ideas in a contained area of your repository. Typically, you might create a new branch from the default branch of your repository—main. This makes a new working copy of your repository for you to experiment with. Once your new changes have been reviewed by a teammate, or you are satisfied with them, you can merge your changes into the default branch of your repository. To learn more about branching, read “About Branches”.\nNote: In this class, you will not be required to use branches.\n\n\nForks\nA fork is another way to copy a repository, but is usually used when you want to contribute to someone else’s project. Forking a repository allows you to freely experiment with changes without affecting the original project and is very popular when contributing to open source software projects! To learn more about forking, read “Fork a repo”\nNote: In this class, you will not be required to use forks.\n\n\nPull requests\nWhen working with branches, you can use a pull request to tell others about the changes you want to make and ask for their feedback. Once a pull request is opened, you can discuss and review the potential changes with collaborators and add more changes if need be. You can add specific people as reviewers of your pull request which shows you want their feedback on your changes! Once a pull request is ready-to-go, it can be merged into your main branch. To learn more about pull requests, read “About Pull Requests”.\nNote: In this course, you will not be required to use pull requests.\n\n\nIssues\nIssues are a way to track enhancements, tasks, or bugs for your work on GitHub. Issues are a great way to keep track of all the tasks you want to work on for your project and let others know what you plan to work on. You can also use issues to tell a favorite open source project about a bug you found or a feature you think would be great to add!\nFor larger projects, you can keep track of many issues on a project board. GitHub Projects help you organize and prioritize your work and you can read more about them in this “About Project boards document. You likely won’t need a project board for your assignments, but once you move on to even bigger projects, they’re a great way to organize your team’s work! You can also link together pull requests and issues to show that a fix is in progress and to automatically close the issue when someone merges the pull request. To learn more about issues and linking them to your pull requests, read “About Issues”.\n\n\nYour user profile\nYour profile page tells people the story of your work through the repositories you’re interested in, the contributions you’ve made, and the conversations you’ve had. You can also give the world a unique view into who you are with your profile README. You can use your profile to let future employers know all about you! To learn more about your user profile and adding and updating your profile README, read “Managing Your Profile README”.\n\n\nUsing markdown on GitHub\nYou might have noticed already, but you can add some fun styling to your issues, pull requests, and files. “Markdown” is an easy way to style your issues, pull requests, and files with some simple syntax. This can be helpful to organize your information and make it easier for others to read. You can also drop in gifs and images to help convey your point! To learn more about using GitHub’s flavor of markdown, read “Basic Writing and Formatting Syntax”.\n\n\nEngaging with the GitHub community\nThe GitHub community is vast. There are many types of people who use GitHub in their day to day—students like you, professional developers, hobbyists working on open source projects, and explorers who are just jumping into the world of software development on their own. There are many ways you can interact with the larger GitHub community, but here are three places where you can start.\n\nStarring repositories\nIf you find a repository interesting or you want to keep track of it, star it! When you star a repository it’s also used as a signal to surface better recommendations on github.com/explore. If you’d like to get back to your starred repositories you can do so via your user profile. To learn more about starring repositories, read “Saving Repositories with Stars”.\n\n\nFollowing users\nYou can follow people on GitHub to receive notifications about their activity and discover projects in their communities. When you follow a user, their public GitHub activity will show up on your dashboard so you can see all the cool things they are working on. To learn more about following users, read “Following People”.\n\n\nBrowsing GitHub Explore\nGitHub Explore is a great place to do just that … explore :smile: You can find new projects, events, and developers to interact with.\nYou can check out the GitHub Explore website at github.com/explore. The more you intereact with GitHub the more tailored your Explore view will be."
+  },
+  {
+    "objectID": "homework/01-git-github.html#next-steps",
+    "href": "homework/01-git-github.html#next-steps",
+    "title": "👋 The Basics of GitHub",
+    "section": "📝 Next steps",
+    "text": "📝 Next steps\n\nClone this repository to your local machine\nOn your local machine, create a new markdown file in this repository named ‘About_Me.md’. Provide a short biography/introduction for yourself and use markdown formatting\n\nMarkdown Basics provides an overview of different formatting options in markdown.\nYou must use at least the following formatting elements: header, subheader, bold or italic, bulleted list, and an image.\n\nCommit your changes to your new file locally and push them back to your github repository. Check on Github to make sure the new file appears.\nTo get full credit for your assignment, you will need to have worked with your git repository locally. I will be able to see if you have used the github editor to make your changes instead :)."
+  },
+  {
+    "objectID": "homework/01-git-github.html#resources",
+    "href": "homework/01-git-github.html#resources",
+    "title": "👋 The Basics of GitHub",
+    "section": "📚 Resources",
+    "text": "📚 Resources\n\nA short video explaining what GitHub is\nGit and GitHub learning resources\nUnderstanding the GitHub flow\nHow to use GitHub branches\nInteractive Git training materials\nGitHub’s Learning Lab\nEducation community forum\nGitHub community forum"
+  },
+  {
+    "objectID": "homework/01-git-github.html#optional-extra-steps",
+    "href": "homework/01-git-github.html#optional-extra-steps",
+    "title": "👋 The Basics of GitHub",
+    "section": "Optional extra steps",
+    "text": "Optional extra steps\n\nOpen a pull request and let your teacher know that you’ve finished this course.\n\nCreate your profile README. Let the world know a little bit more about you! What are you interested in learning? What are you working on? What’s your favorite hobby? Learn more about creating your profile README in the document, “Managing Your Profile README”.\nGo to your user dashboard and create a new repository. Experiment with the features within that repository to familiarize yourself with them.\nLet us know what you liked or didn’t like about the content of this course. What would you like to see more of? What would be interesting or helpful to your learning journey?"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Stat 251: Data Wrangling",
+    "section": "",
+    "text": "Course Materials\nDates shown are due dates (for homework and exams) and dates on which material was presented (for slides).\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nDate\n\n\nTitle\n\n\nType\n\n\n\n\n\n\n\n\nJan 29, 2025\n\n\nReview - Programming\n\n\nreading\n\n\n\n\n\n\n\nJan 28, 2025\n\n\n👋 The Basics of GitHub\n\n\nhomework\n\n\n\n\n\n\n\nJan 23, 2025\n\n\nIntroduction\n\n\n \n\n\n\n\n\n\n\nJan 23, 2025\n\n\nVersion Control with Git and Github\n\n\nreading\n\n\n\n\n\n\n\nJan 21, 2025\n\n\nReview- Tools\n\n\nreading\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "exam/2024-midterm/index.html",
+    "href": "exam/2024-midterm/index.html",
+    "title": "251 Midterm Exam",
+    "section": "",
+    "text": "In this exam, you’ll be using data collected about US polling places. The Center for Public Integrity assembled this data using open records requests and contact with state or county election officials. Full documentation is available on the github repository for the data - each state’s details can be found in a README file for that state; there is also a machine-readable manifest.yaml file for each state provided.\nWe will start out by using data assembled by the TidyTuesday project, but will eventually get to the raw data as well.\nThe raw CSV data is available at https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2024/2024-01-16/polling_places.csv\n# load any R packages you use in this chunk\n# load any python packages you use in this chunk"
+  },
+  {
+    "objectID": "exam/2024-midterm/index.html#data-file-inspection",
+    "href": "exam/2024-midterm/index.html#data-file-inspection",
+    "title": "251 Midterm Exam",
+    "section": "Data File Inspection",
+    "text": "Data File Inspection\nHere are the first six lines of the TidyTuesday CSV file:\nelection_date,state,county_name,jurisdiction,jurisdiction_type,precinct_id,precinct_name,polling_place_id,location_type,name,address,notes,source,source_date,source_notes\n2020-11-03,AL,AUTAUGA,AUTAUGA,county,NA,AUTAUGAVILLE VOL FIRE DEPT,NA,election_day,AUTAUGAVILLE VOL FIRE DEPT,\"2610 HIGHWAY 14 W, AUTAUGAVILLE, AL 36003\",NA,ORR,2020-10-21,NA\n2020-11-03,AL,AUTAUGA,AUTAUGA,county,NA,BILLINGSLEY COMMUNITY CENTER,NA,election_day,BILLINGSLEY COMMUNITY CENTER,\"2159 COUNTY RD 37, BILLINGSLEY, AL 36006\",NA,ORR,2020-10-21,NA\n2020-11-03,AL,AUTAUGA,AUTAUGA,county,NA,BOONE'S CHAPEL,NA,election_day,BOONE'S CHAPEL,\"2301 COUNTY RD 66, PRATTVILLE, AL 36067\",NA,ORR,2020-10-21,NA\n2020-11-03,AL,AUTAUGA,AUTAUGA,county,NA,BOOTH VOL FIRE DEPT,NA,election_day,BOOTH VOL FIRE DEPT,\"1701 COUNTY ROAD 10, BOOTH, AL 36008\",NA,ORR,2020-10-21,NA\n2020-11-03,AL,AUTAUGA,AUTAUGA,county,NA,CAMELLIA BAPTIST CH,NA,election_day,CAMELLIA BAPTIST CH,\"201 WOODVALE ROAD, PRATTVILLE, AL 36067\",NA,ORR,2020-10-21,NA\n\nWhat is the file delimiter? (1 pt)\n\nWhat is the header? (1 pt)\n\nHow many columns will the data have when it is read in using R or Python? (1 pt)\n\nHow is the data stored differently in the address field compared to the name field (1 pt), and why is this different handling necessary (1 pt)?"
+  },
+  {
+    "objectID": "exam/2024-midterm/index.html#reading-the-data",
+    "href": "exam/2024-midterm/index.html#reading-the-data",
+    "title": "251 Midterm Exam",
+    "section": "Reading the Data",
+    "text": "Reading the Data\nRead in the data in R (5 pts) and in python (5 pts).\nMake sure to load any packages which are necessary to run your code in the setup chunks at the beginning of the document."
+  },
+  {
+    "objectID": "exam/2024-midterm/index.html#summarize-the-data",
+    "href": "exam/2024-midterm/index.html#summarize-the-data",
+    "title": "251 Midterm Exam",
+    "section": "Summarize the Data",
+    "text": "Summarize the Data\nUsing any method you choose from either language, fill in the following table.\nLanguage used: \nMake sure your terms match the language you’re using and the code you provided above. If you use code to get these values (which is probably a good idea), please use the code chunks provided here:\nWhen computing the number of unique values, exclude missing values.\n\nSummary of Polling Data\n\n\n\n\n\n\n\n\nColumn Name\nData Type (5 pts)\n# missing values (5 pts)\n# unique values (5 pts)\n\n\n\n\nelection_date\n\n\n\n\n\nstate\n\n\n\n\n\ncounty_name\n\n\n\n\n\njurisdiction\n\n\n\n\n\njurisdiction_type\n\n\n\n\n\nprecinct_id\n\n\n\n\n\nprecinct_name\n\n\n\n\n\npolling_place_id\n\n\n\n\n\nlocation_type\n\n\n\n\n\nname\n\n\n\n\n\naddress\n\n\n\n\n\nnotes\n\n\n\n\n\nsource\n\n\n\n\n\nsource_date\n\n\n\n\n\nsource_notes"
+  },
+  {
+    "objectID": "exam/2024-midterm/index.html#steps",
+    "href": "exam/2024-midterm/index.html#steps",
+    "title": "251 Midterm Exam",
+    "section": "Steps",
+    "text": "Steps\n(10 pts)\nWrite out the steps (in plain language) required to get from the polling place data provided here to the data you need to create your plot. Make sure to remove polling places which do not make sense - e.g. those with an address consisting of just the state name, or those named “DO NOT USE”.\nFor each step, identify the data manipulation verb you will use, and any variables you will pass in as arguments. Fill in the following table when you are finished. Add new rows by moving to a new line, and separate each cell in the table with | (spaces matter). | is on the key above the enter key and shares a key with \\ (backslash). You will need to hold shift down.\n\n\n\nStep #\nVerb\nArguments\n\n\n\n\n1\n…\n…"
+  },
+  {
+    "objectID": "exam/2024-midterm/index.html#code",
+    "href": "exam/2024-midterm/index.html#code",
+    "title": "251 Midterm Exam",
+    "section": "Code",
+    "text": "Code\n(10 pts)\nWrite code in R or python to execute the steps you outlined above."
+  },
+  {
+    "objectID": "exam/2024-midterm/index.html#chart-description",
+    "href": "exam/2024-midterm/index.html#chart-description",
+    "title": "251 Midterm Exam",
+    "section": "Chart Description",
+    "text": "Chart Description\n(7 pts)\nUse the grammar of graphics to identify the components of the chart here, which provides the data for Wisconsin. \n\ngeom:\naesthetics: (list at least 3)\n\n\n\n\n\ncoordinate system:\ny axis scale:\nx axis scale:"
+  },
+  {
+    "objectID": "exam/2024-midterm/index.html#chart",
+    "href": "exam/2024-midterm/index.html#chart",
+    "title": "251 Midterm Exam",
+    "section": "Chart",
+    "text": "Chart\n(20 pts)\nWrite code in R or python to create a chart like that shown at the beginning of this example (5 pts). Make sure your axes are labeled (5 pts) and your chart has a title (5 pts). Include your plot in this document and make sure you have a figure caption that describes what someone should notice in the chart (5 pts) You may do this either by modifying the chunk options or by using include=F and manually including the picture with a caption."
+  },
+  {
+    "objectID": "exam/2024-midterm/index.html#modifications",
+    "href": "exam/2024-midterm/index.html#modifications",
+    "title": "251 Midterm Exam",
+    "section": "Modifications",
+    "text": "Modifications\nEvaluate the chart you created for comprehensibility and accessibility. (1 pt)\nWhat modifications might you add to this chart to make it clearer and more understandable? (2 pts)"
+  },
+  {
+    "objectID": "exam/2024-midterm/index.html#function-steps",
+    "href": "exam/2024-midterm/index.html#function-steps",
+    "title": "251 Midterm Exam",
+    "section": "Function Steps",
+    "text": "Function Steps\n(5 pts)\nUse the following addresses to think through the steps you will need to accomplish this task.\nTatitlek, AK 99677\nFirst Street, Cordova, AK 99574\n105 ICE ST, MENASHA, WI 54952-3223\n1025 W 5TH AVE, OSHKOSH, WI 54902\n1702 COUNTY ROAD 40 W, PRATTVILLE, AL 36067\n5281 HIGHWAY 29, CORINTH VFD (PEROTE STATION), BANKS, AL 36005\n713 W. MOUNTAIN AVENUE, JACKSONVILLE, AL 36265\nCOMMUNITY CENTER, 1168 HWY 84, SILAS, AL 36919\nWrite out the steps your function will need to accomplish in plain language."
+  },
+  {
+    "objectID": "exam/2024-midterm/index.html#function-code---single-address",
+    "href": "exam/2024-midterm/index.html#function-code---single-address",
+    "title": "251 Midterm Exam",
+    "section": "Function Code - Single Address",
+    "text": "Function Code - Single Address\n(5 pts)\nWrite a function, address_parser, which can handle a single address and return a data structure containing each piece of the address, with NAs for pieces which are not matched.\n(change this chunk to python if you’d prefer to use python over R for this task)\nThis chunk will test your function on the addresses provided as examples. (change this chunk to python if you used python above)\n\naddress_parser(\"Tatitlek, AK 99677\")\n\nError in address_parser(\"Tatitlek, AK 99677\"): could not find function \"address_parser\"\n\naddress_parser(\"First Street, Cordova, AK 99574\")\n\nError in address_parser(\"First Street, Cordova, AK 99574\"): could not find function \"address_parser\"\n\naddress_parser(\"105 ICE ST, MENASHA, WI 54952-3223\")\n\nError in address_parser(\"105 ICE ST, MENASHA, WI 54952-3223\"): could not find function \"address_parser\"\n\naddress_parser(\"1025 W 5TH AVE, OSHKOSH, WI 54902\")\n\nError in address_parser(\"1025 W 5TH AVE, OSHKOSH, WI 54902\"): could not find function \"address_parser\"\n\naddress_parser(\"1702 COUNTY ROAD 40 W, PRATTVILLE, AL 36067\")\n\nError in address_parser(\"1702 COUNTY ROAD 40 W, PRATTVILLE, AL 36067\"): could not find function \"address_parser\"\n\naddress_parser(\"5281 HIGHWAY 29, CORINTH VFD (PEROTE STATION), BANKS, AL 36005\")\n\nError in address_parser(\"5281 HIGHWAY 29, CORINTH VFD (PEROTE STATION), BANKS, AL 36005\"): could not find function \"address_parser\"\n\naddress_parser(\"713 W. MOUNTAIN AVENUE, JACKSONVILLE, AL 36265\")\n\nError in address_parser(\"713 W. MOUNTAIN AVENUE, JACKSONVILLE, AL 36265\"): could not find function \"address_parser\"\n\naddress_parser(\"COMMUNITY CENTER, 1168 HWY 84, SILAS, AL 36919\")\n\nError in address_parser(\"COMMUNITY CENTER, 1168 HWY 84, SILAS, AL 36919\"): could not find function \"address_parser\""
+  },
+  {
+    "objectID": "exam/2024-midterm/index.html#function-code---vector",
+    "href": "exam/2024-midterm/index.html#function-code---vector",
+    "title": "251 Midterm Exam",
+    "section": "Function Code - Vector",
+    "text": "Function Code - Vector\n(5 pts)\nWrite a function, address_vec, which can parse a vector of addresses and return a data frame with columns corresponding to each piece of the address.\n(change this chunk to python if you’d prefer to use python over R for this task)\nThis chunk will test your function on the addresses provided as examples. Delete whichever chunk corresponds to the language you didn’t use.\n\ntest_vec &lt;- c(\"Tatitlek, AK 99677\", \"First Street, Cordova, AK 99574\", \"105 ICE ST, MENASHA, WI 54952-3223\", \"1025 W 5TH AVE, OSHKOSH, WI 54902\", \"1702 COUNTY ROAD 40 W, PRATTVILLE, AL 36067\", \"5281 HIGHWAY 29, CORINTH VFD (PEROTE STATION), BANKS, AL 36005\", \"713 W. MOUNTAIN AVENUE, JACKSONVILLE, AL 36265\", \"COMMUNITY CENTER, 1168 HWY 84, SILAS, AL 36919\")\naddress_vec(test_vec)\n\nError in address_vec(test_vec): could not find function \"address_vec\"\n\n\n\ntest_vec = [\"Tatitlek, AK 99677\", \"First Street, Cordova, AK 99574\", \"105 ICE ST, MENASHA, WI 54952-3223\", \"1025 W 5TH AVE, OSHKOSH, WI 54902\", \"1702 COUNTY ROAD 40 W, PRATTVILLE, AL 36067\", \"5281 HIGHWAY 29, CORINTH VFD (PEROTE STATION), BANKS, AL 36005\", \"713 W. MOUNTAIN AVENUE, JACKSONVILLE, AL 36265\", \"COMMUNITY CENTER, 1168 HWY 84, SILAS, AL 36919\"]\naddress_vec(test_vec)\n\nNameError: name 'address_vec' is not defined"
+  },
+  {
+    "objectID": "exam/2024-midterm/index.html#function-evaluation",
+    "href": "exam/2024-midterm/index.html#function-evaluation",
+    "title": "251 Midterm Exam",
+    "section": "Function Evaluation",
+    "text": "Function Evaluation\nUse your function to parse a vector of the unique polling place addresses in your state, creating a data table of address components for your letters. (5 pts)\nWhere did your function have issues, if it did? (5 pts)"
+  },
+  {
+    "objectID": "slides/01-Syllabus-and-Introductions.html#introduce-yourself",
+    "href": "slides/01-Syllabus-and-Introductions.html#introduce-yourself",
+    "title": "Introduction",
+    "section": "Introduce yourself!",
+    "text": "Introduce yourself!\n\nName / Year / Major\nWhat do you hope to learn in this class?\nPrevious computing experience?\nIs a poptart a ravioli? Why or why not?"
+  },
+  {
+    "objectID": "slides/01-Syllabus-and-Introductions.html#my-introduction",
+    "href": "slides/01-Syllabus-and-Introductions.html#my-introduction",
+    "title": "Introduction",
+    "section": "My Introduction",
+    "text": "My Introduction\n\nHeike Hofmann\nProfessor in Statistics\nAt UNL since August, I was at ISU for 20 years\nfirst computer language was Pascal :)\nR user since 1996, Python user (? I have learned it four times by now)"
+  },
+  {
+    "objectID": "slides/01-Syllabus-and-Introductions.html#on-poptarts-and-ravioli",
+    "href": "slides/01-Syllabus-and-Introductions.html#on-poptarts-and-ravioli",
+    "title": "Introduction",
+    "section": "On PopTarts and Ravioli:",
+    "text": "On PopTarts and Ravioli:\n\nThe Cube Rule of Food, from RedditThus, a PopTart is a calzone."
+  },
+  {
+    "objectID": "slides/01-Syllabus-and-Introductions.html#contact-info",
+    "href": "slides/01-Syllabus-and-Introductions.html#contact-info",
+    "title": "Introduction",
+    "section": "Contact Info",
+    "text": "Contact Info\n\nEmail: hhofmann4@unl.edu\nOffice: 346D Hardin Hall North Wing\nOffice Hours: TBD"
+  },
+  {
+    "objectID": "slides/01-Syllabus-and-Introductions.html#course-objectives",
+    "href": "slides/01-Syllabus-and-Introductions.html#course-objectives",
+    "title": "Introduction",
+    "section": "Course Objectives",
+    "text": "Course Objectives\n\n\nUse appropriate visualizations to explore and assess data and its applicability to a problem\n\n\n\n\nWrite code to reshape and reformat moderately complex and/or messy data in a reproducible manner\n\n\n\n\nCreate graphical displays to explore data, assess statistical models, and present model results\n\n\n\n\nAdapt pre-existing code for sophisticated visualizations to new data."
+  },
+  {
+    "objectID": "slides/01-Syllabus-and-Introductions.html#course-objectives-1",
+    "href": "slides/01-Syllabus-and-Introductions.html#course-objectives-1",
+    "title": "Introduction",
+    "section": "Course Objectives",
+    "text": "Course Objectives\n\n\nImplement an algorithm or procedure for data modification given in pseudocode\n\n\n\n\nWrite pseudocode to describe and document modifications made to a data set\n\n\n\n\nAccess documentation and source code to determine how software works (or why it doesn’t)\n\n\n\n\nIdentify problems in a data set that limit the analyses which are appropriate for the data"
+  },
+  {
+    "objectID": "slides/01-Syllabus-and-Introductions.html#textbook",
+    "href": "slides/01-Syllabus-and-Introductions.html#textbook",
+    "title": "Introduction",
+    "section": "Textbook",
+    "text": "Textbook\nhttps://srvanderplas.github.io/stat-computing-r-python/"
+  },
+  {
+    "objectID": "slides/01-Syllabus-and-Introductions.html#course-materials",
+    "href": "slides/01-Syllabus-and-Introductions.html#course-materials",
+    "title": "Introduction",
+    "section": "Course Materials",
+    "text": "Course Materials\n\n\n\nCanvas\n\nquizzes\nweekly readings\nhomework/exam/project submission\n\n\n\n\nCourse site\n\nslides\nweekly readings\nhomework/exam/project descriptions\n\n\nEverything should be cross-linked properly but email me if there’s an issue."
+  },
+  {
+    "objectID": "slides/01-Syllabus-and-Introductions.html#class-schedule",
+    "href": "slides/01-Syllabus-and-Introductions.html#class-schedule",
+    "title": "Introduction",
+    "section": "Class Schedule",
+    "text": "Class Schedule"
+  },
+  {
+    "objectID": "slides/01-Syllabus-and-Introductions.html#outline",
+    "href": "slides/01-Syllabus-and-Introductions.html#outline",
+    "title": "Introduction",
+    "section": "Outline",
+    "text": "Outline\nSubject to change based on the events of the semester…\n\n\n\n\n\nDate\nTopic\n\n\n\n\nJan 21\nGetting Started\n\n\nJan 23\nVersion Control\n\n\nJan 28\nReview: Functions\n\n\nJan 30\nReview: Functions\n\n\nFeb 4\nReview: Data Structures\n\n\nFeb 6\nReview: Data Structures\n\n\nFeb 11\nData Input\n\n\nFeb 13\nData Input\n\n\nFeb 18\nData Visualization\n\n\nFeb 20\nData Visualization\n\n\nFeb 25\nData Cleaning\n\n\nFeb 27\nData Cleaning\n\n\nMar 4\nExam 1 Questions\n\n\nMar 6\nStrings\n\n\nMar 11\nStrings\n\n\nMar 13\nMidterm Due\n\n\nMar 25\nReshaping Data\n\n\nMar 27\nReshaping Data\n\n\nApr 1\nJoining Data\n\n\nApr 3\nJoining Data\n\n\nApr 8\nDates and Times\n\n\nApr 10\nDates and Times\n\n\nApr 15\nProject Work\n\n\nApr 17\nProject Work\n\n\nApr 22\nLists\n\n\nApr 24\nLists\n\n\nApr 29\nProject Work\n\n\nMay 1\nScreencast Video Due\n\n\nMay 6\nSpatial Data\n\n\nMay 8\nPeer Review of Screencast Due\n\n\nMay 14\nScheduled Final"
+  },
+  {
+    "objectID": "slides/01-Syllabus-and-Introductions.html#grades",
+    "href": "slides/01-Syllabus-and-Introductions.html#grades",
+    "title": "Introduction",
+    "section": "Grades",
+    "text": "Grades\n\n\n\nAssignments\nWeight\n\n\n\n\nReading Quizzes\n10%\n\n\nWeekly Homework & Participation\n50%\n\n\nMidterm Exam\n20%\n\n\nProject\n20%\n\n\n\nApproximately Weekly Homework – started in class"
+  },
+  {
+    "objectID": "slides/01-Syllabus-and-Introductions.html#academic-integrity-policy",
+    "href": "slides/01-Syllabus-and-Introductions.html#academic-integrity-policy",
+    "title": "Introduction",
+    "section": "Academic Integrity Policy",
+    "text": "Academic Integrity Policy\n\nYou may (should!) work with each other on homework assignments\nWork alone on exams\nYou must be able to explain anything you submit\nAt my discretion, I can use a one-on-one discussion of your work to replace the grade for that work.\nChatGPT, StackOverflow, Google are tools, but they do not help you think"
+  },
+  {
+    "objectID": "slides/01-Syllabus-and-Introductions.html#install-course-software",
+    "href": "slides/01-Syllabus-and-Introductions.html#install-course-software",
+    "title": "Introduction",
+    "section": "Install Course Software",
+    "text": "Install Course Software\nTextbook Chapter: https://bit.ly/3JtGCZR"
+  },
+  {
+    "objectID": "slides/01-Syllabus-and-Introductions.html#next-time",
+    "href": "slides/01-Syllabus-and-Introductions.html#next-time",
+    "title": "Introduction",
+    "section": "Next Time",
+    "text": "Next Time\nWe’ll work on Version Control with Git\n\n\nPlease read before class:\n\nComputer Basics\nScripts and Notebooks\nRStudio’s Interface\nVersion Control with Git\n\n\n\n\n\nOctocat Image Source"
+  }
+]
