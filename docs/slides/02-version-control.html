@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Stat 251">
+<meta name="dcterms.date" content="2025-01-28">
 
-<title>Stat 251: Data Wrangling – Stat 251 - Data Wrangling</title>
+<title>Version Control – Stat 251 - Data Wrangling</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,27 +22,59 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,65 +102,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-hwlst .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-type','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-hwlst'] = new List('listing-hwlst', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -138,7 +114,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Stat 251 - Data Wrangling</span>
     </a>
   </div>
@@ -149,7 +125,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
@@ -157,7 +133,7 @@ window.Quarto = {
 <span class="menu-text">Textbook</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./syllabus.pdf"> 
+    <a class="nav-link" href="../syllabus.pdf"> 
 <span class="menu-text">Syllabus</span></a>
   </li>  
 </ul>
@@ -176,7 +152,15 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#course-materials" id="toc-course-materials" class="nav-link active" data-scroll-target="#course-materials">Course Materials</a></li>
+  <li><a href="#version-control" id="toc-version-control" class="nav-link active" data-scroll-target="#version-control">Version Control</a>
+  <ul class="collapse">
+  <li><a href="#introduce-yourself-to-git" id="toc-introduce-yourself-to-git" class="nav-link" data-scroll-target="#introduce-yourself-to-git">Introduce yourself to git</a></li>
+  <li><a href="#connect-git-and-r" id="toc-connect-git-and-r" class="nav-link" data-scroll-target="#connect-git-and-r">Connect Git and R</a></li>
+  <li><a href="#navigating-around-github" id="toc-navigating-around-github" class="nav-link" data-scroll-target="#navigating-around-github">Navigating around Github</a></li>
+  <li><a href="#using-rstudio-and-git" id="toc-using-rstudio-and-git" class="nav-link" data-scroll-target="#using-rstudio-and-git">Using RStudio and git</a></li>
+  <li><a href="#homework-introduction-to-github" id="toc-homework-introduction-to-github" class="nav-link" data-scroll-target="#homework-introduction-to-github">Homework: Introduction to Github</a></li>
+  </ul></li>
+  <li><a href="#next-time" id="toc-next-time" class="nav-link" data-scroll-target="#next-time">Next Time</a></li>
   </ul>
 </nav>
     </div>
@@ -185,14 +169,29 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Stat 251: Data Wrangling</h1>
-</div>
+<h1 class="title">Version Control</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">slides</div>
+  </div>
+  </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Stat 251 </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 28, 2025</p>
+    </div>
+  </div>
   
     
   </div>
@@ -202,154 +201,57 @@ window.Quarto = {
 </header>
 
 
-<section id="course-materials" class="level1">
-<h1>Course Materials</h1>
-<p><strong>Dates shown are due dates</strong> (for homework and exams) and dates on which material was presented (for slides).</p>
-<div id="listing-hwlst" class="quarto-listing quarto-listing-container-table">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-     <select id="listing-hwlst-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-hwlst'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-       <option value="" disabled="" selected="" hidden="">Order By</option>
-       <option value="index" data-direction="asc">Default</option>
-         <option value="listing-date-sort" data-direction="asc">
-          Date - Oldest
-        </option>
-         <option value="listing-date-sort" data-direction="desc">
-          Date - Newest
-        </option>
-         <option value="listing-title-sort" data-direction="asc">
-          Title
-        </option>
-     </select>
-  </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
+<section id="version-control" class="level1">
+<h1>Version Control</h1>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://phdcomics.com/comics/archive/phd101212s.gif" class="img-fluid figure-img" style="width:50.0%"></p>
+<figcaption>Version control is the answer to this file naming problem.<br><a href="https://phdcomics.com/comics/archive.php?comicid=1531">Image Source</a> “Piled Higher and Deeper” by Jorge Cham www.phdcomics.com</figcaption>
+</figure>
 </div>
-<table class="quarto-listing-table table">
-<thead>
-<tr>
-<th>
-<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Date</a>
-</th>
-<th>
-<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
-</th>
-<th>
-Type
-</th>
-<th>
-</th>
-</tr>
-</thead>
-<tbody class="list">
-<tr data-index="0" data-categories="HW,Week02" data-listing-date-sort="1738648800000" data-listing-file-modified-sort="1737639306804" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="12" data-listing-title-sort="Homework 2: Reviewing R and Python" data-listing-filename-sort="02-review.qmd">
-<td>
-<span class="listing-date">Feb 4, 2025</span>
-</td>
-<td>
-<a href="./homework/02-review.html" class="title listing-title">Homework 2: Reviewing R and Python</a>
-</td>
-<td>
-<span class="listing-type">homework</span>
-</td>
-<td>
-<span class="listing-image"><img loading="lazy" src="./figs/hw.svg" style="height: 40px;"></span>
-</td>
-</tr>
-<tr data-index="1" data-categories="reading,.na.character" data-listing-date-sort="1738216800000" data-listing-title-sort="Review - Programming">
-<td>
-<span class="listing-date">Jan 30, 2025</span>
-</td>
-<td>
-<a href="https://srvanderplas.github.io/stat-computing-r-python/part-gen-prog/00-gen-prog.html" class="title listing-title">Review - Programming</a>
-</td>
-<td>
-<span class="listing-type">reading</span>
-</td>
-<td>
-<span class="listing-image"><img loading="lazy" src="figs/reading.svg" style="height: 40px;"></span>
-</td>
-</tr>
-<tr data-index="2" data-categories="HW,Week01" data-listing-date-sort="1738044000000" data-listing-file-modified-sort="1737639306778" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="12" data-listing-title-sort="👋 The Basics of GitHub" data-listing-filename-sort="01-git-github.qmd">
-<td>
-<span class="listing-date">Jan 28, 2025</span>
-</td>
-<td>
-<a href="./homework/01-git-github.html" class="title listing-title">👋 The Basics of GitHub</a>
-</td>
-<td>
-<span class="listing-type">homework</span>
-</td>
-<td>
-<span class="listing-image"><img loading="lazy" src="./figs/hw.svg" style="height: 40px;"></span>
-</td>
-</tr>
-<tr data-index="3" data-categories="reading,.na.character" data-listing-date-sort="1738044000000" data-listing-title-sort="Version Control with Git and Github">
-<td>
-<span class="listing-date">Jan 28, 2025</span>
-</td>
-<td>
-<a href="https://srvanderplas.github.io/stat-computing-r-python/part-tools/05-git-and-github.html" class="title listing-title">Version Control with Git and Github</a>
-</td>
-<td>
-<span class="listing-type">reading</span>
-</td>
-<td>
-<span class="listing-image"><img loading="lazy" src="figs/reading.svg" style="height: 40px;"></span>
-</td>
-</tr>
-<tr data-index="4" data-categories="slides,Week01" data-listing-date-sort="1737612000000" data-listing-file-modified-sort="1737639306766" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="125" data-listing-title-sort="Version Control" data-listing-filename-sort="02-version-control.qmd">
-<td>
-<span class="listing-date">Jan 23, 2025</span>
-</td>
-<td>
-<a href="./slides/02-version-control.html" class="title listing-title">Version Control</a>
-</td>
-<td>
-<span class="listing-type">slides</span>
-</td>
-<td>
-<span class="listing-image"><div class="listing-item-img-placeholder card-img-top" style="height: 40px;">&nbsp;</div></span>
-</td>
-</tr>
-<tr data-index="5" data-categories="reading,.na.character" data-listing-date-sort="1737612000000" data-listing-title-sort="Review - Tools">
-<td>
-<span class="listing-date">Jan 23, 2025</span>
-</td>
-<td>
-<a href="https://srvanderplas.github.io/stat-computing-r-python/part-tools/00-tools-intro.html" class="title listing-title">Review - Tools</a>
-</td>
-<td>
-<span class="listing-type">reading</span>
-</td>
-<td>
-<span class="listing-image"><img loading="lazy" src="figs/reading.svg" style="height: 40px;"></span>
-</td>
-</tr>
-<tr data-index="6" data-categories="slides,Week01" data-listing-date-sort="1737439200000" data-listing-file-modified-sort="1737639306752" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="470" data-listing-title-sort="Introduction" data-listing-filename-sort="01-Syllabus-and-Introductions.qmd">
-<td>
-<span class="listing-date">Jan 21, 2025</span>
-</td>
-<td>
-<a href="./slides/01-Syllabus-and-Introductions.html" class="title listing-title">Introduction</a>
-</td>
-<td>
-<span class="listing-type">slides</span>
-</td>
-<td>
-<span class="listing-image"><div class="listing-item-img-placeholder card-img-top" style="height: 40px;">&nbsp;</div></span>
-</td>
-</tr>
-</tbody>
-</table>
-<div class="listing-no-matching d-none">
-No matching items
+<section id="introduce-yourself-to-git" class="level2">
+<h2 class="anchored" data-anchor-id="introduce-yourself-to-git">Introduce yourself to git</h2>
+<p>In a system terminal, run…</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> user.name <span class="st">'YOUR NAME HERE'</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> user.email <span class="st">'YOUR EMAIL HERE'</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> <span class="at">--list</span> <span class="co"># check to see it worked</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</div>
+</section>
+<section id="connect-git-and-r" class="level2">
+<h2 class="anchored" data-anchor-id="connect-git-and-r">Connect Git and R</h2>
+<p><a href="https://happygitwithr.com/https-pat#https-pat">Instructions</a></p>
+<iframe width="100%" height="600px" src="https://happygitwithr.com/https-pat#https-pat" title="Personal Access Tokens"></iframe>
 
+</section>
+<section id="navigating-around-github" class="level2">
+<h2 class="anchored" data-anchor-id="navigating-around-github">Navigating around Github</h2>
+<p>(Demo)</p>
+</section>
+<section id="using-rstudio-and-git" class="level2">
+<h2 class="anchored" data-anchor-id="using-rstudio-and-git">Using RStudio and git</h2>
+<p>(Demo)</p>
+</section>
+<section id="homework-introduction-to-github" class="level2">
+<h2 class="anchored" data-anchor-id="homework-introduction-to-github">Homework: <a href="../homework/01-git-github.html">Introduction to Github</a></h2>
+<iframe width="100%" height="600px" src="../homework/01-git-github.html"></iframe>
+
+</section>
+</section>
+<section id="next-time" class="level1">
+<h1>Next Time</h1>
+<p>Review: <a href="https://srvanderplas.github.io/stat-computing-r-python/part-gen-prog/00-gen-prog.html">General Programming</a></p>
+<p>Know how to:</p>
+<ul>
+<li>Load a package or import a library</li>
+<li>Define a variable</li>
+<li>Write a function</li>
+<li>Write an if/else statement</li>
+<li>Create a data table structure</li>
+<li>Get a column, row, or value from a data table</li>
+<li>Get an item from a list</li>
+</ul>
+<p><img src="fig/programming-why.gif" class="absolute img-fluid" style="width:30.0%" data-bottom="50%" data-right="10px"></p>
 
 
 </section>

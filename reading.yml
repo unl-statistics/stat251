@@ -1,6 +1,6 @@
 - path: https://srvanderplas.github.io/stat-computing-r-python/part-tools/00-tools-intro.html
-  title: Review- Tools
-  date: '2025-01-21'
+  title: Review - Tools
+  date: '2025-01-23'
   pub.date: '2024-01-01'
   categories:
   - reading
@@ -10,8 +10,8 @@
   is_live: true
 - path: https://srvanderplas.github.io/stat-computing-r-python/part-tools/05-git-and-github.html
   title: Version Control with Git and Github
-  date: '2025-01-23'
-  pub.date: '2025-01-14'
+  date: '2025-01-28'
+  pub.date: '2025-01-19'
   categories:
   - reading
   - .na.character
@@ -20,7 +20,7 @@
   is_live: true
 - path: https://srvanderplas.github.io/stat-computing-r-python/part-gen-prog/00-gen-prog.html
   title: Review - Programming
-  date: '2025-01-29'
+  date: '2025-01-30'
   pub.date: '2023-01-01'
   categories:
   - reading

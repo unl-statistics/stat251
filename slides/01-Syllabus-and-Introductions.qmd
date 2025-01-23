@@ -10,8 +10,9 @@ format:
     logo: N.svg
     includes:
       in_header: header.html
-date: '2025-01-23'
+date: '2025-01-21'
 pub-date: '2023-01-01'
+type: slides
 ---
 
 # Introductions
@@ -108,7 +109,7 @@ Thus, a PopTart is a calzone.
 :::
 
 ::: column
-- [Course site](https://unl-statistics.github.io/unl-stat251/)
+- [Course site](https://unl-statistics.github.io/stat251/)
   - slides
   - weekly readings
   - homework/exam/project descriptions

@@ -123,7 +123,7 @@
     "href": "slides/01-Syllabus-and-Introductions.html#install-course-software",
     "title": "Introduction",
     "section": "Install Course Software",
-    "text": "Install Course Software\nTextbook Chapter: https://bit.ly/3JtGCZR"
+    "text": "Install Course Software\nTextbook Chapter 2"
   },
   {
     "objectID": "slides/01-Syllabus-and-Introductions.html#next-time",
@@ -131,13 +131,6 @@
     "title": "Introduction",
     "section": "Next Time",
     "text": "Next Time\nWe’ll work on Version Control with Git\n\n\nPlease read before class:\n\nComputer Basics\nScripts and Notebooks\nRStudio’s Interface\nVersion Control with Git\n\n\n\n\n\nOctocat Image Source"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Stat 251: Data Wrangling",
-    "section": "",
-    "text": "Course Materials\nDates shown are due dates (for homework and exams) and dates on which material was presented (for slides).\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nDate\n\n\nTitle\n\n\nType\n\n\n\n\n\n\n\n\nJan 29, 2025\n\n\nReview - Programming\n\n\nreading\n\n\n\n\n\n\n\nJan 28, 2025\n\n\n👋 The Basics of GitHub\n\n\nhomework\n\n\n\n\n\n\n\nJan 23, 2025\n\n\nIntroduction\n\n\n \n\n\n\n\n\n\n\nJan 23, 2025\n\n\nVersion Control with Git and Github\n\n\nreading\n\n\n\n\n\n\n\nJan 21, 2025\n\n\nReview- Tools\n\n\nreading\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "homework/01-git-github.html",
@@ -196,94 +189,73 @@
     "text": "Optional extra steps\n\nOpen a pull request and let your teacher know that you’ve finished this course.\n\nCreate your profile README. Let the world know a little bit more about you! What are you interested in learning? What are you working on? What’s your favorite hobby? Learn more about creating your profile README in the document, “Managing Your Profile README”.\nGo to your user dashboard and create a new repository. Experiment with the features within that repository to familiarize yourself with them.\nLet us know what you liked or didn’t like about the content of this course. What would you like to see more of? What would be interesting or helpful to your learning journey?"
   },
   {
-    "objectID": "exam/2024-midterm/index.html",
-    "href": "exam/2024-midterm/index.html",
-    "title": "251 Midterm Exam",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Stat 251: Data Wrangling",
     "section": "",
-    "text": "In this exam, you’ll be using data collected about US polling places. The Center for Public Integrity assembled this data using open records requests and contact with state or county election officials. Full documentation is available on the github repository for the data - each state’s details can be found in a README file for that state; there is also a machine-readable manifest.yaml file for each state provided.\nWe will start out by using data assembled by the TidyTuesday project, but will eventually get to the raw data as well.\nThe raw CSV data is available at https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2024/2024-01-16/polling_places.csv\n# load any R packages you use in this chunk\n# load any python packages you use in this chunk"
+    "text": "Course Materials\nDates shown are due dates (for homework and exams) and dates on which material was presented (for slides).\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nDate\n\n\nTitle\n\n\nType\n\n\n\n\n\n\n\n\nFeb 4, 2025\n\n\nHomework 2: Reviewing R and Python\n\n\nhomework\n\n\n\n\n\n\n\nJan 30, 2025\n\n\nReview - Programming\n\n\nreading\n\n\n\n\n\n\n\nJan 28, 2025\n\n\n👋 The Basics of GitHub\n\n\nhomework\n\n\n\n\n\n\n\nJan 28, 2025\n\n\nVersion Control with Git and Github\n\n\nreading\n\n\n\n\n\n\n\nJan 23, 2025\n\n\nVersion Control\n\n\nslides\n\n\n\n\n\n\n\nJan 23, 2025\n\n\nReview - Tools\n\n\nreading\n\n\n\n\n\n\n\nJan 21, 2025\n\n\nIntroduction\n\n\nslides\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "exam/2024-midterm/index.html#data-file-inspection",
-    "href": "exam/2024-midterm/index.html#data-file-inspection",
-    "title": "251 Midterm Exam",
-    "section": "Data File Inspection",
-    "text": "Data File Inspection\nHere are the first six lines of the TidyTuesday CSV file:\nelection_date,state,county_name,jurisdiction,jurisdiction_type,precinct_id,precinct_name,polling_place_id,location_type,name,address,notes,source,source_date,source_notes\n2020-11-03,AL,AUTAUGA,AUTAUGA,county,NA,AUTAUGAVILLE VOL FIRE DEPT,NA,election_day,AUTAUGAVILLE VOL FIRE DEPT,\"2610 HIGHWAY 14 W, AUTAUGAVILLE, AL 36003\",NA,ORR,2020-10-21,NA\n2020-11-03,AL,AUTAUGA,AUTAUGA,county,NA,BILLINGSLEY COMMUNITY CENTER,NA,election_day,BILLINGSLEY COMMUNITY CENTER,\"2159 COUNTY RD 37, BILLINGSLEY, AL 36006\",NA,ORR,2020-10-21,NA\n2020-11-03,AL,AUTAUGA,AUTAUGA,county,NA,BOONE'S CHAPEL,NA,election_day,BOONE'S CHAPEL,\"2301 COUNTY RD 66, PRATTVILLE, AL 36067\",NA,ORR,2020-10-21,NA\n2020-11-03,AL,AUTAUGA,AUTAUGA,county,NA,BOOTH VOL FIRE DEPT,NA,election_day,BOOTH VOL FIRE DEPT,\"1701 COUNTY ROAD 10, BOOTH, AL 36008\",NA,ORR,2020-10-21,NA\n2020-11-03,AL,AUTAUGA,AUTAUGA,county,NA,CAMELLIA BAPTIST CH,NA,election_day,CAMELLIA BAPTIST CH,\"201 WOODVALE ROAD, PRATTVILLE, AL 36067\",NA,ORR,2020-10-21,NA\n\nWhat is the file delimiter? (1 pt)\n\nWhat is the header? (1 pt)\n\nHow many columns will the data have when it is read in using R or Python? (1 pt)\n\nHow is the data stored differently in the address field compared to the name field (1 pt), and why is this different handling necessary (1 pt)?"
+    "objectID": "homework/02-review.html",
+    "href": "homework/02-review.html",
+    "title": "Homework 2: Reviewing R and Python",
+    "section": "",
+    "text": "Note: This assignment must be submitted in github classroom.\nA palindrome is a string that is equal to the reverse of that string, such as “Mom”, “Hannah” or “We panic in a pew.”\nTraditionally, a phrase is tested for being a palindrome once all spaces and punctuation has been removed, and all letters are written in the same case. You will need to think about how to do these tasks in R and python."
   },
   {
-    "objectID": "exam/2024-midterm/index.html#reading-the-data",
-    "href": "exam/2024-midterm/index.html#reading-the-data",
-    "title": "251 Midterm Exam",
-    "section": "Reading the Data",
-    "text": "Reading the Data\nRead in the data in R (5 pts) and in python (5 pts).\nMake sure to load any packages which are necessary to run your code in the setup chunks at the beginning of the document."
+    "objectID": "homework/02-review.html#pseudocode",
+    "href": "homework/02-review.html#pseudocode",
+    "title": "Homework 2: Reviewing R and Python",
+    "section": "Pseudocode",
+    "text": "Pseudocode\nWrite a detailed list of steps to process a string named test to test that it is a palindrome.\nYou may find it helpful to write down some test words and work through them as if you were an algorithm. If you do this, please take a picture of your scratch paper, put it in the homework directory, and add it to your git repository along with your assignment solution.\nHint: The final items in this list of steps should be defining a variable revtest that is test with the letters reversed, and then comparing test and revtest for equality."
   },
   {
-    "objectID": "exam/2024-midterm/index.html#summarize-the-data",
-    "href": "exam/2024-midterm/index.html#summarize-the-data",
-    "title": "251 Midterm Exam",
-    "section": "Summarize the Data",
-    "text": "Summarize the Data\nUsing any method you choose from either language, fill in the following table.\nLanguage used: \nMake sure your terms match the language you’re using and the code you provided above. If you use code to get these values (which is probably a good idea), please use the code chunks provided here:\nWhen computing the number of unique values, exclude missing values.\n\nSummary of Polling Data\n\n\n\n\n\n\n\n\nColumn Name\nData Type (5 pts)\n# missing values (5 pts)\n# unique values (5 pts)\n\n\n\n\nelection_date\n\n\n\n\n\nstate\n\n\n\n\n\ncounty_name\n\n\n\n\n\njurisdiction\n\n\n\n\n\njurisdiction_type\n\n\n\n\n\nprecinct_id\n\n\n\n\n\nprecinct_name\n\n\n\n\n\npolling_place_id\n\n\n\n\n\nlocation_type\n\n\n\n\n\nname\n\n\n\n\n\naddress\n\n\n\n\n\nnotes\n\n\n\n\n\nsource\n\n\n\n\n\nsource_date\n\n\n\n\n\nsource_notes"
+    "objectID": "homework/02-review.html#r",
+    "href": "homework/02-review.html#r",
+    "title": "Homework 2: Reviewing R and Python",
+    "section": "R",
+    "text": "R\nTurn your pseudocode into a sequence of statements in R that work with a variable named test. At this point, there is no need to write these steps in a function - we’ll get there.\n\ntest &lt;- \"Hannah\"\ntest2 &lt;- \"not-a-palindrome\"\n\n# Your steps go here"
   },
   {
-    "objectID": "exam/2024-midterm/index.html#steps",
-    "href": "exam/2024-midterm/index.html#steps",
-    "title": "251 Midterm Exam",
-    "section": "Steps",
-    "text": "Steps\n(10 pts)\nWrite out the steps (in plain language) required to get from the polling place data provided here to the data you need to create your plot. Make sure to remove polling places which do not make sense - e.g. those with an address consisting of just the state name, or those named “DO NOT USE”.\nFor each step, identify the data manipulation verb you will use, and any variables you will pass in as arguments. Fill in the following table when you are finished. Add new rows by moving to a new line, and separate each cell in the table with | (spaces matter). | is on the key above the enter key and shares a key with \\ (backslash). You will need to hold shift down.\n\n\n\nStep #\nVerb\nArguments\n\n\n\n\n1\n…\n…"
+    "objectID": "homework/02-review.html#python",
+    "href": "homework/02-review.html#python",
+    "title": "Homework 2: Reviewing R and Python",
+    "section": "Python",
+    "text": "Python\nTurn your pseudocode into a sequence of statements in python that work with a variable named test. At this point, there is no need to write these steps in a function - we’ll get there.\n\ntest = \"Hannah\"\ntest2 = \"not-a-palindrome\"\n\n# Your steps go here"
   },
   {
-    "objectID": "exam/2024-midterm/index.html#code",
-    "href": "exam/2024-midterm/index.html#code",
-    "title": "251 Midterm Exam",
-    "section": "Code",
-    "text": "Code\n(10 pts)\nWrite code in R or python to execute the steps you outlined above."
+    "objectID": "slides/02-version-control.html",
+    "href": "slides/02-version-control.html",
+    "title": "Version Control",
+    "section": "",
+    "text": "Version control is the answer to this file naming problem.Image Source “Piled Higher and Deeper” by Jorge Cham www.phdcomics.com\n\n\n\n\nIn a system terminal, run…\n\ngit config --global user.name 'YOUR NAME HERE'\ngit config --global user.email 'YOUR EMAIL HERE'\ngit config --global --list # check to see it worked\n\n\n\n\nInstructions\n\n\n\n\n\n(Demo)\n\n\n\n(Demo)"
   },
   {
-    "objectID": "exam/2024-midterm/index.html#chart-description",
-    "href": "exam/2024-midterm/index.html#chart-description",
-    "title": "251 Midterm Exam",
-    "section": "Chart Description",
-    "text": "Chart Description\n(7 pts)\nUse the grammar of graphics to identify the components of the chart here, which provides the data for Wisconsin. \n\ngeom:\naesthetics: (list at least 3)\n\n\n\n\n\ncoordinate system:\ny axis scale:\nx axis scale:"
+    "objectID": "slides/02-version-control.html#introduce-yourself-to-git",
+    "href": "slides/02-version-control.html#introduce-yourself-to-git",
+    "title": "Version Control",
+    "section": "",
+    "text": "In a system terminal, run…\n\ngit config --global user.name 'YOUR NAME HERE'\ngit config --global user.email 'YOUR EMAIL HERE'\ngit config --global --list # check to see it worked"
   },
   {
-    "objectID": "exam/2024-midterm/index.html#chart",
-    "href": "exam/2024-midterm/index.html#chart",
-    "title": "251 Midterm Exam",
-    "section": "Chart",
-    "text": "Chart\n(20 pts)\nWrite code in R or python to create a chart like that shown at the beginning of this example (5 pts). Make sure your axes are labeled (5 pts) and your chart has a title (5 pts). Include your plot in this document and make sure you have a figure caption that describes what someone should notice in the chart (5 pts) You may do this either by modifying the chunk options or by using include=F and manually including the picture with a caption."
+    "objectID": "slides/02-version-control.html#connect-git-and-r",
+    "href": "slides/02-version-control.html#connect-git-and-r",
+    "title": "Version Control",
+    "section": "",
+    "text": "Instructions"
   },
   {
-    "objectID": "exam/2024-midterm/index.html#modifications",
-    "href": "exam/2024-midterm/index.html#modifications",
-    "title": "251 Midterm Exam",
-    "section": "Modifications",
-    "text": "Modifications\nEvaluate the chart you created for comprehensibility and accessibility. (1 pt)\nWhat modifications might you add to this chart to make it clearer and more understandable? (2 pts)"
+    "objectID": "slides/02-version-control.html#navigating-around-github",
+    "href": "slides/02-version-control.html#navigating-around-github",
+    "title": "Version Control",
+    "section": "",
+    "text": "(Demo)"
   },
   {
-    "objectID": "exam/2024-midterm/index.html#function-steps",
-    "href": "exam/2024-midterm/index.html#function-steps",
-    "title": "251 Midterm Exam",
-    "section": "Function Steps",
-    "text": "Function Steps\n(5 pts)\nUse the following addresses to think through the steps you will need to accomplish this task.\nTatitlek, AK 99677\nFirst Street, Cordova, AK 99574\n105 ICE ST, MENASHA, WI 54952-3223\n1025 W 5TH AVE, OSHKOSH, WI 54902\n1702 COUNTY ROAD 40 W, PRATTVILLE, AL 36067\n5281 HIGHWAY 29, CORINTH VFD (PEROTE STATION), BANKS, AL 36005\n713 W. MOUNTAIN AVENUE, JACKSONVILLE, AL 36265\nCOMMUNITY CENTER, 1168 HWY 84, SILAS, AL 36919\nWrite out the steps your function will need to accomplish in plain language."
-  },
-  {
-    "objectID": "exam/2024-midterm/index.html#function-code---single-address",
-    "href": "exam/2024-midterm/index.html#function-code---single-address",
-    "title": "251 Midterm Exam",
-    "section": "Function Code - Single Address",
-    "text": "Function Code - Single Address\n(5 pts)\nWrite a function, address_parser, which can handle a single address and return a data structure containing each piece of the address, with NAs for pieces which are not matched.\n(change this chunk to python if you’d prefer to use python over R for this task)\nThis chunk will test your function on the addresses provided as examples. (change this chunk to python if you used python above)\n\naddress_parser(\"Tatitlek, AK 99677\")\n\nError in address_parser(\"Tatitlek, AK 99677\"): could not find function \"address_parser\"\n\naddress_parser(\"First Street, Cordova, AK 99574\")\n\nError in address_parser(\"First Street, Cordova, AK 99574\"): could not find function \"address_parser\"\n\naddress_parser(\"105 ICE ST, MENASHA, WI 54952-3223\")\n\nError in address_parser(\"105 ICE ST, MENASHA, WI 54952-3223\"): could not find function \"address_parser\"\n\naddress_parser(\"1025 W 5TH AVE, OSHKOSH, WI 54902\")\n\nError in address_parser(\"1025 W 5TH AVE, OSHKOSH, WI 54902\"): could not find function \"address_parser\"\n\naddress_parser(\"1702 COUNTY ROAD 40 W, PRATTVILLE, AL 36067\")\n\nError in address_parser(\"1702 COUNTY ROAD 40 W, PRATTVILLE, AL 36067\"): could not find function \"address_parser\"\n\naddress_parser(\"5281 HIGHWAY 29, CORINTH VFD (PEROTE STATION), BANKS, AL 36005\")\n\nError in address_parser(\"5281 HIGHWAY 29, CORINTH VFD (PEROTE STATION), BANKS, AL 36005\"): could not find function \"address_parser\"\n\naddress_parser(\"713 W. MOUNTAIN AVENUE, JACKSONVILLE, AL 36265\")\n\nError in address_parser(\"713 W. MOUNTAIN AVENUE, JACKSONVILLE, AL 36265\"): could not find function \"address_parser\"\n\naddress_parser(\"COMMUNITY CENTER, 1168 HWY 84, SILAS, AL 36919\")\n\nError in address_parser(\"COMMUNITY CENTER, 1168 HWY 84, SILAS, AL 36919\"): could not find function \"address_parser\""
-  },
-  {
-    "objectID": "exam/2024-midterm/index.html#function-code---vector",
-    "href": "exam/2024-midterm/index.html#function-code---vector",
-    "title": "251 Midterm Exam",
-    "section": "Function Code - Vector",
-    "text": "Function Code - Vector\n(5 pts)\nWrite a function, address_vec, which can parse a vector of addresses and return a data frame with columns corresponding to each piece of the address.\n(change this chunk to python if you’d prefer to use python over R for this task)\nThis chunk will test your function on the addresses provided as examples. Delete whichever chunk corresponds to the language you didn’t use.\n\ntest_vec &lt;- c(\"Tatitlek, AK 99677\", \"First Street, Cordova, AK 99574\", \"105 ICE ST, MENASHA, WI 54952-3223\", \"1025 W 5TH AVE, OSHKOSH, WI 54902\", \"1702 COUNTY ROAD 40 W, PRATTVILLE, AL 36067\", \"5281 HIGHWAY 29, CORINTH VFD (PEROTE STATION), BANKS, AL 36005\", \"713 W. MOUNTAIN AVENUE, JACKSONVILLE, AL 36265\", \"COMMUNITY CENTER, 1168 HWY 84, SILAS, AL 36919\")\naddress_vec(test_vec)\n\nError in address_vec(test_vec): could not find function \"address_vec\"\n\n\n\ntest_vec = [\"Tatitlek, AK 99677\", \"First Street, Cordova, AK 99574\", \"105 ICE ST, MENASHA, WI 54952-3223\", \"1025 W 5TH AVE, OSHKOSH, WI 54902\", \"1702 COUNTY ROAD 40 W, PRATTVILLE, AL 36067\", \"5281 HIGHWAY 29, CORINTH VFD (PEROTE STATION), BANKS, AL 36005\", \"713 W. MOUNTAIN AVENUE, JACKSONVILLE, AL 36265\", \"COMMUNITY CENTER, 1168 HWY 84, SILAS, AL 36919\"]\naddress_vec(test_vec)\n\nNameError: name 'address_vec' is not defined"
-  },
-  {
-    "objectID": "exam/2024-midterm/index.html#function-evaluation",
-    "href": "exam/2024-midterm/index.html#function-evaluation",
-    "title": "251 Midterm Exam",
-    "section": "Function Evaluation",
-    "text": "Function Evaluation\nUse your function to parse a vector of the unique polling place addresses in your state, creating a data table of address components for your letters. (5 pts)\nWhere did your function have issues, if it did? (5 pts)"
+    "objectID": "slides/02-version-control.html#using-rstudio-and-git",
+    "href": "slides/02-version-control.html#using-rstudio-and-git",
+    "title": "Version Control",
+    "section": "",
+    "text": "(Demo)"
   }
 ]

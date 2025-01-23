@@ -1,0 +1,68 @@
+---
+title: Version Control
+author: Stat 251
+date: '2025-01-23'
+pub-date: '2023-01-01'
+categories:
+- slides
+- Week01
+engine: knitr
+type: slides
+---
+
+# Version Control
+
+![Version control is the answer to this file naming  problem.<br>[Image Source](https://phdcomics.com/comics/archive.php?comicid=1531) "Piled Higher and Deeper" by Jorge Cham
+www.phdcomics.com](https://phdcomics.com/comics/archive/phd101212s.gif){width="50%"}
+
+
+## Introduce yourself to git
+
+In a system terminal, run...
+
+```{bash, eval = F, echo = T}
+git config --global user.name 'YOUR NAME HERE'
+git config --global user.email 'YOUR EMAIL HERE'
+git config --global --list # check to see it worked
+```
+
+## Connect Git and R
+
+[Instructions](https://happygitwithr.com/https-pat#https-pat)
+
+
+```{=html}
+<iframe width="100%" height="600px" src="https://happygitwithr.com/https-pat#https-pat" title="Personal Access Tokens"></iframe>
+
+```
+
+## Navigating around Github
+
+(Demo)
+
+## Using RStudio and git
+
+(Demo)
+
+## Homework: [Introduction to Github](../homework/01-git-github.qmd)
+
+```{=html}
+<iframe width="100%" height="600px" src="../homework/01-git-github.html"></iframe>
+
+```
+
+# Next Time
+
+Review: [General Programming](https://srvanderplas.github.io/stat-computing-r-python/part-gen-prog/00-gen-prog.html)
+
+Know how to:
+
+- Load a package or import a library
+- Define a variable
+- Write a function
+- Write an if/else statement
+- Create a data table structure
+- Get a column, row, or value from a data table
+- Get an item from a list
+
+![](fig/programming-why.gif){.absolute bottom="50%" right="10px" width="30%"}
