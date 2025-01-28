@@ -35,13 +35,13 @@ schedule:
         pub-date: 2024-01-01
       - path: https://srvanderplas.github.io/stat-computing-r-python/part-gen-prog/00-gen-prog.html
         title: Review - Programming
-        date: 2025-01-30
+        date: 2025-01-28
         pub-date: 2023-01-01
         categories: [reading]
-      - href: slides/03-review-topics.qmd
+      - href: slides/02a-review-topics.qmd
         categories: [slides]
         type: slides
-        date: 2025-01-30
+        date: 2025-01-28
         pub-date: 2023-01-28
       - href: slides/04-review-topics.qmd
         categories: [slides]
