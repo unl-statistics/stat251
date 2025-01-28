@@ -1,0 +1,69 @@
+---
+title: Programming Review
+subtitle: Working Environment and Programming Logic
+author: Stat 251
+categories: slides
+engine: knitr
+format:
+  revealjs:
+    navigation-mode: vertical
+    logo: N.svg
+    theme: inverse.scss
+    includes:
+      in_header: header.html
+date: '2025-01-28'
+type: slides
+---
+
+## Working Environment
+
+- Know the 3 different ways to execute code from within RStudio
+    - Terminal (Command Line)
+    - Source Script (RStudio Button)
+    - Interactive Mode (line by line)
+
+- Differentiate between the Console and the Terminal
+
+- Differentiate between R and Python in the Console
+
+## RStudio Projects
+
+RStudio projects are a way to keep your work organized.
+
+Let's create one for this week's class work.
+
+![Creating an RStudio Project](../figs/02a-create-project.gif){fig-alt="Gif of creating an RStudio Project. Go to File -> New Project -> New Directory -> New Project. Fill in the directory name (stat251-week2) and decide if you would like to create a git repository (not necessary for this). Click Create Project. Notice that the file path is now set to the location of the project folder. If you put your files into this folder, you can reference those file names without using a complicated path."}
+
+## General Programming
+
+Review: [General Programming](https://srvanderplas.github.io/stat-computing-r-python/part-gen-prog/00-gen-prog.html)
+
+Know how to:
+
+- Define a variable
+- Write a function
+- Write an if/else statement
+- load a package or import a library
+- Create a data table structure
+- Get a column, row, or value from a data table
+- Get an item from a list
+
+![](fig/programming-why.gif){.absolute bottom="50%" right="10px" width="30%"}
+
+## Self-assessment
+
+It's sometimes hard to know what you know and what you don't know
+
+Self-assessment in Canvas: due by Feb 6
+
+## Homework 2
+
+- Focus on the logic and thinking through the steps
+- Work with pencil and paper first
+
+```{=html}
+<iframe width="100%" height = "600px" src="https://unl-statistics/stat251/homework/02-review.html"></iframe>
+```
+
+
+
