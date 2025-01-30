@@ -292,5 +292,12 @@
     "title": "Version Control",
     "section": "",
     "text": "(Demo)"
+  },
+  {
+    "objectID": "slides/02b-review-topics.html#last-class",
+    "href": "slides/02b-review-topics.html#last-class",
+    "title": "Programming Review",
+    "section": "Last Class",
+    "text": "Last Class\n\nWorked on Homework #2\nIdentified several useful functions and packages:\n\npackages/libraries\n\nin R: stringr, stringi\nin python: re\n\nfunctions\n\nin R: tolower, stri_reverse, stri_sub_all\nin python: .lower(), [::-1], re.sub\n\n\nIf you made at least one submission to github, you have some points for homework #2 in Canvas"
   }
 ]

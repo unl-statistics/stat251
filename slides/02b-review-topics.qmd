@@ -1,0 +1,111 @@
+---
+title: Programming Review
+subtitle: Working Environment and Programming Logic
+author: Stat 251
+categories: slides
+engine: knitr
+format:
+  revealjs:
+    navigation-mode: vertical
+    logo: N.svg
+    theme: inverse.scss
+    includes:
+      in_header: header.html
+date: '2025-01-30'
+type: slides
+---
+
+## Last Class
+
+- Worked on Homework #2
+
+- Identified several useful functions and packages:
+
+    - packages/libraries 
+    
+        - in R: `stringr`, `stringi`
+        - in python: `re`
+    
+    
+    - functions
+    
+      - in R: `tolower`, `stri_reverse`, `stri_sub_all`
+      - in python: `.lower()`, `[::-1]`, `re.sub`
+  
+- If you made at least one submission to github, you have some points for homework #2 in Canvas
+  
+# Today's goal
+
+- make at least one submission to Github 
+
+- Review function writing: [section 13](https://srvanderplas.github.io/stat-computing-r-python/part-gen-prog/05-functions.html)
+
+- Code chunks in quarto documents
+
+# What Chatgbt thinks palindromes are ...
+
+# 
+
+> Create some palindromes with topics from the R tidyverse
+
+ChatGPT said:
+
+Sure, I can get creative with that! Here are some palindromes inspired by the R tidyverse package:
+
+ggplot palindrome:
+
+"plot, ggplot, ggplot, top, lg"
+
+dplyr palindrome:
+
+"pipe, dep, ed, epip"
+
+
+tidyr palindrome:
+
+"tidy, rid, id, ydit"
+
+stringr palindrome:
+
+"strings, r, r, sgnirts"
+tibble palindrome:
+
+# 
+
+> The first one is not a palindrome
+
+ChatGPT said:
+
+You’re absolutely right! My bad on that one. A palindrome needs to read the same backward and forward. Let me fix that for you! Here's a proper one:
+
+For ggplot:
+
+"ggplot, tol, log, gg"
+
+That works better as a true palindrome. Thanks for catching that! Would you like more examples, or should I tweak any of the others?
+
+
+# Function definitions
+
+![](https://srvanderplas.github.io/stat-computing-r-python/images/gen-prog/Annotating_function_syntax.png)
+
+# Dos and Don'ts 
+
+There are some things we should not (ever) do in R Markdown (or quarto) documents:
+
+- Install a package 
+
+...
+
+
+
+
+# Next Time
+
+- Review 
+
+  - indexing, 
+  - data frames/structures, 
+  - thinking in column-shaped objects
+  
+- Coming up: Self Assessment quiz
