@@ -89,6 +89,18 @@ That works better as a true palindrome. Thanks for catching that! Would you like
 
 ![](https://srvanderplas.github.io/stat-computing-r-python/images/gen-prog/Annotating_function_syntax.png)
 
+# As an extra challenge ... (for extra credit)
+
+Can you establish how fast your function `palindrome` is?
+
+[Measuring speed in R](https://www.r-bloggers.com/2017/05/5-ways-to-measure-running-time-of-r-code/)
+
+[Measuring speed in python](https://docs.python.org/3/library/timeit.html#module-timeit)
+
+Which is faster? R or python? - You might have to make multiple calls to the functions to capture differences
+
+
+
 # Dos and Don'ts 
 
 There are some things we should not (ever) do in R Markdown (or quarto) documents:
