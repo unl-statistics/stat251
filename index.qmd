@@ -10,6 +10,7 @@ listing:
   - slides/01-Syllabus-and-Introductions.qmd
   - slides/02-version-control.qmd
   - slides/02a-review-topics.qmd
+  - slides/02b-review-topics.qmd
   - slides/04-review-topics.qmd
   - slides/05-review-cipher.qmd
   - slides/06-review-cipher.qmd

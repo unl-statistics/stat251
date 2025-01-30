@@ -43,6 +43,11 @@ schedule:
         type: slides
         date: 2025-01-28
         pub-date: 2023-01-28
+      - href: slides/02b-review-topics.qmd
+        categories: [slides]
+        type: slides
+        date: 2025-01-30
+        pub-date: 2023-01-30
       - href: slides/04-review-topics.qmd
         categories: [slides]
         type: slides
