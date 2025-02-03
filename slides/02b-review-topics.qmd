@@ -86,10 +86,21 @@ For ggplot:
 
 That works better as a true palindrome. Thanks for catching that! Would you like more examples, or should I tweak any of the others?
 
+# From a block of code to functions
+
+When you execute the same code multiple times, you should wrap the code into a function:
+
+![](fig/palindrome-code-blocks.png)
+
+# Code block to function
+
+![](fig/palindrome-function.png)
 
 # Function definitions
 
 ![](https://srvanderplas.github.io/stat-computing-r-python/images/gen-prog/Annotating_function_syntax.png)
+
+
 
 # As an extra challenge ... (for extra credit)
 

@@ -6,9 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Your Name">
+<meta name="author" content="Homework">
+<meta name="dcterms.date" content="2024-02-12">
 
-<title>Homework 2: Reviewing R and Python – Stat 251 - Data Wrangling</title>
+<title>decodeR: Base R – Stat 251 - Data Wrangling</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -151,14 +152,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#problem-1-simple-palindromes" id="toc-problem-1-simple-palindromes" class="nav-link active" data-scroll-target="#problem-1-simple-palindromes">Problem 1: Simple Palindromes</a>
-  <ul class="collapse">
-  <li><a href="#pseudocode" id="toc-pseudocode" class="nav-link" data-scroll-target="#pseudocode">Pseudocode</a></li>
-  <li><a href="#r" id="toc-r" class="nav-link" data-scroll-target="#r">R</a></li>
-  <li><a href="#python" id="toc-python" class="nav-link" data-scroll-target="#python">Python</a></li>
-  </ul></li>
-  <li><a href="#problem-2-functional-palindromes" id="toc-problem-2-functional-palindromes" class="nav-link" data-scroll-target="#problem-2-functional-palindromes">Problem 2: Functional Palindromes</a></li>
-  <li><a href="#problem-3-vectors-of-palindromes" id="toc-problem-3-vectors-of-palindromes" class="nav-link" data-scroll-target="#problem-3-vectors-of-palindromes">Problem 3: Vectors of Palindromes</a></li>
+  <li><a href="#part-one-setup" id="toc-part-one-setup" class="nav-link active" data-scroll-target="#part-one-setup">Part One: Setup</a></li>
+  <li><a href="#part-two-decoding-the-secret-message." id="toc-part-two-decoding-the-secret-message." class="nav-link" data-scroll-target="#part-two-decoding-the-secret-message.">Part Two: Decoding the secret message.</a></li>
+  <li><a href="#part-3-the-secret-message" id="toc-part-3-the-secret-message" class="nav-link" data-scroll-target="#part-3-the-secret-message">Part 3: The secret message!</a></li>
   </ul>
 </nav>
     </div>
@@ -167,10 +163,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Homework 2: Reviewing R and Python</h1>
+<h1 class="title">decodeR: Base R</h1>
   <div class="quarto-categories">
     <div class="quarto-category">HW</div>
-    <div class="quarto-category">Week02</div>
+    <div class="quarto-category">Week03</div>
   </div>
   </div>
 
@@ -188,7 +184,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">Due: Feb 5, 2023</p>
+      <p class="date">February 12, 2024</p>
     </div>
   </div>
   
@@ -201,56 +197,88 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <p>Note: This assignment must be submitted in github classroom.</p>
-<p>A palindrome is a string that is equal to the reverse of that string, such as “Mom”, “Hannah” or “We panic in a pew.”</p>
-<p>Traditionally, a phrase is tested for being a palindrome once all spaces and punctuation has been removed, and all letters are written in the same case. You will need to think about how to do these tasks in R and python.</p>
-<section id="problem-1-simple-palindromes" class="level1">
-<h1>Problem 1: Simple Palindromes</h1>
-<section id="pseudocode" class="level2">
-<h2 class="anchored" data-anchor-id="pseudocode">Pseudocode</h2>
-<p>Write a detailed list of steps to process a string named <code>test</code> to test that it is a palindrome.</p>
-<p>You may find it helpful to write down some test words and work through them as if you were an algorithm. If you do this, please take a picture of your scratch paper, put it in the homework directory, and add it to your git repository along with your assignment solution.</p>
-<p>Hint: The final items in this list of steps should be defining a variable <code>revtest</code> that is <code>test</code> with the letters reversed, and then comparing <code>test</code> and <code>revtest</code> for equality.</p>
-</section>
-<section id="r" class="level2">
-<h2 class="anchored" data-anchor-id="r">R</h2>
-<p>Turn your pseudocode into a sequence of statements in R that work with a variable named <code>test</code>. At this point, there is no need to write these steps in a function - we’ll get there.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>test <span class="ot">&lt;-</span> <span class="st">"Hannah"</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>test2 <span class="ot">&lt;-</span> <span class="st">"not-a-palindrome"</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Your steps go here</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This assignment is modified from the <a href="https://github.com/kbodwin/decodeR">decodeR</a> exercises by Kelly Bodwin and Allison Theobold.</p>
+<p>In this assignment, you will be creating and manipulating vectors, lists, and data frames to uncover a top secret message.</p>
+<p>Some advice:</p>
+<ul>
+<li>Work with those around you</li>
+<li>Google is your friend! If an error is confusing, copy it into Google and see what other people are saying. If you don’t know how to do something, search for it.</li>
+<li>Just because there is no error message doesn’t mean everything went smoothly. Use the console to check each step and make sure you have accomplished what you wanted to accomplish.</li>
+</ul>
+<section id="part-one-setup" class="level2">
+<h2 class="anchored" data-anchor-id="part-one-setup">Part One: Setup</h2>
+<p>Each of the following R chunks will cause an error and/or do the desired task incorrectly. Find the mistake, and correct it to complete the intended action. For each error, write 1-2 sentences to reflect on what the mistake was and how you found it and fixed it.</p>
+<ol type="1">
+<li>Create vectors containing the upper case letters, lower case letters, and some punctuation marks.</li>
+</ol>
+<div class="cell" data-hash="03-cipher_cache/html/unnamed-chunk-2_aa6114b18bbd12fbdde7b1842ac8f4f7">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>lower_case <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"a"</span>, <span class="st">"b"</span>, <span class="st">"c"</span>, <span class="st">"d"</span>, <span class="st">"e"</span>, <span class="st">"f"</span>, <span class="st">"g"</span>, <span class="st">"h"</span>, <span class="st">"i"</span>, <span class="st">"j"</span>, <span class="st">"k"</span>, <span class="st">"l"</span>, <span class="st">"m"</span>, <span class="st">"n"</span>, <span class="st">"o"</span>, <span class="st">"p"</span>, <span class="st">"q"</span>, <span class="st">"r"</span>, <span class="st">"s"</span>, <span class="st">"t"</span>, <span class="st">"u"</span>, <span class="st">"v"</span>, <span class="st">"w"</span>, <span class="st">"x"</span>, <span class="st">"y"</span>, <span class="st">"z"</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>upper_case <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"A"</span>, <span class="st">"B"</span>, <span class="st">"C"</span>, <span class="st">"D"</span>, <span class="st">"E"</span>, <span class="st">"F"</span>, <span class="st">"G"</span>, <span class="st">"H"</span> <span class="st">"I"</span>, <span class="st">"J"</span>, <span class="st">"K"</span>, <span class="st">"L"</span>, <span class="st">"M"</span>, <span class="st">"N"</span>, <span class="st">"O"</span>, <span class="st">"P"</span>, <span class="st">"Q"</span>, <span class="st">"R"</span>, <span class="st">"S"</span>, <span class="st">"T"</span>, <span class="st">"U"</span>, <span class="st">"V"</span>, <span class="st">"W"</span>, <span class="st">"X"</span>, <span class="st">"Y"</span>, <span class="st">"Z"</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>punctuation <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"."</span>, <span class="st">","</span>, <span class="st">"!"</span>, <span class="st">"?"</span>, <span class="st">"'"</span>, <span class="st">""", "</span>(<span class="st">", "</span>)<span class="st">", "</span> <span class="st">", "</span><span class="sc">-</span><span class="st">", "</span>;<span class="st">", "</span><span class="sc">:</span><span class="st">")</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ol start="2" type="1">
+<li>Make one long vector containing all the symbols.</li>
+</ol>
+<div class="cell" data-hash="03-cipher_cache/html/unnamed-chunk-3_3b12fe5c094c511e39f59db4075e2bd5">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>my_symbols <span class="ot">&lt;-</span> <span class="fu">cbind</span>(lower_case, upper_case, punctuation)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ol start="3" type="1">
+<li>Turn the <code>my_symbols</code> vector into a data frame, with the variable name “Symbol”</li>
+</ol>
+<div class="cell" data-hash="03-cipher_cache/html/unnamed-chunk-4_65a82ad6d4881081dd052a2b520cfa40">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>my_symbols <span class="ot">&lt;-</span> <span class="fu">dataframe</span>(my_symbols)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(my_symbols) <span class="ot">=</span> Symbol</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ol start="4" type="1">
+<li>Find the total number of symbols we have in our data frame.</li>
+</ol>
+<div class="cell" data-hash="03-cipher_cache/html/unnamed-chunk-5_8386cf390a99fe5136fd2e078b7813c1">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>len <span class="ot">&lt;-</span> <span class="fu">length</span>(my_symbols)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ol start="5" type="1">
+<li>Create a new variable in your dataframe that assigns a number to each symbol.</li>
+</ol>
+<div class="cell" data-hash="03-cipher_cache/html/unnamed-chunk-6_ed16df7a9960a422e029a84fc70193e8">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>my_symbols%Num <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span>len</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="python" class="level2">
-<h2 class="anchored" data-anchor-id="python">Python</h2>
-<p>Turn your pseudocode into a sequence of statements in python that work with a variable named <code>test</code>. At this point, there is no need to write these steps in a function - we’ll get there.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>test <span class="op">=</span> <span class="st">"Hannah"</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>test2 <span class="op">=</span> <span class="st">"not-a-palindrome"</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Your steps go here</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="part-two-decoding-the-secret-message." class="level2">
+<h2 class="anchored" data-anchor-id="part-two-decoding-the-secret-message.">Part Two: Decoding the secret message.</h2>
+<p>This chunk will load up the encoded secret message as a vector:</p>
+<div class="cell" data-hash="03-cipher_cache/html/unnamed-chunk-7_3f268d91f7f305952a065103030e9aaf">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>top_secret <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"Secret_Code"</span>, <span class="at">header =</span> <span class="cn">FALSE</span>)<span class="sc">$</span>V1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<p>By altering this top secret set of numbers, you will be able to create a message. Write your own code to complete the steps below.</p>
+<ol type="1">
+<li>Add 14 to every number.</li>
+<li>Multiply every number by 18, then subtract 257.</li>
+<li>Exponentiate every number. (That is, do e^[number].)</li>
+<li>Square every number.</li>
+</ol>
+<p><strong>Checkpoint:</strong> Headquarters has informed you that at this stage of decoding, there should be 352 numbers in the secret message that are below 17.</p>
+<ol start="5" type="1">
+<li>Turn your vector of numbers into a matrix with 5 columns.</li>
+<li>Separately from your top secret numbers, create a vector of all the even numbers between 1 and 382. Name it “evens”. That is, “evens” should contain 2, 4, 6, 8 …, 382.</li>
+<li>Subtract the “evens” vector from the first column of your secret message matrix.</li>
+<li>Subtract 100 from all numbers in the 18-24th rows of the 3rd column.</li>
+<li>Multiply all numbers in the 4th and 5th column by 2.</li>
+<li>Turn your matrix back into a vector.</li>
+</ol>
+<p><strong>Checkpoint:</strong> Headquarters has informed you that at this stage of decoding, all numbers in indices 500 and beyond are below 100.</p>
+<ol start="11" type="1">
+<li>Take the square root of all numbers in indices 38 to 465.</li>
+<li>Round all numbers to the nearest whole number.</li>
+<li>Replace all instances of the number 39 with 20.</li>
+</ol>
+<p><strong>Checkpoint:</strong> Headquarters has informed you that your final message should have 344 even numbers.</p>
 </section>
-</section>
-<section id="problem-2-functional-palindromes" class="level1">
-<h1>Problem 2: Functional Palindromes</h1>
-<p>In R and Python, use your code above to create a function, <code>palindrome</code>, which takes an argument, <code>x</code>, and returns a logical value indicating whether <code>x</code> is a palindrome.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Your R function goes here</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Your python function goes here</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section>
-<section id="problem-3-vectors-of-palindromes" class="level1">
-<h1>Problem 3: Vectors of Palindromes</h1>
-<p>Use a loop, map, or apply statement to find all of the palindromes in a vector. I should be able to provide a different vector and use your function to find all of the palindromes.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>test_vec <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"taco cat"</span>, <span class="st">"UFO tofu"</span>, <span class="st">"In palindromes, spacing, punctuation, and capitalization are usually ignored."</span>, <span class="st">"Borrow or rob?"</span>, <span class="st">"dithyrambic"</span>, <span class="st">"Never odd or even."</span>, <span class="st">"R rules, Python drools!"</span>, <span class="st">"Won't lovers revolt now?"</span>, <span class="st">"Ma is a nun, as I am."</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>test_vec <span class="op">=</span> [<span class="st">"taco cat"</span>, <span class="st">"UFO tofu"</span>, <span class="st">"In palindromes, spacing, punctuation, and capitalization are usually ignored."</span>, <span class="st">"Borrow or rob?"</span>, <span class="st">"dithyrambic"</span>, <span class="st">"Never odd or even."</span>, <span class="st">"R rules, Python drools!"</span>, <span class="st">"Won't lovers revolt now?"</span>, <span class="st">"Ma is a nun, as I am."</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
+<section id="part-3-the-secret-message" class="level2">
+<h2 class="anchored" data-anchor-id="part-3-the-secret-message">Part 3: The secret message!</h2>
+<p>Use your final vector of numbers as indices for <code>my_symbols</code> to discover the final message!<br>
+Google the first line of this message, if you do not recognize it, to see what it is.</p>
+<p>Write 3-4 sentences about what you learned from this investigation. What problems did you encounter, and how did you solve them? Could you do the same tasks in Python? Why or why not?</p>
 
 
 </section>

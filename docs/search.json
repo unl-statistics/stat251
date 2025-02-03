@@ -35,6 +35,41 @@
     "text": "Comparing Sexes and Styles\nGenerate one or two plots which best showcase the difference in pocket sizes for different sexes and styles of pants. Use The Pudding’s classification for pants styles, treating straight and boot-cut styles as the same and skinny and slim styles as the same.\nYou may annotate the plot with the output from statistical tests if you wish, but it is sufficient to highlight the visual differences. Your chart(s) must have appropriate titles and axis labels, and must be constructed to take into account the principles of good graphics discussed in the textbook.\nYour discussion of this output goes here.\nReplace this paragraph with 1-2 sentences discussing what choices you made to make the plot you generated above perceptually optimal. Which principles of good graphics did you use?"
   },
   {
+    "objectID": "slides/02a-review-topics.html#working-environment",
+    "href": "slides/02a-review-topics.html#working-environment",
+    "title": "Programming Review",
+    "section": "Working Environment",
+    "text": "Working Environment\n\nKnow the 3 different ways to execute code from within RStudio\n\nTerminal (Command Line)\nSource Script (RStudio Button)\nInteractive Mode (line by line)\n\nDifferentiate between the Console and the Terminal\nDifferentiate between R and Python in the Console"
+  },
+  {
+    "objectID": "slides/02a-review-topics.html#rstudio-projects",
+    "href": "slides/02a-review-topics.html#rstudio-projects",
+    "title": "Programming Review",
+    "section": "RStudio Projects",
+    "text": "RStudio Projects\nRStudio projects are a way to keep your work organized.\nLet’s create one for this week’s class work.\n\nCreating an RStudio Project"
+  },
+  {
+    "objectID": "slides/02a-review-topics.html#general-programming",
+    "href": "slides/02a-review-topics.html#general-programming",
+    "title": "Programming Review",
+    "section": "General Programming",
+    "text": "General Programming\nReview: General Programming\nKnow how to:\n\nDefine a variable\nWrite a function\nWrite an if/else statement\nload a package or import a library\nCreate a data table structure\nGet a column, row, or value from a data table\nGet an item from a list"
+  },
+  {
+    "objectID": "slides/02a-review-topics.html#self-assessment",
+    "href": "slides/02a-review-topics.html#self-assessment",
+    "title": "Programming Review",
+    "section": "Self-assessment",
+    "text": "Self-assessment\nIt’s sometimes hard to know what you know and what you don’t know\nSelf-assessment in Canvas: due by Feb 6"
+  },
+  {
+    "objectID": "slides/02a-review-topics.html#homework-2",
+    "href": "slides/02a-review-topics.html#homework-2",
+    "title": "Programming Review",
+    "section": "Homework 2",
+    "text": "Homework 2\n\nFocus on the logic and thinking through the steps\nWork with pencil and paper first"
+  },
+  {
     "objectID": "slides/01-Syllabus-and-Introductions.html#introduce-yourself",
     "href": "slides/01-Syllabus-and-Introductions.html#introduce-yourself",
     "title": "Introduction",
@@ -133,6 +168,41 @@
     "text": "Next Time\nWe’ll work on Version Control with Git\n\n\nPlease read before class:\n\nComputer Basics\nScripts and Notebooks\nRStudio’s Interface\nVersion Control with Git\n\n\n\n\n\nOctocat Image Source"
   },
   {
+    "objectID": "homework/02-review.html",
+    "href": "homework/02-review.html",
+    "title": "Homework 2: Reviewing R and Python",
+    "section": "",
+    "text": "Note: This assignment must be submitted in github classroom.\nA palindrome is a string that is equal to the reverse of that string, such as “Mom”, “Hannah” or “We panic in a pew.”\nTraditionally, a phrase is tested for being a palindrome once all spaces and punctuation has been removed, and all letters are written in the same case. You will need to think about how to do these tasks in R and python."
+  },
+  {
+    "objectID": "homework/02-review.html#pseudocode",
+    "href": "homework/02-review.html#pseudocode",
+    "title": "Homework 2: Reviewing R and Python",
+    "section": "Pseudocode",
+    "text": "Pseudocode\nWrite a detailed list of steps to process a string named test to test that it is a palindrome.\nYou may find it helpful to write down some test words and work through them as if you were an algorithm. If you do this, please take a picture of your scratch paper, put it in the homework directory, and add it to your git repository along with your assignment solution.\nHint: The final items in this list of steps should be defining a variable revtest that is test with the letters reversed, and then comparing test and revtest for equality."
+  },
+  {
+    "objectID": "homework/02-review.html#r",
+    "href": "homework/02-review.html#r",
+    "title": "Homework 2: Reviewing R and Python",
+    "section": "R",
+    "text": "R\nTurn your pseudocode into a sequence of statements in R that work with a variable named test. At this point, there is no need to write these steps in a function - we’ll get there.\n\ntest &lt;- \"Hannah\"\ntest2 &lt;- \"not-a-palindrome\"\n\n# Your steps go here"
+  },
+  {
+    "objectID": "homework/02-review.html#python",
+    "href": "homework/02-review.html#python",
+    "title": "Homework 2: Reviewing R and Python",
+    "section": "Python",
+    "text": "Python\nTurn your pseudocode into a sequence of statements in python that work with a variable named test. At this point, there is no need to write these steps in a function - we’ll get there.\n\ntest = \"Hannah\"\ntest2 = \"not-a-palindrome\"\n\n# Your steps go here"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Stat 251: Data Wrangling",
+    "section": "",
+    "text": "Course Materials\nDates shown are due dates (for homework and exams) and dates on which material was presented (for slides).\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nDate\n\n\nTitle\n\n\nType\n\n\n\n\n\n\n\n\nFeb 11, 2025\n\n\ndecodeR: Base R\n\n\nhomework\n\n\n\n\n\n\n\nFeb 4, 2025\n\n\nHomework 2: Reviewing R and Python\n\n\nhomework\n\n\n\n\n\n\n\nJan 30, 2025\n\n\nProgramming Review\n\n\nslides\n\n\n\n\n\n\n\nJan 28, 2025\n\n\n👋 The Basics of GitHub\n\n\nhomework\n\n\n\n\n\n\n\nJan 28, 2025\n\n\nProgramming Review\n\n\nslides\n\n\n\n\n\n\n\nJan 28, 2025\n\n\nVersion Control with Git and Github\n\n\nreading\n\n\n\n\n\n\n\nJan 28, 2025\n\n\nReview - Programming\n\n\nreading\n\n\n\n\n\n\n\nJan 23, 2025\n\n\nVersion Control\n\n\nslides\n\n\n\n\n\n\n\nJan 23, 2025\n\n\nReview - Tools\n\n\nreading\n\n\n\n\n\n\n\nJan 21, 2025\n\n\nIntroduction\n\n\nslides\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
     "objectID": "homework/01-git-github.html",
     "href": "homework/01-git-github.html",
     "title": "👋 The Basics of GitHub",
@@ -189,81 +259,32 @@
     "text": "Optional extra steps\n\nOpen a pull request and let your teacher know that you’ve finished this course.\n\nCreate your profile README. Let the world know a little bit more about you! What are you interested in learning? What are you working on? What’s your favorite hobby? Learn more about creating your profile README in the document, “Managing Your Profile README”.\nGo to your user dashboard and create a new repository. Experiment with the features within that repository to familiarize yourself with them.\nLet us know what you liked or didn’t like about the content of this course. What would you like to see more of? What would be interesting or helpful to your learning journey?"
   },
   {
-    "objectID": "slides/02b-review-topics.html#last-class",
-    "href": "slides/02b-review-topics.html#last-class",
-    "title": "Programming Review",
-    "section": "Last Class",
-    "text": "Last Class\n\nWorked on Homework #2\nIdentified several useful functions and packages:\n\npackages/libraries\n\nin R: stringr, stringi\nin python: re\n\nfunctions\n\nin R: tolower, stri_reverse, stri_sub_all\nin python: .lower(), [::-1], re.sub\n\n\nIf you made at least one submission to github, you have some points for homework #2 in Canvas"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Stat 251: Data Wrangling",
+    "objectID": "homework/03-cipher.html",
+    "href": "homework/03-cipher.html",
+    "title": "decodeR: Base R",
     "section": "",
-    "text": "Course Materials\nDates shown are due dates (for homework and exams) and dates on which material was presented (for slides).\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nDate\n\n\nTitle\n\n\nType\n\n\n\n\n\n\n\n\nFeb 4, 2025\n\n\nHomework 2: Reviewing R and Python\n\n\nhomework\n\n\n\n\n\n\n\nJan 30, 2025\n\n\nProgramming Review\n\n\nslides\n\n\n\n\n\n\n\nJan 28, 2025\n\n\n👋 The Basics of GitHub\n\n\nhomework\n\n\n\n\n\n\n\nJan 28, 2025\n\n\nProgramming Review\n\n\nslides\n\n\n\n\n\n\n\nJan 28, 2025\n\n\nVersion Control with Git and Github\n\n\nreading\n\n\n\n\n\n\n\nJan 28, 2025\n\n\nReview - Programming\n\n\nreading\n\n\n\n\n\n\n\nJan 23, 2025\n\n\nVersion Control\n\n\nslides\n\n\n\n\n\n\n\nJan 23, 2025\n\n\nReview - Tools\n\n\nreading\n\n\n\n\n\n\n\nJan 21, 2025\n\n\nIntroduction\n\n\nslides\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Note: This assignment must be submitted in github classroom.\nThis assignment is modified from the decodeR exercises by Kelly Bodwin and Allison Theobold.\nIn this assignment, you will be creating and manipulating vectors, lists, and data frames to uncover a top secret message.\nSome advice:"
   },
   {
-    "objectID": "slides/02a-review-topics.html#working-environment",
-    "href": "slides/02a-review-topics.html#working-environment",
-    "title": "Programming Review",
-    "section": "Working Environment",
-    "text": "Working Environment\n\nKnow the 3 different ways to execute code from within RStudio\n\nTerminal (Command Line)\nSource Script (RStudio Button)\nInteractive Mode (line by line)\n\nDifferentiate between the Console and the Terminal\nDifferentiate between R and Python in the Console"
+    "objectID": "homework/03-cipher.html#part-one-setup",
+    "href": "homework/03-cipher.html#part-one-setup",
+    "title": "decodeR: Base R",
+    "section": "Part One: Setup",
+    "text": "Part One: Setup\nEach of the following R chunks will cause an error and/or do the desired task incorrectly. Find the mistake, and correct it to complete the intended action. For each error, write 1-2 sentences to reflect on what the mistake was and how you found it and fixed it.\n\nCreate vectors containing the upper case letters, lower case letters, and some punctuation marks.\n\n\nlower_case &lt;- c(\"a\", \"b\", \"c\", \"d\", \"e\", \"f\", \"g\", \"h\", \"i\", \"j\", \"k\", \"l\", \"m\", \"n\", \"o\", \"p\", \"q\", \"r\", \"s\", \"t\", \"u\", \"v\", \"w\", \"x\", \"y\", \"z\")\n\nupper_case &lt;- c(\"A\", \"B\", \"C\", \"D\", \"E\", \"F\", \"G\", \"H\" \"I\", \"J\", \"K\", \"L\", \"M\", \"N\", \"O\", \"P\", \"Q\", \"R\", \"S\", \"T\", \"U\", \"V\", \"W\", \"X\", \"Y\", \"Z\")\n\npunctuation &lt;- c(\".\", \",\", \"!\", \"?\", \"'\", \"\"\", \"(\", \")\", \" \", \"-\", \";\", \":\")\n\n\nMake one long vector containing all the symbols.\n\n\nmy_symbols &lt;- cbind(lower_case, upper_case, punctuation)\n\n\nTurn the my_symbols vector into a data frame, with the variable name “Symbol”\n\n\nmy_symbols &lt;- dataframe(my_symbols)\nnames(my_symbols) = Symbol\n\n\nFind the total number of symbols we have in our data frame.\n\n\nlen &lt;- length(my_symbols)\n\n\nCreate a new variable in your dataframe that assigns a number to each symbol.\n\n\nmy_symbols%Num &lt;- 1:len"
   },
   {
-    "objectID": "slides/02a-review-topics.html#rstudio-projects",
-    "href": "slides/02a-review-topics.html#rstudio-projects",
-    "title": "Programming Review",
-    "section": "RStudio Projects",
-    "text": "RStudio Projects\nRStudio projects are a way to keep your work organized.\nLet’s create one for this week’s class work.\n\nCreating an RStudio Project"
+    "objectID": "homework/03-cipher.html#part-two-decoding-the-secret-message.",
+    "href": "homework/03-cipher.html#part-two-decoding-the-secret-message.",
+    "title": "decodeR: Base R",
+    "section": "Part Two: Decoding the secret message.",
+    "text": "Part Two: Decoding the secret message.\nThis chunk will load up the encoded secret message as a vector:\n\ntop_secret &lt;- read.csv(\"Secret_Code\", header = FALSE)$V1\n\nBy altering this top secret set of numbers, you will be able to create a message. Write your own code to complete the steps below.\n\nAdd 14 to every number.\nMultiply every number by 18, then subtract 257.\nExponentiate every number. (That is, do e^[number].)\nSquare every number.\n\nCheckpoint: Headquarters has informed you that at this stage of decoding, there should be 352 numbers in the secret message that are below 17.\n\nTurn your vector of numbers into a matrix with 5 columns.\nSeparately from your top secret numbers, create a vector of all the even numbers between 1 and 382. Name it “evens”. That is, “evens” should contain 2, 4, 6, 8 …, 382.\nSubtract the “evens” vector from the first column of your secret message matrix.\nSubtract 100 from all numbers in the 18-24th rows of the 3rd column.\nMultiply all numbers in the 4th and 5th column by 2.\nTurn your matrix back into a vector.\n\nCheckpoint: Headquarters has informed you that at this stage of decoding, all numbers in indices 500 and beyond are below 100.\n\nTake the square root of all numbers in indices 38 to 465.\nRound all numbers to the nearest whole number.\nReplace all instances of the number 39 with 20.\n\nCheckpoint: Headquarters has informed you that your final message should have 344 even numbers."
   },
   {
-    "objectID": "slides/02a-review-topics.html#general-programming",
-    "href": "slides/02a-review-topics.html#general-programming",
-    "title": "Programming Review",
-    "section": "General Programming",
-    "text": "General Programming\nReview: General Programming\nKnow how to:\n\nDefine a variable\nWrite a function\nWrite an if/else statement\nload a package or import a library\nCreate a data table structure\nGet a column, row, or value from a data table\nGet an item from a list"
-  },
-  {
-    "objectID": "slides/02a-review-topics.html#self-assessment",
-    "href": "slides/02a-review-topics.html#self-assessment",
-    "title": "Programming Review",
-    "section": "Self-assessment",
-    "text": "Self-assessment\nIt’s sometimes hard to know what you know and what you don’t know\nSelf-assessment in Canvas: due by Feb 6"
-  },
-  {
-    "objectID": "slides/02a-review-topics.html#homework-2",
-    "href": "slides/02a-review-topics.html#homework-2",
-    "title": "Programming Review",
-    "section": "Homework 2",
-    "text": "Homework 2\n\nFocus on the logic and thinking through the steps\nWork with pencil and paper first"
-  },
-  {
-    "objectID": "homework/02-review.html",
-    "href": "homework/02-review.html",
-    "title": "Homework 2: Reviewing R and Python",
-    "section": "",
-    "text": "Note: This assignment must be submitted in github classroom.\nA palindrome is a string that is equal to the reverse of that string, such as “Mom”, “Hannah” or “We panic in a pew.”\nTraditionally, a phrase is tested for being a palindrome once all spaces and punctuation has been removed, and all letters are written in the same case. You will need to think about how to do these tasks in R and python."
-  },
-  {
-    "objectID": "homework/02-review.html#pseudocode",
-    "href": "homework/02-review.html#pseudocode",
-    "title": "Homework 2: Reviewing R and Python",
-    "section": "Pseudocode",
-    "text": "Pseudocode\nWrite a detailed list of steps to process a string named test to test that it is a palindrome.\nYou may find it helpful to write down some test words and work through them as if you were an algorithm. If you do this, please take a picture of your scratch paper, put it in the homework directory, and add it to your git repository along with your assignment solution.\nHint: The final items in this list of steps should be defining a variable revtest that is test with the letters reversed, and then comparing test and revtest for equality."
-  },
-  {
-    "objectID": "homework/02-review.html#r",
-    "href": "homework/02-review.html#r",
-    "title": "Homework 2: Reviewing R and Python",
-    "section": "R",
-    "text": "R\nTurn your pseudocode into a sequence of statements in R that work with a variable named test. At this point, there is no need to write these steps in a function - we’ll get there.\n\ntest &lt;- \"Hannah\"\ntest2 &lt;- \"not-a-palindrome\"\n\n# Your steps go here"
-  },
-  {
-    "objectID": "homework/02-review.html#python",
-    "href": "homework/02-review.html#python",
-    "title": "Homework 2: Reviewing R and Python",
-    "section": "Python",
-    "text": "Python\nTurn your pseudocode into a sequence of statements in python that work with a variable named test. At this point, there is no need to write these steps in a function - we’ll get there.\n\ntest = \"Hannah\"\ntest2 = \"not-a-palindrome\"\n\n# Your steps go here"
+    "objectID": "homework/03-cipher.html#part-3-the-secret-message",
+    "href": "homework/03-cipher.html#part-3-the-secret-message",
+    "title": "decodeR: Base R",
+    "section": "Part 3: The secret message!",
+    "text": "Part 3: The secret message!\nUse your final vector of numbers as indices for my_symbols to discover the final message!\nGoogle the first line of this message, if you do not recognize it, to see what it is.\nWrite 3-4 sentences about what you learned from this investigation. What problems did you encounter, and how did you solve them? Could you do the same tasks in Python? Why or why not?"
   },
   {
     "objectID": "slides/02-version-control.html",
@@ -299,5 +320,12 @@
     "title": "Version Control",
     "section": "",
     "text": "(Demo)"
+  },
+  {
+    "objectID": "slides/02b-review-topics.html#last-class",
+    "href": "slides/02b-review-topics.html#last-class",
+    "title": "Programming Review",
+    "section": "Last Class",
+    "text": "Last Class\n\nWorked on Homework #2\nIdentified several useful functions and packages:\n\npackages/libraries\n\nin R: stringr, stringi\nin python: re\n\nfunctions\n\nin R: tolower, stri_reverse, stri_sub_all\nin python: .lower(), [::-1], re.sub\n\n\nIf you made at least one submission to github, you have some points for homework #2 in Canvas"
   }
 ]
