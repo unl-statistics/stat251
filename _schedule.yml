@@ -52,11 +52,11 @@ schedule:
         categories: [HW, Week02]
         date: 2025-02-04
         pub-date: 2023-01-01
-      - href: slides/03b-review-cipher.qmd
+      - href: slides/03a-review-cipher.qmd
         categories: [slides]
         date: 2025-02-04
         pub-date: 2023-02-03
-      - href: slides/06-review-cipher.qmd
+      - href: slides/03b-review-cipher.qmd
         categories: [slides]
         date: 2025-02-06
         pub-date: 2023-02-05
