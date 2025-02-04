@@ -1,0 +1,112 @@
+---
+title: Review - Cipher
+author: Stat 251
+title-slide-attributes:
+  data-background-image: fig/cipher.png
+  data-background-size: contain
+  data-background-opacity: '0.15'
+categories: slides
+engine: knitr
+format:
+  revealjs:
+    navigation-mode: vertical
+    logo: N.svg
+    theme: inverse.scss
+    includes:
+      in_header: header.html
+date: '2025-02-04'
+---
+
+# Topics to Know
+
+Review: [General Programming](https://srvanderplas.github.io/stat-computing-r-python/part-gen-prog/00-gen-prog.html)
+
+Know how to:
+
+- Define a variable
+- Write a function
+- Write an if/else statement
+- load a package or import a library
+- **Create a data table structure**
+- **Get a column, row, or value from a data table**
+- **Get an item from a list**
+
+![](fig/programming-why.gif){.absolute bottom="50%" right="10px" width="30%"}
+
+# Vectors in R
+
+
+```{r echo = TRUE}
+x <- c(11, 25, 18, 4, 1, 5, 17, 22, 3,  9)
+
+str(x)
+length(x)
+```
+Quick-Info: how many values are below 10?
+```{r echo = TRUE}
+sum(x < 10)
+which(x < 10)
+```
+
+Update values: turn all values of 3 into a 4:
+
+```{r echo = FALSE}
+x[x == 3] <- 4
+```
+
+# Your Turn
+
+make all square values in `x` negative:
+
+1. Write a function `is_square` that takes a numeric vector x and returns a vector of TRUE/FALSE for each element in x (TRUE: element is square, FALSE: element is not a square number)
+
+2. update square values by their negative number
+
+```{r}
+is_square <- function(x) {
+  root <- sqrt(x)
+  return(round(root) == root)
+}
+```
+
+x
+```{r}
+x
+```
+is_square(x):
+```{r}
+is_square(x)
+```
+updated x:
+```{r}
+x[is_square(x)] <- (-1)*x[is_square(x)]
+x
+```
+
+# Homework - Review
+
+- in Canvas, accept the Github Classroom link to homework #3
+
+- Clone the repository to your local machine
+
+- Render the file `index.qmd`
+
+
+# Homework - Cipher 
+
+- Not all statements that execute are correct (Part 1: fix mistakes)
+
+- Part 2: write a decoder 
+
+- Part 3: Decode the secret message!
+
+```{=html}
+<iframe width="100%" height = "600px" src="https://unl-statistics.github.io/stat251/homework/03-cipher.html"></iframe>
+```
+
+
+# Next Time
+
+- Continue working on Homework 3
+  
+- Self Assessment quiz due Thursday

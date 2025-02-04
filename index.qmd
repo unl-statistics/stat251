@@ -11,8 +11,7 @@ listing:
   - slides/02-version-control.qmd
   - slides/02a-review-topics.qmd
   - slides/02b-review-topics.qmd
-  - slides/04-review-topics.qmd
-  - slides/05-review-cipher.qmd
+  - slides/03b-review-cipher.qmd
   - slides/06-review-cipher.qmd
   - syllabus.qmd
   - reading.yml
