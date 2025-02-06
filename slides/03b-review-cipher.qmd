@@ -5,7 +5,9 @@ title-slide-attributes:
   data-background-image: fig/cipher.png
   data-background-size: contain
   data-background-opacity: '0.10'
-categories: slides
+categories:
+- slides
+- Week03
 engine: knitr
 format:
   revealjs:
@@ -14,8 +16,68 @@ format:
     theme: inverse.scss
     includes:
       in_header: header.html
-date: '2025-02-04'
+date: '2025-02-06'
 ---
+
+# Homework 2
+
+- graded with feedback
+
+- you can re-submit (once) to react to the feedback (submit the link in Canvas again, so that I know you are ready for another round of grading)
+
+- extra credit: timing of palindrome evaluation
+
+# Speed test: R vs python
+
+Five runs of 10,000 evaluations of checking vector for palindromes:
+
+```{r message=FALSE}
+library(dplyr)
+eval <- read.csv("../data/timing-mbp.csv")
+eval %>% mutate(run=1:5) %>% select(run, replications,"R [in s]"=elapsed, "python [in s]"=py) 
+  
+```
+What information do we gain from the multiple runs?
+
+What do you expect to happen for lower number of replicates (besides faster times)?
+
+# Number of replications
+
+```{r}
+library(ggplot2)
+eval_ns <- read.csv("../data/timing-mbp-ns.csv")
+eval_ns %>% filter(replications != 10) %>% ggplot(aes(x = factor(replications), y = elapsed/replications*1000)) +
+  geom_point(size = 3.5) + ylab("How long would 1,000 replications take?") + xlab("actual number of replications") +
+  theme_bw(base_size = 14)
+```
+
+# Other factors: machine load 
+
+```{r}
+library(tidyr)
+eval_zoom <- read.csv("../data/timing-mbp-zoom.csv")
+eval_long <- eval %>% select("R" = elapsed, py, replications) %>%
+  pivot_longer(-replications, values_to = "speed [in s]", names_to="language")
+
+eval_zoom %>% select("R" = elapsed, py, replications) %>%
+  pivot_longer(-replications, values_to = "speed [in s]", names_to="language") %>%
+  ggplot(aes(x = language, y = `speed [in s]`)) +
+  geom_point(size = 3, aes(colour = "no zoom"), data = eval_long) + 
+  geom_point(size = 3, aes(colour = "while running zoom")) + ylim(c(0,NA)) + 
+  geom_hline(yintercept=0) + 
+  scale_colour_manual(values = c("steelblue", "darkorange")) +
+  theme_bw(base_size = 14)
+```
+
+# Due dates coming up
+
+- Readings: Data input - quiz before class on Tuesday
+
+- Homework #3 due on Tuesday
+
+
+
+
 
 # Topics to Know
 
@@ -30,14 +92,49 @@ Know how to:
 ![](fig/programming-why.gif){.absolute bottom="50%" right="10px" width="30%"}
 
 
-# Homework - Review
+# Homework - Cipher
 
-- Not all statements that execute are correct
+- Goal for today: push at least one commit to your Github repo
+
+- Not all statements that execute are correct (Part 1: fix mistakes) 
+
+- Part 2: write a decoder 
+
+- Part 3: Decode the secret message!
 
 ```{=html}
 <iframe width="100%" height = "600px" src="https://unl-statistics.github.io/stat251/homework/03-cipher.html"></iframe>
 ```
 
+# Vector to matrices 
+
+default in R is to fill columns first
+
+```{r echo = TRUE}
+x <- 1:9
+matrix(x, ncol=3)
+```
+
+# Vector to matrices 
+
+in python rows are filled first - need to set `order` to False
+
+```{python echo=TRUE}
+import numpy as np
+x = np.arange(1, 10)
+matrix_x = x.reshape(-1, 3, order='F')
+
+print(matrix_x)
+```
+
+
+# Extra Credit
+
+Using the same code, create another secret message (i.e. you have to work the steps backwards) for a text of your choosing. 
+
+Add the R/python code necessary to create the secret message in a code chunk in `index.qmd`. 
+
+Add your encoded secret message as a file to your repo.
 
 # Next Time
 

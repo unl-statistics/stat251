@@ -38,15 +38,15 @@
     "objectID": "slides/02a-review-topics.html#working-environment",
     "href": "slides/02a-review-topics.html#working-environment",
     "title": "Programming Review",
-    "section": "",
-    "text": "Know the 3 different ways to execute code from within RStudio\n\nTerminal (Command Line)\nSource Script (RStudio Button)\nInteractive Mode (line by line)\n\nDifferentiate between the Console and the Terminal\nDifferentiate between R and Python in the Console"
+    "section": "Working Environment",
+    "text": "Working Environment\n\nKnow the 3 different ways to execute code from within RStudio\n\nTerminal (Command Line)\nSource Script (RStudio Button)\nInteractive Mode (line by line)\n\nDifferentiate between the Console and the Terminal\nDifferentiate between R and Python in the Console"
   },
   {
     "objectID": "slides/02a-review-topics.html#rstudio-projects",
     "href": "slides/02a-review-topics.html#rstudio-projects",
     "title": "Programming Review",
     "section": "RStudio Projects",
-    "text": "RStudio Projects\nRStudio projects are a way to keep your work organized.\nLet’s create one for this week’s class work.\n\n\n\nCreating an RStudio Project"
+    "text": "RStudio Projects\nRStudio projects are a way to keep your work organized.\nLet’s create one for this week’s class work.\n\nCreating an RStudio Project"
   },
   {
     "objectID": "slides/02a-review-topics.html#general-programming",
@@ -73,22 +73,22 @@
     "objectID": "slides/01-Syllabus-and-Introductions.html#introduce-yourself",
     "href": "slides/01-Syllabus-and-Introductions.html#introduce-yourself",
     "title": "Introduction",
-    "section": "",
-    "text": "Name / Year / Major\nWhat do you hope to learn in this class?\nPrevious computing experience?\nIs a poptart a ravioli? Why or why not?"
+    "section": "Introduce yourself!",
+    "text": "Introduce yourself!\n\nName / Year / Major\nWhat do you hope to learn in this class?\nPrevious computing experience?\nIs a poptart a ravioli? Why or why not?"
   },
   {
     "objectID": "slides/01-Syllabus-and-Introductions.html#my-introduction",
     "href": "slides/01-Syllabus-and-Introductions.html#my-introduction",
     "title": "Introduction",
-    "section": "",
-    "text": "Heike Hofmann\nProfessor in Statistics\nAt UNL since August, I was at ISU for 20 years\nfirst computer language was Pascal :)\nR user since 1996, Python user (? I have learned it four times by now)"
+    "section": "My Introduction",
+    "text": "My Introduction\n\nHeike Hofmann\nProfessor in Statistics\nAt UNL since August, I was at ISU for 20 years\nfirst computer language was Pascal :)\nR user since 1996, Python user (? I have learned it four times by now)"
   },
   {
     "objectID": "slides/01-Syllabus-and-Introductions.html#on-poptarts-and-ravioli",
     "href": "slides/01-Syllabus-and-Introductions.html#on-poptarts-and-ravioli",
     "title": "Introduction",
-    "section": "",
-    "text": "The Cube Rule of Food, from Reddit\n\n\nThus, a PopTart is a calzone."
+    "section": "On PopTarts and Ravioli:",
+    "text": "On PopTarts and Ravioli:\n\nThe Cube Rule of Food, from RedditThus, a PopTart is a calzone."
   },
   {
     "objectID": "slides/01-Syllabus-and-Introductions.html#contact-info",
@@ -200,7 +200,7 @@
     "href": "index.html",
     "title": "Stat 251: Data Wrangling",
     "section": "",
-    "text": "Course Materials\nDates shown are due dates (for homework and exams) and dates on which material was presented (for slides).\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nDate\n\n\nTitle\n\n\nType\n\n\n\n\n\n\n\n\nFeb 11, 2025\n\n\ndecodeR: Base R\n\n\nhomework\n\n\n\n\n\n\n\nFeb 4, 2025\n\n\nHomework 2: Reviewing R and Python\n\n\nhomework\n\n\n\n\n\n\n\nFeb 4, 2025\n\n\nReview - Cipher\n\n\n \n\n\n\n\n\n\n\nJan 30, 2025\n\n\nProgramming Review\n\n\nslides\n\n\n\n\n\n\n\nJan 28, 2025\n\n\n👋 The Basics of GitHub\n\n\nhomework\n\n\n\n\n\n\n\nJan 28, 2025\n\n\nProgramming Review\n\n\nslides\n\n\n\n\n\n\n\nJan 28, 2025\n\n\nVersion Control with Git and Github\n\n\nreading\n\n\n\n\n\n\n\nJan 28, 2025\n\n\nReview - Programming\n\n\nreading\n\n\n\n\n\n\n\nJan 23, 2025\n\n\nVersion Control\n\n\nslides\n\n\n\n\n\n\n\nJan 23, 2025\n\n\nReview - Tools\n\n\nreading\n\n\n\n\n\n\n\nJan 21, 2025\n\n\nIntroduction\n\n\nslides\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Course Materials\nDates shown are due dates (for homework and exams) and dates on which material was presented (for slides).\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nDate\n\n\nTitle\n\n\nType\n\n\n\n\n\n\n\n\nFeb 11, 2025\n\n\ndecodeR: Base R\n\n\nhomework\n\n\n\n\n\n\n\nFeb 11, 2025\n\n\nData Input\n\n\nreading\n\n\n\n\n\n\n\nFeb 11, 2025\n\n\nExploratory Data Analysis\n\n\nreading\n\n\n\n\n\n\n\nFeb 6, 2025\n\n\nReview - Cipher\n\n\n \n\n\n\n\n\n\n\nFeb 4, 2025\n\n\nHomework 2: Reviewing R and Python\n\n\nhomework\n\n\n\n\n\n\n\nFeb 4, 2025\n\n\nReview - Cipher\n\n\n \n\n\n\n\n\n\n\nJan 30, 2025\n\n\nProgramming Review\n\n\nslides\n\n\n\n\n\n\n\nJan 28, 2025\n\n\n👋 The Basics of GitHub\n\n\nhomework\n\n\n\n\n\n\n\nJan 28, 2025\n\n\nProgramming Review\n\n\nslides\n\n\n\n\n\n\n\nJan 28, 2025\n\n\nVersion Control with Git and Github\n\n\nreading\n\n\n\n\n\n\n\nJan 28, 2025\n\n\nReview - Programming\n\n\nreading\n\n\n\n\n\n\n\nJan 23, 2025\n\n\nVersion Control\n\n\nslides\n\n\n\n\n\n\n\nJan 23, 2025\n\n\nReview - Tools\n\n\nreading\n\n\n\n\n\n\n\nJan 21, 2025\n\n\nIntroduction\n\n\nslides\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "homework/01-git-github.html",
@@ -325,35 +325,7 @@
     "objectID": "slides/02b-review-topics.html#last-class",
     "href": "slides/02b-review-topics.html#last-class",
     "title": "Programming Review",
-    "section": "",
-    "text": "Worked on Homework #2\nIdentified several useful functions and packages:\n\npackages/libraries\n\nin R: stringr, stringi\nin python: re\n\nfunctions\n\nin R: tolower, stri_reverse, stri_sub_all\nin python: .lower(), [::-1], re.sub\n\n\nIf you made at least one submission to github, you have some points for homework #2 in Canvas"
-  },
-  {
-    "objectID": "slides/03b-review-cipher.html",
-    "href": "slides/03b-review-cipher.html",
-    "title": "Review - Cipher",
-    "section": "",
-    "text": "Topics to Know\nReview: General Programming\nKnow how to:\n\nCreate a data table structure\nGet a column, row, or value from a data table\nGet an item from a list\n\n\n\n\nHomework - Review\n\nNot all statements that execute are correct\n\n\n\n\nNext Time\n\nStart on new unit - reading data!\nBefore class:\nRead Data Input and Exploratory Data Analysis"
-  },
-  {
-    "objectID": "slides/02a-review-topics.html",
-    "href": "slides/02a-review-topics.html",
-    "title": "Programming Review",
-    "section": "",
-    "text": "Know the 3 different ways to execute code from within RStudio\n\nTerminal (Command Line)\nSource Script (RStudio Button)\nInteractive Mode (line by line)\n\nDifferentiate between the Console and the Terminal\nDifferentiate between R and Python in the Console"
-  },
-  {
-    "objectID": "slides/01-Syllabus-and-Introductions.html",
-    "href": "slides/01-Syllabus-and-Introductions.html",
-    "title": "Introduction",
-    "section": "",
-    "text": "Name / Year / Major\nWhat do you hope to learn in this class?\nPrevious computing experience?\nIs a poptart a ravioli? Why or why not?\n\n\n\n\n\nHeike Hofmann\nProfessor in Statistics\nAt UNL since August, I was at ISU for 20 years\nfirst computer language was Pascal :)\nR user since 1996, Python user (? I have learned it four times by now)\n\n\n\n\n\n\n\nThe Cube Rule of Food, from Reddit\n\n\nThus, a PopTart is a calzone."
-  },
-  {
-    "objectID": "slides/02b-review-topics.html",
-    "href": "slides/02b-review-topics.html",
-    "title": "Programming Review",
-    "section": "",
-    "text": "Worked on Homework #2\nIdentified several useful functions and packages:\n\npackages/libraries\n\nin R: stringr, stringi\nin python: re\n\nfunctions\n\nin R: tolower, stri_reverse, stri_sub_all\nin python: .lower(), [::-1], re.sub\n\n\nIf you made at least one submission to github, you have some points for homework #2 in Canvas"
+    "section": "Last Class",
+    "text": "Last Class\n\nWorked on Homework #2\nIdentified several useful functions and packages:\n\npackages/libraries\n\nin R: stringr, stringi\nin python: re\n\nfunctions\n\nin R: tolower, stri_reverse, stri_sub_all\nin python: .lower(), [::-1], re.sub\n\n\nIf you made at least one submission to github, you have some points for homework #2 in Canvas"
   }
 ]

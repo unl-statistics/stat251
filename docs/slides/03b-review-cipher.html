@@ -10,8 +10,8 @@
   <meta name="generator" content="quarto-1.6.40">
 
   <meta name="author" content="Stat 251">
-  <meta name="dcterms.date" content="2025-01-30">
-  <title>Stat 251 - Data Wrangling – Programming Review</title>
+  <meta name="dcterms.date" content="2025-02-04">
+  <title>Stat 251 - Data Wrangling – Review - Cipher</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -29,6 +29,71 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-cafb11b5f51d1c6dca451fea611f5bab.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -127,9 +192,8 @@
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Programming Review</h1>
-  <p class="subtitle">Working Environment and Programming Logic</p>
+<section id="title-slide" data-background-image="fig/cipher.png" data-background-opacity="0.10" data-background-size="contain" class="quarto-title-block center">
+  <h1 class="title">Review - Cipher</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -139,114 +203,120 @@ Stat 251
 </div>
 </div>
 
-  <p class="date">2025-01-30</p>
+  <p class="date">2025-02-04</p>
 </section>
-<section id="last-class" class="slide level2">
-<h2>Last Class</h2>
+<section id="homework-2" class="title-slide slide level1 center">
+<h1>Homework 2</h1>
 <ul>
-<li><p>Worked on Homework #2</p></li>
-<li><p>Identified several useful functions and packages:</p>
-<ul>
-<li><p>packages/libraries</p>
-<ul>
-<li>in R: <code>stringr</code>, <code>stringi</code></li>
-<li>in python: <code>re</code></li>
-</ul></li>
-<li><p>functions</p>
-<ul>
-<li>in R: <code>tolower</code>, <code>stri_reverse</code>, <code>stri_sub_all</code></li>
-<li>in python: <code>.lower()</code>, <code>[::-1]</code>, <code>re.sub</code></li>
-</ul></li>
-</ul></li>
-<li><p>If you made at least one submission to github, you have some points for homework #2 in Canvas</p></li>
-</ul>
-</section>
-<section id="todays-goal" class="title-slide slide level1 center">
-<h1>Today’s goal</h1>
-<ul>
-<li><p>make at least one submission to Github</p></li>
-<li><p>Review function writing: <a href="https://srvanderplas.github.io/stat-computing-r-python/part-gen-prog/05-functions.html">section 13</a></p></li>
-<li><p>Code chunks in quarto documents</p></li>
+<li><p>graded with feedback</p></li>
+<li><p>you can re-submit (once) to react to the feedback (submit the link in Canvas again, so that I know you are ready for another round of grading)</p></li>
+<li><p>extra credit: timing of palindrome evaluation</p></li>
 </ul>
 </section>
 
-<section id="what-chatgbt-thinks-palindromes-are" class="title-slide slide level1 center">
-<h1>What Chatgbt thinks palindromes are …</h1>
-
+<section id="speed-test-r-vs-python" class="title-slide slide level1 center">
+<h1>Speed test: R vs python</h1>
+<p>Five runs of 10,000 evaluations of checking vector for palindromes:</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>  run replications R [in s] python [in s]
+1   1        10000    0.514     0.1686378
+2   2        10000    0.516     0.1630241
+3   3        10000    0.513     0.1622581
+4   4        10000    0.515     0.1622709
+5   5        10000    0.516     0.1628715</code></pre>
+</div>
+</div>
+<p>What information do we gain from the multiple runs?</p>
+<p>What do you expect to happen for lower number of replicates (besides faster times)?</p>
 </section>
 
-<section id="section" class="title-slide slide level1 center">
-<h1></h1>
-<blockquote>
-<p>Create some palindromes with topics from the R tidyverse</p>
-</blockquote>
-<p>ChatGPT said:</p>
-<p>Sure, I can get creative with that! Here are some palindromes inspired by the R tidyverse package:</p>
-<p>ggplot palindrome:</p>
-<p>“plot, ggplot, ggplot, top, lg”</p>
-<p>dplyr palindrome:</p>
-<p>“pipe, dep, ed, epip”</p>
-<p>tidyr palindrome:</p>
-<p>“tidy, rid, id, ydit”</p>
-<p>stringr palindrome:</p>
-<p>“strings, r, r, sgnirts” tibble palindrome:</p>
-</section>
+<section id="number-of-replications" class="title-slide slide level1 center">
+<h1>Number of replications</h1>
 
-<section id="section-1" class="title-slide slide level1 center">
-<h1></h1>
-<blockquote>
-<p>The first one is not a palindrome</p>
-</blockquote>
-<p>ChatGPT said:</p>
-<p>You’re absolutely right! My bad on that one. A palindrome needs to read the same backward and forward. Let me fix that for you! Here’s a proper one:</p>
-<p>For ggplot:</p>
-<p>“ggplot, tol, log, gg”</p>
-<p>That works better as a true palindrome. Thanks for catching that! Would you like more examples, or should I tweak any of the others?</p>
-</section>
+<img data-src="03b-review-cipher_files/figure-revealjs/unnamed-chunk-2-1.png" width="960" class="r-stretch"></section>
 
-<section id="from-a-block-of-code-to-functions" class="title-slide slide level1 center">
-<h1>From a block of code to functions</h1>
-<p>When you execute the same code multiple times, you should wrap the code into a function:</p>
+<section id="other-factors-machine-load" class="title-slide slide level1 center">
+<h1>Other factors: machine load</h1>
 
-<img data-src="fig/palindrome-code-blocks.png" class="r-stretch"></section>
+<img data-src="03b-review-cipher_files/figure-revealjs/unnamed-chunk-3-1.png" width="960" class="r-stretch"></section>
 
-<section id="code-block-to-function" class="title-slide slide level1 center">
-<h1>Code block to function</h1>
-
-<img data-src="fig/palindrome-function.png" class="r-stretch"></section>
-
-<section id="function-definitions" class="title-slide slide level1 center">
-<h1>Function definitions</h1>
-
-<img data-src="https://srvanderplas.github.io/stat-computing-r-python/images/gen-prog/Annotating_function_syntax.png" class="r-stretch"></section>
-
-<section id="as-an-extra-challenge-for-extra-credit" class="title-slide slide level1 center">
-<h1>As an extra challenge … (for extra credit)</h1>
-<p>Can you establish how fast your function <code>palindrome</code> is?</p>
-<p><a href="https://www.r-bloggers.com/2017/05/5-ways-to-measure-running-time-of-r-code/">Measuring speed in R</a></p>
-<p><a href="https://docs.python.org/3/library/timeit.html#module-timeit">Measuring speed in python</a></p>
-<p>Which is faster? R or python? - You might have to make multiple calls to the functions to capture differences</p>
-</section>
-
-<section id="dos-and-donts" class="title-slide slide level1 center">
-<h1>Dos and Don’ts</h1>
-<p>There are some things we should not (ever) do in R Markdown (or quarto) documents:</p>
+<section id="due-dates-coming-up" class="title-slide slide level1 center">
+<h1>Due dates coming up</h1>
 <ul>
-<li>Install a package</li>
+<li><p>Readings: Data input - quiz before class on Tuesday</p></li>
+<li><p>Homework #3 due on Tuesday</p></li>
 </ul>
-<p>…</p>
+</section>
+
+<section id="topics-to-know" class="title-slide slide level1 center">
+<h1>Topics to Know</h1>
+<p>Review: <a href="https://srvanderplas.github.io/stat-computing-r-python/part-gen-prog/00-gen-prog.html">General Programming</a></p>
+<p>Know how to:</p>
+<ul>
+<li><strong>Create a data table structure</strong></li>
+<li><strong>Get a column, row, or value from a data table</strong></li>
+<li><strong>Get an item from a list</strong></li>
+</ul>
+<p><img data-src="fig/programming-why.gif" class="absolute" style="bottom: 50%; right: 10px; width: 30%; "></p>
+</section>
+
+<section id="homework---cipher" class="title-slide slide level1 center">
+<h1>Homework - Cipher</h1>
+<ul>
+<li><p>Goal for today: push at least one commit to your Github repo</p></li>
+<li><p>Not all statements that execute are correct (Part 1: fix mistakes)</p></li>
+<li><p>Part 2: write a decoder</p></li>
+<li><p>Part 3: Decode the secret message!</p></li>
+</ul>
+<iframe width="100%" height="600px" src="https://unl-statistics.github.io/stat251/homework/03-cipher.html"></iframe>
+</section>
+
+<section id="vector-to-matrices" class="title-slide slide level1 center">
+<h1>Vector to matrices</h1>
+<p>default in R is to fill columns first</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a>x <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">9</span></span>
+<span id="cb2-2"><a></a><span class="fu">matrix</span>(x, <span class="at">ncol=</span><span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>     [,1] [,2] [,3]
+[1,]    1    4    7
+[2,]    2    5    8
+[3,]    3    6    9</code></pre>
+</div>
+</div>
+</section>
+
+<section id="vector-to-matrices-1" class="title-slide slide level1 center">
+<h1>Vector to matrices</h1>
+<p>in python rows are filled first - need to set <code>order</code> to False</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb4-2"><a></a>x <span class="op">=</span> np.arange(<span class="dv">1</span>, <span class="dv">10</span>)</span>
+<span id="cb4-3"><a></a>matrix_x <span class="op">=</span> x.reshape(<span class="op">-</span><span class="dv">1</span>, <span class="dv">3</span>, order<span class="op">=</span><span class="st">'F'</span>)</span>
+<span id="cb4-4"><a></a></span>
+<span id="cb4-5"><a></a><span class="bu">print</span>(matrix_x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[[1 4 7]
+ [2 5 8]
+ [3 6 9]]</code></pre>
+</div>
+</div>
+</section>
+
+<section id="extra-credit" class="title-slide slide level1 center">
+<h1>Extra Credit</h1>
+<p>Using the same code, create another secret message (i.e.&nbsp;you have to work the steps backwards) for a text of your choosing.</p>
+<p>Add the R/python code necessary to create the secret message in a code chunk in <code>index.qmd</code>.</p>
+<p>Add your encoded secret message as a file to your repo.</p>
 </section>
 
 <section id="next-time" class="title-slide slide level1 center">
 <h1>Next Time</h1>
 <ul>
-<li><p>Review</p>
-<ul>
-<li>indexing,</li>
-<li>data frames/structures,</li>
-<li>thinking in column-shaped objects</li>
-</ul></li>
-<li><p>Coming up: Self Assessment quiz</p></li>
+<li><p>Start on new unit - reading data!</p></li>
+<li><p>Before class:<br>
+Read <a href="https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/01-data-input.html">Data Input</a> and <a href="https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/02a-eda.html">Exploratory Data Analysis</a></p></li>
 </ul>
 
 

@@ -28,3 +28,23 @@
   type: reading
   image: figs/reading.svg
   is_live: true
+- path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/01-data-input.html
+  title: Data Input
+  date: '2025-02-11'
+  pub.date: '2025-02-06'
+  categories:
+  - reading
+  - .na.character
+  type: reading
+  image: figs/reading.svg
+  is_live: true
+- path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/02a-eda.html
+  title: Exploratory Data Analysis
+  date: '2025-02-11'
+  pub.date: '2025-02-06'
+  categories:
+  - reading
+  - .na.character
+  type: reading
+  image: figs/reading.svg
+  is_live: true

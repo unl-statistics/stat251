@@ -52,11 +52,11 @@ schedule:
         categories: [HW, Week02]
         date: 2025-02-04
         pub-date: 2023-01-01
-      - href: slides/03b-review-cipher.qmd
+      - href: slides/03a-review-cipher.qmd
         categories: [slides]
         date: 2025-02-04
         pub-date: 2023-02-03
-      - href: slides/06-review-cipher.qmd
+      - href: slides/03b-review-cipher.qmd
         categories: [slides]
         date: 2025-02-06
         pub-date: 2023-02-05
@@ -68,13 +68,13 @@ schedule:
     materials:
       - path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/01-data-input.html
         title: Data Input
-        date: 2025-02-12
-        pub-date: 2025-02-08
+        date: 2025-02-11
+        pub-date: 2025-02-06
         categories: [reading]
       - path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/02a-eda.html
         title: Exploratory Data Analysis
-        date: 2025-02-12
-        pub-date: 2025-02-08
+        date: 2025-02-11
+        pub-date: 2025-02-06
         categories: [reading]
       - href: slides/07-input.qmd
         categories: [slides]
@@ -221,11 +221,11 @@ auto-publish:
   live-as-of: "Sys.time()" # Either Sys.time() or a date parseable by lubridate::ymd()
 
 instructors:
-  - name: Susan Vanderplas
-    email: "susan.vanderplas@unl.edu"
-    quartopub-name: drvanderplas
+  - name: Heike Hofmann
+    email: "hhofmann4@unl.edu"
+    quartopub-name: hhofmann
 
-semester: "Spring, 2024"
+semester: "Spring, 2025"
 calendar:
   - name: Week01
     date: 2025-01-21
