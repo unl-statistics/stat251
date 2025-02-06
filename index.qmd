@@ -13,7 +13,6 @@ listing:
   - slides/02b-review-topics.qmd
   - slides/03a-review-cipher.qmd
   - slides/03b-review-cipher.qmd
-  - slides/07-input.qmd
   - syllabus.qmd
   - reading.yml
   sort: date desc

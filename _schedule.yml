@@ -79,7 +79,7 @@ schedule:
       - href: slides/07-input.qmd
         categories: [slides]
         date: 2025-02-13
-        pub-date: 2025-02-06
+        pub-date: 2025-02-13
       - href: homework/04-cookies.qmd
         categories: [HW, Week04]
         date: 2025-02-18
