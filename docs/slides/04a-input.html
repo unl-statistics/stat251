@@ -10,8 +10,8 @@
   <meta name="generator" content="quarto-1.6.40">
 
   <meta name="author" content="Stat 251">
-  <meta name="dcterms.date" content="2025-02-06">
-  <title>Stat 251 - Data Wrangling – Review - Cipher</title>
+  <meta name="dcterms.date" content="2025-02-11">
+  <title>Stat 251 - Data Wrangling – Reading In Data</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -29,71 +29,6 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-    /* CSS for syntax highlighting */
-    pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { line-height: 1.25; }
-    pre > code.sourceCode > span:empty { height: 1.2em; }
-    .sourceCode { overflow: visible; }
-    code.sourceCode > span { color: inherit; text-decoration: inherit; }
-    div.sourceCode { margin: 1em 0; }
-    pre.sourceCode { margin: 0; }
-    @media screen {
-    div.sourceCode { overflow: auto; }
-    }
-    @media print {
-    pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-    }
-    pre.numberSource code
-      { counter-reset: source-line 0; }
-    pre.numberSource code > span
-      { position: relative; left: -4em; counter-increment: source-line; }
-    pre.numberSource code > span > a:first-child::before
-      { content: counter(source-line);
-        position: relative; left: -1em; text-align: right; vertical-align: baseline;
-        border: none; display: inline-block;
-        -webkit-touch-callout: none; -webkit-user-select: none;
-        -khtml-user-select: none; -moz-user-select: none;
-        -ms-user-select: none; user-select: none;
-        padding: 0 4px; width: 4em;
-        color: #aaaaaa;
-      }
-    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-    div.sourceCode
-      { color: #003b4f; background-color: #f1f3f5; }
-    @media screen {
-    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-    }
-    code span { color: #003b4f; } /* Normal */
-    code span.al { color: #ad0000; } /* Alert */
-    code span.an { color: #5e5e5e; } /* Annotation */
-    code span.at { color: #657422; } /* Attribute */
-    code span.bn { color: #ad0000; } /* BaseN */
-    code span.bu { } /* BuiltIn */
-    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
-    code span.ch { color: #20794d; } /* Char */
-    code span.cn { color: #8f5902; } /* Constant */
-    code span.co { color: #5e5e5e; } /* Comment */
-    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
-    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
-    code span.dt { color: #ad0000; } /* DataType */
-    code span.dv { color: #ad0000; } /* DecVal */
-    code span.er { color: #ad0000; } /* Error */
-    code span.ex { } /* Extension */
-    code span.fl { color: #ad0000; } /* Float */
-    code span.fu { color: #4758ab; } /* Function */
-    code span.im { color: #00769e; } /* Import */
-    code span.in { color: #5e5e5e; } /* Information */
-    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
-    code span.op { color: #5e5e5e; } /* Operator */
-    code span.ot { color: #003b4f; } /* Other */
-    code span.pp { color: #ad0000; } /* Preprocessor */
-    code span.sc { color: #5e5e5e; } /* SpecialChar */
-    code span.ss { color: #20794d; } /* SpecialString */
-    code span.st { color: #20794d; } /* String */
-    code span.va { color: #111111; } /* Variable */
-    code span.vs { color: #20794d; } /* VerbatimString */
-    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-cafb11b5f51d1c6dca451fea611f5bab.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -192,8 +127,8 @@
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" data-background-image="fig/cipher.png" data-background-opacity="0.10" data-background-size="contain" class="quarto-title-block center">
-  <h1 class="title">Review - Cipher</h1>
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">Reading In Data</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -203,120 +138,35 @@ Stat 251
 </div>
 </div>
 
-  <p class="date">2025-02-06</p>
+  <p class="date">2025-02-11</p>
 </section>
-<section id="homework-2" class="title-slide slide level1 center">
-<h1>Homework 2</h1>
-<ul>
-<li><p>graded with feedback</p></li>
-<li><p>you can re-submit (once) to react to the feedback (submit the link in Canvas again, so that I know you are ready for another round of grading)</p></li>
-<li><p>extra credit: timing of palindrome evaluation</p></li>
-</ul>
-</section>
-
-<section id="speed-test-r-vs-python" class="title-slide slide level1 center">
-<h1>Speed test: R vs python</h1>
-<p>Five runs of 10,000 evaluations of checking vector for palindromes:</p>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>  run replications R [in s] python [in s]
-1   1        10000    0.514     0.1686378
-2   2        10000    0.516     0.1630241
-3   3        10000    0.513     0.1622581
-4   4        10000    0.515     0.1622709
-5   5        10000    0.516     0.1628715</code></pre>
-</div>
-</div>
-<p>What information do we gain from the multiple runs?</p>
-<p>What do you expect to happen for lower number of replicates (besides faster times)?</p>
-</section>
-
-<section id="number-of-replications" class="title-slide slide level1 center">
-<h1>Number of replications</h1>
-
-<img data-src="03b-review-cipher_files/figure-revealjs/unnamed-chunk-2-1.png" width="960" class="r-stretch"></section>
-
-<section id="other-factors-machine-load" class="title-slide slide level1 center">
-<h1>Other factors: machine load</h1>
-
-<img data-src="03b-review-cipher_files/figure-revealjs/unnamed-chunk-3-1.png" width="960" class="r-stretch"></section>
-
-<section id="due-dates-coming-up" class="title-slide slide level1 center">
-<h1>Due dates coming up</h1>
-<ul>
-<li><p>Readings: Data input - quiz before class on Tuesday</p></li>
-<li><p>Homework #3 due on Tuesday</p></li>
-</ul>
-</section>
-
 <section id="topics-to-know" class="title-slide slide level1 center">
 <h1>Topics to Know</h1>
-<p>Review: <a href="https://srvanderplas.github.io/stat-computing-r-python/part-gen-prog/00-gen-prog.html">General Programming</a></p>
-<p>Know how to:</p>
 <ul>
-<li><strong>Create a data table structure</strong></li>
-<li><strong>Get a column, row, or value from a data table</strong></li>
-<li><strong>Get an item from a list</strong></li>
+<li>Types of data formats<br>
+(raw text, binary file, spreadsheet, database, non-tabular data)</li>
+<li>How to read in raw text files (fixed width vs.&nbsp;delimited)</li>
+<li>How to read in spreadsheets</li>
+<li>Recognize binary files (e.g.&nbsp;Rdata or RDS)</li>
 </ul>
-<p><img data-src="fig/programming-why.gif" class="absolute" style="bottom: 50%; right: 10px; width: 30%; "></p>
+<p><a href="https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/01-data-input.html">Reading</a></p>
 </section>
 
-<section id="homework---cipher" class="title-slide slide level1 center">
-<h1>Homework - Cipher</h1>
+<section id="homework---reading-data-with-cookies" class="title-slide slide level1 center">
+<h1>Homework - Reading Data with Cookies</h1>
 <ul>
-<li><p>Goal for today: push at least one commit to your Github repo</p></li>
-<li><p>Not all statements that execute are correct (Part 1: fix mistakes)</p></li>
-<li><p>Part 2: write a decoder</p></li>
-<li><p>Part 3: Decode the secret message!</p></li>
+<li><p>Make sure to accept the homework by following the Github classroom link</p></li>
+<li><p>Focus on asking questions about your data (and documenting them)</p></li>
+<li><p>What weird stuff can you find?</p></li>
 </ul>
-<iframe width="100%" height="600px" src="https://unl-statistics.github.io/stat251/homework/03-cipher.html"></iframe>
-</section>
-
-<section id="vector-to-matrices" class="title-slide slide level1 center">
-<h1>Vector to matrices</h1>
-<p>default in R is to fill columns first</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a>x <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">9</span></span>
-<span id="cb2-2"><a></a><span class="fu">matrix</span>(x, <span class="at">ncol=</span><span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>     [,1] [,2] [,3]
-[1,]    1    4    7
-[2,]    2    5    8
-[3,]    3    6    9</code></pre>
-</div>
-</div>
-</section>
-
-<section id="vector-to-matrices-1" class="title-slide slide level1 center">
-<h1>Vector to matrices</h1>
-<p>in python rows are filled first - need to set <code>order</code> to False</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb4-2"><a></a>x <span class="op">=</span> np.arange(<span class="dv">1</span>, <span class="dv">10</span>)</span>
-<span id="cb4-3"><a></a>matrix_x <span class="op">=</span> x.reshape(<span class="op">-</span><span class="dv">1</span>, <span class="dv">3</span>, order<span class="op">=</span><span class="st">'F'</span>)</span>
-<span id="cb4-4"><a></a></span>
-<span id="cb4-5"><a></a><span class="bu">print</span>(matrix_x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[[1 4 7]
- [2 5 8]
- [3 6 9]]</code></pre>
-</div>
-</div>
-</section>
-
-<section id="extra-credit" class="title-slide slide level1 center">
-<h1>Extra Credit</h1>
-<p>Write an encoder for your decoder, then use it to create another secret message.</p>
-<p>Add the R/python code for your encoder in a code chunk in <code>index.qmd</code>.</p>
-<p>Add your encoded secret message as a file to your repo.</p>
+<iframe width="100%" height="600px" src="https://unl-statistics.github.io/stat251/homework/04-cookies.html"></iframe>
 </section>
 
 <section id="next-time" class="title-slide slide level1 center">
 <h1>Next Time</h1>
 <ul>
-<li><p>Start on new unit - reading data!</p></li>
-<li><p>Before class:<br>
-Read <a href="https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/01-data-input.html">Data Input</a> and <a href="https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/02a-eda.html">Exploratory Data Analysis</a></p></li>
+<li><p>Continue working on Homework 4</p></li>
+<li><p>Read the <a href="https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/02a-eda.html">EDA chapter</a> if you haven’t already</p></li>
 </ul>
 
 

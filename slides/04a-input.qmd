@@ -1,0 +1,43 @@
+---
+title: Reading In Data
+author: Stat 251
+categories: slides
+engine: knitr
+format:
+  revealjs:
+    navigation-mode: vertical
+    logo: N.svg
+    theme: inverse.scss
+    includes:
+      in_header: header.html
+date: '2025-02-11'
+---
+
+# Topics to Know
+
+- Types of data formats    
+(raw text, binary file, spreadsheet, database, non-tabular data)
+- How to read in raw text files (fixed width vs. delimited)
+- How to read in spreadsheets
+- Recognize binary files (e.g. Rdata or RDS)
+
+[Reading](https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/01-data-input.html)
+
+
+# Homework - Reading Data with Cookies
+
+- Make sure to accept the homework by following the Github classroom link
+
+- Focus on asking questions about your data (and documenting them)
+- What weird stuff can you find?
+
+```{=html}
+<iframe width="100%" height = "600px" src="https://unl-statistics.github.io/stat251/homework/04-cookies.html"></iframe>
+```
+
+
+# Next Time
+
+- Continue working on Homework 4
+  
+- Read the [EDA chapter](https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/02a-eda.html) if you haven't already

@@ -76,20 +76,20 @@ schedule:
         date: 2025-02-11
         pub-date: 2025-02-06
         categories: [reading]
-      - href: slides/07-input.qmd
+      - href: slides/04a-input.qmd
         categories: [slides]
-        date: 2025-02-13
+        date: 2025-02-11
         pub-date: 2025-02-13
       - href: homework/04-cookies.qmd
         categories: [HW, Week04]
         date: 2025-02-18
       - path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/02b-graphics.html
         title: Data Visualization
-        date: 2025-02-19
+        date: 2025-02-18
         categories: [reading]
       - path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/02c-good-graphics.html
         title: Good Graphics
-        date: 2025-02-19
+        date: 2025-02-18
         categories: [reading]
       - href: homework/05-graphics-groundhogs.qmd
         categories: [HW, Week05]
@@ -101,7 +101,7 @@ schedule:
       - href: slides/09-graphics.qmd
         categories: [slides]
         date: 2025-02-20
-        pub-date: 2025-02-19
+        pub-date: 2025-02-18
       - href: slides/10-graphics.qmd
         categories: [slides]
         date: 2025-02-22

@@ -130,9 +130,9 @@ print(matrix_x)
 
 # Extra Credit
 
-Using the same code, create another secret message (i.e. you have to work the steps backwards) for a text of your choosing. 
+Write an encoder for your decoder, then use it to create another secret message.
 
-Add the R/python code necessary to create the secret message in a code chunk in `index.qmd`. 
+Add the R/python code for your encoder in a code chunk in `index.qmd`. 
 
 Add your encoded secret message as a file to your repo.
 
