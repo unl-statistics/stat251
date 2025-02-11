@@ -13,6 +13,21 @@ format:
 date: '2025-02-11'
 ---
 
+# Homework 3
+
+- Solutions look good (feedback on anything you pushed to github)
+
+- Mini stumble block: the punctuation vector
+
+```
+punctuation <- c(".", ",", "!", "?", "'", """, "(", ")", " ", "-", ";", ":")
+```
+Do not just delete the `"""` 
+
+instead use single quotes `'"'` or backslash `"\""`
+
+
+
 # Topics to Know
 
 - Types of data formats    
@@ -21,7 +36,7 @@ date: '2025-02-11'
 - How to read in spreadsheets
 - Recognize binary files (e.g. Rdata or RDS)
 
-[Reading](https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/01-data-input.html)
+[Reading: data input](https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/01-data-input.html)
 
 
 # Homework - Reading Data with Cookies
