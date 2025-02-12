@@ -80,6 +80,10 @@ schedule:
         categories: [slides]
         date: 2025-02-11
         pub-date: 2025-02-11
+      - href: slides/04b-eda.qmd
+        categories: [slides]
+        date: 2025-02-13
+        pub-date: 2025-02-11
       - href: homework/04-cookies.qmd
         categories: [HW, Week04]
         date: 2025-02-18

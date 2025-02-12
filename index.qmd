@@ -15,6 +15,7 @@ listing:
   - slides/03a-review-cipher.qmd
   - slides/03b-review-cipher.qmd
   - slides/04a-input.qmd
+  - slides/04b-eda.qmd
   - syllabus.qmd
   - reading.yml
   sort: date desc

@@ -1,0 +1,102 @@
+---
+title: Data Explorations
+author: Stat 251
+categories:
+- slides
+- Week04
+engine: knitr
+format:
+  revealjs:
+    navigation-mode: vertical
+    logo: N.svg
+    theme: inverse.scss
+    includes:
+      in_header: header.html
+date: '2025-02-13'
+---
+
+# Exploratory Data Analysis
+
+- For observed data (rather than a study), a (descriptive) data exploration is often the only thing we can do
+
+- But with any new data set, you should do some initial exploration: what are the assumptions (what have you been told about the data?) - are implied expectations holding up?
+  
+- Make sure to read through the [EDA chapter](https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/02a-eda.html) 
+
+
+# In-class exercise
+
+During an unusual episode, a number of people were exposed and some died. 
+You are asked to determine the nature of the unusual episode by asking **data-motivated** yes/no questions 
+
+You will see two tables: 
+
+  - deaths by economic status and sex
+
+  - deaths by economic status and age
+
+Before seeing the data 
+
+- what are your expectations regarding *exposure* by economic status, by sex, and by age?
+
+- what are your expectations regarding *death numbers/rates* by economic status, by sex, and by age?
+
+What anomalies do you notice?
+
+
+
+# Deaths by Economic Status and Sex
+ 
+
+    By Economic Status and Sex
+    ---------------------------------------------------------------------------
+               Population Exposed         Number of            Deaths per 100
+                    to Risk                 Deaths            Exposed to Risk
+    Economic   ----------------------------------------------------------------
+    Status     Male  Female  Both     Male  Female  Both     Male  Female  Both
+    ---------------------------------------------------------------------------
+    I          180     145    325     118      4     122      65      3     37
+    II         179     106    285     154     13     167      87     12     59
+    III        510     196    706     422    106     528      83     54     73
+    IV         862      23    885     670      3     673      78     13     76
+    ---------------------------------------------------------------------------
+    Total      1731    470   2201     1364    126   1490      80     27     67
+ 
+
+ 
+ 
+# Deaths by Economic Status and Age
+
+ 
+ 
+                           By Economic Status and Age
+    ---------------------------------------------------------------------------
+               Population Exposed         Number of            Deaths per 100
+                    to Risk                 Deaths            Exposed to Risk
+    Economic  -----------------------------------------------------------------
+    Status    Adult   Child  Both    Adult   Child  Both    Adult   Child  Both
+    ---------------------------------------------------------------------------
+    I          319      6     325     122      0     122      38      0     37
+    II         261     24     285     167      0     167      64      0     59
+    III        627     79     706     476     52     528      76     66     73
+    IV         885      0     885     673      0     673      76      -     76
+    ---------------------------------------------------------------------------
+    Total      2092    109   2201     1438    52    1490      69     48     67
+ 
+
+
+
+
+# Homework - Reading Data with Cookies
+
+- Work on homework #4: what are your expectations regarding the data?
+
+- One way of asking questions, is to re-phrase an expectation in form of '(how) does the data deviate from ...?'
+
+- Generally, when the data does not meet expectations, we find weird stuff ...
+
+```{=html}
+<iframe width="100%" height = "600px" src="https://unl-statistics.github.io/stat251/homework/04-cookies.html"></iframe>
+```
+
+
