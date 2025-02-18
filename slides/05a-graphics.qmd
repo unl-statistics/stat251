@@ -30,11 +30,18 @@ You should have read:
     - Perception & Cognition
     - Use the least complicated chart that still works
 
+# Make Graphics!
+
+- Part I: Make visual summaries for two new data sets and think about mappings
+
+- Part II: Use your knowledge to create the worst!
+
+
 # Resources for this week
 
 - [R](https://r-graph-gallery.com/) and [Python](https://python-graph-gallery.com/) Graph Galleries
 
-- [Ugly Chart Challenge](https://srvanderplas.github.io/unl-stat850/homework/08-results.html) examples from last semester's graduate class
+- [Ugly Chart Challenge](https://stat850-at-unl.github.io/stat-850-08-graphics-graphics-ugly/index_files/figure-html/unnamed-chunk-3-1.png) [variant](https://stat850-at-unl.github.io/stat-850-08-graphics-graphics-ugly/index_files/figure-html/unnamed-chunk-3-2.png) example from last semester's graduate class
 
 - [Customizing ggplot2 plots](https://rdpeng.github.io/RProgDA/customizing-ggplot2-plots.html)
     - Also an RStudio addin package - `ggThemeAssist`
@@ -50,7 +57,7 @@ You should have read:
 :::
 
 ```{=html}
-<iframe width="100%" height = "500px" src="https://unl-statistics/stat251/homework/05-graphics-groundhogs.html"></iframe>
+<iframe width="100%" height = "500px" src="https://unl-statistics.github.io/stat251/homework/05-graphics-groundhogs.html"></iframe>
 ```
 
 
