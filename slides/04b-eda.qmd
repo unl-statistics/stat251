@@ -35,13 +35,15 @@ You will see two tables:
 
   - deaths by economic status and age
 
+# What would you expect?
+
 Before seeing the data 
 
 - what are your expectations regarding *exposure* by economic status, by sex, and by age?
 
 - what are your expectations regarding *death numbers/rates* by economic status, by sex, and by age?
 
-What anomalies do you notice?
+Now we look at the data: What anomalies do you notice?
 
 
 

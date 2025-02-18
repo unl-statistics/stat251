@@ -1,0 +1,15 @@
+---
+title: 'Homework 5: Graphics and Groundhogs'
+date: '2025-02-25'
+execute-dir: ../homework-repos/05-graphics
+engine: knitr
+author: Homework
+categories:
+- HW
+- Week05
+---
+
+Note: This assignment must be submitted in github classroom.
+
+{{< include ../homework-repos/05-graphics/index.qmd >}}
+
