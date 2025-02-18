@@ -2,7 +2,9 @@
   {
     "listing": "/index.html",
     "items": [
+      "/homework/05-graphics-groundhogs.html",
       "/homework/04-cookies.html",
+      "/slides/05a-graphics.html",
       "/slides/04b-eda.html",
       "/homework/03-cipher.html",
       "/slides/04a-input.html",

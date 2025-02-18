@@ -68,3 +68,13 @@
   type: reading
   image: figs/reading.svg
   is_live: true
+- path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/03-data-cleaning.html
+  title: Data Cleaning
+  date: '2025-02-26'
+  pub.date: '2025-02-17'
+  categories:
+  - reading
+  - .na.character
+  type: reading
+  image: figs/reading.svg
+  is_live: true

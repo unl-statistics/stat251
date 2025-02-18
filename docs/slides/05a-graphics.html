@@ -10,8 +10,8 @@
   <meta name="generator" content="quarto-1.6.40">
 
   <meta name="author" content="Stat 251">
-  <meta name="dcterms.date" content="2025-02-13">
-  <title>Stat 251 - Data Wrangling – Data Explorations</title>
+  <meta name="dcterms.date" content="2025-02-18">
+  <title>Stat 251 - Data Wrangling – Creating Good Graphics</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -128,7 +128,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Data Explorations</h1>
+  <h1 class="title">Creating Good Graphics</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -138,79 +138,69 @@ Stat 251
 </div>
 </div>
 
-  <p class="date">2025-02-13</p>
+  <p class="date">2025-02-18</p>
 </section>
-<section id="exploratory-data-analysis" class="title-slide slide level1 center">
-<h1>Exploratory Data Analysis</h1>
+<section id="homework-4" class="title-slide slide level1 center">
+<h1>Homework 4</h1>
+<p>Where are you at?</p>
+</section>
+
+<section id="graphics-week" class="title-slide slide level1 center">
+<h1>Graphics week!</h1>
+<p>You should have read:</p>
 <ul>
-<li><p>For observed data (rather than a study), a (descriptive) data exploration is often the only thing we can do</p></li>
-<li><p>But with any new data set, you should do some initial exploration: what are the assumptions (what have you been told about the data?) - are implied expectations holding up?</p></li>
-<li><p>Make sure to read through the <a href="https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/02a-eda.html">EDA chapter</a></p></li>
+<li><a href="https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/02b-graphics.html">Graphics</a>
+<ul>
+<li>Focus on relationships between variables</li>
+<li>Grammar of Graphics vs.&nbsp;Manual plot specification/mapping</li>
+<li>Exploratory data analysis</li>
+</ul></li>
+<li><a href="https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/02c-good-graphics.html">Good Graphics</a>
+<ul>
+<li>Perception &amp; Cognition</li>
+<li>Use the least complicated chart that still works</li>
+</ul></li>
 </ul>
 </section>
 
-<section id="in-class-exercise" class="title-slide slide level1 center">
-<h1>In-class exercise</h1>
-<p>During an unusual episode, a number of people were exposed and some died. You are asked to determine the nature of the unusual episode by asking <strong>data-motivated</strong> yes/no questions</p>
-<p>You will see two tables:</p>
+<section id="resources-for-this-week" class="title-slide slide level1 center">
+<h1>Resources for this week</h1>
 <ul>
-<li><p>deaths by economic status and sex</p></li>
-<li><p>deaths by economic status and age</p></li>
+<li><p><a href="https://r-graph-gallery.com/">R</a> and <a href="https://python-graph-gallery.com/">Python</a> Graph Galleries</p></li>
+<li><p><a href="https://srvanderplas.github.io/unl-stat850/homework/08-results.html">Ugly Chart Challenge</a> examples from last semester’s graduate class</p></li>
+<li><p><a href="https://rdpeng.github.io/RProgDA/customizing-ggplot2-plots.html">Customizing ggplot2 plots</a></p>
+<ul>
+<li>Also an RStudio addin package - <code>ggThemeAssist</code></li>
+</ul></li>
+<li><p><a href="https://www.codecademy.com/article/seaborn-design-i">Customizing seaborn plots</a></p></li>
 </ul>
 </section>
 
-<section id="what-would-you-expect" class="title-slide slide level1 center">
-<h1>What would you expect?</h1>
-<p>Before seeing the data</p>
+<section id="homework" class="title-slide slide level1 center">
+<h1>Homework</h1>
+<div class="small">
 <ul>
-<li><p>what are your expectations regarding <em>exposure</em> by economic status, by sex, and by age?</p></li>
-<li><p>what are your expectations regarding <em>death numbers/rates</em> by economic status, by sex, and by age?</p></li>
+<li>Explanations! What can you see from the plot? What is its purpose?</li>
 </ul>
-<p>Now we look at the data: What anomalies do you notice?</p>
+</div>
+<iframe width="100%" height="500px" src="https://unl-statistics/stat251/homework/05-graphics-groundhogs.html"></iframe>
 </section>
 
-<section id="deaths-by-economic-status-and-sex" class="title-slide slide level1 center">
-<h1>Deaths by Economic Status and Sex</h1>
-<pre><code>By Economic Status and Sex
----------------------------------------------------------------------------
-           Population Exposed         Number of            Deaths per 100
-                to Risk                 Deaths            Exposed to Risk
-Economic   ----------------------------------------------------------------
-Status     Male  Female  Both     Male  Female  Both     Male  Female  Both
----------------------------------------------------------------------------
-I          180     145    325     118      4     122      65      3     37
-II         179     106    285     154     13     167      87     12     59
-III        510     196    706     422    106     528      83     54     73
-IV         862      23    885     670      3     673      78     13     76
----------------------------------------------------------------------------
-Total      1731    470   2201     1364    126   1490      80     27     67</code></pre>
-</section>
+<section id="homework-rubric" class="title-slide slide level1 center">
+<h1>Homework rubric</h1>
 
-<section id="deaths-by-economic-status-and-age" class="title-slide slide level1 center">
-<h1>Deaths by Economic Status and Age</h1>
-<pre><code>                       By Economic Status and Age
----------------------------------------------------------------------------
-           Population Exposed         Number of            Deaths per 100
-                to Risk                 Deaths            Exposed to Risk
-Economic  -----------------------------------------------------------------
-Status    Adult   Child  Both    Adult   Child  Both    Adult   Child  Both
----------------------------------------------------------------------------
-I          319      6     325     122      0     122      38      0     37
-II         261     24     285     167      0     167      64      0     59
-III        627     79     706     476     52     528      76     66     73
-IV         885      0     885     673      0     673      76      -     76
----------------------------------------------------------------------------
-Total      2092    109   2201     1438    52    1490      69     48     67</code></pre>
-</section>
+<img data-src="fig/graphics-groundhogs-rubric.png" alt="Rubric for homework assignment. Data exploration is worth 2 points, and includes each variable explored and each plot described with 1-2 sentences. Grammar of graphics - probabilities and grammar of graphics - agreement are worth 1.5 points each. Ugly chart in R is worth 2.5 points, including the explanation of why the chart is ugly. Ugly chart in python is worth 2.5 points, including the explanation of why the chart is ugly." class="r-stretch"></section>
 
-<section id="homework---reading-data-with-cookies" class="title-slide slide level1 center">
-<h1>Homework - Reading Data with Cookies</h1>
+<section id="next-time" class="title-slide slide level1 center">
+<h1>Next time</h1>
 <ul>
-<li><p>Work on homework #4: what are your expectations regarding the data?</p></li>
-<li><p>One way of asking questions, is to re-phrase an expectation in form of ‘(how) does the data deviate from …?’</p></li>
-<li><p>Generally, when the data does not meet expectations, we find weird stuff …</p></li>
+<li><p>Continue working on homework assignment</p></li>
+<li><p>Brainstorming: 🧠⛈️</p>
+<ul>
+<li>how to make the textbook 📖 more effective</li>
+<li>what will motivate you to read it before class? 😜</li>
+</ul></li>
 </ul>
-<iframe width="100%" height="600px" src="https://unl-statistics.github.io/stat251/homework/04-cookies.html"></iframe>
 
 
 </section>

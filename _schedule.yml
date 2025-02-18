@@ -102,10 +102,10 @@ schedule:
         href: homework/05-graphics-results.qmd
         categories: [HW, Week05]
         date: 2025-02-27
-      - href: slides/09-graphics.qmd
+      - href: slides/05a-graphics.qmd
         categories: [slides]
-        date: 2025-02-20
-        pub-date: 2025-02-18
+        date: 2025-02-18
+        pub-date: 2025-02-16
       - href: slides/10-graphics.qmd
         categories: [slides]
         date: 2025-02-22
