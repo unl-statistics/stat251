@@ -106,6 +106,10 @@ schedule:
         categories: [slides]
         date: 2025-02-18
         pub-date: 2025-02-16
+      - href: slides/05b-graphics.qmd
+        categories: [slides]
+        date: 2025-02-20
+        pub-date: 2025-02-16
       - href: slides/10-graphics.qmd
         categories: [slides]
         date: 2025-02-22

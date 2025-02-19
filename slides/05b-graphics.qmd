@@ -1,7 +1,9 @@
 ---
-title: Finishing up Cookie Exploration
+title: Creating Good Graphics
 author: Stat 251
-categories: slides
+categories:
+- slides
+- Week05
 engine: knitr
 format:
   revealjs:
@@ -10,21 +12,27 @@ format:
     theme: inverse.scss
     includes:
       in_header: header.html
-date: '2025-02-18'
+date: '2025-02-20'
 ---
 
 # Homework 4
 
-Where are you at?
+Feedback posted on any solutions submitted before 5pm yesterday 
+
+Before the due-date you can re-submit as often as you want to. 
+
+After the due-date you have one (re-)submission. 
+
+Get started early on the homework!
+
 
 # Graphics week! {.r-fit-text}
 
-You should have read:
+Readings for Tuesday:
 
 - [Graphics](https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/02b-graphics.html)
     - Focus on relationships between variables
     - Grammar of Graphics vs. Manual plot specification/mapping
-    - Exploratory data analysis
 
 - [Good Graphics](https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/02c-good-graphics.html)
     - Perception & Cognition
