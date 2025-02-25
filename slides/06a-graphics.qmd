@@ -1,0 +1,264 @@
+---
+title: Survey Results and Groundhog Graphics
+author: Stat 251
+categories:
+- slides
+- Week05
+engine: knitr
+format:
+  revealjs:
+    navigation-mode: vertical
+    logo: N.svg
+    theme: inverse.scss
+    includes:
+      in_header: header.html
+date: '2025-02-24'
+---
+
+# Survey Results
+
+- **What is helping me to learn in this class?**
+
+textbook for reading quiz
+
+trouble-shooting in class 
+
+work time in class
+
+examples in class
+
+talking with classmates
+
+
+#
+
+- **What am I doing to improve my learning in the course?**
+
+ask questions
+
+starting homework early, think about it during the week
+
+look things up: textbook, resources outside the class (videos, other articles)
+
+check homework before class to see if there are immediate questions
+
+
+# 
+- **What changes are needed in this course to improve learning?**
+
+More clarity - 
+
+  How does homework tie in with requirements?
+  
+  clearer materials
+
+Sample solution for homework 
+
+
+#
+- **What do I need to do to improve my learning in this course?**
+
+Ask more questions
+
+Practice coding
+
+Do readings earlier, try to absorb more information from readings
+
+Be more present in class/pay better attention
+
+
+# Some Logistics
+
+Homework #5 due date: Thursday night (11:59 pm)
+
+All subsequent due-dates for homework assignments will be Thursday night
+
+Keep due-dates for readings and quizzes on Tuesday
+
+Plan for Thursdays: 
+  - if there are questions on the current homework assignment, work on that, 
+  - start on the new assignment
+
+
+# Homework: Graphics
+
+- How does the homework tie to the readings? 
+
+- Working on skills: how to make graphics
+
+- Work on concepts: what are mappings, and how do they effect the conclusions
+
+- Work on presentation: what are more effective ways of presenting information
+
+
+# Homework rubric
+
+![](fig/graphics-groundhogs-rubric.png){fig-alt="Rubric for homework assignment. Data exploration is worth 2 points, and includes each variable explored and each plot described with 1-2 sentences. Grammar of graphics - probabilities and grammar of graphics - agreement are worth 1.5 points each. Ugly chart in R is worth 2.5 points, including the explanation of why the chart is ugly. Ugly chart in python is worth 2.5 points, including the explanation of why the chart is ugly."}
+
+
+
+# Graphics week homework
+
+- Part I: Make visual summaries for two new data sets and think about mappings
+
+- Part II: Use your knowledge to create the worst!
+
+
+# Data Exploration
+
+Make charts for all variables that are listed by name:
+
+`groundhogs.csv`
+
+  - lat, long
+  - country
+  - isGroundhog
+  - active
+  - predictionsCount
+
+`predictions.csv`
+
+  - isGroundhog
+  - year
+  - shadow
+
+
+# Variable `active`
+
+```{r warning=FALSE, message=FALSE, echo = TRUE}
+library(tidyverse)
+groundhogs <- read.csv("https://raw.githubusercontent.com/stat-assignments/eda-groundhogs/97ab0e01b64aa3a1749247983a9b05a0c30b5c0c/groundhogs.csv")
+groundhogs %>% ggplot(aes(x = active)) + geom_bar()
+```
+This is a barchart of the variable `active`, the variable is mapped to the x axis,  the count for each bar (corresponding to the height of the bars) is mapped to y. Finding: Very few (`r sum(groundhogs$active==0)`) groundhogs are not active. 
+
+# Probabilities and Agreement
+
+Answer the following two questions using charts. Explain your chart, and explain how it answers the question.
+
+**Do different groundhogs have different probabilities of predicting 6 more weeks of winter?**
+
+**How much do North American groundhogs tend to agree on their predictions?**
+
+# 
+
+Do different groundhogs have different probabilities of predicting 6 more weeks of winter?
+
+
+
+```{r echo = TRUE}
+predictions <- read.csv("https://raw.githubusercontent.com/stat-assignments/eda-groundhogs/refs/heads/main/groundhog-predictions.csv")
+
+predictions %>% 
+  mutate(name = reorder(factor(name), name, length)) %>%
+  ggplot(aes(x = name)) + geom_bar() +
+  geom_bar(aes( weight = shadow), fill = "darkorange") + 
+  theme(axis.text.x = element_text(angle = 60, hjust = 1)) + 
+  ggtitle("Number of predictions\nNumber of times seeing a shadow in orange")
+
+```
+
+What about missing values in the shadow variable?
+
+#
+
+How do we need to change the previous chart?
+
+```{r echo = TRUE}
+predictions <- read.csv("https://raw.githubusercontent.com/stat-assignments/eda-groundhogs/refs/heads/main/groundhog-predictions.csv")
+
+predictions %>% 
+  filter(!is.na(shadow)) %>%
+  mutate(name = reorder(factor(name), name, length)) %>%
+  ggplot(aes(x = name)) + geom_bar(aes(fill=factor(shadow)), position = "fill") +
+  theme(axis.text.x = element_text(angle = 60, hjust = 1)) 
+
+```
+limitations: different groundhogs have made very different number of predictions (and for different years)
+
+#
+How much do North American groundhogs tend to agree on their predictions?
+
+```{r}
+predictions %>% 
+  filter(!is.na(shadow), year > 2009) %>%
+  ggplot(aes( x = year, fill = factor(shadow))) + geom_bar(position="fill")
+```
+
+# 
+For years since 2010 ... in each year close to 50/50 shadow/noshadow prediction - that's the least amount of agreement we can possibly get!
+
+```{r}
+predictions %>% 
+  filter(!is.na(shadow), year > 2009) %>%
+  ggplot(aes( x = year, fill = factor(shadow))) + geom_bar(position="fill")
+```
+
+# 
+But ... when we color points by prediction, there seems to be regional agreement
+
+```{r}
+predictions %>% 
+  filter(!is.na(shadow), year > 2011) %>%
+  ggplot(aes( x = long, y = lat, colour = factor(shadow))) + geom_point() + 
+  facet_wrap(~year)
+```
+Is this perceived agreement real?
+
+#
+Which plot shows the most geographic agreement?
+```{r fig.width=12, fig.height = 8}
+library(nullabor)
+sample_year <- sample(2011:2023, 1)
+data <- predictions %>% filter(year == sample_year, !is.na(shadow)) %>%
+  mutate(shadow = factor(shadow))
+
+pos <- sample(16, 1)
+lineup(null_permute('shadow'), data, pos = pos) %>%
+  ggplot(aes(x = long, y = lat, colour = shadow)) + 
+  geom_point() + facet_wrap(~.sample) + 
+  theme_bw()
+
+```
+
+# 
+
+year was `r sample_year`
+data is in `r pos`
+
+... maybe there is not even regional geographic agreement between the predictions.
+
+Lineups help us to calibrate our eyes and distinguish random patterns from real visual findings.
+
+
+# Resources for this week
+
+- [R](https://r-graph-gallery.com/) and [Python](https://python-graph-gallery.com/) Graph Galleries
+
+- [Ugly Chart Challenge](https://stat850-at-unl.github.io/stat-850-08-graphics-graphics-ugly/index_files/figure-html/unnamed-chunk-3-1.png) [variant](https://stat850-at-unl.github.io/stat-850-08-graphics-graphics-ugly/index_files/figure-html/unnamed-chunk-3-2.png) example from last semester's graduate class
+
+- [Customizing ggplot2 plots](https://rdpeng.github.io/RProgDA/customizing-ggplot2-plots.html)
+    - Also an RStudio addin package - `ggThemeAssist`
+
+- [Customizing seaborn plots](https://www.codecademy.com/article/seaborn-design-i)
+
+
+# Homework
+::: small
+
+- Explanations! What can you see from the plot? What is its purpose?
+
+:::
+
+```{=html}
+<iframe width="100%" height = "500px" src="https://unl-statistics.github.io/stat251/homework/05-graphics-groundhogs.html"></iframe>
+```
+
+
+# Next time
+
+- Continue working on homework assignment
+
+- Brainstorming: &#x1F9E0;&#x26C8;&#xFE0F;
+    - how to make the textbook &#x1F4D6; more effective 
+    - what will motivate you to read it before class? &#x1F61C;
