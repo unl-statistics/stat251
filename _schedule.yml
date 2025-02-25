@@ -122,24 +122,29 @@ schedule:
     materials:
       - path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/03-data-cleaning.html
         title: Data Cleaning
-        date: 2025-02-26
+        date: 2025-02-25
         categories: [reading]
       - href: homework/06-data-manip.qmd
         categories: [HW, Week06]
         date: 2025-03-03
       - title: Practice Exam (2023)
         href: exam/2023-midterm/index.qmd
-        date: 2025-02-27
-        pub-date: 2025-02-26
+        date: 2025-03-04
+        pub-date: 2025-02-25
+        categories: [Exam, Week07]
+      - title: Practice Exam (2024)
+        href: exam/2024-midterm/index.qmd
+        date: 2025-03-04
+        pub-date: 2025-02-25
         categories: [Exam, Week07]
       - title: Exam Objectives
-        href: exam/2025-midterm/objectives.qmd
-        date: 2025-03-05
-        pub-date: 2025-02-26
+        href: exam/2023-midterm/objectives.qmd
+        date: 2025-03-06
+        pub-date: 2025-02-25
         categories: [Exam, Week07]
       - href: exam/2025-midterm/index.qmd
-        date: 2025-03-07
-        pub-date: 2025-03-05
+        date: 2025-03-06
+        pub-date: 2025-03-04
         categories: [Exam, Week07]
       - path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/04-strings.html
         title: Strings

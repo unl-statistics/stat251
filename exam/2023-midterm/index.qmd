@@ -1,14 +1,12 @@
 ---
 title: Practice Exam (2023)
 author: Your Name
-date: '2025-02-27'
+date: '2025-03-04'
 categories:
 - Exam
 - Week07
-- Week06
 type: exam
 image: ../../figs/exam.svg
-editor: visual
 pub-date: '2023-03-05'
 ---
 
