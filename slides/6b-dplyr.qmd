@@ -1,0 +1,158 @@
+---
+title: Computing with data
+author: Stat 251
+categories:
+- slides
+- Week06
+engine: knitr
+format:
+  revealjs:
+    navigation-mode: vertical
+    logo: N.svg
+    theme: inverse.scss
+    includes:
+      in_header: header.html
+date: '2025-02-27'
+---
+
+# Where we are
+
+Plan for Thursdays: 
+
+  - if there are questions on the current homework assignment, work on that, 
+  - start on the new assignment
+
+Are there more questions for the Graphics homework? 
+
+# 
+
+... next chapter
+
+
+# Computing with data
+
+- data is the central object: 
+
+    what is `data`?
+
+- every action we do, takes a data set as an argument and returns a (modified) data set
+
+```
+data in -> action -> data out
+```
+
+# ... then ...
+
+- the pipe (in R): 
+
+pipe operator `%>%` or `|>` let's us string these actions together
+
+```
+data_in %>% action1 %>% action2 %>% action3 -> data_out
+```
+
+- the parenthesis `(` dot approach `.` `)` (in python)
+
+```
+data_out = ( data_in.action1.action2.action3.
+  action4 ) 
+```
+
+
+Read as 'then'
+
+# Data Actions
+
+small number of actions that work together (think old-timey LEGO, not play mobile)
+
+  - get a subset of the rows 
+  - get a subset of the columns 
+  - transform/add variables
+  - calculate numeric summaries
+    
+  - introduce special groupings
+
+
+# Data Actions (in R)
+
+small number of actions that work together (think old-timey LEGO, not play mobile)
+
+  - get a subset of the rows: `filter`
+  - get a subset of the columns: `select` 
+  - transform/add variables: `mutate`
+  - calculate numeric summaries: `summarize`
+    
+  - introduce special groupings: `group_by`
+    
+[posit cheat sheet](https://github.com/rstudio/cheatsheets/blob/main/data-transformation.pdf)
+
+# Data Actions (in python)
+
+small number of actions that work together (think old-timey LEGO, not play mobile)
+
+  - get a subset of the rows: `query` 
+  - get a subset of the columns: select by name or index
+  - transform/add variables: `assign`
+  - calculate numeric summaries: `describe`
+    
+  - introduce special groupings: `groupby` (and `agg` or `expanding`)
+    
+[pandas cheat sheet](https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf)
+
+# Grouping
+
+Grouping acts as a multiplier for each of the other actions
+
+Grouping by (usually categorical) variable(s) allows us to apply all of the other actions more specifically to each (combination of the) level(s) of variable(s) 
+
+ 
+
+Example (`summarize`):
+
+summary across a whole dataset
+
+    find the average height 
+
+becomes group specific
+
+    find the average height for men and women (group by gender)
+    find the average height by sport  (group by athletic discipline)
+    find the average height by sport and sex
+    
+
+# Grouping
+
+Grouping by (usually categorical) variable(s) is syntactic glue that allows us to apply all of the other actions more specifically
+
+  
+  
+
+Example (`filter`):
+
+filter across a whole dataset
+
+    find the top earner
+
+becomes group specific
+
+    find the top earner among men and women 
+    find the top earner in each athletic discipline
+    find the top earner among men and women in each athletic discipline
+
+
+# Homework 6
+
+You're ready to tackle the homework on data manipulation
+
+```{=html}
+<iframe width="100%" height = "500px" src="https://unl-statistics.github.io/stat251/homework/06-data-manip.html"></iframe>
+```
+
+
+# Next time
+
+- Continue working on homework assignment
+
+- Start of (take-home) midterm week
+
+- Prep with the [practice exam](https://unl-statistics.github.io/stat251/exam/2023-midterm/), look over the [covered topics](https://unl-statistics.github.io/stat251/exam/2023-midterm/objectives.html)

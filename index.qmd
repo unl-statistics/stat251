@@ -25,7 +25,7 @@ listing:
   - slides/05a-graphics.qmd
   - slides/05b-graphics.qmd
   - slides/06a-graphics.qmd
-  - slides/10-graphics.qmd
+  - slides/06b-dplyr.qmd
   - syllabus.qmd
   - reading.yml
   sort: date desc

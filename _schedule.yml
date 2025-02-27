@@ -114,10 +114,6 @@ schedule:
         categories: [slides]
         date: 2025-02-24
         pub-date: 2025-02-20
-      - href: slides/10-graphics.qmd
-        categories: [slides]
-        date: 2025-02-22
-        pub-date: 2025-02-21
   - unit: "Cleaning Data"
     materials:
       - path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/03-data-cleaning.html
@@ -127,6 +123,10 @@ schedule:
       - href: homework/06-data-manip.qmd
         categories: [HW, Week06]
         date: 2025-03-03
+      - href: slides/06b-dplyr.qmd
+        categories: [slides]
+        date: 2025-02-27
+        pub-date: 2025-02-20
       - title: Practice Exam (2023)
         href: exam/2023-midterm/index.qmd
         date: 2025-03-04
