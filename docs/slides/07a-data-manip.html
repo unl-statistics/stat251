@@ -166,123 +166,38 @@ Stat 251
 </ul>
 </section>
 
-<section id="midterm" class="title-slide slide level1 center">
-<h1>Midterm</h1>
+<section id="midterm-logistics" class="title-slide slide level1 center">
+<h1>Midterm Logistics</h1>
 <p>Midterm questions are open - due by Thursday before Spring Break (Mar 13)</p>
+<p>Talk to me (instructor) in case of questions - not to each other!</p>
+<p>Don’t ask (anybody but the instructor) for directed help</p>
+<iframe width="100%" height="500px" src="https://unl-statistics.github.io/stat251/exam/data-earthquakes/README.html"></iframe>
+</section>
+
+<section id="midterm-questions" class="title-slide slide level1 center">
+<h1>Midterm Questions</h1>
 <iframe width="100%" height="500px" src="https://unl-statistics.github.io/stat251/exam/data-earthquakes/index.html"></iframe>
-<p>Plan for Thursdays:</p>
-<ul>
-<li>if there are questions on the current homework assignment, work on that,</li>
-<li>start on the new assignment</li>
-</ul>
-<p>Are there more questions for the Graphics homework?</p>
-</section>
-
-<section id="section" class="title-slide slide level1 center">
-<h1></h1>
-<p>… next chapter</p>
-</section>
-
-<section id="computing-with-data" class="title-slide slide level1 center">
-<h1>Computing with data</h1>
-<ul>
-<li><p>data is the central object:</p>
-<p>what is <code>data</code>?</p></li>
-<li><p>every action we do, takes a data set as an argument and returns a (modified) data set</p></li>
-</ul>
-<pre><code>data in -&gt; action -&gt; data out</code></pre>
-</section>
-
-<section id="then" class="title-slide slide level1 center">
-<h1>… then …</h1>
-<ul>
-<li>the pipe (in R):</li>
-</ul>
-<p>pipe operator <code>%&gt;%</code> or <code>|&gt;</code> let’s us string these actions together</p>
-<pre><code>data_in %&gt;% action1 %&gt;% action2 %&gt;% action3 -&gt; data_out</code></pre>
-<ul>
-<li>the parenthesis <code>(</code> dot approach <code>.</code> <code>)</code> (in python)</li>
-</ul>
-<pre><code>data_out = ( data_in.action1.action2.action3.
-  action4 ) </code></pre>
-<p>Read as ‘then’</p>
-</section>
-
-<section id="data-actions" class="title-slide slide level1 center">
-<h1>Data Actions</h1>
-<p>small number of actions that work together (think old-timey LEGO, not play mobile)</p>
-<ul>
-<li><p>get a subset of the rows</p></li>
-<li><p>get a subset of the columns</p></li>
-<li><p>transform/add variables</p></li>
-<li><p>calculate numeric summaries</p></li>
-<li><p>introduce special groupings</p></li>
-</ul>
-</section>
-
-<section id="data-actions-in-r" class="title-slide slide level1 center">
-<h1>Data Actions (in R)</h1>
-<p>small number of actions that work together (think old-timey LEGO, not play mobile)</p>
-<ul>
-<li><p>get a subset of the rows: <code>filter</code></p></li>
-<li><p>get a subset of the columns: <code>select</code></p></li>
-<li><p>transform/add variables: <code>mutate</code></p></li>
-<li><p>calculate numeric summaries: <code>summarize</code></p></li>
-<li><p>introduce special groupings: <code>group_by</code></p></li>
-</ul>
-<p><a href="https://github.com/rstudio/cheatsheets/blob/main/data-transformation.pdf">posit cheat sheet</a></p>
-</section>
-
-<section id="data-actions-in-python" class="title-slide slide level1 center">
-<h1>Data Actions (in python)</h1>
-<p>small number of actions that work together (think old-timey LEGO, not play mobile)</p>
-<ul>
-<li><p>get a subset of the rows: <code>query</code></p></li>
-<li><p>get a subset of the columns: select by name or index</p></li>
-<li><p>transform/add variables: <code>assign</code></p></li>
-<li><p>calculate numeric summaries: <code>describe</code></p></li>
-<li><p>introduce special groupings: <code>groupby</code> (and <code>agg</code> or <code>expanding</code>)</p></li>
-</ul>
-<p><a href="https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf">pandas cheat sheet</a></p>
-</section>
-
-<section id="grouping" class="title-slide slide level1 center">
-<h1>Grouping</h1>
-<p>Grouping acts as a multiplier for each of the other actions</p>
-<p>Grouping by (usually categorical) variable(s) allows us to apply all of the other actions more specifically to each (combination of the) level(s) of variable(s)</p>
-<p>Example (<code>summarize</code>):</p>
-<p>summary across a whole dataset</p>
-<pre><code>find the average height </code></pre>
-<p>becomes group specific</p>
-<pre><code>find the average height for men and women (group by gender)
-find the average height by sport  (group by athletic discipline)
-find the average height by sport and sex</code></pre>
-</section>
-
-<section id="grouping-1" class="title-slide slide level1 center">
-<h1>Grouping</h1>
-<p>Grouping by (usually categorical) variable(s) is syntactic glue that allows us to apply all of the other actions more specifically</p>
-<p>Example (<code>filter</code>):</p>
-<p>filter across a whole dataset</p>
-<pre><code>find the top earner</code></pre>
-<p>becomes group specific</p>
-<pre><code>find the top earner among men and women 
-find the top earner in each athletic discipline
-find the top earner among men and women in each athletic discipline</code></pre>
 </section>
 
 <section id="homework-6" class="title-slide slide level1 center">
+<h1>Homework #6</h1>
+<ul>
+<li><p>relatively short - pay attention to details!</p></li>
+<li><p>one (unintentional) trap: <code>co2</code> object exists in R - leads to extremely strange numbers</p></li>
+</ul>
+</section>
+
+<section id="homework-6-1" class="title-slide slide level1 center">
 <h1>Homework 6</h1>
-<p>You’re ready to tackle the homework on data manipulation</p>
 <iframe width="100%" height="500px" src="https://unl-statistics.github.io/stat251/homework/06-data-manip.html"></iframe>
 </section>
 
 <section id="next-time" class="title-slide slide level1 center">
 <h1>Next time</h1>
 <ul>
-<li><p>Continue working on homework assignment</p></li>
-<li><p>Start of (take-home) midterm week</p></li>
-<li><p>Prep with the <a href="https://unl-statistics.github.io/stat251/exam/2023-midterm/">practice exam</a>, look over the <a href="https://unl-statistics.github.io/stat251/exam/2023-midterm/objectives.html">covered topics</a></p></li>
+<li><p>Finish up on homework #6 assignment</p></li>
+<li><p>Prepare questions!</p></li>
+<li><p>… if you have questions until then - reach out by email and/or schedule a meeting with me!</p></li>
 </ul>
 
 
