@@ -1,10 +1,45 @@
 [
   {
-    "objectID": "exam/2023-midterm/objectives.html",
-    "href": "exam/2023-midterm/objectives.html",
-    "title": "Exam Objectives",
+    "objectID": "exam/objectives.html",
+    "href": "exam/objectives.html",
+    "title": "Exam objectives",
     "section": "",
     "text": "Note: This list omits objectives from the “review” section, but they are still relevant.\n\nRead in data from common formats into R or Python\nIdentify delimiters, headers, and other essential components of files\nCreate charts designed to communicate specific aspects of the data\nDescribe charts using the grammar of graphics\nCreate layered graphics that highlight multiple aspects of the data\nEvaluate existing charts and develop new versions that improve accessibility and readability\nIdentify required sequence of steps for data cleaning\nDescribe step-by-step data cleaning process in lay terms appropriately\nApply data manipulation verbs to prepare data for analysis\nUnderstand the consequences of data cleaning steps for statistical analysis\nCreate summaries of data appropriate for analysis or display using data manipulation techniques\n\nYou have also been introduced to the objectives of Exploratory Data Analysis:\n\nUnderstand the main goals of exploratory data analysis\nGenerate and answer questions about a new data set using charts, tables, and numerical summaries"
+  },
+  {
+    "objectID": "exam/2023-midterm/index.html",
+    "href": "exam/2023-midterm/index.html",
+    "title": "Practice Exam (2023)",
+    "section": "",
+    "text": "Your goal on this exam is to demonstrate competency in as many of the objectives of chapters we’ve covered in this class so far as you can."
+  },
+  {
+    "objectID": "exam/2023-midterm/index.html#ground-rules",
+    "href": "exam/2023-midterm/index.html#ground-rules",
+    "title": "Practice Exam (2023)",
+    "section": "Ground Rules",
+    "text": "Ground Rules\n\nYou may use the textbook and the internet (but the same rules apply - you must be able to explain your answer!)\nYou may NOT confer with other people or AI entities - including posting on StackOverflow, Reddit, etc.\nYou may ask clarifying questions of Dr. Vanderplas by email/zoom or in person\nYou may use R or Python for any of these tasks, but your code must be reproducible - I must be able to run your quarto file on my machine. I have provided R chunks in the correct locations in this file - change them to Python if you wish.\nFor any plot or table you create, be sure to appropriately caption and label it, providing 1-2 sentences to highlight the main purpose/conclusions you can draw from that plot.\nYou should have at least one code chunk for each ## heading below."
+  },
+  {
+    "objectID": "exam/2023-midterm/index.html#read-in-the-data",
+    "href": "exam/2023-midterm/index.html#read-in-the-data",
+    "title": "Practice Exam (2023)",
+    "section": "Read in the Data",
+    "text": "Read in the Data\nWrite code which will:\n\nDownload the raw pocket measurements.csv data to a file in this repository\nRead the data in, ensuring that columns containing numbers are appropriately formatted. You may consider the fabric column as a character string."
+  },
+  {
+    "objectID": "exam/2023-midterm/index.html#conduct-an-exploratory-data-analysis",
+    "href": "exam/2023-midterm/index.html#conduct-an-exploratory-data-analysis",
+    "title": "Practice Exam (2023)",
+    "section": "Conduct an Exploratory Data Analysis",
+    "text": "Conduct an Exploratory Data Analysis\nGenerate at least 3 questions about the data set and find answers to those questions using charts, tables, or numerical summaries.\n\nQuestions\n\n\n\n\n\n\n\nQuestion Answers\nYour discussion of this output goes here.\nYour discussion of this output goes here.\nYour discussion of this output goes here"
+  },
+  {
+    "objectID": "exam/2023-midterm/index.html#comparing-sexes-and-styles",
+    "href": "exam/2023-midterm/index.html#comparing-sexes-and-styles",
+    "title": "Practice Exam (2023)",
+    "section": "Comparing Sexes and Styles",
+    "text": "Comparing Sexes and Styles\nGenerate one or two plots which best showcase the difference in pocket sizes for different sexes and styles of pants. Use The Pudding’s classification for pants styles, treating straight and boot-cut styles as the same and skinny and slim styles as the same.\nYou may annotate the plot with the output from statistical tests if you wish, but it is sufficient to highlight the visual differences. Your chart(s) must have appropriate titles and axis labels, and must be constructed to take into account the principles of good graphics discussed in the textbook.\nYour discussion of this output goes here.\nReplace this paragraph with 1-2 sentences discussing what choices you made to make the plot you generated above perceptually optimal. Which principles of good graphics did you use?"
   },
   {
     "objectID": "slides/02b-review-topics.html#last-class",
@@ -123,7 +158,7 @@
     "href": "index.html",
     "title": "Stat 251: Data Wrangling",
     "section": "",
-    "text": "Course Materials\nDates shown are due dates (for homework and exams) and dates on which material was presented (for slides).\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nDate\n\n\nTitle\n\n\nType\n\n\n\n\n\n\n\n\nMar 6, 2025\n\n\nExam Objectives\n\n\n \n\n\n\n\n\n\n\nMar 4, 2025\n\n\nPractice Exam (2023)\n\n\nexam\n\n\n\n\n\n\n\nMar 3, 2025\n\n\nHomework 6: Data Manipulation\n\n\nhomework\n\n\n\n\n\n\n\nFeb 27, 2025\n\n\nComputing with data\n\n\n \n\n\n\n\n\n\n\nFeb 25, 2025\n\n\nHomework 5: Graphics\n\n\nhomework\n\n\n\n\n\n\n\nFeb 25, 2025\n\n\nData Cleaning\n\n\nreading\n\n\n\n\n\n\n\nFeb 24, 2025\n\n\nSurvey Results and Groundhog Graphics\n\n\n \n\n\n\n\n\n\n\nFeb 20, 2025\n\n\nCreating Good Graphics\n\n\n \n\n\n\n\n\n\n\nFeb 18, 2025\n\n\nChocolate Chip Cookies\n\n\nhomework\n\n\n\n\n\n\n\nFeb 18, 2025\n\n\nFinishing up Cookie Exploration\n\n\n \n\n\n\n\n\n\n\nFeb 18, 2025\n\n\nData Visualization\n\n\nreading\n\n\n\n\n\n\n\nFeb 18, 2025\n\n\nGood Graphics\n\n\nreading\n\n\n\n\n\n\n\nFeb 13, 2025\n\n\nData Explorations\n\n\n \n\n\n\n\n\n\n\nFeb 11, 2025\n\n\ndecodeR: Base R\n\n\nhomework\n\n\n\n\n\n\n\nFeb 11, 2025\n\n\nReading In Data\n\n\n \n\n\n\n\n\n\n\nFeb 11, 2025\n\n\nData Input\n\n\nreading\n\n\n\n\n\n\n\nFeb 11, 2025\n\n\nExploratory Data Analysis\n\n\nreading\n\n\n\n\n\n\n\nFeb 6, 2025\n\n\nReview - Cipher\n\n\n \n\n\n\n\n\n\n\nFeb 4, 2025\n\n\nHomework 2: Reviewing R and Python\n\n\nhomework\n\n\n\n\n\n\n\nFeb 4, 2025\n\n\nReview - Cipher\n\n\n \n\n\n\n\n\n\n\nJan 30, 2025\n\n\nProgramming Review\n\n\nslides\n\n\n\n\n\n\n\nJan 28, 2025\n\n\n👋 The Basics of GitHub\n\n\nhomework\n\n\n\n\n\n\n\nJan 28, 2025\n\n\nProgramming Review\n\n\nslides\n\n\n\n\n\n\n\nJan 28, 2025\n\n\nVersion Control with Git and Github\n\n\nreading\n\n\n\n\n\n\n\nJan 28, 2025\n\n\nReview - Programming\n\n\nreading\n\n\n\n\n\n\n\nJan 23, 2025\n\n\nVersion Control\n\n\nslides\n\n\n\n\n\n\n\nJan 23, 2025\n\n\nReview - Tools\n\n\nreading\n\n\n\n\n\n\n\nJan 21, 2025\n\n\nIntroduction\n\n\nslides\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Course Materials\nDates shown are due dates (for homework and exams) and dates on which material was presented (for slides).\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nDate\n\n\nTitle\n\n\nType\n\n\n\n\n\n\n\n\nMar 13, 2025\n\n\nMidterm\n\n\nexam\n\n\n\n\n\n\n\nMar 6, 2025\n\n\nHomework 6: Data Manipulation\n\n\nhomework\n\n\n\n\n\n\n\nMar 4, 2025\n\n\nPractice Exam (2023)\n\n\nexam\n\n\n\n\n\n\n\nMar 4, 2025\n\n\nExam objectives\n\n\nexam\n\n\n\n\n\n\n\nMar 4, 2025\n\n\nGood programming practices\n\n\n \n\n\n\n\n\n\n\nFeb 27, 2025\n\n\nComputing with data\n\n\n \n\n\n\n\n\n\n\nFeb 25, 2025\n\n\nHomework 5: Graphics\n\n\nhomework\n\n\n\n\n\n\n\nFeb 25, 2025\n\n\nData Cleaning\n\n\nreading\n\n\n\n\n\n\n\nFeb 24, 2025\n\n\nSurvey Results and Groundhog Graphics\n\n\n \n\n\n\n\n\n\n\nFeb 20, 2025\n\n\nCreating Good Graphics\n\n\n \n\n\n\n\n\n\n\nFeb 18, 2025\n\n\nChocolate Chip Cookies\n\n\nhomework\n\n\n\n\n\n\n\nFeb 18, 2025\n\n\nFinishing up Cookie Exploration\n\n\n \n\n\n\n\n\n\n\nFeb 18, 2025\n\n\nData Visualization\n\n\nreading\n\n\n\n\n\n\n\nFeb 18, 2025\n\n\nGood Graphics\n\n\nreading\n\n\n\n\n\n\n\nFeb 13, 2025\n\n\nData Explorations\n\n\n \n\n\n\n\n\n\n\nFeb 11, 2025\n\n\ndecodeR: Base R\n\n\nhomework\n\n\n\n\n\n\n\nFeb 11, 2025\n\n\nReading In Data\n\n\n \n\n\n\n\n\n\n\nFeb 11, 2025\n\n\nData Input\n\n\nreading\n\n\n\n\n\n\n\nFeb 11, 2025\n\n\nExploratory Data Analysis\n\n\nreading\n\n\n\n\n\n\n\nFeb 6, 2025\n\n\nReview - Cipher\n\n\n \n\n\n\n\n\n\n\nFeb 4, 2025\n\n\nHomework 2: Reviewing R and Python\n\n\nhomework\n\n\n\n\n\n\n\nFeb 4, 2025\n\n\nReview - Cipher\n\n\n \n\n\n\n\n\n\n\nJan 30, 2025\n\n\nProgramming Review\n\n\nslides\n\n\n\n\n\n\n\nJan 28, 2025\n\n\n👋 The Basics of GitHub\n\n\nhomework\n\n\n\n\n\n\n\nJan 28, 2025\n\n\nProgramming Review\n\n\nslides\n\n\n\n\n\n\n\nJan 28, 2025\n\n\nVersion Control with Git and Github\n\n\nreading\n\n\n\n\n\n\n\nJan 28, 2025\n\n\nReview - Programming\n\n\nreading\n\n\n\n\n\n\n\nJan 23, 2025\n\n\nVersion Control\n\n\nslides\n\n\n\n\n\n\n\nJan 23, 2025\n\n\nReview - Tools\n\n\nreading\n\n\n\n\n\n\n\nJan 21, 2025\n\n\nIntroduction\n\n\nslides\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "homework/01-git-github.html",
@@ -371,38 +406,10 @@
     "text": "Homework 2\n\nFocus on the logic and thinking through the steps\nWork with pencil and paper first"
   },
   {
-    "objectID": "exam/2023-midterm/index.html",
-    "href": "exam/2023-midterm/index.html",
-    "title": "Practice Exam (2023)",
+    "objectID": "exam/2025-midterm/index.html",
+    "href": "exam/2025-midterm/index.html",
+    "title": "Midterm",
     "section": "",
-    "text": "Your goal on this exam is to demonstrate competency in as many of the objectives of chapters we’ve covered in this class so far as you can."
-  },
-  {
-    "objectID": "exam/2023-midterm/index.html#ground-rules",
-    "href": "exam/2023-midterm/index.html#ground-rules",
-    "title": "Practice Exam (2023)",
-    "section": "Ground Rules",
-    "text": "Ground Rules\n\nYou may use the textbook and the internet (but the same rules apply - you must be able to explain your answer!)\nYou may NOT confer with other people or AI entities - including posting on StackOverflow, Reddit, etc.\nYou may ask clarifying questions of Dr. Vanderplas by email/zoom or in person\nYou may use R or Python for any of these tasks, but your code must be reproducible - I must be able to run your quarto file on my machine. I have provided R chunks in the correct locations in this file - change them to Python if you wish.\nFor any plot or table you create, be sure to appropriately caption and label it, providing 1-2 sentences to highlight the main purpose/conclusions you can draw from that plot.\nYou should have at least one code chunk for each ## heading below."
-  },
-  {
-    "objectID": "exam/2023-midterm/index.html#read-in-the-data",
-    "href": "exam/2023-midterm/index.html#read-in-the-data",
-    "title": "Practice Exam (2023)",
-    "section": "Read in the Data",
-    "text": "Read in the Data\nWrite code which will:\n\nDownload the raw pocket measurements.csv data to a file in this repository\nRead the data in, ensuring that columns containing numbers are appropriately formatted. You may consider the fabric column as a character string."
-  },
-  {
-    "objectID": "exam/2023-midterm/index.html#conduct-an-exploratory-data-analysis",
-    "href": "exam/2023-midterm/index.html#conduct-an-exploratory-data-analysis",
-    "title": "Practice Exam (2023)",
-    "section": "Conduct an Exploratory Data Analysis",
-    "text": "Conduct an Exploratory Data Analysis\nGenerate at least 3 questions about the data set and find answers to those questions using charts, tables, or numerical summaries.\n\nQuestions\n\n\n\n\n\n\n\nQuestion Answers\nYour discussion of this output goes here.\nYour discussion of this output goes here.\nYour discussion of this output goes here"
-  },
-  {
-    "objectID": "exam/2023-midterm/index.html#comparing-sexes-and-styles",
-    "href": "exam/2023-midterm/index.html#comparing-sexes-and-styles",
-    "title": "Practice Exam (2023)",
-    "section": "Comparing Sexes and Styles",
-    "text": "Comparing Sexes and Styles\nGenerate one or two plots which best showcase the difference in pocket sizes for different sexes and styles of pants. Use The Pudding’s classification for pants styles, treating straight and boot-cut styles as the same and skinny and slim styles as the same.\nYou may annotate the plot with the output from statistical tests if you wish, but it is sufficient to highlight the visual differences. Your chart(s) must have appropriate titles and axis labels, and must be constructed to take into account the principles of good graphics discussed in the textbook.\nYour discussion of this output goes here.\nReplace this paragraph with 1-2 sentences discussing what choices you made to make the plot you generated above perceptually optimal. Which principles of good graphics did you use?"
+    "text": "The United States Geological Survey (USGS) continuously monitors earth quakes and makes the information available to the public in a data feed. The dataset all-month.csv included in this repository was pulled from USGS on Monday Mar 3, 2025. It contains all worldwide earth quakes for the last 30 days.\nAn detailed description of all the variables in the all_month data (and more) is available from in the ComCat Documentation\nFor all of the following questions, provide answers and include your code. You can work in R or in python or in a mix of the two. Make sure that the final document you submit renders without errors. In the rendered document avoid any lengthy output.\n\nLoad the data into the object eq using R or python. Make sure that you are working with an object with 9815 rows and 22 columns.\n\n\n# code chunk for R\n\n\n# python code chunk\n\n\nRead the ComCat Documentation for the variables time, latitude, longitude, depth, mag, magType, nst, id, and place. Ensure that the format of the variables matches the description.\n\nIf you work on R, use the lubridate package to convert the variable time to a time object. If you work in python, use the datetime package.\n\n# R chunk\nlibrary(lubridate)\n\n\n# python chunk\nimport datetime\n\n\nInclude each of the variables time, latitude, longitude, depth, mag, magType, and nst in a data chart. Summarise the main finding(s) in each chart in 1-2 sentences.\n\n\nWhat is the time frame under consideration? How many earthquakes were there (show that the number of earthquakes is equal to the number of rows in the dataset)? When and where was the strongest earthquake? What was its magnitude?\n\n\ndepth is an estimate (in kilometers) of the depth in which an earthquake begins to rupture. The documentation suggests that in some cases default depths are used (when there is no further information available). Based on chart(s), argue which values are used for default depths and where?\n\n\nThe variable nst contains the information on the number of seismic stations used to determine an earthquake’s location.\n\n\nWhat is the average number of seismic stations used to determine the location of an earthquake?\nWhat is the minimum number of stations?\n1,592 earthquakes do not have a recorded number of stations. What else do these earthquakes have in common?\n\n\nBy introducing a suitable grouping variable, create a data set daily_summary that contains the daily summary values of the following statistics:\n\n\nthe total number of earthquakes\nthe number of earthquakes with a magnitude of 4 or higher\nthe average magnitude of earthquakes\nthe location, place and magnitude of the strongest earthquake\n\nBased on the values in daily_summary discuss the statements: On average, there are about 50 earthquakes globally with a magnitude of at least 4, days with more than 750 seismic events are not uncommon.\n\n“The Ring of fire” is a horseshoe-shaped belt along the rim of the Pacific (tectonic) Plate reaching from New Zealand to the tip of South America. The Ring of Fire contains hundreds of active and dormant volcanoes and is the location of a lot of seismic activity.\nIntroduce a transformation of the longitude variable longitude_rof to the data set that allows you to visualize the horseshoe shape of the ring of fire. (draw that chart)\n\n\nUpdate the data set: write a function update_eq with arguments data, url and verbose that downloads the most recent 30 days of earthquake activity and incorporates that information into the provided data set data. Make sure to include each earthquake only once (in case there are multiple, choose the most recent update given by updated). If verbose is set to true, provide a summary of the changes made to the data set of the form (replace the stars by the corresponding numbers):\nnumber of earthquakes added: ***\nnumber of earthquakes updated: ***\n\nCall your function with the eq object set as the data, a url of https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.csv in the verbose mode. Save the resulting data set as all_month_updated.csv. Include the function, the call to your function and the updated file in your repository."
   }
 ]

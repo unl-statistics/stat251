@@ -12,6 +12,8 @@ project:
     - slides/*.qmd
     - exam/2023-midterm/*.qmd
     - exam/2024-midterm/*.qmd
+    - exam/2025-midterm/*.qmd
+    - exam/*.qmd
 
 
 execute:

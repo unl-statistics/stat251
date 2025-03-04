@@ -122,7 +122,7 @@ schedule:
         categories: [reading]
       - href: homework/06-data-manip.qmd
         categories: [HW, Week06]
-        date: 2025-03-03
+        date: 2025-03-06
       - href: slides/06b-dplyr.qmd
         categories: [slides]
         date: 2025-02-27
@@ -137,14 +137,20 @@ schedule:
         date: 2025-03-04
         pub-date: 2025-02-25
         categories: [Exam, Week07]
-      - title: Exam Objectives
-        href: exam/2023-midterm/objectives.qmd
-        date: 2025-03-06
-        pub-date: 2025-02-25
-        categories: [Exam, Week07]
-      - href: exam/2025-midterm/index.qmd
-        date: 2025-03-06
+      - title: Midterm
+        href: exam/2025-midterm/index.qmd
+        date: 2025-03-13
         pub-date: 2025-03-04
+        categories: [Exam, Week07]
+      - title: Good programming practices
+        href: slides/07a-data-manip.qmd
+        date: 2025-03-04
+        pub-date: 2025-02-25
+        categories: [slides, Week07]
+      - title: Exam objectives
+        href: exam/objectives.qmd
+        date: 2025-03-04
+        pub-date: 2025-02-25
         categories: [Exam, Week07]
       - path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/04-strings.html
         title: Strings

@@ -5,8 +5,9 @@ listing:
 - id: hwlst
   contents:
   - exam/2023-midterm/index.qmd
-  - exam/2023-midterm/objectives.qmd
   - exam/2024-midterm/index.qmd
+  - exam/2025-midterm/index.qmd
+  - exam/objectives.qmd
   - homework/01-git-github.qmd
   - homework/02-review.qmd
   - homework/03-cipher.qmd
@@ -26,6 +27,7 @@ listing:
   - slides/05b-graphics.qmd
   - slides/06a-graphics.qmd
   - slides/06b-dplyr.qmd
+  - slides/07a-data-manip.qmd
   - syllabus.qmd
   - reading.yml
   sort: date desc

@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Your Name">
-<meta name="dcterms.date" content="2024-03-04">
+<meta name="dcterms.date" content="2025-03-13">
 
-<title>Homework 6: Data Manipulation – Stat 251 - Data Wrangling</title>
+<title>Midterm – Stat 251 - Data Wrangling</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -59,22 +59,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-6bd9cfa162949bde0a231f530c97869d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-6bd9cfa162949bde0a231f530c97869d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -114,7 +114,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Stat 251 - Data Wrangling</span>
     </a>
   </div>
@@ -125,7 +125,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
@@ -133,7 +133,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text">Textbook</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../syllabus.pdf"> 
+    <a class="nav-link" href="../../syllabus.pdf"> 
 <span class="menu-text">Syllabus</span></a>
   </li>  
 </ul>
@@ -147,28 +147,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#read-in-the-data" id="toc-read-in-the-data" class="nav-link active" data-scroll-target="#read-in-the-data">Read In the Data</a></li>
-  <li><a href="#data-exploration" id="toc-data-exploration" class="nav-link" data-scroll-target="#data-exploration">Data Exploration</a>
-  <ul class="collapse">
-  <li><a href="#missingness" id="toc-missingness" class="nav-link" data-scroll-target="#missingness">Missingness</a></li>
-  </ul></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Homework 6: Data Manipulation</h1>
+<h1 class="title">Midterm</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">HW</div>
-    <div class="quarto-category">Week06</div>
+    <div class="quarto-category">Exam</div>
     <div class="quarto-category">Week07</div>
   </div>
   </div>
@@ -180,14 +169,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Homework </p>
+             <p>Your Name </p>
           </div>
   </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">March 4, 2024</p>
+      <p class="date">March 13, 2025</p>
     </div>
   </div>
   
@@ -199,56 +188,69 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>Note: This assignment must be submitted in github classroom.</p>
-<div class="cell" data-hash="06-data-manip_cache/html/unnamed-chunk-1_f6cd3493e7170a6959102689f2e1036e">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cp</span> ../homework-repos/06-data-manip/gapminder_data.csv .</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The United States Geological Survey (USGS) continuously monitors earth quakes and makes the information available to the public in a <a href="https://earthquake.usgs.gov/earthquakes/feed/v1.0/csv.php">data feed</a>. The dataset <a href="all_month.csv">all-month.csv</a> included in this repository was pulled from USGS on Monday Mar 3, 2025. It contains all worldwide earth quakes for the last 30 days.</p>
+<p>An detailed description of all the variables in the <code>all_month</code> data (and more) is available from in the <a href="https://earthquake.usgs.gov/data/comcat/index.php">ComCat Documentation</a></p>
+<p>For all of the following questions, provide answers and include your code. You can work in R or in python or in a mix of the two. Make sure that the final document you submit renders without errors. In the rendered document avoid any lengthy output.</p>
+<ol type="1">
+<li>Load the data into the object <code>eq</code> using R or python. Make sure that you are working with an object with 9815 rows and 22 columns.</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># code chunk for R</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell" data-hash="06-data-manip_cache/html/unnamed-chunk-2_911c1a7404b2f0c68df45b3740b3a177">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>co2_sum <span class="ot">&lt;-</span> <span class="fu">data.frame</span>() <span class="co"># This is here to be a blank data frame so that the </span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>                        <span class="co"># lines below work before you've filled your code in.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># python code chunk</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>The Gapminder project’s mission is to fight devastating ignorance with a fact-based worldview everyone can understand. To do this, they assemble reliable data about a variety of global variables to help educate the general public.</p>
-<p>I have collected data from Gapminder about several variables:</p>
+<ol start="2" type="1">
+<li>Read the ComCat Documentation for the variables <code>time</code>, <code>latitude</code>, <code>longitude</code>, <code>depth</code>, <code>mag</code>, <code>magType</code>, <code>nst</code>, <code>id</code>, and <code>place</code>. Ensure that the format of the variables matches the description.</li>
+</ol>
+<p>If you work on R, use the <code>lubridate</code> package to convert the variable <code>time</code> to a time object. If you work in python, use the <code>datetime</code> package.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># R chunk</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lubridate)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># python chunk</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> datetime</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ol start="3" type="1">
+<li>Include each of the variables <code>time</code>, <code>latitude</code>, <code>longitude</code>, <code>depth</code>, <code>mag</code>, <code>magType</code>, and <code>nst</code> in a data chart. Summarise the main finding(s) in each chart in 1-2 sentences.</li>
+</ol>
+<ol start="4" type="1">
+<li>What is the time frame under consideration? How many earthquakes were there (show that the number of earthquakes is equal to the number of rows in the dataset)? When and where was the strongest earthquake? What was its magnitude?</li>
+</ol>
+<ol start="5" type="1">
+<li><code>depth</code> is an estimate (in kilometers) of the depth in which an earthquake begins to rupture. The documentation suggests that in some cases default depths are used (when there is no further information available). Based on chart(s), argue which values are used for default depths and where?</li>
+</ol>
+<ol start="6" type="1">
+<li>The variable <code>nst</code> contains the information on the number of seismic stations used to determine an earthquake’s location.</li>
+</ol>
 <ul>
-<li>Population</li>
-<li>GDP Per Capita (inflation-adjusted US dollars)</li>
-<li>Mean Household Income</li>
-<li>CO2 emissions (tonnes per capita)</li>
-<li>Energy Use (Kg of Oil-equivalent per capita)</li>
+<li>What is the average number of seismic stations used to determine the location of an earthquake?</li>
+<li>What is the minimum number of stations?</li>
+<li>1,592 earthquakes do not have a recorded number of stations. What else do these earthquakes have in common?</li>
 </ul>
-<p>Use the data manipulation tools you’ve learned about to answer each of the following questions, which I’ve grouped into several general topics. Some questions may specify a specific language to use; if no language is specified, you may choose whether to use R or python to answer the question.</p>
-<section id="read-in-the-data" class="level2">
-<h2 class="anchored" data-anchor-id="read-in-the-data">Read In the Data</h2>
-<p>Read in the data in R and Python. In both languages, store the table in the variable <code>gapminder</code>.</p>
-</section>
-<section id="data-exploration" class="level2">
-<h2 class="anchored" data-anchor-id="data-exploration">Data Exploration</h2>
-<section id="missingness" class="level3">
-<h3 class="anchored" data-anchor-id="missingness">Missingness</h3>
-<p>Gapminder puts a lot of effort into curating certain variables; other variables are less frequently used (or are harder to assemble from reliable sources).</p>
-<section id="co2" class="level4">
-<h4 class="anchored" data-anchor-id="co2">CO2</h4>
-<p>Create a table of all countries with at least 30 observations CO2. Your table should be called <code>co2_sum</code> and should have columns <code>country</code> and <code>n_obs</code>. Do not print out the table; instead, if you have done everything correctly, when your document is compiled the correct number of countries will be filled in in the sentence below the code chunk.</p>
-<!-- Use R -->
-<p>There are 0 countries with at least 30 years of CO2 data.</p>
-</section>
-<section id="energy" class="level4">
-<h4 class="anchored" data-anchor-id="energy">Energy</h4>
-<p>Answer in Python</p>
-</section>
-<section id="income" class="level4">
-<h4 class="anchored" data-anchor-id="income">Income</h4>
-</section>
-<section id="gdp" class="level4">
-<h4 class="anchored" data-anchor-id="gdp">GDP</h4>
-<div class="cell" data-hash="06-data-manip_cache/html/unnamed-chunk-7_4ab8a824836e2d0856abdf92f334dbb6">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span> ./gapminder_data.csv</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
+<ol start="7" type="1">
+<li>By introducing a suitable grouping variable, create a data set <code>daily_summary</code> that contains the daily summary values of the following statistics:</li>
+</ol>
+<ul>
+<li>the total number of earthquakes</li>
+<li>the number of earthquakes with a magnitude of 4 or higher</li>
+<li>the average magnitude of earthquakes</li>
+<li>the location, place and magnitude of the strongest earthquake</li>
+</ul>
+<p>Based on the values in <code>daily_summary</code> discuss the statements: <strong><em>On average, there are about 50 earthquakes globally with a magnitude of at least 4</em></strong>, <strong><em>days with more than 750 seismic events are not uncommon.</em></strong></p>
+<ol start="8" type="1">
+<li><p>“The Ring of fire” is a horseshoe-shaped belt along the rim of the Pacific (tectonic) Plate reaching from New Zealand to the tip of South America. The Ring of Fire contains hundreds of active and dormant volcanoes and is the location of a lot of seismic activity.</p>
+<p>Introduce a transformation of the longitude variable <code>longitude_rof</code> to the data set that allows you to visualize the horseshoe shape of the ring of fire. (draw that chart)</p></li>
+</ol>
+<ol start="9" type="1">
+<li><p>Update the data set: write a function <code>update_eq</code> with arguments <code>data</code>, <code>url</code> and <code>verbose</code> that downloads the most recent 30 days of earthquake activity and incorporates that information into the provided data set <code>data</code>. Make sure to include each earthquake only once (in case there are multiple, choose the most recent update given by <code>updated</code>). If <code>verbose</code> is set to true, provide a summary of the changes made to the data set of the form (replace the stars by the corresponding numbers):</p>
+<p>number of earthquakes added: ***</p>
+<p>number of earthquakes updated: ***</p></li>
+</ol>
+<p>Call your function with the <code>eq</code> object set as the data, a <code>url</code> of https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.csv in the verbose mode. Save the resulting data set as <code>all_month_updated.csv</code>. Include the function, the call to your function and the updated file in your repository.</p>
 
 
-</section>
-</section>
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

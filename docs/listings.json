@@ -2,9 +2,11 @@
   {
     "listing": "/index.html",
     "items": [
-      "/exam/2023-midterm/objectives.html",
-      "/exam/2023-midterm/index.html",
+      "/exam/2025-midterm/index.html",
       "/homework/06-data-manip.html",
+      "/exam/2023-midterm/index.html",
+      "/exam/objectives.html",
+      "/slides/07a-data-manip.html",
       "/slides/06b-dplyr.html",
       "/homework/05-graphics-groundhogs.html",
       "/slides/06a-graphics.html",

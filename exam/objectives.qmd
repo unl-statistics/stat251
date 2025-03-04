@@ -1,13 +1,14 @@
 ---
-title: Exam Objectives
+title: Exam objectives
 author: Midterm
-date: '2025-03-06'
+date: '2025-03-04'
 pub-date: '2025-02-27'
 categories:
 - Exam
 - Week07
-- Week07
+type: exam
 ---
+
 
 Note: This list omits objectives from the "review" section, but they are still relevant.
 
