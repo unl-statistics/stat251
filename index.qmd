@@ -6,7 +6,7 @@ listing:
   contents:
   - exam/2023-midterm/index.qmd
   - exam/2024-midterm/index.qmd
-  - exam/2025-midterm/index.qmd
+  - exam/data-earthquakes/index.qmd
   - exam/objectives.qmd
   - homework/01-git-github.qmd
   - homework/02-review.qmd

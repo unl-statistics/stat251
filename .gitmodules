@@ -34,9 +34,9 @@
 [submodule "homework-repos/12-spatial"]
 	path = homework-repos/12-spatial
 	url = git@github.com:stat-assignments/spatial-explore.git
-[submodule "exam/2024-midterm"]
-	path = exam/2024-midterm
-	url = git@github.com:stat-assignments/2024-251-midterm.git
+[submodule "exam/data-earthquakes"]
+	path = exam/data-earthquakes
+	url = git@github.com:stat-assignments/data-earthquakes.git
 [submodule "project"]
 	path = project
 	url = git@github.com:stat-assignments/screencast.git

@@ -138,7 +138,7 @@ schedule:
         pub-date: 2025-02-25
         categories: [Exam, Week07]
       - title: Midterm
-        href: exam/2025-midterm/index.qmd
+        href: exam/data-earthquakes/index.qmd
         date: 2025-03-13
         pub-date: 2025-03-04
         categories: [Exam, Week07]
