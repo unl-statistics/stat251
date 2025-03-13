@@ -78,3 +78,23 @@
   type: reading
   image: figs/reading.svg
   is_live: true
+- path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/04-strings.html
+  title: Strings
+  date: '2025-03-25'
+  pub.date: '2025-03-12'
+  categories:
+  - reading
+  - .na.character
+  type: reading
+  image: figs/reading.svg
+  is_live: true
+- path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/05-data-reshape.html
+  title: Reshaping Data
+  date: '2025-03-25'
+  pub.date: '2025-03-12'
+  categories:
+  - reading
+  - .na.character
+  type: reading
+  image: figs/reading.svg
+  is_live: true

@@ -15,6 +15,7 @@ listing:
   - homework/05-graphics-groundhogs.qmd
   - homework/05-graphics-results.qmd
   - homework/06-data-manip.qmd
+  - homework/07-strings.qmd
   - slides/01-Syllabus-and-Introductions.qmd
   - slides/02-version-control.qmd
   - slides/02a-review-topics.qmd

@@ -1,0 +1,76 @@
+---
+title: Good programming practices
+author: Stat 251
+categories:
+- slides
+- Week07
+engine: knitr
+format:
+  revealjs:
+    navigation-mode: vertical
+    logo: N.svg
+    theme: inverse.scss
+    includes:
+      in_header: header.html
+date: '2025-03-04'
+---
+
+# Where we are
+
+Homework 5 - graphics:
+
+  - graded with feedback
+  - grades not as high as I would like them ... check the feedback carefully!
+  
+Resubmissions for homeworks 1-5  open until the week after Spring Break
+
+# Homework Submissions
+
+- Render your file before the final submission
+
+- and READ over it
+
+- Make sure to
+    
+    - avoid lengthy output (like showing the full data set)
+    
+    - fix any errors and warnings
+    
+    - read the output ... e.g. 489 years of data (data manip homework) doesn't make sense
+
+    - not install packages in the quarto document (rely on the user to figure out installations)
+    - not call `View` (opens separate window during render)
+
+# Midterm Logistics
+
+Midterm questions are open - due by Thursday before Spring Break (Mar 13)
+
+Talk to me (instructor) in case of questions - not to each other!
+
+Don't ask (anybody but the instructor) for directed help 
+
+```{=html}
+<iframe width="100%" height = "500px" src="https://unl-statistics.github.io/stat251/exam/data-earthquakes/index.html"></iframe>
+```
+
+# Homework #6
+
+- relatively short - pay attention to details!
+
+- one (unintentional) trap: `co2` object exists in R - leads to extremely strange numbers
+
+
+# Homework 6
+
+```{=html}
+<iframe width="100%" height = "500px" src="https://unl-statistics.github.io/stat251/homework/06-data-manip.html"></iframe>
+```
+
+
+# Next time
+
+- Finish up on homework #6 assignment
+
+- Prepare questions! 
+
+- ... if you have questions until then - reach out by email and/or schedule a meeting with me!
