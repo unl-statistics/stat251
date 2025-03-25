@@ -42,6 +42,34 @@
     "text": "Comparing Sexes and Styles\nGenerate one or two plots which best showcase the difference in pocket sizes for different sexes and styles of pants. Use The Pudding’s classification for pants styles, treating straight and boot-cut styles as the same and skinny and slim styles as the same.\nYou may annotate the plot with the output from statistical tests if you wish, but it is sufficient to highlight the visual differences. Your chart(s) must have appropriate titles and axis labels, and must be constructed to take into account the principles of good graphics discussed in the textbook.\nYour discussion of this output goes here.\nReplace this paragraph with 1-2 sentences discussing what choices you made to make the plot you generated above perceptually optimal. Which principles of good graphics did you use?"
   },
   {
+    "objectID": "slides/09a-strings.html#logistics",
+    "href": "slides/09a-strings.html#logistics",
+    "title": "Working with Strings",
+    "section": "Logistics",
+    "text": "Logistics\n\nthis week: reading quizzes (just submitted)\nwork on homework #7: string operations using reddit poetry :)\nsubmit any changes to homework #1 - #5 by Thursday"
+  },
+  {
+    "objectID": "slides/09a-strings.html#homework-7",
+    "href": "slides/09a-strings.html#homework-7",
+    "title": "Working with Strings",
+    "section": "Homework 7",
+    "text": "Homework 7\nReddit poets: sprog and schnoodledoodledoo\nFull points for completion in ONE language"
+  },
+  {
+    "objectID": "slides/09a-strings.html#an-example",
+    "href": "slides/09a-strings.html#an-example",
+    "title": "Working with Strings",
+    "section": "An Example",
+    "text": "An Example\nReddit OneOrangeBraincell\nIn the comments:\nComment byu/Falom from discussion inOneOrangeBraincell"
+  },
+  {
+    "objectID": "slides/09a-strings.html#major-string-operations",
+    "href": "slides/09a-strings.html#major-string-operations",
+    "title": "Working with Strings",
+    "section": "Major String Operations",
+    "text": "Major String Operations\n\n\n\n\n\n\n\nOperation\nSketch\n\n\n\n\nFind and replace (or remove)\n\n\n\nSplit data into multiple columns\n\n\n\nJoin data into a single column"
+  },
+  {
     "objectID": "slides/02b-review-topics.html#last-class",
     "href": "slides/02b-review-topics.html#last-class",
     "title": "Programming Review",
@@ -256,7 +284,7 @@
     "href": "index.html",
     "title": "Stat 251: Data Wrangling",
     "section": "",
-    "text": "Course Materials\nDates shown are due dates (for homework and exams) and dates on which material was presented (for slides).\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nDate\n\n\nTitle\n\n\nType\n\n\n\n\n\n\n\n\nMar 25, 2025\n\n\nString Processing and Data Wrangling in R and Python\n\n\nhomework\n\n\n\n\n\n\n\nMar 25, 2025\n\n\nStrings\n\n\nreading\n\n\n\n\n\n\n\nMar 25, 2025\n\n\nReshaping Data\n\n\nreading\n\n\n\n\n\n\n\nMar 13, 2025\n\n\nMidterm\n\n\nexam\n\n\n\n\n\n\n\nMar 6, 2025\n\n\nHomework 6: Data Manipulation\n\n\nhomework\n\n\n\n\n\n\n\nMar 4, 2025\n\n\nPractice Exam (2023)\n\n\nexam\n\n\n\n\n\n\n\nMar 4, 2025\n\n\nExam objectives\n\n\nexam\n\n\n\n\n\n\n\nMar 4, 2025\n\n\nGood programming practices\n\n\n \n\n\n\n\n\n\n\nFeb 27, 2025\n\n\nComputing with data\n\n\n \n\n\n\n\n\n\n\nFeb 25, 2025\n\n\nHomework 5: Graphics\n\n\nhomework\n\n\n\n\n\n\n\nFeb 25, 2025\n\n\nData Cleaning\n\n\nreading\n\n\n\n\n\n\n\nFeb 24, 2025\n\n\nSurvey Results and Groundhog Graphics\n\n\n \n\n\n\n\n\n\n\nFeb 20, 2025\n\n\nCreating Good Graphics\n\n\n \n\n\n\n\n\n\n\nFeb 18, 2025\n\n\nChocolate Chip Cookies\n\n\nhomework\n\n\n\n\n\n\n\nFeb 18, 2025\n\n\nFinishing up Cookie Exploration\n\n\n \n\n\n\n\n\n\n\nFeb 18, 2025\n\n\nData Visualization\n\n\nreading\n\n\n\n\n\n\n\nFeb 18, 2025\n\n\nGood Graphics\n\n\nreading\n\n\n\n\n\n\n\nFeb 13, 2025\n\n\nData Explorations\n\n\n \n\n\n\n\n\n\n\nFeb 11, 2025\n\n\ndecodeR: Base R\n\n\nhomework\n\n\n\n\n\n\n\nFeb 11, 2025\n\n\nReading In Data\n\n\n \n\n\n\n\n\n\n\nFeb 11, 2025\n\n\nData Input\n\n\nreading\n\n\n\n\n\n\n\nFeb 11, 2025\n\n\nExploratory Data Analysis\n\n\nreading\n\n\n\n\n\n\n\nFeb 6, 2025\n\n\nReview - Cipher\n\n\n \n\n\n\n\n\n\n\nFeb 4, 2025\n\n\nHomework 2: Reviewing R and Python\n\n\nhomework\n\n\n\n\n\n\n\nFeb 4, 2025\n\n\nReview - Cipher\n\n\n \n\n\n\n\n\n\n\nJan 30, 2025\n\n\nProgramming Review\n\n\nslides\n\n\n\n\n\n\n\nJan 28, 2025\n\n\n👋 The Basics of GitHub\n\n\nhomework\n\n\n\n\n\n\n\nJan 28, 2025\n\n\nProgramming Review\n\n\nslides\n\n\n\n\n\n\n\nJan 28, 2025\n\n\nVersion Control with Git and Github\n\n\nreading\n\n\n\n\n\n\n\nJan 28, 2025\n\n\nReview - Programming\n\n\nreading\n\n\n\n\n\n\n\nJan 23, 2025\n\n\nVersion Control\n\n\nslides\n\n\n\n\n\n\n\nJan 23, 2025\n\n\nReview - Tools\n\n\nreading\n\n\n\n\n\n\n\nJan 21, 2025\n\n\nIntroduction\n\n\nslides\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Course Materials\nDates shown are due dates (for homework and exams) and dates on which material was presented (for slides).\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nDate\n\n\nTitle\n\n\nType\n\n\n\n\n\n\n\n\nMar 27, 2025\n\n\nString Processing and Data Wrangling in R and Python\n\n\nhomework\n\n\n\n\n\n\n\nMar 25, 2025\n\n\nWorking with Strings\n\n\n \n\n\n\n\n\n\n\nMar 25, 2025\n\n\nStrings\n\n\nreading\n\n\n\n\n\n\n\nMar 25, 2025\n\n\nReshaping Data\n\n\nreading\n\n\n\n\n\n\n\nMar 13, 2025\n\n\nMidterm\n\n\nexam\n\n\n\n\n\n\n\nMar 6, 2025\n\n\nHomework 6: Data Manipulation\n\n\nhomework\n\n\n\n\n\n\n\nMar 4, 2025\n\n\nPractice Exam (2023)\n\n\nexam\n\n\n\n\n\n\n\nMar 4, 2025\n\n\nExam objectives\n\n\nexam\n\n\n\n\n\n\n\nMar 4, 2025\n\n\nGood programming practices\n\n\n \n\n\n\n\n\n\n\nFeb 27, 2025\n\n\nComputing with data\n\n\n \n\n\n\n\n\n\n\nFeb 25, 2025\n\n\nHomework 5: Graphics\n\n\nhomework\n\n\n\n\n\n\n\nFeb 25, 2025\n\n\nData Cleaning\n\n\nreading\n\n\n\n\n\n\n\nFeb 24, 2025\n\n\nSurvey Results and Groundhog Graphics\n\n\n \n\n\n\n\n\n\n\nFeb 20, 2025\n\n\nCreating Good Graphics\n\n\n \n\n\n\n\n\n\n\nFeb 18, 2025\n\n\nChocolate Chip Cookies\n\n\nhomework\n\n\n\n\n\n\n\nFeb 18, 2025\n\n\nFinishing up Cookie Exploration\n\n\n \n\n\n\n\n\n\n\nFeb 18, 2025\n\n\nData Visualization\n\n\nreading\n\n\n\n\n\n\n\nFeb 18, 2025\n\n\nGood Graphics\n\n\nreading\n\n\n\n\n\n\n\nFeb 13, 2025\n\n\nData Explorations\n\n\n \n\n\n\n\n\n\n\nFeb 11, 2025\n\n\ndecodeR: Base R\n\n\nhomework\n\n\n\n\n\n\n\nFeb 11, 2025\n\n\nReading In Data\n\n\n \n\n\n\n\n\n\n\nFeb 11, 2025\n\n\nData Input\n\n\nreading\n\n\n\n\n\n\n\nFeb 11, 2025\n\n\nExploratory Data Analysis\n\n\nreading\n\n\n\n\n\n\n\nFeb 6, 2025\n\n\nReview - Cipher\n\n\n \n\n\n\n\n\n\n\nFeb 4, 2025\n\n\nHomework 2: Reviewing R and Python\n\n\nhomework\n\n\n\n\n\n\n\nFeb 4, 2025\n\n\nReview - Cipher\n\n\n \n\n\n\n\n\n\n\nJan 30, 2025\n\n\nProgramming Review\n\n\nslides\n\n\n\n\n\n\n\nJan 28, 2025\n\n\n👋 The Basics of GitHub\n\n\nhomework\n\n\n\n\n\n\n\nJan 28, 2025\n\n\nProgramming Review\n\n\nslides\n\n\n\n\n\n\n\nJan 28, 2025\n\n\nVersion Control with Git and Github\n\n\nreading\n\n\n\n\n\n\n\nJan 28, 2025\n\n\nReview - Programming\n\n\nreading\n\n\n\n\n\n\n\nJan 23, 2025\n\n\nVersion Control\n\n\nslides\n\n\n\n\n\n\n\nJan 23, 2025\n\n\nReview - Tools\n\n\nreading\n\n\n\n\n\n\n\nJan 21, 2025\n\n\nIntroduction\n\n\nslides\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "homework/02-review.html",
@@ -460,6 +488,41 @@
     "title": "Programming Review",
     "section": "Homework 2",
     "text": "Homework 2\n\nFocus on the logic and thinking through the steps\nWork with pencil and paper first"
+  },
+  {
+    "objectID": "slides/10-projects.html#project-overview",
+    "href": "slides/10-projects.html#project-overview",
+    "title": "Projects",
+    "section": "Project Overview",
+    "text": "Project Overview\n\n\n\nCreate a TidyTuesday style screencast\nExamples: https://www.rscreencasts.com/\nAnalyze a TidyTuesday dataset from 2023 using R or Python\nApproximately 45 minutes long\nShow at least 4 different techniques you learned in Stat 251 this semester\n\n\n\n\nGH link"
+  },
+  {
+    "objectID": "slides/10-projects.html#part-1---planning",
+    "href": "slides/10-projects.html#part-1---planning",
+    "title": "Projects",
+    "section": "Part 1 - Planning",
+    "text": "Part 1 - Planning\nWork: In class, April 18\nDue: April 18, 6pm\nTell me:\n\nWhat dataset you’re using\nWhat you’re going to investigate\nWhat Stat 251 topics you’re going to cover"
+  },
+  {
+    "objectID": "slides/10-projects.html#part-2---script-outline",
+    "href": "slides/10-projects.html#part-2---script-outline",
+    "title": "Projects",
+    "section": "Part 2 - Script Outline",
+    "text": "Part 2 - Script Outline\nWork: In class, April 20\nDue: April 24, 6pm\n\nProvide a (rough) script for your screen cast\n\nExplain how the techniques work\nDiscuss any challenges you had analyzing this data\nInclude the mistakes you made along the way!\n\nInclude pseudocode/actual code for each topic\n\nDoes not have to actually work at this point"
+  },
+  {
+    "objectID": "slides/10-projects.html#part-3---recording",
+    "href": "slides/10-projects.html#part-3---recording",
+    "title": "Projects",
+    "section": "Part 3 - Recording",
+    "text": "Part 3 - Recording\nWork: On your own\nDue: May 4, 6pm\n\nScreencast uploaded to YouTube or YuJa\nApproximate time index provided for each technique you demonstrate (on GitHub)\nFinal code file uploaded to github repository"
+  },
+  {
+    "objectID": "slides/10-projects.html#part-4---peer-review",
+    "href": "slides/10-projects.html#part-4---peer-review",
+    "title": "Projects",
+    "section": "Part 4 - Peer Review",
+    "text": "Part 4 - Peer Review\n\nIn place of the final exam:\n\nWatch 2 screencasts\nPeer evaluations - leave a comment on Canvas\nI will provide a rubric\n\nTake place between May 4 and Finals week"
   },
   {
     "objectID": "exam/data-earthquakes/index.html",

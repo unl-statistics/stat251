@@ -16,6 +16,7 @@ listing:
   - homework/05-graphics-results.qmd
   - homework/06-data-manip.qmd
   - homework/07-strings.qmd
+  - homework/08-reshape.qmd
   - slides/01-Syllabus-and-Introductions.qmd
   - slides/02-version-control.qmd
   - slides/02a-review-topics.qmd
@@ -29,6 +30,7 @@ listing:
   - slides/06a-graphics.qmd
   - slides/06b-dplyr.qmd
   - slides/07a-data-manip.qmd
+  - slides/09a-strings.qmd
   - syllabus.qmd
   - reading.yml
   sort: date desc

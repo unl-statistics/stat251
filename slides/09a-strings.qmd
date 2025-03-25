@@ -1,0 +1,61 @@
+---
+title: Working with Strings
+author: Stat 251
+categories:
+- slides
+- Week09
+engine: knitr
+format:
+  revealjs:
+    navigation-mode: vertical
+    logo: N.svg
+    theme: inverse.scss
+    includes:
+      in_header: header.html
+date: '2025-03-25'
+---
+
+## 
+
+
+<h2 Welcome back from Spring Break!/>
+
+
+## Logistics
+
+- this week: reading quizzes (just submitted)
+
+- work on homework #7: string operations using reddit poetry :)
+
+- submit any changes to homework #1 - #5 by Thursday
+
+## Homework 7
+
+Reddit poets: sprog and schnoodledoodledoo
+
+Full points for completion in ONE language
+
+```{=html}
+<iframe width="100%" height = "500px" src="https://unl-statistics.github.io/stat251/homework/07-strings.html"></iframe>
+```
+
+
+## An Example
+
+Reddit [OneOrangeBraincell](https://www.reddit.com/r/OneOrangeBraincell/comments/1jizsmk/pumpkin_see_pumpkin_do)
+
+In the comments:
+
+```{=html}
+<blockquote class="reddit-embed-bq" data-embed-height="469"><a href="https://www.reddit.com/r/OneOrangeBraincell/comments/1jizsmk/comment/mjj96sn/">Comment</a><br> by<a href="https://www.reddit.com/user/Falom/">u/Falom</a> from discussion<a href="https://www.reddit.com/r/OneOrangeBraincell/comments/1jizsmk/pumpkin_see_pumpkin_do/"></a><br> in<a href="https://www.reddit.com/r/OneOrangeBraincell/">OneOrangeBraincell</a></blockquote><script async="" src="https://embed.reddit.com/widgets.js" charset="UTF-8"></script>
+```
+
+
+## Major String Operations
+
+Operation | Sketch
+--- | ---
+Find and replace (or remove) | ![](fig/find-and-replace.svg){fig-alt="A row of three boxes. In the next row, the middle box is replaced with a different, slightly larger box."}
+Split data into multiple columns | ![](fig/split-cols.svg){fig-alt="A column consisting of multiple rows of three boxes. An arrow indicates a transition from the single column to multiple columns, each containing only one type of box."}
+Join data into a single column | ![](fig/join-cols.svg){fig-alt="A set of three columns, each containing one type of box. An arrow indicates a transition whereby in each row, the three columns of data are combined into a single column."}
+
