@@ -112,116 +112,88 @@
     "text": "(Demo)"
   },
   {
-    "objectID": "homework/07-strings.html",
-    "href": "homework/07-strings.html",
-    "title": "String Processing and Data Wrangling in R and Python",
+    "objectID": "homework/08-reshape.html",
+    "href": "homework/08-reshape.html",
+    "title": "Data Reshaping with Puppies",
     "section": "",
-    "text": "Note: This assignment must be submitted in github classroom."
+    "text": "Note: This assignment must be submitted in github classroom.\n\nSetting up\nIn this assignment, we’ll work with American Kennel Club data on dog breeds.\nData information\nRead in the CSV files provided:\n\nbreed_traits\ntrait_description\nbreed_rank\n\n\n# Read in the data\n\nThis assignment will ask you to sketch the layout of various datasets. If you want, you can use paper/pencil sketches, but the images should be provided in PNG or JPEG format and included in your document as images. If you prefer a digital tool, Excalidraw.com is an excellent (free) option.\n\n\n1 Breed Traits\nIs the breed_traits.csv file in tidy form? Why or why not?\nIf you wanted to plot the distribution of rankings for each trait, with each trait’s distribution in a separate facet, what form would you need to use for the data?\nSketch the form the data would look like to create the necessary plot, and include the image of that sketch here.\nWhat transformations are necessary for the data to be converted into this form? Include a sketch of the transformation process.\nTransform the data and generate a plot showing the distribution of breed rankings for the variables Affectionate With Family, Good with Young Children, Good With Other Dogs, Playfulness Level, and Trainability Level. Each variable should have its own facet.\n\n# Transformation code here\n\n\n# Plot code here\n\n\n\n2 Breed Ranks\nIs the breed_rank_all.csv file in tidy form? Why or why not?\nIf you wanted to plot the popularity of Beagles and Jack Russell Terriers between 2013 and 2020, what form would you need the data to be in?\nSketch the form the data would look like to create the necessary plot, and include the image of that sketch here.\nWhat transformations are necessary for the data to be converted into this form? Include a sketch of the transformation process.\nChoose two dog breeds that you are interested in and generate a line chart showing the breeds’ relative popularity between 2013 and 2020. Breed should be indicated by color as well as linetype (so that your plot is double encoded).\n\n# Transformation code here\n\n\n# Plot code here"
   },
   {
-    "objectID": "homework/07-strings.html#content-warning",
-    "href": "homework/07-strings.html#content-warning",
-    "title": "String Processing and Data Wrangling in R and Python",
-    "section": "Content Warning",
-    "text": "Content Warning\nThese poems may address adult topics and/or use strong or vulgar language, as they are taken from Reddit. I have not censored them in any way because I want you to work with data that is realistic. You should find a few test cases which you are comfortable with to use to test out your code, but you do not need to read all of the poems (and in both cases, I’ve provided you with approximately 1000 samples, so it’s probably too much to read in any case).\nHere are 5 indices (counting from 1) which are approximately G or PG in content for each poet, using the most recent snapshot CSV (20230806):\n\nSprog poems: 2, 6, 7, 8, 9\nSchnoodleDoodleDo poems: 1, 2, 3, 4, 5\n\nThese should be sufficient for you to test your code even if you are worried about being exposed to adult themes or language during this activity."
-  },
-  {
-    "objectID": "homework/07-strings.html#splitting-poems-into-lines",
-    "href": "homework/07-strings.html#splitting-poems-into-lines",
-    "title": "String Processing and Data Wrangling in R and Python",
-    "section": "1.1 Splitting Poems into Lines",
-    "text": "1.1 Splitting Poems into Lines\nSplit the poem into lines and create a data frame that has\n\na new column called poem_id, numbered from one to the total number of poems by the poet in question\na new variable called line that contains the text of each line of the poem (one row per poem line). To get this, you may need to split the comment string by the endline character (\\n) and then unnest or expand your data frame.\na new variable called line_no that contains the line number of the poem. This should be computed per poem.\n\nEnsure that you are splitting lines by a string which makes sense. Some poems have multiple paragraphs (stanzas) and may have a blank line in between; you want to preserve this blank line as it will help you make sense of the poem. Some poems instead have blank lines between every line of the poem; in these cases, you may want to split by e.g. \\n\\n instead of \\n.\nSee Part 1 Checkpoint for an example of what the output should look like from each poet."
-  },
-  {
-    "objectID": "homework/07-strings.html#summarizing-poems",
-    "href": "homework/07-strings.html#summarizing-poems",
-    "title": "String Processing and Data Wrangling in R and Python",
-    "section": "1.2 Summarizing Poems",
-    "text": "1.2 Summarizing Poems\nFor each poem, create a summary data frame that contains:\n\nAverage number of words per line in the poem\nNumber of lines in the poem\nNumber of characters which are not letters or spaces (punctuation, numbers, and any non-ASCII characters)\nNumber of uppercase letters in the poem\nNumber of lowercase letters in the poem\n\nCreate a plot showing the distribution of the number of words per line across all poems you have in your dataset. Create another plot showing the number of lines in the poem for all poems in your dataset. What does this tell you about the “average” style of the poet in question?\nSee Part 2 Checkpoint for an example of what the output should look like from each poet."
-  },
-  {
-    "objectID": "homework/07-strings.html#poetry-analysis",
-    "href": "homework/07-strings.html#poetry-analysis",
-    "title": "String Processing and Data Wrangling in R and Python",
-    "section": "1.3 Poetry Analysis",
-    "text": "1.3 Poetry Analysis\nChoose some characteristic(s) of the poet’s style to explore graphically. If necessary, create a subset of the data with poems relevant to your question before you generate numerical summaries. You may want to clean up the data and remove lines which contain quotes (e.g. start with a &gt; character) or horizontal lines in reddit markdown (e.g. only have ----).\nSome ideas to get you started thinking:\n\nNumber of syllables per line may be used to infer rhyming scheme and/or poetry style. You can use the qdap package in R, which contains the syllable_sum function to count the number of syllables in a sentence. You may need to use a for-loop or program a custom function to use the syllables function on every entry in your data frame column.\nUse of non-alphabetic characters. Schnoodle often uses emoji and other text annotations to convey emotions and excitement - how often do these types of annotations appear in their poems?\nCommon characters and phrases. Sprog writes poems frequently about a character named Timmy (who often meets a horrible end). Do these poems have a common format/style/rhyme scheme?\nSprog often writes longer poems with multiple stanzas. Identify which poems have multiple stanzas (Hint, look for blank lines in a systematic pattern) and show the distribution of stanza length, stanza variation within poems, and number of stanzas in each poem.\nSchnoodle often misspells words intentionally (using e.g. fren instead of friend) to convey that they are writing using an animal’s voice. What proportion of words are misspelled in each poem? How much does this proportion vary? Based on the distribution, how likely is it, in your opinion, that Schnoodle misspells words more often when speaking as one type of animal than another? You can use the hunspell package in R to detect whether words are likely misspelled."
-  },
-  {
-    "objectID": "homework/07-strings.html#splitting-poems-into-lines-1",
-    "href": "homework/07-strings.html#splitting-poems-into-lines-1",
-    "title": "String Processing and Data Wrangling in R and Python",
-    "section": "2.1 Splitting Poems into Lines",
-    "text": "2.1 Splitting Poems into Lines\nSplit the poem into lines and create a data frame that has\n\na new column called poem_id, numbered from one to the total number of poems by the poet in question\na new variable called line that contains the text of each line of the poem (one row per poem line). To get this, you may need to split the comment string by the endline character (\\n) and then unnest or expand your data frame.\na new variable called line_no that contains the line number of the poem. This should be computed per poem.\n\nEnsure that you are splitting lines by a string which makes sense. Some poems have multiple paragraphs (stanzas) and may have a blank line in between; you want to preserve this blank line as it will help you make sense of the poem. Some poems instead have blank lines between every line of the poem; in these cases, you may want to split by e.g. \\n\\n instead of \\n. See Part 1 Checkpoint for an example of what the output should look like from each poet."
-  },
-  {
-    "objectID": "homework/07-strings.html#summarizing-poems-1",
-    "href": "homework/07-strings.html#summarizing-poems-1",
-    "title": "String Processing and Data Wrangling in R and Python",
-    "section": "2.2 Summarizing Poems",
-    "text": "2.2 Summarizing Poems\nFor each poem, create a summary data frame that contains:\n\nAverage number of words per line in the poem\nNumber of lines in the poem\nNumber of characters which are not letters or spaces (punctuation, numbers, and any non-ASCII characters)\nNumber of uppercase letters in the poem\nNumber of lowercase letters in the poem\n\nCreate a plot showing the distribution of the number of words per line across all poems you have in your dataset. Create another plot showing the number of lines in the poem for all poems in your dataset. What does this tell you about the “average” style of the poet in question?"
-  },
-  {
-    "objectID": "homework/07-strings.html#poetry-analysis-1",
-    "href": "homework/07-strings.html#poetry-analysis-1",
-    "title": "String Processing and Data Wrangling in R and Python",
-    "section": "2.3 Poetry Analysis",
-    "text": "2.3 Poetry Analysis\nChoose some characteristic(s) of the poet’s style to explore graphically. If necessary, create a subset of the data with poems relevant to your question before you generate numerical summaries. You may want to clean up the data and remove lines which contain quotes (e.g. start with a &gt; character) or horizontal lines in reddit markdown (e.g. only have ----).\nSome ideas to get you started thinking:\n\nNumber of syllables per line may be used to infer rhyming scheme and/or poetry style. You can use the syllables python package. You may need to use a for-loop or program a custom function to use the syllables function on every entry in your data frame column.\nUse of non-alphabetic characters. Schnoodle often uses emoji and other text annotations to convey emotions and excitement - how often do these types of annotations appear in their poems?\nCommon characters and phrases. Sprog writes poems frequently about a character named Timmy (who often meets a horrible end). Do these poems have a common format/style/rhyme scheme?\nSprog often writes longer poems with multiple stanzas. Identify which poems have multiple stanzas (Hint, look for blank lines in a systematic pattern) and show the distribution of stanza length, stanza variation within poems, and number of stanzas in each poem.\nSchnoodle often misspells words intentionally (using e.g. fren instead of friend) to convey that they are writing using an animal’s voice. What proportion of words are misspelled in each poem? How much does this proportion vary? Based on the distribution, how likely is it, in your opinion, that Schnoodle misspells words more often when speaking as one type of animal than another? You can use one of the python packages discussed in this post to detect whether words are likely misspelled."
-  },
-  {
-    "objectID": "homework/05-graphics-groundhogs.html",
-    "href": "homework/05-graphics-groundhogs.html",
-    "title": "Homework 5: Graphics",
+    "objectID": "homework/06-data-manip.html",
+    "href": "homework/06-data-manip.html",
+    "title": "Homework 6: Data Manipulation",
     "section": "",
-    "text": "Note: This assignment must be submitted in github classroom."
+    "text": "Note: This assignment must be submitted in github classroom.\ncp ../homework-repos/06-data-manip/gapminder_data.csv .\nco2_sum &lt;- data.frame() # This is here to be a blank data frame so that the \n                        # lines below work before you've filled your code in.\nThe Gapminder project’s mission is to fight devastating ignorance with a fact-based worldview everyone can understand. To do this, they assemble reliable data about a variety of global variables to help educate the general public.\nI have collected data from Gapminder about several variables:\nUse the data manipulation tools you’ve learned about to answer each of the following questions, which I’ve grouped into several general topics. Some questions may specify a specific language to use; if no language is specified, you may choose whether to use R or python to answer the question."
   },
   {
-    "objectID": "homework/05-graphics-groundhogs.html#data-exploration",
-    "href": "homework/05-graphics-groundhogs.html#data-exploration",
-    "title": "Homework 5: Graphics",
+    "objectID": "homework/06-data-manip.html#read-in-the-data",
+    "href": "homework/06-data-manip.html#read-in-the-data",
+    "title": "Homework 6: Data Manipulation",
+    "section": "Read In the Data",
+    "text": "Read In the Data\nRead in the data in R and Python. In both languages, store the table in the variable gapminder."
+  },
+  {
+    "objectID": "homework/06-data-manip.html#data-exploration",
+    "href": "homework/06-data-manip.html#data-exploration",
+    "title": "Homework 6: Data Manipulation",
     "section": "Data Exploration",
-    "text": "Data Exploration\nOne extremely important use of charts is to explore new datasets. In order to get the most out of a dataset, however, it is important to use a chart that is suited to the type of data: a density plot will not work well for showing categorical data, for instance.\nFor each variable in the groundhogs data that contains useful information, find an appropriate plot for the data. You may show more than one variable in a single plot (latitude and longitude should probably be shown together). You may use either R or python for this task.\ngroundhogs.csv\n\nlat, long\ncountry\nisGroundhog\nactive\npredictionsCount\n\npredictions.csv\n\nisGroundhog\nyear\nshadow\n\nFor each plot you draw, write 1-2 sentences explaining what you can learn from the plot.\n\nThis plot shows…"
+    "text": "Data Exploration\n\nMissingness\nGapminder puts a lot of effort into curating certain variables; other variables are less frequently used (or are harder to assemble from reliable sources).\n\nCO2\nCreate a table of all countries with at least 30 observations CO2. Your table should be called co2_sum and should have columns country and n_obs. Do not print out the table; instead, if you have done everything correctly, when your document is compiled the correct number of countries will be filled in in the sentence below the code chunk.\n\nThere are 0 countries with at least 30 years of CO2 data.\n\n\nEnergy\nAnswer in Python\n\n\nIncome\n\n\nGDP\n\nrm ./gapminder_data.csv"
   },
   {
-    "objectID": "homework/05-graphics-groundhogs.html#grammar-of-graphics",
-    "href": "homework/05-graphics-groundhogs.html#grammar-of-graphics",
-    "title": "Homework 5: Graphics",
-    "section": "Grammar of Graphics",
-    "text": "Grammar of Graphics\nThink of a good way to answer the following questions with a plot. For each plot, write 1-2 sentences explaining why you mapped each variable in the way that you did. Use ggplot2 for this portion of the assignment.\nYou may make editorial decisions here - it may be useful to only show groundhogs with 20 years of predictions, for instance. If you make such decisions, please explain why.\nYour charts must have appropriate axis labels and titles.\n\nDo different groundhogs have different probabilities of predicting 6 more weeks of winter?\n\nI mapped … to x and … to y because…\n\n\nHow much do North American groundhogs tend to agree on their predictions?\nDoes there appear to be any spatial covariance (that is, are groundhogs who are close together more likely to predict the same thing?)\n\nI mapped … to x and … to y because…"
-  },
-  {
-    "objectID": "homework/05-graphics-groundhogs.html#ugly-chart-challenge",
-    "href": "homework/05-graphics-groundhogs.html#ugly-chart-challenge",
-    "title": "Homework 5: Graphics",
-    "section": "Ugly Chart Challenge",
-    "text": "Ugly Chart Challenge\nThe textbook spent lots of time showing you how to create different types of graphics, but I spent a lot less time showing you all of the different ways you could customize graphics in any plotting library. In this problem, I want you to create the ugliest graph you can, and then explain why, exactly, you made the decisions you did, and which principles of good graphics you’ve intentionally violated.\nUgliness is subjective, so the goal here is for you to explore the different ways you can customize the finer details of a plot. Make sure your finished masterpiece has appropriate axis labels and a title (after all, even ugly plots need to be correctly labeled!). You are free to add additional variables and layers, modify the aesthetics used, and leverage other packages. If you need inspiration, look here.\nUse the groundhog data to create the ugliest chart you possibly can, by violating as many guidelines for the creation of good graphics as possible.\nDo this for one plotting system in R, and one plotting system in Python. You might try different ways to make things ugly in each plotting system. Note that this dataset does include images of each groundhog, so feel free to leverage that in your plot, if you are so inspired.\nFor each plot, explain why the plot is ugly and what principles of good graphics it violates in 2-3 sentences.\n\nR\nThis chart is ugly because it violates …\n\n\nPython\nThis chart is ugly because it violates …"
-  },
-  {
-    "objectID": "homework/03-cipher.html",
-    "href": "homework/03-cipher.html",
-    "title": "decodeR: Base R",
+    "objectID": "homework/04-cookies.html",
+    "href": "homework/04-cookies.html",
+    "title": "Chocolate Chip Cookies",
     "section": "",
-    "text": "Note: This assignment must be submitted in github classroom.\nThis assignment is modified from the decodeR exercises by Kelly Bodwin and Allison Theobold.\nIn this assignment, you will be creating and manipulating vectors, lists, and data frames to uncover a top secret message.\nSome advice:"
+    "text": "Note: This assignment must be submitted in github classroom."
   },
   {
-    "objectID": "homework/03-cipher.html#part-one-setup",
-    "href": "homework/03-cipher.html#part-one-setup",
-    "title": "decodeR: Base R",
-    "section": "Part One: Setup",
-    "text": "Part One: Setup\nEach of the following R chunks will cause an error and/or do the desired task incorrectly. Find the mistake, and correct it to complete the intended action. For each error, write 1-2 sentences to reflect on what the mistake was and how you found it and fixed it.\n\nCreate vectors containing the upper case letters, lower case letters, and some punctuation marks.\n\n\nlower_case &lt;- c(\"a\", \"b\", \"c\", \"d\", \"e\", \"f\", \"g\", \"h\", \"i\", \"j\", \"k\", \"l\", \"m\", \"n\", \"o\", \"p\", \"q\", \"r\", \"s\", \"t\", \"u\", \"v\", \"w\", \"x\", \"y\", \"z\")\n\nupper_case &lt;- c(\"A\", \"B\", \"C\", \"D\", \"E\", \"F\", \"G\", \"H\" \"I\", \"J\", \"K\", \"L\", \"M\", \"N\", \"O\", \"P\", \"Q\", \"R\", \"S\", \"T\", \"U\", \"V\", \"W\", \"X\", \"Y\", \"Z\")\n\npunctuation &lt;- c(\".\", \",\", \"!\", \"?\", \"'\", \"\"\", \"(\", \")\", \" \", \"-\", \";\", \":\")\n\n\nMake one long vector containing all the symbols.\n\n\nmy_symbols &lt;- cbind(lower_case, upper_case, punctuation)\n\n\nTurn the my_symbols vector into a data frame, with the variable name “Symbol”\n\n\nmy_symbols &lt;- dataframe(my_symbols)\nnames(my_symbols) = Symbol\n\n\nFind the total number of symbols we have in our data frame.\n\n\nlen &lt;- length(my_symbols)\n\n\nCreate a new variable in your dataframe that assigns a number to each symbol.\n\n\nmy_symbols%Num &lt;- 1:len"
+    "objectID": "homework/04-cookies.html#reading-in-the-data",
+    "href": "homework/04-cookies.html#reading-in-the-data",
+    "title": "Chocolate Chip Cookies",
+    "section": "Reading In the Data",
+    "text": "Reading In the Data\nFirst, read in the CSV data of cookie ingredients. Make sure that your end-result data has appropriate types for each column - these should match the types provided in the documentation in the README.md file."
   },
   {
-    "objectID": "homework/03-cipher.html#part-two-decoding-the-secret-message.",
-    "href": "homework/03-cipher.html#part-two-decoding-the-secret-message.",
-    "title": "decodeR: Base R",
-    "section": "Part Two: Decoding the secret message.",
-    "text": "Part Two: Decoding the secret message.\nThis chunk will load up the encoded secret message as a vector:\n\ntop_secret &lt;- read.csv(\"Secret_Code\", header = FALSE)$V1\n\nBy altering this top secret set of numbers, you will be able to create a message. Write your own code to complete the steps below.\n\nAdd 14 to every number.\nMultiply every number by 18, then subtract 257.\nExponentiate every number. (That is, do e^[number].)\nSquare every number.\n\nCheckpoint: Headquarters has informed you that at this stage of decoding, there should be 352 numbers in the secret message that are below 17.\n\nTurn your vector of numbers into a matrix with 5 columns.\nSeparately from your top secret numbers, create a vector of all the even numbers between 1 and 382. Name it “evens”. That is, “evens” should contain 2, 4, 6, 8 …, 382.\nSubtract the “evens” vector from the first column of your secret message matrix.\nSubtract 100 from all numbers in the 18-24th rows of the 3rd column.\nMultiply all numbers in the 4th and 5th column by 2.\nTurn your matrix back into a vector.\n\nCheckpoint: Headquarters has informed you that at this stage of decoding, all numbers in indices 500 and beyond are below 100.\n\nTake the square root of all numbers in indices 38 to 465.\nRound all numbers to the nearest whole number.\nReplace all instances of the number 39 with 20.\n\nCheckpoint: Headquarters has informed you that your final message should have 344 even numbers."
+    "objectID": "homework/04-cookies.html#exploratory-data-analysis",
+    "href": "homework/04-cookies.html#exploratory-data-analysis",
+    "title": "Chocolate Chip Cookies",
+    "section": "Exploratory Data Analysis",
+    "text": "Exploratory Data Analysis\nExploratory data analysis is the process of getting familiar with your dataset. To get started, this blog post provides a nice checklist to get you thinking:\n\n\nWhat question(s) are you trying to solve (or prove wrong)?\nWhat kind of data do you have and how do you treat different types?\nWhat’s missing from the data and how do you deal with it?\nWhere are the outliers and why should you care about them?\nHow can you add, change or remove features to get more out of your data?\n\n\n\nGenerating Questions\nGenerate at least 5 questions you might explore using this database of cookie ingredients.\n\n\n\n\n\n\n\n\n\nSkimming the Data\nOne thing we often want to do during EDA is to examine the quality of the data - are there missing values? What quirks might exist in the dataset?\nThe skimr package in R, and the similar skimpy package in python (which has a much better name, in my opinion), can help provide visual summaries of the data.\nInstall both packages, and read the package documentation (R, Python).\n[Part 1] Use each package and generate summaries of your data that require the use of at least some non-default options in each package’s skim function.\n[Part 2] Write 1-2 sentences about what you can tell from each summary display you generate. Did you discover anything new about the data?\n\n\nGenerating Tables\nAnother useful technique for exploratory data analysis is to generate summary tables. You may want to use the dplyr package in R (group_by or count functions), as well as the groupby and count methods in Pandas. Python example, R example\n[Part 1] Using R and Python, generate a table that shows what proportion of recipes contain each type of ingredient, for the most common 20 ingredients.\n[Part 2] Print out a character string that lists all of the ingredients that do not appear in at least 20 recipes.\n(Delete this note, but you can include data values inline in markdown text by using backticks, at least in R. For instance, here is R’s built in value for pi: 3.1415927. Unfortunately, this doesn’t work in python using the knitr markdown engine, but you can print the list out in python anyways using a code chunk.)\n\n\nVisualization\nUsing whatever plotting system you are comfortable with in R or python, see if you can create a couple of useful exploratory data visualizations which address one of the questions you wrote above - or another question which you’ve come up with as you’ve worked on this assignment.\n[Part 1] Create at least one plot (it doesn’t have to be pretty) that showcases an interesting facet of the data.\n[Part 2] Write 2-3 sentences about what you can learn from that plot and what directions you might want to investigate from here."
   },
   {
-    "objectID": "homework/03-cipher.html#part-3-the-secret-message",
-    "href": "homework/03-cipher.html#part-3-the-secret-message",
-    "title": "decodeR: Base R",
-    "section": "Part 3: The secret message!",
-    "text": "Part 3: The secret message!\nUse your final vector of numbers as indices for my_symbols to discover the final message!\nGoogle the first line of this message, if you do not recognize it, to see what it is.\nWrite 3-4 sentences about what you learned from this investigation. What problems did you encounter, and how did you solve them? Could you do the same tasks in Python? Why or why not?"
+    "objectID": "homework/02-review.html",
+    "href": "homework/02-review.html",
+    "title": "Homework 2: Reviewing R and Python",
+    "section": "",
+    "text": "Note: This assignment must be submitted in github classroom.\nA palindrome is a string that is equal to the reverse of that string, such as “Mom”, “Hannah” or “We panic in a pew.”\nTraditionally, a phrase is tested for being a palindrome once all spaces and punctuation has been removed, and all letters are written in the same case. You will need to think about how to do these tasks in R and python."
+  },
+  {
+    "objectID": "homework/02-review.html#pseudocode",
+    "href": "homework/02-review.html#pseudocode",
+    "title": "Homework 2: Reviewing R and Python",
+    "section": "Pseudocode",
+    "text": "Pseudocode\nWrite a detailed list of steps to process a string named test to test that it is a palindrome.\nYou may find it helpful to write down some test words and work through them as if you were an algorithm. If you do this, please take a picture of your scratch paper, put it in the homework directory, and add it to your git repository along with your assignment solution.\nHint: The final items in this list of steps should be defining a variable revtest that is test with the letters reversed, and then comparing test and revtest for equality."
+  },
+  {
+    "objectID": "homework/02-review.html#r",
+    "href": "homework/02-review.html#r",
+    "title": "Homework 2: Reviewing R and Python",
+    "section": "R",
+    "text": "R\nTurn your pseudocode into a sequence of statements in R that work with a variable named test. At this point, there is no need to write these steps in a function - we’ll get there.\n\ntest &lt;- \"Hannah\"\ntest2 &lt;- \"not-a-palindrome\"\n\n# Your steps go here"
+  },
+  {
+    "objectID": "homework/02-review.html#python",
+    "href": "homework/02-review.html#python",
+    "title": "Homework 2: Reviewing R and Python",
+    "section": "Python",
+    "text": "Python\nTurn your pseudocode into a sequence of statements in python that work with a variable named test. At this point, there is no need to write these steps in a function - we’ll get there.\n\ntest = \"Hannah\"\ntest2 = \"not-a-palindrome\"\n\n# Your steps go here"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Stat 251: Data Wrangling",
+    "section": "",
+    "text": "Course Materials\nDates shown are due dates (for homework and exams) and dates on which material was presented (for slides).\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nDate\n\n\nTitle\n\n\nType\n\n\n\n\n\n\n\n\nApr 2, 2025\n\n\nData Reshaping with Puppies\n\n\nhomework\n\n\n\n\n\n\n\nMar 31, 2025\n\n\nJoining Data\n\n\nreading\n\n\n\n\n\n\n\nMar 27, 2025\n\n\nString Processing and Data Wrangling in R and Python\n\n\nhomework\n\n\n\n\n\n\n\nMar 25, 2025\n\n\nWorking with Strings\n\n\n \n\n\n\n\n\n\n\nMar 25, 2025\n\n\nStrings\n\n\nreading\n\n\n\n\n\n\n\nMar 25, 2025\n\n\nReshaping Data\n\n\nreading\n\n\n\n\n\n\n\nMar 13, 2025\n\n\nMidterm\n\n\nexam\n\n\n\n\n\n\n\nMar 6, 2025\n\n\nHomework 6: Data Manipulation\n\n\nhomework\n\n\n\n\n\n\n\nMar 4, 2025\n\n\nPractice Exam (2023)\n\n\nexam\n\n\n\n\n\n\n\nMar 4, 2025\n\n\nExam objectives\n\n\nexam\n\n\n\n\n\n\n\nMar 4, 2025\n\n\nGood programming practices\n\n\n \n\n\n\n\n\n\n\nFeb 27, 2025\n\n\nComputing with data\n\n\n \n\n\n\n\n\n\n\nFeb 25, 2025\n\n\nHomework 5: Graphics\n\n\nhomework\n\n\n\n\n\n\n\nFeb 25, 2025\n\n\nData Cleaning\n\n\nreading\n\n\n\n\n\n\n\nFeb 24, 2025\n\n\nSurvey Results and Groundhog Graphics\n\n\n \n\n\n\n\n\n\n\nFeb 20, 2025\n\n\nCreating Good Graphics\n\n\n \n\n\n\n\n\n\n\nFeb 18, 2025\n\n\nChocolate Chip Cookies\n\n\nhomework\n\n\n\n\n\n\n\nFeb 18, 2025\n\n\nFinishing up Cookie Exploration\n\n\n \n\n\n\n\n\n\n\nFeb 18, 2025\n\n\nData Visualization\n\n\nreading\n\n\n\n\n\n\n\nFeb 18, 2025\n\n\nGood Graphics\n\n\nreading\n\n\n\n\n\n\n\nFeb 13, 2025\n\n\nData Explorations\n\n\n \n\n\n\n\n\n\n\nFeb 11, 2025\n\n\ndecodeR: Base R\n\n\nhomework\n\n\n\n\n\n\n\nFeb 11, 2025\n\n\nReading In Data\n\n\n \n\n\n\n\n\n\n\nFeb 11, 2025\n\n\nData Input\n\n\nreading\n\n\n\n\n\n\n\nFeb 11, 2025\n\n\nExploratory Data Analysis\n\n\nreading\n\n\n\n\n\n\n\nFeb 6, 2025\n\n\nReview - Cipher\n\n\n \n\n\n\n\n\n\n\nFeb 4, 2025\n\n\nHomework 2: Reviewing R and Python\n\n\nhomework\n\n\n\n\n\n\n\nFeb 4, 2025\n\n\nReview - Cipher\n\n\n \n\n\n\n\n\n\n\nJan 30, 2025\n\n\nProgramming Review\n\n\nslides\n\n\n\n\n\n\n\nJan 28, 2025\n\n\n👋 The Basics of GitHub\n\n\nhomework\n\n\n\n\n\n\n\nJan 28, 2025\n\n\nProgramming Review\n\n\nslides\n\n\n\n\n\n\n\nJan 28, 2025\n\n\nVersion Control with Git and Github\n\n\nreading\n\n\n\n\n\n\n\nJan 28, 2025\n\n\nReview - Programming\n\n\nreading\n\n\n\n\n\n\n\nJan 23, 2025\n\n\nVersion Control\n\n\nslides\n\n\n\n\n\n\n\nJan 23, 2025\n\n\nReview - Tools\n\n\nreading\n\n\n\n\n\n\n\nJan 21, 2025\n\n\nIntroduction\n\n\nslides\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "homework/01-git-github.html",
@@ -280,81 +252,116 @@
     "text": "Optional extra steps\n\nOpen a pull request and let your teacher know that you’ve finished this course.\n\nCreate your profile README. Let the world know a little bit more about you! What are you interested in learning? What are you working on? What’s your favorite hobby? Learn more about creating your profile README in the document, “Managing Your Profile README”.\nGo to your user dashboard and create a new repository. Experiment with the features within that repository to familiarize yourself with them.\nLet us know what you liked or didn’t like about the content of this course. What would you like to see more of? What would be interesting or helpful to your learning journey?"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Stat 251: Data Wrangling",
+    "objectID": "homework/03-cipher.html",
+    "href": "homework/03-cipher.html",
+    "title": "decodeR: Base R",
     "section": "",
-    "text": "Course Materials\nDates shown are due dates (for homework and exams) and dates on which material was presented (for slides).\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nDate\n\n\nTitle\n\n\nType\n\n\n\n\n\n\n\n\nMar 27, 2025\n\n\nString Processing and Data Wrangling in R and Python\n\n\nhomework\n\n\n\n\n\n\n\nMar 25, 2025\n\n\nWorking with Strings\n\n\n \n\n\n\n\n\n\n\nMar 25, 2025\n\n\nStrings\n\n\nreading\n\n\n\n\n\n\n\nMar 25, 2025\n\n\nReshaping Data\n\n\nreading\n\n\n\n\n\n\n\nMar 13, 2025\n\n\nMidterm\n\n\nexam\n\n\n\n\n\n\n\nMar 6, 2025\n\n\nHomework 6: Data Manipulation\n\n\nhomework\n\n\n\n\n\n\n\nMar 4, 2025\n\n\nPractice Exam (2023)\n\n\nexam\n\n\n\n\n\n\n\nMar 4, 2025\n\n\nExam objectives\n\n\nexam\n\n\n\n\n\n\n\nMar 4, 2025\n\n\nGood programming practices\n\n\n \n\n\n\n\n\n\n\nFeb 27, 2025\n\n\nComputing with data\n\n\n \n\n\n\n\n\n\n\nFeb 25, 2025\n\n\nHomework 5: Graphics\n\n\nhomework\n\n\n\n\n\n\n\nFeb 25, 2025\n\n\nData Cleaning\n\n\nreading\n\n\n\n\n\n\n\nFeb 24, 2025\n\n\nSurvey Results and Groundhog Graphics\n\n\n \n\n\n\n\n\n\n\nFeb 20, 2025\n\n\nCreating Good Graphics\n\n\n \n\n\n\n\n\n\n\nFeb 18, 2025\n\n\nChocolate Chip Cookies\n\n\nhomework\n\n\n\n\n\n\n\nFeb 18, 2025\n\n\nFinishing up Cookie Exploration\n\n\n \n\n\n\n\n\n\n\nFeb 18, 2025\n\n\nData Visualization\n\n\nreading\n\n\n\n\n\n\n\nFeb 18, 2025\n\n\nGood Graphics\n\n\nreading\n\n\n\n\n\n\n\nFeb 13, 2025\n\n\nData Explorations\n\n\n \n\n\n\n\n\n\n\nFeb 11, 2025\n\n\ndecodeR: Base R\n\n\nhomework\n\n\n\n\n\n\n\nFeb 11, 2025\n\n\nReading In Data\n\n\n \n\n\n\n\n\n\n\nFeb 11, 2025\n\n\nData Input\n\n\nreading\n\n\n\n\n\n\n\nFeb 11, 2025\n\n\nExploratory Data Analysis\n\n\nreading\n\n\n\n\n\n\n\nFeb 6, 2025\n\n\nReview - Cipher\n\n\n \n\n\n\n\n\n\n\nFeb 4, 2025\n\n\nHomework 2: Reviewing R and Python\n\n\nhomework\n\n\n\n\n\n\n\nFeb 4, 2025\n\n\nReview - Cipher\n\n\n \n\n\n\n\n\n\n\nJan 30, 2025\n\n\nProgramming Review\n\n\nslides\n\n\n\n\n\n\n\nJan 28, 2025\n\n\n👋 The Basics of GitHub\n\n\nhomework\n\n\n\n\n\n\n\nJan 28, 2025\n\n\nProgramming Review\n\n\nslides\n\n\n\n\n\n\n\nJan 28, 2025\n\n\nVersion Control with Git and Github\n\n\nreading\n\n\n\n\n\n\n\nJan 28, 2025\n\n\nReview - Programming\n\n\nreading\n\n\n\n\n\n\n\nJan 23, 2025\n\n\nVersion Control\n\n\nslides\n\n\n\n\n\n\n\nJan 23, 2025\n\n\nReview - Tools\n\n\nreading\n\n\n\n\n\n\n\nJan 21, 2025\n\n\nIntroduction\n\n\nslides\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Note: This assignment must be submitted in github classroom.\nThis assignment is modified from the decodeR exercises by Kelly Bodwin and Allison Theobold.\nIn this assignment, you will be creating and manipulating vectors, lists, and data frames to uncover a top secret message.\nSome advice:"
   },
   {
-    "objectID": "homework/02-review.html",
-    "href": "homework/02-review.html",
-    "title": "Homework 2: Reviewing R and Python",
-    "section": "",
-    "text": "Note: This assignment must be submitted in github classroom.\nA palindrome is a string that is equal to the reverse of that string, such as “Mom”, “Hannah” or “We panic in a pew.”\nTraditionally, a phrase is tested for being a palindrome once all spaces and punctuation has been removed, and all letters are written in the same case. You will need to think about how to do these tasks in R and python."
+    "objectID": "homework/03-cipher.html#part-one-setup",
+    "href": "homework/03-cipher.html#part-one-setup",
+    "title": "decodeR: Base R",
+    "section": "Part One: Setup",
+    "text": "Part One: Setup\nEach of the following R chunks will cause an error and/or do the desired task incorrectly. Find the mistake, and correct it to complete the intended action. For each error, write 1-2 sentences to reflect on what the mistake was and how you found it and fixed it.\n\nCreate vectors containing the upper case letters, lower case letters, and some punctuation marks.\n\n\nlower_case &lt;- c(\"a\", \"b\", \"c\", \"d\", \"e\", \"f\", \"g\", \"h\", \"i\", \"j\", \"k\", \"l\", \"m\", \"n\", \"o\", \"p\", \"q\", \"r\", \"s\", \"t\", \"u\", \"v\", \"w\", \"x\", \"y\", \"z\")\n\nupper_case &lt;- c(\"A\", \"B\", \"C\", \"D\", \"E\", \"F\", \"G\", \"H\" \"I\", \"J\", \"K\", \"L\", \"M\", \"N\", \"O\", \"P\", \"Q\", \"R\", \"S\", \"T\", \"U\", \"V\", \"W\", \"X\", \"Y\", \"Z\")\n\npunctuation &lt;- c(\".\", \",\", \"!\", \"?\", \"'\", \"\"\", \"(\", \")\", \" \", \"-\", \";\", \":\")\n\n\nMake one long vector containing all the symbols.\n\n\nmy_symbols &lt;- cbind(lower_case, upper_case, punctuation)\n\n\nTurn the my_symbols vector into a data frame, with the variable name “Symbol”\n\n\nmy_symbols &lt;- dataframe(my_symbols)\nnames(my_symbols) = Symbol\n\n\nFind the total number of symbols we have in our data frame.\n\n\nlen &lt;- length(my_symbols)\n\n\nCreate a new variable in your dataframe that assigns a number to each symbol.\n\n\nmy_symbols%Num &lt;- 1:len"
   },
   {
-    "objectID": "homework/02-review.html#pseudocode",
-    "href": "homework/02-review.html#pseudocode",
-    "title": "Homework 2: Reviewing R and Python",
-    "section": "Pseudocode",
-    "text": "Pseudocode\nWrite a detailed list of steps to process a string named test to test that it is a palindrome.\nYou may find it helpful to write down some test words and work through them as if you were an algorithm. If you do this, please take a picture of your scratch paper, put it in the homework directory, and add it to your git repository along with your assignment solution.\nHint: The final items in this list of steps should be defining a variable revtest that is test with the letters reversed, and then comparing test and revtest for equality."
+    "objectID": "homework/03-cipher.html#part-two-decoding-the-secret-message.",
+    "href": "homework/03-cipher.html#part-two-decoding-the-secret-message.",
+    "title": "decodeR: Base R",
+    "section": "Part Two: Decoding the secret message.",
+    "text": "Part Two: Decoding the secret message.\nThis chunk will load up the encoded secret message as a vector:\n\ntop_secret &lt;- read.csv(\"Secret_Code\", header = FALSE)$V1\n\nBy altering this top secret set of numbers, you will be able to create a message. Write your own code to complete the steps below.\n\nAdd 14 to every number.\nMultiply every number by 18, then subtract 257.\nExponentiate every number. (That is, do e^[number].)\nSquare every number.\n\nCheckpoint: Headquarters has informed you that at this stage of decoding, there should be 352 numbers in the secret message that are below 17.\n\nTurn your vector of numbers into a matrix with 5 columns.\nSeparately from your top secret numbers, create a vector of all the even numbers between 1 and 382. Name it “evens”. That is, “evens” should contain 2, 4, 6, 8 …, 382.\nSubtract the “evens” vector from the first column of your secret message matrix.\nSubtract 100 from all numbers in the 18-24th rows of the 3rd column.\nMultiply all numbers in the 4th and 5th column by 2.\nTurn your matrix back into a vector.\n\nCheckpoint: Headquarters has informed you that at this stage of decoding, all numbers in indices 500 and beyond are below 100.\n\nTake the square root of all numbers in indices 38 to 465.\nRound all numbers to the nearest whole number.\nReplace all instances of the number 39 with 20.\n\nCheckpoint: Headquarters has informed you that your final message should have 344 even numbers."
   },
   {
-    "objectID": "homework/02-review.html#r",
-    "href": "homework/02-review.html#r",
-    "title": "Homework 2: Reviewing R and Python",
-    "section": "R",
-    "text": "R\nTurn your pseudocode into a sequence of statements in R that work with a variable named test. At this point, there is no need to write these steps in a function - we’ll get there.\n\ntest &lt;- \"Hannah\"\ntest2 &lt;- \"not-a-palindrome\"\n\n# Your steps go here"
+    "objectID": "homework/03-cipher.html#part-3-the-secret-message",
+    "href": "homework/03-cipher.html#part-3-the-secret-message",
+    "title": "decodeR: Base R",
+    "section": "Part 3: The secret message!",
+    "text": "Part 3: The secret message!\nUse your final vector of numbers as indices for my_symbols to discover the final message!\nGoogle the first line of this message, if you do not recognize it, to see what it is.\nWrite 3-4 sentences about what you learned from this investigation. What problems did you encounter, and how did you solve them? Could you do the same tasks in Python? Why or why not?"
   },
   {
-    "objectID": "homework/02-review.html#python",
-    "href": "homework/02-review.html#python",
-    "title": "Homework 2: Reviewing R and Python",
-    "section": "Python",
-    "text": "Python\nTurn your pseudocode into a sequence of statements in python that work with a variable named test. At this point, there is no need to write these steps in a function - we’ll get there.\n\ntest = \"Hannah\"\ntest2 = \"not-a-palindrome\"\n\n# Your steps go here"
-  },
-  {
-    "objectID": "homework/04-cookies.html",
-    "href": "homework/04-cookies.html",
-    "title": "Chocolate Chip Cookies",
+    "objectID": "homework/05-graphics-groundhogs.html",
+    "href": "homework/05-graphics-groundhogs.html",
+    "title": "Homework 5: Graphics",
     "section": "",
     "text": "Note: This assignment must be submitted in github classroom."
   },
   {
-    "objectID": "homework/04-cookies.html#reading-in-the-data",
-    "href": "homework/04-cookies.html#reading-in-the-data",
-    "title": "Chocolate Chip Cookies",
-    "section": "Reading In the Data",
-    "text": "Reading In the Data\nFirst, read in the CSV data of cookie ingredients. Make sure that your end-result data has appropriate types for each column - these should match the types provided in the documentation in the README.md file."
-  },
-  {
-    "objectID": "homework/04-cookies.html#exploratory-data-analysis",
-    "href": "homework/04-cookies.html#exploratory-data-analysis",
-    "title": "Chocolate Chip Cookies",
-    "section": "Exploratory Data Analysis",
-    "text": "Exploratory Data Analysis\nExploratory data analysis is the process of getting familiar with your dataset. To get started, this blog post provides a nice checklist to get you thinking:\n\n\nWhat question(s) are you trying to solve (or prove wrong)?\nWhat kind of data do you have and how do you treat different types?\nWhat’s missing from the data and how do you deal with it?\nWhere are the outliers and why should you care about them?\nHow can you add, change or remove features to get more out of your data?\n\n\n\nGenerating Questions\nGenerate at least 5 questions you might explore using this database of cookie ingredients.\n\n\n\n\n\n\n\n\n\nSkimming the Data\nOne thing we often want to do during EDA is to examine the quality of the data - are there missing values? What quirks might exist in the dataset?\nThe skimr package in R, and the similar skimpy package in python (which has a much better name, in my opinion), can help provide visual summaries of the data.\nInstall both packages, and read the package documentation (R, Python).\n[Part 1] Use each package and generate summaries of your data that require the use of at least some non-default options in each package’s skim function.\n[Part 2] Write 1-2 sentences about what you can tell from each summary display you generate. Did you discover anything new about the data?\n\n\nGenerating Tables\nAnother useful technique for exploratory data analysis is to generate summary tables. You may want to use the dplyr package in R (group_by or count functions), as well as the groupby and count methods in Pandas. Python example, R example\n[Part 1] Using R and Python, generate a table that shows what proportion of recipes contain each type of ingredient, for the most common 20 ingredients.\n[Part 2] Print out a character string that lists all of the ingredients that do not appear in at least 20 recipes.\n(Delete this note, but you can include data values inline in markdown text by using backticks, at least in R. For instance, here is R’s built in value for pi: 3.1415927. Unfortunately, this doesn’t work in python using the knitr markdown engine, but you can print the list out in python anyways using a code chunk.)\n\n\nVisualization\nUsing whatever plotting system you are comfortable with in R or python, see if you can create a couple of useful exploratory data visualizations which address one of the questions you wrote above - or another question which you’ve come up with as you’ve worked on this assignment.\n[Part 1] Create at least one plot (it doesn’t have to be pretty) that showcases an interesting facet of the data.\n[Part 2] Write 2-3 sentences about what you can learn from that plot and what directions you might want to investigate from here."
-  },
-  {
-    "objectID": "homework/06-data-manip.html",
-    "href": "homework/06-data-manip.html",
-    "title": "Homework 6: Data Manipulation",
-    "section": "",
-    "text": "Note: This assignment must be submitted in github classroom.\ncp ../homework-repos/06-data-manip/gapminder_data.csv .\nco2_sum &lt;- data.frame() # This is here to be a blank data frame so that the \n                        # lines below work before you've filled your code in.\nThe Gapminder project’s mission is to fight devastating ignorance with a fact-based worldview everyone can understand. To do this, they assemble reliable data about a variety of global variables to help educate the general public.\nI have collected data from Gapminder about several variables:\nUse the data manipulation tools you’ve learned about to answer each of the following questions, which I’ve grouped into several general topics. Some questions may specify a specific language to use; if no language is specified, you may choose whether to use R or python to answer the question."
-  },
-  {
-    "objectID": "homework/06-data-manip.html#read-in-the-data",
-    "href": "homework/06-data-manip.html#read-in-the-data",
-    "title": "Homework 6: Data Manipulation",
-    "section": "Read In the Data",
-    "text": "Read In the Data\nRead in the data in R and Python. In both languages, store the table in the variable gapminder."
-  },
-  {
-    "objectID": "homework/06-data-manip.html#data-exploration",
-    "href": "homework/06-data-manip.html#data-exploration",
-    "title": "Homework 6: Data Manipulation",
+    "objectID": "homework/05-graphics-groundhogs.html#data-exploration",
+    "href": "homework/05-graphics-groundhogs.html#data-exploration",
+    "title": "Homework 5: Graphics",
     "section": "Data Exploration",
-    "text": "Data Exploration\n\nMissingness\nGapminder puts a lot of effort into curating certain variables; other variables are less frequently used (or are harder to assemble from reliable sources).\n\nCO2\nCreate a table of all countries with at least 30 observations CO2. Your table should be called co2_sum and should have columns country and n_obs. Do not print out the table; instead, if you have done everything correctly, when your document is compiled the correct number of countries will be filled in in the sentence below the code chunk.\n\nThere are 0 countries with at least 30 years of CO2 data.\n\n\nEnergy\nAnswer in Python\n\n\nIncome\n\n\nGDP\n\nrm ./gapminder_data.csv"
+    "text": "Data Exploration\nOne extremely important use of charts is to explore new datasets. In order to get the most out of a dataset, however, it is important to use a chart that is suited to the type of data: a density plot will not work well for showing categorical data, for instance.\nFor each variable in the groundhogs data that contains useful information, find an appropriate plot for the data. You may show more than one variable in a single plot (latitude and longitude should probably be shown together). You may use either R or python for this task.\ngroundhogs.csv\n\nlat, long\ncountry\nisGroundhog\nactive\npredictionsCount\n\npredictions.csv\n\nisGroundhog\nyear\nshadow\n\nFor each plot you draw, write 1-2 sentences explaining what you can learn from the plot.\n\nThis plot shows…"
+  },
+  {
+    "objectID": "homework/05-graphics-groundhogs.html#grammar-of-graphics",
+    "href": "homework/05-graphics-groundhogs.html#grammar-of-graphics",
+    "title": "Homework 5: Graphics",
+    "section": "Grammar of Graphics",
+    "text": "Grammar of Graphics\nThink of a good way to answer the following questions with a plot. For each plot, write 1-2 sentences explaining why you mapped each variable in the way that you did. Use ggplot2 for this portion of the assignment.\nYou may make editorial decisions here - it may be useful to only show groundhogs with 20 years of predictions, for instance. If you make such decisions, please explain why.\nYour charts must have appropriate axis labels and titles.\n\nDo different groundhogs have different probabilities of predicting 6 more weeks of winter?\n\nI mapped … to x and … to y because…\n\n\nHow much do North American groundhogs tend to agree on their predictions?\nDoes there appear to be any spatial covariance (that is, are groundhogs who are close together more likely to predict the same thing?)\n\nI mapped … to x and … to y because…"
+  },
+  {
+    "objectID": "homework/05-graphics-groundhogs.html#ugly-chart-challenge",
+    "href": "homework/05-graphics-groundhogs.html#ugly-chart-challenge",
+    "title": "Homework 5: Graphics",
+    "section": "Ugly Chart Challenge",
+    "text": "Ugly Chart Challenge\nThe textbook spent lots of time showing you how to create different types of graphics, but I spent a lot less time showing you all of the different ways you could customize graphics in any plotting library. In this problem, I want you to create the ugliest graph you can, and then explain why, exactly, you made the decisions you did, and which principles of good graphics you’ve intentionally violated.\nUgliness is subjective, so the goal here is for you to explore the different ways you can customize the finer details of a plot. Make sure your finished masterpiece has appropriate axis labels and a title (after all, even ugly plots need to be correctly labeled!). You are free to add additional variables and layers, modify the aesthetics used, and leverage other packages. If you need inspiration, look here.\nUse the groundhog data to create the ugliest chart you possibly can, by violating as many guidelines for the creation of good graphics as possible.\nDo this for one plotting system in R, and one plotting system in Python. You might try different ways to make things ugly in each plotting system. Note that this dataset does include images of each groundhog, so feel free to leverage that in your plot, if you are so inspired.\nFor each plot, explain why the plot is ugly and what principles of good graphics it violates in 2-3 sentences.\n\nR\nThis chart is ugly because it violates …\n\n\nPython\nThis chart is ugly because it violates …"
+  },
+  {
+    "objectID": "homework/07-strings.html",
+    "href": "homework/07-strings.html",
+    "title": "String Processing and Data Wrangling in R and Python",
+    "section": "",
+    "text": "Note: This assignment must be submitted in github classroom."
+  },
+  {
+    "objectID": "homework/07-strings.html#content-warning",
+    "href": "homework/07-strings.html#content-warning",
+    "title": "String Processing and Data Wrangling in R and Python",
+    "section": "Content Warning",
+    "text": "Content Warning\nThese poems may address adult topics and/or use strong or vulgar language, as they are taken from Reddit. I have not censored them in any way because I want you to work with data that is realistic. You should find a few test cases which you are comfortable with to use to test out your code, but you do not need to read all of the poems (and in both cases, I’ve provided you with approximately 1000 samples, so it’s probably too much to read in any case).\nHere are 5 indices (counting from 1) which are approximately G or PG in content for each poet, using the most recent snapshot CSV (20230806):\n\nSprog poems: 2, 6, 7, 8, 9\nSchnoodleDoodleDo poems: 1, 2, 3, 4, 5\n\nThese should be sufficient for you to test your code even if you are worried about being exposed to adult themes or language during this activity."
+  },
+  {
+    "objectID": "homework/07-strings.html#splitting-poems-into-lines",
+    "href": "homework/07-strings.html#splitting-poems-into-lines",
+    "title": "String Processing and Data Wrangling in R and Python",
+    "section": "1.1 Splitting Poems into Lines",
+    "text": "1.1 Splitting Poems into Lines\nSplit the poem into lines and create a data frame that has\n\na new column called poem_id, numbered from one to the total number of poems by the poet in question\na new variable called line that contains the text of each line of the poem (one row per poem line). To get this, you may need to split the comment string by the endline character (\\n) and then unnest or expand your data frame.\na new variable called line_no that contains the line number of the poem. This should be computed per poem.\n\nEnsure that you are splitting lines by a string which makes sense. Some poems have multiple paragraphs (stanzas) and may have a blank line in between; you want to preserve this blank line as it will help you make sense of the poem. Some poems instead have blank lines between every line of the poem; in these cases, you may want to split by e.g. \\n\\n instead of \\n.\nSee Part 1 Checkpoint for an example of what the output should look like from each poet."
+  },
+  {
+    "objectID": "homework/07-strings.html#summarizing-poems",
+    "href": "homework/07-strings.html#summarizing-poems",
+    "title": "String Processing and Data Wrangling in R and Python",
+    "section": "1.2 Summarizing Poems",
+    "text": "1.2 Summarizing Poems\nFor each poem, create a summary data frame that contains:\n\nAverage number of words per line in the poem\nNumber of lines in the poem\nNumber of characters which are not letters or spaces (punctuation, numbers, and any non-ASCII characters)\nNumber of uppercase letters in the poem\nNumber of lowercase letters in the poem\n\nCreate a plot showing the distribution of the number of words per line across all poems you have in your dataset. Create another plot showing the number of lines in the poem for all poems in your dataset. What does this tell you about the “average” style of the poet in question?\nSee Part 2 Checkpoint for an example of what the output should look like from each poet."
+  },
+  {
+    "objectID": "homework/07-strings.html#poetry-analysis",
+    "href": "homework/07-strings.html#poetry-analysis",
+    "title": "String Processing and Data Wrangling in R and Python",
+    "section": "1.3 Poetry Analysis",
+    "text": "1.3 Poetry Analysis\nChoose some characteristic(s) of the poet’s style to explore graphically. If necessary, create a subset of the data with poems relevant to your question before you generate numerical summaries. You may want to clean up the data and remove lines which contain quotes (e.g. start with a &gt; character) or horizontal lines in reddit markdown (e.g. only have ----).\nSome ideas to get you started thinking:\n\nNumber of syllables per line may be used to infer rhyming scheme and/or poetry style. You can use the qdap package in R, which contains the syllable_sum function to count the number of syllables in a sentence. You may need to use a for-loop or program a custom function to use the syllables function on every entry in your data frame column.\nUse of non-alphabetic characters. Schnoodle often uses emoji and other text annotations to convey emotions and excitement - how often do these types of annotations appear in their poems?\nCommon characters and phrases. Sprog writes poems frequently about a character named Timmy (who often meets a horrible end). Do these poems have a common format/style/rhyme scheme?\nSprog often writes longer poems with multiple stanzas. Identify which poems have multiple stanzas (Hint, look for blank lines in a systematic pattern) and show the distribution of stanza length, stanza variation within poems, and number of stanzas in each poem.\nSchnoodle often misspells words intentionally (using e.g. fren instead of friend) to convey that they are writing using an animal’s voice. What proportion of words are misspelled in each poem? How much does this proportion vary? Based on the distribution, how likely is it, in your opinion, that Schnoodle misspells words more often when speaking as one type of animal than another? You can use the hunspell package in R to detect whether words are likely misspelled."
+  },
+  {
+    "objectID": "homework/07-strings.html#splitting-poems-into-lines-1",
+    "href": "homework/07-strings.html#splitting-poems-into-lines-1",
+    "title": "String Processing and Data Wrangling in R and Python",
+    "section": "2.1 Splitting Poems into Lines",
+    "text": "2.1 Splitting Poems into Lines\nSplit the poem into lines and create a data frame that has\n\na new column called poem_id, numbered from one to the total number of poems by the poet in question\na new variable called line that contains the text of each line of the poem (one row per poem line). To get this, you may need to split the comment string by the endline character (\\n) and then unnest or expand your data frame.\na new variable called line_no that contains the line number of the poem. This should be computed per poem.\n\nEnsure that you are splitting lines by a string which makes sense. Some poems have multiple paragraphs (stanzas) and may have a blank line in between; you want to preserve this blank line as it will help you make sense of the poem. Some poems instead have blank lines between every line of the poem; in these cases, you may want to split by e.g. \\n\\n instead of \\n. See Part 1 Checkpoint for an example of what the output should look like from each poet."
+  },
+  {
+    "objectID": "homework/07-strings.html#summarizing-poems-1",
+    "href": "homework/07-strings.html#summarizing-poems-1",
+    "title": "String Processing and Data Wrangling in R and Python",
+    "section": "2.2 Summarizing Poems",
+    "text": "2.2 Summarizing Poems\nFor each poem, create a summary data frame that contains:\n\nAverage number of words per line in the poem\nNumber of lines in the poem\nNumber of characters which are not letters or spaces (punctuation, numbers, and any non-ASCII characters)\nNumber of uppercase letters in the poem\nNumber of lowercase letters in the poem\n\nCreate a plot showing the distribution of the number of words per line across all poems you have in your dataset. Create another plot showing the number of lines in the poem for all poems in your dataset. What does this tell you about the “average” style of the poet in question?"
+  },
+  {
+    "objectID": "homework/07-strings.html#poetry-analysis-1",
+    "href": "homework/07-strings.html#poetry-analysis-1",
+    "title": "String Processing and Data Wrangling in R and Python",
+    "section": "2.3 Poetry Analysis",
+    "text": "2.3 Poetry Analysis\nChoose some characteristic(s) of the poet’s style to explore graphically. If necessary, create a subset of the data with poems relevant to your question before you generate numerical summaries. You may want to clean up the data and remove lines which contain quotes (e.g. start with a &gt; character) or horizontal lines in reddit markdown (e.g. only have ----).\nSome ideas to get you started thinking:\n\nNumber of syllables per line may be used to infer rhyming scheme and/or poetry style. You can use the syllables python package. You may need to use a for-loop or program a custom function to use the syllables function on every entry in your data frame column.\nUse of non-alphabetic characters. Schnoodle often uses emoji and other text annotations to convey emotions and excitement - how often do these types of annotations appear in their poems?\nCommon characters and phrases. Sprog writes poems frequently about a character named Timmy (who often meets a horrible end). Do these poems have a common format/style/rhyme scheme?\nSprog often writes longer poems with multiple stanzas. Identify which poems have multiple stanzas (Hint, look for blank lines in a systematic pattern) and show the distribution of stanza length, stanza variation within poems, and number of stanzas in each poem.\nSchnoodle often misspells words intentionally (using e.g. fren instead of friend) to convey that they are writing using an animal’s voice. What proportion of words are misspelled in each poem? How much does this proportion vary? Based on the distribution, how likely is it, in your opinion, that Schnoodle misspells words more often when speaking as one type of animal than another? You can use one of the python packages discussed in this post to detect whether words are likely misspelled."
   },
   {
     "objectID": "slides/01-Syllabus-and-Introductions.html#introduce-yourself",

@@ -98,3 +98,13 @@
   type: reading
   image: figs/reading.svg
   is_live: true
+- path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/06-data-join.html
+  title: Joining Data
+  date: '2025-03-31'
+  pub.date: '2025-03-26'
+  categories:
+  - reading
+  - .na.character
+  type: reading
+  image: figs/reading.svg
+  is_live: true
