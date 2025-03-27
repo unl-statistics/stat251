@@ -165,6 +165,10 @@ schedule:
         categories: [slides]
         date: 2025-03-25
         pub-date: 2025-03-18
+      - href: slides/09b-strings.qmd
+        categories: [slides]
+        date: 2025-03-27
+        pub-date: 2025-03-26
       - path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/05-data-reshape.html
         title: Reshaping Data
         date: 2025-03-25

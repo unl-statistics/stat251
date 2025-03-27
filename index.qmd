@@ -31,6 +31,7 @@ listing:
   - slides/06b-dplyr.qmd
   - slides/07a-data-manip.qmd
   - slides/09a-strings.qmd
+  - slides/09b-strings.qmd
   - syllabus.qmd
   - reading.yml
   sort: date desc
