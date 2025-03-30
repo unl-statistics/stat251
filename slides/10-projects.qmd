@@ -1,12 +1,12 @@
 ---
-title: Projects
+title: Project Overview
 author: Stat 251
-date: '2025-04-11'
+date: '2025-04-15'
 categories:
 - slides
 - Project
 - Week12
-- Week11
+- Week12
 format: revealjs
 engine: knitr
 ---

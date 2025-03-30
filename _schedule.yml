@@ -199,7 +199,8 @@ schedule:
         date: 2025-04-14
         categories: [HW, Week11]
       - href: slides/10-projects.qmd
-        date: 2025-04-11
+        date: 2025-04-15
+        pub-date: 2025-03-30
         categories: [slides, Project, Week12]
       - href: project/index.qmd
         date: 2025-04-15

@@ -34,6 +34,7 @@ listing:
   - slides/07a-data-manip.qmd
   - slides/09a-strings.qmd
   - slides/09b-strings.qmd
+  - slides/10-projects.qmd
   - slides/10a-reshape.qmd
   - syllabus.qmd
   - reading.yml
