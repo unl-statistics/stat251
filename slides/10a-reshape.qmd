@@ -1,0 +1,164 @@
+---
+title: Reshaping Dogs
+author: Stat 251
+categories:
+- slides
+- Week10
+engine: knitr
+format:
+  revealjs:
+    navigation-mode: vertical
+    logo: N.svg
+    theme: inverse.scss
+    includes:
+      in_header: header.html
+date: '2025-04-02'
+---
+
+```{r setup}
+library(tidyverse)
+```
+
+## Logistics 
+
+- [Reading quiz 9](https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/06-data-join.html) due 
+
+
+- Focus on homework 8 on Tuesday, start working on homework 9 on Thursday
+
+- Start thinking about the [project](https://unl-statistics.github.io/stat251/project/)
+
+## Reshaping {background-image="../figs/the-key.png" background-size="400px" background-position="right 10% bottom 45%"}
+
+      
+Is the data tidy? - question of the key
+
+- the key
+
+- the whole key
+
+- and nothing but the key
+
+## The key - First normal form {background-image="../figs/the-key.png" background-size="400px" background-position="right 10% bottom 5%"}
+
+A data set can be written in a rectangular form: 
+
+- each observation is in one row
+
+- each variable is in a column
+
+- there is a key: one or more variables in the dataset provide a unique descriptor for each observation
+
+
+## Not in First Normal Form 
+
+Example 1: no key
+
+```{r}
+runif(10)
+```
+
+
+Example 2: not rectangular
+
+```{r}
+knitr::include_graphics("../figs/violate-nf1-example.png")
+```
+
+## The whole key - 2nd normal form {background-image="../figs/the-key.png" background-size="400px" background-position="right 10% bottom 5%"}
+
+A table is in 2nd normal form, when:
+
+- it is in 1st normal form 
+
+- and all non-key columns depend on all parts of the key 
+
+"No split key"
+
+
+Tables in 1st normal form with a single key variable are automatically in 2nd normal form
+
+## Is this table in 2nd normal form?
+
+![](../figs/courses_table3.webp)
+
+
+## Nothing but the key - 3rd normal form {background-image="../figs/the-key.png" background-size="400px" background-position="right 10% bottom 5%"}
+
+A table is in 3rd normal form, when:
+
+- it is in 2nd normal form 
+
+- and no non-key column can be determined by another non-key column
+
+e.g.: zip code determines county and state
+
+## Data Normalization
+
+Process of getting table into higher normal forms is called *normalization*
+
+Normalization gives a framework to organize and ensure
+
+- reduce redundancy in data
+- improve data consistency
+- simplify the database design
+- increase speed to access data
+- easier maintenance
+
+Normalization is generally terrible for any statistical modelling
+
+## Key-Value Pairs
+
+Stricter version of the 3rd NF: 
+
+- table is in 2nd normal form, 
+- there is only a single non-key element in a table
+
+Note: a table like this is automatically in 3rd normal form. 
+
+## Traits of Dog Breeds
+
+```{r}
+traits <- read.csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2022/2022-02-01/breed_traits.csv")
+head(traits)
+```
+
+Data set is in "Wide Form"
+
+
+Without knowing the data well, it could be that some of the non-key variables could determine parts of other  non-key variables (violations of 3rd normal form)
+
+## Traits of Dog Breeds in Long Form
+
+```{r echo = TRUE}
+traits %>% select(Breed, 2:4) %>% 
+  pivot_longer(cols=2:4, names_to = "Trait", values_to = "Score") %>% 
+  head()
+```
+
+The combination of `Breed` and `Trait` (Key) uniquely determines the score value (Value).
+
+
+## Homework 8 
+
+
+- Reshape two data sets
+- Create a visual in each
+- One reshaping in python, one in R
+
+```{=html}
+<iframe width="100%" height = "500px" src="https://unl-statistics.github.io/stat251/homework/08-reshape.html"></iframe>
+```
+
+## Visuals in homework 8
+
+
+```{r out.width='90%'}
+#| label: fig-homework8
+#| layout-ncol: 2
+#| fig-cap: 
+#|   - Trait Distributions
+#|   - Ranks of (some) Breeds over time
+knitr::include_graphics("../figs/breeds-traits.png")
+knitr::include_graphics("../figs/rank-breeds.png")
+```

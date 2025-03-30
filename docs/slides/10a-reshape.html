@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-1.6.40">
 
   <meta name="author" content="Stat 251">
-  <meta name="dcterms.date" content="2025-04-01">
+  <meta name="dcterms.date" content="2025-04-02">
   <title>Stat 251 - Data Wrangling – Reshaping Dogs</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -29,6 +29,71 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-cafb11b5f51d1c6dca451fea611f5bab.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -138,13 +203,154 @@ Stat 251
 </div>
 </div>
 
-  <p class="date">2025-04-01</p>
+  <p class="date">2025-04-02</p>
 </section>
 <section id="logistics" class="slide level2">
 <h2>Logistics</h2>
 <ul>
-<li></li>
+<li><p><a href="https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/06-data-join.html">Reading quiz 9</a> due</p></li>
+<li><p>Focus on homework 8 on Tuesday, start working on homework 9 on Thursday</p></li>
+<li><p>Start thinking about the <a href="https://unl-statistics.github.io/stat251/project/">project</a></p></li>
 </ul>
+</section>
+<section id="reshaping" class="slide level2" data-background-image="../figs/the-key.png" data-background-size="400px" data-background-position="right 10% bottom 45%">
+<h2>Reshaping</h2>
+<p>Is the data tidy? - question of the key</p>
+<ul>
+<li><p>the key</p></li>
+<li><p>the whole key</p></li>
+<li><p>and nothing but the key</p></li>
+</ul>
+</section>
+<section id="the-key---first-normal-form" class="slide level2" data-background-image="../figs/the-key.png" data-background-size="400px" data-background-position="right 10% bottom 5%">
+<h2>The key - First normal form</h2>
+<p>A data set can be written in a rectangular form:</p>
+<ul>
+<li><p>each observation is in one row</p></li>
+<li><p>each variable is in a column</p></li>
+<li><p>there is a key: one or more variables in the dataset provide a unique descriptor for each observation</p></li>
+</ul>
+</section>
+<section id="not-in-first-normal-form" class="slide level2">
+<h2>Not in First Normal Form</h2>
+<p>Example 1: no key</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] 0.80463517 0.64060029 0.64842185 0.26700195 0.90290315 0.87371680
+ [7] 0.09969296 0.68885715 0.28142305 0.10479012</code></pre>
+</div>
+</div>
+<p>Example 2: not rectangular</p>
+
+<img data-src="../figs/violate-nf1-example.png" width="531" class="r-stretch"></section>
+<section id="the-whole-key---2nd-normal-form" class="slide level2" data-background-image="../figs/the-key.png" data-background-size="400px" data-background-position="right 10% bottom 5%">
+<h2>The whole key - 2nd normal form</h2>
+<p>A table is in 2nd normal form, when:</p>
+<ul>
+<li><p>it is in 1st normal form</p></li>
+<li><p>and all non-key columns depend on all parts of the key</p></li>
+</ul>
+<p>“No split key”</p>
+<p>Tables in 1st normal form with a single key variable are automatically in 2nd normal form</p>
+</section>
+<section id="is-this-table-in-2nd-normal-form" class="slide level2">
+<h2>Is this table in 2nd normal form?</h2>
+
+<img data-src="../figs/courses_table3.webp" class="r-stretch"></section>
+<section id="nothing-but-the-key---3rd-normal-form" class="slide level2" data-background-image="../figs/the-key.png" data-background-size="400px" data-background-position="right 10% bottom 5%">
+<h2>Nothing but the key - 3rd normal form</h2>
+<p>A table is in 3rd normal form, when:</p>
+<ul>
+<li><p>it is in 2nd normal form</p></li>
+<li><p>and no non-key column can be determined by another non-key column</p></li>
+</ul>
+<p>e.g.: zip code determines county and state</p>
+</section>
+<section id="data-normalization" class="slide level2">
+<h2>Data Normalization</h2>
+<p>Process of getting table into higher normal forms is called <em>normalization</em></p>
+<p>Normalization gives a framework to organize and ensure</p>
+<ul>
+<li>reduce redundancy in data</li>
+<li>improve data consistency</li>
+<li>simplify the database design</li>
+<li>increase speed to access data</li>
+<li>easier maintenance</li>
+</ul>
+<p>Normalization is generally terrible for any statistical modelling</p>
+</section>
+<section id="key-value-pairs" class="slide level2">
+<h2>Key-Value Pairs</h2>
+<p>Stricter version of the 3rd NF:</p>
+<ul>
+<li>table is in 2nd normal form,</li>
+<li>there is only a single non-key element in a table</li>
+</ul>
+<p>Note: a table like this is automatically in 3rd normal form.</p>
+</section>
+<section id="traits-of-dog-breeds" class="slide level2">
+<h2>Traits of Dog Breeds</h2>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>                  Breed Affectionate.With.Family Good.With.Young.Children
+1 Retrievers&nbsp;(Labrador)                        5                        5
+2       French&nbsp;Bulldogs                        5                        5
+3  German&nbsp;Shepherd&nbsp;Dogs                        5                        5
+4   Retrievers&nbsp;(Golden)                        5                        5
+5              Bulldogs                        4                        3
+6               Poodles                        5                        5
+  Good.With.Other.Dogs Shedding.Level Coat.Grooming.Frequency Drooling.Level
+1                    5              4                       2              2
+2                    4              3                       1              3
+3                    3              4                       2              2
+4                    5              4                       2              2
+5                    3              3                       3              3
+6                    3              1                       4              1
+  Coat.Type Coat.Length Openness.To.Strangers Playfulness.Level
+1    Double       Short                     5                 5
+2    Smooth       Short                     5                 5
+3    Double      Medium                     3                 4
+4    Double      Medium                     5                 4
+5    Smooth       Short                     4                 4
+6     Curly        Long                     5                 5
+  Watchdog.Protective.Nature Adaptability.Level Trainability.Level Energy.Level
+1                          3                  5                  5            5
+2                          3                  5                  4            3
+3                          5                  5                  5            5
+4                          3                  5                  5            3
+5                          3                  3                  4            3
+6                          5                  4                  5            4
+  Barking.Level Mental.Stimulation.Needs
+1             3                        4
+2             1                        3
+3             3                        5
+4             1                        4
+5             2                        3
+6             4                        5</code></pre>
+</div>
+</div>
+<p>Data set is in “Wide Form”</p>
+<p>Without knowing the data well, it could be that some of the non-key variables could determine parts of other non-key variables (violations of 3rd normal form)</p>
+</section>
+<section id="traits-of-dog-breeds-in-long-form" class="slide level2">
+<h2>Traits of Dog Breeds in Long Form</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a>traits <span class="sc">%&gt;%</span> <span class="fu">select</span>(Breed, <span class="dv">2</span><span class="sc">:</span><span class="dv">4</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb3-2"><a></a>  <span class="fu">pivot_longer</span>(<span class="at">cols=</span><span class="dv">2</span><span class="sc">:</span><span class="dv">4</span>, <span class="at">names_to =</span> <span class="st">"Trait"</span>, <span class="at">values_to =</span> <span class="st">"Score"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb3-3"><a></a>  <span class="fu">head</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 3
+  Breed                 Trait                    Score
+  &lt;chr&gt;                 &lt;chr&gt;                    &lt;int&gt;
+1 Retrievers&nbsp;(Labrador) Affectionate.With.Family     5
+2 Retrievers&nbsp;(Labrador) Good.With.Young.Children     5
+3 Retrievers&nbsp;(Labrador) Good.With.Other.Dogs         5
+4 French&nbsp;Bulldogs       Affectionate.With.Family     5
+5 French&nbsp;Bulldogs       Good.With.Young.Children     5
+6 French&nbsp;Bulldogs       Good.With.Other.Dogs         4</code></pre>
+</div>
+</div>
+<p>The combination of <code>Breed</code> and <code>Trait</code> (Key) uniquely determines the score value (Value).</p>
 </section>
 <section id="homework-8" class="slide level2">
 <h2>Homework 8</h2>

@@ -46,35 +46,35 @@
     "href": "slides/10-projects.html#project-overview",
     "title": "Projects",
     "section": "Project Overview",
-    "text": "Project Overview\n\n\n\nCreate a TidyTuesday style screencast\nExamples: https://www.rscreencasts.com/\nAnalyze a TidyTuesday dataset from 2023 using R or Python\nApproximately 45 minutes long\nShow at least 4 different techniques you learned in Stat 251 this semester\n\n\n\n\nGH link"
+    "text": "Project Overview\n\n\n\nCreate a TidyTuesday style screencast\nExamples: https://www.rscreencasts.com/\nAnalyze a TidyTuesday dataset from the last year using R or Python\nApproximately 45 minutes long\nShow at least 4 different techniques you learned in Stat 251 this semester\n\n\n\n\nGH link"
   },
   {
     "objectID": "slides/10-projects.html#part-1---planning",
     "href": "slides/10-projects.html#part-1---planning",
     "title": "Projects",
     "section": "Part 1 - Planning",
-    "text": "Part 1 - Planning\nWork: In class, April 18\nDue: April 18, 6pm\nTell me:\n\nWhat dataset you’re using\nWhat you’re going to investigate\nWhat Stat 251 topics you’re going to cover"
+    "text": "Part 1 - Planning\nWork: In class, April 15 (Tuesday)\nDue: April 15, 11:59pm\nTell me:\n\nWhat dataset you’re using\nWhat you’re going to investigate\nWhat Stat 251 topics you’re going to cover"
   },
   {
     "objectID": "slides/10-projects.html#part-2---script-outline",
     "href": "slides/10-projects.html#part-2---script-outline",
     "title": "Projects",
     "section": "Part 2 - Script Outline",
-    "text": "Part 2 - Script Outline\nWork: In class, April 20\nDue: April 24, 6pm\n\nProvide a (rough) script for your screen cast\n\nExplain how the techniques work\nDiscuss any challenges you had analyzing this data\nInclude the mistakes you made along the way!\n\nInclude pseudocode/actual code for each topic\n\nDoes not have to actually work at this point"
+    "text": "Part 2 - Script Outline\nWork: In class, April 22 (Tuesday)\nDue: April 22, 11:59pm\n\nProvide a (rough) script for your screen cast\n\nExplain how the techniques work\nDiscuss any challenges you had analyzing this data\nInclude the mistakes you made along the way!\n\nInclude pseudocode/actual code for each topic\n\nDoes not have to actually work at this point"
   },
   {
     "objectID": "slides/10-projects.html#part-3---recording",
     "href": "slides/10-projects.html#part-3---recording",
     "title": "Projects",
     "section": "Part 3 - Recording",
-    "text": "Part 3 - Recording\nWork: On your own\nDue: May 4, 6pm\n\nScreencast uploaded to YouTube or YuJa\nApproximate time index provided for each technique you demonstrate (on GitHub)\nFinal code file uploaded to github repository"
+    "text": "Part 3 - Recording\nWork: On your own\nDue: May 1, 11:59pm (Thursday)\n\nScreencast uploaded to YouTube or YuJa\nApproximate time index provided for each technique you demonstrate (on GitHub)\nFinal code file uploaded to github repository"
   },
   {
     "objectID": "slides/10-projects.html#part-4---peer-review",
     "href": "slides/10-projects.html#part-4---peer-review",
     "title": "Projects",
     "section": "Part 4 - Peer Review",
-    "text": "Part 4 - Peer Review\n\nIn place of the final exam:\n\nWatch 2 screencasts\nPeer evaluations - leave a comment on Canvas\nI will provide a rubric\n\nTake place between May 4 and Finals week"
+    "text": "Part 4 - Peer Review\n\nIn place of the final exam:\n\nWatch 2 screencasts\nPeer evaluations - leave a comment on Canvas\nBased on rubric (provided)\n\nTake place between May 1 and Thursday of Finals week"
   },
   {
     "objectID": "slides/09a-strings.html#working-with-regular-expressions",
@@ -249,7 +249,7 @@
     "href": "index.html",
     "title": "Stat 251: Data Wrangling",
     "section": "",
-    "text": "Course Materials\nDates shown are due dates (for homework and exams) and dates on which material was presented (for slides).\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nDate\n\n\nTitle\n\n\nType\n\n\n\n\n\n\n\n\nApr 15, 2025\n\n\nProject: Screencast\n\n\nproject\n\n\n\n\n\n\n\nApr 8, 2025\n\n\nDates and Times\n\n\nreading\n\n\n\n\n\n\n\nApr 2, 2025\n\n\nData Reshaping with Puppies\n\n\nhomework\n\n\n\n\n\n\n\nApr 2, 2025\n\n\nReshaping Dogs\n\n\n \n\n\n\n\n\n\n\nMar 31, 2025\n\n\nJoining Data\n\n\nreading\n\n\n\n\n\n\n\nMar 27, 2025\n\n\nString Processing and Data Wrangling in R and Python\n\n\nhomework\n\n\n\n\n\n\n\nMar 27, 2025\n\n\nRegular Expressions\n\n\n \n\n\n\n\n\n\n\nMar 25, 2025\n\n\nWorking with Strings\n\n\n \n\n\n\n\n\n\n\nMar 25, 2025\n\n\nStrings\n\n\nreading\n\n\n\n\n\n\n\nMar 25, 2025\n\n\nReshaping Data\n\n\nreading\n\n\n\n\n\n\n\nMar 13, 2025\n\n\nMidterm\n\n\nexam\n\n\n\n\n\n\n\nMar 6, 2025\n\n\nHomework 6: Data Manipulation\n\n\nhomework\n\n\n\n\n\n\n\nMar 4, 2025\n\n\nPractice Exam (2023)\n\n\nexam\n\n\n\n\n\n\n\nMar 4, 2025\n\n\nExam objectives\n\n\nexam\n\n\n\n\n\n\n\nMar 4, 2025\n\n\nGood programming practices\n\n\n \n\n\n\n\n\n\n\nFeb 27, 2025\n\n\nComputing with data\n\n\n \n\n\n\n\n\n\n\nFeb 25, 2025\n\n\nHomework 5: Graphics\n\n\nhomework\n\n\n\n\n\n\n\nFeb 25, 2025\n\n\nData Cleaning\n\n\nreading\n\n\n\n\n\n\n\nFeb 24, 2025\n\n\nSurvey Results and Groundhog Graphics\n\n\n \n\n\n\n\n\n\n\nFeb 20, 2025\n\n\nCreating Good Graphics\n\n\n \n\n\n\n\n\n\n\nFeb 18, 2025\n\n\nChocolate Chip Cookies\n\n\nhomework\n\n\n\n\n\n\n\nFeb 18, 2025\n\n\nFinishing up Cookie Exploration\n\n\n \n\n\n\n\n\n\n\nFeb 18, 2025\n\n\nData Visualization\n\n\nreading\n\n\n\n\n\n\n\nFeb 18, 2025\n\n\nGood Graphics\n\n\nreading\n\n\n\n\n\n\n\nFeb 13, 2025\n\n\nData Explorations\n\n\n \n\n\n\n\n\n\n\nFeb 11, 2025\n\n\ndecodeR: Base R\n\n\nhomework\n\n\n\n\n\n\n\nFeb 11, 2025\n\n\nReading In Data\n\n\n \n\n\n\n\n\n\n\nFeb 11, 2025\n\n\nData Input\n\n\nreading\n\n\n\n\n\n\n\nFeb 11, 2025\n\n\nExploratory Data Analysis\n\n\nreading\n\n\n\n\n\n\n\nFeb 6, 2025\n\n\nReview - Cipher\n\n\n \n\n\n\n\n\n\n\nFeb 4, 2025\n\n\nHomework 2: Reviewing R and Python\n\n\nhomework\n\n\n\n\n\n\n\nFeb 4, 2025\n\n\nReview - Cipher\n\n\n \n\n\n\n\n\n\n\nJan 30, 2025\n\n\nProgramming Review\n\n\nslides\n\n\n\n\n\n\n\nJan 28, 2025\n\n\n👋 The Basics of GitHub\n\n\nhomework\n\n\n\n\n\n\n\nJan 28, 2025\n\n\nProgramming Review\n\n\nslides\n\n\n\n\n\n\n\nJan 28, 2025\n\n\nVersion Control with Git and Github\n\n\nreading\n\n\n\n\n\n\n\nJan 28, 2025\n\n\nReview - Programming\n\n\nreading\n\n\n\n\n\n\n\nJan 23, 2025\n\n\nVersion Control\n\n\nslides\n\n\n\n\n\n\n\nJan 23, 2025\n\n\nReview - Tools\n\n\nreading\n\n\n\n\n\n\n\nJan 21, 2025\n\n\nIntroduction\n\n\nslides\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Course Materials\nDates shown are due dates (for homework and exams) and dates on which material was presented (for slides).\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nDate\n\n\nTitle\n\n\nType\n\n\n\n\n\n\n\n\nApr 15, 2025\n\n\nProject: Screencast\n\n\nproject\n\n\n\n\n\n\n\nApr 8, 2025\n\n\nDates and Times\n\n\nreading\n\n\n\n\n\n\n\nApr 2, 2025\n\n\nData Reshaping with Puppies\n\n\nhomework\n\n\n\n\n\n\n\nApr 2, 2025\n\n\nReshaping Dogs\n\n\n \n\n\n\n\n\n\n\nApr 1, 2025\n\n\nJoining Data\n\n\nreading\n\n\n\n\n\n\n\nMar 27, 2025\n\n\nString Processing and Data Wrangling in R and Python\n\n\nhomework\n\n\n\n\n\n\n\nMar 27, 2025\n\n\nRegular Expressions\n\n\n \n\n\n\n\n\n\n\nMar 25, 2025\n\n\nWorking with Strings\n\n\n \n\n\n\n\n\n\n\nMar 25, 2025\n\n\nStrings\n\n\nreading\n\n\n\n\n\n\n\nMar 25, 2025\n\n\nReshaping Data\n\n\nreading\n\n\n\n\n\n\n\nMar 13, 2025\n\n\nMidterm\n\n\nexam\n\n\n\n\n\n\n\nMar 6, 2025\n\n\nHomework 6: Data Manipulation\n\n\nhomework\n\n\n\n\n\n\n\nMar 4, 2025\n\n\nPractice Exam (2023)\n\n\nexam\n\n\n\n\n\n\n\nMar 4, 2025\n\n\nExam objectives\n\n\nexam\n\n\n\n\n\n\n\nMar 4, 2025\n\n\nGood programming practices\n\n\n \n\n\n\n\n\n\n\nFeb 27, 2025\n\n\nComputing with data\n\n\n \n\n\n\n\n\n\n\nFeb 25, 2025\n\n\nHomework 5: Graphics\n\n\nhomework\n\n\n\n\n\n\n\nFeb 25, 2025\n\n\nData Cleaning\n\n\nreading\n\n\n\n\n\n\n\nFeb 24, 2025\n\n\nSurvey Results and Groundhog Graphics\n\n\n \n\n\n\n\n\n\n\nFeb 20, 2025\n\n\nCreating Good Graphics\n\n\n \n\n\n\n\n\n\n\nFeb 18, 2025\n\n\nChocolate Chip Cookies\n\n\nhomework\n\n\n\n\n\n\n\nFeb 18, 2025\n\n\nFinishing up Cookie Exploration\n\n\n \n\n\n\n\n\n\n\nFeb 18, 2025\n\n\nData Visualization\n\n\nreading\n\n\n\n\n\n\n\nFeb 18, 2025\n\n\nGood Graphics\n\n\nreading\n\n\n\n\n\n\n\nFeb 13, 2025\n\n\nData Explorations\n\n\n \n\n\n\n\n\n\n\nFeb 11, 2025\n\n\ndecodeR: Base R\n\n\nhomework\n\n\n\n\n\n\n\nFeb 11, 2025\n\n\nReading In Data\n\n\n \n\n\n\n\n\n\n\nFeb 11, 2025\n\n\nData Input\n\n\nreading\n\n\n\n\n\n\n\nFeb 11, 2025\n\n\nExploratory Data Analysis\n\n\nreading\n\n\n\n\n\n\n\nFeb 6, 2025\n\n\nReview - Cipher\n\n\n \n\n\n\n\n\n\n\nFeb 4, 2025\n\n\nHomework 2: Reviewing R and Python\n\n\nhomework\n\n\n\n\n\n\n\nFeb 4, 2025\n\n\nReview - Cipher\n\n\n \n\n\n\n\n\n\n\nJan 30, 2025\n\n\nProgramming Review\n\n\nslides\n\n\n\n\n\n\n\nJan 28, 2025\n\n\n👋 The Basics of GitHub\n\n\nhomework\n\n\n\n\n\n\n\nJan 28, 2025\n\n\nProgramming Review\n\n\nslides\n\n\n\n\n\n\n\nJan 28, 2025\n\n\nVersion Control with Git and Github\n\n\nreading\n\n\n\n\n\n\n\nJan 28, 2025\n\n\nReview - Programming\n\n\nreading\n\n\n\n\n\n\n\nJan 23, 2025\n\n\nVersion Control\n\n\nslides\n\n\n\n\n\n\n\nJan 23, 2025\n\n\nReview - Tools\n\n\nreading\n\n\n\n\n\n\n\nJan 21, 2025\n\n\nIntroduction\n\n\nslides\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "homework/01-git-github.html",
@@ -585,7 +585,77 @@
     "href": "slides/10a-reshape.html#logistics",
     "title": "Reshaping Dogs",
     "section": "Logistics",
-    "text": "Logistics"
+    "text": "Logistics\n\nReading quiz 9 due\nFocus on homework 8 on Tuesday, start working on homework 9 on Thursday\nStart thinking about the project"
+  },
+  {
+    "objectID": "slides/10a-reshape.html#reshaping",
+    "href": "slides/10a-reshape.html#reshaping",
+    "title": "Reshaping Dogs",
+    "section": "Reshaping",
+    "text": "Reshaping\nIs the data tidy? - question of the key\n\nthe key\nthe whole key\nand nothing but the key"
+  },
+  {
+    "objectID": "slides/10a-reshape.html#the-key---first-normal-form",
+    "href": "slides/10a-reshape.html#the-key---first-normal-form",
+    "title": "Reshaping Dogs",
+    "section": "The key - First normal form",
+    "text": "The key - First normal form\nA data set can be written in a rectangular form:\n\neach observation is in one row\neach variable is in a column\nthere is a key: one or more variables in the dataset provide a unique descriptor for each observation"
+  },
+  {
+    "objectID": "slides/10a-reshape.html#not-in-first-normal-form",
+    "href": "slides/10a-reshape.html#not-in-first-normal-form",
+    "title": "Reshaping Dogs",
+    "section": "Not in First Normal Form",
+    "text": "Not in First Normal Form\nExample 1: no key\n\n\n [1] 0.80463517 0.64060029 0.64842185 0.26700195 0.90290315 0.87371680\n [7] 0.09969296 0.68885715 0.28142305 0.10479012\n\n\nExample 2: not rectangular"
+  },
+  {
+    "objectID": "slides/10a-reshape.html#the-whole-key---2nd-normal-form",
+    "href": "slides/10a-reshape.html#the-whole-key---2nd-normal-form",
+    "title": "Reshaping Dogs",
+    "section": "The whole key - 2nd normal form",
+    "text": "The whole key - 2nd normal form\nA table is in 2nd normal form, when:\n\nit is in 1st normal form\nand all non-key columns depend on all parts of the key\n\n“No split key”\nTables in 1st normal form with a single key variable are automatically in 2nd normal form"
+  },
+  {
+    "objectID": "slides/10a-reshape.html#is-this-table-in-2nd-normal-form",
+    "href": "slides/10a-reshape.html#is-this-table-in-2nd-normal-form",
+    "title": "Reshaping Dogs",
+    "section": "Is this table in 2nd normal form?",
+    "text": "Is this table in 2nd normal form?"
+  },
+  {
+    "objectID": "slides/10a-reshape.html#nothing-but-the-key---3rd-normal-form",
+    "href": "slides/10a-reshape.html#nothing-but-the-key---3rd-normal-form",
+    "title": "Reshaping Dogs",
+    "section": "Nothing but the key - 3rd normal form",
+    "text": "Nothing but the key - 3rd normal form\nA table is in 3rd normal form, when:\n\nit is in 2nd normal form\nand no non-key column can be determined by another non-key column\n\ne.g.: zip code determines county and state"
+  },
+  {
+    "objectID": "slides/10a-reshape.html#data-normalization",
+    "href": "slides/10a-reshape.html#data-normalization",
+    "title": "Reshaping Dogs",
+    "section": "Data Normalization",
+    "text": "Data Normalization\nProcess of getting table into higher normal forms is called normalization\nNormalization gives a framework to organize and ensure\n\nreduce redundancy in data\nimprove data consistency\nsimplify the database design\nincrease speed to access data\neasier maintenance\n\nNormalization is generally terrible for any statistical modelling"
+  },
+  {
+    "objectID": "slides/10a-reshape.html#key-value-pairs",
+    "href": "slides/10a-reshape.html#key-value-pairs",
+    "title": "Reshaping Dogs",
+    "section": "Key-Value Pairs",
+    "text": "Key-Value Pairs\nStricter version of the 3rd NF:\n\ntable is in 2nd normal form,\nthere is only a single non-key element in a table\n\nNote: a table like this is automatically in 3rd normal form."
+  },
+  {
+    "objectID": "slides/10a-reshape.html#traits-of-dog-breeds",
+    "href": "slides/10a-reshape.html#traits-of-dog-breeds",
+    "title": "Reshaping Dogs",
+    "section": "Traits of Dog Breeds",
+    "text": "Traits of Dog Breeds\n\n\n                  Breed Affectionate.With.Family Good.With.Young.Children\n1 Retrievers (Labrador)                        5                        5\n2       French Bulldogs                        5                        5\n3  German Shepherd Dogs                        5                        5\n4   Retrievers (Golden)                        5                        5\n5              Bulldogs                        4                        3\n6               Poodles                        5                        5\n  Good.With.Other.Dogs Shedding.Level Coat.Grooming.Frequency Drooling.Level\n1                    5              4                       2              2\n2                    4              3                       1              3\n3                    3              4                       2              2\n4                    5              4                       2              2\n5                    3              3                       3              3\n6                    3              1                       4              1\n  Coat.Type Coat.Length Openness.To.Strangers Playfulness.Level\n1    Double       Short                     5                 5\n2    Smooth       Short                     5                 5\n3    Double      Medium                     3                 4\n4    Double      Medium                     5                 4\n5    Smooth       Short                     4                 4\n6     Curly        Long                     5                 5\n  Watchdog.Protective.Nature Adaptability.Level Trainability.Level Energy.Level\n1                          3                  5                  5            5\n2                          3                  5                  4            3\n3                          5                  5                  5            5\n4                          3                  5                  5            3\n5                          3                  3                  4            3\n6                          5                  4                  5            4\n  Barking.Level Mental.Stimulation.Needs\n1             3                        4\n2             1                        3\n3             3                        5\n4             1                        4\n5             2                        3\n6             4                        5\n\n\nData set is in “Wide Form”\nWithout knowing the data well, it could be that some of the non-key variables could determine parts of other non-key variables (violations of 3rd normal form)"
+  },
+  {
+    "objectID": "slides/10a-reshape.html#traits-of-dog-breeds-in-long-form",
+    "href": "slides/10a-reshape.html#traits-of-dog-breeds-in-long-form",
+    "title": "Reshaping Dogs",
+    "section": "Traits of Dog Breeds in Long Form",
+    "text": "Traits of Dog Breeds in Long Form\n\ntraits %&gt;% select(Breed, 2:4) %&gt;% \n  pivot_longer(cols=2:4, names_to = \"Trait\", values_to = \"Score\") %&gt;% \n  head()\n\n# A tibble: 6 × 3\n  Breed                 Trait                    Score\n  &lt;chr&gt;                 &lt;chr&gt;                    &lt;int&gt;\n1 Retrievers (Labrador) Affectionate.With.Family     5\n2 Retrievers (Labrador) Good.With.Young.Children     5\n3 Retrievers (Labrador) Good.With.Other.Dogs         5\n4 French Bulldogs       Affectionate.With.Family     5\n5 French Bulldogs       Good.With.Young.Children     5\n6 French Bulldogs       Good.With.Other.Dogs         4\n\n\nThe combination of Breed and Trait (Key) uniquely determines the score value (Value)."
   },
   {
     "objectID": "slides/10a-reshape.html#homework-8",

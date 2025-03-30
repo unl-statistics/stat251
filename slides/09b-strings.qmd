@@ -1,0 +1,55 @@
+---
+title: Regular Expressions
+author: Stat 251
+categories:
+- slides
+- Week09
+engine: knitr
+format:
+  revealjs:
+    navigation-mode: vertical
+    logo: N.svg
+    theme: inverse.scss
+    includes:
+      in_header: header.html
+date: '2025-03-27'
+---
+
+## Working with regular expressions
+
+```str_view``` in `stringr` package (in R) shows all matches:
+
+```{r echo = TRUE}
+stringr::str_view("> Poem for a Friend. ", pattern = "\\W")
+stringr::str_view("> Poem for a Friend. ", pattern = "\\b")
+```
+
+
+```str_count``` counts all matches in R:
+
+```{r echo = TRUE}
+stringr::str_count("> Poem for a Friend. ", pattern = "\\b")/2
+```
+
+`find_all` and `len` count all matches in python:
+
+```{python echo = TRUE}
+import re
+res = re.findall("\\b", "> Poem for a Friend. ")
+len(res)/2
+```
+
+## Idea for Exploration
+
+Run summary statistics for second poet. Then compare.
+
+## Homework 8
+
+Pivoting with dogs :) 
+
+
+```{=html}
+<iframe width="100%" height = "500px" src="https://unl-statistics.github.io/stat251/homework/08-reshape.html"></iframe>
+```
+
+
