@@ -108,3 +108,13 @@
   type: reading
   image: figs/reading.svg
   is_live: true
+- path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/07-datetime.html
+  title: Dates and Times
+  date: '2025-04-08'
+  pub.date: '2025-03-30'
+  categories:
+  - reading
+  - .na.character
+  type: reading
+  image: figs/reading.svg
+  is_live: true

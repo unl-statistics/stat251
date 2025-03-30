@@ -2,7 +2,9 @@
   {
     "listing": "/index.html",
     "items": [
+      "/project/index.html",
       "/homework/08-reshape.html",
+      "/slides/10a-reshape.html",
       "/homework/07-strings.html",
       "/slides/09b-strings.html",
       "/slides/09a-strings.html",
