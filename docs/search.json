@@ -42,130 +42,256 @@
     "text": "Comparing Sexes and Styles\nGenerate one or two plots which best showcase the difference in pocket sizes for different sexes and styles of pants. Use The Pudding’s classification for pants styles, treating straight and boot-cut styles as the same and skinny and slim styles as the same.\nYou may annotate the plot with the output from statistical tests if you wish, but it is sufficient to highlight the visual differences. Your chart(s) must have appropriate titles and axis labels, and must be constructed to take into account the principles of good graphics discussed in the textbook.\nYour discussion of this output goes here.\nReplace this paragraph with 1-2 sentences discussing what choices you made to make the plot you generated above perceptually optimal. Which principles of good graphics did you use?"
   },
   {
-    "objectID": "slides/10-projects.html#project-overview",
-    "href": "slides/10-projects.html#project-overview",
-    "title": "Projects",
-    "section": "Project Overview",
-    "text": "Project Overview\n\n\n\nCreate a TidyTuesday style screencast\nExamples: https://www.rscreencasts.com/\nAnalyze a TidyTuesday dataset from the last year using R or Python\nApproximately 45 minutes long\nShow at least 4 different techniques you learned in Stat 251 this semester\n\n\n\n\nGH link"
+    "objectID": "slides/10a-reshape.html#logistics",
+    "href": "slides/10a-reshape.html#logistics",
+    "title": "Reshaping Dogs",
+    "section": "Logistics",
+    "text": "Logistics\n\nReading quiz 9 due\nFocus on homework 8 on Tuesday, start working on homework 9 on Thursday\nStart thinking about the project"
   },
   {
-    "objectID": "slides/10-projects.html#part-1---planning",
-    "href": "slides/10-projects.html#part-1---planning",
-    "title": "Projects",
-    "section": "Part 1 - Planning",
-    "text": "Part 1 - Planning\nWork: In class, April 15 (Tuesday)\nDue: April 15, 11:59pm\nTell me:\n\nWhat dataset you’re using\nWhat you’re going to investigate\nWhat Stat 251 topics you’re going to cover"
+    "objectID": "slides/10a-reshape.html#reshaping",
+    "href": "slides/10a-reshape.html#reshaping",
+    "title": "Reshaping Dogs",
+    "section": "Reshaping",
+    "text": "Reshaping\nIs the data tidy? - question of the key\n\nthe key\nthe whole key\nand nothing but the key"
   },
   {
-    "objectID": "slides/10-projects.html#part-2---script-outline",
-    "href": "slides/10-projects.html#part-2---script-outline",
-    "title": "Projects",
-    "section": "Part 2 - Script Outline",
-    "text": "Part 2 - Script Outline\nWork: In class, April 22 (Tuesday)\nDue: April 22, 11:59pm\n\nProvide a (rough) script for your screen cast\n\nExplain how the techniques work\nDiscuss any challenges you had analyzing this data\nInclude the mistakes you made along the way!\n\nInclude pseudocode/actual code for each topic\n\nDoes not have to actually work at this point"
+    "objectID": "slides/10a-reshape.html#the-key---first-normal-form",
+    "href": "slides/10a-reshape.html#the-key---first-normal-form",
+    "title": "Reshaping Dogs",
+    "section": "The key - First normal form",
+    "text": "The key - First normal form\nA data set can be written in a rectangular form:\n\neach observation is in one row\neach variable is in a column\nthere is a key: one or more variables in the dataset provide a unique descriptor for each observation"
   },
   {
-    "objectID": "slides/10-projects.html#part-3---recording",
-    "href": "slides/10-projects.html#part-3---recording",
-    "title": "Projects",
-    "section": "Part 3 - Recording",
-    "text": "Part 3 - Recording\nWork: On your own\nDue: May 1, 11:59pm (Thursday)\n\nScreencast uploaded to YouTube or YuJa\nApproximate time index provided for each technique you demonstrate (on GitHub)\nFinal code file uploaded to github repository"
+    "objectID": "slides/10a-reshape.html#not-in-first-normal-form",
+    "href": "slides/10a-reshape.html#not-in-first-normal-form",
+    "title": "Reshaping Dogs",
+    "section": "Not in First Normal Form",
+    "text": "Not in First Normal Form\nExample 1: no key\n\n\n [1] 0.80463517 0.64060029 0.64842185 0.26700195 0.90290315 0.87371680\n [7] 0.09969296 0.68885715 0.28142305 0.10479012\n\n\nExample 2: not rectangular"
   },
   {
-    "objectID": "slides/10-projects.html#part-4---peer-review",
-    "href": "slides/10-projects.html#part-4---peer-review",
-    "title": "Projects",
-    "section": "Part 4 - Peer Review",
-    "text": "Part 4 - Peer Review\n\nIn place of the final exam:\n\nWatch 2 screencasts\nPeer evaluations - leave a comment on Canvas\nBased on rubric (provided)\n\nTake place between May 1 and Thursday of Finals week"
+    "objectID": "slides/10a-reshape.html#the-whole-key---2nd-normal-form",
+    "href": "slides/10a-reshape.html#the-whole-key---2nd-normal-form",
+    "title": "Reshaping Dogs",
+    "section": "The whole key - 2nd normal form",
+    "text": "The whole key - 2nd normal form\nA table is in 2nd normal form, when:\n\nit is in 1st normal form\nand all non-key columns depend on all parts of the key\n\n“No split key”\nTables in 1st normal form with a single key variable are automatically in 2nd normal form"
   },
   {
-    "objectID": "slides/09a-strings.html#working-with-regular-expressions",
-    "href": "slides/09a-strings.html#working-with-regular-expressions",
+    "objectID": "slides/10a-reshape.html#is-this-table-in-2nd-normal-form",
+    "href": "slides/10a-reshape.html#is-this-table-in-2nd-normal-form",
+    "title": "Reshaping Dogs",
+    "section": "Is this table in 2nd normal form?",
+    "text": "Is this table in 2nd normal form?"
+  },
+  {
+    "objectID": "slides/10a-reshape.html#nothing-but-the-key---3rd-normal-form",
+    "href": "slides/10a-reshape.html#nothing-but-the-key---3rd-normal-form",
+    "title": "Reshaping Dogs",
+    "section": "Nothing but the key - 3rd normal form",
+    "text": "Nothing but the key - 3rd normal form\nA table is in 3rd normal form, when:\n\nit is in 2nd normal form\nand no non-key column can be determined by another non-key column\n\ne.g.: zip code determines county and state"
+  },
+  {
+    "objectID": "slides/10a-reshape.html#data-normalization",
+    "href": "slides/10a-reshape.html#data-normalization",
+    "title": "Reshaping Dogs",
+    "section": "Data Normalization",
+    "text": "Data Normalization\nProcess of getting table into higher normal forms is called normalization\nNormalization gives a framework to organize and ensure\n\nreduce redundancy in data\nimprove data consistency\nsimplify the database design\nincrease speed to access data\neasier maintenance\n\nNormalization is generally terrible for any statistical modelling"
+  },
+  {
+    "objectID": "slides/10a-reshape.html#key-value-pairs",
+    "href": "slides/10a-reshape.html#key-value-pairs",
+    "title": "Reshaping Dogs",
+    "section": "Key-Value Pairs",
+    "text": "Key-Value Pairs\nStricter version of the 3rd NF:\n\ntable is in 2nd normal form,\nthere is only a single non-key element in a table\n\nNote: a table like this is automatically in 3rd normal form."
+  },
+  {
+    "objectID": "slides/10a-reshape.html#traits-of-dog-breeds",
+    "href": "slides/10a-reshape.html#traits-of-dog-breeds",
+    "title": "Reshaping Dogs",
+    "section": "Traits of Dog Breeds",
+    "text": "Traits of Dog Breeds\n\n\n                  Breed Affectionate.With.Family Good.With.Young.Children\n1 Retrievers (Labrador)                        5                        5\n2       French Bulldogs                        5                        5\n3  German Shepherd Dogs                        5                        5\n4   Retrievers (Golden)                        5                        5\n5              Bulldogs                        4                        3\n6               Poodles                        5                        5\n  Good.With.Other.Dogs Shedding.Level Coat.Grooming.Frequency Drooling.Level\n1                    5              4                       2              2\n2                    4              3                       1              3\n3                    3              4                       2              2\n4                    5              4                       2              2\n5                    3              3                       3              3\n6                    3              1                       4              1\n  Coat.Type Coat.Length Openness.To.Strangers Playfulness.Level\n1    Double       Short                     5                 5\n2    Smooth       Short                     5                 5\n3    Double      Medium                     3                 4\n4    Double      Medium                     5                 4\n5    Smooth       Short                     4                 4\n6     Curly        Long                     5                 5\n  Watchdog.Protective.Nature Adaptability.Level Trainability.Level Energy.Level\n1                          3                  5                  5            5\n2                          3                  5                  4            3\n3                          5                  5                  5            5\n4                          3                  5                  5            3\n5                          3                  3                  4            3\n6                          5                  4                  5            4\n  Barking.Level Mental.Stimulation.Needs\n1             3                        4\n2             1                        3\n3             3                        5\n4             1                        4\n5             2                        3\n6             4                        5\n\n\nData set is in “Wide Form”\nWithout knowing the data well, it could be that some of the non-key variables could determine parts of other non-key variables (violations of 3rd normal form)"
+  },
+  {
+    "objectID": "slides/10a-reshape.html#traits-of-dog-breeds-in-long-form",
+    "href": "slides/10a-reshape.html#traits-of-dog-breeds-in-long-form",
+    "title": "Reshaping Dogs",
+    "section": "Traits of Dog Breeds in Long Form",
+    "text": "Traits of Dog Breeds in Long Form\n\ntraits %&gt;% select(Breed, 2:4) %&gt;% \n  pivot_longer(cols=2:4, names_to = \"Trait\", values_to = \"Score\") %&gt;% \n  head()\n\n# A tibble: 6 × 3\n  Breed                 Trait                    Score\n  &lt;chr&gt;                 &lt;chr&gt;                    &lt;int&gt;\n1 Retrievers (Labrador) Affectionate.With.Family     5\n2 Retrievers (Labrador) Good.With.Young.Children     5\n3 Retrievers (Labrador) Good.With.Other.Dogs         5\n4 French Bulldogs       Affectionate.With.Family     5\n5 French Bulldogs       Good.With.Young.Children     5\n6 French Bulldogs       Good.With.Other.Dogs         4\n\n\nThe combination of Breed and Trait (Key) uniquely determines the score value (Value)."
+  },
+  {
+    "objectID": "slides/10a-reshape.html#homework-8",
+    "href": "slides/10a-reshape.html#homework-8",
+    "title": "Reshaping Dogs",
+    "section": "Homework 8",
+    "text": "Homework 8\n\nReshape two data sets\nCreate a visual in each\nOne reshaping in python, one in R"
+  },
+  {
+    "objectID": "slides/10a-reshape.html#visuals-in-homework-8",
+    "href": "slides/10a-reshape.html#visuals-in-homework-8",
+    "title": "Reshaping Dogs",
+    "section": "Visuals in homework 8",
+    "text": "Visuals in homework 8\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 1: Trait Distributions\n\n\n\n\n\n\n\n\n\n\n\nFigure 2: Ranks of (some) Breeds over time"
+  },
+  {
+    "objectID": "slides/09b-strings.html#working-with-regular-expressions",
+    "href": "slides/09b-strings.html#working-with-regular-expressions",
     "title": "Working with Strings",
     "section": "Working with regular expressions",
     "text": "Working with regular expressions\nstr_view in stringr package (in R) shows all matches:\n\nstringr::str_view(\"&gt; Poem for a Friend. \", pattern = \"\\\\W\")\n\n[1] │ &lt;&gt;&gt;&lt; &gt;Poem&lt; &gt;for&lt; &gt;a&lt; &gt;Friend&lt;.&gt;&lt; &gt;\n\nstringr::str_view(\"&gt; Poem for a Friend. \", pattern = \"\\\\b\")\n\n[1] │ &gt; &lt;&gt;Poem&lt;&gt; &lt;&gt;for&lt;&gt; &lt;&gt;a&lt;&gt; &lt;&gt;Friend&lt;&gt;. \n\n\nstr_count counts all matches in R:\n\nstringr::str_count(\"&gt; Poem for a Friend. \", pattern = \"\\\\b\")/2\n\n[1] 4\n\n\nfind_all and len count all matches in python:\n\nimport re\nres = re.findall(\"\\\\b\", \"&gt; Poem for a Friend. \")\nlen(res)/2\n\n4.0"
   },
   {
-    "objectID": "slides/09a-strings.html#logistics",
-    "href": "slides/09a-strings.html#logistics",
+    "objectID": "slides/09b-strings.html#idea-for-exploration",
+    "href": "slides/09b-strings.html#idea-for-exploration",
     "title": "Working with Strings",
-    "section": "Logistics",
-    "text": "Logistics\n\nthis week: reading quizzes (just submitted)\nwork on homework #7: string operations using reddit poetry :)\nsubmit any changes to homework #1 - #5 by Thursday"
+    "section": "Idea for Exploration",
+    "text": "Idea for Exploration\nRun summary statistics for second poet. Then compare."
   },
   {
-    "objectID": "slides/09a-strings.html#homework-7",
-    "href": "slides/09a-strings.html#homework-7",
+    "objectID": "slides/09b-strings.html#homework-8",
+    "href": "slides/09b-strings.html#homework-8",
     "title": "Working with Strings",
-    "section": "Homework 7",
-    "text": "Homework 7\nReddit poets: sprog and schnoodledoodledoo\nFull points for completion in ONE language"
+    "section": "Homework 8",
+    "text": "Homework 8\nPivoting with dogs :)"
   },
   {
-    "objectID": "slides/09a-strings.html#an-example",
-    "href": "slides/09a-strings.html#an-example",
-    "title": "Working with Strings",
-    "section": "An Example",
-    "text": "An Example\nReddit OneOrangeBraincell\nIn the comments:\nComment byu/Falom from discussion inOneOrangeBraincell"
-  },
-  {
-    "objectID": "slides/09a-strings.html#major-string-operations",
-    "href": "slides/09a-strings.html#major-string-operations",
-    "title": "Working with Strings",
-    "section": "Major String Operations",
-    "text": "Major String Operations\n\n\n\n\n\n\n\nOperation\nSketch\n\n\n\n\nFind and replace (or remove)\n\n\n\nSplit data into multiple columns\n\n\n\nJoin data into a single column"
-  },
-  {
-    "objectID": "slides/02b-review-topics.html#last-class",
-    "href": "slides/02b-review-topics.html#last-class",
+    "objectID": "slides/02a-review-topics.html#working-environment",
+    "href": "slides/02a-review-topics.html#working-environment",
     "title": "Programming Review",
-    "section": "Last Class",
-    "text": "Last Class\n\nWorked on Homework #2\nIdentified several useful functions and packages:\n\npackages/libraries\n\nin R: stringr, stringi\nin python: re\n\nfunctions\n\nin R: tolower, stri_reverse, stri_sub_all\nin python: .lower(), [::-1], re.sub\n\n\nIf you made at least one submission to github, you have some points for homework #2 in Canvas"
+    "section": "Working Environment",
+    "text": "Working Environment\n\nKnow the 3 different ways to execute code from within RStudio\n\nTerminal (Command Line)\nSource Script (RStudio Button)\nInteractive Mode (line by line)\n\nDifferentiate between the Console and the Terminal\nDifferentiate between R and Python in the Console"
   },
   {
-    "objectID": "slides/02-version-control.html",
-    "href": "slides/02-version-control.html",
-    "title": "Version Control",
-    "section": "",
-    "text": "Version control is the answer to this file naming problem.Image Source “Piled Higher and Deeper” by Jorge Cham www.phdcomics.com\n\n\n\n\nIn a system terminal, run…\n\ngit config --global user.name 'YOUR NAME HERE'\ngit config --global user.email 'YOUR EMAIL HERE'\ngit config --global --list # check to see it worked\n\n\n\n\nInstructions\n\n\n\n\n\n(Demo)\n\n\n\n(Demo)"
+    "objectID": "slides/02a-review-topics.html#rstudio-projects",
+    "href": "slides/02a-review-topics.html#rstudio-projects",
+    "title": "Programming Review",
+    "section": "RStudio Projects",
+    "text": "RStudio Projects\nRStudio projects are a way to keep your work organized.\nLet’s create one for this week’s class work.\n\nCreating an RStudio Project"
   },
   {
-    "objectID": "slides/02-version-control.html#introduce-yourself-to-git",
-    "href": "slides/02-version-control.html#introduce-yourself-to-git",
-    "title": "Version Control",
-    "section": "",
-    "text": "In a system terminal, run…\n\ngit config --global user.name 'YOUR NAME HERE'\ngit config --global user.email 'YOUR EMAIL HERE'\ngit config --global --list # check to see it worked"
+    "objectID": "slides/02a-review-topics.html#general-programming",
+    "href": "slides/02a-review-topics.html#general-programming",
+    "title": "Programming Review",
+    "section": "General Programming",
+    "text": "General Programming\nReview: General Programming\nKnow how to:\n\nDefine a variable\nWrite a function\nWrite an if/else statement\nload a package or import a library\nCreate a data table structure\nGet a column, row, or value from a data table\nGet an item from a list"
   },
   {
-    "objectID": "slides/02-version-control.html#connect-git-and-r",
-    "href": "slides/02-version-control.html#connect-git-and-r",
-    "title": "Version Control",
-    "section": "",
-    "text": "Instructions"
+    "objectID": "slides/02a-review-topics.html#self-assessment",
+    "href": "slides/02a-review-topics.html#self-assessment",
+    "title": "Programming Review",
+    "section": "Self-assessment",
+    "text": "Self-assessment\nIt’s sometimes hard to know what you know and what you don’t know\nSelf-assessment in Canvas: due by Feb 6"
   },
   {
-    "objectID": "slides/02-version-control.html#navigating-around-github",
-    "href": "slides/02-version-control.html#navigating-around-github",
-    "title": "Version Control",
-    "section": "",
-    "text": "(Demo)"
+    "objectID": "slides/02a-review-topics.html#homework-2",
+    "href": "slides/02a-review-topics.html#homework-2",
+    "title": "Programming Review",
+    "section": "Homework 2",
+    "text": "Homework 2\n\nFocus on the logic and thinking through the steps\nWork with pencil and paper first"
   },
   {
-    "objectID": "slides/02-version-control.html#using-rstudio-and-git",
-    "href": "slides/02-version-control.html#using-rstudio-and-git",
-    "title": "Version Control",
-    "section": "",
-    "text": "(Demo)"
+    "objectID": "slides/01-Syllabus-and-Introductions.html#introduce-yourself",
+    "href": "slides/01-Syllabus-and-Introductions.html#introduce-yourself",
+    "title": "Introduction",
+    "section": "Introduce yourself!",
+    "text": "Introduce yourself!\n\nName / Year / Major\nWhat do you hope to learn in this class?\nPrevious computing experience?\nIs a poptart a ravioli? Why or why not?"
   },
   {
-    "objectID": "project/screencast-checklist.html",
-    "href": "project/screencast-checklist.html",
-    "title": "Screencast Checklist",
-    "section": "",
-    "text": "Screencast uploaded to YouTube/YuJa\n\nIf on YouTube, your screencast should be set so that anyone with the link can view the video.\n\nApproximate time index provided for each of the 4 techniques you’re demonstrating (examples) provided\n\nin the README of your github repository\nin the description of your video (if on YouTube)\n\nCommented code for your screencast uploaded to the github repository"
+    "objectID": "slides/01-Syllabus-and-Introductions.html#my-introduction",
+    "href": "slides/01-Syllabus-and-Introductions.html#my-introduction",
+    "title": "Introduction",
+    "section": "My Introduction",
+    "text": "My Introduction\n\nHeike Hofmann\nProfessor in Statistics\nAt UNL since August, I was at ISU for 20 years\nfirst computer language was Pascal :)\nR user since 1996, Python user (? I have learned it four times by now)"
   },
   {
-    "objectID": "project/index.html",
-    "href": "project/index.html",
-    "title": "Project: Screencast",
+    "objectID": "slides/01-Syllabus-and-Introductions.html#on-poptarts-and-ravioli",
+    "href": "slides/01-Syllabus-and-Introductions.html#on-poptarts-and-ravioli",
+    "title": "Introduction",
+    "section": "On PopTarts and Ravioli:",
+    "text": "On PopTarts and Ravioli:\n\nThe Cube Rule of Food, from RedditThus, a PopTart is a calzone."
+  },
+  {
+    "objectID": "slides/01-Syllabus-and-Introductions.html#contact-info",
+    "href": "slides/01-Syllabus-and-Introductions.html#contact-info",
+    "title": "Introduction",
+    "section": "Contact Info",
+    "text": "Contact Info\n\nEmail: hhofmann4@unl.edu\nOffice: 346D Hardin Hall North Wing\nOffice Hours: TBD"
+  },
+  {
+    "objectID": "slides/01-Syllabus-and-Introductions.html#course-objectives",
+    "href": "slides/01-Syllabus-and-Introductions.html#course-objectives",
+    "title": "Introduction",
+    "section": "Course Objectives",
+    "text": "Course Objectives\n\n\nUse appropriate visualizations to explore and assess data and its applicability to a problem\n\n\n\n\nWrite code to reshape and reformat moderately complex and/or messy data in a reproducible manner\n\n\n\n\nCreate graphical displays to explore data, assess statistical models, and present model results\n\n\n\n\nAdapt pre-existing code for sophisticated visualizations to new data."
+  },
+  {
+    "objectID": "slides/01-Syllabus-and-Introductions.html#course-objectives-1",
+    "href": "slides/01-Syllabus-and-Introductions.html#course-objectives-1",
+    "title": "Introduction",
+    "section": "Course Objectives",
+    "text": "Course Objectives\n\n\nImplement an algorithm or procedure for data modification given in pseudocode\n\n\n\n\nWrite pseudocode to describe and document modifications made to a data set\n\n\n\n\nAccess documentation and source code to determine how software works (or why it doesn’t)\n\n\n\n\nIdentify problems in a data set that limit the analyses which are appropriate for the data"
+  },
+  {
+    "objectID": "slides/01-Syllabus-and-Introductions.html#textbook",
+    "href": "slides/01-Syllabus-and-Introductions.html#textbook",
+    "title": "Introduction",
+    "section": "Textbook",
+    "text": "Textbook\nhttps://srvanderplas.github.io/stat-computing-r-python/"
+  },
+  {
+    "objectID": "slides/01-Syllabus-and-Introductions.html#course-materials",
+    "href": "slides/01-Syllabus-and-Introductions.html#course-materials",
+    "title": "Introduction",
+    "section": "Course Materials",
+    "text": "Course Materials\n\n\n\nCanvas\n\nquizzes\nweekly readings\nhomework/exam/project submission\n\n\n\n\nCourse site\n\nslides\nweekly readings\nhomework/exam/project descriptions\n\n\nEverything should be cross-linked properly but email me if there’s an issue."
+  },
+  {
+    "objectID": "slides/01-Syllabus-and-Introductions.html#class-schedule",
+    "href": "slides/01-Syllabus-and-Introductions.html#class-schedule",
+    "title": "Introduction",
+    "section": "Class Schedule",
+    "text": "Class Schedule"
+  },
+  {
+    "objectID": "slides/01-Syllabus-and-Introductions.html#outline",
+    "href": "slides/01-Syllabus-and-Introductions.html#outline",
+    "title": "Introduction",
+    "section": "Outline",
+    "text": "Outline\nSubject to change based on the events of the semester…\n\n\n\n\n\nDate\nTopic\n\n\n\n\nJan 21\nGetting Started\n\n\nJan 23\nVersion Control\n\n\nJan 28\nReview: Functions\n\n\nJan 30\nReview: Functions\n\n\nFeb 4\nReview: Data Structures\n\n\nFeb 6\nReview: Data Structures\n\n\nFeb 11\nData Input\n\n\nFeb 13\nData Input\n\n\nFeb 18\nData Visualization\n\n\nFeb 20\nData Visualization\n\n\nFeb 25\nData Cleaning\n\n\nFeb 27\nData Cleaning\n\n\nMar 4\nExam 1 Questions\n\n\nMar 6\nStrings\n\n\nMar 11\nStrings\n\n\nMar 13\nMidterm Due\n\n\nMar 25\nReshaping Data\n\n\nMar 27\nReshaping Data\n\n\nApr 1\nJoining Data\n\n\nApr 3\nJoining Data\n\n\nApr 8\nDates and Times\n\n\nApr 10\nDates and Times\n\n\nApr 15\nProject Work\n\n\nApr 17\nProject Work\n\n\nApr 22\nLists\n\n\nApr 24\nLists\n\n\nApr 29\nProject Work\n\n\nMay 1\nScreencast Video Due\n\n\nMay 6\nSpatial Data\n\n\nMay 8\nPeer Review of Screencast Due\n\n\nMay 14\nScheduled Final"
+  },
+  {
+    "objectID": "slides/01-Syllabus-and-Introductions.html#grades",
+    "href": "slides/01-Syllabus-and-Introductions.html#grades",
+    "title": "Introduction",
+    "section": "Grades",
+    "text": "Grades\n\n\n\nAssignments\nWeight\n\n\n\n\nReading Quizzes\n10%\n\n\nWeekly Homework & Participation\n50%\n\n\nMidterm Exam\n20%\n\n\nProject\n20%\n\n\n\nApproximately Weekly Homework – started in class"
+  },
+  {
+    "objectID": "slides/01-Syllabus-and-Introductions.html#academic-integrity-policy",
+    "href": "slides/01-Syllabus-and-Introductions.html#academic-integrity-policy",
+    "title": "Introduction",
+    "section": "Academic Integrity Policy",
+    "text": "Academic Integrity Policy\n\nYou may (should!) work with each other on homework assignments\nWork alone on exams\nYou must be able to explain anything you submit\nAt my discretion, I can use a one-on-one discussion of your work to replace the grade for that work.\nChatGPT, StackOverflow, Google are tools, but they do not help you think"
+  },
+  {
+    "objectID": "slides/01-Syllabus-and-Introductions.html#install-course-software",
+    "href": "slides/01-Syllabus-and-Introductions.html#install-course-software",
+    "title": "Introduction",
+    "section": "Install Course Software",
+    "text": "Install Course Software\nTextbook Chapter 2"
+  },
+  {
+    "objectID": "slides/01-Syllabus-and-Introductions.html#next-time",
+    "href": "slides/01-Syllabus-and-Introductions.html#next-time",
+    "title": "Introduction",
+    "section": "Next Time",
+    "text": "Next Time\nWe’ll work on Version Control with Git\n\n\nPlease read before class:\n\nComputer Basics\nScripts and Notebooks\nRStudio’s Interface\nVersion Control with Git\n\n\n\n\n\nOctocat Image Source"
+  },
+  {
+    "objectID": "project/Dataset-Topics.html",
+    "href": "project/Dataset-Topics.html",
+    "title": "Project Dataset and Topics",
     "section": "",
-    "text": "Project Description\nFor your final project (which will take the place of the final exam), you will be recording a screencast in the style of David Robinson’s TidyTuesday screencasts.\nYou can find time-stamped, catalogued versions of some of David Robinson’s screencasts here.\nRequirements:\n\nYour screencast should be approximately 45 minutes long.\nYour screencast should show your analysis of a TidyTuesday dataset from 2023\nYou should showcase at least 4 different techniques you’ve learned in Stat 251. Some examples include:\n\ndata cleaning (dplyr) verbs\nreshaping data (tidyr)\nworking with dates and times (lubridate)\nworking with strings (stringr)\nwriting functions to modularize your code\nvisualizing your data effectively\n\n\nUnlike David Robinson’s screencasts, you will write a rough pseudocode “script” before you start recording. This will give you a rough outline of how to do the analysis and what things you intend to cover.\nYour goal is to help a future Stat 251 student understand some of the topics covered in this class. So while David Robinson and others who record their screencasts live might not fully explain what he’s doing, you should take the time to explain each technique you decide to use in a way that will help someone else understand.\nThere will be three deliverables for this project:\n\nPlan your dataset and topics\nPseudocode script uploaded to github repository\nScreencast + github repository\n\nScreencast uploaded to YouTube/YuJa\nApproximate time index provided for each of the 4 techniques you’re demonstrating (examples)\nCode uploaded to github repository\n\n\nIn lieu of the final exam, you will peer review two classmates’ screencasts."
+    "text": "Link to dataset\nThings you plan to investigate using this dataset:\n\nThing 1\nThing 2\nThing 3\n\nStat 251 topics you plan to cover during the analysis:\n\nTopic 1\nTopic 2\nTopic 3\nTopic 4"
   },
   {
     "objectID": "homework/08-reshape.html",
@@ -249,7 +375,7 @@
     "href": "index.html",
     "title": "Stat 251: Data Wrangling",
     "section": "",
-    "text": "Course Materials\nDates shown are due dates (for homework and exams) and dates on which material was presented (for slides).\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nDate\n\n\nTitle\n\n\nType\n\n\n\n\n\n\n\n\nApr 15, 2025\n\n\nProject: Screencast\n\n\nproject\n\n\n\n\n\n\n\nApr 15, 2025\n\n\nProject Overview\n\n\n \n\n\n\n\n\n\n\nApr 8, 2025\n\n\nDates and Times\n\n\nreading\n\n\n\n\n\n\n\nApr 3, 2025\n\n\nData Reshaping with Puppies\n\n\nhomework\n\n\n\n\n\n\n\nApr 1, 2025\n\n\nReshaping Dogs\n\n\n \n\n\n\n\n\n\n\nApr 1, 2025\n\n\nJoining Data\n\n\nreading\n\n\n\n\n\n\n\nMar 27, 2025\n\n\nString Processing and Data Wrangling in R and Python\n\n\nhomework\n\n\n\n\n\n\n\nMar 27, 2025\n\n\nRegular Expressions\n\n\n \n\n\n\n\n\n\n\nMar 25, 2025\n\n\nWorking with Strings\n\n\n \n\n\n\n\n\n\n\nMar 25, 2025\n\n\nStrings\n\n\nreading\n\n\n\n\n\n\n\nMar 25, 2025\n\n\nReshaping Data\n\n\nreading\n\n\n\n\n\n\n\nMar 13, 2025\n\n\nMidterm\n\n\nexam\n\n\n\n\n\n\n\nMar 6, 2025\n\n\nHomework 6: Data Manipulation\n\n\nhomework\n\n\n\n\n\n\n\nMar 4, 2025\n\n\nPractice Exam (2023)\n\n\nexam\n\n\n\n\n\n\n\nMar 4, 2025\n\n\nExam objectives\n\n\nexam\n\n\n\n\n\n\n\nMar 4, 2025\n\n\nGood programming practices\n\n\n \n\n\n\n\n\n\n\nFeb 27, 2025\n\n\nComputing with data\n\n\n \n\n\n\n\n\n\n\nFeb 25, 2025\n\n\nHomework 5: Graphics\n\n\nhomework\n\n\n\n\n\n\n\nFeb 25, 2025\n\n\nData Cleaning\n\n\nreading\n\n\n\n\n\n\n\nFeb 24, 2025\n\n\nSurvey Results and Groundhog Graphics\n\n\n \n\n\n\n\n\n\n\nFeb 20, 2025\n\n\nCreating Good Graphics\n\n\n \n\n\n\n\n\n\n\nFeb 18, 2025\n\n\nChocolate Chip Cookies\n\n\nhomework\n\n\n\n\n\n\n\nFeb 18, 2025\n\n\nFinishing up Cookie Exploration\n\n\n \n\n\n\n\n\n\n\nFeb 18, 2025\n\n\nData Visualization\n\n\nreading\n\n\n\n\n\n\n\nFeb 18, 2025\n\n\nGood Graphics\n\n\nreading\n\n\n\n\n\n\n\nFeb 13, 2025\n\n\nData Explorations\n\n\n \n\n\n\n\n\n\n\nFeb 11, 2025\n\n\ndecodeR: Base R\n\n\nhomework\n\n\n\n\n\n\n\nFeb 11, 2025\n\n\nReading In Data\n\n\n \n\n\n\n\n\n\n\nFeb 11, 2025\n\n\nData Input\n\n\nreading\n\n\n\n\n\n\n\nFeb 11, 2025\n\n\nExploratory Data Analysis\n\n\nreading\n\n\n\n\n\n\n\nFeb 6, 2025\n\n\nReview - Cipher\n\n\n \n\n\n\n\n\n\n\nFeb 4, 2025\n\n\nHomework 2: Reviewing R and Python\n\n\nhomework\n\n\n\n\n\n\n\nFeb 4, 2025\n\n\nReview - Cipher\n\n\n \n\n\n\n\n\n\n\nJan 30, 2025\n\n\nProgramming Review\n\n\nslides\n\n\n\n\n\n\n\nJan 28, 2025\n\n\n👋 The Basics of GitHub\n\n\nhomework\n\n\n\n\n\n\n\nJan 28, 2025\n\n\nProgramming Review\n\n\nslides\n\n\n\n\n\n\n\nJan 28, 2025\n\n\nVersion Control with Git and Github\n\n\nreading\n\n\n\n\n\n\n\nJan 28, 2025\n\n\nReview - Programming\n\n\nreading\n\n\n\n\n\n\n\nJan 23, 2025\n\n\nVersion Control\n\n\nslides\n\n\n\n\n\n\n\nJan 23, 2025\n\n\nReview - Tools\n\n\nreading\n\n\n\n\n\n\n\nJan 21, 2025\n\n\nIntroduction\n\n\nslides\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Course Materials\nDates shown are due dates (for homework and exams) and dates on which material was presented (for slides).\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nDate\n\n\nTitle\n\n\nType\n\n\n\n\n\n\n\n\nApr 15, 2025\n\n\nProject: Screencast\n\n\nproject\n\n\n\n\n\n\n\nApr 15, 2025\n\n\nProject Overview\n\n\n \n\n\n\n\n\n\n\nApr 10, 2025\n\n\nHomework 9: Murder in SQL City\n\n\nhomework\n\n\n\n\n\n\n\nApr 8, 2025\n\n\nDates and Times\n\n\nreading\n\n\n\n\n\n\n\nApr 3, 2025\n\n\nData Reshaping with Puppies\n\n\nhomework\n\n\n\n\n\n\n\nApr 3, 2025\n\n\nMurder tables!?\n\n\n \n\n\n\n\n\n\n\nApr 1, 2025\n\n\nReshaping Dogs\n\n\n \n\n\n\n\n\n\n\nApr 1, 2025\n\n\nJoining Data\n\n\nreading\n\n\n\n\n\n\n\nMar 27, 2025\n\n\nString Processing and Data Wrangling in R and Python\n\n\nhomework\n\n\n\n\n\n\n\nMar 27, 2025\n\n\nRegular Expressions\n\n\n \n\n\n\n\n\n\n\nMar 25, 2025\n\n\nWorking with Strings\n\n\n \n\n\n\n\n\n\n\nMar 25, 2025\n\n\nStrings\n\n\nreading\n\n\n\n\n\n\n\nMar 25, 2025\n\n\nReshaping Data\n\n\nreading\n\n\n\n\n\n\n\nMar 13, 2025\n\n\nMidterm\n\n\nexam\n\n\n\n\n\n\n\nMar 6, 2025\n\n\nHomework 6: Data Manipulation\n\n\nhomework\n\n\n\n\n\n\n\nMar 4, 2025\n\n\nPractice Exam (2023)\n\n\nexam\n\n\n\n\n\n\n\nMar 4, 2025\n\n\nExam objectives\n\n\nexam\n\n\n\n\n\n\n\nMar 4, 2025\n\n\nGood programming practices\n\n\n \n\n\n\n\n\n\n\nFeb 27, 2025\n\n\nComputing with data\n\n\n \n\n\n\n\n\n\n\nFeb 25, 2025\n\n\nHomework 5: Graphics\n\n\nhomework\n\n\n\n\n\n\n\nFeb 25, 2025\n\n\nData Cleaning\n\n\nreading\n\n\n\n\n\n\n\nFeb 24, 2025\n\n\nSurvey Results and Groundhog Graphics\n\n\n \n\n\n\n\n\n\n\nFeb 20, 2025\n\n\nCreating Good Graphics\n\n\n \n\n\n\n\n\n\n\nFeb 18, 2025\n\n\nChocolate Chip Cookies\n\n\nhomework\n\n\n\n\n\n\n\nFeb 18, 2025\n\n\nFinishing up Cookie Exploration\n\n\n \n\n\n\n\n\n\n\nFeb 18, 2025\n\n\nData Visualization\n\n\nreading\n\n\n\n\n\n\n\nFeb 18, 2025\n\n\nGood Graphics\n\n\nreading\n\n\n\n\n\n\n\nFeb 13, 2025\n\n\nData Explorations\n\n\n \n\n\n\n\n\n\n\nFeb 11, 2025\n\n\ndecodeR: Base R\n\n\nhomework\n\n\n\n\n\n\n\nFeb 11, 2025\n\n\nReading In Data\n\n\n \n\n\n\n\n\n\n\nFeb 11, 2025\n\n\nData Input\n\n\nreading\n\n\n\n\n\n\n\nFeb 11, 2025\n\n\nExploratory Data Analysis\n\n\nreading\n\n\n\n\n\n\n\nFeb 6, 2025\n\n\nReview - Cipher\n\n\n \n\n\n\n\n\n\n\nFeb 4, 2025\n\n\nHomework 2: Reviewing R and Python\n\n\nhomework\n\n\n\n\n\n\n\nFeb 4, 2025\n\n\nReview - Cipher\n\n\n \n\n\n\n\n\n\n\nJan 30, 2025\n\n\nProgramming Review\n\n\nslides\n\n\n\n\n\n\n\nJan 28, 2025\n\n\n👋 The Basics of GitHub\n\n\nhomework\n\n\n\n\n\n\n\nJan 28, 2025\n\n\nProgramming Review\n\n\nslides\n\n\n\n\n\n\n\nJan 28, 2025\n\n\nVersion Control with Git and Github\n\n\nreading\n\n\n\n\n\n\n\nJan 28, 2025\n\n\nReview - Programming\n\n\nreading\n\n\n\n\n\n\n\nJan 23, 2025\n\n\nVersion Control\n\n\nslides\n\n\n\n\n\n\n\nJan 23, 2025\n\n\nReview - Tools\n\n\nreading\n\n\n\n\n\n\n\nJan 21, 2025\n\n\nIntroduction\n\n\nslides\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "homework/01-git-github.html",
@@ -420,256 +546,179 @@
     "text": "2.3 Poetry Analysis\nChoose some characteristic(s) of the poet’s style to explore graphically. If necessary, create a subset of the data with poems relevant to your question before you generate numerical summaries. You may want to clean up the data and remove lines which contain quotes (e.g. start with a &gt; character) or horizontal lines in reddit markdown (e.g. only have ----).\nSome ideas to get you started thinking:\n\nNumber of syllables per line may be used to infer rhyming scheme and/or poetry style. You can use the syllables python package. You may need to use a for-loop or program a custom function to use the syllables function on every entry in your data frame column.\nUse of non-alphabetic characters. Schnoodle often uses emoji and other text annotations to convey emotions and excitement - how often do these types of annotations appear in their poems?\nCommon characters and phrases. Sprog writes poems frequently about a character named Timmy (who often meets a horrible end). Do these poems have a common format/style/rhyme scheme?\nSprog often writes longer poems with multiple stanzas. Identify which poems have multiple stanzas (Hint, look for blank lines in a systematic pattern) and show the distribution of stanza length, stanza variation within poems, and number of stanzas in each poem.\nSchnoodle often misspells words intentionally (using e.g. fren instead of friend) to convey that they are writing using an animal’s voice. What proportion of words are misspelled in each poem? How much does this proportion vary? Based on the distribution, how likely is it, in your opinion, that Schnoodle misspells words more often when speaking as one type of animal than another? You can use one of the python packages discussed in this post to detect whether words are likely misspelled."
   },
   {
-    "objectID": "project/Dataset-Topics.html",
-    "href": "project/Dataset-Topics.html",
-    "title": "Project Dataset and Topics",
+    "objectID": "homework/09-join.html",
+    "href": "homework/09-join.html",
+    "title": "Homework 8: Joins and Summaries",
     "section": "",
-    "text": "Link to dataset\nThings you plan to investigate using this dataset:\n\nThing 1\nThing 2\nThing 3\n\nStat 251 topics you plan to cover during the analysis:\n\nTopic 1\nTopic 2\nTopic 3\nTopic 4"
+    "text": "Note: This assignment must be submitted in github classroom.\nThis week, you’ll be using table joins to solve a murder mystery."
   },
   {
-    "objectID": "slides/01-Syllabus-and-Introductions.html#introduce-yourself",
-    "href": "slides/01-Syllabus-and-Introductions.html#introduce-yourself",
-    "title": "Introduction",
-    "section": "Introduce yourself!",
-    "text": "Introduce yourself!\n\nName / Year / Major\nWhat do you hope to learn in this class?\nPrevious computing experience?\nIs a poptart a ravioli? Why or why not?"
+    "objectID": "homework/09-join.html#r",
+    "href": "homework/09-join.html#r",
+    "title": "Homework 8: Joins and Summaries",
+    "section": "R",
+    "text": "R\n\n# you can do the assignment using the database, if you want, \n# or you can use the code below to read in each table separately.\nlibrary(RSQLite)\nlibrary(DBI)\n# Your database connection code goes here. Store the connection as con \ncon &lt;- dbConnect(RSQLite::SQLite(), \"sql-murder-mystery.db\")\n# close the connection when you're done\ndbDisconnect(con)\n\n\n# This loads all of the tables into R data frame objects. \n# You can also just use the database connection above.\n# You don't need to understand what this code does to run it :)\nif (!\"purrr\" %in% installed.packages()) {\n  install.packages(\"purrr\")\n}\n# Load all tables from CSV\ntable_names &lt;- c(\"crime_scene_report\", \n                 \"drivers_license\", \n                 \"facebook_event_checkin\",\n                 \"get_fit_now_check_in\", \n                 \"get_fit_now_member\", \n                 \"income\", \n                 \"interview\",\n                 \"person\")\nurl_base &lt;- \"https://raw.githubusercontent.com/srvanderplas/datasets/main/raw/sql-murder/\"\n# For each table name, read the tables in and store them as the name of the table\npurrr::walk(table_names, function(x) {\n  assign(x, readr::read_csv(paste0(url_base, x, \".csv\")), envir = .GlobalEnv)\n})"
   },
   {
-    "objectID": "slides/01-Syllabus-and-Introductions.html#my-introduction",
-    "href": "slides/01-Syllabus-and-Introductions.html#my-introduction",
-    "title": "Introduction",
-    "section": "My Introduction",
-    "text": "My Introduction\n\nHeike Hofmann\nProfessor in Statistics\nAt UNL since August, I was at ISU for 20 years\nfirst computer language was Pascal :)\nR user since 1996, Python user (? I have learned it four times by now)"
+    "objectID": "homework/09-join.html#python",
+    "href": "homework/09-join.html#python",
+    "title": "Homework 8: Joins and Summaries",
+    "section": "Python",
+    "text": "Python\n\nimport pandas as pd\nimport sqlite3\n# Read sqlite query results into a pandas DataFrame\ncon = sqlite3.connect(\"sql-murder-mystery.db\")\ncrime_scene_report = pd.read_sql_query(\"SELECT * from crime_scene_report\", con)\ndrivers_license = pd.read_sql_query(\"SELECT * from drivers_license\", con)\nfacebook_event_checkin = pd.read_sql_query(\"SELECT * from facebook_event_checkin\", con)\nget_fit_now_check_in = pd.read_sql_query(\"SELECT * from get_fit_now_check_in\", con)\nget_fit_now_member = pd.read_sql_query(\"SELECT * from get_fit_now_member\", con)\nincome = pd.read_sql_query(\"SELECT * from income\", con)\ninterview = pd.read_sql_query(\"SELECT * from interview\", con)\nperson = pd.read_sql_query(\"SELECT * from person\", con)\n# Verify that result of SQL query is stored in the dataframe\nprint(crime_scene_report.head())\ncon.close()"
   },
   {
-    "objectID": "slides/01-Syllabus-and-Introductions.html#on-poptarts-and-ravioli",
-    "href": "slides/01-Syllabus-and-Introductions.html#on-poptarts-and-ravioli",
-    "title": "Introduction",
-    "section": "On PopTarts and Ravioli:",
-    "text": "On PopTarts and Ravioli:\n\nThe Cube Rule of Food, from RedditThus, a PopTart is a calzone."
+    "objectID": "homework/09-join.html#getting-started",
+    "href": "homework/09-join.html#getting-started",
+    "title": "Homework 8: Joins and Summaries",
+    "section": "Getting Started",
+    "text": "Getting Started\nTo get you started, I’ll set you up in the right place.\n\nA crime has taken place and the detective needs your help. The detective gave you the crime scene report, but you somehow lost it. You vaguely remember that the crime was a murder that occurred sometime on Jan.15, 2018 and that it took place in SQL City. Start by retrieving the corresponding crime scene report from the police department’s database.\n\n\nlibrary(dplyr)\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union\n\nlibrary(tidyr)\n\ncrime_of_interest &lt;- crime_scene_report %&gt;%\n  filter(date == \"20180115\", city == \"SQL City\", type == \"murder\")\ncrime_of_interest$description\n\n[1] \"Security footage shows that there were 2 witnesses. The first witness lives at the last house on \\\"Northwestern Dr\\\". The second witness, named Annabel, lives somewhere on \\\"Franklin Ave\\\".\""
   },
   {
-    "objectID": "slides/01-Syllabus-and-Introductions.html#contact-info",
-    "href": "slides/01-Syllabus-and-Introductions.html#contact-info",
-    "title": "Introduction",
-    "section": "Contact Info",
-    "text": "Contact Info\n\nEmail: hhofmann4@unl.edu\nOffice: 346D Hardin Hall North Wing\nOffice Hours: TBD"
+    "objectID": "project/index.html",
+    "href": "project/index.html",
+    "title": "Project: Screencast",
+    "section": "",
+    "text": "Project Description\nFor your final project (which will take the place of the final exam), you will be recording a screencast in the style of David Robinson’s TidyTuesday screencasts.\nYou can find time-stamped, catalogued versions of some of David Robinson’s screencasts here.\nRequirements:\n\nYour screencast should be approximately 45 minutes long.\nYour screencast should show your analysis of a TidyTuesday dataset from 2023\nYou should showcase at least 4 different techniques you’ve learned in Stat 251. Some examples include:\n\ndata cleaning (dplyr) verbs\nreshaping data (tidyr)\nworking with dates and times (lubridate)\nworking with strings (stringr)\nwriting functions to modularize your code\nvisualizing your data effectively\n\n\nUnlike David Robinson’s screencasts, you will write a rough pseudocode “script” before you start recording. This will give you a rough outline of how to do the analysis and what things you intend to cover.\nYour goal is to help a future Stat 251 student understand some of the topics covered in this class. So while David Robinson and others who record their screencasts live might not fully explain what he’s doing, you should take the time to explain each technique you decide to use in a way that will help someone else understand.\nThere will be three deliverables for this project:\n\nPlan your dataset and topics\nPseudocode script uploaded to github repository\nScreencast + github repository\n\nScreencast uploaded to YouTube/YuJa\nApproximate time index provided for each of the 4 techniques you’re demonstrating (examples)\nCode uploaded to github repository\n\n\nIn lieu of the final exam, you will peer review two classmates’ screencasts."
   },
   {
-    "objectID": "slides/01-Syllabus-and-Introductions.html#course-objectives",
-    "href": "slides/01-Syllabus-and-Introductions.html#course-objectives",
-    "title": "Introduction",
-    "section": "Course Objectives",
-    "text": "Course Objectives\n\n\nUse appropriate visualizations to explore and assess data and its applicability to a problem\n\n\n\n\nWrite code to reshape and reformat moderately complex and/or messy data in a reproducible manner\n\n\n\n\nCreate graphical displays to explore data, assess statistical models, and present model results\n\n\n\n\nAdapt pre-existing code for sophisticated visualizations to new data."
+    "objectID": "project/screencast-checklist.html",
+    "href": "project/screencast-checklist.html",
+    "title": "Screencast Checklist",
+    "section": "",
+    "text": "Screencast uploaded to YouTube/YuJa\n\nIf on YouTube, your screencast should be set so that anyone with the link can view the video.\n\nApproximate time index provided for each of the 4 techniques you’re demonstrating (examples) provided\n\nin the README of your github repository\nin the description of your video (if on YouTube)\n\nCommented code for your screencast uploaded to the github repository"
   },
   {
-    "objectID": "slides/01-Syllabus-and-Introductions.html#course-objectives-1",
-    "href": "slides/01-Syllabus-and-Introductions.html#course-objectives-1",
-    "title": "Introduction",
-    "section": "Course Objectives",
-    "text": "Course Objectives\n\n\nImplement an algorithm or procedure for data modification given in pseudocode\n\n\n\n\nWrite pseudocode to describe and document modifications made to a data set\n\n\n\n\nAccess documentation and source code to determine how software works (or why it doesn’t)\n\n\n\n\nIdentify problems in a data set that limit the analyses which are appropriate for the data"
+    "objectID": "slides/02-version-control.html",
+    "href": "slides/02-version-control.html",
+    "title": "Version Control",
+    "section": "",
+    "text": "Version control is the answer to this file naming problem.Image Source “Piled Higher and Deeper” by Jorge Cham www.phdcomics.com\n\n\n\n\nIn a system terminal, run…\n\ngit config --global user.name 'YOUR NAME HERE'\ngit config --global user.email 'YOUR EMAIL HERE'\ngit config --global --list # check to see it worked\n\n\n\n\nInstructions\n\n\n\n\n\n(Demo)\n\n\n\n(Demo)"
   },
   {
-    "objectID": "slides/01-Syllabus-and-Introductions.html#textbook",
-    "href": "slides/01-Syllabus-and-Introductions.html#textbook",
-    "title": "Introduction",
-    "section": "Textbook",
-    "text": "Textbook\nhttps://srvanderplas.github.io/stat-computing-r-python/"
+    "objectID": "slides/02-version-control.html#introduce-yourself-to-git",
+    "href": "slides/02-version-control.html#introduce-yourself-to-git",
+    "title": "Version Control",
+    "section": "",
+    "text": "In a system terminal, run…\n\ngit config --global user.name 'YOUR NAME HERE'\ngit config --global user.email 'YOUR EMAIL HERE'\ngit config --global --list # check to see it worked"
   },
   {
-    "objectID": "slides/01-Syllabus-and-Introductions.html#course-materials",
-    "href": "slides/01-Syllabus-and-Introductions.html#course-materials",
-    "title": "Introduction",
-    "section": "Course Materials",
-    "text": "Course Materials\n\n\n\nCanvas\n\nquizzes\nweekly readings\nhomework/exam/project submission\n\n\n\n\nCourse site\n\nslides\nweekly readings\nhomework/exam/project descriptions\n\n\nEverything should be cross-linked properly but email me if there’s an issue."
+    "objectID": "slides/02-version-control.html#connect-git-and-r",
+    "href": "slides/02-version-control.html#connect-git-and-r",
+    "title": "Version Control",
+    "section": "",
+    "text": "Instructions"
   },
   {
-    "objectID": "slides/01-Syllabus-and-Introductions.html#class-schedule",
-    "href": "slides/01-Syllabus-and-Introductions.html#class-schedule",
-    "title": "Introduction",
-    "section": "Class Schedule",
-    "text": "Class Schedule"
+    "objectID": "slides/02-version-control.html#navigating-around-github",
+    "href": "slides/02-version-control.html#navigating-around-github",
+    "title": "Version Control",
+    "section": "",
+    "text": "(Demo)"
   },
   {
-    "objectID": "slides/01-Syllabus-and-Introductions.html#outline",
-    "href": "slides/01-Syllabus-and-Introductions.html#outline",
-    "title": "Introduction",
-    "section": "Outline",
-    "text": "Outline\nSubject to change based on the events of the semester…\n\n\n\n\n\nDate\nTopic\n\n\n\n\nJan 21\nGetting Started\n\n\nJan 23\nVersion Control\n\n\nJan 28\nReview: Functions\n\n\nJan 30\nReview: Functions\n\n\nFeb 4\nReview: Data Structures\n\n\nFeb 6\nReview: Data Structures\n\n\nFeb 11\nData Input\n\n\nFeb 13\nData Input\n\n\nFeb 18\nData Visualization\n\n\nFeb 20\nData Visualization\n\n\nFeb 25\nData Cleaning\n\n\nFeb 27\nData Cleaning\n\n\nMar 4\nExam 1 Questions\n\n\nMar 6\nStrings\n\n\nMar 11\nStrings\n\n\nMar 13\nMidterm Due\n\n\nMar 25\nReshaping Data\n\n\nMar 27\nReshaping Data\n\n\nApr 1\nJoining Data\n\n\nApr 3\nJoining Data\n\n\nApr 8\nDates and Times\n\n\nApr 10\nDates and Times\n\n\nApr 15\nProject Work\n\n\nApr 17\nProject Work\n\n\nApr 22\nLists\n\n\nApr 24\nLists\n\n\nApr 29\nProject Work\n\n\nMay 1\nScreencast Video Due\n\n\nMay 6\nSpatial Data\n\n\nMay 8\nPeer Review of Screencast Due\n\n\nMay 14\nScheduled Final"
+    "objectID": "slides/02-version-control.html#using-rstudio-and-git",
+    "href": "slides/02-version-control.html#using-rstudio-and-git",
+    "title": "Version Control",
+    "section": "",
+    "text": "(Demo)"
   },
   {
-    "objectID": "slides/01-Syllabus-and-Introductions.html#grades",
-    "href": "slides/01-Syllabus-and-Introductions.html#grades",
-    "title": "Introduction",
-    "section": "Grades",
-    "text": "Grades\n\n\n\nAssignments\nWeight\n\n\n\n\nReading Quizzes\n10%\n\n\nWeekly Homework & Participation\n50%\n\n\nMidterm Exam\n20%\n\n\nProject\n20%\n\n\n\nApproximately Weekly Homework – started in class"
-  },
-  {
-    "objectID": "slides/01-Syllabus-and-Introductions.html#academic-integrity-policy",
-    "href": "slides/01-Syllabus-and-Introductions.html#academic-integrity-policy",
-    "title": "Introduction",
-    "section": "Academic Integrity Policy",
-    "text": "Academic Integrity Policy\n\nYou may (should!) work with each other on homework assignments\nWork alone on exams\nYou must be able to explain anything you submit\nAt my discretion, I can use a one-on-one discussion of your work to replace the grade for that work.\nChatGPT, StackOverflow, Google are tools, but they do not help you think"
-  },
-  {
-    "objectID": "slides/01-Syllabus-and-Introductions.html#install-course-software",
-    "href": "slides/01-Syllabus-and-Introductions.html#install-course-software",
-    "title": "Introduction",
-    "section": "Install Course Software",
-    "text": "Install Course Software\nTextbook Chapter 2"
-  },
-  {
-    "objectID": "slides/01-Syllabus-and-Introductions.html#next-time",
-    "href": "slides/01-Syllabus-and-Introductions.html#next-time",
-    "title": "Introduction",
-    "section": "Next Time",
-    "text": "Next Time\nWe’ll work on Version Control with Git\n\n\nPlease read before class:\n\nComputer Basics\nScripts and Notebooks\nRStudio’s Interface\nVersion Control with Git\n\n\n\n\n\nOctocat Image Source"
-  },
-  {
-    "objectID": "slides/02a-review-topics.html#working-environment",
-    "href": "slides/02a-review-topics.html#working-environment",
+    "objectID": "slides/02b-review-topics.html#last-class",
+    "href": "slides/02b-review-topics.html#last-class",
     "title": "Programming Review",
-    "section": "Working Environment",
-    "text": "Working Environment\n\nKnow the 3 different ways to execute code from within RStudio\n\nTerminal (Command Line)\nSource Script (RStudio Button)\nInteractive Mode (line by line)\n\nDifferentiate between the Console and the Terminal\nDifferentiate between R and Python in the Console"
+    "section": "Last Class",
+    "text": "Last Class\n\nWorked on Homework #2\nIdentified several useful functions and packages:\n\npackages/libraries\n\nin R: stringr, stringi\nin python: re\n\nfunctions\n\nin R: tolower, stri_reverse, stri_sub_all\nin python: .lower(), [::-1], re.sub\n\n\nIf you made at least one submission to github, you have some points for homework #2 in Canvas"
   },
   {
-    "objectID": "slides/02a-review-topics.html#rstudio-projects",
-    "href": "slides/02a-review-topics.html#rstudio-projects",
-    "title": "Programming Review",
-    "section": "RStudio Projects",
-    "text": "RStudio Projects\nRStudio projects are a way to keep your work organized.\nLet’s create one for this week’s class work.\n\nCreating an RStudio Project"
-  },
-  {
-    "objectID": "slides/02a-review-topics.html#general-programming",
-    "href": "slides/02a-review-topics.html#general-programming",
-    "title": "Programming Review",
-    "section": "General Programming",
-    "text": "General Programming\nReview: General Programming\nKnow how to:\n\nDefine a variable\nWrite a function\nWrite an if/else statement\nload a package or import a library\nCreate a data table structure\nGet a column, row, or value from a data table\nGet an item from a list"
-  },
-  {
-    "objectID": "slides/02a-review-topics.html#self-assessment",
-    "href": "slides/02a-review-topics.html#self-assessment",
-    "title": "Programming Review",
-    "section": "Self-assessment",
-    "text": "Self-assessment\nIt’s sometimes hard to know what you know and what you don’t know\nSelf-assessment in Canvas: due by Feb 6"
-  },
-  {
-    "objectID": "slides/02a-review-topics.html#homework-2",
-    "href": "slides/02a-review-topics.html#homework-2",
-    "title": "Programming Review",
-    "section": "Homework 2",
-    "text": "Homework 2\n\nFocus on the logic and thinking through the steps\nWork with pencil and paper first"
-  },
-  {
-    "objectID": "slides/09b-strings.html#working-with-regular-expressions",
-    "href": "slides/09b-strings.html#working-with-regular-expressions",
+    "objectID": "slides/09a-strings.html#working-with-regular-expressions",
+    "href": "slides/09a-strings.html#working-with-regular-expressions",
     "title": "Working with Strings",
     "section": "Working with regular expressions",
     "text": "Working with regular expressions\nstr_view in stringr package (in R) shows all matches:\n\nstringr::str_view(\"&gt; Poem for a Friend. \", pattern = \"\\\\W\")\n\n[1] │ &lt;&gt;&gt;&lt; &gt;Poem&lt; &gt;for&lt; &gt;a&lt; &gt;Friend&lt;.&gt;&lt; &gt;\n\nstringr::str_view(\"&gt; Poem for a Friend. \", pattern = \"\\\\b\")\n\n[1] │ &gt; &lt;&gt;Poem&lt;&gt; &lt;&gt;for&lt;&gt; &lt;&gt;a&lt;&gt; &lt;&gt;Friend&lt;&gt;. \n\n\nstr_count counts all matches in R:\n\nstringr::str_count(\"&gt; Poem for a Friend. \", pattern = \"\\\\b\")/2\n\n[1] 4\n\n\nfind_all and len count all matches in python:\n\nimport re\nres = re.findall(\"\\\\b\", \"&gt; Poem for a Friend. \")\nlen(res)/2\n\n4.0"
   },
   {
-    "objectID": "slides/09b-strings.html#idea-for-exploration",
-    "href": "slides/09b-strings.html#idea-for-exploration",
+    "objectID": "slides/09a-strings.html#logistics",
+    "href": "slides/09a-strings.html#logistics",
     "title": "Working with Strings",
-    "section": "Idea for Exploration",
-    "text": "Idea for Exploration\nRun summary statistics for second poet. Then compare."
-  },
-  {
-    "objectID": "slides/09b-strings.html#homework-8",
-    "href": "slides/09b-strings.html#homework-8",
-    "title": "Working with Strings",
-    "section": "Homework 8",
-    "text": "Homework 8\nPivoting with dogs :)"
-  },
-  {
-    "objectID": "slides/10a-reshape.html#logistics",
-    "href": "slides/10a-reshape.html#logistics",
-    "title": "Reshaping Dogs",
     "section": "Logistics",
-    "text": "Logistics\n\nReading quiz 9 due\nFocus on homework 8 on Tuesday, start working on homework 9 on Thursday\nStart thinking about the project"
+    "text": "Logistics\n\nthis week: reading quizzes (just submitted)\nwork on homework #7: string operations using reddit poetry :)\nsubmit any changes to homework #1 - #5 by Thursday"
   },
   {
-    "objectID": "slides/10a-reshape.html#reshaping",
-    "href": "slides/10a-reshape.html#reshaping",
-    "title": "Reshaping Dogs",
-    "section": "Reshaping",
-    "text": "Reshaping\nIs the data tidy? - question of the key\n\nthe key\nthe whole key\nand nothing but the key"
+    "objectID": "slides/09a-strings.html#homework-7",
+    "href": "slides/09a-strings.html#homework-7",
+    "title": "Working with Strings",
+    "section": "Homework 7",
+    "text": "Homework 7\nReddit poets: sprog and schnoodledoodledoo\nFull points for completion in ONE language"
   },
   {
-    "objectID": "slides/10a-reshape.html#the-key---first-normal-form",
-    "href": "slides/10a-reshape.html#the-key---first-normal-form",
-    "title": "Reshaping Dogs",
-    "section": "The key - First normal form",
-    "text": "The key - First normal form\nA data set can be written in a rectangular form:\n\neach observation is in one row\neach variable is in a column\nthere is a key: one or more variables in the dataset provide a unique descriptor for each observation"
+    "objectID": "slides/09a-strings.html#an-example",
+    "href": "slides/09a-strings.html#an-example",
+    "title": "Working with Strings",
+    "section": "An Example",
+    "text": "An Example\nReddit OneOrangeBraincell\nIn the comments:\nComment byu/Falom from discussion inOneOrangeBraincell"
   },
   {
-    "objectID": "slides/10a-reshape.html#not-in-first-normal-form",
-    "href": "slides/10a-reshape.html#not-in-first-normal-form",
-    "title": "Reshaping Dogs",
-    "section": "Not in First Normal Form",
-    "text": "Not in First Normal Form\nExample 1: no key\n\n\n [1] 0.80463517 0.64060029 0.64842185 0.26700195 0.90290315 0.87371680\n [7] 0.09969296 0.68885715 0.28142305 0.10479012\n\n\nExample 2: not rectangular"
+    "objectID": "slides/09a-strings.html#major-string-operations",
+    "href": "slides/09a-strings.html#major-string-operations",
+    "title": "Working with Strings",
+    "section": "Major String Operations",
+    "text": "Major String Operations\n\n\n\n\n\n\n\nOperation\nSketch\n\n\n\n\nFind and replace (or remove)\n\n\n\nSplit data into multiple columns\n\n\n\nJoin data into a single column"
   },
   {
-    "objectID": "slides/10a-reshape.html#the-whole-key---2nd-normal-form",
-    "href": "slides/10a-reshape.html#the-whole-key---2nd-normal-form",
-    "title": "Reshaping Dogs",
-    "section": "The whole key - 2nd normal form",
-    "text": "The whole key - 2nd normal form\nA table is in 2nd normal form, when:\n\nit is in 1st normal form\nand all non-key columns depend on all parts of the key\n\n“No split key”\nTables in 1st normal form with a single key variable are automatically in 2nd normal form"
+    "objectID": "slides/10-projects.html#project-overview",
+    "href": "slides/10-projects.html#project-overview",
+    "title": "Projects",
+    "section": "Project Overview",
+    "text": "Project Overview\n\n\n\nCreate a TidyTuesday style screencast\nExamples: https://www.rscreencasts.com/\nAnalyze a TidyTuesday dataset from the last year using R or Python\nApproximately 45 minutes long\nShow at least 4 different techniques you learned in Stat 251 this semester\n\n\n\n\nGH link"
   },
   {
-    "objectID": "slides/10a-reshape.html#is-this-table-in-2nd-normal-form",
-    "href": "slides/10a-reshape.html#is-this-table-in-2nd-normal-form",
-    "title": "Reshaping Dogs",
-    "section": "Is this table in 2nd normal form?",
-    "text": "Is this table in 2nd normal form?"
+    "objectID": "slides/10-projects.html#part-1---planning",
+    "href": "slides/10-projects.html#part-1---planning",
+    "title": "Projects",
+    "section": "Part 1 - Planning",
+    "text": "Part 1 - Planning\nWork: In class, April 15 (Tuesday)\nDue: April 15, 11:59pm\nTell me:\n\nWhat dataset you’re using\nWhat you’re going to investigate\nWhat Stat 251 topics you’re going to cover"
   },
   {
-    "objectID": "slides/10a-reshape.html#nothing-but-the-key---3rd-normal-form",
-    "href": "slides/10a-reshape.html#nothing-but-the-key---3rd-normal-form",
-    "title": "Reshaping Dogs",
-    "section": "Nothing but the key - 3rd normal form",
-    "text": "Nothing but the key - 3rd normal form\nA table is in 3rd normal form, when:\n\nit is in 2nd normal form\nand no non-key column can be determined by another non-key column\n\ne.g.: zip code determines county and state"
+    "objectID": "slides/10-projects.html#part-2---script-outline",
+    "href": "slides/10-projects.html#part-2---script-outline",
+    "title": "Projects",
+    "section": "Part 2 - Script Outline",
+    "text": "Part 2 - Script Outline\nWork: In class, April 22 (Tuesday)\nDue: April 22, 11:59pm\n\nProvide a (rough) script for your screen cast\n\nExplain how the techniques work\nDiscuss any challenges you had analyzing this data\nInclude the mistakes you made along the way!\n\nInclude pseudocode/actual code for each topic\n\nDoes not have to actually work at this point"
   },
   {
-    "objectID": "slides/10a-reshape.html#data-normalization",
-    "href": "slides/10a-reshape.html#data-normalization",
-    "title": "Reshaping Dogs",
-    "section": "Data Normalization",
-    "text": "Data Normalization\nProcess of getting table into higher normal forms is called normalization\nNormalization gives a framework to organize and ensure\n\nreduce redundancy in data\nimprove data consistency\nsimplify the database design\nincrease speed to access data\neasier maintenance\n\nNormalization is generally terrible for any statistical modelling"
+    "objectID": "slides/10-projects.html#part-3---recording",
+    "href": "slides/10-projects.html#part-3---recording",
+    "title": "Projects",
+    "section": "Part 3 - Recording",
+    "text": "Part 3 - Recording\nWork: On your own\nDue: May 1, 11:59pm (Thursday)\n\nScreencast uploaded to YouTube or YuJa\nApproximate time index provided for each technique you demonstrate (on GitHub)\nFinal code file uploaded to github repository"
   },
   {
-    "objectID": "slides/10a-reshape.html#key-value-pairs",
-    "href": "slides/10a-reshape.html#key-value-pairs",
-    "title": "Reshaping Dogs",
-    "section": "Key-Value Pairs",
-    "text": "Key-Value Pairs\nStricter version of the 3rd NF:\n\ntable is in 2nd normal form,\nthere is only a single non-key element in a table\n\nNote: a table like this is automatically in 3rd normal form."
+    "objectID": "slides/10-projects.html#part-4---peer-review",
+    "href": "slides/10-projects.html#part-4---peer-review",
+    "title": "Projects",
+    "section": "Part 4 - Peer Review",
+    "text": "Part 4 - Peer Review\n\nIn place of the final exam:\n\nWatch 2 screencasts\nPeer evaluations - leave a comment on Canvas\nBased on rubric (provided)\n\nTake place between May 1 and Thursday of Finals week"
   },
   {
-    "objectID": "slides/10a-reshape.html#traits-of-dog-breeds",
-    "href": "slides/10a-reshape.html#traits-of-dog-breeds",
-    "title": "Reshaping Dogs",
-    "section": "Traits of Dog Breeds",
-    "text": "Traits of Dog Breeds\n\n\n                  Breed Affectionate.With.Family Good.With.Young.Children\n1 Retrievers (Labrador)                        5                        5\n2       French Bulldogs                        5                        5\n3  German Shepherd Dogs                        5                        5\n4   Retrievers (Golden)                        5                        5\n5              Bulldogs                        4                        3\n6               Poodles                        5                        5\n  Good.With.Other.Dogs Shedding.Level Coat.Grooming.Frequency Drooling.Level\n1                    5              4                       2              2\n2                    4              3                       1              3\n3                    3              4                       2              2\n4                    5              4                       2              2\n5                    3              3                       3              3\n6                    3              1                       4              1\n  Coat.Type Coat.Length Openness.To.Strangers Playfulness.Level\n1    Double       Short                     5                 5\n2    Smooth       Short                     5                 5\n3    Double      Medium                     3                 4\n4    Double      Medium                     5                 4\n5    Smooth       Short                     4                 4\n6     Curly        Long                     5                 5\n  Watchdog.Protective.Nature Adaptability.Level Trainability.Level Energy.Level\n1                          3                  5                  5            5\n2                          3                  5                  4            3\n3                          5                  5                  5            5\n4                          3                  5                  5            3\n5                          3                  3                  4            3\n6                          5                  4                  5            4\n  Barking.Level Mental.Stimulation.Needs\n1             3                        4\n2             1                        3\n3             3                        5\n4             1                        4\n5             2                        3\n6             4                        5\n\n\nData set is in “Wide Form”\nWithout knowing the data well, it could be that some of the non-key variables could determine parts of other non-key variables (violations of 3rd normal form)"
+    "objectID": "slides/10b-reshape.html#logistics",
+    "href": "slides/10b-reshape.html#logistics",
+    "title": "Murder tables!?",
+    "section": "Logistics",
+    "text": "Logistics\n\nSubmit homework 8 by midnight! Speak now with further questions or …\nFocus on homework 9: Murder in SQL City"
   },
   {
-    "objectID": "slides/10a-reshape.html#traits-of-dog-breeds-in-long-form",
-    "href": "slides/10a-reshape.html#traits-of-dog-breeds-in-long-form",
-    "title": "Reshaping Dogs",
-    "section": "Traits of Dog Breeds in Long Form",
-    "text": "Traits of Dog Breeds in Long Form\n\ntraits %&gt;% select(Breed, 2:4) %&gt;% \n  pivot_longer(cols=2:4, names_to = \"Trait\", values_to = \"Score\") %&gt;% \n  head()\n\n# A tibble: 6 × 3\n  Breed                 Trait                    Score\n  &lt;chr&gt;                 &lt;chr&gt;                    &lt;int&gt;\n1 Retrievers (Labrador) Affectionate.With.Family     5\n2 Retrievers (Labrador) Good.With.Young.Children     5\n3 Retrievers (Labrador) Good.With.Other.Dogs         5\n4 French Bulldogs       Affectionate.With.Family     5\n5 French Bulldogs       Good.With.Young.Children     5\n6 French Bulldogs       Good.With.Other.Dogs         4\n\n\nThe combination of Breed and Trait (Key) uniquely determines the score value (Value)."
+    "objectID": "slides/10b-reshape.html#homework-9",
+    "href": "slides/10b-reshape.html#homework-9",
+    "title": "Murder tables!?",
+    "section": "Homework 9",
+    "text": "Homework 9\n\nSolve a murder!"
   },
   {
-    "objectID": "slides/10a-reshape.html#homework-8",
-    "href": "slides/10a-reshape.html#homework-8",
-    "title": "Reshaping Dogs",
-    "section": "Homework 8",
-    "text": "Homework 8\n\nReshape two data sets\nCreate a visual in each\nOne reshaping in python, one in R"
-  },
-  {
-    "objectID": "slides/10a-reshape.html#visuals-in-homework-8",
-    "href": "slides/10a-reshape.html#visuals-in-homework-8",
-    "title": "Reshaping Dogs",
-    "section": "Visuals in homework 8",
-    "text": "Visuals in homework 8\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 1: Trait Distributions\n\n\n\n\n\n\n\n\n\n\n\nFigure 2: Ranks of (some) Breeds over time"
+    "objectID": "slides/10b-reshape.html#connection-of-homework-9-to-joins",
+    "href": "slides/10b-reshape.html#connection-of-homework-9-to-joins",
+    "title": "Murder tables!?",
+    "section": "Connection of homework 9 to joins",
+    "text": "Connection of homework 9 to joins\n\nMake sure to look at the relationship between the different data sets!\nThe first filter statement gives you enough information to start searching for witness statements.\n\n\n\nSecurity footage shows that there were 2 witnesses. The first witness lives at the last house on \"Northwestern Dr\". The second witness, named Annabel, lives somewhere on \"Franklin Ave\".\n\n\n\nEventually you will be in the situation that you need to look up information from a different table based on a key variable. Instead of using a filter with that information, merge the two tables to directly incorporate the information from the other table."
   },
   {
     "objectID": "exam/data-earthquakes/index.html",

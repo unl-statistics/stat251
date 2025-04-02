@@ -1,0 +1,72 @@
+---
+title: Murder tables!?
+author: Stat 251
+categories:
+- slides
+- Week10
+engine: knitr
+format:
+  revealjs:
+    navigation-mode: vertical
+    logo: N.svg
+    theme: inverse.scss
+    includes:
+      in_header: header.html
+date: '2025-04-03'
+---
+
+```{r setup}
+library(tidyverse)
+```
+
+## Logistics 
+
+- Submit homework 8 by midnight! Speak now with further questions or ...
+
+- Focus  on homework 9: Murder in SQL City
+
+
+## Homework 9 
+
+
+- Solve a murder!
+
+
+```{=html}
+<iframe width="100%" height = "500px" src="https://unl-statistics.github.io/stat251/homework/09-join.html"></iframe>
+```
+
+## Connection of homework 9 to joins
+
+```{r db-setup-r}
+library(RSQLite)
+library(DBI)
+
+# Your database connection code goes here. Store the connection as con 
+con <- dbConnect(RSQLite::SQLite(), "../homework-repos/09-join/sql-murder-mystery.db")
+
+table_names <- c("crime_scene_report", 
+                 "drivers_license", 
+                 "facebook_event_checkin",
+                 "get_fit_now_check_in", 
+                 "get_fit_now_member", 
+                 "income", 
+                 "interview",
+                 "person")
+
+# For each table name, read the tables in and store them as the name of the table
+purrr::walk(table_names, function(x) {
+  assign(x, dbReadTable(con, x), envir = .GlobalEnv)
+})
+
+# close the connection when you're done
+dbDisconnect(con)
+```
+- Make sure to look at the relationship between the different data sets!
+
+- The first filter statement gives you enough information to start searching for witness statements. 
+
+```{r}
+crime_scene_report %>% filter(city=="SQL City", date == 20180115, type=="murder") %>% pluck("description") %>% cat()
+```
+- Eventually you will be in the situation that you need to look up information from a different table based on a key variable. Instead of using a filter with that information, merge the two tables to directly incorporate the information from the other table.
