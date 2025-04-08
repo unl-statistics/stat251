@@ -174,12 +174,9 @@ schedule:
         date: 2025-03-25
         pub-date: 2025-03-12
         categories: [reading]
-      - href: slides/10a-reshape.qmd
-        categories: [slides]
-        date: 2025-04-01
-        pub-date: 2025-03-30
       - href: homework/08-reshape.qmd
-        categories: [HW, Week09]
+        categories: [HW, Week9]
+        pub-date: 2025-03-29
         date: 2025-04-03
       - path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/06-data-join.html
         title: Joining Data
@@ -188,7 +185,20 @@ schedule:
         categories: [reading]
       - href: homework/09-join.qmd
         categories: [HW, Week10]
+        pub-date: 2025-04-02
         date: 2025-04-10
+      - href: slides/10a-reshape.qmd
+        categories: [slides]
+        date: 2025-04-01
+        pub-date: 2025-03-30
+      - href: slides/10b-reshape.qmd
+        categories: [slides]
+        date: 2025-04-03
+        pub-date: 2025-04-02
+      - href: slides/11a-join.qmd
+        categories: [slides]
+        date: 2025-04-08
+        pub-date: 2025-04-05
   - unit: "Project and Special Data Types"
     materials:
       - path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/07-datetime.html

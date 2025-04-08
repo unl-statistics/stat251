@@ -1,0 +1,165 @@
+---
+title: Join up, Detectives!
+author: Stat 251
+categories:
+- slides
+- Week11
+engine: knitr
+format:
+  revealjs:
+    navigation-mode: vertical
+    logo: N.svg
+    theme: inverse.scss
+    includes:
+      in_header: header.html
+date: '2025-04-08'
+---
+
+```{r setup}
+library(tidyverse)
+```
+
+## Logistics 
+
+- Focus  on homework 9: Murder in SQL City
+
+
+## Homework 9 
+
+
+- Solve a murder!
+
+
+```{=html}
+<iframe width="100%" height = "500px" src="https://unl-statistics.github.io/stat251/homework/09-join.html"></iframe>
+```
+
+## Connection of homework 9 to joins
+
+```{r db-setup-r}
+library(RSQLite)
+library(DBI)
+
+# Your database connection code goes here. Store the connection as con 
+con <- dbConnect(RSQLite::SQLite(), "../homework-repos/09-join/sql-murder-mystery.db")
+
+table_names <- c("crime_scene_report", 
+                 "drivers_license", 
+                 "facebook_event_checkin",
+                 "get_fit_now_check_in", 
+                 "get_fit_now_member", 
+                 "income", 
+                 "interview",
+                 "person")
+
+# For each table name, read the tables in and store them as the name of the table
+purrr::walk(table_names, function(x) {
+  assign(x, dbReadTable(con, x), envir = .GlobalEnv)
+})
+
+# close the connection when you're done
+dbDisconnect(con)
+```
+- Make sure to look at the relationship between the different data sets!
+
+- The first filter statement gives you enough information to start searching for witness statements. 
+
+```{r}
+crime_scene_report %>% filter(city=="SQL City", date == 20180115, type=="murder") %>% pluck("description") %>% cat()
+```
+- Eventually you will be in the situation that you need to look up information from a different table based on a key variable. Instead of using a filter with that information, merge the two tables to directly incorporate the information from the other table.
+
+
+## Joining with `by=`
+
+How do we join `person` and `interview`?
+
+Variable `id` in person is linking to `person_id` in `interview`
+
+```{r echo=TRUE}
+person_interview <- person %>% left_join(interview, by=c("id"="person_id"))
+
+head(person_interview)
+```
+
+## Backup for a moment
+
+General idea of joining tables
+
+![](../figs/join.png)
+
+## Difference between the joins
+
+Data sets are joined along values of variables.
+
+In dplyr there are several join functions: `left_join`, `inner_join`, `full_join`, ...
+
+Differences between join functions only visible, if not all values in one set have values in the other
+
+## Example
+
+```{r echo=TRUE}
+df1 <- data.frame(id = 1:6, trt = rep(c("A", "B", "C"), rep=c(2,1,3)), value = c(5,3,7,1,2,3))
+df1
+```
+
+```{r echo=TRUE}
+df2 <- data.frame(id=c(4,4,5,5,7,7), stress=rep(c(0,1), 3), bpm = c(65, 125, 74, 136, 48, 110))
+df2
+```    
+
+## Left join
+
+- all elements in the *left* data set are kept
+
+- non-matches are filled in by `NA`
+
+- `right_join` works symmetric
+
+```{r echo=TRUE}
+left_join(df1, df2, by="id")
+```
+
+
+## Inner join
+
+- only matches from both data sets are kept
+
+```{r echo=TRUE}
+inner_join(df1, df2, by = "id")
+```
+
+
+## Full join
+
+- all ids are kept, missings are filled in with `NA`
+
+```{r echo=TRUE}
+full_join(df1, df2, by = "id")
+```
+
+
+
+
+## Traps of joins
+
+- sometimes we unexpectedly cannot match values: missing values, different spelling, ... 
+
+- join can be along multiple variables, e.g. `by = c("ID", "Date")`
+
+- joining variable(s) can have different names, e.g. `by = c("State" = "Name")`
+
+- always make sure to check dimensions of data before and after a join
+
+- check on missing values; help with that: `anti_join`
+
+## Anti join
+
+
+- careful, not symmetric!  
+
+```{r echo=TRUE}
+anti_join(df1, df2, by="id") # no values for id in df2
+anti_join(df2, df1, by="id") # no values for id in df1
+```
+

@@ -2,9 +2,11 @@
   {
     "listing": "/index.html",
     "items": [
+      "/project/Dataset-Topics.html",
       "/project/index.html",
       "/slides/10-projects.html",
       "/homework/09-join.html",
+      "/slides/11a-join.html",
       "/homework/08-reshape.html",
       "/slides/10b-reshape.html",
       "/slides/10a-reshape.html",
