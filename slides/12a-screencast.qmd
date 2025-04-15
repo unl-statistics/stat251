@@ -1,0 +1,177 @@
+---
+title: Screencast - edited script
+author: Stat 251
+date: '2025-04-15'
+categories:
+- slides
+- Project
+- Week12
+- Week12
+engine: knitr
+---
+
+
+# Script from the screencast
+
+For the screencast itself, check the canvas course for the zoom recording for April 15.
+
+This script originated as the code from the screencast during class, and was edited for clarity afterwards.
+The figure captions were similarly added afterwards.
+
+```{r warning=FALSE, message=FALSE}
+pixar_films <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2025/2025-03-11/pixar_films.csv')
+public_response <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2025/2025-03-11/public_response.csv')
+
+library(dplyr)
+library(ggplot2)
+library(tidyr)
+library(lubridate)
+knitr::opts_chunk$set(warning = FALSE, message = FALSE)
+```
+
+# Thing 1: Inspect the data sets
+
+The goal of inspecting the data is to check that 
+
+1. all variables have the correct type (dates, factors, numbers, ...), and 
+2. missing values are encoded as `NA`
+
+```{r}
+head(pixar_films)
+summary(pixar_films)
+```
+
+Fix some of the encoding for missing values and introduce factor variables.
+Remove the movie that doesn't have a title. 
+```{r}
+pixar_films %>% filter(film_rating %in% c("N/A", "Not Rated"))
+pixar_films <- pixar_films %>% mutate(
+  film_rating = ifelse(film_rating %in% c("N/A", "Not Rated"), NA, film_rating)
+)
+pixar_films <- pixar_films %>% mutate(
+  film_rating = factor(film_rating)
+) %>% filter(!is.na(film))
+```
+
+
+Now we do the same kind of inspection for the scores. Scores for movies 25 through 27 are missing, and some of the scores are missing throughout.
+
+```{r}
+head(public_response)
+tail(public_response)
+public_response %>% count(cinema_score)
+public_response <- public_response %>% mutate(
+  cinema_score = factor(cinema_score)
+)
+```
+```{r}
+pixar_all <- pixar_films %>% left_join(public_response, by = "film")
+summary(pixar_all)
+```
+## Overall: there are a few strange things going on with respect to missing values
+
+1. It seems odd that we have a release date, but no title (movie 27)
+2. missing values only in the last couple of movies (24 - 27) - it seems that some of the data was added manually, but not consistently
+
+Possible to-do item: fix the data in the pixarfilms package by updating the movie information directly from Wikipedia.
+
+Wikipedia has information on 28 movies, titles are included, no ratings, no runtimes though
+
+For now, we just move on with the analysis.
+
+# Thing 2: reshape the data
+
+The idea for reshaping is to be able to compare across different scoring sources. 
+
+```{r}
+pixar_long <- pixar_all %>% 
+  pivot_longer(cols = c(rotten_tomatoes, metacritic, critics_choice), names_to="Critic", values_to="Score")
+```
+
+
+Based on @fig-scores, we see that the Toy Story and Toy Story 2 have the highest ratings based on rotten tomatoes and critics choice. Ratatouille is the movie with the highest rating from metacritic. Cars 2 is the movie with the lowest ratings from rotten tomoatoes and metacritic. The worst movie award from critics choice goes to Cars 3.  
+```{r}
+#| label: fig-scores
+#| fig-cap: |
+#|   Scatterplot of Pixar movies (y-axis) by scores (x-axis) from 
+#|   three different rating sources (critics choice, rotten tomatoes 
+#|   and metacritic). Movies are order by their average score from best (top) to worst (bottom). The scores between the critics are quite consistent, in particular for movies with very high ratings. 
+#|   Generally, rotten tomatoes has the highest score, followed by critics choice and metacritics. When score get lower, the gap between rotten tomatoes and critics choice tends to be lower, and for some movies the order is flipped (e.g. Brave, Cars, and Cars 2). Meta critic has higher scores than critics for Ratatouille and Wall-E
+
+
+pixar_long <- pixar_long %>% 
+  mutate(
+  film = factor(film),
+  film = forcats::fct_rev(reorder(film, -Score, mean, na.rm=TRUE))
+) 
+pixar_long %>% summary()
+pixar_long %>% 
+  ggplot(aes(y = film, x = Score, colour = Critic)) + 
+           geom_point(size=5) + 
+  theme_bw() 
+```
+
+
+
+```{r}
+pixar_long %>% filter(Score > 99)
+# wish: add names on the right
+```
+
+# Thing 3: scores over time
+
+@fig-trend shows pixar movie ratings over time. Since the first release of Toy Story, audiences and film reviewers  have become more critical and ratings have generally declined. A logical next step would be to see whether the dip in ratings between 2011 and 2016 is associated with some producer or director at pixar. 
+
+```{r}
+#| label: fig-trend
+#| fig-cap: |
+#|   Scatterplot of scores (y-axis) by release date (x-axis). Each of the 
+#|   dots corresponds to one pixar movie with one of three critic scores (color).
+#|   We see that 
+#|   over time scores for pixar movies have decreased (trend lines).  Particularly, between 
+#|   2012 and 2015 scores from any  source did not make it (much) above 80. Since
+#|   2016, scores are much higher again. All movies with a rotten tomatoes rating of below 85 are labelled. 
+pixar_long %>% ggplot(aes(x = release_date, y = Score, colour = Critic)) + geom_point(size = 5) + 
+  ggrepel::geom_label_repel(aes(label = film),  alpha = 0.8,
+      data = pixar_long %>% filter(Critic=="rotten_tomatoes", Score < 85)) +
+  geom_smooth(method="lm", se=FALSE) + 
+  theme_bw()
+```
+# Extra Credit :)
+
+The package `pixarfilms` has an additional dataset on people in different roles involved in each movie. 
+
+We will load that information into the `pixar_long` form, and see whether there is some association with the dip in ratings
+```{r}
+library(pixarfilms)
+head(pixar_people)
+pixar_ratings <- pixar_long %>% group_by(number, film, release_date, run_time, film_rating, cinema_score) %>% summarize(Avg_Score = mean(Score, na.rm=TRUE))
+pixar_long_people <- pixar_ratings %>% left_join(pixar_people, by="film")
+```
+
+```{r fig.height = 10}
+#| label: fig-people
+#| fig-cap: |
+#|   Scatterplot of individuals (y-axis) involved in the making of a movie by release date (x-axis).
+#|   Each point corresponds to an individual's involvement in a particular role for a movie. Individuals
+#|   are ordered according to the date of the their involvement. Some individuals (like John Lasseter
+#|    and Andrew Stanton have been involved from the beginning and are still involved in various roles 
+#|    now). It seems that new directors first take on the role of co-director, before moving to the rolw of director. Similarly, story writers start out as screen writers. Purple points indicate a dual role of screen and story writing. The vertical lines indicate the movies Cars, Cars 2, and Cars 3.
+
+pixar_long_people %>% 
+  arrange(release_date,role_type) %>%
+  mutate(name = forcats::fct_inorder(name),
+         bigger_role = case_when(
+           role_type %in% c("Screenwriter", "Storywriter") ~ "Writer",
+           role_type %in% c("Director", "Co-director") ~ "Director",
+           .default = as.character(role_type)
+        )) %>%
+  ggplot(aes(x = release_date, y = name)) + 
+  geom_vline(aes(xintercept=release_date), colour = "grey70", 
+             data = pixar_long_people %>% slice(grep("Cars", film))) + 
+  geom_point(aes(colour = role_type), size=3.5, alpha = 0.5) + 
+  facet_grid(bigger_role~., scale="free", space="free") + 
+  theme_bw() 
+```
+@fig-people shows a plot of individuals involved in the making of pixar films. Various patterns become obvious: For writers (story and screen), there is a strong core of individuals who have been involved in the writing since the beginning. In terms of the musical arrangements, we see a lot of stability: Randy Newman has been taking turns with Thomas Newman in composing the music, Michael Giacchino has been involved as a composer for a lot of the pixar movies. 
+

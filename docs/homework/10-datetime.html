@@ -7,9 +7,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Your Name">
-<meta name="dcterms.date" content="2025-04-15">
 
-<title>Project Dataset and Topics – Stat 251 - Data Wrangling</title>
+<title>Dates and Times – Stat 251 - Data Wrangling</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -113,17 +146,25 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#warm-up-exercises" id="toc-warm-up-exercises" class="nav-link active" data-scroll-target="#warm-up-exercises"><span class="header-section-number">1</span> Warm-up exercises</a></li>
+  <li><a href="#solve-the-mystery" id="toc-solve-the-mystery" class="nav-link" data-scroll-target="#solve-the-mystery"><span class="header-section-number">2</span> Solve the mystery</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Project Dataset and Topics</h1>
+<h1 class="title">Dates and Times</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">Project</div>
+    <div class="quarto-category">HW</div>
+    <div class="quarto-category">Week11</div>
     <div class="quarto-category">Week12</div>
   </div>
   </div>
@@ -135,14 +176,14 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Your Name </p>
+             <p>Homework </p>
           </div>
   </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">April 15, 2025</p>
+      <p class="date">Due: April 17, 2023</p>
     </div>
   </div>
   
@@ -154,22 +195,72 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><a href="">Link to dataset</a></p>
-<p>Things you plan to investigate using this dataset:</p>
-<ul>
-<li>Thing 1</li>
-<li>Thing 2</li>
-<li>Thing 3</li>
-</ul>
-<p>Stat 251 topics you plan to cover during the analysis:</p>
+<p>Note: This assignment must be submitted in github classroom.</p>
+<div class="cell" data-hash="10-datetime_cache/html/unnamed-chunk-1_9e3e897781fc2f14081ce32019e98b2e">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> datetime</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Note: This assignment is modified from the <a href="https://github.com/kbodwin/decodeR/tree/master/lubridate">decodeR exercises by Kelly Bodwin</a>.</p>
+<section id="warm-up-exercises" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="warm-up-exercises"><span class="header-section-number">1</span> Warm-up exercises</h2>
+<p>(Do this in R AND python)</p>
+<p>Answer the following using code (even if you know the answer already).</p>
 <ol type="1">
-<li>Topic 1</li>
-<li>Topic 2</li>
-<li>Topic 3</li>
-<li>Topic 4</li>
+<li>Save your birthday as a Datetime object.<br>
+</li>
+<li>What day of the week does/did your birthday fall on in 2019?</li>
+<li>On what day of the week should you plan your 100th birthday party?</li>
+<li>Find the date that is exactly 9 months before your birthday. If it falls on a holiday, think about the implications.</li>
+<li>The following code loads a dataset giving the date ranges for the 12 Zodiac signs. By making appropriate adjustments and calculations, find your Zodiac sign.</li>
 </ol>
+<div class="cell" data-hash="10-datetime_cache/html/unnamed-chunk-2_9b86eefb50baf502601662feae0524da">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>zodiac <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"https://raw.githubusercontent.com/unl-stat251/09-datetime/main/zodiac.csv"</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Birthday saved as a datetime object</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Day of the week your birthday fell on in 2019</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Day of the week of your 100th birthday party</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Date that is 9 months before your birthday</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Zodiac sign</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-hash="10-datetime_cache/html/unnamed-chunk-3_cd08ba18dcb63948a787e5273f4c5218">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>zodiac <span class="op">=</span> pd.read_csv(<span class="st">"https://raw.githubusercontent.com/unl-stat251/09-datetime/main/zodiac.csv"</span>)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Birthday saved as a datetime object</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Day of the week your birthday fell on in 2019</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Day of the week of your 100th birthday party</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Date that is 9 months before your birthday</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Zodiac sign</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="solve-the-mystery" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="solve-the-mystery"><span class="header-section-number">2</span> Solve the mystery</h2>
+<p>(Do this in R or Python, but you don’t have to do it in both)</p>
+<p>Speaking of the Zodiac, one of the most famous mysteries in California history is the identity of the so-called “Zodiac Killer”, who murdered 7 people in Northern California between 1968 and 1969.</p>
+<p>A new murder was committed last year in California, suspected to be the work of a new Zodiac Killer on the loose. Fortunately, a camera was planted at the location where the body was found. The FBI has provided you with a list of people who entered the building last year, and what date and time they entered, in Pacific Standard Time (PST).</p>
+<div class="cell" data-hash="10-datetime_cache/html/unnamed-chunk-4_2600186168ed7c67e0adf96662e9bfdb">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>suspects <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"https://raw.githubusercontent.com/unl-stat251/09-datetime/main/suspects.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Unfortunately, the date and time of the murder is not known. You have been hired to crack the case. Use the clues below to discover the murderer’s identity.</p>
+<ol type="1">
+<li><p>Based on the sunburn patterns on the body, the murder was not committed in the morning.</p></li>
+<li><p>The room where the murder was committed is closed Tuesdays and Thursdays, so the murder did not happen on those days.</p></li>
+<li><p>It is believed that the murder was committed within 5 weeks (35 days) of Thanksgiving, 2018.</p></li>
+<li><p>It was discovered that just before being murdered, the victim tried to send a text to her sister in Iceland, saying “Goodnight over there!”</p></li>
+<li><p>The Killer left behind a birthday card at the scene of the crime. The date is smudged, but the number of the day is shown to be 22. It is thought that perhaps this murder took place less than two days after the Killer’s birthday.</p></li>
+<li><p>The Killer him/herself is amused by our efforts, and he has sent us a cryptic clue: “The number of minutes between Jan 1, 1970 at midnight and the time I arrived on the scene is divisible by 10.”</p></li>
+</ol>
+<p>Who is the killer?</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

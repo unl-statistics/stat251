@@ -206,18 +206,22 @@ schedule:
         date: 2025-04-08
         categories: [reading]
       - href: homework/10-datetime.qmd
-        date: 2025-04-14
+        date: 2025-04-17
         categories: [HW, Week11]
       - href: slides/10-projects.qmd
         date: 2025-04-15
         pub-date: 2025-03-30
+        categories: [slides, Project, Week12]
+      - href: slides/12a-screencast.qmd
+        date: 2025-04-15
+        pub-date: 2025-04-15
         categories: [slides, Project, Week12]
       - href: project/index.qmd
         date: 2025-04-15
         pub-date: 2025-03-30
         categories: [Project, Week12]
       - href: project/Dataset-Topics.qmd
-        date: 2025-04-17
+        date: 2025-04-15
         categories: [Project, Week12]
       - href: project/pseudocode.qmd
         date: 2025-04-21

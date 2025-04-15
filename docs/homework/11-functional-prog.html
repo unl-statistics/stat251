@@ -7,9 +7,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Your Name">
-<meta name="dcterms.date" content="2025-04-15">
 
-<title>Project Dataset and Topics – Stat 251 - Data Wrangling</title>
+<title>Functional Programming: Cats and Dogs – Stat 251 - Data Wrangling</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -113,18 +112,29 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">1</span> Introduction</a></li>
+  <li><a href="#solutions" id="toc-solutions" class="nav-link" data-scroll-target="#solutions"><span class="header-section-number">2</span> Solutions</a>
+  <ul class="collapse">
+  <li><a href="#r---animal-change-this-to-match" id="toc-r---animal-change-this-to-match" class="nav-link" data-scroll-target="#r---animal-change-this-to-match"><span class="header-section-number">2.1</span> R - Animal (change this to match)</a></li>
+  <li><a href="#python---animal-change-this-to-match" id="toc-python---animal-change-this-to-match" class="nav-link" data-scroll-target="#python---animal-change-this-to-match"><span class="header-section-number">2.2</span> Python - Animal (change this to match)</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Project Dataset and Topics</h1>
+<h1 class="title">Functional Programming: Cats and Dogs</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">Project</div>
-    <div class="quarto-category">Week12</div>
+    <div class="quarto-category">HW</div>
+    <div class="quarto-category">Week13</div>
   </div>
   </div>
 
@@ -135,14 +145,14 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Your Name </p>
+             <p>Homework </p>
           </div>
   </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">April 15, 2025</p>
+      <p class="date">Due: May 5, 2023</p>
     </div>
   </div>
   
@@ -154,22 +164,32 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><a href="">Link to dataset</a></p>
-<p>Things you plan to investigate using this dataset:</p>
-<ul>
-<li>Thing 1</li>
-<li>Thing 2</li>
-<li>Thing 3</li>
-</ul>
-<p>Stat 251 topics you plan to cover during the analysis:</p>
-<ol type="1">
-<li>Topic 1</li>
-<li>Topic 2</li>
-<li>Topic 3</li>
-<li>Topic 4</li>
+<p>Note: This assignment must be submitted in github classroom.</p>
+<section id="introduction" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Introduction</h1>
+<p>One of the most common places where we use functional programming is with hierarchically structured data; commonly, we get data like this from the internet in JavaScript Object Notation (JSON) format.</p>
+<p>I’ve used the Petfinder API to get data about 20 dogs and 20 cats that up for adoption, good with kids, and near Lincoln, NE. If you want to see how I did that, you can look at <a href="get_data.R">get_data.R</a> - to run the code, you’ll need to register for your own Petfinder API key.</p>
+<p>Use functional programming techniques (map, apply, <code>purrr</code>, lambda functions, etc.) to accomplish the following tasks.</p>
+<ol start="0" type="1">
+<li><p>Decide whether to use R or Python for dogs or cats. You must use one language for one animal and the other language for the other animal. Fill in the markdown headers below accordingly.</p></li>
+<li><p>Read in the JSON file.</p></li>
+<li><p>Assemble a data frame with the animal’s name, age, sex, breed(s), and organization ID.</p></li>
+<li><p>Add a column to your data frame with a list of picture links<br>
+(Hint: use list columns)</p></li>
+<li><p>(Bonus) Find some way to generate a collage or gif of pictures of the animals up for adoption right now.</p></li>
 </ol>
+</section>
+<section id="solutions" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Solutions</h1>
+<section id="r---animal-change-this-to-match" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="r---animal-change-this-to-match"><span class="header-section-number">2.1</span> R - Animal (change this to match)</h2>
+</section>
+<section id="python---animal-change-this-to-match" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="python---animal-change-this-to-match"><span class="header-section-number">2.2</span> Python - Animal (change this to match)</h2>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

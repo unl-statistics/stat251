@@ -21,6 +21,7 @@ listing:
   - homework/10-datetime.qmd
   - project/Dataset-Topics.qmd
   - project/index.qmd
+  - project/pseudocode.qmd
   - slides/01-Syllabus-and-Introductions.qmd
   - slides/02-version-control.qmd
   - slides/02a-review-topics.qmd
@@ -40,6 +41,7 @@ listing:
   - slides/10a-reshape.qmd
   - slides/10b-reshape.qmd
   - slides/11a-join.qmd
+  - slides/12a-screencast.qmd
   - syllabus.qmd
   - reading.yml
   sort: date desc
