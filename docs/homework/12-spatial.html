@@ -6,10 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Stat 251">
-<meta name="dcterms.date" content="2025-02-13">
+<meta name="author" content="Your Name">
 
-<title>Data Explorations – Stat 251 - Data Wrangling</title>
+<title>Programming with GIS Data – Stat 251 - Data Wrangling</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -118,24 +117,25 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#exploratory-data-analysis" id="toc-exploratory-data-analysis" class="nav-link active" data-scroll-target="#exploratory-data-analysis">Exploratory Data Analysis</a></li>
-  <li><a href="#in-class-exercise" id="toc-in-class-exercise" class="nav-link" data-scroll-target="#in-class-exercise">In-class exercise</a></li>
-  <li><a href="#what-would-you-expect" id="toc-what-would-you-expect" class="nav-link" data-scroll-target="#what-would-you-expect">What would you expect?</a></li>
-  <li><a href="#deaths-by-economic-status-and-sex" id="toc-deaths-by-economic-status-and-sex" class="nav-link" data-scroll-target="#deaths-by-economic-status-and-sex">Deaths by Economic Status and Sex</a></li>
-  <li><a href="#deaths-by-economic-status-and-age" id="toc-deaths-by-economic-status-and-age" class="nav-link" data-scroll-target="#deaths-by-economic-status-and-age">Deaths by Economic Status and Age</a></li>
-  <li><a href="#homework---reading-data-with-cookies" id="toc-homework---reading-data-with-cookies" class="nav-link" data-scroll-target="#homework---reading-data-with-cookies">Homework - Reading Data with Cookies</a></li>
+  <li><a href="#data-description" id="toc-data-description" class="nav-link active" data-scroll-target="#data-description"><span class="header-section-number">1</span> Data Description</a>
+  <ul class="collapse">
+  <li><a href="#drug-distribution" id="toc-drug-distribution" class="nav-link" data-scroll-target="#drug-distribution"><span class="header-section-number">1.1</span> Drug Distribution</a></li>
+  <li><a href="#lord-of-the-rings---middle-earth" id="toc-lord-of-the-rings---middle-earth" class="nav-link" data-scroll-target="#lord-of-the-rings---middle-earth"><span class="header-section-number">1.2</span> Lord of the Rings - Middle Earth</a></li>
+  <li><a href="#natural-earth-data" id="toc-natural-earth-data" class="nav-link" data-scroll-target="#natural-earth-data"><span class="header-section-number">1.3</span> Natural Earth Data</a></li>
+  </ul></li>
+  <li><a href="#assignment" id="toc-assignment" class="nav-link" data-scroll-target="#assignment"><span class="header-section-number">2</span> Assignment</a></li>
   </ul>
-<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="04b-eda.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Data Explorations</h1>
+<h1 class="title">Programming with GIS Data</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">slides</div>
-    <div class="quarto-category">Week04</div>
+    <div class="quarto-category">HW</div>
+    <div class="quarto-category">Week15</div>
   </div>
   </div>
 
@@ -146,14 +146,14 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Stat 251 </p>
+             <p>Homework </p>
           </div>
   </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">February 13, 2025</p>
+      <p class="date">Due: May 12, 2023</p>
     </div>
   </div>
   
@@ -165,115 +165,36 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="exploratory-data-analysis" class="level1">
-<h1>Exploratory Data Analysis</h1>
-<ul>
-<li><p>For observed data (rather than a study), a (descriptive) data exploration is often the only thing we can do</p></li>
-<li><p>But with any new data set, you should do some initial exploration: what are the assumptions (what have you been told about the data?) - are implied expectations holding up?</p></li>
-<li><p>Make sure to read through the <a href="https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/02a-eda.html">EDA chapter</a></p></li>
-</ul>
+<p>Note: This assignment must be submitted in github classroom.</p>
+<section id="data-description" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Data Description</h1>
+<p>In this assignment, you will pick one dataset from the following options:</p>
+<section id="drug-distribution" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="drug-distribution"><span class="header-section-number">1.1</span> Drug Distribution</h2>
+<p>Skim the PDFs included in the data folder before you start.</p>
+<p>Buhaug, Halvard &amp; Päivi Lujala 2005. Accounting for Scale: Measuring Geography in Quantitative Studies of Civil War. Political Geography 24: 399-418.</p>
+<p>Data downloaded from http://www.paivilujala.com/drugdata.html</p>
 </section>
-<section id="in-class-exercise" class="level1">
-<h1>In-class exercise</h1>
-<p>During an unusual episode, a number of people were exposed and some died. You are asked to determine the nature of the unusual episode by asking <strong>data-motivated</strong> yes/no questions</p>
-<p>You will see two tables:</p>
-<ul>
-<li><p>deaths by economic status and sex</p></li>
-<li><p>deaths by economic status and age</p></li>
-</ul>
+<section id="lord-of-the-rings---middle-earth" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="lord-of-the-rings---middle-earth"><span class="header-section-number">1.2</span> Lord of the Rings - Middle Earth</h2>
+<p>https://scholarworks.wm.edu/asoer/3/</p>
+<p>Vector Shapefiles contained in the data/Middle Earth folder.</p>
 </section>
-<section id="what-would-you-expect" class="level1">
-<h1>What would you expect?</h1>
-<p>Before seeing the data</p>
-<ul>
-<li><p>what are your expectations regarding <em>exposure</em> by economic status, by sex, and by age?</p></li>
-<li><p>what are your expectations regarding <em>death numbers/rates</em> by economic status, by sex, and by age?</p></li>
-</ul>
-<p>Now we look at the data: What anomalies do you notice?</p>
+<section id="natural-earth-data" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="natural-earth-data"><span class="header-section-number">1.3</span> Natural Earth Data</h2>
+<p>Download data from https://www.naturalearthdata.com/downloads/10m-physical-vectors/</p>
+<p>Use at least 3 different data sets to create a map showing features that you are interested in.</p>
 </section>
-<section id="deaths-by-economic-status-and-sex" class="level1">
-<h1>Deaths by Economic Status and Sex</h1>
-<pre><code>By Economic Status and Sex
----------------------------------------------------------------------------
-           Population Exposed         Number of            Deaths per 100
-                to Risk                 Deaths            Exposed to Risk
-Economic   ----------------------------------------------------------------
-Status     Male  Female  Both     Male  Female  Both     Male  Female  Both
----------------------------------------------------------------------------
-I          180     145    325     118      4     122      65      3     37
-II         179     106    285     154     13     167      87     12     59
-III        510     196    706     422    106     528      83     54     73
-IV         862      23    885     670      3     673      78     13     76
----------------------------------------------------------------------------
-Total      1731    470   2201     1364    126   1490      80     27     67</code></pre>
 </section>
-<section id="deaths-by-economic-status-and-age" class="level1">
-<h1>Deaths by Economic Status and Age</h1>
-<pre><code>                       By Economic Status and Age
----------------------------------------------------------------------------
-           Population Exposed         Number of            Deaths per 100
-                to Risk                 Deaths            Exposed to Risk
-Economic  -----------------------------------------------------------------
-Status    Adult   Child  Both    Adult   Child  Both    Adult   Child  Both
----------------------------------------------------------------------------
-I          319      6     325     122      0     122      38      0     37
-II         261     24     285     167      0     167      64      0     59
-III        627     79     706     476     52     528      76     66     73
-IV         885      0     885     673      0     673      76      -     76
----------------------------------------------------------------------------
-Total      2092    109   2201     1438    52    1490      69     48     67</code></pre>
-</section>
-<section id="homework---reading-data-with-cookies" class="level1">
-<h1>Homework - Reading Data with Cookies</h1>
-<ul>
-<li><p>Work on homework #4: what are your expectations regarding the data?</p></li>
-<li><p>One way of asking questions, is to re-phrase an expectation in form of ‘(how) does the data deviate from …?’</p></li>
-<li><p>Generally, when the data does not meet expectations, we find weird stuff …</p></li>
-</ul>
-<iframe width="100%" height="600px" src="https://unl-statistics.github.io/stat251/homework/04-cookies.html"></iframe>
+<section id="assignment" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Assignment</h1>
+<p>Create a map that incorporates interesting features of the dataset you’ve chosen. You may add data from other sources if you would like.</p>
+<p>Write 3-5 sentences explaining what you find interesting about your data.</p>
 
 
 </section>
 
 </main> <!-- /main -->
-
-<script>
-  // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-  // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-  // slide changes (different for each slide format).
-  (function () {
-    // dispatch for htmlwidgets
-    function fireSlideEnter() {
-      const event = window.document.createEvent("Event");
-      event.initEvent("slideenter", true, true);
-      window.document.dispatchEvent(event);
-    }
-
-    function fireSlideChanged(previousSlide, currentSlide) {
-      fireSlideEnter();
-
-      // dispatch for shiny
-      if (window.jQuery) {
-        if (previousSlide) {
-          window.jQuery(previousSlide).trigger("hidden");
-        }
-        if (currentSlide) {
-          window.jQuery(currentSlide).trigger("shown");
-        }
-      }
-    }
-
-    // hookup for slidy
-    if (window.w3c_slidy) {
-      window.w3c_slidy.add_observer(function (slide_num) {
-        // slide_num starts at position 1
-        fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-      });
-    }
-
-  })();
-</script>
-
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

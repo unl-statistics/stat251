@@ -216,6 +216,10 @@ schedule:
         date: 2025-04-15
         pub-date: 2025-04-15
         categories: [slides, Project, Week12]
+      - href: slides/12b-datetime.qmd
+        date: 2025-04-17
+        pub-date: 2025-04-15
+        categories: [slides, Week12]
       - href: project/index.qmd
         date: 2025-04-15
         pub-date: 2025-03-30
@@ -224,43 +228,52 @@ schedule:
         date: 2025-04-15
         categories: [Project, Week12]
       - href: project/pseudocode.qmd
-        date: 2025-04-21
+        date: 2025-04-22
         categories: [Project, Week12]
       - href: project/screencast-checklist.qmd
         date: 2025-05-02
         categories: [Project, Week14]
       - path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/08-functional-prog.html
         title: Functional Programming and Lists
-        date: 2025-04-22
+        date: 2025-04-15
         categories: [reading]
       - href: homework/11-functional-prog.qmd
-        date: 2025-04-28
+        date: 2025-04-24
+        pub-date: 2025-04-17
         categories: [HW, Week13]
-      - path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/09-spatial-formats.html
-        title: Spatial Data Formats
-        date: 2025-04-29
-        categories: [reading]
+      - href: project/screencast.qmd
+        date: 2025-05-01
+#      - path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/09-spatial-formats.html
+#        title: Spatial Data Formats
+#        date: 2025-04-29
+#        categories: [reading]
       - path: https://r-spatial.org/r/2018/10/25/ggplot2-sf.html
         title: Drawing beautiful maps with R - Part 1 - Basics
+        pub-date: 2025-04-17
         date: 2025-04-29
         categories: [reading]
       - path: https://r-spatial.org/r/2018/10/25/ggplot2-sf-2.html
         title: Drawing beautiful maps with R - Part 2 - Layers
+        pub-date: 2025-04-17
         date: 2025-04-29
         categories: [reading]
       - path: https://r-spatial.org/r/2018/10/25/ggplot2-sf-3.html
         title: Drawing beautiful maps with R - Part 3 - Layouts
+        pub-date: 2025-04-17
         date: 2025-04-29
         categories: [reading]
       - path: https://rosenfelder.ai/create-maps-with-python/
         title: Create beautiful maps with Python
+        pub-date: 2025-04-17
         date: 2025-04-29
         categories: [reading]
       - href: homework/12-spatial.qmd
-        date: 2025-05-05
+        date: 2025-05-08
+        pub-date: 2025-04-17
         categories: [HW, Week15]
       - href: homework/15-project-peer-review.qmd
-        date: 2025-05-08
+        date: 2025-05-15
+        pub-date: 2025-04-17
         categories: [Project, Week15]
 
 

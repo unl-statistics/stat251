@@ -120,8 +120,48 @@
   is_live: true
 - path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/08-functional-prog.html
   title: Functional Programming and Lists
-  date: '2025-04-22'
-  pub.date: '2025-04-13'
+  date: '2025-04-15'
+  pub.date: '2025-04-06'
+  categories:
+  - reading
+  - .na.character
+  type: reading
+  image: figs/reading.svg
+  is_live: true
+- path: https://r-spatial.org/r/2018/10/25/ggplot2-sf.html
+  title: Drawing beautiful maps with R - Part 1 - Basics
+  date: '2025-04-29'
+  pub.date: '2025-04-17'
+  categories:
+  - reading
+  - .na.character
+  type: reading
+  image: figs/reading.svg
+  is_live: true
+- path: https://r-spatial.org/r/2018/10/25/ggplot2-sf-2.html
+  title: Drawing beautiful maps with R - Part 2 - Layers
+  date: '2025-04-29'
+  pub.date: '2025-04-17'
+  categories:
+  - reading
+  - .na.character
+  type: reading
+  image: figs/reading.svg
+  is_live: true
+- path: https://r-spatial.org/r/2018/10/25/ggplot2-sf-3.html
+  title: Drawing beautiful maps with R - Part 3 - Layouts
+  date: '2025-04-29'
+  pub.date: '2025-04-17'
+  categories:
+  - reading
+  - .na.character
+  type: reading
+  image: figs/reading.svg
+  is_live: true
+- path: https://rosenfelder.ai/create-maps-with-python/
+  title: Create beautiful maps with Python
+  date: '2025-04-29'
+  pub.date: '2025-04-17'
   categories:
   - reading
   - .na.character

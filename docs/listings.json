@@ -2,8 +2,11 @@
   {
     "listing": "/index.html",
     "items": [
+      "/homework/12-spatial.html",
+      "/homework/11-functional-prog.html",
       "/project/pseudocode.html",
       "/homework/10-datetime.html",
+      "/slides/12b-datetime.html",
       "/project/Dataset-Topics.html",
       "/project/index.html",
       "/slides/10-projects.html",

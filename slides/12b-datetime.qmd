@@ -1,0 +1,46 @@
+---
+title: Last 4 weeks
+author: Stat 251
+date: '2025-04-17'
+categories:
+- slides
+- Week12
+- Week12
+engine: knitr
+format:
+  revealjs:
+    navigation-mode: vertical
+    logo: N.svg
+    theme: inverse.scss
+    includes:
+      in_header: header.html
+---
+
+## Logistics
+
+![](fig/plan-last-4wks.png)
+
+## Feedback
+
+- Claimed Dataset: make sure to add the link to the Tidy Tuesday page
+
+- Homework 10: Looks good, make sure to submit!
+
+
+
+## Script
+
+For each of the Things you defined, write out at least three paragraphs:
+
+Make sure to:
+
+  - include  definitions (i.e. how do you measure strength) 
+  - give context (i.e. which variables are used)
+  - tie 'things' in with the topics in the class
+
+
+## Homework 11
+
+```{=html}
+<iframe width="100%" height = "500px" src="https://unl-statistics.github.io/stat251/homework/11-functional-prog.qmd"></iframe>
+```

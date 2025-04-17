@@ -1,0 +1,13 @@
+---
+title: Project Peer Reviews
+author: Project
+date: '2025-05-15'
+categories:
+- Project
+- Week15
+- Finals
+---
+
+To complete this assignment, you will need to follow the instructions for [completing a peer review with a rubric on Canvas](https://community.canvaslms.com/t5/Student-Guide/How-do-I-submit-a-peer-review-to-an-assignment/ta-p/293)
+
+You must peer review all of the assigned videos to get credit for this assignment.

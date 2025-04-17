@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Stat 251">
-<meta name="dcterms.date" content="2025-02-13">
+<meta name="author" content="Project">
+<meta name="dcterms.date" content="2025-05-15">
 
-<title>Data Explorations – Stat 251 - Data Wrangling</title>
+<title>Project Peer Reviews – Stat 251 - Data Wrangling</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -113,29 +113,19 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#exploratory-data-analysis" id="toc-exploratory-data-analysis" class="nav-link active" data-scroll-target="#exploratory-data-analysis">Exploratory Data Analysis</a></li>
-  <li><a href="#in-class-exercise" id="toc-in-class-exercise" class="nav-link" data-scroll-target="#in-class-exercise">In-class exercise</a></li>
-  <li><a href="#what-would-you-expect" id="toc-what-would-you-expect" class="nav-link" data-scroll-target="#what-would-you-expect">What would you expect?</a></li>
-  <li><a href="#deaths-by-economic-status-and-sex" id="toc-deaths-by-economic-status-and-sex" class="nav-link" data-scroll-target="#deaths-by-economic-status-and-sex">Deaths by Economic Status and Sex</a></li>
-  <li><a href="#deaths-by-economic-status-and-age" id="toc-deaths-by-economic-status-and-age" class="nav-link" data-scroll-target="#deaths-by-economic-status-and-age">Deaths by Economic Status and Age</a></li>
-  <li><a href="#homework---reading-data-with-cookies" id="toc-homework---reading-data-with-cookies" class="nav-link" data-scroll-target="#homework---reading-data-with-cookies">Homework - Reading Data with Cookies</a></li>
-  </ul>
-<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="04b-eda.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Data Explorations</h1>
+<h1 class="title">Project Peer Reviews</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">slides</div>
-    <div class="quarto-category">Week04</div>
+    <div class="quarto-category">Project</div>
+    <div class="quarto-category">Week15</div>
+    <div class="quarto-category">Finals</div>
   </div>
   </div>
 
@@ -146,14 +136,14 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Stat 251 </p>
+             <p>Project </p>
           </div>
   </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">February 13, 2025</p>
+      <p class="date">May 15, 2025</p>
     </div>
   </div>
   
@@ -165,115 +155,12 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="exploratory-data-analysis" class="level1">
-<h1>Exploratory Data Analysis</h1>
-<ul>
-<li><p>For observed data (rather than a study), a (descriptive) data exploration is often the only thing we can do</p></li>
-<li><p>But with any new data set, you should do some initial exploration: what are the assumptions (what have you been told about the data?) - are implied expectations holding up?</p></li>
-<li><p>Make sure to read through the <a href="https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/02a-eda.html">EDA chapter</a></p></li>
-</ul>
-</section>
-<section id="in-class-exercise" class="level1">
-<h1>In-class exercise</h1>
-<p>During an unusual episode, a number of people were exposed and some died. You are asked to determine the nature of the unusual episode by asking <strong>data-motivated</strong> yes/no questions</p>
-<p>You will see two tables:</p>
-<ul>
-<li><p>deaths by economic status and sex</p></li>
-<li><p>deaths by economic status and age</p></li>
-</ul>
-</section>
-<section id="what-would-you-expect" class="level1">
-<h1>What would you expect?</h1>
-<p>Before seeing the data</p>
-<ul>
-<li><p>what are your expectations regarding <em>exposure</em> by economic status, by sex, and by age?</p></li>
-<li><p>what are your expectations regarding <em>death numbers/rates</em> by economic status, by sex, and by age?</p></li>
-</ul>
-<p>Now we look at the data: What anomalies do you notice?</p>
-</section>
-<section id="deaths-by-economic-status-and-sex" class="level1">
-<h1>Deaths by Economic Status and Sex</h1>
-<pre><code>By Economic Status and Sex
----------------------------------------------------------------------------
-           Population Exposed         Number of            Deaths per 100
-                to Risk                 Deaths            Exposed to Risk
-Economic   ----------------------------------------------------------------
-Status     Male  Female  Both     Male  Female  Both     Male  Female  Both
----------------------------------------------------------------------------
-I          180     145    325     118      4     122      65      3     37
-II         179     106    285     154     13     167      87     12     59
-III        510     196    706     422    106     528      83     54     73
-IV         862      23    885     670      3     673      78     13     76
----------------------------------------------------------------------------
-Total      1731    470   2201     1364    126   1490      80     27     67</code></pre>
-</section>
-<section id="deaths-by-economic-status-and-age" class="level1">
-<h1>Deaths by Economic Status and Age</h1>
-<pre><code>                       By Economic Status and Age
----------------------------------------------------------------------------
-           Population Exposed         Number of            Deaths per 100
-                to Risk                 Deaths            Exposed to Risk
-Economic  -----------------------------------------------------------------
-Status    Adult   Child  Both    Adult   Child  Both    Adult   Child  Both
----------------------------------------------------------------------------
-I          319      6     325     122      0     122      38      0     37
-II         261     24     285     167      0     167      64      0     59
-III        627     79     706     476     52     528      76     66     73
-IV         885      0     885     673      0     673      76      -     76
----------------------------------------------------------------------------
-Total      2092    109   2201     1438    52    1490      69     48     67</code></pre>
-</section>
-<section id="homework---reading-data-with-cookies" class="level1">
-<h1>Homework - Reading Data with Cookies</h1>
-<ul>
-<li><p>Work on homework #4: what are your expectations regarding the data?</p></li>
-<li><p>One way of asking questions, is to re-phrase an expectation in form of ‘(how) does the data deviate from …?’</p></li>
-<li><p>Generally, when the data does not meet expectations, we find weird stuff …</p></li>
-</ul>
-<iframe width="100%" height="600px" src="https://unl-statistics.github.io/stat251/homework/04-cookies.html"></iframe>
+<p>To complete this assignment, you will need to follow the instructions for <a href="https://community.canvaslms.com/t5/Student-Guide/How-do-I-submit-a-peer-review-to-an-assignment/ta-p/293">completing a peer review with a rubric on Canvas</a></p>
+<p>You must peer review all of the assigned videos to get credit for this assignment.</p>
 
 
-</section>
 
 </main> <!-- /main -->
-
-<script>
-  // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-  // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-  // slide changes (different for each slide format).
-  (function () {
-    // dispatch for htmlwidgets
-    function fireSlideEnter() {
-      const event = window.document.createEvent("Event");
-      event.initEvent("slideenter", true, true);
-      window.document.dispatchEvent(event);
-    }
-
-    function fireSlideChanged(previousSlide, currentSlide) {
-      fireSlideEnter();
-
-      // dispatch for shiny
-      if (window.jQuery) {
-        if (previousSlide) {
-          window.jQuery(previousSlide).trigger("hidden");
-        }
-        if (currentSlide) {
-          window.jQuery(currentSlide).trigger("shown");
-        }
-      }
-    }
-
-    // hookup for slidy
-    if (window.w3c_slidy) {
-      window.w3c_slidy.add_observer(function (slide_num) {
-        // slide_num starts at position 1
-        fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-      });
-    }
-
-  })();
-</script>
-
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

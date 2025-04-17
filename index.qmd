@@ -19,6 +19,9 @@ listing:
   - homework/08-reshape.qmd
   - homework/09-join.qmd
   - homework/10-datetime.qmd
+  - homework/11-functional-prog.qmd
+  - homework/12-spatial.qmd
+  - homework/15-project-peer-review.qmd
   - project/Dataset-Topics.qmd
   - project/index.qmd
   - project/pseudocode.qmd
@@ -42,6 +45,7 @@ listing:
   - slides/10b-reshape.qmd
   - slides/11a-join.qmd
   - slides/12a-screencast.qmd
+  - slides/12b-datetime.qmd
   - syllabus.qmd
   - reading.yml
   sort: date desc
