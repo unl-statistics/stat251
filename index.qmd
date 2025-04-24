@@ -25,6 +25,8 @@ listing:
   - project/Dataset-Topics.qmd
   - project/index.qmd
   - project/pseudocode.qmd
+  - project/screencast-checklist.qmd
+  - project/screencast.qmd
   - slides/01-Syllabus-and-Introductions.qmd
   - slides/02-version-control.qmd
   - slides/02a-review-topics.qmd
@@ -46,6 +48,7 @@ listing:
   - slides/11a-join.qmd
   - slides/12a-screencast.qmd
   - slides/12b-datetime.qmd
+  - slides/13b-functional.qmd
   - syllabus.qmd
   - reading.yml
   sort: date desc

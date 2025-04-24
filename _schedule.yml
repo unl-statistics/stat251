@@ -231,7 +231,7 @@ schedule:
         date: 2025-04-22
         categories: [Project, Week12]
       - href: project/screencast-checklist.qmd
-        date: 2025-05-02
+        date: 2025-05-01
         categories: [Project, Week14]
       - path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/08-functional-prog.html
         title: Functional Programming and Lists
@@ -241,6 +241,10 @@ schedule:
         date: 2025-04-24
         pub-date: 2025-04-17
         categories: [HW, Week13]
+      - href: slides/13b-functional.qmd
+        date: 2025-04-24
+        pub-date: 2025-04-24
+        categories: [slides, Week13]
       - href: project/screencast.qmd
         date: 2025-05-01
 #      - path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/09-spatial-formats.html

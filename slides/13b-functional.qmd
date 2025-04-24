@@ -1,0 +1,110 @@
+---
+title: Functioning Cats and Dogs
+author: Stat 251
+date: '2025-04-24'
+categories:
+- slides
+- Week13
+- Week13
+engine: knitr
+format:
+  revealjs:
+    navigation-mode: vertical
+    logo: N.svg
+    theme: inverse.scss
+    includes:
+      in_header: header.html
+error: true
+---
+
+## Logistics
+
+![](fig/plan-last-4wks.png)
+
+## Feedback
+
+- Scripts: generally look good, time until Tuesday to react to feedback (make sure to submit!)
+
+- Today: finish homework 11 (functions)
+
+- Next week: submit the screencast (Thursday)
+
+
+
+## Script
+
+For each of the Things you defined, write out at least three paragraphs:
+
+Make sure to:
+
+  - include  definitions (i.e. how do you measure strength) 
+  - give context (i.e. which variables are used)
+  - tie 'things' in with the topics in the class
+
+
+## Homework 11
+
+```{=html}
+<iframe width="100%" height = "500px" src="https://unl-statistics.github.io/stat251/homework/11-functional-prog.html"></iframe>
+```
+
+## List objects
+
+most general form of structured data
+
+in R: 
+
+```{r echo=TRUE}
+lo_r <- list(name="value", numbers=c(1, 2, 3, 4, 5), other_lists = list(a = 1, b = 2, c = "XYZ"))
+```
+
+in python, lists are base objects, dictionaries include names, come together as `Series`: 
+
+```{python echo=TRUE}
+lo_py_noname = ["value", [1, 2, 3, 4, 5], [1, 2, "XYZ"]]
+
+lo_py = dict('name':"value", 'numbers':[1, 2, 3, 4, 5], 'other_lists': {'a': 1, 'b': 2, 'c': "XYZ"})
+
+import pandas as pd
+lo_py_series = pd.Series(lo_py)
+```
+
+## Accessing parts
+
+access by index or by name
+
+```{r echo = TRUE}
+# return list 
+lo_r[1] 
+lo_r['name']
+# return list element
+lo_r[[1]] 
+lo_r$name
+```
+
+in python: access by index (list), access by name (dictionary), either (series)
+
+## Working with JSON format
+
+JSON is list data format: each record is a set of key-value pairs, a value can consist of another list.
+
+```
+{ 'id': 71418862, 'organization_id': 'NE159', 'url': 'https://...',
+'type': 'Dog', 'species': 'Dog', 'breeds': {'primary': 'Black Labrador Retriever', 'mixed': False, 'unknown': False}, 'colors': {'primary': 'Black'}, 'age': 'Baby', 'gender': 'Male', 'size': 'Medium', 'coat': 'Short', 'attributes': {'spayed_neutered': True, 'house_trained': True, 'special_needs': False, 'shots_current': True}, 'environment': {'children': True, 'dogs': True, 'cats': True}, 'tags': ['Couch potato', 'Curious', 'Affectionate', 'Friendly', 'Brave', 'Loyal', 'Gentle', 'Playful', 'Smart', 'Athletic', 'Funny', 'Independent', 'Loves Kisses', 'Protective', 'Dignified', 'Quiet'], 'name': 'Jalepeno', 'description': 'Jalepeno is all boy and ready to play and learn everything that you want to teach him. He is amazing...', 'photos': [{'small': 'https://...', 'medium': 'https://...', 'large': 'https://...', 'full': 'https://...'}], 'primary_photo_cropped': {'small': 'https://...', 'medium': 'https://...', 'large': 'https://...', 'full': 'https://...'}, 'videos': [], 'status': 'adoptable', 'status_changed_at': '2024-04-22T04:53:28+0000', 'published_at': '2024-04-22T04:53:27+0000', 'distance': 38.6862, 'contact': {'email': 'maws_paws@yahoo.com', 'phone': '(402) 806-1441', 'address': {'city': 'Beatrice', 'state': 'NE', 'postcode': '68310', 'country': 'US'}}, '_links': {'self': {'href': '/v2/animals/71418862'}, 'type': {'href': '/v2/types/dog'}, 'organization': {'href': '/v2/organizations/ne159'}}}
+```
+
+## JSON format to data frames
+
+in R from `purrr` package:
+
+```
+list_transpose
+list_rbind
+```
+
+in python:
+
+```
+read_json # make sure to set typ to 'series' 
+json_normalize # flattens a list to a data frame
+```
