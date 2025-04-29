@@ -49,6 +49,7 @@ listing:
   - slides/12a-screencast.qmd
   - slides/12b-datetime.qmd
   - slides/13b-functional.qmd
+  - slides/14a-spatial.qmd
   - syllabus.qmd
   - reading.yml
   sort: date desc

@@ -10,8 +10,8 @@
   <meta name="generator" content="quarto-1.6.40">
 
   <meta name="author" content="Stat 251">
-  <meta name="dcterms.date" content="2025-04-24">
-  <title>Stat 251 - Data Wrangling – Functioning Cats and Dogs</title>
+  <meta name="dcterms.date" content="2025-04-29">
+  <title>Stat 251 - Data Wrangling – Maps in Data</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -193,7 +193,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Functioning Cats and Dogs</h1>
+  <h1 class="title">Maps in Data</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -203,7 +203,7 @@ Stat 251
 </div>
 </div>
 
-  <p class="date">2025-04-24</p>
+  <p class="date">2025-04-29</p>
 </section>
 <section id="logistics" class="slide level2">
 <h2>Logistics</h2>
@@ -212,9 +212,11 @@ Stat 251
 <section id="feedback" class="slide level2">
 <h2>Feedback</h2>
 <ul>
-<li><p>Scripts: generally look good, time until Tuesday to react to feedback (make sure to submit!)</p></li>
-<li><p>Today: finish homework 11 (functions)</p></li>
-<li><p>Next week: submit the screencast (Thursday)</p></li>
+<li><p>Graded: homework 11 (functions - really: <em>lists</em>)</p></li>
+<li><p>Today: last edits for scripts</p></li>
+<li><p>Thursday: submit your screencast</p>
+<p><a href="https://www.youtube.com/watch?v=TiMoSDztAhw">adding timestamps as chapters</a></p>
+<p>no required attendance in class on Thursday (May 1)</p></li>
 </ul>
 </section>
 <section id="script" class="slide level2">
@@ -227,71 +229,65 @@ Stat 251
 <li>tie ‘things’ in with the topics in the class</li>
 </ul>
 </section>
-<section id="homework-11" class="slide level2">
-<h2>Homework 11</h2>
-<iframe width="100%" height="500px" src="https://unl-statistics.github.io/stat251/homework/11-functional-prog.html"></iframe>
-</section>
-<section id="list-objects" class="slide level2">
-<h2>List objects</h2>
-<p>most general form of structured data</p>
-<p>in R:</p>
+<section id="functions-and-list" class="slide level2">
+<h2>Functions and List</h2>
+<p>are the extension of vector calculus</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a>lo_r <span class="ot">&lt;-</span> <span class="fu">list</span>(<span class="at">name=</span><span class="st">"value"</span>, <span class="at">numbers=</span><span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>), <span class="at">other_lists =</span> <span class="fu">list</span>(<span class="at">a =</span> <span class="dv">1</span>, <span class="at">b =</span> <span class="dv">2</span>, <span class="at">c =</span> <span class="st">"XYZ"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a>(x <span class="ot">&lt;-</span> <span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>, <span class="dv">15</span>, <span class="at">replace =</span> <span class="cn">TRUE</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1]  8  8  5  5  6  2  4  5  7  6  1 10 10  4  2</code></pre>
 </div>
-<p>in python, lists are base objects, dictionaries include names, come together as <code>Series</code>:</p>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a>(y <span class="ot">&lt;-</span> <span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>, <span class="dv">15</span>, <span class="at">replace =</span> <span class="cn">TRUE</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1]  8  6  8  2 10  9  7  9  7  2  2  4  2  1  1</code></pre>
+</div>
+</div>
+<p>Add the first element in <code>x</code> to the first element in <code>y</code>:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a></a>lo_py_noname <span class="op">=</span> [<span class="st">"value"</span>, [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>], [<span class="dv">1</span>, <span class="dv">2</span>, <span class="st">"XYZ"</span>]]</span>
-<span id="cb2-2"><a></a></span>
-<span id="cb2-3"><a></a>lo_py <span class="op">=</span> <span class="bu">dict</span>(<span class="st">'name'</span>:<span class="st">"value"</span>, <span class="st">'numbers'</span>:[<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>], <span class="st">'other_lists'</span>: {<span class="st">'a'</span>: <span class="dv">1</span>, <span class="st">'b'</span>: <span class="dv">2</span>, <span class="st">'c'</span>: <span class="st">"XYZ"</span>})</span>
-<span id="cb2-4"><a></a></span>
-<span id="cb2-5"><a></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb2-6"><a></a>lo_py_series <span class="op">=</span> pd.Series(lo_py)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a>x[<span class="dv">1</span>] <span class="sc">+</span> y[<span class="dv">1</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>invalid syntax (&lt;string&gt;, line 3)</code></pre>
+<pre><code>[1] 16</code></pre>
 </div>
 </div>
-</section>
-<section id="accessing-parts" class="slide level2">
-<h2>Accessing parts</h2>
-<p>access by index or by name</p>
+<p>Now do that for all elements in <code>x</code> and <code>y</code>:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a><span class="co"># return list </span></span>
-<span id="cb4-2"><a></a>lo_r[<span class="dv">1</span>] </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a>x <span class="sc">+</span> y</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>$name
-[1] "value"</code></pre>
+<pre><code> [1] 16 14 13  7 16 11 11 14 14  8  3 14 12  5  3</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a></a>lo_r[<span class="st">'name'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a><span class="dv">1</span><span class="sc">:</span><span class="fu">length</span>(x) <span class="sc">|&gt;</span> <span class="fu">lapply</span>(<span class="at">FUN =</span> <span class="cf">function</span>(i) x[i] <span class="sc">+</span> y[i]) <span class="sc">|&gt;</span> <span class="fu">unlist</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>$name
-[1] "value"</code></pre>
+<pre><code> [1] 16 14 13  7 16 11 11 14 14  8  3 14 12  5  3</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a></a><span class="co"># return list element</span></span>
-<span id="cb8-2"><a></a>lo_r[[<span class="dv">1</span>]] </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a></a>sum_xy <span class="op">=</span> <span class="bu">map</span>(<span class="kw">lambda</span> i: r.x[i]<span class="op">+</span>r.y[i], <span class="bu">range</span>(<span class="dv">1</span>,<span class="bu">len</span>(r.x)))</span>
+<span id="cb11-2"><a></a><span class="bu">list</span>(sum_xy)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] "value"</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a></a>lo_r<span class="sc">$</span>name</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] "value"</code></pre>
+<pre><code>[14, 13, 7, 16, 11, 11, 14, 14, 8, 3, 14, 12, 5, 3]</code></pre>
 </div>
 </div>
-<p>in python: access by index (list), access by name (dictionary), either (series)</p>
 </section>
-<section id="working-with-json-format" class="slide level2">
-<h2>Working with JSON format</h2>
-<p>JSON is list data format: each record is a set of key-value pairs, a value can consist of another list.</p>
-<pre><code>{ 'id': 71418862, 'organization_id': 'NE159', 'url': 'https://...',
-'type': 'Dog', 'species': 'Dog', 'breeds': {'primary': 'Black Labrador Retriever', 'mixed': False, 'unknown': False}, 'colors': {'primary': 'Black'}, 'age': 'Baby', 'gender': 'Male', 'size': 'Medium', 'coat': 'Short', 'attributes': {'spayed_neutered': True, 'house_trained': True, 'special_needs': False, 'shots_current': True}, 'environment': {'children': True, 'dogs': True, 'cats': True}, 'tags': ['Couch potato', 'Curious', 'Affectionate', 'Friendly', 'Brave', 'Loyal', 'Gentle', 'Playful', 'Smart', 'Athletic', 'Funny', 'Independent', 'Loves Kisses', 'Protective', 'Dignified', 'Quiet'], 'name': 'Jalepeno', 'description': 'Jalepeno is all boy and ready to play and learn everything that you want to teach him. He is amazing...', 'photos': [{'small': 'https://...', 'medium': 'https://...', 'large': 'https://...', 'full': 'https://...'}], 'primary_photo_cropped': {'small': 'https://...', 'medium': 'https://...', 'large': 'https://...', 'full': 'https://...'}, 'videos': [], 'status': 'adoptable', 'status_changed_at': '2024-04-22T04:53:28+0000', 'published_at': '2024-04-22T04:53:27+0000', 'distance': 38.6862, 'contact': {'email': 'maws_paws@yahoo.com', 'phone': '(402) 806-1441', 'address': {'city': 'Beatrice', 'state': 'NE', 'postcode': '68310', 'country': 'US'}}, '_links': {'self': {'href': '/v2/animals/71418862'}, 'type': {'href': '/v2/types/dog'}, 'organization': {'href': '/v2/organizations/ne159'}}}</code></pre>
+<section id="your-turn-graphs-of-functions" class="slide level2">
+<h2>Your Turn: Graphs of functions</h2>
+<p>Plot the graph of the function for <span class="math inline">\(\alpha = \beta = 1/2\)</span> on the interval [0,1]:</p>
+<p><span class="math display">\[
+f(x) = \frac{1}{B(\alpha, \beta)} x^{\alpha -1} (1 - x)^{\beta - 1}
+\]</span> <span class="math inline">\(B(\alpha, \beta)\)</span> is the beta function - a generalization of the (inverse) binomial coefficient. Implemented as <code>beta(a, b)</code> in R, in python use <code>math.gamma</code> and the relationship to the Gamma function <span class="math inline">\(\Gamma\)</span>:</p>
+<p><span class="math display">\[
+B(a, b) = \frac{\Gamma(a)\Gamma(b)}{\Gamma(a + b)}
+\]</span></p>
 </section>
-<section id="json-format-to-data-frames" class="slide level2">
-<h2>JSON format to data frames</h2>
-<p>in R from <code>purrr</code> package:</p>
-<pre><code>list_transpose
-list_rbind</code></pre>
-<p>in python:</p>
-<pre><code>read_json # make sure to set typ to 'series' 
-json_normalize # flattens a list to a data frame</code></pre>
+<section id="your-turn-multiple-graphs" class="slide level2">
+<h2>Your Turn: Multiple Graphs</h2>
+<p>Now make <span class="math inline">\(\alpha\)</span> a vector <code>alpha</code> and plot graphs for values of <span class="math inline">\(\alpha \in \{ 0.5, 0.6, ..., 1.2\}\)</span></p>
+<p>… can you vectorize <span class="math inline">\(\beta\)</span> similarly?</p>
+</section>
+<section id="homework-12" class="slide level2">
+<h2>Homework 12</h2>
+<iframe width="100%" height="500px" src="https://unl-statistics.github.io/stat251/homework/12-spatial.html"></iframe>
 
 
 </section>

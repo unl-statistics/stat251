@@ -95,11 +95,12 @@ JSON is list data format: each record is a set of key-value pairs, a value can c
 
 ## JSON format to data frames
 
-in R from `purrr` package:
+in R:
 
 ```
-list_transpose
-list_rbind
+jsonlite::read_json
+purrr::list_transpose
+tibble::as_tibble
 ```
 
 in python:

@@ -251,6 +251,10 @@ schedule:
 #        title: Spatial Data Formats
 #        date: 2025-04-29
 #        categories: [reading]
+      - href: slides/14a-spatial.qmd
+        date: 2025-04-29
+        pub-date: 2025-04-24
+        categories: [slides, Week13]
       - path: https://r-spatial.org/r/2018/10/25/ggplot2-sf.html
         title: Drawing beautiful maps with R - Part 1 - Basics
         pub-date: 2025-04-17
