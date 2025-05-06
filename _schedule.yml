@@ -255,6 +255,10 @@ schedule:
         date: 2025-04-29
         pub-date: 2025-04-24
         categories: [slides, Week13]
+      - href: slides/15a-spatial.qmd
+        date: 2025-05-06
+        pub-date: 2025-05-02
+        categories: [slides, Week13]
       - path: https://r-spatial.org/r/2018/10/25/ggplot2-sf.html
         title: Drawing beautiful maps with R - Part 1 - Basics
         pub-date: 2025-04-17

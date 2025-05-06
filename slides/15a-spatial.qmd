@@ -1,0 +1,107 @@
+---
+title: Maps and Data
+author: Stat 251
+date: '2025-05-06'
+categories:
+- slides
+- Week13
+- Week15
+engine: knitr
+format:
+  revealjs:
+    navigation-mode: vertical
+    logo: N.svg
+    theme: inverse.scss
+    includes:
+      in_header: header.html
+error: true
+---
+
+## Logistics
+
+![](fig/plan-last-4wks.png)
+
+## Feedback
+
+- Screencasts all look good 
+
+- Make sure to fill out the class survey!
+
+
+- Peer Review is open:
+
+  - make sure that you can access the github repo (you might have to send a comment) and the video
+  - watch the video
+  - read through the script
+  - run the code
+  - submit your feedback by Thursday next week
+
+## Access to repo
+
+- Go into Canvas
+- Follow the link to the youtube video
+- Follow the link to the repo - you most likely don't have access to the repo
+
+  - leave your github handle in the comments of the two screencasts you are reviewing
+  - go into your own screencast, get the github handles from your reviewers, add them as collaborators to your repo
+
+## Add the screencast to your portfolio
+
+- portfolios are important for getting internships/industry positions
+
+- right now: 
+
+  - final project is private  (because of FERPA)
+  - no good way to make fork of private repo public (because of Github rules, protection of instructor's IP)
+  
+
+- best solution (right now): make a new repo (public or private), copy the necessary files, and link that to your portfolio
+
+## Maps in R and python
+
+- Last homework assignment - essentially attendance-based
+
+- Work on some map-related question, submit by the end of class on Thursday for full credit
+
+
+## Maps in R and python
+
+Maps provide a lot of context
+
+```{r echo=TRUE}
+tuesdata <- tidytuesdayR::tt_load(2024, week = 42)
+
+orcas <- tuesdata$orcas
+```
+```{r}
+library(ggplot2)
+orcas |> ggplot(aes(x = begin_longitude, y = end_latitude)) + geom_point()
+```
+## Orca Encounters
+
+```{r echo = TRUE}
+usmap <- map_data("state")
+usmap |> 
+  ggplot(aes(x = long, y = lat)) + 
+  geom_path(aes(group = group)) + 
+  geom_point(data = orcas, aes(x = begin_longitude, y = begin_latitude), colour = "darkorange")
+```
+
+## Closer Orca Encounters 
+
+```{r echo = TRUE}
+usmap |> dplyr::filter(region=="washington") |>
+  ggplot(aes(x = long, y = lat)) + 
+  geom_path(aes(group = group)) + 
+  geom_point(data = orcas, aes(x = begin_longitude, y = begin_latitude), colour = "darkorange")
+```
+
+
+## Homework 12
+
+
+```{=html}
+<iframe width="100%" height = "500px" src="https://unl-statistics.github.io/stat251/homework/12-spatial.html"></iframe>
+```
+
+
