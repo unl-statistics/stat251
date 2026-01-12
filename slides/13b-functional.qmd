@@ -1,11 +1,11 @@
 ---
 title: Functioning Cats and Dogs
 author: Stat 251
-date: '2025-04-24'
+date: '2026-04-24'
 categories:
 - slides
 - Week13
-- Week13
+- Week14
 engine: knitr
 format:
   revealjs:

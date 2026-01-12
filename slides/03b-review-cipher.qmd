@@ -7,7 +7,7 @@ title-slide-attributes:
   data-background-opacity: '0.10'
 categories:
 - slides
-- Week03
+- Week04
 engine: knitr
 format:
   revealjs:
@@ -16,7 +16,7 @@ format:
     theme: inverse.scss
     includes:
       in_header: header.html
-date: '2025-02-06'
+date: '2026-02-05'
 ---
 
 # Homework 2

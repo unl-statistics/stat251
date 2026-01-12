@@ -1,11 +1,12 @@
 ---
 title: Exam objectives
 author: Midterm
-date: '2025-03-04'
+date: '2026-03-04'
 pub-date: '2025-02-27'
 categories:
 - Exam
 - Week07
+- Week08
 type: exam
 ---
 

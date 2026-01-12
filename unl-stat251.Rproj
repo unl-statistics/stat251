@@ -11,11 +11,11 @@ NumSpacesForTab: 2
 Encoding: UTF-8
 
 RnwWeave: knitr
-LaTeX: XeLaTeX
+LaTeX: LuaLaTeX
 
 AutoAppendNewline: Yes
 StripTrailingWhitespace: Yes
 
 PythonType: virtualenv
-PythonVersion: 3.11.2
+PythonVersion: 3.9.17
 PythonPath: ~/.virtualenvs/r-reticulate/bin/python

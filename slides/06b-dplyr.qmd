@@ -3,7 +3,7 @@ title: Computing with data
 author: Stat 251
 categories:
 - slides
-- Week06
+- Week07
 engine: knitr
 format:
   revealjs:
@@ -12,7 +12,7 @@ format:
     theme: inverse.scss
     includes:
       in_header: header.html
-date: '2025-02-27'
+date: '2026-02-27'
 ---
 
 # Where we are

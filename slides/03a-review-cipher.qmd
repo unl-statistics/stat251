@@ -5,7 +5,9 @@ title-slide-attributes:
   data-background-image: fig/cipher.png
   data-background-size: contain
   data-background-opacity: '0.15'
-categories: slides
+categories:
+- slides
+- Week04
 engine: knitr
 format:
   revealjs:
@@ -14,7 +16,7 @@ format:
     theme: inverse.scss
     includes:
       in_header: header.html
-date: '2025-02-04'
+date: '2026-02-03'
 ---
 
 # Topics to Know

@@ -3,7 +3,7 @@ title: Survey Results and Groundhog Graphics
 author: Stat 251
 categories:
 - slides
-- Week05
+- Week07
 engine: knitr
 format:
   revealjs:
@@ -12,7 +12,7 @@ format:
     theme: inverse.scss
     includes:
       in_header: header.html
-date: '2025-02-24'
+date: '2026-02-24'
 ---
 
 # Survey Results

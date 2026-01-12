@@ -1,12 +1,12 @@
 ---
 title: Screencast - edited script
 author: Stat 251
-date: '2025-04-15'
+date: '2026-04-15'
 categories:
 - slides
 - Project
 - Week12
-- Week12
+- Week13
 engine: knitr
 ---
 

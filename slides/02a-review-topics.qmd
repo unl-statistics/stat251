@@ -2,7 +2,9 @@
 title: Programming Review
 subtitle: Working Environment and Programming Logic
 author: Stat 251
-categories: slides
+categories:
+- slides
+- Week03
 engine: knitr
 format:
   revealjs:
@@ -11,7 +13,7 @@ format:
     theme: inverse.scss
     includes:
       in_header: header.html
-date: '2025-01-28'
+date: '2026-01-27'
 type: slides
 ---
 

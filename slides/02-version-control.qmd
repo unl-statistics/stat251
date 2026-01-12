@@ -1,7 +1,7 @@
 ---
 title: Version Control
 author: Stat 251
-date: '2025-01-23'
+date: '2026-01-15'
 pub-date: '2023-01-01'
 categories:
 - slides

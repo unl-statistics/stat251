@@ -1,7 +1,9 @@
 ---
 title: Finishing up Cookie Exploration
 author: Stat 251
-categories: slides
+categories:
+- slides
+- Week06
 engine: knitr
 format:
   revealjs:
@@ -10,7 +12,7 @@ format:
     theme: inverse.scss
     includes:
       in_header: header.html
-date: '2025-02-18'
+date: '2026-02-18'
 ---
 
 # Homework 4

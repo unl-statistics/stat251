@@ -3,7 +3,7 @@ title: Reshaping Dogs
 author: Stat 251
 categories:
 - slides
-- Week10
+- Week11
 engine: knitr
 format:
   revealjs:
@@ -12,7 +12,7 @@ format:
     theme: inverse.scss
     includes:
       in_header: header.html
-date: '2025-04-01'
+date: '2026-04-01'
 ---
 
 ```{r setup}

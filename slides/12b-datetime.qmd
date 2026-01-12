@@ -1,11 +1,11 @@
 ---
 title: Last 4 weeks
 author: Stat 251
-date: '2025-04-17'
+date: '2026-04-17'
 categories:
 - slides
 - Week12
-- Week12
+- Week13
 engine: knitr
 format:
   revealjs:

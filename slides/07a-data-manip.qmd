@@ -4,6 +4,7 @@ author: Stat 251
 categories:
 - slides
 - Week07
+- Week08
 engine: knitr
 format:
   revealjs:
@@ -12,7 +13,7 @@ format:
     theme: inverse.scss
     includes:
       in_header: header.html
-date: '2025-03-04'
+date: '2026-03-04'
 ---
 
 # Where we are

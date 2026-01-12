@@ -3,7 +3,7 @@ title: Data Explorations
 author: Stat 251
 categories:
 - slides
-- Week04
+- Week05
 engine: knitr
 format:
   revealjs:
@@ -12,7 +12,7 @@ format:
     theme: inverse.scss
     includes:
       in_header: header.html
-date: '2025-02-13'
+date: '2026-02-13'
 ---
 
 # Exploratory Data Analysis

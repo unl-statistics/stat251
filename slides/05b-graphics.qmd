@@ -3,7 +3,7 @@ title: Creating Good Graphics
 author: Stat 251
 categories:
 - slides
-- Week05
+- Week06
 engine: knitr
 format:
   revealjs:
@@ -12,7 +12,7 @@ format:
     theme: inverse.scss
     includes:
       in_header: header.html
-date: '2025-02-20'
+date: '2026-02-20'
 ---
 
 # Homework 4

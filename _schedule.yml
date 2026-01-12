@@ -8,284 +8,284 @@ schedule:
         categories: [reading]
         image: figs/reading.svg
         type: reading
-        date: 2025-01-21
-        pub-date: 2024-01-01
+        date: 2026-01-15
+        pub-date: 2026-01-01
       - path: https://srvanderplas.github.io/stat-computing-r-python/part-tools/00-tools-intro.html
         title: Review - Tools
         categories: [reading]
-        date: 2025-01-23
-        pub-date: 2024-01-01
+        date: 2026-01-20
+        pub-date: 2026-01-01
       - path: https://srvanderplas.github.io/stat-computing-r-python/part-tools/05-git-and-github.html
         title: Version Control with Git and Github
-        date: 2025-01-28
+        date: 2026-01-15
         categories: [reading]
       - href: slides/01-Syllabus-and-Introductions.qmd
         categories: [slides]
         type: slides
-        date: 2025-01-21
-        pub-date: 2024-01-01
+        date: 2026-01-13
+        pub-date: 2026-01-01
       - href: slides/02-version-control.qmd
         categories: [slides]
         type: slides
-        date: 2025-01-23
-        pub-date: 2024-01-01
+        date: 2026-01-15
+        pub-date: 2026-01-01
       - href: homework/01-git-github.qmd
         categories: [HW, Week01]
-        date: 2025-01-28
-        pub-date: 2024-01-01
+        date: 2026-01-22
+        pub-date: 2026-01-01
       - path: https://srvanderplas.github.io/stat-computing-r-python/part-gen-prog/00-gen-prog.html
         title: Review - Programming
-        date: 2025-01-28
-        pub-date: 2023-01-01
+        date: 2026-01-27
+        pub-date: 2026-01-01
         categories: [reading]
       - href: slides/02a-review-topics.qmd
         categories: [slides]
         type: slides
-        date: 2025-01-28
-        pub-date: 2023-01-28
+        date: 2026-01-27
+        pub-date: 2026-01-27
       - href: slides/02b-review-topics.qmd
         categories: [slides]
         type: slides
-        date: 2025-01-30
-        pub-date: 2023-01-30
+        date: 2026-01-29
+        pub-date: 2026-01-29
       - href: homework/02-review.qmd
         categories: [HW, Week02]
-        date: 2025-02-04
-        pub-date: 2023-01-01
+        date: 2026-01-29
+        pub-date: 2026-01-01
       - href: slides/03a-review-cipher.qmd
         categories: [slides]
-        date: 2025-02-04
-        pub-date: 2023-02-03
+        date: 2026-02-03
+        pub-date: 2026-02-03
       - href: slides/03b-review-cipher.qmd
         categories: [slides]
-        date: 2025-02-06
-        pub-date: 2023-02-05
+        date: 2026-02-05
+        pub-date: 2026-02-05
       - href: homework/03-cipher.qmd
         categories: [HW, Week03]
-        date: 2025-02-11
-        pub-date: 2023-01-01
+        date: 2026-02-05
+        pub-date: 2026-01-29
   - unit: "Accessing and Exploring Data"
     materials:
       - path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/01-data-input.html
         title: Data Input
-        date: 2025-02-11
-        pub-date: 2025-02-06
+        date: 2026-02-11
+        pub-date: 2026-02-06
         categories: [reading]
       - path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/02a-eda.html
         title: Exploratory Data Analysis
-        date: 2025-02-11
-        pub-date: 2025-02-06
+        date: 2026-02-11
+        pub-date: 2026-02-06
         categories: [reading]
       - href: slides/04a-input.qmd
         categories: [slides]
-        date: 2025-02-11
-        pub-date: 2025-02-11
+        date: 2026-02-11
+        pub-date: 2026-02-11
       - href: slides/04b-eda.qmd
         categories: [slides]
-        date: 2025-02-13
-        pub-date: 2025-02-11
+        date: 2026-02-13
+        pub-date: 2026-02-11
       - href: homework/04-cookies.qmd
         categories: [HW, Week04]
-        date: 2025-02-18
+        date: 2026-02-18
       - path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/02b-graphics.html
         title: Data Visualization
-        date: 2025-02-18
+        date: 2026-02-18
         categories: [reading]
       - path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/02c-good-graphics.html
         title: Good Graphics
-        date: 2025-02-18
+        date: 2026-02-18
         categories: [reading]
       - href: homework/05-graphics-groundhogs.qmd
         categories: [HW, Week05]
-        date: 2025-02-25
+        date: 2026-02-25
       - title: Ugly Chart Gallery
         href: homework/05-graphics-results.qmd
         categories: [HW, Week05]
-        date: 2025-02-27
+        date: 2026-02-27
       - href: slides/05a-graphics.qmd
         categories: [slides]
-        date: 2025-02-18
-        pub-date: 2025-02-16
+        date: 2026-02-18
+        pub-date: 2026-02-16
       - href: slides/05b-graphics.qmd
         categories: [slides]
-        date: 2025-02-20
-        pub-date: 2025-02-16
+        date: 2026-02-20
+        pub-date: 2026-02-16
       - href: slides/06a-graphics.qmd
         categories: [slides]
-        date: 2025-02-24
-        pub-date: 2025-02-20
+        date: 2026-02-24
+        pub-date: 2026-02-20
   - unit: "Cleaning Data"
     materials:
       - path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/03-data-cleaning.html
         title: Data Cleaning
-        date: 2025-02-25
+        date: 2026-02-25
         categories: [reading]
       - href: homework/06-data-manip.qmd
         categories: [HW, Week06]
-        date: 2025-03-06
+        date: 2026-03-06
       - href: slides/06b-dplyr.qmd
         categories: [slides]
-        date: 2025-02-27
-        pub-date: 2025-02-20
+        date: 2026-02-27
+        pub-date: 2026-02-20
       - title: Practice Exam (2023)
         href: exam/2023-midterm/index.qmd
-        date: 2025-03-04
-        pub-date: 2025-02-25
+        date: 2026-03-04
+        pub-date: 2026-02-25
         categories: [Exam, Week07]
       - title: Practice Exam (2024)
         href: exam/2024-midterm/index.qmd
-        date: 2025-03-04
-        pub-date: 2025-02-25
+        date: 2026-03-04
+        pub-date: 2026-02-25
         categories: [Exam, Week07]
       - title: Midterm
         href: exam/data-earthquakes/index.qmd
-        date: 2025-03-13
-        pub-date: 2025-03-04
+        date: 2026-03-13
+        pub-date: 2026-03-04
         categories: [Exam, Week07]
       - title: Good programming practices
         href: slides/07a-data-manip.qmd
-        date: 2025-03-04
-        pub-date: 2025-02-25
+        date: 2026-03-04
+        pub-date: 2026-02-25
         categories: [slides, Week07]
       - title: Exam objectives
         href: exam/objectives.qmd
-        date: 2025-03-04
-        pub-date: 2025-02-25
+        date: 2026-03-04
+        pub-date: 2026-02-25
         categories: [Exam, Week07]
       - path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/04-strings.html
         title: Strings
-        date: 2025-03-25
-        pub-date: 2025-03-12
+        date: 2026-03-25
+        pub-date: 2026-03-12
         categories: [reading]
       - href: homework/07-strings.qmd
         categories: [HW, Week08]
-        date: 2025-03-27
-        pub-date: 2025-03-12
+        date: 2026-03-27
+        pub-date: 2026-03-12
       - href: slides/09a-strings.qmd
         categories: [slides]
-        date: 2025-03-25
-        pub-date: 2025-03-18
+        date: 2026-03-25
+        pub-date: 2026-03-18
       - href: slides/09b-strings.qmd
         categories: [slides]
-        date: 2025-03-27
-        pub-date: 2025-03-26
+        date: 2026-03-27
+        pub-date: 2026-03-26
       - path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/05-data-reshape.html
         title: Reshaping Data
-        date: 2025-03-25
-        pub-date: 2025-03-12
+        date: 2026-03-25
+        pub-date: 2026-03-12
         categories: [reading]
       - href: homework/08-reshape.qmd
         categories: [HW, Week9]
-        pub-date: 2025-03-29
-        date: 2025-04-03
+        pub-date: 2026-03-29
+        date: 2026-04-03
       - path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/06-data-join.html
         title: Joining Data
-        date: 2025-04-01
-        pub-date: 2025-03-26
+        date: 2026-04-01
+        pub-date: 2026-03-26
         categories: [reading]
       - href: homework/09-join.qmd
         categories: [HW, Week10]
-        pub-date: 2025-04-02
-        date: 2025-04-10
+        pub-date: 2026-04-02
+        date: 2026-04-10
       - href: slides/10a-reshape.qmd
         categories: [slides]
-        date: 2025-04-01
-        pub-date: 2025-03-30
+        date: 2026-04-01
+        pub-date: 2026-03-30
       - href: slides/10b-reshape.qmd
         categories: [slides]
-        date: 2025-04-03
-        pub-date: 2025-04-02
+        date: 2026-04-03
+        pub-date: 2026-04-02
       - href: slides/11a-join.qmd
         categories: [slides]
-        date: 2025-04-08
-        pub-date: 2025-04-05
+        date: 2026-04-08
+        pub-date: 2026-04-05
   - unit: "Project and Special Data Types"
     materials:
       - path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/07-datetime.html
         title: Dates and Times
-        date: 2025-04-08
+        date: 2026-04-08
         categories: [reading]
       - href: homework/10-datetime.qmd
-        date: 2025-04-17
+        date: 2026-04-17
         categories: [HW, Week11]
       - href: slides/10-projects.qmd
-        date: 2025-04-15
-        pub-date: 2025-03-30
+        date: 2026-04-15
+        pub-date: 2026-03-30
         categories: [slides, Project, Week12]
       - href: slides/12a-screencast.qmd
-        date: 2025-04-15
-        pub-date: 2025-04-15
+        date: 2026-04-15
+        pub-date: 2026-04-15
         categories: [slides, Project, Week12]
       - href: slides/12b-datetime.qmd
-        date: 2025-04-17
-        pub-date: 2025-04-15
+        date: 2026-04-17
+        pub-date: 2026-04-15
         categories: [slides, Week12]
       - href: project/index.qmd
-        date: 2025-04-15
-        pub-date: 2025-03-30
+        date: 2026-04-15
+        pub-date: 2026-03-30
         categories: [Project, Week12]
       - href: project/Dataset-Topics.qmd
-        date: 2025-04-15
+        date: 2026-04-15
         categories: [Project, Week12]
       - href: project/pseudocode.qmd
-        date: 2025-04-22
+        date: 2026-04-22
         categories: [Project, Week12]
       - href: project/screencast-checklist.qmd
-        date: 2025-05-01
+        date: 2026-05-01
         categories: [Project, Week14]
       - path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/08-functional-prog.html
         title: Functional Programming and Lists
-        date: 2025-04-15
+        date: 2026-04-15
         categories: [reading]
       - href: homework/11-functional-prog.qmd
-        date: 2025-04-24
-        pub-date: 2025-04-17
+        date: 2026-04-24
+        pub-date: 2026-04-17
         categories: [HW, Week13]
       - href: slides/13b-functional.qmd
-        date: 2025-04-24
-        pub-date: 2025-04-24
+        date: 2026-04-24
+        pub-date: 2026-04-24
         categories: [slides, Week13]
       - href: project/screencast.qmd
-        date: 2025-05-01
+        date: 2026-05-01
 #      - path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/09-spatial-formats.html
 #        title: Spatial Data Formats
-#        date: 2025-04-29
+#        date: 2026-04-29
 #        categories: [reading]
       - href: slides/14a-spatial.qmd
-        date: 2025-04-29
-        pub-date: 2025-04-24
+        date: 2026-04-29
+        pub-date: 2026-04-24
         categories: [slides, Week13]
       - href: slides/15a-spatial.qmd
-        date: 2025-05-06
-        pub-date: 2025-05-02
+        date: 2026-05-06
+        pub-date: 2026-05-02
         categories: [slides, Week13]
       - path: https://r-spatial.org/r/2018/10/25/ggplot2-sf.html
         title: Drawing beautiful maps with R - Part 1 - Basics
-        pub-date: 2025-04-17
-        date: 2025-04-29
+        pub-date: 2026-04-17
+        date: 2026-04-29
         categories: [reading]
       - path: https://r-spatial.org/r/2018/10/25/ggplot2-sf-2.html
         title: Drawing beautiful maps with R - Part 2 - Layers
-        pub-date: 2025-04-17
-        date: 2025-04-29
+        pub-date: 2026-04-17
+        date: 2026-04-29
         categories: [reading]
       - path: https://r-spatial.org/r/2018/10/25/ggplot2-sf-3.html
         title: Drawing beautiful maps with R - Part 3 - Layouts
-        pub-date: 2025-04-17
-        date: 2025-04-29
+        pub-date: 2026-04-17
+        date: 2026-04-29
         categories: [reading]
       - path: https://rosenfelder.ai/create-maps-with-python/
         title: Create beautiful maps with Python
-        pub-date: 2025-04-17
-        date: 2025-04-29
+        pub-date: 2026-04-17
+        date: 2026-04-29
         categories: [reading]
       - href: homework/12-spatial.qmd
-        date: 2025-05-08
-        pub-date: 2025-04-17
+        date: 2026-05-08
+        pub-date: 2026-04-17
         categories: [HW, Week15]
       - href: homework/15-project-peer-review.qmd
-        date: 2025-05-15
-        pub-date: 2025-04-17
+        date: 2026-05-15
+        pub-date: 2026-04-17
         categories: [Project, Week15]
 
 
@@ -301,37 +301,37 @@ instructors:
     email: "hhofmann4@unl.edu"
     quartopub-name: hhofmann
 
-semester: "Spring, 2025"
+semester: "Spring 2026"
 calendar:
   - name: Week01
-    date: 2025-01-21
+    date: 2026-01-12
   - name: Week02
-    date: 2025-01-28
+    date: 2026-01-19
   - name: Week03
-    date: 2025-02-04
+    date: 2026-01-26
   - name: Week04
-    date: 2025-02-11
+    date: 2026-02-02
   - name: Week05
-    date: 2025-02-18
+    date: 2026-02-09
   - name: Week06
-    date: 2025-02-25
+    date: 2026-02-16
   - name: Week07
-    date: 2025-03-03
+    date: 2026-02-23
   - name: Week08
-    date: 2025-03-17
+    date: 2026-03-02
   - name: Week09
-    date: 2025-03-24
+    date: 2026-03-09
   - name: Week10
-    date: 2025-03-31
+    date: 2026-03-23
   - name: Week11
-    date: 2025-04-07
+    date: 2026-03-30
   - name: Week12
-    date: 2025-04-14
+    date: 2026-04-6
   - name: Week13
-    date: 2025-04-21
+    date: 2026-04-13
   - name: Week14
-    date: 2025-04-28
+    date: 2026-04-20
   - name: Week15
-    date: 2025-05-05
+    date: 2026-04-27
   - name: Finals
-    date: 2025-05-12
+    date: 2026-05-04

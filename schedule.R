@@ -14,22 +14,22 @@ class_wdays <- c("Tue", "Thu")
 
 # Spring Break was 13 March 2022 to 20 March 2022.
 not_here_dates <- c(
-  # ymd("20220117"),
+  ymd(20260119),
   # Spring Break
-  seq(ymd(20250316),ymd(20250322), by=1))
+  seq(ymd(20260316),ymd(20260320), by=1))
 
 exam_dates <- c(
-  ymd(20250313), # midterm
-  ymd(20250501), # screencast due
-  ymd(20250508), # peer review due
-  ymd(20250514)  # scheduled final
+  ymd(20260312), # midterm
+  ymd(20260423), # screencast due
+  ymd(20260430), # peer review due
+  ymd(20260505)  # scheduled final
 )
 
 # What are the full dates of the semester? Here, I'll exclude exam week as I like to do.
 # In this case: 6 January to 23 April
-semester_dates <- seq(ymd(20250121), ymd(20250517), by=1)
+semester_dates <- seq(ymd(20260112), ymd(20260503), by=1)
 
-exam_week <- seq(ymd(20250513), ymd(20250517), by = 1)
+exam_week <- seq(ymd(20260504), ymd(20260508), by = 1)
 
 # Custom function for treating the first day of the month as the first week
 # of the month up until the first Sunday (unless Sunday was the start of the month)
@@ -39,7 +39,7 @@ wom <- function(date) {
 }
 
 # Create a data frame of dates, assign to Cal
-Cal <- tibble(date = seq(ymd(20250101), ymd(20250531), by=1))  %>%
+Cal <- tibble(date = seq(ymd(20260101), ymd(20260531), by=1))  %>%
   mutate(mon = lubridate::month(date, label=T, abbr=F), # get month label
          wkdy = weekdays(date, abbreviate=T), # get weekday label
          wkdy = fct_relevel(wkdy, "Sun", "Mon", "Tue", "Wed", "Thu","Fri","Sat"), # make sure Sunday comes first
@@ -88,7 +88,7 @@ class_cal <- Cal %>%
                              "Semester"="white",
                              "UNL holiday" = "grey10",
                              "NA" = "white", # I like these whited out...
-                             "Finals Week" = "grey90",
+                             "Finals Week" = "grey50",
                              "Due Date"="orange"),
                     #... but also suppress a label for a non-class semester day
                     breaks=c("Semester", "UNL holiday", "Class Day","Due Date", "Finals Week"))

@@ -3,7 +3,7 @@ title: Regular Expressions
 author: Stat 251
 categories:
 - slides
-- Week09
+- Week10
 engine: knitr
 format:
   revealjs:
@@ -12,7 +12,7 @@ format:
     theme: inverse.scss
     includes:
       in_header: header.html
-date: '2025-03-27'
+date: '2026-03-27'
 ---
 
 ## Working with regular expressions

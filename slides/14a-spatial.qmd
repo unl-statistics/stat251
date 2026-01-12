@@ -1,11 +1,11 @@
 ---
 title: Lists and Functions
 author: Stat 251
-date: '2025-04-29'
+date: '2026-04-29'
 categories:
 - slides
 - Week13
-- Week14
+- Week15
 engine: knitr
 format:
   revealjs:

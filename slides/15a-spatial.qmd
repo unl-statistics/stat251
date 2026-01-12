@@ -1,11 +1,11 @@
 ---
 title: Maps and Data
 author: Stat 251
-date: '2025-05-06'
+date: '2026-05-06'
 categories:
 - slides
 - Week13
-- Week15
+- Finals
 engine: knitr
 format:
   revealjs:
