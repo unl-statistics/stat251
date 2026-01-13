@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Stat 251">
-<meta name="dcterms.date" content="2024-04-15">
+<meta name="dcterms.date" content="2026-04-15">
 
 <title>Screencast - edited script – Stat 251 - Data Wrangling</title>
 <style>
@@ -135,7 +135,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text">Textbook</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../syllabus.pdf"> 
+    <a class="nav-link" href="https://canvas.unl.edu/courses/214466/assignments/syllabus"> 
 <span class="menu-text">Syllabus</span></a>
   </li>  
 </ul>
@@ -193,7 +193,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">April 15, 2024</p>
+      <p class="date">April 15, 2026</p>
     </div>
   </div>
   
@@ -389,6 +389,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">y =</span> film, <span class="at">x =</span> Score, <span class="at">colour =</span> Critic)) <span class="sc">+</span> </span>
 <span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>           <span class="fu">geom_point</span>(<span class="at">size=</span><span class="dv">5</span>) <span class="sc">+</span> </span>
 <span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>() </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 11 rows containing missing values or values outside the scale range
+(`geom_point()`).</code></pre>
+</div>
 <div class="cell-output-display">
 <div id="fig-scores" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -403,7 +407,7 @@ Figure&nbsp;1: Scatterplot of Pixar movies (y-axis) by scores (x-axis) from thre
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>pixar_long <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Score <span class="sc">&gt;</span> <span class="dv">99</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>pixar_long <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Score <span class="sc">&gt;</span> <span class="dv">99</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 3 × 8
   number film        release_date run_time film_rating cinema_score Critic Score
@@ -412,18 +416,29 @@ Figure&nbsp;1: Scatterplot of Pixar movies (y-axis) by scores (x-axis) from thre
 2      3 Toy Story 2 1999-11-24         92 G           A+           rotte…   100
 3      3 Toy Story 2 1999-11-24         92 G           A+           criti…   100</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co"># wish: add names on the right</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co"># wish: add names on the right</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="thing-3-scores-over-time" class="level1">
 <h1>Thing 3: scores over time</h1>
 <p><a href="#fig-trend" class="quarto-xref">Figure&nbsp;2</a> shows pixar movie ratings over time. Since the first release of Toy Story, audiences and film reviewers have become more critical and ratings have generally declined. A logical next step would be to see whether the dip in ratings between 2011 and 2016 is associated with some producer or director at pixar.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>pixar_long <span class="sc">%&gt;%</span> <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> release_date, <span class="at">y =</span> Score, <span class="at">colour =</span> Critic)) <span class="sc">+</span> <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">5</span>) <span class="sc">+</span> </span>
-<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>  ggrepel<span class="sc">::</span><span class="fu">geom_label_repel</span>(<span class="fu">aes</span>(<span class="at">label =</span> film),  <span class="at">alpha =</span> <span class="fl">0.8</span>,</span>
-<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>      <span class="at">data =</span> pixar_long <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Critic<span class="sc">==</span><span class="st">"rotten_tomatoes"</span>, Score <span class="sc">&lt;</span> <span class="dv">85</span>)) <span class="sc">+</span></span>
-<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method=</span><span class="st">"lm"</span>, <span class="at">se=</span><span class="cn">FALSE</span>) <span class="sc">+</span> </span>
-<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>pixar_long <span class="sc">%&gt;%</span> <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> release_date, <span class="at">y =</span> Score, <span class="at">colour =</span> Critic)) <span class="sc">+</span> <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">5</span>) <span class="sc">+</span> </span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>  ggrepel<span class="sc">::</span><span class="fu">geom_label_repel</span>(<span class="fu">aes</span>(<span class="at">label =</span> film),  <span class="at">alpha =</span> <span class="fl">0.8</span>,</span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>      <span class="at">data =</span> pixar_long <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Critic<span class="sc">==</span><span class="st">"rotten_tomatoes"</span>, Score <span class="sc">&lt;</span> <span class="dv">85</span>)) <span class="sc">+</span></span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method=</span><span class="st">"lm"</span>, <span class="at">se=</span><span class="cn">FALSE</span>) <span class="sc">+</span> </span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>`geom_smooth()` using formula = 'y ~ x'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 11 rows containing non-finite outside the scale range
+(`stat_smooth()`).</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 11 rows containing missing values or values outside the scale range
+(`geom_point()`).</code></pre>
+</div>
 <div class="cell-output-display">
 <div id="fig-trend" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -443,8 +458,8 @@ Figure&nbsp;2: Scatterplot of scores (y-axis) by release date (x-axis). Each of 
 <p>The package <code>pixarfilms</code> has an additional dataset on people in different roles involved in each movie.</p>
 <p>We will load that information into the <code>pixar_long</code> form, and see whether there is some association with the dip in ratings</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(pixarfilms)</span>
-<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(pixar_people)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(pixarfilms)</span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(pixar_people)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 6 × 3
   film      role_type    name          
@@ -456,24 +471,28 @@ Figure&nbsp;2: Scatterplot of scores (y-axis) by release date (x-axis). Each of 
 5 Toy Story Screenwriter Joss Whedon   
 6 Toy Story Storywriter  Pete Docter   </code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>pixar_ratings <span class="ot">&lt;-</span> pixar_long <span class="sc">%&gt;%</span> <span class="fu">group_by</span>(number, film, release_date, run_time, film_rating, cinema_score) <span class="sc">%&gt;%</span> <span class="fu">summarize</span>(<span class="at">Avg_Score =</span> <span class="fu">mean</span>(Score, <span class="at">na.rm=</span><span class="cn">TRUE</span>))</span>
-<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>pixar_long_people <span class="ot">&lt;-</span> pixar_ratings <span class="sc">%&gt;%</span> <span class="fu">left_join</span>(pixar_people, <span class="at">by=</span><span class="st">"film"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>pixar_ratings <span class="ot">&lt;-</span> pixar_long <span class="sc">%&gt;%</span> <span class="fu">group_by</span>(number, film, release_date, run_time, film_rating, cinema_score) <span class="sc">%&gt;%</span> <span class="fu">summarize</span>(<span class="at">Avg_Score =</span> <span class="fu">mean</span>(Score, <span class="at">na.rm=</span><span class="cn">TRUE</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>`summarise()` has grouped output by 'number', 'film', 'release_date',
+'run_time', 'film_rating'. You can override using the `.groups` argument.</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>pixar_long_people <span class="ot">&lt;-</span> pixar_ratings <span class="sc">%&gt;%</span> <span class="fu">left_join</span>(pixar_people, <span class="at">by=</span><span class="st">"film"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>pixar_long_people <span class="sc">%&gt;%</span> </span>
-<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(release_date,role_type) <span class="sc">%&gt;%</span></span>
-<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">name =</span> forcats<span class="sc">::</span><span class="fu">fct_inorder</span>(name),</span>
-<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a>         <span class="at">bigger_role =</span> <span class="fu">case_when</span>(</span>
-<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a>           role_type <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"Screenwriter"</span>, <span class="st">"Storywriter"</span>) <span class="sc">~</span> <span class="st">"Writer"</span>,</span>
-<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a>           role_type <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"Director"</span>, <span class="st">"Co-director"</span>) <span class="sc">~</span> <span class="st">"Director"</span>,</span>
-<span id="cb29-7"><a href="#cb29-7" aria-hidden="true" tabindex="-1"></a>           <span class="at">.default =</span> <span class="fu">as.character</span>(role_type)</span>
-<span id="cb29-8"><a href="#cb29-8" aria-hidden="true" tabindex="-1"></a>        )) <span class="sc">%&gt;%</span></span>
-<span id="cb29-9"><a href="#cb29-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> release_date, <span class="at">y =</span> name)) <span class="sc">+</span> </span>
-<span id="cb29-10"><a href="#cb29-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_vline</span>(<span class="fu">aes</span>(<span class="at">xintercept=</span>release_date), <span class="at">colour =</span> <span class="st">"grey70"</span>, </span>
-<span id="cb29-11"><a href="#cb29-11" aria-hidden="true" tabindex="-1"></a>             <span class="at">data =</span> pixar_long_people <span class="sc">%&gt;%</span> <span class="fu">slice</span>(<span class="fu">grep</span>(<span class="st">"Cars"</span>, film))) <span class="sc">+</span> </span>
-<span id="cb29-12"><a href="#cb29-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">colour =</span> role_type), <span class="at">size=</span><span class="fl">3.5</span>, <span class="at">alpha =</span> <span class="fl">0.5</span>) <span class="sc">+</span> </span>
-<span id="cb29-13"><a href="#cb29-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_grid</span>(bigger_role<span class="sc">~</span>., <span class="at">scale=</span><span class="st">"free"</span>, <span class="at">space=</span><span class="st">"free"</span>) <span class="sc">+</span> </span>
-<span id="cb29-14"><a href="#cb29-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>() </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>pixar_long_people <span class="sc">%&gt;%</span> </span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(release_date,role_type) <span class="sc">%&gt;%</span></span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">name =</span> forcats<span class="sc">::</span><span class="fu">fct_inorder</span>(name),</span>
+<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a>         <span class="at">bigger_role =</span> <span class="fu">case_when</span>(</span>
+<span id="cb35-5"><a href="#cb35-5" aria-hidden="true" tabindex="-1"></a>           role_type <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"Screenwriter"</span>, <span class="st">"Storywriter"</span>) <span class="sc">~</span> <span class="st">"Writer"</span>,</span>
+<span id="cb35-6"><a href="#cb35-6" aria-hidden="true" tabindex="-1"></a>           role_type <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"Director"</span>, <span class="st">"Co-director"</span>) <span class="sc">~</span> <span class="st">"Director"</span>,</span>
+<span id="cb35-7"><a href="#cb35-7" aria-hidden="true" tabindex="-1"></a>           <span class="at">.default =</span> <span class="fu">as.character</span>(role_type)</span>
+<span id="cb35-8"><a href="#cb35-8" aria-hidden="true" tabindex="-1"></a>        )) <span class="sc">%&gt;%</span></span>
+<span id="cb35-9"><a href="#cb35-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> release_date, <span class="at">y =</span> name)) <span class="sc">+</span> </span>
+<span id="cb35-10"><a href="#cb35-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_vline</span>(<span class="fu">aes</span>(<span class="at">xintercept=</span>release_date), <span class="at">colour =</span> <span class="st">"grey70"</span>, </span>
+<span id="cb35-11"><a href="#cb35-11" aria-hidden="true" tabindex="-1"></a>             <span class="at">data =</span> pixar_long_people <span class="sc">%&gt;%</span> <span class="fu">slice</span>(<span class="fu">grep</span>(<span class="st">"Cars"</span>, film))) <span class="sc">+</span> </span>
+<span id="cb35-12"><a href="#cb35-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">colour =</span> role_type), <span class="at">size=</span><span class="fl">3.5</span>, <span class="at">alpha =</span> <span class="fl">0.5</span>) <span class="sc">+</span> </span>
+<span id="cb35-13"><a href="#cb35-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_grid</span>(bigger_role<span class="sc">~</span>., <span class="at">scale=</span><span class="st">"free"</span>, <span class="at">space=</span><span class="st">"free"</span>) <span class="sc">+</span> </span>
+<span id="cb35-14"><a href="#cb35-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>() </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div id="fig-people" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">

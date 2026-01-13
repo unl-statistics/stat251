@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-1.7.32">
 
   <meta name="author" content="Stat 251">
-  <meta name="dcterms.date" content="2025-04-24">
+  <meta name="dcterms.date" content="2026-04-24">
   <title>Stat 251 - Data Wrangling – Functioning Cats and Dogs</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -204,7 +204,7 @@ Stat 251
 </div>
 </div>
 
-  <p class="date">2025-04-24</p>
+  <p class="date">2026-04-24</p>
 </section>
 <section id="logistics" class="slide level2">
 <h2>Logistics</h2>
@@ -287,9 +287,10 @@ Stat 251
 </section>
 <section id="json-format-to-data-frames" class="slide level2">
 <h2>JSON format to data frames</h2>
-<p>in R from <code>purrr</code> package:</p>
-<pre><code>list_transpose
-list_rbind</code></pre>
+<p>in R:</p>
+<pre><code>jsonlite::read_json
+purrr::list_transpose
+tibble::as_tibble</code></pre>
 <p>in python:</p>
 <pre><code>read_json # make sure to set typ to 'series' 
 json_normalize # flattens a list to a data frame</code></pre>

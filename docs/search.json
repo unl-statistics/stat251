@@ -44,49 +44,49 @@
   {
     "objectID": "slides/14a-spatial.html#logistics",
     "href": "slides/14a-spatial.html#logistics",
-    "title": "Maps in Data",
+    "title": "Lists and Functions",
     "section": "Logistics",
     "text": "Logistics"
   },
   {
     "objectID": "slides/14a-spatial.html#feedback",
     "href": "slides/14a-spatial.html#feedback",
-    "title": "Maps in Data",
+    "title": "Lists and Functions",
     "section": "Feedback",
     "text": "Feedback\n\nGraded: homework 11 (functions - really: lists)\nToday: last edits for scripts\nThursday: submit your screencast\nadding timestamps as chapters\nno required attendance in class on Thursday (May 1)"
   },
   {
     "objectID": "slides/14a-spatial.html#script",
     "href": "slides/14a-spatial.html#script",
-    "title": "Maps in Data",
+    "title": "Lists and Functions",
     "section": "Script",
     "text": "Script\nFor each of the Things you defined, write out at least three paragraphs:\nMake sure to:\n\ninclude definitions (i.e. how do you measure strength)\ngive context (i.e. which variables are used)\ntie ‘things’ in with the topics in the class"
   },
   {
     "objectID": "slides/14a-spatial.html#functions-and-list",
     "href": "slides/14a-spatial.html#functions-and-list",
-    "title": "Maps in Data",
+    "title": "Lists and Functions",
     "section": "Functions and List",
-    "text": "Functions and List\nare the extension of vector calculus\n\n(x &lt;- sample(1:10, 15, replace = TRUE))\n\n [1]  8  8  5  5  6  2  4  5  7  6  1 10 10  4  2\n\n(y &lt;- sample(1:10, 15, replace = TRUE))\n\n [1]  8  6  8  2 10  9  7  9  7  2  2  4  2  1  1\n\n\nAdd the first element in x to the first element in y:\n\nx[1] + y[1]\n\n[1] 16\n\n\nNow do that for all elements in x and y:\n\nx + y\n\n [1] 16 14 13  7 16 11 11 14 14  8  3 14 12  5  3\n\n\n\n1:length(x) |&gt; lapply(FUN = function(i) x[i] + y[i]) |&gt; unlist()\n\n [1] 16 14 13  7 16 11 11 14 14  8  3 14 12  5  3\n\n\n\nsum_xy = map(lambda i: r.x[i]+r.y[i], range(1,len(r.x)))\nlist(sum_xy)\n\n[14, 13, 7, 16, 11, 11, 14, 14, 8, 3, 14, 12, 5, 3]"
+    "text": "Functions and List\nare the extension of vector calculus\n\n(x &lt;- sample(1:10, 15, replace = TRUE))\n\n [1]  8  8  5  5  6  2  4  5  7  6  1 10 10  4  2\n\n(y &lt;- sample(1:10, 15, replace = TRUE))\n\n [1]  8  6  8  2 10  9  7  9  7  2  2  4  2  1  1\n\n\nAdd the first element in x to the first element in y: ::: {.cell}\nx[1] + y[1]\n\n[1] 16\n\n:::\nNow do that for all elements in x and y:\n\nx + y\n\n [1] 16 14 13  7 16 11 11 14 14  8  3 14 12  5  3\n\n\n\n1:length(x) |&gt; lapply(FUN = function(i) x[i] + y[i]) |&gt; unlist()\n\n [1] 16 14 13  7 16 11 11 14 14  8  3 14 12  5  3\n\n\n\nsum_xy = map(lambda i: r.x[i]+r.y[i], range(1,len(r.x)))\nlist(sum_xy)\n\n[14, 13, 7, 16, 11, 11, 14, 14, 8, 3, 14, 12, 5, 3]"
   },
   {
     "objectID": "slides/14a-spatial.html#your-turn-graphs-of-functions",
     "href": "slides/14a-spatial.html#your-turn-graphs-of-functions",
-    "title": "Maps in Data",
+    "title": "Lists and Functions",
     "section": "Your Turn: Graphs of functions",
     "text": "Your Turn: Graphs of functions\nPlot the graph of the function for \\(\\alpha = \\beta = 1/2\\) on the interval [0,1]:\n\\[\nf(x) = \\frac{1}{B(\\alpha, \\beta)} x^{\\alpha -1} (1 - x)^{\\beta - 1}\n\\] \\(B(\\alpha, \\beta)\\) is the beta function - a generalization of the (inverse) binomial coefficient. Implemented as beta(a, b) in R, in python use math.gamma and the relationship to the Gamma function \\(\\Gamma\\):\n\\[\nB(a, b) = \\frac{\\Gamma(a)\\Gamma(b)}{\\Gamma(a + b)}\n\\]"
   },
   {
     "objectID": "slides/14a-spatial.html#your-turn-multiple-graphs",
     "href": "slides/14a-spatial.html#your-turn-multiple-graphs",
-    "title": "Maps in Data",
+    "title": "Lists and Functions",
     "section": "Your Turn: Multiple Graphs",
     "text": "Your Turn: Multiple Graphs\nNow make \\(\\alpha\\) a vector alpha and plot graphs for values of \\(\\alpha \\in \\{ 0.5, 0.6, ..., 1.2\\}\\)\n… can you vectorize \\(\\beta\\) similarly?"
   },
   {
     "objectID": "slides/14a-spatial.html#homework-12",
     "href": "slides/14a-spatial.html#homework-12",
-    "title": "Maps in Data",
+    "title": "Lists and Functions",
     "section": "Homework 12",
     "text": "Homework 12"
   },
@@ -296,21 +296,21 @@
   {
     "objectID": "slides/09b-strings.html#working-with-regular-expressions",
     "href": "slides/09b-strings.html#working-with-regular-expressions",
-    "title": "Working with Strings",
+    "title": "Regular Expressions",
     "section": "Working with regular expressions",
     "text": "Working with regular expressions\nstr_view in stringr package (in R) shows all matches:\n\nstringr::str_view(\"&gt; Poem for a Friend. \", pattern = \"\\\\W\")\n\n[1] │ &lt;&gt;&gt;&lt; &gt;Poem&lt; &gt;for&lt; &gt;a&lt; &gt;Friend&lt;.&gt;&lt; &gt;\n\nstringr::str_view(\"&gt; Poem for a Friend. \", pattern = \"\\\\b\")\n\n[1] │ &gt; &lt;&gt;Poem&lt;&gt; &lt;&gt;for&lt;&gt; &lt;&gt;a&lt;&gt; &lt;&gt;Friend&lt;&gt;. \n\n\nstr_count counts all matches in R:\n\nstringr::str_count(\"&gt; Poem for a Friend. \", pattern = \"\\\\b\")/2\n\n[1] 4\n\n\nfind_all and len count all matches in python:\n\nimport re\nres = re.findall(\"\\\\b\", \"&gt; Poem for a Friend. \")\nlen(res)/2\n\n4.0"
   },
   {
     "objectID": "slides/09b-strings.html#idea-for-exploration",
     "href": "slides/09b-strings.html#idea-for-exploration",
-    "title": "Working with Strings",
+    "title": "Regular Expressions",
     "section": "Idea for Exploration",
     "text": "Idea for Exploration\nRun summary statistics for second poet. Then compare."
   },
   {
     "objectID": "slides/09b-strings.html#homework-8",
     "href": "slides/09b-strings.html#homework-8",
-    "title": "Working with Strings",
+    "title": "Regular Expressions",
     "section": "Homework 8",
     "text": "Homework 8\nPivoting with dogs :)"
   },
@@ -361,7 +361,7 @@
     "href": "slides/01-Syllabus-and-Introductions.html#my-introduction",
     "title": "Introduction",
     "section": "My Introduction",
-    "text": "My Introduction\n\nHeike Hofmann\nProfessor in Statistics\nAt UNL since August, I was at ISU for 20 years\nfirst computer language was Pascal :)\nR user since 1996, Python user (? I have learned it four times by now)"
+    "text": "My Introduction\n\nHeike Hofmann\nProfessor in Statistics\nAt UNL since August 2024, I was at ISU for 20 years\nfirst computer language was Pascal :)\nR user since 1996, Python user (? I have learned it four times by now)"
   },
   {
     "objectID": "slides/01-Syllabus-and-Introductions.html#on-poptarts-and-ravioli",
@@ -515,7 +515,7 @@
     "href": "homework/06-data-manip.html",
     "title": "Homework 6: Data Manipulation",
     "section": "",
-    "text": "Note: This assignment must be submitted in github classroom.\ncp ../homework-repos/06-data-manip/gapminder_data.csv .\nco2_sum &lt;- data.frame() # This is here to be a blank data frame so that the \n                        # lines below work before you've filled your code in.\nThe Gapminder project’s mission is to fight devastating ignorance with a fact-based worldview everyone can understand. To do this, they assemble reliable data about a variety of global variables to help educate the general public.\nI have collected data from Gapminder about several variables:\nUse the data manipulation tools you’ve learned about to answer each of the following questions, which I’ve grouped into several general topics. Some questions may specify a specific language to use; if no language is specified, you may choose whether to use R or python to answer the question."
+    "text": "Note: This assignment must be submitted in github classroom.\ncp ../homework-repos/06-data-manip/gapminder_data.csv .\nThe Gapminder project’s mission is to fight devastating ignorance with a fact-based worldview everyone can understand. To do this, they assemble reliable data about a variety of global variables to help educate the general public.\nI have collected data from Gapminder about several variables:\nUse the data manipulation tools you’ve learned about to answer each of the following questions, which I’ve grouped into several general topics. Some questions may specify a specific language to use; if no language is specified, you may choose whether to use R or python to answer the question."
   },
   {
     "objectID": "homework/06-data-manip.html#read-in-the-data",
@@ -529,7 +529,7 @@
     "href": "homework/06-data-manip.html#data-exploration",
     "title": "Homework 6: Data Manipulation",
     "section": "Data Exploration",
-    "text": "Data Exploration\n\nMissingness\nGapminder puts a lot of effort into curating certain variables; other variables are less frequently used (or are harder to assemble from reliable sources).\n\nCO2\nCreate a table of all countries with at least 30 observations CO2. Your table should be called co2_sum and should have columns country and n_obs. Do not print out the table; instead, if you have done everything correctly, when your document is compiled the correct number of countries will be filled in in the sentence below the code chunk.\n\nThere are 0 countries with at least 30 years of CO2 data.\n\n\nEnergy\nAnswer in Python\n\n\nIncome\n\n\nGDP\n\nrm ./gapminder_data.csv"
+    "text": "Data Exploration\n\nMissingness\nGapminder puts a lot of effort into curating certain variables; other variables are less frequently used (or are harder to assemble from reliable sources).\n\nCO2\nCreate a table of all countries with at least 30 observations of the CO2 variable. Your table should be called co2_sum and should have columns country and n_obs. Do not print out the table; instead, if you have done everything correctly, when your document is compiled the correct number of countries will be filled in in the sentence below the code chunk.\n\n\nco2_sum &lt;- data.frame() # This is a blank data frame so that the lines below \n                        # work before you've filled your code in.\n                        # You can write your code below this line, or remove \n                        # these lines, whichever you prefer.\n\nThere are 0 countries with at least 30 years of CO2 data. On average, countries have NA years of data.\n\n\nEnergy\nFor each country with defined energy data for at least 10 years, summarize the data by computing the following:\n\nyear of minimum energy consumption per capita\nyear of maximum energy consumption per capita\naverage rate of energy consumption change from min to max.\nA rough estimate might be something like (max consumption - min consumption)/(max year - min year). This may not include the most recent data; that is ok.\n\nYour summary data frame, energy_sum should have one row for each country, with columns yearmin, yearmax, and avgincrease.\nAnswer in Python\n\n\nIncome\nLocate the country which has had the biggest growth in income between 1980 and 2019. Create a simple line graph or scatter plot showing the income in this country (and only this country) over time.\n\n\nGDP\nLocate the country which had the biggest decrease (or smallest increase, if there are no decreases) in GDP between 1990 and 2022. Include only countries with at least 5 years of reported data between 1990 and 2022. Create a simple line graph or scatter plot showing the GDP in this country for all years which this information is provided.\n\nrm ./gapminder_data.csv"
   },
   {
     "objectID": "homework/04-cookies.html",
@@ -655,14 +655,14 @@
     "href": "homework/03-cipher.html#part-one-setup",
     "title": "decodeR: Base R",
     "section": "Part One: Setup",
-    "text": "Part One: Setup\nEach of the following R chunks will cause an error and/or do the desired task incorrectly. Find the mistake, and correct it to complete the intended action. For each error, write 1-2 sentences to reflect on what the mistake was and how you found it and fixed it.\n\nCreate vectors containing the upper case letters, lower case letters, and some punctuation marks.\n\n\nlower_case &lt;- c(\"a\", \"b\", \"c\", \"d\", \"e\", \"f\", \"g\", \"h\", \"i\", \"j\", \"k\", \"l\", \"m\", \"n\", \"o\", \"p\", \"q\", \"r\", \"s\", \"t\", \"u\", \"v\", \"w\", \"x\", \"y\", \"z\")\n\nupper_case &lt;- c(\"A\", \"B\", \"C\", \"D\", \"E\", \"F\", \"G\", \"H\" \"I\", \"J\", \"K\", \"L\", \"M\", \"N\", \"O\", \"P\", \"Q\", \"R\", \"S\", \"T\", \"U\", \"V\", \"W\", \"X\", \"Y\", \"Z\")\n\npunctuation &lt;- c(\".\", \",\", \"!\", \"?\", \"'\", \"\"\", \"(\", \")\", \" \", \"-\", \";\", \":\")\n\n\nMake one long vector containing all the symbols.\n\n\nmy_symbols &lt;- cbind(lower_case, upper_case, punctuation)\n\n\nTurn the my_symbols vector into a data frame, with the variable name “Symbol”\n\n\nmy_symbols &lt;- dataframe(my_symbols)\nnames(my_symbols) = Symbol\n\n\nFind the total number of symbols we have in our data frame.\n\n\nlen &lt;- length(my_symbols)\n\n\nCreate a new variable in your dataframe that assigns a number to each symbol.\n\n\nmy_symbols%Num &lt;- 1:len"
+    "text": "Part One: Setup\nEach of the following R chunks will cause an error and/or do the desired task incorrectly. Find the mistake, and correct it to complete the intended action. For each error, write 1-2 sentences to reflect on what the mistake was and how you found it and fixed it.\n\nCreate vectors containing the upper case letters, lower case letters, and some punctuation marks.\n\n\nlower_case &lt;- c(\"a\", \"b\", \"c\", \"d\", \"e\", \"f\", \"g\", \"h\", \"i\", \"j\", \"k\", \"l\", \"m\", \"n\", \"o\", \"p\", \"q\", \"r\", \"s\", \"t\", \"u\", \"v\", \"w\", \"x\", \"y\", \"z\")\n\nupper_case &lt;- c(\"A\", \"B\", \"C\", \"D\", \"E\", \"F\", \"G\", \"H\" \"I\", \"J\", \"K\", \"L\", \"M\", \"N\", \"O\", \"P\", \"Q\", \"R\", \"S\", \"T\", \"U\", \"V\", \"W\", \"X\", \"Y\", \"Z\")\n\npunctuation &lt;- c(\".\", \",\", \"!\", \"?\", \"'\", \"\"\", \"(\", \")\", \" \", \"-\", \";\", \":\")\n\nError in parse(text = input): &lt;text&gt;:3:56: unexpected string constant\n2: \n3: upper_case &lt;- c(\"A\", \"B\", \"C\", \"D\", \"E\", \"F\", \"G\", \"H\" \"I\"\n                                                          ^\n\n\n\nMake one long vector containing all the symbols.\n\n\nmy_symbols &lt;- cbind(lower_case, upper_case, punctuation)\n\nError:\n! object 'lower_case' not found\n\n\n\nTurn the my_symbols vector into a data frame, with the variable name “Symbol”\n\n\nmy_symbols &lt;- dataframe(my_symbols)\n\nError in `dataframe()`:\n! could not find function \"dataframe\"\n\nnames(my_symbols) = Symbol\n\nError:\n! object 'Symbol' not found\n\n\n\nFind the total number of symbols we have in our data frame.\n\n\nlen &lt;- length(my_symbols)\n\nError:\n! object 'my_symbols' not found\n\n\n\nCreate a new variable in your dataframe that assigns a number to each symbol.\n\n\nmy_symbols%Num &lt;- 1:len\n\nError in parse(text = input): &lt;text&gt;:1:11: unexpected input\n1: my_symbols%Num &lt;- 1:len\n              ^"
   },
   {
     "objectID": "homework/03-cipher.html#part-two-decoding-the-secret-message.",
     "href": "homework/03-cipher.html#part-two-decoding-the-secret-message.",
     "title": "decodeR: Base R",
     "section": "Part Two: Decoding the secret message.",
-    "text": "Part Two: Decoding the secret message.\nThis chunk will load up the encoded secret message as a vector:\n\ntop_secret &lt;- read.csv(\"Secret_Code\", header = FALSE)$V1\n\nBy altering this top secret set of numbers, you will be able to create a message. Write your own code to complete the steps below.\n\nAdd 14 to every number.\nMultiply every number by 18, then subtract 257.\nExponentiate every number. (That is, do e^[number].)\nSquare every number.\n\nCheckpoint: Headquarters has informed you that at this stage of decoding, there should be 352 numbers in the secret message that are below 17.\n\nTurn your vector of numbers into a matrix with 5 columns.\nSeparately from your top secret numbers, create a vector of all the even numbers between 1 and 382. Name it “evens”. That is, “evens” should contain 2, 4, 6, 8 …, 382.\nSubtract the “evens” vector from the first column of your secret message matrix.\nSubtract 100 from all numbers in the 18-24th rows of the 3rd column.\nMultiply all numbers in the 4th and 5th column by 2.\nTurn your matrix back into a vector.\n\nCheckpoint: Headquarters has informed you that at this stage of decoding, all numbers in indices 500 and beyond are below 100.\n\nTake the square root of all numbers in indices 38 to 465.\nRound all numbers to the nearest whole number.\nReplace all instances of the number 39 with 20.\n\nCheckpoint: Headquarters has informed you that your final message should have 344 even numbers."
+    "text": "Part Two: Decoding the secret message.\nThis chunk will load up the encoded secret message as a vector:\n\ntop_secret &lt;- read.csv(\"Secret_Code\", header = FALSE)\n\nBy altering this top secret set of numbers, you will be able to create a message. Write your own code to complete the steps below.\n\nAdd 14 to every number.\nMultiply every number by 18, then subtract 257.\nExponentiate every number. (That is, do e^[number].)\nSquare every number.\n\nCheckpoint: Headquarters has informed you that at this stage of decoding, there should be 53 numbers in the secret message that are below 17.\n\nTurn your vector of numbers into a matrix with 5 columns.\nSeparately from your top secret numbers, create a vector of all the even numbers between 1 and 150. Name it “evens”. That is, “evens” should contain 2, 4, 6, 8 …, 150.\nSubtract the “evens” vector from the first column of your secret message matrix.\nSubtract 100 from all numbers in the 12-24th rows of the 3rd column.\nMultiply all numbers in the 4th and 5th column by 2.\nTurn your matrix back into a vector.\nRound all of the numbers in your vector to the nearest integer.\n\nCheckpoint: Headquarters has informed you that at this stage of decoding, there are 93 numbers which are evenly divisible by 5.\n\nTake the square root of all numbers in indices 38 to 365\nRound all numbers to the nearest whole number.\nReplace all instances of the number 39 with 20.\n\nCheckpoint: Headquarters has informed you that your final message should have 122 even numbers."
   },
   {
     "objectID": "homework/03-cipher.html#part-3-the-secret-message",
@@ -758,30 +758,30 @@
   {
     "objectID": "homework/09-join.html",
     "href": "homework/09-join.html",
-    "title": "Homework 8: Joins and Summaries",
+    "title": "Homework 9: Murder in SQL City",
     "section": "",
-    "text": "Note: This assignment must be submitted in github classroom.\nThis week, you’ll be using table joins to solve a murder mystery."
+    "text": "Note: This assignment must be submitted in github classroom."
+  },
+  {
+    "objectID": "homework/09-join.html#instructions",
+    "href": "homework/09-join.html#instructions",
+    "title": "Homework 9: Murder in SQL City",
+    "section": "Instructions",
+    "text": "Instructions\nNorthwestern University’s Knight lab created a SQL murder mystery to help users sharpen their database skills by solving the crime that happened at SQL city. There are tables with different pieces of information - social media checkins, people, drivers licenses, crime scene reports, police interviews, and more.\nPick R or Python, and solve the murder mystery, showing all of your work in this document.\nYour solution must be reproducible – that is, you should use dplyr verbs, table joins, etc. to solve the mystery, rather than just looking through the tables yourselves.\nYou may work in groups of 2-4 people on this assignment. Each person should turn in their own assignment, but should list their group members as authors.\nMake sure you do your due diligence! You should double check your answer and print out the guilty party’s interview from the database.\nFor 5 bonus points, when you’re finished in one language, write equivalent code in the other language to solve the problem.\nWhen you are finished with the assignment:\n\nOnce you have finished this assignment, render the document (Ctrl/Cmd-Shift-K or the Render button).\nCommit the qmd file and any other files you have changed to the repository and push your changes.\nIn Canvas, submit a link to your github repository containing the updated files.\nProvide the name of the guilty party in the text input field on Canvas, and make sure all of your work is on GitHub to receive full credit.\n\nThe chunks below use the code to read in each of the 8 tables of data for this assignment.\nHints:\n\nYou can use a lot of filter statements, but it will in many cases be easier to use joins.\nSee if you can write code that doesn’t require you to type out knowledge gained from a previous clue (e.g. pipe your results from one query into the next)\n\n\nA crime has taken place and the detective needs your help. The detective gave you the crime scene report, but you somehow lost it. You vaguely remember that the crime was a murder that occurred sometime on January 15, 2018 and that it took place in SQL City. All the clues to this mystery are buried in a huge database, and you need to use R and SAS to navigate through this network of information. Your first step to solving the mystery is to retrieve the corresponding crime scene report from the police department’s database.\nThis database schema may help you figure out how to navigate the database:\n\n\n\nsql-murder-mystery database schema diagram"
   },
   {
     "objectID": "homework/09-join.html#r",
     "href": "homework/09-join.html#r",
-    "title": "Homework 8: Joins and Summaries",
+    "title": "Homework 9: Murder in SQL City",
     "section": "R",
-    "text": "R\n\n# you can do the assignment using the database, if you want, \n# or you can use the code below to read in each table separately.\nlibrary(RSQLite)\nlibrary(DBI)\n# Your database connection code goes here. Store the connection as con \ncon &lt;- dbConnect(RSQLite::SQLite(), \"sql-murder-mystery.db\")\n# close the connection when you're done\ndbDisconnect(con)\n\n\n# This loads all of the tables into R data frame objects. \n# You can also just use the database connection above.\n# You don't need to understand what this code does to run it :)\nif (!\"purrr\" %in% installed.packages()) {\n  install.packages(\"purrr\")\n}\n# Load all tables from CSV\ntable_names &lt;- c(\"crime_scene_report\", \n                 \"drivers_license\", \n                 \"facebook_event_checkin\",\n                 \"get_fit_now_check_in\", \n                 \"get_fit_now_member\", \n                 \"income\", \n                 \"interview\",\n                 \"person\")\nurl_base &lt;- \"https://raw.githubusercontent.com/srvanderplas/datasets/main/raw/sql-murder/\"\n# For each table name, read the tables in and store them as the name of the table\npurrr::walk(table_names, function(x) {\n  assign(x, readr::read_csv(paste0(url_base, x, \".csv\")), envir = .GlobalEnv)\n})"
+    "text": "R\n\nlibrary(RSQLite)\nlibrary(DBI)\n\n# Your database connection code goes here. Store the connection as con \ncon &lt;- dbConnect(RSQLite::SQLite(), \"sql-murder-mystery.db\")\n\ntable_names &lt;- c(\"crime_scene_report\", \n                 \"drivers_license\", \n                 \"facebook_event_checkin\",\n                 \"get_fit_now_check_in\", \n                 \"get_fit_now_member\", \n                 \"income\", \n                 \"interview\",\n                 \"person\")\n\n# For each table name, read the tables in and store them as the name of the table\npurrr::walk(table_names, function(x) {\n  assign(x, dbReadTable(con, x), envir = .GlobalEnv)\n})\n\n# close the connection when you're done\ndbDisconnect(con)"
   },
   {
     "objectID": "homework/09-join.html#python",
     "href": "homework/09-join.html#python",
-    "title": "Homework 8: Joins and Summaries",
+    "title": "Homework 9: Murder in SQL City",
     "section": "Python",
-    "text": "Python\n\nimport pandas as pd\nimport sqlite3\n# Read sqlite query results into a pandas DataFrame\ncon = sqlite3.connect(\"sql-murder-mystery.db\")\ncrime_scene_report = pd.read_sql_query(\"SELECT * from crime_scene_report\", con)\ndrivers_license = pd.read_sql_query(\"SELECT * from drivers_license\", con)\nfacebook_event_checkin = pd.read_sql_query(\"SELECT * from facebook_event_checkin\", con)\nget_fit_now_check_in = pd.read_sql_query(\"SELECT * from get_fit_now_check_in\", con)\nget_fit_now_member = pd.read_sql_query(\"SELECT * from get_fit_now_member\", con)\nincome = pd.read_sql_query(\"SELECT * from income\", con)\ninterview = pd.read_sql_query(\"SELECT * from interview\", con)\nperson = pd.read_sql_query(\"SELECT * from person\", con)\n# Verify that result of SQL query is stored in the dataframe\nprint(crime_scene_report.head())\ncon.close()"
-  },
-  {
-    "objectID": "homework/09-join.html#getting-started",
-    "href": "homework/09-join.html#getting-started",
-    "title": "Homework 8: Joins and Summaries",
-    "section": "Getting Started",
-    "text": "Getting Started\nTo get you started, I’ll set you up in the right place.\n\nA crime has taken place and the detective needs your help. The detective gave you the crime scene report, but you somehow lost it. You vaguely remember that the crime was a murder that occurred sometime on Jan.15, 2018 and that it took place in SQL City. Start by retrieving the corresponding crime scene report from the police department’s database.\n\n\nlibrary(dplyr)\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union\n\nlibrary(tidyr)\n\ncrime_of_interest &lt;- crime_scene_report %&gt;%\n  filter(date == \"20180115\", city == \"SQL City\", type == \"murder\")\ncrime_of_interest$description\n\n[1] \"Security footage shows that there were 2 witnesses. The first witness lives at the last house on \\\"Northwestern Dr\\\". The second witness, named Annabel, lives somewhere on \\\"Franklin Ave\\\".\""
+    "text": "Python\n\nimport pandas as pd\nimport sqlite3\n\n# Read sqlite query results into a pandas DataFrame\ncon = sqlite3.connect(\"sql-murder-mystery.db\")\n\ncrime_scene_report = pd.read_sql_query(\"SELECT * from crime_scene_report\", con)\ndrivers_license = pd.read_sql_query(\"SELECT * from drivers_license\", con)\nfacebook_event_checkin = pd.read_sql_query(\"SELECT * from facebook_event_checkin\", con)\nget_fit_now_check_in = pd.read_sql_query(\"SELECT * from get_fit_now_check_in\", con)\nget_fit_now_member = pd.read_sql_query(\"SELECT * from get_fit_now_member\", con)\nincome = pd.read_sql_query(\"SELECT * from income\", con)\ninterview = pd.read_sql_query(\"SELECT * from interview\", con)\nperson = pd.read_sql_query(\"SELECT * from person\", con)\n\n# Verify that result of SQL query is stored in the dataframe\nprint(crime_scene_report.head())\n\n       date  ...      city\n0  20180115  ...       NYC\n1  20180115  ...    Albany\n2  20180115  ...      Reno\n3  20180215  ...  SQL City\n4  20180215  ...  SQL City\n\n[5 rows x 4 columns]\n\n\ncon.close()"
   },
   {
     "objectID": "homework/11-functional-prog.html",
@@ -868,13 +868,6 @@
     "text": "Last Class\n\nWorked on Homework #2\nIdentified several useful functions and packages:\n\npackages/libraries\n\nin R: stringr, stringi\nin python: re\n\nfunctions\n\nin R: tolower, stri_reverse, stri_sub_all\nin python: .lower(), [::-1], re.sub\n\n\nIf you made at least one submission to github, you have some points for homework #2 in Canvas"
   },
   {
-    "objectID": "slides/09a-strings.html#working-with-regular-expressions",
-    "href": "slides/09a-strings.html#working-with-regular-expressions",
-    "title": "Working with Strings",
-    "section": "Working with regular expressions",
-    "text": "Working with regular expressions\nstr_view in stringr package (in R) shows all matches:\n\nstringr::str_view(\"&gt; Poem for a Friend. \", pattern = \"\\\\W\")\n\n[1] │ &lt;&gt;&gt;&lt; &gt;Poem&lt; &gt;for&lt; &gt;a&lt; &gt;Friend&lt;.&gt;&lt; &gt;\n\nstringr::str_view(\"&gt; Poem for a Friend. \", pattern = \"\\\\b\")\n\n[1] │ &gt; &lt;&gt;Poem&lt;&gt; &lt;&gt;for&lt;&gt; &lt;&gt;a&lt;&gt; &lt;&gt;Friend&lt;&gt;. \n\n\nstr_count counts all matches in R:\n\nstringr::str_count(\"&gt; Poem for a Friend. \", pattern = \"\\\\b\")/2\n\n[1] 4\n\n\nfind_all and len count all matches in python:\n\nimport re\nres = re.findall(\"\\\\b\", \"&gt; Poem for a Friend. \")\nlen(res)/2\n\n4.0"
-  },
-  {
     "objectID": "slides/09a-strings.html#logistics",
     "href": "slides/09a-strings.html#logistics",
     "title": "Working with Strings",
@@ -905,35 +898,35 @@
   {
     "objectID": "slides/10-projects.html#project-overview",
     "href": "slides/10-projects.html#project-overview",
-    "title": "Projects",
+    "title": "Project Overview",
     "section": "Project Overview",
     "text": "Project Overview\n\n\n\nCreate a TidyTuesday style screencast\nExamples: https://www.rscreencasts.com/\nAnalyze a TidyTuesday dataset from the last year using R or Python\nApproximately 45 minutes long\nShow at least 4 different techniques you learned in Stat 251 this semester\n\n\n\n\nGH link"
   },
   {
     "objectID": "slides/10-projects.html#part-1---planning",
     "href": "slides/10-projects.html#part-1---planning",
-    "title": "Projects",
+    "title": "Project Overview",
     "section": "Part 1 - Planning",
     "text": "Part 1 - Planning\nWork: In class, April 15 (Tuesday)\nDue: April 15, 11:59pm\nTell me:\n\nWhat dataset you’re using\nWhat you’re going to investigate\nWhat Stat 251 topics you’re going to cover"
   },
   {
     "objectID": "slides/10-projects.html#part-2---script-outline",
     "href": "slides/10-projects.html#part-2---script-outline",
-    "title": "Projects",
+    "title": "Project Overview",
     "section": "Part 2 - Script Outline",
     "text": "Part 2 - Script Outline\nWork: In class, April 22 (Tuesday)\nDue: April 22, 11:59pm\n\nProvide a (rough) script for your screen cast\n\nExplain how the techniques work\nDiscuss any challenges you had analyzing this data\nInclude the mistakes you made along the way!\n\nInclude pseudocode/actual code for each topic\n\nDoes not have to actually work at this point"
   },
   {
     "objectID": "slides/10-projects.html#part-3---recording",
     "href": "slides/10-projects.html#part-3---recording",
-    "title": "Projects",
+    "title": "Project Overview",
     "section": "Part 3 - Recording",
     "text": "Part 3 - Recording\nWork: On your own\nDue: May 1, 11:59pm (Thursday)\n\nScreencast uploaded to YouTube or YuJa\nApproximate time index provided for each technique you demonstrate (on GitHub)\nFinal code file uploaded to github repository"
   },
   {
     "objectID": "slides/10-projects.html#part-4---peer-review",
     "href": "slides/10-projects.html#part-4---peer-review",
-    "title": "Projects",
+    "title": "Project Overview",
     "section": "Part 4 - Peer Review",
     "text": "Part 4 - Peer Review\n\nIn place of the final exam:\n\nWatch 2 screencasts\nPeer evaluations - leave a comment on Canvas\nBased on rubric (provided)\n\nTake place between May 1 and Thursday of Finals week"
   },
@@ -1026,7 +1019,7 @@
     "href": "slides/13b-functional.html#json-format-to-data-frames",
     "title": "Functioning Cats and Dogs",
     "section": "JSON format to data frames",
-    "text": "JSON format to data frames\nin R from purrr package:\nlist_transpose\nlist_rbind\nin python:\nread_json # make sure to set typ to 'series' \njson_normalize # flattens a list to a data frame"
+    "text": "JSON format to data frames\nin R:\njsonlite::read_json\npurrr::list_transpose\ntibble::as_tibble\nin python:\nread_json # make sure to set typ to 'series' \njson_normalize # flattens a list to a data frame"
   },
   {
     "objectID": "slides/15a-spatial.html#logistics",

@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Your Name">
-<meta name="dcterms.date" content="2024-04-08">
+<meta name="author" content="Firstname Lastname">
+<meta name="dcterms.date" content="2026-04-10">
 
-<title>Homework 8: Joins and Summaries – Stat 251 - Data Wrangling</title>
+<title>Homework 9: Murder in SQL City – Stat 251 - Data Wrangling</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -135,7 +135,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text">Textbook</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../syllabus.pdf"> 
+    <a class="nav-link" href="https://canvas.unl.edu/courses/214466/assignments/syllabus"> 
 <span class="menu-text">Syllabus</span></a>
   </li>  
 </ul>
@@ -155,13 +155,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#instructions" id="toc-instructions" class="nav-link active" data-scroll-target="#instructions">Instructions</a></li>
-  <li><a href="#setup" id="toc-setup" class="nav-link" data-scroll-target="#setup">Setup</a>
-  <ul class="collapse">
   <li><a href="#r" id="toc-r" class="nav-link" data-scroll-target="#r">R</a></li>
   <li><a href="#python" id="toc-python" class="nav-link" data-scroll-target="#python">Python</a></li>
-  <li><a href="#getting-started" id="toc-getting-started" class="nav-link" data-scroll-target="#getting-started">Getting Started</a></li>
-  </ul></li>
-  <li><a href="#solution" id="toc-solution" class="nav-link" data-scroll-target="#solution">Solution</a></li>
   </ul>
 </nav>
     </div>
@@ -170,9 +165,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Homework 8: Joins and Summaries</h1>
+<h1 class="title">Homework 9: Murder in SQL City</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">hw</div>
+    <div class="quarto-category">HW</div>
+    <div class="quarto-category">Week10</div>
+    <div class="quarto-category">Week12</div>
   </div>
   </div>
 
@@ -190,7 +187,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">April 8, 2024</p>
+      <p class="date">April 10, 2026</p>
     </div>
   </div>
   
@@ -203,120 +200,97 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <p>Note: This assignment must be submitted in github classroom.</p>
-<p>This week, you’ll be using table joins to solve a murder mystery.</p>
-<section id="instructions" class="level1">
-<h1>Instructions</h1>
+<section id="instructions" class="level2">
+<h2 class="anchored" data-anchor-id="instructions">Instructions</h2>
 <p>Northwestern University’s Knight lab created a SQL murder mystery to help users sharpen their database skills by solving the crime that happened at SQL city. There are tables with different pieces of information - social media checkins, people, drivers licenses, crime scene reports, police interviews, and more.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://mystery.knightlab.com/schema.png" class="img-fluid figure-img"></p>
-<figcaption>Database schema</figcaption>
-</figure>
-</div>
-<p>Pick R or python, and solve the murder mystery, showing <strong>all of your work in this document</strong>.</p>
-<p>Your solution must be <strong>reproducible</strong> – that is, you should use dplyr verbs, table joins, etc. to solve the mystery, rather than just looking through the tables yourselves. Your code must execute properly and stand alone.</p>
+<p>Pick R or Python, and solve the murder mystery, showing <strong>all of your work in this document</strong>.</p>
+<p>Your solution must be reproducible – that is, you should use dplyr verbs, table joins, etc. to solve the mystery, rather than just looking through the tables yourselves.</p>
+<p>You may work in groups of 2-4 people on this assignment. Each person should turn in their own assignment, but should list their group members as authors.</p>
+<p>Make sure you do your due diligence! You should double check your answer and print out the guilty party’s interview from the database.</p>
 <p><strong>For 5 bonus points, when you’re finished in one language, write equivalent code in the other language to solve the problem.</strong></p>
 <p>When you are finished with the assignment:</p>
-<ol type="1">
-<li>Save the file as <code>index.qmd</code> and compile it, making sure all of your code runs.</li>
-<li>If applicable, enter the name of the guilty party on Canvas to submit the homework assignment.</li>
-</ol>
-<p>Note that you should be able to do this entire mystery with only about 3 filter statements (including the one below to get you started).</p>
-<p>Try to focus on using <strong>filtering joins</strong> instead of filter statements where possible in this assignment.</p>
+<ul>
+<li>Once you have finished this assignment, render the document (Ctrl/Cmd-Shift-K or the Render button).</li>
+<li>Commit the qmd file and any other files you have changed to the repository and push your changes.</li>
+<li>In Canvas, submit a link to your github repository containing the updated files.</li>
+<li>Provide the name of the guilty party in the text input field on Canvas, and make sure all of your work is on GitHub to receive full credit.</li>
+</ul>
+<p>The chunks below use the code to read in each of the 8 tables of data for this assignment.</p>
+<p>Hints:</p>
+<ul>
+<li>You can use a lot of filter statements, but it will in many cases be easier to use joins.</li>
+<li>See if you can write code that doesn’t require you to type out knowledge gained from a previous clue (e.g.&nbsp;pipe your results from one query into the next)</li>
+</ul>
+<hr>
+<p>A crime has taken place and the detective needs your help. The detective gave you the crime scene report, but you somehow lost it. You vaguely remember that the crime was a murder that occurred sometime on January 15, 2018 and that it took place in SQL City. All the clues to this mystery are buried in a huge database, and you need to use R and SAS to navigate through this network of information. Your first step to solving the mystery is to retrieve the corresponding crime scene report from the police department’s database.</p>
+<p>This database schema may help you figure out how to navigate the database:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://github.com/NUKnightLab/sql-mysteries/blob/master/schema.png?raw=true" class="img-fluid figure-img"></p>
+<figcaption>sql-murder-mystery database schema diagram</figcaption>
+</figure>
+</div>
 </section>
-<section id="setup" class="level1">
-<h1>Setup</h1>
 <section id="r" class="level2">
 <h2 class="anchored" data-anchor-id="r">R</h2>
-<div class="cell" data-hash="09-join_cache/html/db-setup-r_6aa60133f5a841ce96bea07cb4e438fd">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># you can do the assignment using the database, if you want, </span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># or you can use the code below to read in each table separately.</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(RSQLite)</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(DBI)</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Your database connection code goes here. Store the connection as con </span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>con <span class="ot">&lt;-</span> <span class="fu">dbConnect</span>(RSQLite<span class="sc">::</span><span class="fu">SQLite</span>(), <span class="st">"sql-murder-mystery.db"</span>)</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co"># close the connection when you're done</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">dbDisconnect</span>(con)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="cell" data-hash="09-join_cache/html/table-setup-r_bc5b4b4b0503713f6d7da49406f973d0">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># This loads all of the tables into R data frame objects. </span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co"># You can also just use the database connection above.</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co"># You don't need to understand what this code does to run it :)</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="st">"purrr"</span> <span class="sc">%in%</span> <span class="fu">installed.packages</span>()) {</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">install.packages</span>(<span class="st">"purrr"</span>)</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Load all tables from CSV</span></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>table_names <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"crime_scene_report"</span>, </span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>                 <span class="st">"drivers_license"</span>, </span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>                 <span class="st">"facebook_event_checkin"</span>,</span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>                 <span class="st">"get_fit_now_check_in"</span>, </span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>                 <span class="st">"get_fit_now_member"</span>, </span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>                 <span class="st">"income"</span>, </span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>                 <span class="st">"interview"</span>,</span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>                 <span class="st">"person"</span>)</span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>url_base <span class="ot">&lt;-</span> <span class="st">"https://raw.githubusercontent.com/srvanderplas/datasets/main/raw/sql-murder/"</span></span>
-<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="co"># For each table name, read the tables in and store them as the name of the table</span></span>
-<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>purrr<span class="sc">::</span><span class="fu">walk</span>(table_names, <span class="cf">function</span>(x) {</span>
-<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">assign</span>(x, readr<span class="sc">::</span><span class="fu">read_csv</span>(<span class="fu">paste0</span>(url_base, x, <span class="st">".csv"</span>)), <span class="at">envir =</span> .GlobalEnv)</span>
-<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(RSQLite)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(DBI)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Your database connection code goes here. Store the connection as con </span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>con <span class="ot">&lt;-</span> <span class="fu">dbConnect</span>(RSQLite<span class="sc">::</span><span class="fu">SQLite</span>(), <span class="st">"sql-murder-mystery.db"</span>)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>table_names <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"crime_scene_report"</span>, </span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>                 <span class="st">"drivers_license"</span>, </span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>                 <span class="st">"facebook_event_checkin"</span>,</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>                 <span class="st">"get_fit_now_check_in"</span>, </span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>                 <span class="st">"get_fit_now_member"</span>, </span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>                 <span class="st">"income"</span>, </span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>                 <span class="st">"interview"</span>,</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>                 <span class="st">"person"</span>)</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="co"># For each table name, read the tables in and store them as the name of the table</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>purrr<span class="sc">::</span><span class="fu">walk</span>(table_names, <span class="cf">function</span>(x) {</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">assign</span>(x, <span class="fu">dbReadTable</span>(con, x), <span class="at">envir =</span> .GlobalEnv)</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>})</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="co"># close the connection when you're done</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="fu">dbDisconnect</span>(con)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="python" class="level2">
 <h2 class="anchored" data-anchor-id="python">Python</h2>
-<div class="cell" data-hash="09-join_cache/html/table-setup-py_1cf166632ff380c6377fed3af4729e0c">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sqlite3</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Read sqlite query results into a pandas DataFrame</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>con <span class="op">=</span> sqlite3.<span class="ex">connect</span>(<span class="st">"sql-murder-mystery.db"</span>)</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>crime_scene_report <span class="op">=</span> pd.read_sql_query(<span class="st">"SELECT * from crime_scene_report"</span>, con)</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>drivers_license <span class="op">=</span> pd.read_sql_query(<span class="st">"SELECT * from drivers_license"</span>, con)</span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>facebook_event_checkin <span class="op">=</span> pd.read_sql_query(<span class="st">"SELECT * from facebook_event_checkin"</span>, con)</span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>get_fit_now_check_in <span class="op">=</span> pd.read_sql_query(<span class="st">"SELECT * from get_fit_now_check_in"</span>, con)</span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>get_fit_now_member <span class="op">=</span> pd.read_sql_query(<span class="st">"SELECT * from get_fit_now_member"</span>, con)</span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>income <span class="op">=</span> pd.read_sql_query(<span class="st">"SELECT * from income"</span>, con)</span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>interview <span class="op">=</span> pd.read_sql_query(<span class="st">"SELECT * from interview"</span>, con)</span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>person <span class="op">=</span> pd.read_sql_query(<span class="st">"SELECT * from person"</span>, con)</span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Verify that result of SQL query is stored in the dataframe</span></span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(crime_scene_report.head())</span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>con.close()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section>
-<section id="getting-started" class="level2">
-<h2 class="anchored" data-anchor-id="getting-started">Getting Started</h2>
-<p>To get you started, I’ll set you up in the right place.</p>
-<blockquote class="blockquote">
-<p>A crime has taken place and the detective needs your help. The detective gave you the crime scene report, but you somehow lost it. You vaguely remember that the crime was a <em>murder</em> that occurred sometime on <em>Jan.15, 2018</em> and that it took place in <em>SQL City</em>. Start by retrieving the corresponding crime scene report from the police department’s database.</p>
-</blockquote>
-<div class="cell" data-hash="09-join_cache/html/unnamed-chunk-2_a3624ba1b3a070638292d56eab7697a8">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>
-Attaching package: 'dplyr'</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>The following objects are masked from 'package:stats':
-
-    filter, lag</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>The following objects are masked from 'package:base':
-
-    intersect, setdiff, setequal, union</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyr)</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>crime_of_interest <span class="ot">&lt;-</span> crime_scene_report <span class="sc">%&gt;%</span></span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(date <span class="sc">==</span> <span class="st">"20180115"</span>, city <span class="sc">==</span> <span class="st">"SQL City"</span>, type <span class="sc">==</span> <span class="st">"murder"</span>)</span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>crime_of_interest<span class="sc">$</span>description</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sqlite3</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Read sqlite query results into a pandas DataFrame</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>con <span class="op">=</span> sqlite3.<span class="ex">connect</span>(<span class="st">"sql-murder-mystery.db"</span>)</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>crime_scene_report <span class="op">=</span> pd.read_sql_query(<span class="st">"SELECT * from crime_scene_report"</span>, con)</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>drivers_license <span class="op">=</span> pd.read_sql_query(<span class="st">"SELECT * from drivers_license"</span>, con)</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>facebook_event_checkin <span class="op">=</span> pd.read_sql_query(<span class="st">"SELECT * from facebook_event_checkin"</span>, con)</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>get_fit_now_check_in <span class="op">=</span> pd.read_sql_query(<span class="st">"SELECT * from get_fit_now_check_in"</span>, con)</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>get_fit_now_member <span class="op">=</span> pd.read_sql_query(<span class="st">"SELECT * from get_fit_now_member"</span>, con)</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>income <span class="op">=</span> pd.read_sql_query(<span class="st">"SELECT * from income"</span>, con)</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>interview <span class="op">=</span> pd.read_sql_query(<span class="st">"SELECT * from interview"</span>, con)</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>person <span class="op">=</span> pd.read_sql_query(<span class="st">"SELECT * from person"</span>, con)</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Verify that result of SQL query is stored in the dataframe</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(crime_scene_report.head())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] "Security footage shows that there were 2 witnesses. The first witness lives at the last house on \"Northwestern Dr\". The second witness, named Annabel, lives somewhere on \"Franklin Ave\"."</code></pre>
+<pre><code>       date  ...      city
+0  20180115  ...       NYC
+1  20180115  ...    Albany
+2  20180115  ...      Reno
+3  20180215  ...  SQL City
+4  20180215  ...  SQL City
+
+[5 rows x 4 columns]</code></pre>
 </div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>con.close()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</section>
-</section>
-<section id="solution" class="level1">
-<h1>Solution</h1>
-<p>Document each productive step of your investigation here.</p>
 
 
 </section>

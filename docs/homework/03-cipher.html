@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Homework">
-<meta name="dcterms.date" content="2024-02-12">
+<meta name="dcterms.date" content="2026-02-05">
 
 <title>decodeR: Base R – Stat 251 - Data Wrangling</title>
 <style>
@@ -135,7 +135,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text">Textbook</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../syllabus.pdf"> 
+    <a class="nav-link" href="https://canvas.unl.edu/courses/214466/assignments/syllabus"> 
 <span class="menu-text">Syllabus</span></a>
   </li>  
 </ul>
@@ -187,7 +187,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">February 12, 2024</p>
+      <p class="date">February 5, 2026</p>
     </div>
   </div>
   
@@ -214,44 +214,71 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ol type="1">
 <li>Create vectors containing the upper case letters, lower case letters, and some punctuation marks.</li>
 </ol>
-<div class="cell" data-hash="03-cipher_cache/html/unnamed-chunk-2_aa6114b18bbd12fbdde7b1842ac8f4f7">
+<div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>lower_case <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"a"</span>, <span class="st">"b"</span>, <span class="st">"c"</span>, <span class="st">"d"</span>, <span class="st">"e"</span>, <span class="st">"f"</span>, <span class="st">"g"</span>, <span class="st">"h"</span>, <span class="st">"i"</span>, <span class="st">"j"</span>, <span class="st">"k"</span>, <span class="st">"l"</span>, <span class="st">"m"</span>, <span class="st">"n"</span>, <span class="st">"o"</span>, <span class="st">"p"</span>, <span class="st">"q"</span>, <span class="st">"r"</span>, <span class="st">"s"</span>, <span class="st">"t"</span>, <span class="st">"u"</span>, <span class="st">"v"</span>, <span class="st">"w"</span>, <span class="st">"x"</span>, <span class="st">"y"</span>, <span class="st">"z"</span>)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>upper_case <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"A"</span>, <span class="st">"B"</span>, <span class="st">"C"</span>, <span class="st">"D"</span>, <span class="st">"E"</span>, <span class="st">"F"</span>, <span class="st">"G"</span>, <span class="st">"H"</span> <span class="st">"I"</span>, <span class="st">"J"</span>, <span class="st">"K"</span>, <span class="st">"L"</span>, <span class="st">"M"</span>, <span class="st">"N"</span>, <span class="st">"O"</span>, <span class="st">"P"</span>, <span class="st">"Q"</span>, <span class="st">"R"</span>, <span class="st">"S"</span>, <span class="st">"T"</span>, <span class="st">"U"</span>, <span class="st">"V"</span>, <span class="st">"W"</span>, <span class="st">"X"</span>, <span class="st">"Y"</span>, <span class="st">"Z"</span>)</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>punctuation <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"."</span>, <span class="st">","</span>, <span class="st">"!"</span>, <span class="st">"?"</span>, <span class="st">"'"</span>, <span class="st">""", "</span>(<span class="st">", "</span>)<span class="st">", "</span> <span class="st">", "</span><span class="sc">-</span><span class="st">", "</span>;<span class="st">", "</span><span class="sc">:</span><span class="st">")</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-error">
+<pre><code>Error in parse(text = input): &lt;text&gt;:3:56: unexpected string constant
+2: 
+3: upper_case &lt;- c("A", "B", "C", "D", "E", "F", "G", "H" "I"
+                                                          ^</code></pre>
+</div>
 </div>
 <ol start="2" type="1">
 <li>Make one long vector containing all the symbols.</li>
 </ol>
-<div class="cell" data-hash="03-cipher_cache/html/unnamed-chunk-3_3b12fe5c094c511e39f59db4075e2bd5">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>my_symbols <span class="ot">&lt;-</span> <span class="fu">cbind</span>(lower_case, upper_case, punctuation)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>my_symbols <span class="ot">&lt;-</span> <span class="fu">cbind</span>(lower_case, upper_case, punctuation)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-error">
+<pre><code>Error:
+! object 'lower_case' not found</code></pre>
+</div>
 </div>
 <ol start="3" type="1">
 <li>Turn the <code>my_symbols</code> vector into a data frame, with the variable name “Symbol”</li>
 </ol>
-<div class="cell" data-hash="03-cipher_cache/html/unnamed-chunk-4_65a82ad6d4881081dd052a2b520cfa40">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>my_symbols <span class="ot">&lt;-</span> <span class="fu">dataframe</span>(my_symbols)</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(my_symbols) <span class="ot">=</span> Symbol</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>my_symbols <span class="ot">&lt;-</span> <span class="fu">dataframe</span>(my_symbols)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-error">
+<pre><code>Error in `dataframe()`:
+! could not find function "dataframe"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(my_symbols) <span class="ot">=</span> Symbol</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-error">
+<pre><code>Error:
+! object 'Symbol' not found</code></pre>
+</div>
 </div>
 <ol start="4" type="1">
 <li>Find the total number of symbols we have in our data frame.</li>
 </ol>
-<div class="cell" data-hash="03-cipher_cache/html/unnamed-chunk-5_8386cf390a99fe5136fd2e078b7813c1">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>len <span class="ot">&lt;-</span> <span class="fu">length</span>(my_symbols)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>len <span class="ot">&lt;-</span> <span class="fu">length</span>(my_symbols)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-error">
+<pre><code>Error:
+! object 'my_symbols' not found</code></pre>
+</div>
 </div>
 <ol start="5" type="1">
 <li>Create a new variable in your dataframe that assigns a number to each symbol.</li>
 </ol>
-<div class="cell" data-hash="03-cipher_cache/html/unnamed-chunk-6_ed16df7a9960a422e029a84fc70193e8">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>my_symbols%Num <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span>len</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>my_symbols%Num <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span>len</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-error">
+<pre><code>Error in parse(text = input): &lt;text&gt;:1:11: unexpected input
+1: my_symbols%Num &lt;- 1:len
+              ^</code></pre>
+</div>
 </div>
 </section>
 <section id="part-two-decoding-the-secret-message." class="level2">
 <h2 class="anchored" data-anchor-id="part-two-decoding-the-secret-message.">Part Two: Decoding the secret message.</h2>
 <p>This chunk will load up the encoded secret message as a vector:</p>
-<div class="cell" data-hash="03-cipher_cache/html/unnamed-chunk-7_3f268d91f7f305952a065103030e9aaf">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>top_secret <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"Secret_Code"</span>, <span class="at">header =</span> <span class="cn">FALSE</span>)<span class="sc">$</span>V1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>top_secret <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"Secret_Code"</span>, <span class="at">header =</span> <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>By altering this top secret set of numbers, you will be able to create a message. Write your own code to complete the steps below.</p>
 <ol type="1">
@@ -260,22 +287,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Exponentiate every number. (That is, do e^[number].)</li>
 <li>Square every number.</li>
 </ol>
-<p><strong>Checkpoint:</strong> Headquarters has informed you that at this stage of decoding, there should be 352 numbers in the secret message that are below 17.</p>
+<p><strong>Checkpoint:</strong> Headquarters has informed you that at this stage of decoding, there should be 53 numbers in the secret message that are below 17.</p>
 <ol start="5" type="1">
 <li>Turn your vector of numbers into a matrix with 5 columns.</li>
-<li>Separately from your top secret numbers, create a vector of all the even numbers between 1 and 382. Name it “evens”. That is, “evens” should contain 2, 4, 6, 8 …, 382.</li>
+<li>Separately from your top secret numbers, create a vector of all the even numbers between 1 and 150. Name it “evens”. That is, “evens” should contain 2, 4, 6, 8 …, 150.</li>
 <li>Subtract the “evens” vector from the first column of your secret message matrix.</li>
-<li>Subtract 100 from all numbers in the 18-24th rows of the 3rd column.</li>
+<li>Subtract 100 from all numbers in the 12-24th rows of the 3rd column.</li>
 <li>Multiply all numbers in the 4th and 5th column by 2.</li>
 <li>Turn your matrix back into a vector.</li>
+<li>Round all of the numbers in your vector to the nearest integer.</li>
 </ol>
-<p><strong>Checkpoint:</strong> Headquarters has informed you that at this stage of decoding, all numbers in indices 500 and beyond are below 100.</p>
-<ol start="11" type="1">
-<li>Take the square root of all numbers in indices 38 to 465.</li>
+<p><strong>Checkpoint:</strong> Headquarters has informed you that at this stage of decoding, there are 93 numbers which are evenly divisible by 5.</p>
+<ol start="12" type="1">
+<li>Take the square root of all numbers in indices 38 to 365</li>
 <li>Round all numbers to the nearest whole number.</li>
 <li>Replace all instances of the number 39 with 20.</li>
 </ol>
-<p><strong>Checkpoint:</strong> Headquarters has informed you that your final message should have 344 even numbers.</p>
+<p><strong>Checkpoint:</strong> Headquarters has informed you that your final message should have 122 even numbers.</p>
 </section>
 <section id="part-3-the-secret-message" class="level2">
 <h2 class="anchored" data-anchor-id="part-3-the-secret-message">Part 3: The secret message!</h2>

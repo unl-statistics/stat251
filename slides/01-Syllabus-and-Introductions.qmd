@@ -33,7 +33,7 @@ type: slides
 
 - Professor in Statistics 
 
-- At UNL since August, I was at ISU for 20 years
+- At UNL since August 2024, I was at ISU for 20 years
 
 - first computer language was Pascal :) 
 

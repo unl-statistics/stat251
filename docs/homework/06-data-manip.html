@@ -135,7 +135,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text">Textbook</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../syllabus.pdf"> 
+    <a class="nav-link" href="https://canvas.unl.edu/courses/214466/assignments/syllabus"> 
 <span class="menu-text">Syllabus</span></a>
   </li>  
 </ul>
@@ -202,12 +202,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <p>Note: This assignment must be submitted in github classroom.</p>
-<div class="cell" data-hash="06-data-manip_cache/html/unnamed-chunk-1_f6cd3493e7170a6959102689f2e1036e">
+<div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cp</span> ../homework-repos/06-data-manip/gapminder_data.csv .</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="cell" data-hash="06-data-manip_cache/html/unnamed-chunk-2_911c1a7404b2f0c68df45b3740b3a177">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>co2_sum <span class="ot">&lt;-</span> <span class="fu">data.frame</span>() <span class="co"># This is here to be a blank data frame so that the </span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>                        <span class="co"># lines below work before you've filled your code in.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>The Gapminder project’s mission is to fight devastating ignorance with a fact-based worldview everyone can understand. To do this, they assemble reliable data about a variety of global variables to help educate the general public.</p>
 <p>I have collected data from Gapminder about several variables:</p>
@@ -230,20 +226,36 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Gapminder puts a lot of effort into curating certain variables; other variables are less frequently used (or are harder to assemble from reliable sources).</p>
 <section id="co2" class="level4">
 <h4 class="anchored" data-anchor-id="co2">CO2</h4>
-<p>Create a table of all countries with at least 30 observations CO2. Your table should be called <code>co2_sum</code> and should have columns <code>country</code> and <code>n_obs</code>. Do not print out the table; instead, if you have done everything correctly, when your document is compiled the correct number of countries will be filled in in the sentence below the code chunk.</p>
+<p>Create a table of all countries with at least 30 observations of the CO2 variable. Your table should be called <code>co2_sum</code> and should have columns <code>country</code> and <code>n_obs</code>. Do not print out the table; instead, if you have done everything correctly, when your document is compiled the correct number of countries will be filled in in the sentence below the code chunk.</p>
 <!-- Use R -->
-<p>There are 0 countries with at least 30 years of CO2 data.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>co2_sum <span class="ot">&lt;-</span> <span class="fu">data.frame</span>() <span class="co"># This is a blank data frame so that the lines below </span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>                        <span class="co"># work before you've filled your code in.</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>                        <span class="co"># You can write your code below this line, or remove </span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>                        <span class="co"># these lines, whichever you prefer.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>There are 0 countries with at least 30 years of CO2 data. On average, countries have NA years of data.</p>
 </section>
 <section id="energy" class="level4">
 <h4 class="anchored" data-anchor-id="energy">Energy</h4>
+<p>For each country with defined energy data for at least 10 years, summarize the data by computing the following:</p>
+<ul>
+<li>year of minimum energy consumption per capita</li>
+<li>year of maximum energy consumption per capita</li>
+<li>average rate of energy consumption change from min to max.<br>
+A rough estimate might be something like (max consumption - min consumption)/(max year - min year). This may not include the most recent data; that is ok.</li>
+</ul>
+<p>Your summary data frame, <code>energy_sum</code> should have one row for each country, with columns <code>yearmin</code>, <code>yearmax</code>, and <code>avgincrease</code>.</p>
 <p>Answer in Python</p>
 </section>
 <section id="income" class="level4">
 <h4 class="anchored" data-anchor-id="income">Income</h4>
+<p>Locate the country which has had the biggest growth in income between 1980 and 2019. Create a simple line graph or scatter plot showing the income in this country (and only this country) over time.</p>
 </section>
 <section id="gdp" class="level4">
 <h4 class="anchored" data-anchor-id="gdp">GDP</h4>
-<div class="cell" data-hash="06-data-manip_cache/html/unnamed-chunk-7_4ab8a824836e2d0856abdf92f334dbb6">
+<p>Locate the country which had the biggest decrease (or smallest increase, if there are no decreases) in GDP between 1990 and 2022. Include only countries with at least 5 years of reported data between 1990 and 2022. Create a simple line graph or scatter plot showing the GDP in this country for all years which this information is provided.</p>
+<div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span> ./gapminder_data.csv</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 
