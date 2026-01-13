@@ -151,6 +151,21 @@ Project | 20%
 
 Approximately Weekly Homework -- started in class
 
+## Midterm
+
+- Homework-like problem
+- Open book, open notes
+- Take-home exam, tentatively aimed for the week before Spring Break
+
+## Project (ACE 10)
+
+- Individual project 
+
+- Make a screencast of data exploration using methods from class
+
+- Multiple stages - second half of the semester
+
+
 ## Academic Integrity Policy {.r-fit-text}
 
 - You may (should!) work with each other on homework assignments
