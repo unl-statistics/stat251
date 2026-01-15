@@ -7,6 +7,12 @@ categories:
 - slides
 - Week01
 engine: knitr
+format:
+  revealjs:
+    navigation-mode: vertical
+    logo: N.svg
+    includes:
+      in_header: header.html
 type: slides
 ---
 
@@ -25,6 +31,18 @@ git config --global user.name 'YOUR NAME HERE'
 git config --global user.email 'YOUR EMAIL HERE'
 git config --global --list # check to see it worked
 ```
+
+
+
+
+Alternatively, in R run:
+
+```{r echo=TRUE, eval=FALSE}
+usethis::use_git_config(user.name = 'YOUR NAME HERE', 
+                        user.email = 'YOUR EMAIL HERE')
+usethis::git_sitrep() # check what R knows about git
+```
+
 
 ## Connect Git and R
 
