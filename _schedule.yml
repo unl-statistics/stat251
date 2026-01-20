@@ -33,6 +33,7 @@ schedule:
         categories: [HW, Week01]
         date: 2026-01-22
         pub-date: 2026-01-01
+
       - path: https://srvanderplas.github.io/stat-computing-r-python/part-gen-prog/00-gen-prog.html
         title: Review - Programming
         date: 2026-01-27
@@ -41,13 +42,13 @@ schedule:
       - href: slides/02a-review-topics.qmd
         categories: [slides]
         type: slides
-        date: 2026-01-27
-        pub-date: 2026-01-27
+        date: 2026-01-20
+        pub-date: 2026-01-20
       - href: slides/02b-review-topics.qmd
         categories: [slides]
         type: slides
-        date: 2026-01-29
-        pub-date: 2026-01-29
+        date: 2026-01-22
+        pub-date: 2026-01-20
       - href: homework/02-review.qmd
         categories: [HW, Week02]
         date: 2026-01-29

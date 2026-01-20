@@ -8,6 +8,8 @@ listing:
   - homework/02-review.qmd
   - slides/01-Syllabus-and-Introductions.qmd
   - slides/02-version-control.qmd
+  - slides/02a-review-topics.qmd
+  - slides/02b-review-topics.qmd
   - syllabus.qmd
   - reading.yml
   sort: date desc
