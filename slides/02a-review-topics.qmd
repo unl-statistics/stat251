@@ -4,7 +4,7 @@ subtitle: Working Environment and Programming Logic
 author: Stat 251
 categories:
 - slides
-- Week03
+- Week02
 engine: knitr
 format:
   revealjs:
@@ -13,7 +13,7 @@ format:
     theme: inverse.scss
     includes:
       in_header: header.html
-date: '2026-01-27'
+date: '2026-01-20'
 type: slides
 ---
 
@@ -52,11 +52,6 @@ Know how to:
 
 ![](fig/programming-why.gif){.absolute bottom="50%" right="10px" width="30%"}
 
-## Self-assessment
-
-It's sometimes hard to know what you know and what you don't know
-
-Self-assessment in Canvas: due by Feb 6
 
 ## Homework 2
 
@@ -64,7 +59,7 @@ Self-assessment in Canvas: due by Feb 6
 - Work with pencil and paper first
 
 ```{=html}
-<iframe width="100%" height = "600px" src="https://unl-statistics/stat251/homework/02-review.html"></iframe>
+<iframe width="100%" height = "600px" src="../homework-repos/02-review-r-python/index.html"></iframe>
 ```
 
 
