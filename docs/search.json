@@ -122,8 +122,8 @@
     "objectID": "slides/11a-join.html#logistics",
     "href": "slides/11a-join.html#logistics",
     "title": "Join up, Detectives!",
-    "section": "Logistics",
-    "text": "Logistics\n\nFocus on homework 9: Murder in SQL City"
+    "section": "",
+    "text": "Focus on homework 9: Murder in SQL City"
   },
   {
     "objectID": "slides/11a-join.html#homework-9",
@@ -206,8 +206,8 @@
     "objectID": "slides/10a-reshape.html#logistics",
     "href": "slides/10a-reshape.html#logistics",
     "title": "Reshaping Dogs",
-    "section": "Logistics",
-    "text": "Logistics\n\nReading quiz 9 due\nFocus on homework 8 on Tuesday, start working on homework 9 on Thursday\nStart thinking about the project"
+    "section": "",
+    "text": "Reading quiz 9 due\nFocus on homework 8 on Tuesday, start working on homework 9 on Thursday\nStart thinking about the project"
   },
   {
     "objectID": "slides/10a-reshape.html#reshaping",
@@ -297,8 +297,8 @@
     "objectID": "slides/09b-strings.html#working-with-regular-expressions",
     "href": "slides/09b-strings.html#working-with-regular-expressions",
     "title": "Regular Expressions",
-    "section": "Working with regular expressions",
-    "text": "Working with regular expressions\nstr_view in stringr package (in R) shows all matches:\n\nstringr::str_view(\"&gt; Poem for a Friend. \", pattern = \"\\\\W\")\n\n[1] │ &lt;&gt;&gt;&lt; &gt;Poem&lt; &gt;for&lt; &gt;a&lt; &gt;Friend&lt;.&gt;&lt; &gt;\n\nstringr::str_view(\"&gt; Poem for a Friend. \", pattern = \"\\\\b\")\n\n[1] │ &gt; &lt;&gt;Poem&lt;&gt; &lt;&gt;for&lt;&gt; &lt;&gt;a&lt;&gt; &lt;&gt;Friend&lt;&gt;. \n\n\nstr_count counts all matches in R:\n\nstringr::str_count(\"&gt; Poem for a Friend. \", pattern = \"\\\\b\")/2\n\n[1] 4\n\n\nfind_all and len count all matches in python:\n\nimport re\nres = re.findall(\"\\\\b\", \"&gt; Poem for a Friend. \")\nlen(res)/2\n\n4.0"
+    "section": "",
+    "text": "str_view in stringr package (in R) shows all matches:\n\nstringr::str_view(\"&gt; Poem for a Friend. \", pattern = \"\\\\W\")\n\n[1] │ &lt;&gt;&gt;&lt; &gt;Poem&lt; &gt;for&lt; &gt;a&lt; &gt;Friend&lt;.&gt;&lt; &gt;\n\nstringr::str_view(\"&gt; Poem for a Friend. \", pattern = \"\\\\b\")\n\n[1] │ &gt; &lt;&gt;Poem&lt;&gt; &lt;&gt;for&lt;&gt; &lt;&gt;a&lt;&gt; &lt;&gt;Friend&lt;&gt;. \n\n\nstr_count counts all matches in R:\n\nstringr::str_count(\"&gt; Poem for a Friend. \", pattern = \"\\\\b\")/2\n\n[1] 4\n\n\nfind_all and len count all matches in python:\n\nimport re\nres = re.findall(\"\\\\b\", \"&gt; Poem for a Friend. \")\nlen(res)/2\n\n4.0"
   },
   {
     "objectID": "slides/09b-strings.html#idea-for-exploration",
@@ -346,22 +346,22 @@
     "objectID": "slides/01-Syllabus-and-Introductions.html#introduce-yourself",
     "href": "slides/01-Syllabus-and-Introductions.html#introduce-yourself",
     "title": "Introduction",
-    "section": "Introduce yourself!",
-    "text": "Introduce yourself!\n\nName / Year / Major\nWhat do you hope to learn in this class?\nPrevious computing experience?\nIs a poptart a ravioli? Why or why not?"
+    "section": "",
+    "text": "Name / Year / Major\nWhat do you hope to learn in this class?\nPrevious computing experience?\nIs a poptart a ravioli? Why or why not?"
   },
   {
     "objectID": "slides/01-Syllabus-and-Introductions.html#my-introduction",
     "href": "slides/01-Syllabus-and-Introductions.html#my-introduction",
     "title": "Introduction",
-    "section": "My Introduction",
-    "text": "My Introduction\n\nHeike Hofmann\nProfessor in Statistics\nAt UNL since August 2024, I was at ISU for 20 years\nfirst computer language was Pascal :)\nR user since 1996, Python user (? I have learned it four times by now)"
+    "section": "",
+    "text": "Heike Hofmann\nProfessor in Statistics\nAt UNL since August 2024, I was at ISU for 20 years\nfirst computer language was Pascal :)\nR user since 1996, Python user (? I have learned it four times by now)"
   },
   {
     "objectID": "slides/01-Syllabus-and-Introductions.html#on-poptarts-and-ravioli",
     "href": "slides/01-Syllabus-and-Introductions.html#on-poptarts-and-ravioli",
     "title": "Introduction",
-    "section": "On PopTarts and Ravioli:",
-    "text": "On PopTarts and Ravioli:\n\nThe Cube Rule of Food, from RedditThus, a PopTart is a calzone."
+    "section": "",
+    "text": "The Cube Rule of Food, from Reddit\n\n\nThus, a PopTart is a calzone."
   },
   {
     "objectID": "slides/01-Syllabus-and-Introductions.html#contact-info",
@@ -836,29 +836,29 @@
     "objectID": "slides/02-version-control.html#introduce-yourself-to-git",
     "href": "slides/02-version-control.html#introduce-yourself-to-git",
     "title": "Version Control",
-    "section": "Introduce yourself to git",
-    "text": "Introduce yourself to git\nIn a system terminal, run…\n\ngit config --global user.name 'YOUR NAME HERE'\ngit config --global user.email 'YOUR EMAIL HERE'\ngit config --global --list # check to see it worked\n\nAlternatively, in R run:\n\nusethis::use_git_config(user.name = 'YOUR NAME HERE', \n                        user.email = 'YOUR EMAIL HERE')\nusethis::git_sitrep() # check what R knows about git"
+    "section": "",
+    "text": "In a system terminal, run…\n\ngit config --global user.name 'YOUR NAME HERE'\ngit config --global user.email 'YOUR EMAIL HERE'\ngit config --global --list # check to see it worked\n\nAlternatively, in R run:\n\nusethis::use_git_config(user.name = 'YOUR NAME HERE', \n                        user.email = 'YOUR EMAIL HERE')\nusethis::git_sitrep() # check what R knows about git"
   },
   {
     "objectID": "slides/02-version-control.html#connect-git-and-r",
     "href": "slides/02-version-control.html#connect-git-and-r",
     "title": "Version Control",
-    "section": "Connect Git and R",
-    "text": "Connect Git and R\nInstructions"
+    "section": "",
+    "text": "Instructions"
   },
   {
     "objectID": "slides/02-version-control.html#navigating-around-github",
     "href": "slides/02-version-control.html#navigating-around-github",
     "title": "Version Control",
-    "section": "Navigating around Github",
-    "text": "Navigating around Github\n(Demo)"
+    "section": "",
+    "text": "(Demo)"
   },
   {
     "objectID": "slides/02-version-control.html#using-rstudio-and-git",
     "href": "slides/02-version-control.html#using-rstudio-and-git",
     "title": "Version Control",
-    "section": "Using RStudio and git",
-    "text": "Using RStudio and git\n(Demo)"
+    "section": "",
+    "text": "(Demo)"
   },
   {
     "objectID": "slides/02-version-control.html#homework-introduction-to-github",
@@ -871,8 +871,8 @@
     "objectID": "slides/02b-review-topics.html#last-class",
     "href": "slides/02b-review-topics.html#last-class",
     "title": "Programming Review",
-    "section": "Last Class",
-    "text": "Last Class\n\nWorked on Homework #2\nIdentified several useful functions and packages:\n\npackages/libraries\n\nin R: stringr, stringi\nin python: re\n\nfunctions\n\nin R: tolower, stri_reverse, stri_sub_all\nin python: .lower(), [::-1], re.sub\n\n\nIf you made at least one submission to github, you have some points for homework #2 in Canvas"
+    "section": "",
+    "text": "Worked on Homework #2\nIdentified several useful functions and packages:\n\npackages/libraries\n\nin R: stringr, stringi\nin python: re\n\nfunctions\n\nin R: tolower, stri_reverse, stri_sub_all\nin python: .lower(), [::-1], re.sub\n\n\nIf you made at least one submission to github, you have some points for homework #2 in Canvas"
   },
   {
     "objectID": "slides/09a-strings.html#logistics",
@@ -906,8 +906,8 @@
     "objectID": "slides/10-projects.html#project-overview",
     "href": "slides/10-projects.html#project-overview",
     "title": "Project Overview",
-    "section": "Project Overview",
-    "text": "Project Overview\n\n\n\nCreate a TidyTuesday style screencast\nExamples: https://www.rscreencasts.com/\nAnalyze a TidyTuesday dataset from the last year using R or Python\nApproximately 45 minutes long\nShow at least 4 different techniques you learned in Stat 251 this semester\n\n\n\n\nGH link"
+    "section": "",
+    "text": "Create a TidyTuesday style screencast\nExamples: https://www.rscreencasts.com/\nAnalyze a TidyTuesday dataset from the last year using R or Python\nApproximately 45 minutes long\nShow at least 4 different techniques you learned in Stat 251 this semester\n\n\n\n\nGH link"
   },
   {
     "objectID": "slides/10-projects.html#part-1---planning",
@@ -941,8 +941,8 @@
     "objectID": "slides/10b-reshape.html#logistics",
     "href": "slides/10b-reshape.html#logistics",
     "title": "Murder tables!?",
-    "section": "Logistics",
-    "text": "Logistics\n\nSubmit homework 8 by midnight! Speak now with further questions or …\nFocus on homework 9: Murder in SQL City"
+    "section": "",
+    "text": "Submit homework 8 by midnight! Speak now with further questions or …\nFocus on homework 9: Murder in SQL City"
   },
   {
     "objectID": "slides/10b-reshape.html#homework-9",
@@ -1097,5 +1097,131 @@
     "title": "Midterm",
     "section": "",
     "text": "The United States Geological Survey (USGS) continuously monitors earth quakes and makes the information available to the public in a data feed. The dataset all-month.csv included in this repository was pulled from USGS on Monday Mar 3, 2025. It contains all worldwide earth quakes for the last 30 days.\nAn detailed description of all the variables in the all_month data (and more) is available from in the ComCat Documentation\nFor all of the following questions, provide answers and include your code. You can work in R or in python or in a mix of the two. Make sure that the final document you submit renders without errors. In the rendered document avoid any lengthy output.\n\nLoad the data into the object eq using R or python. Make sure that you are working with an object with 9815 rows and 22 columns.\n\n\n# code chunk for R\n\n\n# python code chunk\n\n\nRead the ComCat Documentation for the variables time, latitude, longitude, depth, mag, magType, nst, id, and place. Ensure that the format of the variables matches the description.\n\nIf you work on R, use the lubridate package to convert the variable time to a time object. If you work in python, use the datetime package.\n\n# R chunk\nlibrary(lubridate)\n\n\n# python chunk\nimport datetime\n\n\nInclude each of the variables time, latitude, longitude, depth, mag, magType, and nst in a data chart. Summarise the main finding(s) in each chart in 1-2 sentences.\n\n\nWhat is the time frame under consideration? How many earthquakes were there (show that the number of earthquakes is equal to the number of rows in the dataset)? When and where was the strongest earthquake? What was its magnitude?\n\n\ndepth is an estimate (in kilometers) of the depth in which an earthquake begins to rupture. The documentation suggests that in some cases default depths are used (when there is no further information available). Based on chart(s), argue which values are used for default depths and where?\n\n\nThe variable nst contains the information on the number of seismic stations used to determine an earthquake’s location.\n\n\nWhat is the average number of seismic stations used to determine the location of an earthquake?\nWhat is the minimum number of stations?\n1,592 earthquakes do not have a recorded number of stations. What else do these earthquakes have in common?\n\n\nBy introducing a suitable grouping variable, create a data set daily_summary that contains the daily summary values of the following statistics:\n\n\nthe total number of earthquakes\nthe number of earthquakes with a magnitude of 4 or higher\nthe average magnitude of earthquakes\nthe location, place and magnitude of the strongest earthquake\n\nBased on the values in daily_summary discuss the statements: On average, there are about 50 earthquakes globally with a magnitude of at least 4, days with more than 750 seismic events are not uncommon.\n\n“The Ring of fire” is a horseshoe-shaped belt along the rim of the Pacific (tectonic) Plate reaching from New Zealand to the tip of South America. The Ring of Fire contains hundreds of active and dormant volcanoes and is the location of a lot of seismic activity.\nIntroduce a transformation of the longitude variable longitude_rof to the data set that allows you to visualize the horseshoe shape of the ring of fire. (draw that chart)\n\n\nUpdate the data set: write a function update_eq with arguments data, url and verbose that downloads the most recent 30 days of earthquake activity and incorporates that information into the provided data set data. Make sure to include each earthquake only once (in case there are multiple, choose the most recent update given by updated). If verbose is set to true, provide a summary of the changes made to the data set of the form (replace the stars by the corresponding numbers):\nnumber of earthquakes added: ***\nnumber of earthquakes updated: ***\n\nCall your function with the eq object set as the data, a url of https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.csv in the verbose mode. Save the resulting data set as all_month_updated.csv. Include the function, the call to your function and the updated file in your repository."
+  },
+  {
+    "objectID": "slides/10b-reshape.html",
+    "href": "slides/10b-reshape.html",
+    "title": "Murder tables!?",
+    "section": "",
+    "text": "Submit homework 8 by midnight! Speak now with further questions or …\nFocus on homework 9: Murder in SQL City"
+  },
+  {
+    "objectID": "slides/10-projects.html",
+    "href": "slides/10-projects.html",
+    "title": "Project Overview",
+    "section": "",
+    "text": "Create a TidyTuesday style screencast\nExamples: https://www.rscreencasts.com/\nAnalyze a TidyTuesday dataset from the last year using R or Python\nApproximately 45 minutes long\nShow at least 4 different techniques you learned in Stat 251 this semester\n\n\n\n\nGH link"
+  },
+  {
+    "objectID": "slides/06b-dplyr.html",
+    "href": "slides/06b-dplyr.html",
+    "title": "Computing with data",
+    "section": "",
+    "text": "Where we are\nPlan for Thursdays:\n\nif there are questions on the current homework assignment, work on that,\nstart on the new assignment\n\nAre there more questions for the Graphics homework?\n\n\n\n… next chapter\n\n\nComputing with data\n\ndata is the central object:\nwhat is data?\nevery action we do, takes a data set as an argument and returns a (modified) data set\n\ndata in -&gt; action -&gt; data out\n\n\n… then …\n\nthe pipe (in R):\n\npipe operator %&gt;% or |&gt; let’s us string these actions together\ndata_in %&gt;% action1 %&gt;% action2 %&gt;% action3 -&gt; data_out\n\nthe parenthesis ( dot approach . ) (in python)\n\ndata_out = ( data_in.action1.action2.action3.\n  action4 ) \nRead as ‘then’\n\n\nData Actions\nsmall number of actions that work together (think old-timey LEGO, not play mobile)\n\nget a subset of the rows\nget a subset of the columns\ntransform/add variables\ncalculate numeric summaries\nintroduce special groupings\n\n\n\nData Actions (in R)\nsmall number of actions that work together (think old-timey LEGO, not play mobile)\n\nget a subset of the rows: filter\nget a subset of the columns: select\ntransform/add variables: mutate\ncalculate numeric summaries: summarize\nintroduce special groupings: group_by\n\nposit cheat sheet\n\n\nData Actions (in python)\nsmall number of actions that work together (think old-timey LEGO, not play mobile)\n\nget a subset of the rows: query\nget a subset of the columns: select by name or index\ntransform/add variables: assign\ncalculate numeric summaries: describe\nintroduce special groupings: groupby (and agg or expanding)\n\npandas cheat sheet\n\n\nGrouping\nGrouping acts as a multiplier for each of the other actions\nGrouping by (usually categorical) variable(s) allows us to apply all of the other actions more specifically to each (combination of the) level(s) of variable(s)\nExample (summarize):\nsummary across a whole dataset\nfind the average height \nbecomes group specific\nfind the average height for men and women (group by gender)\nfind the average height by sport  (group by athletic discipline)\nfind the average height by sport and sex\n\n\nGrouping\nGrouping by (usually categorical) variable(s) is syntactic glue that allows us to apply all of the other actions more specifically\nExample (filter):\nfilter across a whole dataset\nfind the top earner\nbecomes group specific\nfind the top earner among men and women \nfind the top earner in each athletic discipline\nfind the top earner among men and women in each athletic discipline\n\n\nHomework 6\nYou’re ready to tackle the homework on data manipulation\n\n\n\nNext time\n\nContinue working on homework assignment\nStart of (take-home) midterm week\nPrep with the practice exam, look over the covered topics"
+  },
+  {
+    "objectID": "slides/05b-graphics.html",
+    "href": "slides/05b-graphics.html",
+    "title": "Creating Good Graphics",
+    "section": "",
+    "text": "Homework 4\nFeedback posted on any solutions submitted before 5pm yesterday\nBefore the due-date you can re-submit as often as you want to.\nAfter the due-date you have one (re-)submission.\nGet started early on the homework!\n\n\nGraphics week!\nReadings for Tuesday:\n\nGraphics\n\nFocus on relationships between variables\nGrammar of Graphics vs. Manual plot specification/mapping\n\nGood Graphics\n\nPerception & Cognition\nUse the least complicated chart that still works\n\n\n\n\nMake Graphics!\n\nPart I: Make visual summaries for two new data sets and think about mappings\nPart II: Use your knowledge to create the worst!\n\n\n\nResources for this week\n\nR and Python Graph Galleries\nUgly Chart Challenge variant example from last semester’s graduate class\nCustomizing ggplot2 plots\n\nAlso an RStudio addin package - ggThemeAssist\n\nCustomizing seaborn plots\n\n\n\nHomework\n\n\nExplanations! What can you see from the plot? What is its purpose?\n\n\n\n\n\nHomework rubric\n\n\n\nNext time\n\nContinue working on homework assignment\nBrainstorming: 🧠⛈️\n\nhow to make the textbook 📖 more effective\nwhat will motivate you to read it before class? 😜"
+  },
+  {
+    "objectID": "slides/04b-eda.html",
+    "href": "slides/04b-eda.html",
+    "title": "Data Explorations",
+    "section": "",
+    "text": "Exploratory Data Analysis\n\nFor observed data (rather than a study), a (descriptive) data exploration is often the only thing we can do\nBut with any new data set, you should do some initial exploration: what are the assumptions (what have you been told about the data?) - are implied expectations holding up?\nMake sure to read through the EDA chapter\n\n\n\nIn-class exercise\nDuring an unusual episode, a number of people were exposed and some died. You are asked to determine the nature of the unusual episode by asking data-motivated yes/no questions\nYou will see two tables:\n\ndeaths by economic status and sex\ndeaths by economic status and age\n\n\n\nWhat would you expect?\nBefore seeing the data\n\nwhat are your expectations regarding exposure by economic status, by sex, and by age?\nwhat are your expectations regarding death numbers/rates by economic status, by sex, and by age?\n\nNow we look at the data: What anomalies do you notice?\n\n\nDeaths by Economic Status and Sex\nBy Economic Status and Sex\n---------------------------------------------------------------------------\n           Population Exposed         Number of            Deaths per 100\n                to Risk                 Deaths            Exposed to Risk\nEconomic   ----------------------------------------------------------------\nStatus     Male  Female  Both     Male  Female  Both     Male  Female  Both\n---------------------------------------------------------------------------\nI          180     145    325     118      4     122      65      3     37\nII         179     106    285     154     13     167      87     12     59\nIII        510     196    706     422    106     528      83     54     73\nIV         862      23    885     670      3     673      78     13     76\n---------------------------------------------------------------------------\nTotal      1731    470   2201     1364    126   1490      80     27     67\n\n\nDeaths by Economic Status and Age\n                       By Economic Status and Age\n---------------------------------------------------------------------------\n           Population Exposed         Number of            Deaths per 100\n                to Risk                 Deaths            Exposed to Risk\nEconomic  -----------------------------------------------------------------\nStatus    Adult   Child  Both    Adult   Child  Both    Adult   Child  Both\n---------------------------------------------------------------------------\nI          319      6     325     122      0     122      38      0     37\nII         261     24     285     167      0     167      64      0     59\nIII        627     79     706     476     52     528      76     66     73\nIV         885      0     885     673      0     673      76      -     76\n---------------------------------------------------------------------------\nTotal      2092    109   2201     1438    52    1490      69     48     67\n\n\nHomework - Reading Data with Cookies\n\nWork on homework #4: what are your expectations regarding the data?\nOne way of asking questions, is to re-phrase an expectation in form of ‘(how) does the data deviate from …?’\nGenerally, when the data does not meet expectations, we find weird stuff …"
+  },
+  {
+    "objectID": "slides/03b-review-cipher.html",
+    "href": "slides/03b-review-cipher.html",
+    "title": "Review - Cipher",
+    "section": "",
+    "text": "Homework 2\n\ngraded with feedback\nyou can re-submit (once) to react to the feedback (submit the link in Canvas again, so that I know you are ready for another round of grading)\nextra credit: timing of palindrome evaluation\n\n\n\nSpeed test: R vs python\nFive runs of 10,000 evaluations of checking vector for palindromes:\n\n\n  run replications R [in s] python [in s]\n1   1        10000    0.514     0.1686378\n2   2        10000    0.516     0.1630241\n3   3        10000    0.513     0.1622581\n4   4        10000    0.515     0.1622709\n5   5        10000    0.516     0.1628715\n\n\nWhat information do we gain from the multiple runs?\nWhat do you expect to happen for lower number of replicates (besides faster times)?\n\n\nNumber of replications\n\n\n\n\n\n\n\n\n\n\n\nOther factors: machine load\n\n\n\n\n\n\n\n\n\n\n\nDue dates coming up\n\nReadings: Data input - quiz before class on Tuesday\nHomework #3 due on Tuesday\n\n\n\nTopics to Know\nReview: General Programming\nKnow how to:\n\nCreate a data table structure\nGet a column, row, or value from a data table\nGet an item from a list\n\n\n\n\nHomework - Cipher\n\nGoal for today: push at least one commit to your Github repo\nNot all statements that execute are correct (Part 1: fix mistakes)\nPart 2: write a decoder\nPart 3: Decode the secret message!\n\n\n\n\nVector to matrices\ndefault in R is to fill columns first\n\nx &lt;- 1:9\nmatrix(x, ncol=3)\n\n     [,1] [,2] [,3]\n[1,]    1    4    7\n[2,]    2    5    8\n[3,]    3    6    9\n\n\n\n\nVector to matrices\nin python rows are filled first - need to set order to False\n\nimport numpy as np\nx = np.arange(1, 10)\nmatrix_x = x.reshape(-1, 3, order='F')\n\nprint(matrix_x)\n\n[[1 4 7]\n [2 5 8]\n [3 6 9]]\n\n\n\n\nExtra Credit\nWrite an encoder for your decoder, then use it to create another secret message.\nAdd the R/python code for your encoder in a code chunk in index.qmd.\nAdd your encoded secret message as a file to your repo.\n\n\nNext Time\n\nStart on new unit - reading data!\nBefore class:\nRead Data Input and Exploratory Data Analysis"
+  },
+  {
+    "objectID": "slides/02b-review-topics.html",
+    "href": "slides/02b-review-topics.html",
+    "title": "Programming Review",
+    "section": "",
+    "text": "Worked on Homework #2\nIdentified several useful functions and packages:\n\npackages/libraries\n\nin R: stringr, stringi\nin python: re\n\nfunctions\n\nin R: tolower, stri_reverse, stri_sub_all\nin python: .lower(), [::-1], re.sub\n\n\nIf you made at least one submission to github, you have some points for homework #2 in Canvas"
+  },
+  {
+    "objectID": "slides/02-version-control.html",
+    "href": "slides/02-version-control.html",
+    "title": "Version Control",
+    "section": "",
+    "text": "Version control is the answer to this file naming problem.Image Source “Piled Higher and Deeper” by Jorge Cham www.phdcomics.com\n\n\n\n\nIn a system terminal, run…\n\ngit config --global user.name 'YOUR NAME HERE'\ngit config --global user.email 'YOUR EMAIL HERE'\ngit config --global --list # check to see it worked\n\nAlternatively, in R run:\n\nusethis::use_git_config(user.name = 'YOUR NAME HERE', \n                        user.email = 'YOUR EMAIL HERE')\nusethis::git_sitrep() # check what R knows about git\n\n\n\n\nInstructions\n\n\n\n\n\n(Demo)\n\n\n\n(Demo)"
+  },
+  {
+    "objectID": "slides/01-Syllabus-and-Introductions.html",
+    "href": "slides/01-Syllabus-and-Introductions.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "Name / Year / Major\nWhat do you hope to learn in this class?\nPrevious computing experience?\nIs a poptart a ravioli? Why or why not?\n\n\n\n\n\nHeike Hofmann\nProfessor in Statistics\nAt UNL since August 2024, I was at ISU for 20 years\nfirst computer language was Pascal :)\nR user since 1996, Python user (? I have learned it four times by now)\n\n\n\n\n\n\n\nThe Cube Rule of Food, from Reddit\n\n\nThus, a PopTart is a calzone."
+  },
+  {
+    "objectID": "slides/02a-review-topics.html",
+    "href": "slides/02a-review-topics.html",
+    "title": "Programming Review",
+    "section": "",
+    "text": "Know the 3 different ways to execute code from within RStudio\n\nTerminal (Command Line)\nSource Script (RStudio Button)\nInteractive Mode (line by line)\n\nDifferentiate between the Console and the Terminal\nDifferentiate between R and Python in the Console"
+  },
+  {
+    "objectID": "slides/03a-review-cipher.html",
+    "href": "slides/03a-review-cipher.html",
+    "title": "Review - Cipher",
+    "section": "",
+    "text": "Topics to Know\nReview: General Programming\nKnow how to:\n\nDefine a variable\nWrite a function\nWrite an if/else statement\nload a package or import a library\nCreate a data table structure\nGet a column, row, or value from a data table\nGet an item from a list\n\n\n\n\nVectors in R\n\nx &lt;- c(11, 25, 18, 4, 1, 5, 17, 22, 3,  9)\n\nstr(x)\n\n num [1:10] 11 25 18 4 1 5 17 22 3 9\n\nlength(x)\n\n[1] 10\n\n\nQuick-Info: how many values are below 10? ::: {.cell}\nsum(x &lt; 10)\n\n[1] 5\n\nwhich(x &lt; 10)\n\n[1]  4  5  6  9 10\n\n:::\nUpdate values: turn all values of 3 into a 4:\n\n\nYour Turn\nmake all square values in x negative:\n\nWrite a function is_square that takes a numeric vector x and returns a vector of TRUE/FALSE for each element in x (TRUE: element is square, FALSE: element is not a square number)\nupdate square values by their negative number\n\nx ::: {.cell} ::: {.cell-output .cell-output-stdout}\n [1] 11 25 18  4  1  5 17 22  4  9\n::: ::: is_square(x): ::: {.cell} ::: {.cell-output .cell-output-stdout}\n [1] FALSE  TRUE FALSE  TRUE  TRUE FALSE FALSE FALSE  TRUE  TRUE\n::: ::: updated x: ::: {.cell} ::: {.cell-output .cell-output-stdout}\n [1]  11 -25  18  -4  -1   5  17  22  -4  -9\n::: :::\n\n\nHomework - Review\n\nin Canvas, accept the Github Classroom link to homework #3\nClone the repository to your local machine\nRender the file index.qmd\n\n\n\nHomework - Cipher\n\nNot all statements that execute are correct (Part 1: fix mistakes)\nPart 2: write a decoder\nPart 3: Decode the secret message!\n\n\n\n\nNext Time\n\nContinue working on Homework 3\nSelf Assessment quiz due Thursday"
+  },
+  {
+    "objectID": "slides/04a-input.html",
+    "href": "slides/04a-input.html",
+    "title": "Reading In Data",
+    "section": "",
+    "text": "Homework 3\n\nSolutions look good (feedback on anything you pushed to github)\nMini stumble block: the punctuation vector\n\npunctuation &lt;- c(\".\", \",\", \"!\", \"?\", \"'\", \"\"\", \"(\", \")\", \" \", \"-\", \";\", \":\")\nDo not just delete the \"\"\"\ninstead use single quotes '\"' or backslash \"\\\"\"\n\n\nTopics to Know\n\nTypes of data formats\n(raw text, binary file, spreadsheet, database, non-tabular data)\nHow to read in raw text files (fixed width vs. delimited)\nHow to read in spreadsheets\nRecognize binary files (e.g. Rdata or RDS)\n\nReading: data input\n\n\nHomework - Reading Data with Cookies\n\nMake sure to accept the homework by following the Github classroom link\nFocus on asking questions about your data (and documenting them)\nWhat weird stuff can you find?\n\n\n\n\nNext Time\n\nContinue working on Homework 4\nRead the EDA chapter if you haven’t already"
+  },
+  {
+    "objectID": "slides/05a-graphics.html",
+    "href": "slides/05a-graphics.html",
+    "title": "Finishing up Cookie Exploration",
+    "section": "",
+    "text": "Homework 4\nWhere are you at?\n\n\nGraphics week!\nYou should have read:\n\nGraphics\n\nFocus on relationships between variables\nGrammar of Graphics vs. Manual plot specification/mapping\nExploratory data analysis\n\nGood Graphics\n\nPerception & Cognition\nUse the least complicated chart that still works\n\n\n\n\nMake Graphics!\n\nPart I: Make visual summaries for two new data sets and think about mappings\nPart II: Use your knowledge to create the worst!\n\n\n\nResources for this week\n\nR and Python Graph Galleries\nUgly Chart Challenge variant example from last semester’s graduate class\nCustomizing ggplot2 plots\n\nAlso an RStudio addin package - ggThemeAssist\n\nCustomizing seaborn plots\n\n\n\nHomework\n\n\nExplanations! What can you see from the plot? What is its purpose?\n\n\n\n\n\nHomework rubric\n\n\n\nNext time\n\nContinue working on homework assignment\nBrainstorming: 🧠⛈️\n\nhow to make the textbook 📖 more effective\nwhat will motivate you to read it before class? 😜"
+  },
+  {
+    "objectID": "slides/06a-graphics.html",
+    "href": "slides/06a-graphics.html",
+    "title": "Survey Results and Groundhog Graphics",
+    "section": "",
+    "text": "Survey Results\n\nWhat is helping me to learn in this class?\n\ntextbook for reading quiz\ntrouble-shooting in class\nwork time in class\nexamples in class\ntalking with classmates\n\n\n\n\nWhat am I doing to improve my learning in the course?\n\nask questions\nstarting homework early, think about it during the week\nlook things up: textbook, resources outside the class (videos, other articles)\ncheck homework before class to see if there are immediate questions\n\n\n\n\nWhat changes are needed in this course to improve learning?\n\nMore clarity -\nHow does homework tie in with requirements?\nclearer materials\nSample solution for homework\n\n\n\n\nWhat do I need to do to improve my learning in this course?\n\nAsk more questions\nPractice coding\nDo readings earlier, try to absorb more information from readings\nBe more present in class/pay better attention\n\n\nSome Logistics\nHomework #5 due date: Thursday night (11:59 pm)\nAll subsequent due-dates for homework assignments will be Thursday night\nKeep due-dates for readings and quizzes on Tuesday\nPlan for Thursdays: - if there are questions on the current homework assignment, work on that, - start on the new assignment\n\n\nHomework: Graphics\n\nHow does the homework tie to the readings?\nWorking on skills: how to make graphics\nWork on concepts: what are mappings, and how do they effect the conclusions\nWork on presentation: what are more effective ways of presenting information\n\n\n\nHomework rubric\n\n\n\nGraphics week homework\n\nPart I: Make visual summaries for two new data sets and think about mappings\nPart II: Use your knowledge to create the worst!\n\n\n\nData Exploration\nMake charts for all variables that are listed by name:\ngroundhogs.csv\n\nlat, long\ncountry\nisGroundhog\nactive\npredictionsCount\n\npredictions.csv\n\nisGroundhog\nyear\nshadow\n\n\n\nVariable active\n\nlibrary(tidyverse)\ngroundhogs &lt;- read.csv(\"https://raw.githubusercontent.com/stat-assignments/eda-groundhogs/97ab0e01b64aa3a1749247983a9b05a0c30b5c0c/groundhogs.csv\")\ngroundhogs %&gt;% ggplot(aes(x = active)) + geom_bar()\n\n\n\n\n\n\n\n\nThis is a barchart of the variable active, the variable is mapped to the x axis, the count for each bar (corresponding to the height of the bars) is mapped to y. Finding: Very few (2) groundhogs are not active.\n\n\nProbabilities and Agreement\nAnswer the following two questions using charts. Explain your chart, and explain how it answers the question.\nDo different groundhogs have different probabilities of predicting 6 more weeks of winter?\nHow much do North American groundhogs tend to agree on their predictions?\n\n\n\nDo different groundhogs have different probabilities of predicting 6 more weeks of winter?\n\npredictions &lt;- read.csv(\"https://raw.githubusercontent.com/stat-assignments/eda-groundhogs/refs/heads/main/groundhog-predictions.csv\")\n\npredictions %&gt;% \n  mutate(name = reorder(factor(name), name, length)) %&gt;%\n  ggplot(aes(x = name)) + geom_bar() +\n  geom_bar(aes( weight = shadow), fill = \"darkorange\") + \n  theme(axis.text.x = element_text(angle = 60, hjust = 1)) + \n  ggtitle(\"Number of predictions\\nNumber of times seeing a shadow in orange\")\n\n\n\n\n\n\n\n\nWhat about missing values in the shadow variable?\n\n\n\nHow do we need to change the previous chart?\n\npredictions &lt;- read.csv(\"https://raw.githubusercontent.com/stat-assignments/eda-groundhogs/refs/heads/main/groundhog-predictions.csv\")\n\npredictions %&gt;% \n  filter(!is.na(shadow)) %&gt;%\n  mutate(name = reorder(factor(name), name, length)) %&gt;%\n  ggplot(aes(x = name)) + geom_bar(aes(fill=factor(shadow)), position = \"fill\") +\n  theme(axis.text.x = element_text(angle = 60, hjust = 1)) \n\n\n\n\n\n\n\n\nlimitations: different groundhogs have made very different number of predictions (and for different years)\n\n\n\nHow much do North American groundhogs tend to agree on their predictions?\n\n\n\n\n\n\n\n\n\n\n\n\nFor years since 2010 … in each year close to 50/50 shadow/noshadow prediction - that’s the least amount of agreement we can possibly get!\n\n\n\n\n\n\n\n\n\n\n\n\nBut … when we color points by prediction, there seems to be regional agreement\n\n\n\n\n\n\n\n\n\nIs this perceived agreement real?\n\n\n\nWhich plot shows the most geographic agreement? ::: {.cell} ::: {.cell-output-display}  ::: :::\n\n\n\nyear was 2023 data is in 2\n… maybe there is not even regional geographic agreement between the predictions.\nLineups help us to calibrate our eyes and distinguish random patterns from real visual findings.\n\n\nResources for this week\n\nR and Python Graph Galleries\nUgly Chart Challenge variant example from last semester’s graduate class\nCustomizing ggplot2 plots\n\nAlso an RStudio addin package - ggThemeAssist\n\nCustomizing seaborn plots\n\n\n\nHomework\n\n\nExplanations! What can you see from the plot? What is its purpose?\n\n\n\n\n\nNext time\n\nContinue working on homework assignment\nBrainstorming: 🧠⛈️\n\nhow to make the textbook 📖 more effective\nwhat will motivate you to read it before class? 😜"
+  },
+  {
+    "objectID": "slides/07a-data-manip.html",
+    "href": "slides/07a-data-manip.html",
+    "title": "Good programming practices",
+    "section": "",
+    "text": "Where we are\nHomework 5 - graphics:\n\ngraded with feedback\ngrades not as high as I would like them … check the feedback carefully!\n\nResubmissions for homeworks 1-5 open until the week after Spring Break\n\n\nHomework Submissions\n\nRender your file before the final submission\nand READ over it\nMake sure to\n\navoid lengthy output (like showing the full data set)\nfix any errors and warnings\nread the output … e.g. 489 years of data (data manip homework) doesn’t make sense\nnot install packages in the quarto document (rely on the user to figure out installations)\nnot call View (opens separate window during render)\n\n\n\n\nMidterm Logistics\nMidterm questions are open - due by Thursday before Spring Break (Mar 13)\nTalk to me (instructor) in case of questions - not to each other!\nDon’t ask (anybody but the instructor) for directed help\n\n\n\nHomework #6\n\nrelatively short - pay attention to details!\none (unintentional) trap: co2 object exists in R - leads to extremely strange numbers\n\n\n\nHomework 6\n\n\n\nNext time\n\nFinish up on homework #6 assignment\nPrepare questions!\n… if you have questions until then - reach out by email and/or schedule a meeting with me!"
+  },
+  {
+    "objectID": "slides/09b-strings.html",
+    "href": "slides/09b-strings.html",
+    "title": "Regular Expressions",
+    "section": "",
+    "text": "str_view in stringr package (in R) shows all matches:\n\nstringr::str_view(\"&gt; Poem for a Friend. \", pattern = \"\\\\W\")\n\n[1] │ &lt;&gt;&gt;&lt; &gt;Poem&lt; &gt;for&lt; &gt;a&lt; &gt;Friend&lt;.&gt;&lt; &gt;\n\nstringr::str_view(\"&gt; Poem for a Friend. \", pattern = \"\\\\b\")\n\n[1] │ &gt; &lt;&gt;Poem&lt;&gt; &lt;&gt;for&lt;&gt; &lt;&gt;a&lt;&gt; &lt;&gt;Friend&lt;&gt;. \n\n\nstr_count counts all matches in R:\n\nstringr::str_count(\"&gt; Poem for a Friend. \", pattern = \"\\\\b\")/2\n\n[1] 4\n\n\nfind_all and len count all matches in python:\n\nimport re\nres = re.findall(\"\\\\b\", \"&gt; Poem for a Friend. \")\nlen(res)/2\n\n4.0"
+  },
+  {
+    "objectID": "slides/10a-reshape.html",
+    "href": "slides/10a-reshape.html",
+    "title": "Reshaping Dogs",
+    "section": "",
+    "text": "Reading quiz 9 due\nFocus on homework 8 on Tuesday, start working on homework 9 on Thursday\nStart thinking about the project"
+  },
+  {
+    "objectID": "slides/11a-join.html",
+    "href": "slides/11a-join.html",
+    "title": "Join up, Detectives!",
+    "section": "",
+    "text": "Focus on homework 9: Murder in SQL City"
   }
 ]

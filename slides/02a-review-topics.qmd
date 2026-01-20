@@ -59,7 +59,7 @@ Know how to:
 - Work with pencil and paper first
 
 ```{=html}
-<iframe width="100%" height = "600px" src="../homework-repos/02-review-r-python/index.html"></iframe>
+<iframe width="100%" height = "600px" src="https://unl-statistics.github.io/stat251/homework/02-review.html"></iframe>
 ```
 
 
