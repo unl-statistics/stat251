@@ -17,6 +17,20 @@ date: '2026-01-20'
 type: slides
 ---
 
+# Homework 1
+
+- Almost everybody is done
+
+- Most difficulties with adding an image
+
+- Markdown code for image: 
+
+```
+![Caption](path/to/image.jpg)
+```
+
+- Make sure to add the image to your online repository: Add > Commit > Push
+
 ## Working Environment
 
 - Know the 3 different ways to execute code from within RStudio
