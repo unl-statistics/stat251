@@ -13,34 +13,71 @@ format:
     theme: inverse.scss
     includes:
       in_header: header.html
-date: '2026-01-22'
 type: slides
+date: '2026-01-22'
 ---
 
 ## Last Class
 
-- Worked on Homework #2
-
-- Identified several useful functions and packages:
-
-    - packages/libraries 
-    
-        - in R: `stringr`, `stringi`
-        - in python: `re`
-    
-    
-    - functions
-    
-      - in R: `tolower`, `stri_reverse`, `stri_sub_all`
-      - in python: `.lower()`, `[::-1]`, `re.sub`
+- Started working on Homework #2
   
 - If you made at least one submission to github, you have some points for homework #2 in Canvas
+
+# Algorithmic thinking
+
+- Computer take things literally
+
+- Every step needs to be explained
+
+- e.g. [Making of a PBJ sandwich](https://www.youtube.com/watch?v=FN2RM-CHkuI&pp=ugUEEgJlbg%3D%3D)
+
+# A palindrome is ...
+
+- "an expression that reads the same forwards and backwards"
+
+::: {.fragment}
+
+- "Taco Cat" is not equal to "taC ocaT"
+:::
+
+::: {.fragment}
+- ignore letter casing (`tolower`, `str_to_lower`)
+:::
+
+::: {.fragment}
+- "taco cat" is still not equal to "tac ocat"
+:::
+
+::: {.fragment}
+- ignore spaces and punctuation (`stri_replace`)
+:::
+
+::: {.fragment}
+- "tacocat" is equal to "tacocat"!
+:::
+
+# Useful functions and packages
+
+- packages/libraries 
+
+    - in R: `stringr`, `stringi`
+    - in python: `re`
+
+
+- functions
+
+    - in R: `tolower`, `stri_reverse`, `stri_sub_all`
+    - in python: `.lower()`, `[::-1]`, `re.sub`
+
   
 # Today's goal
 
 - make at least one submission to Github 
 
 - Review function writing: [section 13](https://srvanderplas.github.io/stat-computing-r-python/part-gen-prog/05-functions.html)
+
+
+
 
 - Code chunks in quarto documents
 
@@ -120,6 +157,10 @@ There are some things we should not (ever) do in R Markdown (or quarto) document
 
 - Install a package 
 
+- Print a full data set
+
+- "Step on no p-values"
+
 ...
 
 
@@ -131,6 +172,5 @@ There are some things we should not (ever) do in R Markdown (or quarto) document
 
   - indexing, 
   - data frames/structures, 
-  - thinking in column-shaped objects
+  - thinking in column/row-shaped objects
   
-- Coming up: Self Assessment quiz
