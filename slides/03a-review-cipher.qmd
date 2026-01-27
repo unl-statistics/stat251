@@ -7,7 +7,7 @@ title-slide-attributes:
   data-background-opacity: '0.15'
 categories:
 - slides
-- Week04
+- Week03
 engine: knitr
 format:
   revealjs:
@@ -16,7 +16,8 @@ format:
     theme: inverse.scss
     includes:
       in_header: header.html
-date: '2026-02-03'
+date: '2026-01-29'
+type: slides
 ---
 
 # Topics to Know
@@ -35,7 +36,7 @@ Know how to:
 
 ![](fig/programming-why.gif){.absolute bottom="50%" right="10px" width="30%"}
 
-# Vectors in R
+# Vectors in R - Quick info
 
 
 ```{r echo = TRUE}
@@ -44,46 +45,70 @@ x <- c(11, 25, 18, 4, 1, 5, 17, 22, 3,  9)
 str(x)
 length(x)
 ```
+
+::: {.fragment }
+
 Quick-Info: how many values are below 10?
+
 ```{r echo = TRUE}
 sum(x < 10)
 which(x < 10)
 ```
 
-Update values: turn all values of 3 into a 4:
+:::
+
+# Vectors in R - Update values
+
+
+```{r echo = TRUE}
+x <- c(11, 25, 18, 4, 1, 5, 17, 22, 3,  9)
+
+str(x)
+length(x)
+```
+
+::: {.fragment }
+
+Update values: replace all values of 3 by a 4:
 
 ```{r echo = FALSE}
 x[x == 3] <- 4
 ```
+:::
 
-# Your Turn
+<!-- # Your Turn -->
 
-make all square values in `x` negative:
+<!-- make all square values in `x` negative: -->
 
-1. Write a function `is_square` that takes a numeric vector x and returns a vector of TRUE/FALSE for each element in x (TRUE: element is square, FALSE: element is not a square number)
+<!-- 1. Write a function `is_square` that takes a numeric vector x and returns a vector of TRUE/FALSE for each element in x (TRUE: element is square, FALSE: element is not a square number) -->
 
-2. update square values by their negative number
+<!-- 2. update square values by their negative number -->
 
-```{r}
-is_square <- function(x) {
-  root <- sqrt(x)
-  return(round(root) == root)
-}
-```
+<!-- ```{r} -->
+<!-- is_square <- function(x) { -->
+<!--   root <- sqrt(x) -->
+<!--   return(round(root) == root) -->
+<!-- } -->
+<!-- ``` -->
 
-x
-```{r}
-x
-```
-is_square(x):
-```{r}
-is_square(x)
-```
-updated x:
-```{r}
-x[is_square(x)] <- (-1)*x[is_square(x)]
-x
-```
+<!-- x -->
+
+<!-- ```{r} -->
+<!-- x -->
+<!-- ``` -->
+
+<!-- is_square(x): -->
+
+<!-- ```{r} -->
+<!-- is_square(x) -->
+<!-- ``` -->
+
+<!-- updated x: -->
+
+<!-- ```{r} -->
+<!-- x[is_square(x)] <- (-1)*x[is_square(x)] -->
+<!-- x -->
+<!-- ``` -->
 
 # Homework - Review
 
@@ -111,4 +136,3 @@ x
 
 - Continue working on Homework 3
   
-- Self Assessment quiz due Thursday

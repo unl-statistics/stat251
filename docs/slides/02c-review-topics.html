@@ -10,8 +10,8 @@
   <meta name="generator" content="quarto-1.7.32">
 
   <meta name="author" content="Stat 251">
-  <meta name="dcterms.date" content="2026-01-29">
-  <title>Stat 251 - Data Wrangling – Review - Cipher</title>
+  <meta name="dcterms.date" content="2026-01-22">
+  <title>Stat 251 - Data Wrangling – Programming Review</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -29,72 +29,6 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-    /* CSS for syntax highlighting */
-    html { -webkit-text-size-adjust: 100%; }
-    pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-    pre > code.sourceCode > span:empty { height: 1.2em; }
-    .sourceCode { overflow: visible; }
-    code.sourceCode > span { color: inherit; text-decoration: inherit; }
-    div.sourceCode { margin: 1em 0; }
-    pre.sourceCode { margin: 0; }
-    @media screen {
-    div.sourceCode { overflow: auto; }
-    }
-    @media print {
-    pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-    }
-    pre.numberSource code
-      { counter-reset: source-line 0; }
-    pre.numberSource code > span
-      { position: relative; left: -4em; counter-increment: source-line; }
-    pre.numberSource code > span > a:first-child::before
-      { content: counter(source-line);
-        position: relative; left: -1em; text-align: right; vertical-align: baseline;
-        border: none; display: inline-block;
-        -webkit-touch-callout: none; -webkit-user-select: none;
-        -khtml-user-select: none; -moz-user-select: none;
-        -ms-user-select: none; user-select: none;
-        padding: 0 4px; width: 4em;
-        color: #aaaaaa;
-      }
-    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-    div.sourceCode
-      { color: #003b4f; background-color: #f1f3f5; }
-    @media screen {
-    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-    }
-    code span { color: #003b4f; } /* Normal */
-    code span.al { color: #ad0000; } /* Alert */
-    code span.an { color: #5e5e5e; } /* Annotation */
-    code span.at { color: #657422; } /* Attribute */
-    code span.bn { color: #ad0000; } /* BaseN */
-    code span.bu { } /* BuiltIn */
-    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
-    code span.ch { color: #20794d; } /* Char */
-    code span.cn { color: #8f5902; } /* Constant */
-    code span.co { color: #5e5e5e; } /* Comment */
-    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
-    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
-    code span.dt { color: #ad0000; } /* DataType */
-    code span.dv { color: #ad0000; } /* DecVal */
-    code span.er { color: #ad0000; } /* Error */
-    code span.ex { } /* Extension */
-    code span.fl { color: #ad0000; } /* Float */
-    code span.fu { color: #4758ab; } /* Function */
-    code span.im { color: #00769e; } /* Import */
-    code span.in { color: #5e5e5e; } /* Information */
-    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
-    code span.op { color: #5e5e5e; } /* Operator */
-    code span.ot { color: #003b4f; } /* Other */
-    code span.pp { color: #ad0000; } /* Preprocessor */
-    code span.sc { color: #5e5e5e; } /* SpecialChar */
-    code span.ss { color: #20794d; } /* SpecialString */
-    code span.st { color: #20794d; } /* String */
-    code span.va { color: #111111; } /* Variable */
-    code span.vs { color: #20794d; } /* VerbatimString */
-    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-6036c0d3e113f66ef11adcf66984d9d0.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -193,8 +127,9 @@
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" data-background-image="fig/cipher.png" data-background-opacity="0.15" data-background-size="contain" class="quarto-title-block center">
-  <h1 class="title">Review - Cipher</h1>
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">Programming Review</h1>
+  <p class="subtitle">Working Environment and Programming Logic</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -204,118 +139,65 @@ Stat 251
 </div>
 </div>
 
-  <p class="date">2026-01-29</p>
+  <p class="date">2026-01-22</p>
 </section>
-<section id="topics-to-know" class="title-slide slide level1 center">
-<h1>Topics to Know</h1>
-<p>Review: <a href="https://srvanderplas.github.io/stat-computing-r-python/part-gen-prog/00-gen-prog.html">General Programming</a></p>
-<p>Know how to:</p>
+<section id="last-class" class="slide level2">
+<h2>Last Class</h2>
 <ul>
-<li>Define a variable</li>
-<li>Write a function</li>
-<li>Write an if/else statement</li>
-<li>load a package or import a library</li>
-<li><strong>Create a data table structure</strong></li>
-<li><strong>Get a column, row, or value from a data table</strong></li>
-<li><strong>Get an item from a list</strong></li>
+<li>If you made at least one submission to github, you have some points for homework #2 in Canvas</li>
 </ul>
-<p><img data-src="fig/programming-why.gif" class="absolute" style="bottom: 50%; right: 10px; width: 30%; "></p>
 </section>
-
-<section id="vectors-in-r---quick-info" class="title-slide slide level1 center">
-<h1>Vectors in R - Quick info</h1>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">11</span>, <span class="dv">25</span>, <span class="dv">18</span>, <span class="dv">4</span>, <span class="dv">1</span>, <span class="dv">5</span>, <span class="dv">17</span>, <span class="dv">22</span>, <span class="dv">3</span>,  <span class="dv">9</span>)</span>
-<span id="cb1-2"><a></a></span>
-<span id="cb1-3"><a></a><span class="fu">str</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code> num [1:10] 11 25 18 4 1 5 17 22 3 9</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a><span class="fu">length</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 10</code></pre>
-</div>
-</div>
-<div class="fragment">
-<p>Quick-Info: how many values are below 10?</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a><span class="fu">sum</span>(x <span class="sc">&lt;</span> <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 5</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a><span class="fu">which</span>(x <span class="sc">&lt;</span> <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1]  4  5  6  9 10</code></pre>
-</div>
-</div>
-</div>
-</section>
-
-<section id="vectors-in-r---update-values" class="title-slide slide level1 center">
-<h1>Vectors in R - Update values</h1>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">11</span>, <span class="dv">25</span>, <span class="dv">18</span>, <span class="dv">4</span>, <span class="dv">1</span>, <span class="dv">5</span>, <span class="dv">17</span>, <span class="dv">22</span>, <span class="dv">3</span>,  <span class="dv">9</span>)</span>
-<span id="cb9-2"><a></a></span>
-<span id="cb9-3"><a></a><span class="fu">str</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code> num [1:10] 11 25 18 4 1 5 17 22 3 9</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a><span class="fu">length</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 10</code></pre>
-</div>
-</div>
-<div class="fragment">
-<p>Update values: replace all values of 3 by a 4:</p>
-</div>
-<!-- # Your Turn -->
-<!-- make all square values in `x` negative: -->
-<!-- 1. Write a function `is_square` that takes a numeric vector x and returns a vector of TRUE/FALSE for each element in x (TRUE: element is square, FALSE: element is not a square number) -->
-<!-- 2. update square values by their negative number -->
-<!-- ```{r} -->
-<!-- is_square <- function(x) { -->
-<!--   root <- sqrt(x) -->
-<!--   return(round(root) == root) -->
-<!-- } -->
-<!-- ``` -->
-<!-- x -->
-<!-- ```{r} -->
-<!-- x -->
-<!-- ``` -->
-<!-- is_square(x): -->
-<!-- ```{r} -->
-<!-- is_square(x) -->
-<!-- ``` -->
-<!-- updated x: -->
-<!-- ```{r} -->
-<!-- x[is_square(x)] <- (-1)*x[is_square(x)] -->
-<!-- x -->
-<!-- ``` -->
-</section>
-
-<section id="homework---review" class="title-slide slide level1 center">
-<h1>Homework - Review</h1>
+<section id="todays-goal" class="title-slide slide level1 center">
+<h1>Today’s goal</h1>
 <ul>
-<li><p>in Canvas, accept the Github Classroom link to homework #3</p></li>
-<li><p>Clone the repository to your local machine</p></li>
-<li><p>Render the file <code>index.qmd</code></p></li>
+<li><p>Review function writing: <a href="https://srvanderplas.github.io/stat-computing-r-python/part-gen-prog/05-functions.html">section 13</a></p></li>
+<li><p>Code chunks in quarto documents</p></li>
 </ul>
 </section>
 
-<section id="homework---cipher" class="title-slide slide level1 center">
-<h1>Homework - Cipher</h1>
+<section id="from-a-block-of-code-to-functions" class="title-slide slide level1 center">
+<h1>From a block of code to functions</h1>
+<p>When you execute the same code multiple times, you should wrap the code into a function:</p>
+
+<img data-src="fig/palindrome-code-blocks.png" class="r-stretch"></section>
+
+<section id="code-block-to-function" class="title-slide slide level1 center">
+<h1>Code block to function</h1>
+
+<img data-src="fig/palindrome-function.png" class="r-stretch"></section>
+
+<section id="function-definitions" class="title-slide slide level1 center">
+<h1>Function definitions</h1>
+
+<img data-src="https://srvanderplas.github.io/stat-computing-r-python/images/gen-prog/Annotating_function_syntax.png" class="r-stretch"></section>
+
+<section id="as-an-extra-challenge-for-extra-credit" class="title-slide slide level1 center">
+<h1>As an extra challenge … (for extra credit)</h1>
+<p>Can you establish how fast your function <code>palindrome</code> is?</p>
+<p><a href="https://www.r-bloggers.com/2017/05/5-ways-to-measure-running-time-of-r-code/">Measuring speed in R</a></p>
+<p><a href="https://docs.python.org/3/library/timeit.html#module-timeit">Measuring speed in python</a></p>
+<p>Which is faster? R or python? - You might have to make multiple calls to the functions to capture differences</p>
+</section>
+
+<section id="dos-and-donts" class="title-slide slide level1 center">
+<h1>Dos and Don’ts</h1>
+<p>There are some things we should not (ever) do in R Markdown (or quarto) documents:</p>
 <ul>
-<li><p>Not all statements that execute are correct (Part 1: fix mistakes)</p></li>
-<li><p>Part 2: write a decoder</p></li>
-<li><p>Part 3: Decode the secret message!</p></li>
+<li><p>Install a package</p></li>
+<li><p>Print a full data set</p></li>
 </ul>
-<iframe width="100%" height="600px" src="https://unl-statistics.github.io/stat251/homework/03-cipher.html"></iframe>
+<p>…</p>
 </section>
 
 <section id="next-time" class="title-slide slide level1 center">
 <h1>Next Time</h1>
 <ul>
-<li>Continue working on Homework 3</li>
+<li><p>Review for homework #3</p>
+<ul>
+<li>indexing,</li>
+<li>data frames/structures,</li>
+<li>thinking in column/row-shaped objects</li>
+</ul></li>
 </ul>
 
 

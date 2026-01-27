@@ -3,7 +3,6 @@ title: 'Homework 3: Cipher'
 date: '2026-02-05'
 execute-dir: ../homework-repos/03-cipher
 engine: knitr
-author: Homework
 execute:
   error: true
   eval: false

@@ -2,7 +2,10 @@
   {
     "listing": "/index.html",
     "items": [
+      "/homework/03-cipher.html",
       "/homework/02-review.html",
+      "/slides/03a-review-cipher.html",
+      "/slides/02c-review-topics.html",
       "/homework/01-git-github.html",
       "/slides/02b-review-topics.html",
       "/slides/02a-review-topics.html",

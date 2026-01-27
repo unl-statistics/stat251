@@ -53,10 +53,16 @@ schedule:
         categories: [HW, Week02]
         date: 2026-01-29
         pub-date: 2026-01-01
+      - href: slides/02c-review-topics.qmd
+        categories: [slides]
+        type: slides
+        date: 2026-01-27
+        pub-date: 2026-01-20
       - href: slides/03a-review-cipher.qmd
         categories: [slides]
-        date: 2026-02-03
-        pub-date: 2026-02-03
+        type: slides
+        date: 2026-01-29
+        pub-date: 2026-01-20
       - href: slides/03b-review-cipher.qmd
         categories: [slides]
         date: 2026-02-05
@@ -64,7 +70,7 @@ schedule:
       - href: homework/03-cipher.qmd
         categories: [HW, Week03]
         date: 2026-02-05
-        pub-date: 2026-01-29
+        pub-date: 2026-01-20
   - unit: "Accessing and Exploring Data"
     materials:
       - path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/01-data-input.html

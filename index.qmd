@@ -6,10 +6,13 @@ listing:
   contents:
   - homework/01-git-github.qmd
   - homework/02-review.qmd
+  - homework/03-cipher.qmd
   - slides/01-Syllabus-and-Introductions.qmd
   - slides/02-version-control.qmd
   - slides/02a-review-topics.qmd
   - slides/02b-review-topics.qmd
+  - slides/02c-review-topics.qmd
+  - slides/03a-review-cipher.qmd
   - syllabus.qmd
   - reading.yml
   sort: date desc
