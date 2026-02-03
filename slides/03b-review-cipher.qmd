@@ -16,7 +16,7 @@ format:
     theme: inverse.scss
     includes:
       in_header: header.html
-date: '2026-02-05'
+date: '2026-02-03'
 ---
 
 # Homework 2
@@ -47,7 +47,7 @@ What do you expect to happen for lower number of replicates (besides faster time
 library(ggplot2)
 eval_ns <- read.csv("../data/timing-mbp-ns.csv")
 eval_ns %>% filter(replications != 10) %>% ggplot(aes(x = factor(replications), y = elapsed/replications*1000)) +
-  geom_point(size = 3.5) + ylab("How long would 1,000 replications take?") + xlab("actual number of replications") +
+  geom_point(size = 3.5) + ylab("How long would 1,000 replications take?") + xlab("Actual number of replications") +
   theme_bw(base_size = 14)
 ```
 
@@ -71,9 +71,11 @@ eval_zoom %>% select("R" = elapsed, py, replications) %>%
 
 # Due dates coming up
 
+
+- Homework #3 due on Thursday this week
+
 - Readings: Data input - quiz before class on Tuesday
 
-- Homework #3 due on Tuesday
 
 
 
@@ -117,16 +119,17 @@ matrix(x, ncol=3)
 
 # Vector to matrices 
 
-in python rows are filled first - need to set `order` to False
+in python rows are filled first - the instructions are given with this in mind
 
 ```{python echo=TRUE}
 import numpy as np
 x = np.arange(1, 10)
-matrix_x = x.reshape(-1, 3, order='F')
+matrix_x = x.reshape(-1, 3)
 
 print(matrix_x)
 ```
 
+additionally: python starts indexing at 0, R starts at 1 - keep that difference in mind
 
 # Extra Credit
 

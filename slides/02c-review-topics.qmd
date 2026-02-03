@@ -1,0 +1,81 @@
+---
+title: Programming Review
+subtitle: Working Environment and Programming Logic
+author: Stat 251
+categories:
+- slides
+- Week03
+engine: knitr
+format:
+  revealjs:
+    navigation-mode: vertical
+    logo: N.svg
+    theme: inverse.scss
+    includes:
+      in_header: header.html
+type: slides
+date: '2026-01-27'
+---
+
+## Last Class
+
+- If you made at least one submission to github, you have some points for homework #2 in Canvas
+
+# Today's goal
+
+
+- Review function writing: [section 13](https://srvanderplas.github.io/stat-computing-r-python/part-gen-prog/05-functions.html)
+
+
+- Code chunks in quarto documents
+
+# From a block of code to functions
+
+When you execute the same code multiple times, you should wrap the code into a function:
+
+![](fig/palindrome-code-blocks.png)
+
+# Code block to function
+
+![](fig/palindrome-function.png)
+
+# Function definitions
+
+![](https://srvanderplas.github.io/stat-computing-r-python/images/gen-prog/Annotating_function_syntax.png)
+
+
+
+# As an extra challenge ... (for extra credit)
+
+Can you establish how fast your function `palindrome` is?
+
+[Measuring speed in R](https://www.r-bloggers.com/2017/05/5-ways-to-measure-running-time-of-r-code/)
+
+[Measuring speed in python](https://docs.python.org/3/library/timeit.html#module-timeit)
+
+Which is faster? R or python? - You might have to make multiple calls to the functions to capture differences
+
+
+
+# Dos and Don'ts 
+
+There are some things we should not (ever) do in R Markdown (or quarto) documents:
+
+- Install a package 
+
+- Print a full data set
+
+
+...
+
+
+
+
+# Next Time
+
+- Review for homework #3
+
+  - indexing, 
+  - data frames/structures, 
+  - thinking in column/row-shaped objects
+  

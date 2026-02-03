@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-1.7.32">
 
   <meta name="author" content="Stat 251">
-  <meta name="dcterms.date" content="2026-02-05">
+  <meta name="dcterms.date" content="2026-02-03">
   <title>Stat 251 - Data Wrangling – Review - Cipher</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -204,7 +204,7 @@ Stat 251
 </div>
 </div>
 
-  <p class="date">2026-02-05</p>
+  <p class="date">2026-02-03</p>
 </section>
 <section id="homework-2" class="title-slide slide level1 center">
 <h1>Homework 2</h1>
@@ -245,8 +245,8 @@ Stat 251
 <section id="due-dates-coming-up" class="title-slide slide level1 center">
 <h1>Due dates coming up</h1>
 <ul>
+<li><p>Homework #3 due on Thursday this week</p></li>
 <li><p>Readings: Data input - quiz before class on Tuesday</p></li>
-<li><p>Homework #3 due on Tuesday</p></li>
 </ul>
 </section>
 
@@ -290,19 +290,20 @@ Stat 251
 
 <section id="vector-to-matrices-1" class="title-slide slide level1 center">
 <h1>Vector to matrices</h1>
-<p>in python rows are filled first - need to set <code>order</code> to False</p>
+<p>in python rows are filled first - the instructions are given with this in mind</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb4-2"><a></a>x <span class="op">=</span> np.arange(<span class="dv">1</span>, <span class="dv">10</span>)</span>
-<span id="cb4-3"><a></a>matrix_x <span class="op">=</span> x.reshape(<span class="op">-</span><span class="dv">1</span>, <span class="dv">3</span>, order<span class="op">=</span><span class="st">'F'</span>)</span>
+<span id="cb4-3"><a></a>matrix_x <span class="op">=</span> x.reshape(<span class="op">-</span><span class="dv">1</span>, <span class="dv">3</span>)</span>
 <span id="cb4-4"><a></a></span>
 <span id="cb4-5"><a></a><span class="bu">print</span>(matrix_x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[[1 4 7]
- [2 5 8]
- [3 6 9]]</code></pre>
+<pre><code>[[1 2 3]
+ [4 5 6]
+ [7 8 9]]</code></pre>
 </div>
 </div>
+<p>additionally: python starts indexing at 0, R starts at 1 - keep that difference in mind</p>
 </section>
 
 <section id="extra-credit" class="title-slide slide level1 center">

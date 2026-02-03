@@ -65,8 +65,8 @@ schedule:
         pub-date: 2026-01-20
       - href: slides/03b-review-cipher.qmd
         categories: [slides]
-        date: 2026-02-05
-        pub-date: 2026-02-05
+        date: 2026-02-03
+        pub-date: 2026-02-03
       - href: homework/03-cipher.qmd
         categories: [HW, Week03]
         date: 2026-02-05
