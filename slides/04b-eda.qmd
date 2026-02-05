@@ -12,7 +12,7 @@ format:
     theme: inverse.scss
     includes:
       in_header: header.html
-date: '2026-02-13'
+date: '2026-02-12'
 ---
 
 # Exploratory Data Analysis

@@ -12,21 +12,21 @@ format:
     theme: inverse.scss
     includes:
       in_header: header.html
-date: '2026-02-11'
+date: '2026-02-10'
 ---
 
-# Homework 3
+<!-- # Homework 3 -->
 
-- Solutions look good (feedback on anything you pushed to github)
+<!-- - Solutions look good (feedback on anything you pushed to github) -->
 
-- Mini stumble block: the punctuation vector
+<!-- - Mini stumble block: the punctuation vector -->
 
-```
-punctuation <- c(".", ",", "!", "?", "'", """, "(", ")", " ", "-", ";", ":")
-```
-Do not just delete the `"""` 
+<!-- ``` -->
+<!-- punctuation <- c(".", ",", "!", "?", "'", """, "(", ")", " ", "-", ";", ":") -->
+<!-- ``` -->
+<!-- Do not just delete the `"""`  -->
 
-instead use single quotes `'"'` or backslash `"\""`
+<!-- instead use single quotes `'"'` or backslash `"\""` -->
 
 
 
@@ -53,8 +53,8 @@ instead use single quotes `'"'` or backslash `"\""`
 ```
 
 
-# Next Time
+<!-- # Next Time -->
 
-- Continue working on Homework 4
-  
-- Read the [EDA chapter](https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/02a-eda.html) if you haven't already
+<!-- - Continue working on Homework 4 -->
+
+<!-- - Read the [EDA chapter](https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/02a-eda.html) if you haven't already -->

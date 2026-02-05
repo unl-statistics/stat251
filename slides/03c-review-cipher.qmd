@@ -1,0 +1,74 @@
+---
+title: Review - Cipher
+author: Stat 251
+title-slide-attributes:
+  data-background-image: fig/cipher.png
+  data-background-size: contain
+  data-background-opacity: '0.10'
+categories:
+- slides
+- Week04
+engine: knitr
+format:
+  revealjs:
+    navigation-mode: vertical
+    logo: N.svg
+    theme: inverse.scss
+    includes:
+      in_header: header.html
+date: '2026-02-05'
+---
+
+# Homework 3
+
+- graded with feedback
+
+- almost done :)
+
+
+# Vector to matrices 
+
+default in R is to fill columns first
+
+```{r echo = TRUE}
+x <- 1:9
+matrix(x, ncol=3)
+```
+
+# Vector to matrices 
+
+in python rows are filled first! `order="F"` changes that:
+
+```{python echo=TRUE}
+import numpy as np
+x = np.arange(1, 10)
+matrix_x = x.reshape(-1, 3)
+print(matrix_x)
+
+matrix_x = x.reshape(-1, 3, order="F")
+print(matrix_x)
+
+```
+# Indices
+
+The 18th element in a vector in R has index 18.
+
+The 18th element in a vector in python has index 17 - same with columns! You need to keep that difference in mind
+
+# Extra Credit
+
+LLMs have a bad rep for creating meh text and fabulating on facts.
+
+What they are (usually) great for, are translations from one programming language to another.
+
+For extra credit: 
+
+Take your code from your preferred language, and let an LLM translate it for you into the other language. Provide the code and describe your experience.
+
+
+# Next 
+
+- We are starting on a new unit!!!
+  
+- Before class:     
+Read [Data Input](https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/01-data-input.html) and [Exploratory Data Analysis](https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/02a-eda.html)

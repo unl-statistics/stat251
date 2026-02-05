@@ -67,6 +67,10 @@ schedule:
         categories: [slides]
         date: 2026-02-03
         pub-date: 2026-02-03
+      - href: slides/03c-review-cipher.qmd
+        categories: [slides]
+        date: 2026-02-05
+        pub-date: 2026-02-05
       - href: homework/03-cipher.qmd
         categories: [HW, Week03]
         date: 2026-02-05
@@ -76,24 +80,25 @@ schedule:
       - path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/01-data-input.html
         title: Data Input
         date: 2026-02-11
-        pub-date: 2026-02-06
+        pub-date: 2026-02-05
         categories: [reading]
       - path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/02a-eda.html
         title: Exploratory Data Analysis
-        date: 2026-02-11
-        pub-date: 2026-02-06
+        date: 2026-02-10
+        pub-date: 2026-02-03
         categories: [reading]
       - href: slides/04a-input.qmd
         categories: [slides]
-        date: 2026-02-11
-        pub-date: 2026-02-11
+        date: 2026-02-10
+        pub-date: 2026-02-05
       - href: slides/04b-eda.qmd
         categories: [slides]
-        date: 2026-02-13
-        pub-date: 2026-02-11
+        date: 2026-02-12
+        pub-date: 2026-02-12
       - href: homework/04-cookies.qmd
         categories: [HW, Week04]
-        date: 2026-02-18
+        date: 2026-02-12
+        pub-date: 2026-02-03
       - path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/02b-graphics.html
         title: Data Visualization
         date: 2026-02-18
