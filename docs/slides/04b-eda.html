@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-1.7.32">
 
   <meta name="author" content="Stat 251">
-  <meta name="dcterms.date" content="2026-02-13">
+  <meta name="dcterms.date" content="2026-02-12">
   <title>Stat 251 - Data Wrangling – Data Explorations</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -138,7 +138,7 @@ Stat 251
 </div>
 </div>
 
-  <p class="date">2026-02-13</p>
+  <p class="date">2026-02-12</p>
 </section>
 <section id="exploratory-data-analysis" class="title-slide slide level1 center">
 <h1>Exploratory Data Analysis</h1>
@@ -147,69 +147,91 @@ Stat 251
 <li><p>But with any new data set, you should do some initial exploration: what are the assumptions (what have you been told about the data?) - are implied expectations holding up?</p></li>
 <li><p>Make sure to read through the <a href="https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/02a-eda.html">EDA chapter</a></p></li>
 </ul>
+<!-- # In-class exercise -->
+<!-- During an unusual episode, a number of people were exposed and some died.  -->
+<!-- You are asked to determine the nature of the unusual episode by asking **data-motivated** yes/no questions  -->
+<!-- You will see two tables:  -->
+<!--   - deaths by economic status and sex -->
+<!--   - deaths by economic status and age -->
+<!-- # What would you expect? -->
+<!-- Before seeing the data  -->
+<!-- - what are your expectations regarding *exposure* by economic status, by sex, and by age? -->
+<!-- - what are your expectations regarding *death numbers/rates* by economic status, by sex, and by age? -->
+<!-- Now we look at the data: What anomalies do you notice? -->
+<!-- # Deaths by Economic Status and Sex -->
+<!--     By Economic Status and Sex -->
+<!--     --------------------------------------------------------------------------- -->
+<!--                Population Exposed         Number of            Deaths per 100 -->
+<!--                     to Risk                 Deaths            Exposed to Risk -->
+<!--     Economic   ---------------------------------------------------------------- -->
+<!--     Status     Male  Female  Both     Male  Female  Both     Male  Female  Both -->
+<!--     --------------------------------------------------------------------------- -->
+<!--     I          180     145    325     118      4     122      65      3     37 -->
+<!--     II         179     106    285     154     13     167      87     12     59 -->
+<!--     III        510     196    706     422    106     528      83     54     73 -->
+<!--     IV         862      23    885     670      3     673      78     13     76 -->
+<!--     --------------------------------------------------------------------------- -->
+<!--     Total      1731    470   2201     1364    126   1490      80     27     67 -->
+<!-- # Deaths by Economic Status and Age -->
+<!--                            By Economic Status and Age -->
+<!--     --------------------------------------------------------------------------- -->
+<!--                Population Exposed         Number of            Deaths per 100 -->
+<!--                     to Risk                 Deaths            Exposed to Risk -->
+<!--     Economic  ----------------------------------------------------------------- -->
+<!--     Status    Adult   Child  Both    Adult   Child  Both    Adult   Child  Both -->
+<!--     --------------------------------------------------------------------------- -->
+<!--     I          319      6     325     122      0     122      38      0     37 -->
+<!--     II         261     24     285     167      0     167      64      0     59 -->
+<!--     III        627     79     706     476     52     528      76     66     73 -->
+<!--     IV         885      0     885     673      0     673      76      -     76 -->
+<!--     --------------------------------------------------------------------------- -->
+<!--     Total      2092    109   2201     1438    52    1490      69     48     67 -->
 </section>
 
-<section id="in-class-exercise" class="title-slide slide level1 center">
-<h1>In-class exercise</h1>
-<p>During an unusual episode, a number of people were exposed and some died. You are asked to determine the nature of the unusual episode by asking <strong>data-motivated</strong> yes/no questions</p>
-<p>You will see two tables:</p>
+<section id="homework-4---reading-data-with-cookies" class="title-slide slide level1 center">
+<h1>Homework 4 - Reading Data with Cookies</h1>
 <ul>
-<li><p>deaths by economic status and sex</p></li>
-<li><p>deaths by economic status and age</p></li>
+<li><p>Asking questions is hard</p></li>
+<li><p>Make sure that your questions and insights respect the data structure</p></li>
+<li><p>One row in the cookies data set is … ?</p></li>
+<li><p>The <code>quantity</code> variable is deceptively simple. Why do we have to be careful when drawing conclusions involving this variable?</p></li>
 </ul>
 </section>
 
-<section id="what-would-you-expect" class="title-slide slide level1 center">
-<h1>What would you expect?</h1>
-<p>Before seeing the data</p>
+<section id="homework-4---asking-questions" class="title-slide slide level1 center">
+<h1>Homework 4 - Asking Questions</h1>
 <ul>
-<li><p>what are your expectations regarding <em>exposure</em> by economic status, by sex, and by age?</p></li>
-<li><p>what are your expectations regarding <em>death numbers/rates</em> by economic status, by sex, and by age?</p></li>
-</ul>
-<p>Now we look at the data: What anomalies do you notice?</p>
-</section>
-
-<section id="deaths-by-economic-status-and-sex" class="title-slide slide level1 center">
-<h1>Deaths by Economic Status and Sex</h1>
-<pre><code>By Economic Status and Sex
----------------------------------------------------------------------------
-           Population Exposed         Number of            Deaths per 100
-                to Risk                 Deaths            Exposed to Risk
-Economic   ----------------------------------------------------------------
-Status     Male  Female  Both     Male  Female  Both     Male  Female  Both
----------------------------------------------------------------------------
-I          180     145    325     118      4     122      65      3     37
-II         179     106    285     154     13     167      87     12     59
-III        510     196    706     422    106     528      83     54     73
-IV         862      23    885     670      3     673      78     13     76
----------------------------------------------------------------------------
-Total      1731    470   2201     1364    126   1490      80     27     67</code></pre>
-</section>
-
-<section id="deaths-by-economic-status-and-age" class="title-slide slide level1 center">
-<h1>Deaths by Economic Status and Age</h1>
-<pre><code>                       By Economic Status and Age
----------------------------------------------------------------------------
-           Population Exposed         Number of            Deaths per 100
-                to Risk                 Deaths            Exposed to Risk
-Economic  -----------------------------------------------------------------
-Status    Adult   Child  Both    Adult   Child  Both    Adult   Child  Both
----------------------------------------------------------------------------
-I          319      6     325     122      0     122      38      0     37
-II         261     24     285     167      0     167      64      0     59
-III        627     79     706     476     52     528      76     66     73
-IV         885      0     885     673      0     673      76      -     76
----------------------------------------------------------------------------
-Total      2092    109   2201     1438    52    1490      69     48     67</code></pre>
-</section>
-
-<section id="homework---reading-data-with-cookies" class="title-slide slide level1 center">
-<h1>Homework - Reading Data with Cookies</h1>
-<ul>
-<li><p>Work on homework #4: what are your expectations regarding the data?</p></li>
+<li><p>Stay away from “what is the best, highest, lowest, average, …”: if you get a single number, you do not gain actionable insight.</p></li>
+<li><p>What are your expectations regarding the data?</p></li>
 <li><p>One way of asking questions, is to re-phrase an expectation in form of ‘(how) does the data deviate from …?’</p></li>
 <li><p>Generally, when the data does not meet expectations, we find weird stuff …</p></li>
 </ul>
+</section>
+
+<section id="homework-4---proportions-of" class="title-slide slide level1 center">
+<h1>Homework 4 - Proportions of …</h1>
+<ul>
+<li>It is very easy to come up with proportions … and surprisingly(?) tricky to come up with the proportion the question asks for</li>
+</ul>
+<p>“Using R and Python, generate a table that shows what proportion of recipes contain each type of ingredient, for the most common 20 ingredients.”</p>
+<ul>
+<li><p>What are the most common 20 ingredients?</p></li>
+<li><p>What is in the numerator? What is the denominator?</p></li>
+</ul>
+</section>
+
+<section id="split---apply---combine" class="title-slide slide level1 center">
+<h1>Split - Apply - Combine</h1>
+<p>“Using R and Python, generate a table that shows what proportion of recipes contain each type of ingredient, for the most common 20 ingredients.”</p>
+<ul>
+<li><p>split on ingredient (<code>group_by</code> or <code>.groupby</code>)</p></li>
+<li><p>create a summary (<code>summarize</code> or <code>agg</code>) by using some function that counts the number of (distinct) recipes (<code>n_distinct</code> or <code>nunique</code>) and divide by the total number of recipes</p></li>
+<li><p>combination back into a dataset happens automatically</p></li>
+</ul>
+</section>
+
+<section id="homework-4" class="title-slide slide level1 center">
+<h1>Homework 4</h1>
 <iframe width="100%" height="600px" src="https://unl-statistics.github.io/stat251/homework/04-cookies.html"></iframe>
 
 
