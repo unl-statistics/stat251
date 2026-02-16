@@ -8,6 +8,8 @@ listing:
   - homework/02-review.qmd
   - homework/03-cipher.qmd
   - homework/04-cookies.qmd
+  - homework/05-graphics-groundhogs.qmd
+  - homework/05-graphics-results.qmd
   - slides/01-Syllabus-and-Introductions.qmd
   - slides/02-version-control.qmd
   - slides/02a-review-topics.qmd
@@ -18,6 +20,7 @@ listing:
   - slides/03c-review-cipher.qmd
   - slides/04a-input.qmd
   - slides/04b-eda.qmd
+  - slides/05a-graphics.qmd
   - syllabus.qmd
   - reading.yml
   sort: date desc

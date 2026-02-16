@@ -1,13 +1,13 @@
 ---
 title: 'Homework 5: Graphics and Groundhogs'
-date: '2026-02-25'
+date: '2026-02-19'
 execute-dir: ../homework-repos/05-graphics
 engine: knitr
 author: Homework
 categories:
 - HW
 - Week05
-- Week07
+- Week06
 ---
 
 Note: This assignment must be submitted in github classroom.

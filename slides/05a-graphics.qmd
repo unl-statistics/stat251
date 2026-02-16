@@ -1,5 +1,5 @@
 ---
-title: Finishing up Cookie Exploration
+title: It's Graphics Week!
 author: Stat 251
 categories:
 - slides
@@ -12,12 +12,19 @@ format:
     theme: inverse.scss
     includes:
       in_header: header.html
-date: '2026-02-18'
+date: '2026-02-17'
 ---
 
-# Homework 4
+# Access to Github {.r-fit-text}
 
-Where are you at?
+The 30 days for the personalized token are up/were up last week ...
+
+Remember to extend the token or create a new one (with `usethis::create_github_token()`)
+
+![](fig/ghp_token.png){fig-alt="Screenshot of a github user's Settings > Developer Settings > Personal access token > Tokens (classic)"}
+
+Then follow the instructions of `gitcreds::git_set()`
+
 
 # Graphics week! {.r-fit-text}
 
@@ -46,7 +53,7 @@ You should have read:
 - [Ugly Chart Challenge](https://stat850-at-unl.github.io/stat-850-08-graphics-graphics-ugly/index_files/figure-html/unnamed-chunk-3-1.png) [variant](https://stat850-at-unl.github.io/stat-850-08-graphics-graphics-ugly/index_files/figure-html/unnamed-chunk-3-2.png) example from last semester's graduate class
 
 - [Customizing ggplot2 plots](https://rdpeng.github.io/RProgDA/customizing-ggplot2-plots.html)
-    - Also an RStudio addin package - `ggThemeAssist`
+    - Also an RStudio addin package - [`ggThemeAssist`](https://github.com/calligross/ggthemeassist)
 
 - [Customizing seaborn plots](https://www.codecademy.com/article/seaborn-design-i)
 
@@ -62,6 +69,46 @@ You should have read:
 <iframe width="100%" height = "500px" src="https://unl-statistics.github.io/stat251/homework/05-graphics-groundhogs.html"></iframe>
 ```
 
+# What can you see from this plot?
+
+```{r echo=FALSE}
+tuesdata <- tidytuesdayR::tt_load('2026-02-17')$dataset
+library(ggplot2)
+library(gt)
+tuesdata |> 
+  dplyr::mutate(year = year_ended_june) |>
+  dplyr::filter(year >= 1980) |>
+  dplyr::filter(measure == "Total Sheep") |>
+  ggplot(aes(x = year, y = value)) + 
+  geom_point(aes(colour = "# sheep in NZ")) + 
+  geom_point(aes(x = year, y = population, 
+                 colour ="# people in NZ"), 
+             data = countrypops |> dplyr::filter(country_name == "New Zealand", year >= 1980)) + 
+  theme_bw() 
+```
+
+
+# Does the plot support the message? {.r-fit-text}
+
+["Gap between people and sheep rapidly closing" (March 2025)](https://www.rnz.co.nz/news/country/560252/gap-between-people-and-sheep-rapidly-closing)
+
+```{r echo=FALSE}
+tuesdata <- tidytuesdayR::tt_load('2026-02-17')$dataset
+library(ggplot2)
+library(gt)
+tuesdata |> 
+  dplyr::mutate(year = year_ended_june) |>
+  dplyr::filter(year >= 1980) |>
+  dplyr::filter(measure == "Total Sheep") |>
+  ggplot(aes(x = year, y = value)) + 
+  geom_point(aes(colour = "# sheep in NZ")) + 
+  geom_point(aes(x = year, y = population, 
+                 colour ="# people in NZ"), 
+             data = countrypops |> dplyr::filter(country_name == "New Zealand", year >= 1980)) + 
+  theme_bw() 
+```
+
+
 
 # Homework rubric
 
@@ -71,6 +118,6 @@ You should have read:
 
 - Continue working on homework assignment
 
-- Brainstorming: &#x1F9E0;&#x26C8;&#xFE0F;
-    - how to make the textbook &#x1F4D6; more effective 
-    - what will motivate you to read it before class? &#x1F61C;
+<!-- - Brainstorming: &#x1F9E0;&#x26C8;&#xFE0F; -->
+<!--     - how to make the textbook &#x1F4D6; more effective  -->
+<!--     - what will motivate you to read it before class? &#x1F61C; -->

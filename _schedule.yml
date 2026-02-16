@@ -101,27 +101,27 @@ schedule:
         pub-date: 2026-02-03
       - path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/02b-graphics.html
         title: Data Visualization
-        date: 2026-02-18
+        date: 2026-02-17
         categories: [reading]
       - path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/02c-good-graphics.html
         title: Good Graphics
-        date: 2026-02-18
+        date: 2026-02-17
         categories: [reading]
       - href: homework/05-graphics-groundhogs.qmd
         categories: [HW, Week05]
-        date: 2026-02-25
+        date: 2026-02-19
       - title: Ugly Chart Gallery
         href: homework/05-graphics-results.qmd
         categories: [HW, Week05]
-        date: 2026-02-27
+        date: 2026-02-24
       - href: slides/05a-graphics.qmd
         categories: [slides]
-        date: 2026-02-18
+        date: 2026-02-17
         pub-date: 2026-02-16
       - href: slides/05b-graphics.qmd
         categories: [slides]
-        date: 2026-02-20
-        pub-date: 2026-02-16
+        date: 2026-02-19
+        pub-date: 2026-02-18
       - href: slides/06a-graphics.qmd
         categories: [slides]
         date: 2026-02-24
@@ -130,7 +130,8 @@ schedule:
     materials:
       - path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/03-data-cleaning.html
         title: Data Cleaning
-        date: 2026-02-25
+        date: 2026-02-24
+        pub-date: 2026-02-20
         categories: [reading]
       - href: homework/06-data-manip.qmd
         categories: [HW, Week06]

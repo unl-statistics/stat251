@@ -50,8 +50,8 @@
   is_live: true
 - path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/02b-graphics.html
   title: Data Visualization
-  date: '2026-02-18'
-  pub.date: '2026-02-09'
+  date: '2026-02-17'
+  pub.date: '2026-02-08'
   categories:
   - reading
   - .na.character
@@ -60,8 +60,8 @@
   is_live: true
 - path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/02c-good-graphics.html
   title: Good Graphics
-  date: '2026-02-18'
-  pub.date: '2026-02-09'
+  date: '2026-02-17'
+  pub.date: '2026-02-08'
   categories:
   - reading
   - .na.character
