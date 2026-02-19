@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-1.7.32">
 
   <meta name="author" content="Stat 251">
-  <meta name="dcterms.date" content="2026-02-20">
+  <meta name="dcterms.date" content="2026-02-19">
   <title>Stat 251 - Data Wrangling – Creating Good Graphics</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -29,6 +29,72 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-6036c0d3e113f66ef11adcf66984d9d0.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -138,39 +204,131 @@ Stat 251
 </div>
 </div>
 
-  <p class="date">2026-02-20</p>
+  <p class="date">2026-02-19</p>
 </section>
-<section id="homework-4" class="title-slide slide level1 center">
-<h1>Homework 4</h1>
-<p>Feedback posted on any solutions submitted before 5pm yesterday</p>
-<p>Before the due-date you can re-submit as often as you want to.</p>
-<p>After the due-date you have one (re-)submission.</p>
-<p>Get started early on the homework!</p>
-</section>
-
-<section id="graphics-week" class="title-slide slide level1 center">
-<h1>Graphics week!</h1>
-<p>Readings for Tuesday:</p>
+<section id="homework-graphics" class="title-slide slide level1 center">
+<h1>Homework: Graphics</h1>
 <ul>
-<li><a href="https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/02b-graphics.html">Graphics</a>
-<ul>
-<li>Focus on relationships between variables</li>
-<li>Grammar of Graphics vs.&nbsp;Manual plot specification/mapping</li>
-</ul></li>
-<li><a href="https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/02c-good-graphics.html">Good Graphics</a>
-<ul>
-<li>Perception &amp; Cognition</li>
-<li>Use the least complicated chart that still works</li>
-</ul></li>
+<li><p>How does the homework tie to the readings?</p></li>
+<li><p>Working on skills: how to make graphics</p></li>
+<li><p>Work on concepts: what are mappings, and how do they effect the conclusions</p></li>
+<li><p>Work on presentation: what are more effective ways of presenting information</p></li>
 </ul>
 </section>
 
-<section id="make-graphics" class="title-slide slide level1 center">
-<h1>Make Graphics!</h1>
+<section id="homework-rubric" class="title-slide slide level1 center">
+<h1>Homework rubric</h1>
+
+<img data-src="fig/graphics-groundhogs-rubric.png" alt="Rubric for homework assignment. Data exploration is worth 2 points, and includes each variable explored and each plot described with 1-2 sentences. Grammar of graphics - probabilities and grammar of graphics - agreement are worth 1.5 points each. Ugly chart in R is worth 2.5 points, including the explanation of why the chart is ugly. Ugly chart in python is worth 2.5 points, including the explanation of why the chart is ugly." class="r-stretch"></section>
+
+<section id="graphics-week-homework" class="title-slide slide level1 center">
+<h1>Graphics week homework</h1>
 <ul>
 <li><p>Part I: Make visual summaries for two new data sets and think about mappings</p></li>
 <li><p>Part II: Use your knowledge to create the worst!</p></li>
 </ul>
+</section>
+
+<section id="data-exploration" class="title-slide slide level1 center">
+<h1>Data Exploration</h1>
+<p>Make charts for all variables that are listed by name:</p>
+<p><code>groundhogs.csv</code></p>
+<ul>
+<li>lat, long</li>
+<li>country</li>
+<li>isGroundhog</li>
+<li>active</li>
+<li>predictionsCount</li>
+</ul>
+<p><code>predictions.csv</code></p>
+<ul>
+<li>isGroundhog</li>
+<li>year</li>
+<li>shadow</li>
+</ul>
+</section>
+
+<section id="variable-active" class="title-slide slide level1 center">
+<h1>Variable <code>active</code></h1>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-2"><a></a>groundhogs <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"https://raw.githubusercontent.com/stat-assignments/eda-groundhogs/97ab0e01b64aa3a1749247983a9b05a0c30b5c0c/groundhogs.csv"</span>)</span>
+<span id="cb1-3"><a></a>groundhogs <span class="sc">%&gt;%</span> <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> active)) <span class="sc">+</span> <span class="fu">geom_bar</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="05b-graphics_files/figure-revealjs/unnamed-chunk-1-1.png" width="960" class="r-stretch"><p>This is a barchart of the variable <code>active</code>, the variable is mapped to the x axis, the count for each bar (corresponding to the height of the bars) is mapped to y. Finding: Very few (2) groundhogs are not active.</p>
+</section>
+
+<section id="probabilities-and-agreement" class="title-slide slide level1 center">
+<h1>Probabilities and Agreement</h1>
+<p>Answer the following two questions using charts. Explain your chart, and explain how it answers the question.</p>
+<p><strong>Do different groundhogs have different probabilities of predicting 6 more weeks of winter?</strong></p>
+<p><strong>How much do North American groundhogs tend to agree on their predictions?</strong></p>
+</section>
+
+<section id="section" class="title-slide slide level1 center">
+<h1></h1>
+<p>Do different groundhogs have different probabilities of predicting 6 more weeks of winter?</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a>predictions <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"https://raw.githubusercontent.com/stat-assignments/eda-groundhogs/refs/heads/main/groundhog-predictions.csv"</span>)</span>
+<span id="cb2-2"><a></a></span>
+<span id="cb2-3"><a></a>predictions <span class="sc">%&gt;%</span> </span>
+<span id="cb2-4"><a></a>  <span class="fu">mutate</span>(<span class="at">name =</span> <span class="fu">reorder</span>(<span class="fu">factor</span>(name), name, length)) <span class="sc">%&gt;%</span></span>
+<span id="cb2-5"><a></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> name)) <span class="sc">+</span> <span class="fu">geom_bar</span>() <span class="sc">+</span></span>
+<span id="cb2-6"><a></a>  <span class="fu">geom_bar</span>(<span class="fu">aes</span>( <span class="at">weight =</span> shadow), <span class="at">fill =</span> <span class="st">"darkorange"</span>) <span class="sc">+</span> </span>
+<span id="cb2-7"><a></a>  <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">60</span>, <span class="at">hjust =</span> <span class="dv">1</span>)) <span class="sc">+</span> </span>
+<span id="cb2-8"><a></a>  <span class="fu">ggtitle</span>(<span class="st">"Number of predictions</span><span class="sc">\n</span><span class="st">Number of times seeing a shadow in orange"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="05b-graphics_files/figure-revealjs/unnamed-chunk-2-1.png" width="960" class="r-stretch"><p>What about missing values in the shadow variable?</p>
+</section>
+
+<section id="section-1" class="title-slide slide level1 center">
+<h1></h1>
+<p>How do we need to change the previous chart?</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a>predictions <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"https://raw.githubusercontent.com/stat-assignments/eda-groundhogs/refs/heads/main/groundhog-predictions.csv"</span>)</span>
+<span id="cb3-2"><a></a></span>
+<span id="cb3-3"><a></a>predictions <span class="sc">%&gt;%</span> </span>
+<span id="cb3-4"><a></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(shadow)) <span class="sc">%&gt;%</span></span>
+<span id="cb3-5"><a></a>  <span class="fu">mutate</span>(<span class="at">name =</span> <span class="fu">reorder</span>(<span class="fu">factor</span>(name), name, length)) <span class="sc">%&gt;%</span></span>
+<span id="cb3-6"><a></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> name)) <span class="sc">+</span> <span class="fu">geom_bar</span>(<span class="fu">aes</span>(<span class="at">fill=</span><span class="fu">factor</span>(shadow)), <span class="at">position =</span> <span class="st">"fill"</span>) <span class="sc">+</span></span>
+<span id="cb3-7"><a></a>  <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">60</span>, <span class="at">hjust =</span> <span class="dv">1</span>)) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="05b-graphics_files/figure-revealjs/unnamed-chunk-3-1.png" width="960" class="r-stretch"><p>limitations: different groundhogs have made very different number of predictions (and for different years)</p>
+</section>
+
+<section id="section-2" class="title-slide slide level1 center">
+<h1></h1>
+<p>How much do North American groundhogs tend to agree on their predictions?</p>
+
+<img data-src="05b-graphics_files/figure-revealjs/unnamed-chunk-4-1.png" width="960" class="r-stretch"></section>
+
+<section id="section-3" class="title-slide slide level1 center">
+<h1></h1>
+<p>For years since 2010 … in each year close to 50/50 shadow/noshadow prediction - that’s the least amount of agreement we can possibly get!</p>
+
+<img data-src="05b-graphics_files/figure-revealjs/unnamed-chunk-5-1.png" width="960" class="r-stretch"></section>
+
+<section id="section-4" class="title-slide slide level1 center">
+<h1></h1>
+<p>But … when we color points by prediction, there seems to be regional agreement</p>
+
+<img data-src="05b-graphics_files/figure-revealjs/unnamed-chunk-6-1.png" width="960" class="r-stretch"><p>Is this perceived agreement real?</p>
+</section>
+
+<section id="section-5" class="title-slide slide level1 center">
+<h1></h1>
+<p>Which plot shows the most geographic agreement?</p>
+
+<img data-src="05b-graphics_files/figure-revealjs/unnamed-chunk-7-1.png" width="1152" class="r-stretch"></section>
+
+<section id="section-6" class="title-slide slide level1 center">
+<h1></h1>
+<p>year was 2017 data is in 9</p>
+<p>… maybe there is not even regional geographic agreement between the predictions.</p>
+<p>Lineups help us to calibrate our eyes and distinguish random patterns from real visual findings.</p>
 </section>
 
 <section id="resources-for-this-week" class="title-slide slide level1 center">
@@ -194,23 +352,6 @@ Stat 251
 </ul>
 </div>
 <iframe width="100%" height="500px" src="https://unl-statistics.github.io/stat251/homework/05-graphics-groundhogs.html"></iframe>
-</section>
-
-<section id="homework-rubric" class="title-slide slide level1 center">
-<h1>Homework rubric</h1>
-
-<img data-src="fig/graphics-groundhogs-rubric.png" alt="Rubric for homework assignment. Data exploration is worth 2 points, and includes each variable explored and each plot described with 1-2 sentences. Grammar of graphics - probabilities and grammar of graphics - agreement are worth 1.5 points each. Ugly chart in R is worth 2.5 points, including the explanation of why the chart is ugly. Ugly chart in python is worth 2.5 points, including the explanation of why the chart is ugly." class="r-stretch"></section>
-
-<section id="next-time" class="title-slide slide level1 center">
-<h1>Next time</h1>
-<ul>
-<li><p>Continue working on homework assignment</p></li>
-<li><p>Brainstorming: 🧠⛈️</p>
-<ul>
-<li>how to make the textbook 📖 more effective</li>
-<li>what will motivate you to read it before class? 😜</li>
-</ul></li>
-</ul>
 
 
 </section>
