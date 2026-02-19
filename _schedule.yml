@@ -135,7 +135,8 @@ schedule:
         categories: [reading]
       - href: homework/06-data-manip.qmd
         categories: [HW, Week06]
-        date: 2026-03-06
+        date: 2026-02-26
+        pub-date: 2026-02-19
       - href: slides/06b-dplyr.qmd
         categories: [slides]
         date: 2026-02-27

@@ -1,13 +1,13 @@
 ---
 title: 'Homework 6: Data Manipulation'
-date: '2026-03-06'
+date: '2026-02-26'
 execute-dir: ../homework-repos/06-data-manip
 engine: knitr
 author: Homework
 categories:
 - HW
 - Week06
-- Week08
+- Week07
 --- 
 
 Note: This assignment must be submitted in github classroom.
