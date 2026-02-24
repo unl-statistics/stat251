@@ -152,8 +152,8 @@ data <- predictions %>% filter(year == sample_year, !is.na(shadow)) %>%
 
 pos <- sample(16, 1)
 lineup(null_permute('shadow'), data, pos = pos) %>%
-  ggplot(aes(x = long, y = lat, colour = shadow)) + 
-  geom_point() + facet_wrap(~.sample) + 
+  ggplot(aes(x = long, y = lat, colour = shadow, shape = shadow)) + 
+  geom_point(size = 3) + facet_wrap(~.sample) + 
   theme_bw()
 
 ```

@@ -122,7 +122,7 @@ schedule:
         categories: [slides]
         date: 2026-02-19
         pub-date: 2026-02-18
-      - href: slides/06a-graphics.qmd
+      - href: slides/06a-data-manip.qmd
         categories: [slides]
         date: 2026-02-24
         pub-date: 2026-02-20
@@ -136,11 +136,11 @@ schedule:
       - href: homework/06-data-manip.qmd
         categories: [HW, Week06]
         date: 2026-02-26
-        pub-date: 2026-02-19
+        pub-date: 2026-02-20
       - href: slides/06b-dplyr.qmd
         categories: [slides]
-        date: 2026-02-27
-        pub-date: 2026-02-20
+        date: 2026-02-26
+        pub-date: 2026-02-25
       - title: Practice Exam (2023)
         href: exam/2023-midterm/index.qmd
         date: 2026-03-04

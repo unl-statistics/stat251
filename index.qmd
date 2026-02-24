@@ -23,6 +23,7 @@ listing:
   - slides/04b-eda.qmd
   - slides/05a-graphics.qmd
   - slides/05b-graphics.qmd
+  - slides/06a-data-manip.qmd
   - syllabus.qmd
   - reading.yml
   sort: date desc
