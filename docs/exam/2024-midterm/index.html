@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Your Name">
-<meta name="dcterms.date" content="2026-03-04">
+<meta name="dcterms.date" content="2026-03-12">
 
-<title>Practice Exam (2023) – Stat 251 - Data Wrangling</title>
+<title>Practice Exam (2024) – Stat 251 - Data Wrangling</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -154,18 +154,27 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#ground-rules" id="toc-ground-rules" class="nav-link active" data-scroll-target="#ground-rules">Ground Rules</a></li>
-  <li><a href="#pockets" id="toc-pockets" class="nav-link" data-scroll-target="#pockets">Pockets</a>
+  <li><a href="#data-input---polling-places" id="toc-data-input---polling-places" class="nav-link active" data-scroll-target="#data-input---polling-places">Data Input - Polling Places</a>
   <ul class="collapse">
-  <li><a href="#read-in-the-data" id="toc-read-in-the-data" class="nav-link" data-scroll-target="#read-in-the-data">Read in the Data</a></li>
-  <li><a href="#conduct-an-exploratory-data-analysis" id="toc-conduct-an-exploratory-data-analysis" class="nav-link" data-scroll-target="#conduct-an-exploratory-data-analysis">Conduct an Exploratory Data Analysis</a>
+  <li><a href="#data-file-inspection" id="toc-data-file-inspection" class="nav-link" data-scroll-target="#data-file-inspection">Data File Inspection</a></li>
+  <li><a href="#reading-the-data" id="toc-reading-the-data" class="nav-link" data-scroll-target="#reading-the-data">Reading the Data</a></li>
+  <li><a href="#summarize-the-data" id="toc-summarize-the-data" class="nav-link" data-scroll-target="#summarize-the-data">Summarize the Data</a></li>
+  </ul></li>
+  <li><a href="#data-cleaning---polling-places-over-time" id="toc-data-cleaning---polling-places-over-time" class="nav-link" data-scroll-target="#data-cleaning---polling-places-over-time">Data Cleaning - Polling Places over Time</a>
   <ul class="collapse">
-  <li><a href="#questions" id="toc-questions" class="nav-link" data-scroll-target="#questions">Questions</a></li>
-  <li><a href="#question-answers" id="toc-question-answers" class="nav-link" data-scroll-target="#question-answers">Question Answers</a></li>
+  <li><a href="#steps" id="toc-steps" class="nav-link" data-scroll-target="#steps">Steps</a></li>
+  <li><a href="#code" id="toc-code" class="nav-link" data-scroll-target="#code">Code</a></li>
+  <li><a href="#chart-description" id="toc-chart-description" class="nav-link" data-scroll-target="#chart-description">Chart Description</a></li>
+  <li><a href="#chart" id="toc-chart" class="nav-link" data-scroll-target="#chart">Chart</a></li>
+  <li><a href="#modifications" id="toc-modifications" class="nav-link" data-scroll-target="#modifications">Modifications</a></li>
   </ul></li>
-  <li><a href="#comparing-sexes-and-styles" id="toc-comparing-sexes-and-styles" class="nav-link" data-scroll-target="#comparing-sexes-and-styles">Comparing Sexes and Styles</a></li>
+  <li><a href="#data-processing" id="toc-data-processing" class="nav-link" data-scroll-target="#data-processing">Data Processing</a>
+  <ul class="collapse">
+  <li><a href="#function-steps" id="toc-function-steps" class="nav-link" data-scroll-target="#function-steps">Function Steps</a></li>
+  <li><a href="#function-code---single-address" id="toc-function-code---single-address" class="nav-link" data-scroll-target="#function-code---single-address">Function Code - Single Address</a></li>
+  <li><a href="#function-code---vector" id="toc-function-code---vector" class="nav-link" data-scroll-target="#function-code---vector">Function Code - Vector</a></li>
+  <li><a href="#function-evaluation" id="toc-function-evaluation" class="nav-link" data-scroll-target="#function-evaluation">Function Evaluation</a></li>
   </ul></li>
-  <li><a href="#cell-phone-dimensions" id="toc-cell-phone-dimensions" class="nav-link" data-scroll-target="#cell-phone-dimensions">Cell Phone Dimensions</a></li>
   </ul>
 </nav>
     </div>
@@ -174,7 +183,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Practice Exam (2023)</h1>
+<h1 class="title">Practice Exam (2024)</h1>
   <div class="quarto-categories">
     <div class="quarto-category">Exam</div>
     <div class="quarto-category">Week08</div>
@@ -196,7 +205,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">March 4, 2026</p>
+      <p class="date">March 12, 2026</p>
     </div>
   </div>
   
@@ -208,87 +217,315 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>Your goal on this exam is to demonstrate competency in as many of the <a href="objectives.qmd">objectives</a> of chapters we’ve covered in this class so far as you can.</p>
-<section id="ground-rules" class="level2">
-<h2 class="anchored" data-anchor-id="ground-rules">Ground Rules</h2>
-<ul>
-<li><p>You may use the textbook and the internet (but the same rules apply - you must be able to explain your answer!)</p></li>
-<li><p>You may NOT confer with other people or AI entities - including posting on StackOverflow, Reddit, etc.</p></li>
-<li><p>You may ask clarifying questions of Dr.&nbsp;Vanderplas by email/zoom or in person</p></li>
-<li><p>You may use R or Python for any of these tasks, but your code must be reproducible - I must be able to run your quarto file on my machine. I have provided R chunks in the correct locations in this file - change them to Python if you wish.</p></li>
-<li><p>For any plot or table you create, be sure to appropriately caption and label it, providing 1-2 sentences to highlight the main purpose/conclusions you can draw from that plot.</p></li>
-<li><p>You should have at least one code chunk for each ## heading below.</p></li>
-</ul>
-</section>
-<section id="pockets" class="level1">
-<h1>Pockets</h1>
-<p>Jean pockets are useful for carrying a multitude of different items around, but this utility is not evenly shared: women’s pants often have pockets which are large enough to hold chapstick but not a pen, let alone a cell phone.</p>
-<p>The Pudding assembled a dataset of jean pocket size measurements, which you can find <a href="https://github.com/the-pudding/data/tree/master/pockets">here</a>. There are two different data sets: the raw pocket measurements, and a second data file of measurements of the largest rectangle with could theoretically fit into the pocket of each pair of jeans evaluated.</p>
-<section id="read-in-the-data" class="level2">
-<h2 class="anchored" data-anchor-id="read-in-the-data">Read in the Data</h2>
-<p>Write code which will:</p>
-<ol type="1">
-<li>Download the raw pocket <code>measurements.csv</code> data to a file in this repository</li>
-<li>Read the data in, ensuring that columns containing numbers are appropriately formatted. You may consider the fabric column as a character string.</li>
-</ol>
-</section>
-<section id="conduct-an-exploratory-data-analysis" class="level2">
-<h2 class="anchored" data-anchor-id="conduct-an-exploratory-data-analysis">Conduct an Exploratory Data Analysis</h2>
-<p>Generate at least 3 questions about the data set and find answers to those questions using charts, tables, or numerical summaries.</p>
-<section id="questions" class="level3">
-<h3 class="anchored" data-anchor-id="questions">Questions</h3>
-<ol type="1">
-<li></li>
-<li></li>
-<li></li>
-</ol>
-</section>
-<section id="question-answers" class="level3">
-<h3 class="anchored" data-anchor-id="question-answers">Question Answers</h3>
-<p>Your discussion of this output goes here.</p>
-<p>Your discussion of this output goes here.</p>
-<p>Your discussion of this output goes here</p>
-</section>
-</section>
-<section id="comparing-sexes-and-styles" class="level2">
-<h2 class="anchored" data-anchor-id="comparing-sexes-and-styles">Comparing Sexes and Styles</h2>
-<p>Generate one or two plots which best showcase the difference in pocket sizes for different sexes and styles of pants. Use The Pudding’s classification for pants styles, treating straight and boot-cut styles as the same and skinny and slim styles as the same.<br>
-You may annotate the plot with the output from statistical tests if you wish, but it is sufficient to highlight the visual differences. Your chart(s) must have appropriate titles and axis labels, and must be constructed to take into account the principles of good graphics discussed in the textbook.</p>
-<p>Your discussion of this output goes here.</p>
-<p>Replace this paragraph with 1-2 sentences discussing what choices you made to make the plot you generated above perceptually optimal. Which principles of good graphics did you use?</p>
-</section>
-</section>
-<section id="cell-phone-dimensions" class="level1">
-<h1>Cell Phone Dimensions</h1>
-<p>Dr.&nbsp;Vanderplas is interested in finding a pair of pants (from either the men’s section or the women’s section) which can accommodate her cell phone.</p>
-<p>Here is some code to read in the data in R and Python and extract the rectanglePhone dataset.</p>
+<p>In this exam, you’ll be using data collected about US polling places. The <a href="https://publicintegrity.org/">Center for Public Integrity</a> assembled this data using open records requests and contact with state or county election officials. Full documentation is available on the <a href="https://github.com/PublicI/us-polling-places">github repository for the data</a> - each state’s details can be found in a README file for that state; there is also a machine-readable <code>manifest.yaml</code> file for each state provided.</p>
+<p>We will start out by using data assembled by the TidyTuesday project, but will eventually get to the raw data as well.</p>
+<p>The raw CSV data is available at https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2024/2024-01-16/polling_places.csv</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>jsonfile <span class="ot">&lt;-</span> <span class="st">"https://raw.githubusercontent.com/the-pudding/data/master/pockets/measurementRectangles.json"</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(jsonlite)</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyr)</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>rects <span class="ot">&lt;-</span> <span class="fu">fromJSON</span>(jsonfile)</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>rectanglePhone <span class="ot">&lt;-</span> rects <span class="sc">%&gt;%</span> <span class="fu">unnest</span>(<span class="st">"rectanglePhone"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># load any R packages you use in this chunk</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>jsonfile <span class="op">=</span> <span class="st">"https://raw.githubusercontent.com/the-pudding/data/master/pockets/measurementRectangles.json"</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>rects <span class="op">=</span> pd.read_json(jsonfile)</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>rectanglePhoneDims <span class="op">=</span> pd.DataFrame.from_records(rects[<span class="st">'rectanglePhone'</span>], nrows <span class="op">=</span> <span class="dv">80</span>)</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>rectanglePhone <span class="op">=</span> pd.concat([rects.iloc[:,<span class="dv">0</span>:<span class="dv">21</span>].reset_index(drop<span class="op">=</span><span class="va">True</span>), rectanglePhoneDims], axis <span class="op">=</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># load any python packages you use in this chunk</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>Write a function <code>checkpants(phonelength, phonewidth)</code> which takes length and width in centimeters and uses the largest rectangle data set from The Pudding to identify pants compatible with a specific cell phone’s length and width. Return the following information in a list:</p>
+<section id="data-input---polling-places" class="level1">
+<h1>Data Input - Polling Places</h1>
+<p>(30 pts)</p>
+<section id="data-file-inspection" class="level2">
+<h2 class="anchored" data-anchor-id="data-file-inspection">Data File Inspection</h2>
+<p>Here are the first six lines of the TidyTuesday CSV file:</p>
+<pre><code>election_date,state,county_name,jurisdiction,jurisdiction_type,precinct_id,precinct_name,polling_place_id,location_type,name,address,notes,source,source_date,source_notes
+2020-11-03,AL,AUTAUGA,AUTAUGA,county,NA,AUTAUGAVILLE VOL FIRE DEPT,NA,election_day,AUTAUGAVILLE VOL FIRE DEPT,"2610 HIGHWAY 14 W, AUTAUGAVILLE, AL 36003",NA,ORR,2020-10-21,NA
+2020-11-03,AL,AUTAUGA,AUTAUGA,county,NA,BILLINGSLEY COMMUNITY CENTER,NA,election_day,BILLINGSLEY COMMUNITY CENTER,"2159 COUNTY RD 37, BILLINGSLEY, AL 36006",NA,ORR,2020-10-21,NA
+2020-11-03,AL,AUTAUGA,AUTAUGA,county,NA,BOONE'S CHAPEL,NA,election_day,BOONE'S CHAPEL,"2301 COUNTY RD 66, PRATTVILLE, AL 36067",NA,ORR,2020-10-21,NA
+2020-11-03,AL,AUTAUGA,AUTAUGA,county,NA,BOOTH VOL FIRE DEPT,NA,election_day,BOOTH VOL FIRE DEPT,"1701 COUNTY ROAD 10, BOOTH, AL 36008",NA,ORR,2020-10-21,NA
+2020-11-03,AL,AUTAUGA,AUTAUGA,county,NA,CAMELLIA BAPTIST CH,NA,election_day,CAMELLIA BAPTIST CH,"201 WOODVALE ROAD, PRATTVILLE, AL 36067",NA,ORR,2020-10-21,NA</code></pre>
+<ol type="1">
+<li><p>What is the file delimiter? (1 pt)<br>
+<delete this="" and="" replace="" with="" your="" answer=""></delete></p></li>
+<li><p>What is the header? (1 pt)<br>
+<delete this="" and="" replace="" with="" your="" answer=""></delete></p></li>
+<li><p>How many columns will the data have when it is read in using R or Python? (1 pt)<br>
+<delete this="" and="" replace="" with="" your="" answer=""></delete></p></li>
+<li><p>How is the data stored differently in the address field compared to the name field (1 pt), and why is this different handling necessary (1 pt)?<br>
+<delete this="" and="" replace="" with="" your="" answer=""></delete></p></li>
+</ol>
+</section>
+<section id="reading-the-data" class="level2">
+<h2 class="anchored" data-anchor-id="reading-the-data">Reading the Data</h2>
+<p>Read in the data in R (5 pts) and in python (5 pts).</p>
+<p>Make sure to load any packages which are necessary to run your code in the setup chunks at the beginning of the document.</p>
+</section>
+<section id="summarize-the-data" class="level2">
+<h2 class="anchored" data-anchor-id="summarize-the-data">Summarize the Data</h2>
+<p>Using any method you choose from either language, fill in the following table.</p>
+<p>Language used: <fill in=""></fill></p>
+<p>Make sure your terms match the language you’re using and the code you provided above. If you use code to get these values (which is probably a good idea), please use the code chunks provided here:</p>
+<p>When computing the number of unique values, exclude missing values.</p>
+<table class="caption-top table">
+<caption>Summary of Polling Data</caption>
+<colgroup>
+<col style="width: 17%">
+<col style="width: 13%">
+<col style="width: 34%">
+<col style="width: 34%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Column Name</th>
+<th>Data Type (5 pts)</th>
+<th># missing values (5 pts)</th>
+<th># unique values (5 pts)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>election_date</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>state</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>county_name</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>jurisdiction</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>jurisdiction_type</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>precinct_id</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>precinct_name</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>polling_place_id</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>location_type</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>name</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>address</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>notes</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>source</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>source_date</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>source_notes</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="data-cleaning---polling-places-over-time" class="level1">
+<h1>Data Cleaning - Polling Places over Time</h1>
+<p>(50 pts)</p>
+<p>For this part of the exam, you’ll use your student ID to get the state you’ll be working with. ::: {.cell}</p>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>my_nuid <span class="ot">&lt;-</span> <span class="dv">96582245</span> <span class="co"># Change this value to your NUID</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>state_ids <span class="ot">&lt;-</span> <span class="fu">readRDS</span>(<span class="st">"state-ids.RDS"</span>)</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>my_state <span class="ot">&lt;-</span> state_ids<span class="sc">$</span>state[my_nuid<span class="sc">%%</span><span class="dv">37</span>]</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(my_state)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "VT"</code></pre>
+</div>
+<p>:::</p>
+<p>Your end goal is to get a plot of the number of available polling places in each election, with separate lines for each jurisdiction (e.g.&nbsp;county) within your state.</p>
+<section id="steps" class="level2">
+<h2 class="anchored" data-anchor-id="steps">Steps</h2>
+<p>(10 pts)</p>
+<p>Write out the steps (in plain language) required to get from the polling place data provided <a href="https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2024/2024-01-16/polling_places.csv">here</a> to the data you need to create your plot. Make sure to remove polling places which do not make sense - e.g.&nbsp;those with an address consisting of just the state name, or those named “DO NOT USE”.</p>
+<p>For each step, identify the data manipulation verb you will use, and any variables you will pass in as arguments. Fill in the following table when you are finished. Add new rows by moving to a new line, and separate each cell in the table with <code>|</code> (spaces matter). <code>|</code> is on the key above the enter key and shares a key with <code>\</code> (backslash). You will need to hold shift down.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Step #</th>
+<th>Verb</th>
+<th>Arguments</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>…</td>
+<td>… <!-- replace this line --></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="code" class="level2">
+<h2 class="anchored" data-anchor-id="code">Code</h2>
+<p>(10 pts)</p>
+<p>Write code in R or python to execute the steps you outlined above.</p>
+</section>
+<section id="chart-description" class="level2">
+<h2 class="anchored" data-anchor-id="chart-description">Chart Description</h2>
+<p>(7 pts)</p>
+<p>Use the grammar of graphics to identify the components of the chart here, which provides the data for Wisconsin. <img src="wisconsin-example.jpg" class="img-fluid" style="width:50.0%" alt="Wisconsin counties where the number of polling places changed, 2012-2020"></p>
 <ul>
-<li><p><code>front</code> - A data frame all jeans which can fit a rectangle of the specified dimension in the front pocket</p></li>
-<li><p><code>back</code> - a data frame of all jeans which can fit a rectangle of the specified dimension in the back pocket. Assume a phone fits in the back pocket if the width is less than the <code>minWidthBack</code> measurement and the <code>minHeightBack</code> measurement is at least 70% of the phone’s height.</p></li>
-<li><p><code>price</code> - The average price of a pair of jeans which can fit the specified dimension in either the front or back pocket</p></li>
-<li><p><code>propMenFront</code> - the proportion of men’s pants that can fit a rectangle of the specified dimension in the front pocket</p></li>
-<li><p><code>propWomenAny</code> - the proportion of women’s pants that can fit a rectangle of the specified dimension in any pocket</p></li>
+<li><p>geom:</p></li>
+<li><p>aesthetics: (list at least 3)</p>
+<ul>
+<li></li>
+<li></li>
+<li></li>
+</ul></li>
+<li><p>coordinate system:</p></li>
+<li><p>y axis scale:</p></li>
+<li><p>x axis scale:</p></li>
 </ul>
-<p>You should ensure that you carefully read <a href="https://github.com/the-pudding/data/tree/master/pockets">the dataset documentation</a> to understand the data you are using before you attempt this question.</p>
+</section>
+<section id="chart" class="level2">
+<h2 class="anchored" data-anchor-id="chart">Chart</h2>
+<p>(20 pts)</p>
+<p>Write code in R or python to create a chart like that shown at the beginning of this example (5 pts). Make sure your axes are labeled (5 pts) and your chart has a title (5 pts). Include your plot in this document and make sure you have a figure caption that describes what someone should notice in the chart (5 pts) You may do this either by modifying the chunk options or by using <code>include=F</code> and manually including the picture with a caption.</p>
+</section>
+<section id="modifications" class="level2">
+<h2 class="anchored" data-anchor-id="modifications">Modifications</h2>
+<p>Evaluate the chart you created for comprehensibility and accessibility. (1 pt)</p>
+<p>What modifications might you add to this chart to make it clearer and more understandable? (2 pts)</p>
+</section>
+</section>
+<section id="data-processing" class="level1">
+<h1>Data Processing</h1>
+<p>(20 pts)</p>
+<p>You want to mail a letter to every polling place in the state you were assigned. In order to do this, you need to separate out the pieces of the address: building number, street, city, state, and zip code. Note that not all addresses will have all of these components - in Alaska, for example, there are often not street numbers or even names.</p>
+<section id="function-steps" class="level2">
+<h2 class="anchored" data-anchor-id="function-steps">Function Steps</h2>
+<p>(5 pts)</p>
+<p>Use the following addresses to think through the steps you will need to accomplish this task.</p>
+<pre><code>Tatitlek, AK 99677
+First Street, Cordova, AK 99574
+105 ICE ST, MENASHA, WI 54952-3223
+1025 W 5TH AVE, OSHKOSH, WI 54902
+1702 COUNTY ROAD 40 W, PRATTVILLE, AL 36067
+5281 HIGHWAY 29, CORINTH VFD (PEROTE STATION), BANKS, AL 36005
+713 W. MOUNTAIN AVENUE, JACKSONVILLE, AL 36265
+COMMUNITY CENTER, 1168 HWY 84, SILAS, AL 36919</code></pre>
+<p>Write out the steps your function will need to accomplish in plain language.</p>
+</section>
+<section id="function-code---single-address" class="level2">
+<h2 class="anchored" data-anchor-id="function-code---single-address">Function Code - Single Address</h2>
+<p>(5 pts)</p>
+<p>Write a function, <code>address_parser</code>, which can handle a single address and return a data structure containing each piece of the address, with NAs for pieces which are not matched.</p>
+<p>(change this chunk to python if you’d prefer to use python over R for this task) ::: {.cell}</p>
+<p>:::</p>
+<p>This chunk will test your function on the addresses provided as examples. (change this chunk to python if you used python above) ::: {.cell}</p>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">address_parser</span>(<span class="st">"Tatitlek, AK 99677"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-error">
+<pre><code>Error in address_parser("Tatitlek, AK 99677"): could not find function "address_parser"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">address_parser</span>(<span class="st">"First Street, Cordova, AK 99574"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-error">
+<pre><code>Error in address_parser("First Street, Cordova, AK 99574"): could not find function "address_parser"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">address_parser</span>(<span class="st">"105 ICE ST, MENASHA, WI 54952-3223"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-error">
+<pre><code>Error in address_parser("105 ICE ST, MENASHA, WI 54952-3223"): could not find function "address_parser"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">address_parser</span>(<span class="st">"1025 W 5TH AVE, OSHKOSH, WI 54902"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-error">
+<pre><code>Error in address_parser("1025 W 5TH AVE, OSHKOSH, WI 54902"): could not find function "address_parser"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">address_parser</span>(<span class="st">"1702 COUNTY ROAD 40 W, PRATTVILLE, AL 36067"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-error">
+<pre><code>Error in address_parser("1702 COUNTY ROAD 40 W, PRATTVILLE, AL 36067"): could not find function "address_parser"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">address_parser</span>(<span class="st">"5281 HIGHWAY 29, CORINTH VFD (PEROTE STATION), BANKS, AL 36005"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-error">
+<pre><code>Error in address_parser("5281 HIGHWAY 29, CORINTH VFD (PEROTE STATION), BANKS, AL 36005"): could not find function "address_parser"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fu">address_parser</span>(<span class="st">"713 W. MOUNTAIN AVENUE, JACKSONVILLE, AL 36265"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-error">
+<pre><code>Error in address_parser("713 W. MOUNTAIN AVENUE, JACKSONVILLE, AL 36265"): could not find function "address_parser"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fu">address_parser</span>(<span class="st">"COMMUNITY CENTER, 1168 HWY 84, SILAS, AL 36919"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-error">
+<pre><code>Error in address_parser("COMMUNITY CENTER, 1168 HWY 84, SILAS, AL 36919"): could not find function "address_parser"</code></pre>
+</div>
+<p>:::</p>
+</section>
+<section id="function-code---vector" class="level2">
+<h2 class="anchored" data-anchor-id="function-code---vector">Function Code - Vector</h2>
+<p>(5 pts)</p>
+<p>Write a function, <code>address_vec</code>, which can parse a vector of addresses and return a data frame with columns corresponding to each piece of the address.</p>
+<p>(change this chunk to python if you’d prefer to use python over R for this task) ::: {.cell}</p>
+<p>:::</p>
+<p>This chunk will test your function on the addresses provided as examples. Delete whichever chunk corresponds to the language you didn’t use. ::: {.cell}</p>
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>test_vec <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Tatitlek, AK 99677"</span>, <span class="st">"First Street, Cordova, AK 99574"</span>, <span class="st">"105 ICE ST, MENASHA, WI 54952-3223"</span>, <span class="st">"1025 W 5TH AVE, OSHKOSH, WI 54902"</span>, <span class="st">"1702 COUNTY ROAD 40 W, PRATTVILLE, AL 36067"</span>, <span class="st">"5281 HIGHWAY 29, CORINTH VFD (PEROTE STATION), BANKS, AL 36005"</span>, <span class="st">"713 W. MOUNTAIN AVENUE, JACKSONVILLE, AL 36265"</span>, <span class="st">"COMMUNITY CENTER, 1168 HWY 84, SILAS, AL 36919"</span>)</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="fu">address_vec</span>(test_vec)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-error">
+<pre><code>Error in address_vec(test_vec): could not find function "address_vec"</code></pre>
+</div>
+<p>:::</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>test_vec <span class="op">=</span> [<span class="st">"Tatitlek, AK 99677"</span>, <span class="st">"First Street, Cordova, AK 99574"</span>, <span class="st">"105 ICE ST, MENASHA, WI 54952-3223"</span>, <span class="st">"1025 W 5TH AVE, OSHKOSH, WI 54902"</span>, <span class="st">"1702 COUNTY ROAD 40 W, PRATTVILLE, AL 36067"</span>, <span class="st">"5281 HIGHWAY 29, CORINTH VFD (PEROTE STATION), BANKS, AL 36005"</span>, <span class="st">"713 W. MOUNTAIN AVENUE, JACKSONVILLE, AL 36265"</span>, <span class="st">"COMMUNITY CENTER, 1168 HWY 84, SILAS, AL 36919"</span>]</span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>address_vec(test_vec)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>NameError: name 'address_vec' is not defined</code></pre>
+</div>
+</div>
+</section>
+<section id="function-evaluation" class="level2">
+<h2 class="anchored" data-anchor-id="function-evaluation">Function Evaluation</h2>
+<p>Use your function to parse a vector of the unique polling place addresses in your state, creating a data table of address components for your letters. (5 pts)</p>
+<p>Where did your function have issues, if it did? (5 pts)</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

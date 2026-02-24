@@ -20,9 +20,11 @@ date: '2026-02-24'
 Homework 5 - graphics:
 
   - graded with feedback
-  - grades not as high as I would like them ... check the feedback carefully!
+  - grades not as high as I would like them ... check the feedback carefully and resubmit!
   
-Resubmissions for homeworks 1-5  open until the week after Spring Break
+If you have resubmitted, make sure to **resubmit in Canvas** as well  (or I won't know that you are ready for me to look at things)
+
+
 
 # Homework Submissions
 
@@ -41,6 +43,20 @@ Resubmissions for homeworks 1-5  open until the week after Spring Break
     - not install packages in the quarto document (rely on the user to figure out installations)
     - not call `View` (opens separate window during render)
 
+# What does the AI say?
+
+- [AI Tool for chart critiques](https://claude.ai/public/artifacts/76a9c843-c658-483a-b658-4f9d68384df1)
+
+- Don't take it seriously!!! This is from a course on Data Analytics by [Stephen Hill](https://drhill.io/)
+
+
+# An example
+
+![]("../figs/claude-one.png")
+
+#
+
+![]("../figs/claude-two.png")
 
 # Homework #6
 
@@ -49,7 +65,7 @@ Resubmissions for homeworks 1-5  open until the week after Spring Break
 - one (unintentional) trap: `co2` object exists in R - leads to extremely strange numbers
 
 
-# Homework 6
+# Homework #6
 
 ```{=html}
 <iframe width="100%" height = "500px" src="https://unl-statistics.github.io/stat251/homework/06-data-manip.html"></iframe>

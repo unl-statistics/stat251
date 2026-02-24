@@ -143,17 +143,22 @@ schedule:
         pub-date: 2026-02-25
       - title: Practice Exam (2023)
         href: exam/2023-midterm/index.qmd
-        date: 2026-03-04
-        pub-date: 2026-02-25
-        categories: [Exam, Week07]
+        date: 2026-03-12
+        pub-date: 2026-02-24
+        categories: [Exam, Week08]
       - title: Practice Exam (2024)
         href: exam/2024-midterm/index.qmd
-        date: 2026-03-04
-        pub-date: 2026-02-25
-        categories: [Exam, Week07]
-      - title: Midterm
+        date: 2026-03-12
+        pub-date: 2026-02-24
+        categories: [Exam, Week08]
+      - title: Practice Exam (2025)
         href: exam/data-earthquakes/index.qmd
-        date: 2026-03-13
+        date: 2026-03-12
+        pub-date: 2026-02-24
+        categories: [Exam, Week08]
+      - title: Midterm
+        href: exam/data-not-sure/index.qmd
+        date: 2026-03-12
         pub-date: 2026-03-04
         categories: [Exam, Week07]
       - title: Good programming practices
