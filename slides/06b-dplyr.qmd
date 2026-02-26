@@ -15,20 +15,6 @@ format:
 date: '2026-02-26'
 ---
 
-# Where we are
-
-Plan for Thursdays: 
-
-  - if there are questions on the current homework assignment, work on that, 
-  - start on the new assignment
-
-Are there more questions for the Graphics homework? 
-
-# 
-
-... next chapter
-
-
 # Computing with data
 
 - data is the central object: 
@@ -142,16 +128,22 @@ becomes group specific
 
 # Homework 6
 
-You're ready to tackle the homework on data manipulation
+You're ready to finish up the homework on data manipulation
 
 ```{=html}
 <iframe width="100%" height = "500px" src="https://unl-statistics.github.io/stat251/homework/06-data-manip.html"></iframe>
 ```
 
+# Homework 6
+
+Extra credit opportunity: what went wrong with the data processing for the homework?
+
+Identify the problem and provide an updated version of the data based on data from [gapminder](https://www.gapminder.org/data/)
+
 
 # Next time
 
-- Continue working on homework assignment
+- Working with Strings! - Poems are data too :)
 
 - Start of (take-home) midterm week
 

@@ -173,13 +173,13 @@ schedule:
         categories: [Exam, Week07]
       - path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/04-strings.html
         title: Strings
-        date: 2026-03-25
+        date: 2026-03-03
         pub-date: 2026-03-12
         categories: [reading]
       - href: homework/07-strings.qmd
         categories: [HW, Week08]
-        date: 2026-03-27
-        pub-date: 2026-03-12
+        date: 2026-03-05
+        pub-date: 2026-02-26
       - href: slides/09a-strings.qmd
         categories: [slides]
         date: 2026-03-25
