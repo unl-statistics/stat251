@@ -43,3 +43,6 @@
 [submodule "project"]
 	path = project
 	url = git@github.com:stat-assignments/screencast.git
+[submodule "exam/data-sandhills"]
+	path = exam/data-sandhills
+	url = https://github.com/heike/data-sandhills.git
