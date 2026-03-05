@@ -8,7 +8,8 @@ listing:
   - exam/2024-midterm/index.qmd
   - exam/data-earthquakes/index.qmd
   - exam/midterm-data-sandhills/index.qmd
-  - exam/objectives.qmd
+  - exam/midterm.qmd
+  - exam/midterm.qmd
   - homework/01-git-github.qmd
   - homework/02-review.qmd
   - homework/03-cipher.qmd

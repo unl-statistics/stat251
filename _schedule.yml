@@ -167,9 +167,14 @@ schedule:
         pub-date: 2026-02-25
         categories: [slides, Week07]
       - title: Exam objectives
-        href: exam/objectives.qmd
+        href: exam/midterm.qmd
         date: 2026-03-05
         pub-date: 2026-02-25
+        categories: [Exam, Week07]
+      - title: Midterm
+        href: exam/midterm.qmd
+        date: 2026-03-12
+        pub-date: 2026-03-05
         categories: [Exam, Week07]
       - path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/04-strings.html
         title: Strings
