@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Stat 251">
-<meta name="dcterms.date" content="2026-01-22">
+<meta name="author" content="Your Name">
+<meta name="dcterms.date" content="2026-03-12">
 
-<title>Programming Review – Stat 251 - Data Wrangling</title>
+<title>Midterm – Stat 251 - Data Wrangling</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,6 +21,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -119,27 +154,24 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#last-class" id="toc-last-class" class="nav-link active" data-scroll-target="#last-class">Last Class</a></li>
-  <li><a href="#todays-goal" id="toc-todays-goal" class="nav-link" data-scroll-target="#todays-goal">Today’s goal</a></li>
-  <li><a href="#from-a-block-of-code-to-functions" id="toc-from-a-block-of-code-to-functions" class="nav-link" data-scroll-target="#from-a-block-of-code-to-functions">From a block of code to functions</a></li>
-  <li><a href="#code-block-to-function" id="toc-code-block-to-function" class="nav-link" data-scroll-target="#code-block-to-function">Code block to function</a></li>
-  <li><a href="#function-definitions" id="toc-function-definitions" class="nav-link" data-scroll-target="#function-definitions">Function definitions</a></li>
-  <li><a href="#as-an-extra-challenge-for-extra-credit" id="toc-as-an-extra-challenge-for-extra-credit" class="nav-link" data-scroll-target="#as-an-extra-challenge-for-extra-credit">As an extra challenge … (for extra credit)</a></li>
-  <li><a href="#dos-and-donts" id="toc-dos-and-donts" class="nav-link" data-scroll-target="#dos-and-donts">Dos and Don’ts</a></li>
-  <li><a href="#next-time" id="toc-next-time" class="nav-link" data-scroll-target="#next-time">Next Time</a></li>
+  <li><a href="#read-the-data-10-points" id="toc-read-the-data-10-points" class="nav-link active" data-scroll-target="#read-the-data-10-points">1. Read the data (10 points)</a></li>
+  <li><a href="#first-overview-20-points" id="toc-first-overview-20-points" class="nav-link" data-scroll-target="#first-overview-20-points">2. First overview (20 points)</a></li>
+  <li><a href="#visual-inspection-25-points" id="toc-visual-inspection-25-points" class="nav-link" data-scroll-target="#visual-inspection-25-points">3. Visual Inspection (25 points)</a></li>
+  <li><a href="#how-many-days-since-january-1-20-points" id="toc-how-many-days-since-january-1-20-points" class="nav-link" data-scroll-target="#how-many-days-since-january-1-20-points">4. How many days since January 1? (20 Points)</a></li>
+  <li><a href="#a-time-line-25-points" id="toc-a-time-line-25-points" class="nav-link" data-scroll-target="#a-time-line-25-points">5. A time line (25 points)</a></li>
   </ul>
-<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="02c-review-topics.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Programming Review</h1>
-<p class="subtitle lead">Working Environment and Programming Logic</p>
+<h1 class="title">Midterm</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">slides</div>
-    <div class="quarto-category">Week03</div>
+    <div class="quarto-category">Exam</div>
+    <div class="quarto-category">Week07</div>
+    <div class="quarto-category">Week09</div>
   </div>
   </div>
 
@@ -150,14 +182,14 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Stat 251 </p>
+             <p>Midterm </p>
           </div>
   </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">January 22, 2026</p>
+      <p class="date">2026-03-12</p>
     </div>
   </div>
   
@@ -169,101 +201,196 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="last-class" class="level2">
-<h2 class="anchored" data-anchor-id="last-class">Last Class</h2>
+<p>Accept this assignment through the link in Canvas.</p>
+<p>The exam is a comprehensive take-home exam.</p>
+<p>Each year, Sandhill Cranes migrate through Nebraska on their way from their Winter areas in the southern US and Mexico to their Summer breeding grounds in Northern Canada, Alaska, and Siberia.</p>
+<div class="cell quarto-layout-panel" data-fig-label="photos" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://magazine.outdoornebraska.gov/wp-content/uploads/2024/09/EF20130313_1315-rgb.jpg" class="img-fluid figure-img"></p>
+<figcaption>Hundreds of cranes roost in the shallows of the Platte river.</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://cdn.firespring.com/images/a0d0f5a1-728e-4123-bc93-926f22793c40.jpg" class="img-fluid figure-img"></p>
+<figcaption>Closeup of five Sandhill cranes.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p>The photographs show Sandhill Cranes migrating through Nebraska.</p>
+</div>
+</div>
+</div>
+<p>Can we see this migration in hobbyists’ data? iNaturalist is a non-profit organization that provides an online platform for the users of their app to submit geo-tagged observations of plants and animals and share their findings with researchers and the public.</p>
+<p>The file <a href="cranes.csv"><code>cranes.csv</code></a> contains results from this platform using the search term “Sandhill Crane”.</p>
+<p>While you should not need it for answering the questions here, a description of some of the variables and the data structure is available at the <a href="https://github.com/inaturalist/inaturalist-open-data/tree/documentation">iNaturalist Open Data</a> documentation.</p>
+<p>For all of the following questions, provide answers and include your code. You can work in R or in python or in a mix of the two. Make sure that the final document you submit renders without errors. In the rendered document avoid any lengthy output.</p>
+<section id="read-the-data-10-points" class="level2">
+<h2 class="anchored" data-anchor-id="read-the-data-10-points">1. Read the data (10 points)</h2>
+<p>Load the data into the object <code>cranes</code> using R or python.</p>
+<ol type="a">
+<li>Make sure that you are working with an object with 10536 rows and 39 columns.</li>
+<li>How many numeric variables, how many text variables does the data set contain? Are there any other types of variables?</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># code chunk for R</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># python code chunk</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="first-overview-20-points" class="level2">
+<h2 class="anchored" data-anchor-id="first-overview-20-points">2. First overview (20 points)</h2>
+<p>Answer the following questions and provide the code that allows you to answer the question.</p>
+<ol type="a">
+<li>Which variable has the highest number of missing values? What is the percentage of missing values across all variables?</li>
+<li>How many different users (<code>user_id</code>) submitted observations? Which user submitted the highest number of observations?</li>
+<li>The variable <code>scientific_name</code> contains the scientific name of the observed species. Create a summary of the fifteen (sub-)species most frequently observed.</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># code chunk for R</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># python code chunk</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="visual-inspection-25-points" class="level2">
+<h2 class="anchored" data-anchor-id="visual-inspection-25-points">3. Visual Inspection (25 points)</h2>
+<ol type="a">
+<li>“Antigone canadensis” is the scientific name of the Sandhill Crane. How many different scientific names in <code>scientific_name</code> contain the substring <code>Antigone canadensis</code>? Create an object <code>sandhill</code> that contains only Sandhill Cranes (and their subspecies).</li>
+<li>Create visualizations that contain the variables below in a meaningful way. Describe each of the visualizations you create and what you learn about the data they show:</li>
+</ol>
 <ul>
-<li>If you made at least one submission to github, you have some points for homework #2 in Canvas</li>
+<li><code>latitude</code>, <code>longitude</code> contain the geographic latitude and longitude</li>
+<li><code>observed_on</code> date on which the observation was made</li>
+<li><code>year</code>, <code>day</code> year and day of the week an observation was made</li>
+<li><code>common_name</code> common name of the observed animal</li>
 </ul>
+<ol start="3" type="a">
+<li>Nebraska fails between -104 and -95.3 degrees longitude and 40.0 and 43.0 degrees latitude. Create an object <code>nebraska</code> that contains all of the Sandhill Crane observations between these coordinates. How many observations are in <code>nebraska</code>? Do the observations follow I-80 or the Platte River more closely? Discuss your answer.</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># code chunk for R</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># python code chunk</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </section>
-<section id="todays-goal" class="level1">
-<h1>Today’s goal</h1>
+<section id="how-many-days-since-january-1-20-points" class="level2">
+<h2 class="anchored" data-anchor-id="how-many-days-since-january-1-20-points">4. How many days since January 1? (20 Points)</h2>
+<p>You are asked to write a function <code>days_since (date)</code> that calculates the number of days it has been since January 1st of that year.</p>
+<p>Assume that the date is written in the format like “d2020-03-14”, i.e.&nbsp;year, month, and day are given by 4, 2, and 2 digits, respectively. In case the month or the year are single digits, a leading zero is added. The string starts with a ‘d’; the values for year, month, and day are separated by “-”.</p>
+<p>Watch out for leap years! February has an extra day in 2020 and in 2024:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: right;">Year</th>
+<th style="text-align: right;">Jan</th>
+<th style="text-align: right;">Feb</th>
+<th style="text-align: right;">Mar</th>
+<th style="text-align: right;">Apr</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">2019</td>
+<td style="text-align: right;">31</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: right;">31</td>
+<td style="text-align: right;">30</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2020</td>
+<td style="text-align: right;">31</td>
+<td style="text-align: right;"><strong>29</strong></td>
+<td style="text-align: right;">31</td>
+<td style="text-align: right;">30</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2021</td>
+<td style="text-align: right;">31</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: right;">31</td>
+<td style="text-align: right;">30</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2022</td>
+<td style="text-align: right;">31</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: right;">31</td>
+<td style="text-align: right;">30</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2023</td>
+<td style="text-align: right;">31</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: right;">31</td>
+<td style="text-align: right;">30</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2024</td>
+<td style="text-align: right;">31</td>
+<td style="text-align: right;"><strong>29</strong></td>
+<td style="text-align: right;">31</td>
+<td style="text-align: right;">30</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2025</td>
+<td style="text-align: right;">31</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: right;">31</td>
+<td style="text-align: right;">30</td>
+</tr>
+</tbody>
+</table>
+<p>Test your function: the output from <code>days_since("d2021-04-03")</code> should be 93; <code>days_since("d2024-03-27")</code> should be 87; and <code>days_since("d2025-03-14")</code> should be 73.</p>
+<ol type="a">
+<li><p>Write a detailed list of steps to calculate from the string named <code>date</code> the number of days since Jan 1 of the same year.</p></li>
+<li><p>Implement the function <code>days_since</code> in R or python.</p></li>
+<li><p>Apply the function <code>days_since</code> to the variable <code>observed_on_string</code> in the <code>cranes</code> data, and find the average number of days since Jan 1 for each of the years.</p></li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># R chunk</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># python chunk</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="a-time-line-25-points" class="level2">
+<h2 class="anchored" data-anchor-id="a-time-line-25-points">5. A time line (25 points)</h2>
+<ol type="a">
+<li>Ensure that the variable <code>observed_on</code> is a date variable. (If you work on R, use the <code>lubridate</code> package to convert the variable <code>observed_on</code> to a date object. If you work in python, use the <code>datetime</code> package.) <br> Create a data set with the following data summaries:</li>
+</ol>
 <ul>
-<li><p>Review function writing: <a href="https://srvanderplas.github.io/stat-computing-r-python/part-gen-prog/05-functions.html">section 13</a></p></li>
-<li><p>Code chunks in quarto documents</p></li>
+<li>a variable <code>n_obs</code> that contains the number of observations for each day,</li>
+<li>a variable <code>year_day</code> that contains the number of days of that year since Jan 1 (in case you can’t get your function from 4 to work, use <code>lubridate::yday</code> or pandas <code>.dt.dayofyear</code>)</li>
+<li>a logical variable <code>weekend</code> that is <code>TRUE</code> if the day is a Saturday or a Sunday and <code>FALSE</code> for a week day.</li>
 </ul>
-</section>
-<section id="from-a-block-of-code-to-functions" class="level1">
-<h1>From a block of code to functions</h1>
-<p>When you execute the same code multiple times, you should wrap the code into a function:</p>
-<p><img src="fig/palindrome-code-blocks.png" class="img-fluid"></p>
-</section>
-<section id="code-block-to-function" class="level1">
-<h1>Code block to function</h1>
-<p><img src="fig/palindrome-function.png" class="img-fluid"></p>
-</section>
-<section id="function-definitions" class="level1">
-<h1>Function definitions</h1>
-<p><img src="https://srvanderplas.github.io/stat-computing-r-python/images/gen-prog/Annotating_function_syntax.png" class="img-fluid"></p>
-</section>
-<section id="as-an-extra-challenge-for-extra-credit" class="level1">
-<h1>As an extra challenge … (for extra credit)</h1>
-<p>Can you establish how fast your function <code>palindrome</code> is?</p>
-<p><a href="https://www.r-bloggers.com/2017/05/5-ways-to-measure-running-time-of-r-code/">Measuring speed in R</a></p>
-<p><a href="https://docs.python.org/3/library/timeit.html#module-timeit">Measuring speed in python</a></p>
-<p>Which is faster? R or python? - You might have to make multiple calls to the functions to capture differences</p>
-</section>
-<section id="dos-and-donts" class="level1">
-<h1>Dos and Don’ts</h1>
-<p>There are some things we should not (ever) do in R Markdown (or quarto) documents:</p>
-<ul>
-<li><p>Install a package</p></li>
-<li><p>Print a full data set</p></li>
-</ul>
-<p>…</p>
-</section>
-<section id="next-time" class="level1">
-<h1>Next Time</h1>
-<ul>
-<li><p>Review for homework #3</p>
-<ul>
-<li>indexing,</li>
-<li>data frames/structures,</li>
-<li>thinking in column/row-shaped objects</li>
-</ul></li>
-</ul>
+<ol start="2" type="a">
+<li><p>Create a scatterplot of the number of observations mapped to <code>y</code>, the <code>year_day</code> variable mapped to <code>x</code> and <code>weekend</code> mapped to the color of the points.</p></li>
+<li><p>Calculate the average number of observations that are made on weekends and on weekdays. Based on the summary statistics and the visual, discuss the statement: <strong><em>on average, there are significantly more observations made during weekends than on weekdays</em></strong></p></li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># R chunk</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lubridate)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># python chunk</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> datetime</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 
 
 </section>
 
 </main> <!-- /main -->
-
-<script>
-  // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-  // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-  // slide changes (different for each slide format).
-  (function () {
-    // dispatch for htmlwidgets
-    function fireSlideEnter() {
-      const event = window.document.createEvent("Event");
-      event.initEvent("slideenter", true, true);
-      window.document.dispatchEvent(event);
-    }
-
-    function fireSlideChanged(previousSlide, currentSlide) {
-      fireSlideEnter();
-
-      // dispatch for shiny
-      if (window.jQuery) {
-        if (previousSlide) {
-          window.jQuery(previousSlide).trigger("hidden");
-        }
-        if (currentSlide) {
-          window.jQuery(currentSlide).trigger("shown");
-        }
-      }
-    }
-
-    // hookup for slidy
-    if (window.w3c_slidy) {
-      window.w3c_slidy.add_observer(function (slide_num) {
-        // slide_num starts at position 1
-        fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-      });
-    }
-
-  })();
-</script>
-
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
