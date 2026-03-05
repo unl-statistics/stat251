@@ -7,6 +7,7 @@ listing:
   - exam/2023-midterm/index.qmd
   - exam/2024-midterm/index.qmd
   - exam/data-earthquakes/index.qmd
+  - exam/midterm-data-sandhills/index.qmd
   - exam/objectives.qmd
   - homework/01-git-github.qmd
   - homework/02-review.qmd
@@ -31,6 +32,7 @@ listing:
   - slides/06a-data-manip.qmd
   - slides/06b-dplyr.qmd
   - slides/07a-data-manip.qmd
+  - slides/09b-strings.qmd
   - syllabus.qmd
   - reading.yml
   sort: date desc
