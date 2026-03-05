@@ -156,11 +156,6 @@ schedule:
         date: 2026-03-12
         pub-date: 2026-02-24
         categories: [Exam, Week08]
-      - title: Midterm
-        href: exam/midterm-data-sandhills/index.qmd
-        date: 2026-03-12
-        pub-date: 2026-03-05
-        categories: [Exam, Week07]
       - title: Good programming practices
         href: slides/07a-data-manip.qmd
         date: 2026-03-04
@@ -172,7 +167,7 @@ schedule:
         pub-date: 2026-02-25
         categories: [Exam, Week07]
       - title: Midterm
-        href: exam/midterm.qmd
+        href: slides/midterm.qmd
         date: 2026-03-12
         pub-date: 2026-03-05
         categories: [Exam, Week07]
