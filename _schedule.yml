@@ -180,40 +180,36 @@ schedule:
         categories: [HW, Week08]
         date: 2026-03-05
         pub-date: 2026-02-26
-      - href: slides/09a-strings.qmd
-        categories: [slides]
-        date: 2026-03-25
-        pub-date: 2026-03-18
       - href: slides/09b-strings.qmd
         categories: [slides]
         date: 2026-03-05
         pub-date: 2026-03-05
       - path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/05-data-reshape.html
         title: Reshaping Data
-        date: 2026-03-25
-        pub-date: 2026-03-12
+        date: 2026-03-24
+        pub-date: 2026-03-24
         categories: [reading]
       - href: homework/08-reshape.qmd
         categories: [HW, Week9]
-        pub-date: 2026-03-29
-        date: 2026-04-03
+        pub-date: 2026-03-20
+        date: 2026-03-26
       - path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/06-data-join.html
         title: Joining Data
-        date: 2026-04-01
-        pub-date: 2026-03-26
+        date: 2026-03-31
+        pub-date: 2026-03-24
         categories: [reading]
       - href: homework/09-join.qmd
         categories: [HW, Week10]
-        pub-date: 2026-04-02
-        date: 2026-04-10
+        pub-date: 2026-03-24
+        date: 2026-04-02
       - href: slides/10a-reshape.qmd
         categories: [slides]
-        date: 2026-04-01
-        pub-date: 2026-03-30
+        date: 2026-03-24
+        pub-date: 2026-03-24
       - href: slides/10b-reshape.qmd
         categories: [slides]
-        date: 2026-04-03
-        pub-date: 2026-04-02
+        date: 2026-03-26
+        pub-date: 2026-03-02
       - href: slides/11a-join.qmd
         categories: [slides]
         date: 2026-04-08

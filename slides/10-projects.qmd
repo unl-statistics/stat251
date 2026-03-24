@@ -20,7 +20,7 @@ engine: knitr
 - Create a TidyTuesday style screencast   
 [[Examples: https://www.rscreencasts.com/](https://www.rscreencasts.com/)]{.small}
 
-- Analyze a [TidyTuesday dataset from the last year](https://github.com/rfordatascience/tidytuesday) using R or Python
+- Analyze a [TidyTuesday dataset from last year](https://github.com/rfordatascience/tidytuesday) using R or Python
 
 - Approximately 45 minutes long
 
@@ -50,9 +50,9 @@ generate_svg(qr_code("https://classroom.github.com/a/kAhxShMQ"), filename = "fig
 
 ## Part 1 - Planning
 
-Work: In class, April 15 (Tuesday)
+Work: In class, April 16 (Thursday)
 
-Due: April 15, 11:59pm
+Due: April 16, 11:59pm
 
 Tell me: 
 
@@ -65,9 +65,9 @@ Tell me:
 
 ## Part 2 - Script Outline
 
-Work: In class, April 22 (Tuesday)
+Work: In class, April 23 (Thursday)
 
-Due: April 22, 11:59pm
+Due: April 23, 11:59pm
 
 - Provide a (rough) script for your screen cast
     
@@ -85,7 +85,7 @@ Due: April 22, 11:59pm
 
 Work: On your own 
 
-Due: May 1, 11:59pm (Thursday)
+Due: Apr 30, 11:59pm (Thursday)
 
 - Screencast uploaded to YouTube or YuJa
 

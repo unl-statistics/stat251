@@ -27,7 +27,6 @@ date: '2026-03-25'
 
 - work on homework #7: string operations using reddit poetry :)
 
-- submit any changes to homework #1 - #5 by Thursday
 
 ## Homework 7
 

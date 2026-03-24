@@ -3,7 +3,7 @@ title: Reshaping Dogs
 author: Stat 251
 categories:
 - slides
-- Week11
+- Week10
 engine: knitr
 format:
   revealjs:
@@ -12,19 +12,17 @@ format:
     theme: inverse.scss
     includes:
       in_header: header.html
-date: '2026-04-01'
+date: '2026-03-24'
 ---
 
 ```{r setup}
 library(tidyverse)
 ```
 
+# Welcome back from SPring Break!
+
 ## Logistics 
 
-- [Reading quiz 9](https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/06-data-join.html) due 
-
-
-- Focus on homework 8 on Tuesday, start working on homework 9 on Thursday
 
 - Start thinking about the [project](https://unl-statistics.github.io/stat251/project/)
 
