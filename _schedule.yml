@@ -209,7 +209,7 @@ schedule:
       - href: slides/10b-reshape.qmd
         categories: [slides]
         date: 2026-03-26
-        pub-date: 2026-03-02
+        pub-date: 2026-03-25
       - href: slides/11a-join.qmd
         categories: [slides]
         date: 2026-04-08
