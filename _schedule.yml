@@ -237,7 +237,7 @@ schedule:
         categories: [slides, Week12]
       - href: project/index.qmd
         date: 2026-04-15
-        pub-date: 2026-03-30
+        pub-date: 2026-03-25
         categories: [Project, Week12]
       - href: project/Dataset-Topics.qmd
         date: 2026-04-15
