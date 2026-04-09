@@ -223,6 +223,10 @@ schedule:
       - href: homework/10-datetime.qmd
         date: 2026-04-09
         categories: [HW, Week11]
+      - href: slides/12b-datetime.qmd
+        date: 2026-04-9
+        pub-date: 2026-04-9
+        categories: [slides, Week11]
       - href: slides/10-projects.qmd
         date: 2026-04-15
         pub-date: 2026-03-30
@@ -231,30 +235,26 @@ schedule:
         date: 2026-04-15
         pub-date: 2026-04-15
         categories: [slides, Project, Week12]
-      - href: slides/12b-datetime.qmd
-        date: 2026-04-17
-        pub-date: 2026-04-15
-        categories: [slides, Week12]
       - href: project/index.qmd
-        date: 2026-04-15
+        date: 2026-03-31
         pub-date: 2026-03-25
         categories: [Project, Week12]
       - href: project/Dataset-Topics.qmd
-        date: 2026-04-15
+        date: 2026-04-07
         categories: [Project, Week12]
       - href: project/pseudocode.qmd
-        date: 2026-04-22
+        date: 2026-04-14
         categories: [Project, Week12]
       - href: project/screencast-checklist.qmd
-        date: 2026-05-01
+        date: 2026-05-21
         categories: [Project, Week14]
       - path: https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/08-functional-prog.html
         title: Functional Programming and Lists
-        date: 2026-04-15
+        date: 2026-04-14
         categories: [reading]
       - href: homework/11-functional-prog.qmd
-        date: 2026-04-24
-        pub-date: 2026-04-17
+        date: 2026-04-16
+        pub-date: 2026-04-09
         categories: [HW, Week13]
       - href: slides/13b-functional.qmd
         date: 2026-04-24

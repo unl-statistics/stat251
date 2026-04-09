@@ -10,8 +10,8 @@
   <meta name="generator" content="quarto-1.7.32">
 
   <meta name="author" content="Stat 251">
-  <meta name="dcterms.date" content="2026-04-17">
-  <title>Stat 251 - Data Wrangling – Last 4 weeks</title>
+  <meta name="dcterms.date" content="2026-04-09">
+  <title>Stat 251 - Data Wrangling – Dates and Times - and the script</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -128,7 +128,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Last 4 weeks</h1>
+  <h1 class="title">Dates and Times - and the script</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -138,21 +138,18 @@ Stat 251
 </div>
 </div>
 
-  <p class="date">2026-04-17</p>
+  <p class="date">2026-04-09</p>
 </section>
-<section id="logistics" class="slide level2">
-<h2>Logistics</h2>
-
-<img data-src="fig/plan-last-4wks.png" class="r-stretch"></section>
-<section id="feedback" class="slide level2">
-<h2>Feedback</h2>
+<section id="feedback" class="title-slide slide level1 center">
+<h1>Feedback</h1>
 <ul>
 <li><p>Claimed Dataset: make sure to add the link to the Tidy Tuesday page</p></li>
 <li><p>Homework 10: Looks good, make sure to submit!</p></li>
 </ul>
 </section>
-<section id="script" class="slide level2">
-<h2>Script</h2>
+
+<section id="script" class="title-slide slide level1 center">
+<h1>Script</h1>
 <p>For each of the Things you defined, write out at least three paragraphs:</p>
 <p>Make sure to:</p>
 <ul>
@@ -161,8 +158,45 @@ Stat 251
 <li>tie ‘things’ in with the topics in the class</li>
 </ul>
 </section>
-<section id="homework-11" class="slide level2">
-<h2>Homework 11</h2>
+
+<section id="example-things" class="title-slide slide level1 center">
+<h1>Example Things</h1>
+<p>For the example of the repair cafes the things we might want to do are:</p>
+<ol type="1">
+<li>check where repair cafes originated</li>
+<li>how did repair cafes do over time?</li>
+<li>which things are repaired and how successful are repairs?</li>
+</ol>
+</section>
+
+<section id="where-do-repair-cafes-originate" class="title-slide slide level1 center">
+<h1>Where do repair cafes originate?</h1>
+<ol type="1">
+<li><p>Definitions: Repair cafes are identified by <code>repair_cafe_number</code> and <code>repair_cafe_name</code>. We will use the variable <code>country</code> to show where repair cafes are. We can measure origin for each cafe as the date of the first repair.</p></li>
+<li><p>What we do</p></li>
+</ol>
+<ol type="a">
+<li>Data summary: For each repair cafe (group_by number and name) we create a summary of date of first repair (as the minimum of <code>repair_date</code>), date of last repair (maximum), number of total repairs, country.</li>
+</ol>
+</section>
+
+<section id="section" class="title-slide slide level1 center">
+<h1></h1>
+<ol start="2" type="1">
+<li></li>
+</ol>
+<ol start="2" type="a">
+<li><p>Visual summary: To show the result we: map the first date of a repair for each cafe to the x axis, number of repairs on y and color by country and show as a scatterplot. Additionally, we add a line segment for each cafe’s existence from first date to last date, and also color by country.</p></li>
+<li><p>Interpret the result and write summary.</p></li>
+</ol>
+<ol start="3" type="1">
+<li>React to potential problems</li>
+</ol>
+</section>
+
+<section id="homework-11" class="title-slide slide level1 center">
+<h1>Homework 11</h1>
+<p>Optional for extra credit</p>
 <iframe width="100%" height="500px" src="https://unl-statistics.github.io/stat251/homework/11-functional-prog.qmd"></iframe>
 
 

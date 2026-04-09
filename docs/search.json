@@ -133,15 +133,15 @@
     "text": "JSON format to data frames\nin R:\njsonlite::read_json\npurrr::list_transpose\ntibble::as_tibble\nin python:\nread_json # make sure to set typ to 'series' \njson_normalize # flattens a list to a data frame"
   },
   {
-    "objectID": "slides/12a-screencast.html",
-    "href": "slides/12a-screencast.html",
+    "objectID": "slides/12a-screencast-2025.html",
+    "href": "slides/12a-screencast-2025.html",
     "title": "Screencast - edited script",
     "section": "",
-    "text": "For the screencast itself, check the canvas course for the zoom recording for April 15.\nThis script originated as the code from the screencast during class, and was edited for clarity afterwards. The figure captions were similarly added afterwards.\n\npixar_films &lt;- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2025/2025-03-11/pixar_films.csv')\npublic_response &lt;- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2025/2025-03-11/public_response.csv')\n\nlibrary(dplyr)\nlibrary(ggplot2)\nlibrary(tidyr)\nlibrary(lubridate)\nknitr::opts_chunk$set(warning = FALSE, message = FALSE)"
+    "text": "For the screencast itself, check the canvas course for the zoom recording for April 23.\nThis script originated as the code from the screencast during class, and was edited for clarity afterwards. The figure captions were similarly added afterwards.\n\npixar_films &lt;- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2025/2025-03-11/pixar_films.csv')\npublic_response &lt;- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2025/2025-03-11/public_response.csv')\n\nlibrary(dplyr)\nlibrary(ggplot2)\nlibrary(tidyr)\nlibrary(lubridate)\nknitr::opts_chunk$set(warning = FALSE, message = FALSE)"
   },
   {
-    "objectID": "slides/12a-screencast.html#overall-there-are-a-few-strange-things-going-on-with-respect-to-missing-values",
-    "href": "slides/12a-screencast.html#overall-there-are-a-few-strange-things-going-on-with-respect-to-missing-values",
+    "objectID": "slides/12a-screencast-2025.html#overall-there-are-a-few-strange-things-going-on-with-respect-to-missing-values",
+    "href": "slides/12a-screencast-2025.html#overall-there-are-a-few-strange-things-going-on-with-respect-to-missing-values",
     "title": "Screencast - edited script",
     "section": "Overall: there are a few strange things going on with respect to missing values",
     "text": "Overall: there are a few strange things going on with respect to missing values\n\nIt seems odd that we have a release date, but no title (movie 27)\nmissing values only in the last couple of movies (24 - 27) - it seems that some of the data was added manually, but not consistently\n\nPossible to-do item: fix the data in the pixarfilms package by updating the movie information directly from Wikipedia.\nWikipedia has information on 28 movies, titles are included, no ratings, no runtimes though\nFor now, we just move on with the analysis."
@@ -168,36 +168,36 @@
     "text": "Connection of homework 9 to joins\n\nMake sure to look at the relationship between the different data sets!\nThe first filter statement gives you enough information to start searching for witness statements.\n\n\n\nSecurity footage shows that there were 2 witnesses. The first witness lives at the last house on \"Northwestern Dr\". The second witness, named Annabel, lives somewhere on \"Franklin Ave\".\n\n\n\nEventually you will be in the situation that you need to look up information from a different table based on a key variable. Instead of using a filter with that information, merge the two tables to directly incorporate the information from the other table."
   },
   {
-    "objectID": "slides/10-projects.html#project-overview",
-    "href": "slides/10-projects.html#project-overview",
+    "objectID": "slides/10-projects-2025.html#project-overview",
+    "href": "slides/10-projects-2025.html#project-overview",
     "title": "Project Overview",
     "section": "Project Overview",
     "text": "Project Overview\n\n\n\nCreate a TidyTuesday style screencast\nExamples: https://www.rscreencasts.com/\nAnalyze a TidyTuesday dataset from last year using R or Python\nApproximately 45 minutes long\nShow at least 4 different techniques you learned in Stat 251 this semester\n\n\n\n\nGH link"
   },
   {
-    "objectID": "slides/10-projects.html#part-1---planning",
-    "href": "slides/10-projects.html#part-1---planning",
+    "objectID": "slides/10-projects-2025.html#part-1---planning",
+    "href": "slides/10-projects-2025.html#part-1---planning",
     "title": "Project Overview",
     "section": "Part 1 - Planning",
     "text": "Part 1 - Planning\nWork: In class, April 16 (Thursday)\nDue: April 16, 11:59pm\nTell me:\n\nWhat dataset you’re using\nWhat you’re going to investigate\nWhat Stat 251 topics you’re going to cover"
   },
   {
-    "objectID": "slides/10-projects.html#part-2---script-outline",
-    "href": "slides/10-projects.html#part-2---script-outline",
+    "objectID": "slides/10-projects-2025.html#part-2---script-outline",
+    "href": "slides/10-projects-2025.html#part-2---script-outline",
     "title": "Project Overview",
     "section": "Part 2 - Script Outline",
     "text": "Part 2 - Script Outline\nWork: In class, April 23 (Thursday)\nDue: April 23, 11:59pm\n\nProvide a (rough) script for your screen cast\n\nExplain how the techniques work\nDiscuss any challenges you had analyzing this data\nInclude the mistakes you made along the way!\n\nInclude pseudocode/actual code for each topic\n\nDoes not have to actually work at this point"
   },
   {
-    "objectID": "slides/10-projects.html#part-3---recording",
-    "href": "slides/10-projects.html#part-3---recording",
+    "objectID": "slides/10-projects-2025.html#part-3---recording",
+    "href": "slides/10-projects-2025.html#part-3---recording",
     "title": "Project Overview",
     "section": "Part 3 - Recording",
     "text": "Part 3 - Recording\nWork: On your own\nDue: Apr 30, 11:59pm (Thursday)\n\nScreencast uploaded to YouTube or YuJa\nApproximate time index provided for each technique you demonstrate (on GitHub)\nFinal code file uploaded to github repository"
   },
   {
-    "objectID": "slides/10-projects.html#part-4---peer-review",
-    "href": "slides/10-projects.html#part-4---peer-review",
+    "objectID": "slides/10-projects-2025.html#part-4---peer-review",
+    "href": "slides/10-projects-2025.html#part-4---peer-review",
     "title": "Project Overview",
     "section": "Part 4 - Peer Review",
     "text": "Part 4 - Peer Review\n\nIn place of the final exam:\n\nWatch 2 screencasts\nPeer evaluations - leave a comment on Canvas\nBased on rubric (provided)\n\nTake place between May 1 and Thursday of Finals week"
@@ -515,7 +515,7 @@
     "href": "index.html",
     "title": "Stat 251: Data Wrangling",
     "section": "",
-    "text": "Course Materials\nDates shown are due dates (for homework and exams) and dates on which material was presented (for slides).\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\n\nTitle\n\n\n\nType\n\n\n\n \n\n\n\n\n\n\n\n\nApr 15, 2026\n\n\nProject: Screencast\n\n\nproject\n\n\n\n\n\n\n\n\n\nApr 15, 2026\n\n\nProject Overview\n\n\n \n\n\n\n\n\n\n\n\n\nApr 9, 2026\n\n\nDates and Times\n\n\nhomework\n\n\n\n\n\n\n\n\n\nApr 7, 2026\n\n\nDates and Times\n\n\nreading\n\n\n\n\n\n\n\n\n\nApr 2, 2026\n\n\nHomework 9: Murder in SQL City\n\n\nhomework\n\n\n\n\n\n\n\n\n\nMar 31, 2026\n\n\nJoin up, Detectives!\n\n\n \n\n\n\n\n\n\n\n\n\nMar 31, 2026\n\n\nJoining Data\n\n\nreading\n\n\n\n\n\n\n\n\n\nMar 26, 2026\n\n\nData Reshaping with Puppies\n\n\nhomework\n\n\n\n\n\n\n\n\n\nMar 26, 2026\n\n\nMurder tables!?\n\n\n \n\n\n\n\n\n\n\n\n\nMar 24, 2026\n\n\nReshaping Dogs\n\n\n \n\n\n\n\n\n\n\n\n\nMar 24, 2026\n\n\nReshaping Data\n\n\nreading\n\n\n\n\n\n\n\n\n\nMar 12, 2026\n\n\nPractice Exam (2023)\n\n\nexam\n\n\n\n\n\n\n\n\n\nMar 12, 2026\n\n\nPractice Exam (2025)\n\n\nexam\n\n\n\n\n\n\n\n\n\nMar 12, 2026\n\n\nMidterm Exam (2026)\n\n\nexam\n\n\n\n\n\n\n\n\n\nMar 5, 2026\n\n\nExam objectives\n\n\nexam\n\n\n\n\n\n\n\n\n\nMar 5, 2026\n\n\nString Processing and Data Wrangling in R and Python\n\n\nhomework\n\n\n\n\n\n\n\n\n\nMar 5, 2026\n\n\nRegular Expressions\n\n\n \n\n\n\n\n\n\n\n\n\nMar 3, 2026\n\n\nStrings\n\n\nreading\n\n\n\n\n\n\n\n\n\nFeb 26, 2026\n\n\nHomework 6: Data Manipulation\n\n\nhomework\n\n\n\n\n\n\n\n\n\nFeb 26, 2026\n\n\nComputing with data\n\n\n \n\n\n\n\n\n\n\n\n\nFeb 24, 2026\n\n\nGood programming practices\n\n\n \n\n\n\n\n\n\n\n\n\nFeb 24, 2026\n\n\nData Cleaning\n\n\nreading\n\n\n\n\n\n\n\n\n\nFeb 19, 2026\n\n\nHomework 5: Graphics\n\n\nhomework\n\n\n\n\n\n\n\n\n\nFeb 19, 2026\n\n\nCreating Good Graphics\n\n\n \n\n\n\n\n\n\n\n\n\nFeb 17, 2026\n\n\nIt’s Graphics Week!\n\n\n \n\n\n\n\n\n\n\n\n\nFeb 17, 2026\n\n\nData Visualization\n\n\nreading\n\n\n\n\n\n\n\n\n\nFeb 17, 2026\n\n\nGood Graphics\n\n\nreading\n\n\n\n\n\n\n\n\n\nFeb 12, 2026\n\n\nChocolate Chip Cookies\n\n\nhomework\n\n\n\n\n\n\n\n\n\nFeb 12, 2026\n\n\nData Explorations\n\n\n \n\n\n\n\n\n\n\n\n\nFeb 11, 2026\n\n\nData Input\n\n\nreading\n\n\n\n\n\n\n\n\n\nFeb 10, 2026\n\n\nReading In Data\n\n\n \n\n\n\n\n\n\n\n\n\nFeb 10, 2026\n\n\nExploratory Data Analysis\n\n\nreading\n\n\n\n\n\n\n\n\n\nFeb 5, 2026\n\n\nHomework 3: decodeR - Base R\n\n\nhomework\n\n\n\n\n\n\n\n\n\nFeb 5, 2026\n\n\nReview - Cipher\n\n\n \n\n\n\n\n\n\n\n\n\nFeb 3, 2026\n\n\nReview - Cipher\n\n\n \n\n\n\n\n\n\n\n\n\nJan 29, 2026\n\n\nHomework 2: Reviewing R and Python\n\n\nhomework\n\n\n\n\n\n\n\n\n\nJan 29, 2026\n\n\nReview - Cipher\n\n\nslides\n\n\n\n\n\n\n\n\n\nJan 27, 2026\n\n\nProgramming Review\n\n\nslides\n\n\n\n\n\n\n\n\n\nJan 27, 2026\n\n\nReview - Programming\n\n\nreading\n\n\n\n\n\n\n\n\n\nJan 22, 2026\n\n\n👋 The Basics of GitHub\n\n\nhomework\n\n\n\n\n\n\n\n\n\nJan 22, 2026\n\n\nProgramming Review\n\n\nslides\n\n\n\n\n\n\n\n\n\nJan 20, 2026\n\n\nProgramming Review\n\n\nslides\n\n\n\n\n\n\n\n\n\nJan 20, 2026\n\n\nReview - Tools\n\n\nreading\n\n\n\n\n\n\n\n\n\nJan 15, 2026\n\n\nVersion Control\n\n\nslides\n\n\n\n\n\n\n\n\n\nJan 15, 2026\n\n\nVersion Control with Git and Github\n\n\nreading\n\n\n\n\n\n\n\n\n\nJan 13, 2026\n\n\nIntroduction\n\n\nslides\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Course Materials\nDates shown are due dates (for homework and exams) and dates on which material was presented (for slides).\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\n\nTitle\n\n\n\nType\n\n\n\n \n\n\n\n\n\n\n\n\nApr 16, 2026\n\n\nFunctional Programming: Cats and Dogs\n\n\nhomework\n\n\n\n\n\n\n\n\n\nApr 14, 2026\n\n\nScreencast Pseudocode\n\n\nproject\n\n\n\n\n\n\n\n\n\nApr 14, 2026\n\n\nFunctional Programming and Lists\n\n\nreading\n\n\n\n\n\n\n\n\n\nApr 9, 2026\n\n\nDates and Times\n\n\nhomework\n\n\n\n\n\n\n\n\n\nApr 9, 2026\n\n\nDates and Times - and the script\n\n\n \n\n\n\n\n\n\n\n\n\nApr 7, 2026\n\n\nProject Dataset and Topics\n\n\nproject\n\n\n\n\n\n\n\n\n\nApr 7, 2026\n\n\nDates and Times\n\n\nreading\n\n\n\n\n\n\n\n\n\nApr 2, 2026\n\n\nHomework 9: Murder in SQL City\n\n\nhomework\n\n\n\n\n\n\n\n\n\nMar 31, 2026\n\n\nProject: Screencast\n\n\nproject\n\n\n\n\n\n\n\n\n\nMar 31, 2026\n\n\nJoin up, Detectives!\n\n\n \n\n\n\n\n\n\n\n\n\nMar 31, 2026\n\n\nJoining Data\n\n\nreading\n\n\n\n\n\n\n\n\n\nMar 26, 2026\n\n\nData Reshaping with Puppies\n\n\nhomework\n\n\n\n\n\n\n\n\n\nMar 26, 2026\n\n\nMurder tables!?\n\n\n \n\n\n\n\n\n\n\n\n\nMar 24, 2026\n\n\nReshaping Dogs\n\n\n \n\n\n\n\n\n\n\n\n\nMar 24, 2026\n\n\nReshaping Data\n\n\nreading\n\n\n\n\n\n\n\n\n\nMar 12, 2026\n\n\nPractice Exam (2023)\n\n\nexam\n\n\n\n\n\n\n\n\n\nMar 12, 2026\n\n\nPractice Exam (2025)\n\n\nexam\n\n\n\n\n\n\n\n\n\nMar 12, 2026\n\n\nMidterm Exam (2026)\n\n\nexam\n\n\n\n\n\n\n\n\n\nMar 5, 2026\n\n\nExam objectives\n\n\nexam\n\n\n\n\n\n\n\n\n\nMar 5, 2026\n\n\nString Processing and Data Wrangling in R and Python\n\n\nhomework\n\n\n\n\n\n\n\n\n\nMar 5, 2026\n\n\nRegular Expressions\n\n\n \n\n\n\n\n\n\n\n\n\nMar 3, 2026\n\n\nStrings\n\n\nreading\n\n\n\n\n\n\n\n\n\nFeb 26, 2026\n\n\nHomework 6: Data Manipulation\n\n\nhomework\n\n\n\n\n\n\n\n\n\nFeb 26, 2026\n\n\nComputing with data\n\n\n \n\n\n\n\n\n\n\n\n\nFeb 24, 2026\n\n\nGood programming practices\n\n\n \n\n\n\n\n\n\n\n\n\nFeb 24, 2026\n\n\nData Cleaning\n\n\nreading\n\n\n\n\n\n\n\n\n\nFeb 19, 2026\n\n\nHomework 5: Graphics\n\n\nhomework\n\n\n\n\n\n\n\n\n\nFeb 19, 2026\n\n\nCreating Good Graphics\n\n\n \n\n\n\n\n\n\n\n\n\nFeb 17, 2026\n\n\nIt’s Graphics Week!\n\n\n \n\n\n\n\n\n\n\n\n\nFeb 17, 2026\n\n\nData Visualization\n\n\nreading\n\n\n\n\n\n\n\n\n\nFeb 17, 2026\n\n\nGood Graphics\n\n\nreading\n\n\n\n\n\n\n\n\n\nFeb 12, 2026\n\n\nChocolate Chip Cookies\n\n\nhomework\n\n\n\n\n\n\n\n\n\nFeb 12, 2026\n\n\nData Explorations\n\n\n \n\n\n\n\n\n\n\n\n\nFeb 11, 2026\n\n\nData Input\n\n\nreading\n\n\n\n\n\n\n\n\n\nFeb 10, 2026\n\n\nReading In Data\n\n\n \n\n\n\n\n\n\n\n\n\nFeb 10, 2026\n\n\nExploratory Data Analysis\n\n\nreading\n\n\n\n\n\n\n\n\n\nFeb 5, 2026\n\n\nHomework 3: decodeR - Base R\n\n\nhomework\n\n\n\n\n\n\n\n\n\nFeb 5, 2026\n\n\nReview - Cipher\n\n\n \n\n\n\n\n\n\n\n\n\nFeb 3, 2026\n\n\nReview - Cipher\n\n\n \n\n\n\n\n\n\n\n\n\nJan 29, 2026\n\n\nHomework 2: Reviewing R and Python\n\n\nhomework\n\n\n\n\n\n\n\n\n\nJan 29, 2026\n\n\nReview - Cipher\n\n\nslides\n\n\n\n\n\n\n\n\n\nJan 27, 2026\n\n\nProgramming Review\n\n\nslides\n\n\n\n\n\n\n\n\n\nJan 27, 2026\n\n\nReview - Programming\n\n\nreading\n\n\n\n\n\n\n\n\n\nJan 22, 2026\n\n\n👋 The Basics of GitHub\n\n\nhomework\n\n\n\n\n\n\n\n\n\nJan 22, 2026\n\n\nProgramming Review\n\n\nslides\n\n\n\n\n\n\n\n\n\nJan 20, 2026\n\n\nProgramming Review\n\n\nslides\n\n\n\n\n\n\n\n\n\nJan 20, 2026\n\n\nReview - Tools\n\n\nreading\n\n\n\n\n\n\n\n\n\nJan 15, 2026\n\n\nVersion Control\n\n\nslides\n\n\n\n\n\n\n\n\n\nJan 15, 2026\n\n\nVersion Control with Git and Github\n\n\nreading\n\n\n\n\n\n\n\n\n\nJan 13, 2026\n\n\nIntroduction\n\n\nslides\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "homework/01-git-github.html",
@@ -992,34 +992,6 @@
     "title": "Join up, Detectives!",
     "section": "Anti join",
     "text": "Anti join\n\ncareful, not symmetric!\n\n\nanti_join(df1, df2, by=\"id\") # no values for id in df2\n\n  id trt value\n1  1   A     5\n2  2   B     3\n3  3   C     7\n4  6   C     3\n\nanti_join(df2, df1, by=\"id\") # no values for id in df1\n\n  id stress bpm\n1  7      0  48\n2  7      1 110"
-  },
-  {
-    "objectID": "slides/12b-datetime.html#logistics",
-    "href": "slides/12b-datetime.html#logistics",
-    "title": "Last 4 weeks",
-    "section": "Logistics",
-    "text": "Logistics"
-  },
-  {
-    "objectID": "slides/12b-datetime.html#feedback",
-    "href": "slides/12b-datetime.html#feedback",
-    "title": "Last 4 weeks",
-    "section": "Feedback",
-    "text": "Feedback\n\nClaimed Dataset: make sure to add the link to the Tidy Tuesday page\nHomework 10: Looks good, make sure to submit!"
-  },
-  {
-    "objectID": "slides/12b-datetime.html#script",
-    "href": "slides/12b-datetime.html#script",
-    "title": "Last 4 weeks",
-    "section": "Script",
-    "text": "Script\nFor each of the Things you defined, write out at least three paragraphs:\nMake sure to:\n\ninclude definitions (i.e. how do you measure strength)\ngive context (i.e. which variables are used)\ntie ‘things’ in with the topics in the class"
-  },
-  {
-    "objectID": "slides/12b-datetime.html#homework-11",
-    "href": "slides/12b-datetime.html#homework-11",
-    "title": "Last 4 weeks",
-    "section": "Homework 11",
-    "text": "Homework 11"
   },
   {
     "objectID": "slides/14a-spatial.html#logistics",
