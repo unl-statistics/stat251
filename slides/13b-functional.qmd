@@ -1,11 +1,11 @@
 ---
 title: Functioning Cats and Dogs
 author: Stat 251
-date: '2026-04-24'
+date: '2026-04-16'
 categories:
 - slides
 - Week13
-- Week14
+- Week13
 engine: knitr
 format:
   revealjs:
@@ -17,13 +17,10 @@ format:
 error: true
 ---
 
+
 ## Logistics
 
-![](fig/plan-last-4wks.png)
-
-## Feedback
-
-- Scripts: generally look good, time until Tuesday to react to feedback (make sure to submit!)
+- Scripts: generally look good, but some formatting things ...
 
 - Today: finish homework 11 (functions)
 

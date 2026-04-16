@@ -2,7 +2,9 @@
   {
     "listing": "/index.html",
     "items": [
+      "/project/screencast-checklist.html",
       "/homework/11-functional-prog.html",
+      "/slides/13b-functional.html",
       "/slides/10-projects.html",
       "/project/pseudocode.html",
       "/homework/10-datetime.html",

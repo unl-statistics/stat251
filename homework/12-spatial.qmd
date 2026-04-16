@@ -1,13 +1,13 @@
 ---
 title: 'Homework 12: Spatial'
-date: '2026-05-08'
+date: '2026-04-08'
 execute-dir: ../homework-repos/12-spatial/
 engine: knitr
 author: Homework
 categories:
 - HW
 - Week15
-- Finals
+- Week12
 ---
 
 Note: This assignment must be submitted in github classroom.
