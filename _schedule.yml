@@ -291,11 +291,11 @@ schedule:
         date: 2026-04-28
         categories: [reading]
       - href: homework/12-spatial.qmd
-        date: 2026-04-08
-        pub-date: 2026-04-30
+        date: 2026-04-30
+        pub-date: 2026-04-17
         categories: [HW, Week15]
       - href: homework/15-project-peer-review.qmd
-        date: 2026-05-15
+        date: 2026-05-07
         pub-date: 2026-04-17
         categories: [Project, Week15]
 

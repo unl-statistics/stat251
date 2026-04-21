@@ -128,3 +128,43 @@
   type: reading
   image: figs/reading.svg
   is_live: true
+- path: https://r-spatial.org/r/2018/10/25/ggplot2-sf.html
+  title: Drawing beautiful maps with R - Part 1 - Basics
+  date: '2026-04-28'
+  pub.date: '2026-04-17'
+  categories:
+  - reading
+  - .na.character
+  type: reading
+  image: figs/reading.svg
+  is_live: true
+- path: https://r-spatial.org/r/2018/10/25/ggplot2-sf-2.html
+  title: Drawing beautiful maps with R - Part 2 - Layers
+  date: '2026-04-28'
+  pub.date: '2026-04-17'
+  categories:
+  - reading
+  - .na.character
+  type: reading
+  image: figs/reading.svg
+  is_live: true
+- path: https://r-spatial.org/r/2018/10/25/ggplot2-sf-3.html
+  title: Drawing beautiful maps with R - Part 3 - Layouts
+  date: '2026-04-28'
+  pub.date: '2026-04-17'
+  categories:
+  - reading
+  - .na.character
+  type: reading
+  image: figs/reading.svg
+  is_live: true
+- path: https://rosenfelder.ai/create-maps-with-python/
+  title: Create beautiful maps with Python
+  date: '2026-04-28'
+  pub.date: '2026-04-17'
+  categories:
+  - reading
+  - .na.character
+  type: reading
+  image: figs/reading.svg
+  is_live: true
